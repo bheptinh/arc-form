@@ -28,6 +28,10 @@ export function PlannerCanvas() {
   const extendWall          = usePlannerStore((s) => s.extendWall);
   const updateDrawingPreview = usePlannerStore((s) => s.updateDrawingPreview);
   const cancelDrawing       = usePlannerStore((s) => s.cancelDrawing);
+  const selectElement       = usePlannerStore((s) => s.selectElement);
+  const deleteSelected      = usePlannerStore((s) => s.deleteSelected);
+  const undo                = usePlannerStore((s) => s.undo);
+  const redo                = usePlannerStore((s) => s.redo);
 
   const { handleWheel, handleDragMove } = useViewport();
 
@@ -49,11 +53,15 @@ export function PlannerCanvas() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') cancelDrawing();
+      if (e.target instanceof HTMLInputElement) return;
+      if (e.key === 'Escape') { cancelDrawing(); return; }
+      if (e.key === 'Delete' || e.key === 'Backspace') { deleteSelected(); return; }
+      if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key === 'z') { e.preventDefault(); undo(); return; }
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.shiftKey && e.key === 'z'))) { e.preventDefault(); redo(); }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [cancelDrawing]);
+  }, [cancelDrawing, deleteSelected, undo, redo]);
 
   function screenToWorld(screenX: number, screenY: number) {
     return {
@@ -83,7 +91,13 @@ export function PlannerCanvas() {
   }
 
   function handleClick(e: Konva.KonvaEventObject<MouseEvent>) {
-    if (e.evt.button !== 0 || tool !== 'wall') return;
+    if (e.evt.button !== 0) return;
+    if (tool === 'select') {
+      // deselect when clicking canvas background (shapes stop propagation)
+      if (e.target === e.target.getStage()) selectElement(null);
+      return;
+    }
+    if (tool !== 'wall') return;
     const pos = e.target.getStage()?.getPointerPosition();
     if (!pos) return;
     const s = computeSnap(pos.x, pos.y);
