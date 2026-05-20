@@ -2,15 +2,16 @@ import { usePlannerStore } from '../../store/usePlannerStore';
 import styles from './PropertiesPanel.module.css';
 
 export function PropertiesPanel() {
-  const defaultWallThickness  = usePlannerStore((s) => s.defaultWallThickness);
+  const defaultWallThickness   = usePlannerStore((s) => s.defaultWallThickness);
   const setDefaultWallThickness = usePlannerStore((s) => s.setDefaultWallThickness);
-  const setWallThickness      = usePlannerStore((s) => s.setWallThickness);
-  const tool                  = usePlannerStore((s) => s.tool);
-  const viewport              = usePlannerStore((s) => s.viewport);
-  const selectedId            = usePlannerStore((s) => s.selectedId);
-  const selectedWall          = usePlannerStore((s) =>
-    s.selectedId ? s.walls[s.selectedId] : null,
-  );
+  const setWallThickness        = usePlannerStore((s) => s.setWallThickness);
+  const updateOpening           = usePlannerStore((s) => s.updateOpening);
+  const tool                    = usePlannerStore((s) => s.tool);
+  const viewport                = usePlannerStore((s) => s.viewport);
+  const selectedId              = usePlannerStore((s) => s.selectedId);
+
+  const selectedWall    = usePlannerStore((s) => s.selectedId ? s.walls[s.selectedId]    : null);
+  const selectedOpening = usePlannerStore((s) => s.selectedId ? s.openings[s.selectedId] : null);
 
   return (
     <div className={styles.panel}>
@@ -36,6 +37,47 @@ export function PropertiesPanel() {
               <span className={styles.unit}>mm</span>
             </div>
           </label>
+        </div>
+      )}
+
+      {selectedOpening && (
+        <div className={styles.section}>
+          <h3 className={styles.heading}>Selected {selectedOpening.type}</h3>
+          <label className={styles.field}>
+            <span>Width</span>
+            <div className={styles.inputRow}>
+              <input
+                type="number"
+                className={styles.input}
+                value={selectedOpening.width}
+                min={200}
+                max={3000}
+                step={50}
+                onChange={(e) => {
+                  const v = parseInt(e.target.value, 10);
+                  if (!isNaN(v) && v >= 200) updateOpening(selectedId!, { width: v });
+                }}
+              />
+              <span className={styles.unit}>mm</span>
+            </div>
+          </label>
+          {selectedOpening.type === 'door' && (
+            <label className={styles.field}>
+              <span>Swing</span>
+              <div className={styles.inputRow}>
+                <select
+                  className={styles.input}
+                  value={selectedOpening.swing ?? 'left'}
+                  onChange={(e) =>
+                    updateOpening(selectedId!, { swing: e.target.value as 'left' | 'right' })
+                  }
+                >
+                  <option value="left">Left</option>
+                  <option value="right">Right</option>
+                </select>
+              </div>
+            </label>
+          )}
         </div>
       )}
 

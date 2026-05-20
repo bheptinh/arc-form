@@ -8,7 +8,7 @@ export interface DrawingState {
   previewY: number;
 }
 
-type Snapshot = { points: Record<string, Point>; walls: Record<string, Wall> };
+type Snapshot = { points: Record<string, Point>; walls: Record<string, Wall>; openings: Record<string, Opening> };
 
 interface PlannerState {
   points: Record<string, Point>;
@@ -42,10 +42,13 @@ interface PlannerActions {
   deleteSelected: () => void;
   undo: () => void;
   redo: () => void;
+
+  addOpening: (o: Omit<Opening, 'id'>) => void;
+  updateOpening: (id: string, patch: Partial<Omit<Opening, 'id'>>) => void;
 }
 
 function snap(s: PlannerState): Pick<PlannerState, 'past' | 'future'> {
-  return { past: [...s.past, { points: s.points, walls: s.walls }], future: [] };
+  return { past: [...s.past, { points: s.points, walls: s.walls, openings: s.openings }], future: [] };
 }
 
 const initialState: PlannerState = {
@@ -159,19 +162,31 @@ export const usePlannerStore = create<PlannerState & PlannerActions>((set) => ({
   deleteSelected: () =>
     set((s) => {
       const { selectedId } = s;
-      if (!selectedId || !s.walls[selectedId]) return {};
+      if (!selectedId) return {};
 
+      // Opening selected
+      if (s.openings[selectedId]) {
+        const { [selectedId]: _o, ...openings } = s.openings;
+        return { ...snap(s), openings, selectedId: null };
+      }
+
+      // Wall selected
+      if (!s.walls[selectedId]) return {};
       const wall = s.walls[selectedId];
       const { [selectedId]: _w, ...walls } = s.walls;
 
-      // Remove points that are no longer connected to any remaining wall
       const orphans = [wall.startId, wall.endId].filter(
         (ptId) => !Object.values(walls).some((w) => w.startId === ptId || w.endId === ptId),
       );
       const points = { ...s.points };
       for (const id of orphans) delete points[id];
 
-      return { ...snap(s), walls, points, selectedId: null };
+      // Remove openings on this wall
+      const openings = Object.fromEntries(
+        Object.entries(s.openings).filter(([, o]) => o.wallId !== selectedId),
+      );
+
+      return { ...snap(s), walls, points, openings, selectedId: null };
     }),
 
   undo: () =>
@@ -180,9 +195,10 @@ export const usePlannerStore = create<PlannerState & PlannerActions>((set) => ({
       const prev = s.past[s.past.length - 1];
       return {
         past: s.past.slice(0, -1),
-        future: [{ points: s.points, walls: s.walls }, ...s.future],
+        future: [{ points: s.points, walls: s.walls, openings: s.openings }, ...s.future],
         points: prev.points,
         walls: prev.walls,
+        openings: prev.openings,
         selectedId: null,
         drawing: null,
       };
@@ -193,12 +209,33 @@ export const usePlannerStore = create<PlannerState & PlannerActions>((set) => ({
       if (s.future.length === 0) return {};
       const next = s.future[0];
       return {
-        past: [...s.past, { points: s.points, walls: s.walls }],
+        past: [...s.past, { points: s.points, walls: s.walls, openings: s.openings }],
         future: s.future.slice(1),
         points: next.points,
         walls: next.walls,
+        openings: next.openings,
         selectedId: null,
         drawing: null,
+      };
+    }),
+
+  addOpening: (o) =>
+    set((s) => {
+      const id = crypto.randomUUID();
+      return {
+        ...snap(s),
+        openings: { ...s.openings, [id]: { ...o, id } },
+        selectedId: id,
+      };
+    }),
+
+  updateOpening: (id, patch) =>
+    set((s) => {
+      const existing = s.openings[id];
+      if (!existing) return {};
+      return {
+        ...snap(s),
+        openings: { ...s.openings, [id]: { ...existing, ...patch } },
       };
     }),
 }));

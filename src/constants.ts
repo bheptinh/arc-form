@@ -8,3 +8,6 @@ export const ZOOM_FACTOR = 1.12;
 
 export const DEFAULT_WALL_THICKNESS_MM = 200;  // 20 cm
 export const SNAP_RADIUS_PX = 12;              // snap threshold in screen pixels
+
+export const DEFAULT_DOOR_WIDTH_MM   = 900;
+export const DEFAULT_WINDOW_WIDTH_MM = 1200;
