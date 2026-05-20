@@ -45,16 +45,30 @@ interface PlannerActions {
 
   addOpening: (o: Omit<Opening, 'id'>) => void;
   updateOpening: (id: string, patch: Partial<Omit<Opening, 'id'>>) => void;
+
+  loadPlan: (data: { points: Record<string, Point>; walls: Record<string, Wall>; openings: Record<string, Opening> }) => void;
+  clearPlan: () => void;
 }
 
 function snap(s: PlannerState): Pick<PlannerState, 'past' | 'future'> {
   return { past: [...s.past, { points: s.points, walls: s.walls, openings: s.openings }], future: [] };
 }
 
+const STORAGE_KEY = '2d-planner-v1';
+
+function loadPersistedData(): Pick<PlannerState, 'points' | 'walls' | 'openings'> {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return { points: {}, walls: {}, openings: {} };
+    const { points, walls, openings } = JSON.parse(raw);
+    return { points: points ?? {}, walls: walls ?? {}, openings: openings ?? {} };
+  } catch {
+    return { points: {}, walls: {}, openings: {} };
+  }
+}
+
 const initialState: PlannerState = {
-  points: {},
-  walls: {},
-  openings: {},
+  ...loadPersistedData(),
   tool: 'select',
   selectedId: null,
   defaultWallThickness: DEFAULT_WALL_THICKNESS_MM,
@@ -238,4 +252,34 @@ export const usePlannerStore = create<PlannerState & PlannerActions>((set) => ({
         openings: { ...s.openings, [id]: { ...existing, ...patch } },
       };
     }),
+
+  loadPlan: (data) =>
+    set({
+      points: data.points,
+      walls: data.walls,
+      openings: data.openings,
+      past: [],
+      future: [],
+      selectedId: null,
+      drawing: null,
+    }),
+
+  clearPlan: () =>
+    set({
+      points: {},
+      walls: {},
+      openings: {},
+      past: [],
+      future: [],
+      selectedId: null,
+      drawing: null,
+    }),
 }));
+
+// Auto-save plan data to localStorage on every state change
+usePlannerStore.subscribe((state) => {
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify({ points: state.points, walls: state.walls, openings: state.openings }),
+  );
+});

@@ -43,3 +43,9 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+
+.divider {
+  height: 1px;
+  background: #2e2e42;
+  margin: 4px 8px;
+}

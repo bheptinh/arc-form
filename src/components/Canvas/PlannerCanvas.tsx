@@ -6,6 +6,7 @@ import { findWallHit } from '../../geometry/openingGeometry';
 import { findSnapPoint, snapPointToGrid } from '../../geometry/snap';
 import { useViewport } from '../../hooks/useViewport';
 import { usePlannerStore } from '../../store/usePlannerStore';
+import { DimensionLayer } from './DimensionLayer';
 import { GridLayer } from './GridLayer';
 import { OpeningLayer } from './OpeningLayer';
 import { WallLayer } from './WallLayer';
@@ -17,26 +18,26 @@ interface SnapInfo {
 }
 
 export function PlannerCanvas() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [size, setSize] = useState({ width: 800, height: 600 });
-  const [snap, setSnap] = useState<SnapInfo | null>(null);
+  const containerRef  = useRef<HTMLDivElement>(null);
+  const [size, setSize]           = useState({ width: 800, height: 600 });
+  const [snap, setSnap]           = useState<SnapInfo | null>(null);
+  const [hoverWallId, setHoverWallId] = useState<string | null>(null);
 
   const viewport  = usePlannerStore((s) => s.viewport);
   const tool      = usePlannerStore((s) => s.tool);
   const points    = usePlannerStore((s) => s.points);
   const drawing   = usePlannerStore((s) => s.drawing);
+  const walls     = usePlannerStore((s) => s.walls);
 
-  const walls = usePlannerStore((s) => s.walls);
-
-  const beginWall           = usePlannerStore((s) => s.beginWall);
-  const extendWall          = usePlannerStore((s) => s.extendWall);
+  const beginWall            = usePlannerStore((s) => s.beginWall);
+  const extendWall           = usePlannerStore((s) => s.extendWall);
   const updateDrawingPreview = usePlannerStore((s) => s.updateDrawingPreview);
-  const cancelDrawing       = usePlannerStore((s) => s.cancelDrawing);
-  const selectElement       = usePlannerStore((s) => s.selectElement);
-  const deleteSelected      = usePlannerStore((s) => s.deleteSelected);
-  const addOpening          = usePlannerStore((s) => s.addOpening);
-  const undo                = usePlannerStore((s) => s.undo);
-  const redo                = usePlannerStore((s) => s.redo);
+  const cancelDrawing        = usePlannerStore((s) => s.cancelDrawing);
+  const selectElement        = usePlannerStore((s) => s.selectElement);
+  const deleteSelected       = usePlannerStore((s) => s.deleteSelected);
+  const addOpening           = usePlannerStore((s) => s.addOpening);
+  const undo                 = usePlannerStore((s) => s.undo);
+  const redo                 = usePlannerStore((s) => s.redo);
 
   const { handleWheel, handleDragMove } = useViewport();
 
@@ -51,14 +52,14 @@ export function PlannerCanvas() {
     return () => ro.disconnect();
   }, []);
 
-  // Cancel drawing on tool change or Escape
   useEffect(() => {
     if (tool !== 'wall') cancelDrawing();
+    if (tool !== 'door' && tool !== 'window') setHoverWallId(null);
   }, [tool, cancelDrawing]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLInputElement) return;
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLSelectElement) return;
       if (e.key === 'Escape') { cancelDrawing(); return; }
       if (e.key === 'Delete' || e.key === 'Backspace') { deleteSelected(); return; }
       if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key === 'z') { e.preventDefault(); undo(); return; }
@@ -86,13 +87,24 @@ export function PlannerCanvas() {
   function handleMouseMove(e: Konva.KonvaEventObject<MouseEvent>) {
     const pos = e.target.getStage()?.getPointerPosition();
     if (!pos) return;
-    const s = computeSnap(pos.x, pos.y);
-    setSnap(s);
-    if (tool === 'wall' && drawing) updateDrawingPreview(s.x, s.y);
+
+    if (tool === 'wall') {
+      const s = computeSnap(pos.x, pos.y);
+      setSnap(s);
+      if (drawing) updateDrawingPreview(s.x, s.y);
+      return;
+    }
+
+    if (tool === 'door' || tool === 'window') {
+      const world = screenToWorld(pos.x, pos.y);
+      const hit   = findWallHit(world.x, world.y, walls, points);
+      setHoverWallId(hit ? hit.wallId : null);
+    }
   }
 
   function handleMouseLeave() {
     setSnap(null);
+    setHoverWallId(null);
   }
 
   function handleClick(e: Konva.KonvaEventObject<MouseEvent>) {
@@ -116,17 +128,11 @@ export function PlannerCanvas() {
 
     if (tool === 'door' || tool === 'window') {
       const world = screenToWorld(pos.x, pos.y);
-      const hit = findWallHit(world.x, world.y, walls, points);
+      const hit   = findWallHit(world.x, world.y, walls, points);
       if (!hit) return;
       const width = tool === 'door' ? DEFAULT_DOOR_WIDTH_MM : DEFAULT_WINDOW_WIDTH_MM;
       const centeredOffset = Math.max(0, Math.min(hit.wallLen - width, hit.offset - width / 2));
-      addOpening({
-        wallId: hit.wallId,
-        type: tool,
-        offset: centeredOffset,
-        width,
-        swing: 'left',
-      });
+      addOpening({ wallId: hit.wallId, type: tool, offset: centeredOffset, width, swing: 'left' });
     }
   }
 
@@ -162,7 +168,9 @@ export function PlannerCanvas() {
           snapX={tool === 'wall' && snap ? snap.x : null}
           snapY={tool === 'wall' && snap ? snap.y : null}
           snapPointId={tool === 'wall' && snap ? snap.pointId : null}
+          hoverWallId={hoverWallId}
         />
+        <DimensionLayer />
         <OpeningLayer />
       </Stage>
     </div>

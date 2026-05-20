@@ -9,9 +9,10 @@ interface Props {
   snapX: number | null;
   snapY: number | null;
   snapPointId: string | null;
+  hoverWallId: string | null;
 }
 
-export function WallLayer({ snapX, snapY, snapPointId }: Props) {
+export function WallLayer({ snapX, snapY, snapPointId, hoverWallId }: Props) {
   const walls          = usePlannerStore((s) => s.walls);
   const points         = usePlannerStore((s) => s.points);
   const drawing        = usePlannerStore((s) => s.drawing);
@@ -31,6 +32,7 @@ export function WallLayer({ snapX, snapY, snapPointId }: Props) {
     const poly = computeWallPolygon(wall, points, walls);
     if (!poly) return null;
     const selected = wall.id === selectedId;
+    const hovered  = wall.id === hoverWallId;
     const sp = points[wall.startId];
 
     function handleWallDragBound(this: Konva.Node, pos: Konva.Vector2d): Konva.Vector2d {
@@ -59,8 +61,8 @@ export function WallLayer({ snapX, snapY, snapPointId }: Props) {
         key={wall.id}
         points={poly}
         closed
-        fill={selected ? '#b8d4f0' : '#d4d0c8'}
-        stroke={selected ? '#2255cc' : '#555'}
+        fill={selected ? '#b8d4f0' : hovered ? 'rgba(74,106,255,0.2)' : '#d4d0c8'}
+        stroke={selected ? '#2255cc' : hovered ? '#4a6aff' : '#555'}
         strokeWidth={selected ? 2 * inv : inv}
         listening={isSelect}
         draggable={isSelect}
