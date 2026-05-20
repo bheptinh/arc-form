@@ -10,27 +10,33 @@ export function useViewport() {
     e.evt.preventDefault();
     const stage = e.target.getStage();
     if (!stage) return;
-    const pointer = stage.getPointerPosition();
-    if (!pointer) return;
 
-    const oldScale = viewport.scale;
-    const direction = e.evt.deltaY < 0 ? 1 : -1;
-    const newScale = Math.min(
-      MAX_SCALE,
-      Math.max(MIN_SCALE, oldScale * (direction > 0 ? ZOOM_FACTOR : 1 / ZOOM_FACTOR)),
-    );
-
-    // Zoom toward pointer position
-    const mousePointTo = {
-      x: (pointer.x - viewport.x) / oldScale,
-      y: (pointer.y - viewport.y) / oldScale,
-    };
-
-    setViewport({
-      scale: newScale,
-      x: pointer.x - mousePointTo.x * newScale,
-      y: pointer.y - mousePointTo.y * newScale,
-    });
+    if (e.evt.ctrlKey) {
+      // Pinch to zoom (also Ctrl + mouse wheel)
+      const pointer = stage.getPointerPosition();
+      if (!pointer) return;
+      const oldScale = viewport.scale;
+      const direction = e.evt.deltaY < 0 ? 1 : -1;
+      const newScale = Math.min(
+        MAX_SCALE,
+        Math.max(MIN_SCALE, oldScale * (direction > 0 ? ZOOM_FACTOR : 1 / ZOOM_FACTOR)),
+      );
+      const mousePointTo = {
+        x: (pointer.x - viewport.x) / oldScale,
+        y: (pointer.y - viewport.y) / oldScale,
+      };
+      setViewport({
+        scale: newScale,
+        x: pointer.x - mousePointTo.x * newScale,
+        y: pointer.y - mousePointTo.y * newScale,
+      });
+    } else {
+      // Two-finger swipe to pan
+      setViewport({
+        x: viewport.x - e.evt.deltaX,
+        y: viewport.y - e.evt.deltaY,
+      });
+    }
   }
 
   function handleDragMove(e: Konva.KonvaEventObject<DragEvent>) {
