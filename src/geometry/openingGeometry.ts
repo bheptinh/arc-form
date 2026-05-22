@@ -6,12 +6,14 @@ export interface OpeningGeom {
   jambEnd:     number[];   // [x1,y1,x2,y2] jamb line at opening end
 
   // Door-specific
-  hingeX:           number;
-  hingeY:           number;
-  wallDirAngleRad:  number;
-  swingCCW:         boolean;  // true = counterclockwise arc = 'right' swing
-  panelTipX:        number;
-  panelTipY:        number;
+  hingeX:          number;
+  hingeY:          number;
+  panelTipX:       number;
+  panelTipY:       number;
+  arcStartAngle:   number;
+  arcEndAngle:     number;
+  swingCCW:        boolean;
+  wallDirAngleRad: number;  // kept for hit-rect rotation
 
   // Window-specific
   winLine1: number[];  // [x1,y1,x2,y2]
@@ -61,12 +63,30 @@ export function computeOpeningGeom(
   const jambStart = [s.x + wallPerp.x * half, s.y + wallPerp.y * half, s.x - wallPerp.x * half, s.y - wallPerp.y * half];
   const jambEnd   = [e.x + wallPerp.x * half, e.y + wallPerp.y * half, e.x - wallPerp.x * half, e.y - wallPerp.y * half];
 
-  // Door: swing arc + panel line
-  const swingCCW = opening.swing === 'right';
-  const swingSign = swingCCW ? -1 : 1;
-  const panelTipX = s.x + wallPerp.x * swingSign * opening.width;
-  const panelTipY = s.y + wallPerp.y * swingSign * opening.width;
+  // Door: swing arc + panel line — 4 options: inside/outside × left/right hinge
   const wallDirAngleRad = Math.atan2(wallDir.y, wallDir.x);
+
+  // Backward-compat: old 'left'→'inside-left', 'right'→'outside-left'
+  const rawSwing = opening.swing as string | undefined;
+  const swing = (rawSwing === 'left' ? 'inside-left'
+    : rawSwing === 'right' ? 'outside-left'
+    : rawSwing) ?? 'inside-left';
+
+  const hingeAtStart = swing === 'inside-left' || swing === 'outside-left';
+  const swingInside  = swing === 'inside-left' || swing === 'inside-right';
+  const hinge    = hingeAtStart ? s : e;
+  const perpSign = swingInside ? 1 : -1;
+
+  const hingeX    = hinge.x;
+  const hingeY    = hinge.y;
+  const panelTipX = hingeX + wallPerp.x * perpSign * opening.width;
+  const panelTipY = hingeY + wallPerp.y * perpSign * opening.width;
+
+  // arcStartAngle: along wall toward the free end; arcEndAngle: toward swing side
+  const arcStartAngle = hingeAtStart ? wallDirAngleRad : wallDirAngleRad + Math.PI;
+  const arcEndAngle   = wallDirAngleRad + perpSign * (Math.PI / 2);
+  // CCW = XOR(hingeAtStart, swingInside) — derived from the four-case truth table
+  const swingCCW = hingeAtStart !== swingInside;
 
   // Window: two glass-pane lines at 1/3 and 2/3 of gap depth
   const t1 = 0.33, t2 = 0.67;
@@ -81,8 +101,9 @@ export function computeOpeningGeom(
 
   return {
     gapPoly, jambStart, jambEnd,
-    hingeX: s.x, hingeY: s.y,
-    wallDirAngleRad, swingCCW, panelTipX, panelTipY,
+    hingeX, hingeY, panelTipX, panelTipY,
+    arcStartAngle, arcEndAngle, swingCCW,
+    wallDirAngleRad,
     winLine1, winLine2,
     centerX: sp.x + wallDir.x * (clampedOffset + opening.width / 2),
     centerY: sp.y + wallDir.y * (clampedOffset + opening.width / 2),

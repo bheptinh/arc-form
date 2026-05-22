@@ -40,6 +40,7 @@ export function useViewport() {
   }
 
   function handleDragMove(e: Konva.KonvaEventObject<DragEvent>) {
+    if (e.target !== e.target.getStage()) return;
     setViewport({ x: e.target.x(), y: e.target.y() });
   }
 

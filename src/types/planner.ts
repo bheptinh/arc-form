@@ -13,7 +13,7 @@ export interface Wall {
   thickness: number; // mm
 }
 
-export type SwingDir = 'left' | 'right';
+export type SwingDir = 'inside-left' | 'inside-right' | 'outside-left' | 'outside-right';
 
 export interface Opening {
   id: string;

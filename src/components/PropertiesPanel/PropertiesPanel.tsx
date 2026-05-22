@@ -67,13 +67,15 @@ export function PropertiesPanel() {
               <div className={styles.inputRow}>
                 <select
                   className={styles.input}
-                  value={selectedOpening.swing ?? 'left'}
+                  value={selectedOpening.swing ?? 'inside-left'}
                   onChange={(e) =>
-                    updateOpening(selectedId!, { swing: e.target.value as 'left' | 'right' })
+                    updateOpening(selectedId!, { swing: e.target.value as import('../../types/planner').SwingDir })
                   }
                 >
-                  <option value="left">Left</option>
-                  <option value="right">Right</option>
+                  <option value="inside-left">Inside, hinge left</option>
+                  <option value="inside-right">Inside, hinge right</option>
+                  <option value="outside-left">Outside, hinge left</option>
+                  <option value="outside-right">Outside, hinge right</option>
                 </select>
               </div>
             </label>

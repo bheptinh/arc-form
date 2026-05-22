@@ -27,7 +27,6 @@ export function OpeningLayer() {
     const sp          = wall ? points[wall.startId] : null;
     const thickness   = wall?.thickness ?? 200;
     const rotDeg      = (g.wallDirAngleRad * 180) / Math.PI;
-    const swingSign   = g.swingCCW ? -1 : 1;
 
     function handleDragBound(pos: Konva.Vector2d): Konva.Vector2d {
       if (!sp) return pos;
@@ -86,8 +85,8 @@ export function OpeningLayer() {
               g.hingeX,
               g.hingeY,
               opening.width,
-              g.wallDirAngleRad,
-              g.wallDirAngleRad + swingSign * (Math.PI / 2),
+              g.arcStartAngle,
+              g.arcEndAngle,
               g.swingCCW,
             );
             ctx.strokeShape(shape);

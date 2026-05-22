@@ -1,5 +1,5 @@
 import type Konva from 'konva';
-import { Circle, Layer, Line } from 'react-konva';
+import { Circle, Layer, Line, Rect } from 'react-konva';
 import { findSnapPoint, snapPointToGrid } from '../../geometry/snap';
 import { computeWallPolygon } from '../../geometry/wallGeometry';
 import { usePlannerStore } from '../../store/usePlannerStore';
@@ -28,12 +28,30 @@ export function WallLayer({ snapX, snapY, snapPointId, hoverWallId }: Props) {
   const isSelect = tool === 'select';
 
   // Existing walls
-  const wallShapes = Object.values(walls).map((wall) => {
+  const wallShapes = Object.values(walls).flatMap((wall) => {
     const poly = computeWallPolygon(wall, points, walls);
-    if (!poly) return null;
+    if (!poly) return [];
     const selected = wall.id === selectedId;
     const hovered  = wall.id === hoverWallId;
     const sp = points[wall.startId];
+
+    // Count siblings at each endpoint to decide whether to draw miter cap strokes.
+    // With exactly 1 sibling, the cap is a shared interior miter edge — suppress its stroke.
+    const startSiblings = Object.values(walls).filter(
+      w => w.id !== wall.id && (w.startId === wall.startId || w.endId === wall.startId),
+    ).length;
+    const endSiblings = Object.values(walls).filter(
+      w => w.id !== wall.id && (w.startId === wall.endId || w.endId === wall.endId),
+    ).length;
+    const showStartCap = startSiblings !== 1;
+    const showEndCap   = endSiblings   !== 1;
+
+    const fillColor   = selected ? '#b8d4f0' : hovered ? 'rgba(74,106,255,0.2)' : '#d4d0c8';
+    const strokeColor = selected ? '#2255cc' : hovered ? '#4a6aff' : '#555';
+    const strokeW     = selected ? 2 * inv : inv;
+
+    // Polygon vertex order: [A=startLeft, B=endRight, C=endLeft, D=startRight]
+    const [ax, ay, bx, by, cx, cy, dx, dy] = poly;
 
     function handleWallDragBound(this: Konva.Node, pos: Konva.Vector2d): Konva.Vector2d {
       if (!sp) return pos;
@@ -56,24 +74,33 @@ export function WallLayer({ snapX, snapY, snapPointId, hoverWallId }: Props) {
       moveWall(wall.id, snapped.x - sp.x, snapped.y - sp.y);
     }
 
-    return (
+    return [
+      // Fill-only polygon — handles drag & click
       <Line
         key={wall.id}
         points={poly}
         closed
-        fill={selected ? '#b8d4f0' : hovered ? 'rgba(74,106,255,0.2)' : '#d4d0c8'}
-        stroke={selected ? '#2255cc' : hovered ? '#4a6aff' : '#555'}
-        strokeWidth={selected ? 2 * inv : inv}
+        fill={fillColor}
+        strokeEnabled={false}
         listening={isSelect}
         draggable={isSelect}
         dragBoundFunc={handleWallDragBound}
         onDragEnd={handleWallDragEnd}
-        onClick={(e) => {
-          e.cancelBubble = true;
-          selectElement(wall.id);
-        }}
-      />
-    );
+        onClick={(e) => { e.cancelBubble = true; selectElement(wall.id); }}
+      />,
+      // Long side A→B
+      <Line key={`${wall.id}-ab`} points={[ax, ay, bx, by]} stroke={strokeColor} strokeWidth={strokeW} listening={false} />,
+      // End cap B→C: skip when it's an interior miter edge
+      showEndCap
+        ? <Line key={`${wall.id}-bc`} points={[bx, by, cx, cy]} stroke={strokeColor} strokeWidth={strokeW} listening={false} />
+        : null,
+      // Long side C→D
+      <Line key={`${wall.id}-cd`} points={[cx, cy, dx, dy]} stroke={strokeColor} strokeWidth={strokeW} listening={false} />,
+      // Start cap D→A: skip when it's an interior miter edge
+      showStartCap
+        ? <Line key={`${wall.id}-da`} points={[dx, dy, ax, ay]} stroke={strokeColor} strokeWidth={strokeW} listening={false} />
+        : null,
+    ].filter(Boolean);
   });
 
   // Endpoint dots — draggable in select mode
@@ -157,9 +184,27 @@ export function WallLayer({ snapX, snapY, snapPointId, hoverWallId }: Props) {
       />
     ) : null;
 
+  // Junction fillers: neutral-color rhombus drawn over the miter seam at each 2-wall
+  // junction, so the corner has a consistent fill regardless of which wall is selected.
+  const junctionFillers = Object.values(points).map((pt) => {
+    const poly = computeJunctionFiller(pt.id, points, walls);
+    if (!poly) return null;
+    return (
+      <Line
+        key={`jf-${pt.id}`}
+        points={poly}
+        closed
+        fill="#d4d0c8"
+        strokeEnabled={false}
+        listening={false}
+      />
+    );
+  });
+
   return (
     <Layer>
       {wallShapes}
+      {junctionFillers}
       {dots}
       {preview}
       {snapIndicator}

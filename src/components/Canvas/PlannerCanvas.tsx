@@ -132,7 +132,7 @@ export function PlannerCanvas() {
       if (!hit) return;
       const width = tool === 'door' ? DEFAULT_DOOR_WIDTH_MM : DEFAULT_WINDOW_WIDTH_MM;
       const centeredOffset = Math.max(0, Math.min(hit.wallLen - width, hit.offset - width / 2));
-      addOpening({ wallId: hit.wallId, type: tool, offset: centeredOffset, width, swing: 'left' });
+      addOpening({ wallId: hit.wallId, type: tool, offset: centeredOffset, width, swing: 'inside-left' });
     }
   }
 

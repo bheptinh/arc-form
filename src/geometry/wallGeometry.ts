@@ -64,12 +64,52 @@ function jointCorners(
   const rightSib = add(pt, scale(sibPerp, -sibHalf));
   const miterRight = lineIntersect(rightMy, myDir, rightSib, sibDir);
 
-  // Clamp: skip miter if it extends more than 4× wall thickness (very shallow angle)
+  // Clamp: skip miter if the intersection is too far (very shallow join angle)
   const maxMiter = 4 * Math.max(half, sibHalf);
   const left  = miterLeft  && len(sub(miterLeft,  pt)) <= maxMiter ? miterLeft  : defLeft;
   const right = miterRight && len(sub(miterRight, pt)) <= maxMiter ? miterRight : defRight;
 
   return { left, right };
+}
+
+// Returns the rhombus polygon that covers the miter seam at a 2-wall junction.
+// Drawing this over both wall fills in a neutral color eliminates the diagonal color boundary
+// that appears when the two walls have different fill colors (e.g. one selected).
+export function computeJunctionFiller(
+  pointId: string,
+  points: Record<string, Point>,
+  walls: Record<string, Wall>,
+): number[] | null {
+  const pt = points[pointId];
+  if (!pt) return null;
+
+  const connected = Object.values(walls).filter(
+    w => w.startId === pointId || w.endId === pointId,
+  );
+  if (connected.length !== 2) return null;
+
+  const [wallA, wallB] = connected;
+  const dirA = outDir(wallA, pointId, points);
+  const dirB = outDir(wallB, pointId, points);
+  if (!dirA || !dirB) return null;
+
+  const perpA = perp90(dirA);
+  const perpB = perp90(dirB);
+  const halfA = wallA.thickness / 2;
+  const halfB = wallB.thickness / 2;
+
+  const defLeft  = add(pt, scale(perpA,  halfA));
+  const defRight = add(pt, scale(perpA, -halfA));
+
+  const mL = lineIntersect(defLeft,  dirA, add(pt, scale(perpB,  halfB)), dirB);
+  const mR = lineIntersect(defRight, dirA, add(pt, scale(perpB, -halfB)), dirB);
+  if (!mL || !mR) return null;
+
+  const maxDist = 4 * Math.max(halfA, halfB);
+  if (len(sub(mL, pt)) > maxDist || len(sub(mR, pt)) > maxDist) return null;
+
+  // Rhombus: defLeft → miterLeft → defRight → miterRight
+  return [defLeft.x, defLeft.y, mL.x, mL.y, defRight.x, defRight.y, mR.x, mR.y];
 }
 
 // Returns a flat Konva-compatible points array [x1,y1, x2,y2, ...] for the wall polygon.
