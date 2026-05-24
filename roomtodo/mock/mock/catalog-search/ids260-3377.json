@@ -1,0 +1,2320 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "28",
+    "items": [
+      {
+        "id": 260,
+        "type": 2,
+        "name": "Sofa",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/260\/f95e35341ef0499b15f414f55aab9dd0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/260\/a67663a00b2dcfcde0ca1456a6a3ccc4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "1.17,51,101.73,50.18,116.97,48.67,117.51,48.36,118.01,47.93,118.42,47.4,118.72,46.83,118.95,46.24,118.95,43.24,118.95,-27.24,118.95,-29.89,118.95,-41.98,118.72,-42.57,118.42,-43.11,118.01,-43.66,117.51,-44.1,116.97,-44.41,100.73,-50.6,99.56,-50.9,98.04,-51,84.75,-51,-98.13,-51,-99.65,-50.9,-100.82,-50.6,-116.97,-44.41,-117.51,-44.1,-118.01,-43.66,-118.42,-43.11,-118.72,-42.57,-118.95,-41.98,-118.95,-38.98,-118.95,43.24,-118.95,46.12,-118.95,46.24,-118.72,46.83,-118.42,47.4,-118.01,47.93,-117.51,48.36,-116.97,48.67,-101.82,50.18,-1.26,51",
+            "contourCut": "100.53,0,116.97,-3.59,117.51,-3.74,118.01,-3.95,118.42,-4.22,118.72,-4.57,118.95,-4.96,118.95,-56.07,118.95,-56.95,118.95,-57.06,118.72,-57.59,101.73,-91.71,101.48,-92.18,100.73,-92.6,99.56,-92.94,98.04,-93.17,93.87,-93.39,84.75,-93.68,70.12,-93.92,49.44,-94,-49.53,-94,-70.21,-93.92,-84.84,-93.68,-93.96,-93.39,-98.13,-93.17,-99.65,-92.94,-100.82,-92.6,-101.57,-92.18,-101.82,-91.71,-118.72,-57.67,-118.95,-57.14,-118.95,-56.15,-118.95,-46.9,-118.95,-5.75,-118.95,-5.06,-118.95,-5.04,-118.72,-4.65,-118.42,-4.31,-118.01,-4.03,-117.51,-3.82,-116.97,-3.67,-100.95,0,97.05,0,99.54,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54828,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "36aec56120facaa46485ad45fe6cb86a"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "1ab1467059476d875e664a8cb6207e71"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9183": [
+            {
+              "id": "9183",
+              "name": "Straight",
+              "parentId": "9182"
+            },
+            {
+              "id": "9182",
+              "name": "Sofas",
+              "parentId": "83"
+            },
+            {
+              "id": "83",
+              "name": "Upholstered furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "sofas"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 238,
+            "height": 94,
+            "depth": 102
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 354,
+        "type": 2,
+        "name": "Sliding wardrobe",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/354\/2d37748b9ded765a61c947f895fb6c31.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/354\/176678b3c5111548c52c576650651d0f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-108.26666666666667,-30.933333333333326,106.72,-30.933333333333326,106.72,29.386666666666677,-108.26666666666667,29.386666666666677",
+            "contourCut": "-108.26666666666667,-230.45333333333332,106.72,-230.45333333333332,105.17333333333335,-6.186666666666655,-106.72,-6.186666666666655",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "78476d38bc70f03e7cff8b99546b7144"
+              },
+              {
+                "id": 1,
+                "default": 54836,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "a0b90f82147981b4a5dfafbf07ada7cc"
+              },
+              {
+                "id": 2,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "7bba3c035fb0e0006e1a8c3c943c79d7"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9887": [
+            {
+              "id": "9887",
+              "name": "Cabinets, closets, wardrobes",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 216,
+            "height": 232,
+            "depth": 61
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 707,
+        "type": 2,
+        "name": "Table",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/707\/415a8b725ee3015e9d5c60fa964c4a89.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/707\/8694ff754da7ffd22a2ecfe6b8f0c228.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "86,40,86,-40,-86,-40,-86,40",
+            "contourCut": "81.64,0,81.81,-0.82,86,-76.81,86,-78.65,83.86,-80,67.56,-80,-67.72,-80,-83.86,-80,-86,-78.65,-86,-76.81,-81.72,-0.82,-81.55,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c0a728c7e26fbb551377b264b849f1d9"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b98cb2a21c62a85d07ec38f97bdcd0f4"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9870": [
+            {
+              "id": "9870",
+              "name": "Office desks",
+              "parentId": "9149"
+            },
+            {
+              "id": "9149",
+              "name": "Tables",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9871": [
+            {
+              "id": "9871",
+              "name": "Office desks & tables",
+              "parentId": "86"
+            },
+            {
+              "id": "86",
+              "name": "Office",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tables",
+          "office"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 172,
+            "height": 80,
+            "depth": 80
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 774,
+        "type": 1,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/774\/2845dd7ab63a024eaf53880d11f21a94.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/774\/7e9eea9334b08705d90b62ac35e48975.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "712": [
+            {
+              "id": "712",
+              "name": "Plain",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 839,
+        "type": 1,
+        "name": "Chrome",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/839\/0eac4f6b51be5c5317583e884c6fa71a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/839\/2d177f9dc347740fadcae5adf836380a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "58": [
+            {
+              "id": "58",
+              "name": "Metal",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "71": [
+            {
+              "id": "71",
+              "name": "Smooth metal",
+              "parentId": "717"
+            },
+            {
+              "id": "717",
+              "name": "Metal",
+              "parentId": null
+            }
+          ],
+          "717": [
+            {
+              "id": "717",
+              "name": "Metal",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "metal"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 844,
+        "type": 1,
+        "name": "Polished metal",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/844\/a7e517f83beb12c91f1817dd74e6520d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/844\/fa00f84d438e6be8e2c8d1c4d9f67772.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "58": [
+            {
+              "id": "58",
+              "name": "Metal",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "71": [
+            {
+              "id": "71",
+              "name": "Smooth metal",
+              "parentId": "717"
+            },
+            {
+              "id": "717",
+              "name": "Metal",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "metal"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 941,
+        "type": 2,
+        "name": "Entrance door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/941\/7adf25690c17338a6aa928da00800650.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/941\/7effb804d26d11ed5b7bf93ebe68959c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.01,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.94,-44.63,8.97",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,-132.66,-47.5,-78.27,-47.5,0,46.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 839,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c03f0e83f0abe8ead2282fcf77323fce"
+              },
+              {
+                "id": 1,
+                "default": 55155,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b7ff48b7331e5cfef86287c3560f5cf9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 984,
+        "type": 2,
+        "name": "Sofa",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/984\/ef42bacf25d7f5992ac9ffbf4fabae4b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/984\/67db0ffc50bb45c714d3bcc0e0b09f38.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "105.74,77,107.24,76.69,107.37,76.61,107.38,76.6,107.5,76.13,107.5,-8.04,92.42,-74.92,92.37,-75.06,92.26,-75.27,91.65,-75.87,90.84,-76.12,88.08,-76.51,85.48,-76.67,82.16,-76.84,78.33,-76.96,75.01,-77,46.63,-77,43.28,-76.94,32.04,-76.57,31.23,-76.33,-106.98,-8.96,-107.12,-8.87,-107.5,-8.04,-107.5,76.13,-107.38,76.6,-107.37,76.61,-107.24,76.69,-105.74,77,-94.29,77",
+            "contourCut": "102.38,0,107.5,-5.11,107.5,-49.26,107.5,-50.04,107.46,-50.75,107.34,-51.15,107.14,-51.55,91.7,-75.43,91.29,-75.98,91.13,-76.13,90.66,-76.49,90.05,-76.83,89.3,-77,33.41,-77,-89.22,-76.99,-89.97,-76.83,-90.57,-76.49,-91.05,-76.12,-91.21,-75.98,-91.62,-75.42,-107.14,-51.55,-107.34,-51.15,-107.46,-50.75,-107.5,-50.04,-107.5,-49.26,-107.5,-7,-107.5,-5.11,-102.41,0,98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54828,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "a83d110b9d2d5c6ae7c55775a58831d9"
+              },
+              {
+                "id": 1,
+                "default": 53097,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "2450e922131cc73b01349ca703dfe24b"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41833,
+                "default": "#acacac",
+                "current": "#acacac",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "90fb085285dd399089c9b07547ee6bc7"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9184": [
+            {
+              "id": "9184",
+              "name": "Corner",
+              "parentId": "9182"
+            },
+            {
+              "id": "9182",
+              "name": "Sofas",
+              "parentId": "83"
+            },
+            {
+              "id": "83",
+              "name": "Upholstered furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "sofas"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 215,
+            "height": 77,
+            "depth": 154
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1610,
+        "type": 1,
+        "name": "Chrome",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1610\/b3c5e7b41fa3c1f2325e74449e4bb5b4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1610\/fb109037c9bed9d8d76153f99fcb420e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "58": [
+            {
+              "id": "58",
+              "name": "Metal",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "71": [
+            {
+              "id": "71",
+              "name": "Smooth metal",
+              "parentId": "717"
+            },
+            {
+              "id": "717",
+              "name": "Metal",
+              "parentId": null
+            }
+          ],
+          "717": [
+            {
+              "id": "717",
+              "name": "Metal",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "metal"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1618,
+        "type": 1,
+        "name": "Glass\u00a0 transparent",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1618\/06b2033d7a87d7a177e01e8a1340e2f9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1618\/1696c1cb2da921288b8fdb67dc4c185a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "712": [
+            {
+              "id": "712",
+              "name": "Plain",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2013,
+        "type": 1,
+        "name": "Stucco",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2013\/639c0b1bcd11346a3f328b6873f04e8e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2013\/7d99055bd71d62ffae18289f8a0c9126.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "92": [
+            {
+              "id": "92",
+              "name": "Stucco",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "66": [
+            {
+              "id": "66",
+              "name": "Stucco",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stucco"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2020,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2020\/0429b729a17f336053c2cbcccadb9021.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2020\/2e94f173d75d2b662e738df93a9e885f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "28,11,28,6.66,28,1.92,28,-11,-28,-11,-28,6.66,-28,11",
+            "contourCut": "28,0,28,-250,-28,-250,-28,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "a6b25fadfe0d5862e513db708aeeb107"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b163042ebca6d56b5c8f3ceb2ac7d6fb"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "1ae109fd505fb5d0213919e46cebb60b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 56,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2021,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2021\/d0193e2db47e4c5a2a7c5f4b46996a61.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2021\/ad5841d9cdf364f295e2ac6ce3f4b2f4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "56,11,56,6.66,56,1.92,56,-11,-56,-11,-56,6.66,-56,11",
+            "contourCut": "56,0,56,-250,0.01,-250,-0.01,-250,-56,-250,-56,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "53edabebbd76b51f9399d0ba8b51b4c2"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "82a4071b489e09b90c18fda1a08aadc1"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "acde2eaa7df5ec02e000e04cde8d2553"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 112,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2318,
+        "type": 1,
+        "name": "Siding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2318\/b59d80993c2103fb5215768eb1b41ff3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2318\/c9cef902f9b6030a06e304f342aeefe3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "68": [
+            {
+              "id": "68",
+              "name": "Wood",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "7": [
+            {
+              "id": "7",
+              "name": "Planks",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wood",
+          "planks"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2525,
+        "type": 1,
+        "name": "Laminate",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2525\/856b57c085b02b2024c0c1fe30da8846.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2525\/25a1d7a502122dfc373d8ce53059e3dd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "65": [
+            {
+              "id": "65",
+              "name": "Laminate",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "19": [
+            {
+              "id": "19",
+              "name": "Parquet & Laminate",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 600,
+            "height": 600
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3008,
+        "type": 1,
+        "name": "glass_technic",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/30\/3008\/57ec896852b1617af822154a5ea58eee.png"
+          },
+          "body": {
+            "package": "\/files\/products\/30\/3008\/fe0a0c0a29fcfbdc998dabefc144d878.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "custom"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3319,
+        "type": 2,
+        "name": "Table",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3319\/ee05be6123e1a6df81b34383a5cf6db3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3319\/7ad88740aa1f9145917e701522a41134.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "69.87,45,69.94,44.99,69.99,44.94,70,44.87,70,-44.5,70,-44.87,69.99,-44.94,69.94,-44.99,69.87,-45,69.29,-45,-69.87,-45,-69.94,-44.99,-69.99,-44.94,-70,-44.87,-70,44.5,-70,44.87,-69.99,44.94,-69.94,44.99,-69.87,45,69.29,45",
+            "contourCut": "68.85,0,68.87,-0.22,70,-71.63,70,-71.75,70,-73.75,70,-73.87,69.99,-73.94,69.94,-73.99,69.87,-74,69.29,-74,-69.29,-74,-69.87,-74,-69.94,-73.99,-69.99,-73.94,-70,-73.87,-70,-71.75,-70,-71.63,-68.83,-0.27,-68.81,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b36e81b4b336c1e42efbe80f39d3f703"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "2c05034abd9cd82a70ce31d39866a9ba"
+              },
+              {
+                "id": 2,
+                "default": 844,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "172bc965d296305c20ede9fccdffeed1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9870": [
+            {
+              "id": "9870",
+              "name": "Office desks",
+              "parentId": "9149"
+            },
+            {
+              "id": "9149",
+              "name": "Tables",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9871": [
+            {
+              "id": "9871",
+              "name": "Office desks & tables",
+              "parentId": "86"
+            },
+            {
+              "id": "86",
+              "name": "Office",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tables"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 140,
+            "height": 74,
+            "depth": 90
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3377,
+        "type": 1,
+        "name": "Stonework",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3377\/c1f5f213d1d41501178bd164334e21ed.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3377\/75bc10f79da75c8e02cd5beda7b49a93.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ],
+          "59": [
+            {
+              "id": "59",
+              "name": "Pave",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework",
+          "pave"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 41803,
+        "type": 1,
+        "name": "Matte paint",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/418\/41803\/61e60cd4edd6ddd823ccfde12aa7c86c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/418\/41803\/be207356864594d3944e02c6eaa4fa55.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "8376": [
+            {
+              "id": "8376",
+              "name": "Paint",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "389": [
+            {
+              "id": "389",
+              "name": "Paint",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": true,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 41818,
+        "type": 1,
+        "name": "Plastic matt",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/418\/41818\/8481f3dba37c5b95b553a7ea9884e72d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/418\/41818\/b21ab65581121a73c070a9c22b81c217.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "690": [
+            {
+              "id": "690",
+              "name": "Plain",
+              "parentId": "18"
+            },
+            {
+              "id": "18",
+              "name": "Plastic",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": true,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 41823,
+        "type": 1,
+        "name": "Tiles matte",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/418\/41823\/2f8b6ae25538c3a54edae1317c9d4e22.png"
+          },
+          "body": {
+            "package": "\/files\/products\/418\/41823\/2e6bb4d1325778fb431b31927e6f4b44.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "695": [
+            {
+              "id": "695",
+              "name": "Tiles plain",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": true,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 41833,
+        "type": 1,
+        "name": "Matte leather",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/418\/41833\/7988a0ac48e240a91ab3f4b2738af98e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/418\/41833\/0f7887f4af071bd26178eec0e2c30e2b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "706": [
+            {
+              "id": "706",
+              "name": "Plain leather",
+              "parentId": "50"
+            },
+            {
+              "id": "50",
+              "name": "Leather & Fur",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": true,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 53097,
+        "type": 1,
+        "name": "Oak",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/530\/53097\/f68c1292d1fbf0f2d6ddd9c2c21eab2a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/530\/53097\/7aee26f11c19a0433e520c3b38af1221.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "68": [
+            {
+              "id": "68",
+              "name": "Wood",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "69": [
+            {
+              "id": "69",
+              "name": "Solid",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "solid-wood"
+        ],
+        "property": {
+          "sizes": {
+            "width": 400,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54828,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/548\/54828\/e9386cb846a58911a5b68bd7c1371d21.png"
+          },
+          "body": {
+            "package": "\/files\/products\/548\/54828\/8090ce5647d0bd2bced033ff56a5535c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "703": [
+            {
+              "id": "703",
+              "name": "Miscellaneous",
+              "parentId": "49"
+            },
+            {
+              "id": "49",
+              "name": "One-colored",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "one-colored"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54836,
+        "type": 1,
+        "name": "Wenge",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/548\/54836\/66d5c417ff18c51030c1025d5ae02742.png"
+          },
+          "body": {
+            "package": "\/files\/products\/548\/54836\/cac48cb65a49d645eea8d3b57070669e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "68": [
+            {
+              "id": "68",
+              "name": "Wood",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "69": [
+            {
+              "id": "69",
+              "name": "Solid",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "solid-wood"
+        ],
+        "property": {
+          "sizes": {
+            "width": 125,
+            "height": 250
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55155,
+        "type": 1,
+        "name": "Wenge",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55155\/31e7f58a89b793a48fd1361260e98d6b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55155\/eefca68f7dbd02b9dd781724544c0c72.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "68": [
+            {
+              "id": "68",
+              "name": "Wood",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "69": [
+            {
+              "id": "69",
+              "name": "Solid",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "solid-wood"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 95
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55338,
+        "type": 1,
+        "name": "Polished metal",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/553\/55338\/391724a49ac80e6f4d8936b0df7fcd3f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/553\/55338\/2766e43a15d232e21537de5ac917cefd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "58": [
+            {
+              "id": "58",
+              "name": "Metal",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "71": [
+            {
+              "id": "71",
+              "name": "Smooth metal",
+              "parentId": "717"
+            },
+            {
+              "id": "717",
+              "name": "Metal",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "metal"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55344,
+        "type": 1,
+        "name": "Bronze",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/553\/55344\/c4ec8f35338f422ddb8fecffa160b068.png"
+          },
+          "body": {
+            "package": "\/files\/products\/553\/55344\/8402cac4ae7bd1651134dbd9f0ca3977.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "58": [
+            {
+              "id": "58",
+              "name": "Metal",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "71": [
+            {
+              "id": "71",
+              "name": "Smooth metal",
+              "parentId": "717"
+            },
+            {
+              "id": "717",
+              "name": "Metal",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "metal"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

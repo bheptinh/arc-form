@@ -1,0 +1,1530 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "24",
+    "items": [
+      {
+        "id": 54606,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54606\/96d462b37f44f0f7f66bc5e13857a21a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54606\/407f75937ac919d4f9fa3d08c734fe07.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 10,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54607,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54607\/0c0266cc9e0c20ba016aec188d39c104.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54607\/28053f68dec8b9d6b8a9eeb701e081ee.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 9,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54608,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54608\/4b45731bcc273ec71af565ac6a17b92b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54608\/ec3adc4c65f9529e5c0487d33f9d61b0.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 6,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54609,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54609\/d7be6f06614e2b873712bbfd0d96b318.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54609\/bdddf0ade171e8d1db57c9fce743ffcc.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 6,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54610,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54610\/f6386e3f18f525efdba8a2127ac70c0d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54610\/240c95e19dd862e73de55f5c802ecbf4.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 7,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54611,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54611\/a165bf5a42c3599011e6cbaf101831d1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54611\/8e03c3829dff361a92fa9b2c5f07d330.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 5,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54612,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54612\/30bd22d8dc347dcaa689b3c7ad7d55f2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54612\/17a83f6b874784a7920ccf7c36dad1c4.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 4,
+            "depth": 4
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 54613,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/546\/54613\/d424a6d6c35a69dfe9bffab780892bb0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/546\/54613\/1d0e0cdaa2caf1936947097e58e2e43f.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9752": [
+            {
+              "id": "9752",
+              "name": "Plinths",
+              "parentId": "9751"
+            },
+            {
+              "id": "9751",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 3,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47715,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47715\/96d462b37f44f0f7f66bc5e13857a21a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47715\/407f75937ac919d4f9fa3d08c734fe07.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 10,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47716,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47716\/0c0266cc9e0c20ba016aec188d39c104.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47716\/28053f68dec8b9d6b8a9eeb701e081ee.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 9,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47717,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47717\/4b45731bcc273ec71af565ac6a17b92b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47717\/ec3adc4c65f9529e5c0487d33f9d61b0.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 6,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47718,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47718\/d7be6f06614e2b873712bbfd0d96b318.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47718\/bdddf0ade171e8d1db57c9fce743ffcc.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 6,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47719,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47719\/f6386e3f18f525efdba8a2127ac70c0d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47719\/240c95e19dd862e73de55f5c802ecbf4.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 7,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47720,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47720\/a165bf5a42c3599011e6cbaf101831d1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47720\/8e03c3829dff361a92fa9b2c5f07d330.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 5,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47721,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47721\/30bd22d8dc347dcaa689b3c7ad7d55f2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47721\/17a83f6b874784a7920ccf7c36dad1c4.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 4,
+            "depth": 4
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47722,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/477\/47722\/d424a6d6c35a69dfe9bffab780892bb0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/477\/47722\/1d0e0cdaa2caf1936947097e58e2e43f.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 3,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "82376464a17d9034b8eb80bc05cf15b0",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42632,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42632\/d424a6d6c35a69dfe9bffab780892bb0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42632\/1d0e0cdaa2caf1936947097e58e2e43f.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 3,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42633,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42633\/30bd22d8dc347dcaa689b3c7ad7d55f2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42633\/17a83f6b874784a7920ccf7c36dad1c4.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 4,
+            "depth": 4
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42634,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42634\/a165bf5a42c3599011e6cbaf101831d1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42634\/8e03c3829dff361a92fa9b2c5f07d330.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 5,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42635,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42635\/f6386e3f18f525efdba8a2127ac70c0d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42635\/240c95e19dd862e73de55f5c802ecbf4.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 7,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42636,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42636\/d7be6f06614e2b873712bbfd0d96b318.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42636\/bdddf0ade171e8d1db57c9fce743ffcc.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 6,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42637,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42637\/4b45731bcc273ec71af565ac6a17b92b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42637\/ec3adc4c65f9529e5c0487d33f9d61b0.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 6,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42638,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42638\/0c0266cc9e0c20ba016aec188d39c104.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42638\/28053f68dec8b9d6b8a9eeb701e081ee.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 9,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42639,
+        "type": 5,
+        "name": "Molding",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42639\/96d462b37f44f0f7f66bc5e13857a21a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42639\/407f75937ac919d4f9fa3d08c734fe07.svg",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": [],
+        "tags": [
+          "moldings"
+        ],
+        "property": {
+          "sizes": {
+            "width": 0,
+            "height": 10,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Roomtodo - online home design and room planner</title>
+  <link rel="icon" type="image/png" href="/public/img/favicon.png">
+
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="/Assets/css/designer/suneditor.min.css?v=7fd718"> -->
+
+  <!--    <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">-->
+  <!--    <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/assets/css/suneditor-contents.css" rel="stylesheet">-->
+  <link rel="stylesheet" type="text/css" media="screen" href="/src_designer/css/style.css?v=7fd718">
+
+</head>
+
+<body>
+  <div class="preloader preloader_main">
+    <div class="preloader-cube"></div>
+  </div>
+
+  <div id="app"></div>
+
+  <!-- 
+  <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script> 
+    -->
+
+  <span id="spanGlyphs"
+    style="visibility: hidden; position: absolute; top:0; font-family: Roboto, sans-serif">&#8372;&#1168;&#7936;&#880;&#7840;&#7680;&#305;</span>
+
+  <script>
+    var R2D = {};
+    R2D.RECURRING_PLANS = { "": { "1": "11" }, "basic": { "1": "5", "6": "6", "12": "7" }, "pro": { "1": "8", "6": "9", "12": "10" } };
+    R2D.URL = {
+      MERCHANT_SITE_KEY: '',
+      REACT_BASEPATH: '/planner',
+      // URL_SIGN_IN_VIA_FB: '/api/auth/login_via_fb?key=4500282e6846fe6650de81bd35d27540',
+      // URL_SIGN_IN_VIA_GOOGLE: '/api2/user/login_via_google?key=4500282e6846fe6650de81bd35d27540',
+      // DOMAIN: 'https://roomtodo.com',
+      DOMAIN: 'http://localhost:5174',
+      URL_SIGN_IN: '/api/auth/login?key=4500282e6846fe6650de81bd35d27540',
+      URL_SIGN_OUT: '/api/auth/ajax_logout?key=4500282e6846fe6650de81bd35d27540',
+      URL_CHECK_USER: '/api/user/logged?key=4500282e6846fe6650de81bd35d27540',
+      URL_USER_INFO: '/api2/user/info?key=4500282e6846fe6650de81bd35d27540',
+      //URL_LOAD_ALL_PLANS:'/api/planner/list?key=//',
+      URL_LOAD_ALL_PLANS: '/api2/planner/list?key=4500282e6846fe6650de81bd35d27540',
+      CATALOG_TREE: '/api/category/tree?key=4500282e6846fe6650de81bd35d27540',
+      CATALOG_MATERIALS_TREE_FOR_MODELS: '/api/category/public_materials?key=4500282e6846fe6650de81bd35d27540',
+      URL_GET_PRODUCT: '/api/category/productsByIds?key=4500282e6846fe6650de81bd35d27540',
+      URL_GET_CATEGORY_PRODUCTS: '/api/category/products?key=4500282e6846fe6650de81bd35d27540',
+      URL_GET_MATERIALS_SET: '/api/category/getMaterialsBySetId?key=4500282e6846fe6650de81bd35d27540',
+      URL_GET_SET_TREE: '/api/category/get_set_tree?key=4500282e6846fe6650de81bd35d27540',
+      URL_LOAD_SHARED_PLAN: '/api/planner/open_shared?key=4500282e6846fe6650de81bd35d27540&plan_hash=bi0t3wvqnek',
+      URL_LOAD_PLAN: '/api/planner/open?key=4500282e6846fe6650de81bd35d27540',
+      URL_SAVE_PLAN: '/api/planner/save?key=4500282e6846fe6650de81bd35d27540',
+      URL_RENAME_PLAN: '/api/planner/rename?key=4500282e6846fe6650de81bd35d27540',
+      URL_COPY_PLAN: '/api/planner/copy?key=4500282e6846fe6650de81bd35d27540',
+      URL_DELETE_PLAN: '/api/planner/delete?key=4500282e6846fe6650de81bd35d27540',
+      URL_SHARE_PLAN: '/api/planner/shareLink?key=4500282e6846fe6650de81bd35d27540',
+      URL_LANGUAGE_LIST: '/api/language/list?key=4500282e6846fe6650de81bd35d27540',
+      URL_SET_LANGUAGE: '/api/language/set?key=4500282e6846fe6650de81bd35d27540',
+      URL_TRANSLATION: '/api/user/translations?key=4500282e6846fe6650de81bd35d27540',
+      URL_STYLES: '/api/user/theme?key=4500282e6846fe6650de81bd35d27540',
+      URL_ERROR_REPORTING: '',
+      URL_EXPORT_SCENE: '/api2/exporter?key=4500282e6846fe6650de81bd35d27540',
+      URL_RENDER_ALL: '/api/render?key=4500282e6846fe6650de81bd35d27540',
+      URL_RENDER_NEW: '/api/render?key=4500282e6846fe6650de81bd35d27540',
+      URL_RENDER_GET: '/api/render/{id}?key=4500282e6846fe6650de81bd35d27540',
+      URL_RENDER_DELETE: '/api/render/{id}?key=4500282e6846fe6650de81bd35d27540',
+      URL_RENDER_RELOAD: '/api/render/restart/{id}?key=4500282e6846fe6650de81bd35d27540',
+      URL_RENDER_ENV: '/api/planner/get_render_env?key=4500282e6846fe6650de81bd35d27540',
+      URL_USER_DATA: '/api/user/data?key=4500282e6846fe6650de81bd35d27540',
+      URL_INFORMATION: '/api/user/get_tips_content?key=4500282e6846fe6650de81bd35d27540',
+      URL_INFORMATION_DATA: '/api/user/get_tips_data?key=4500282e6846fe6650de81bd35d27540',
+      URL_PROFILE: '/api/user/profile?key=4500282e6846fe6650de81bd35d27540',
+      URL_SET_PROFILE: '/api/user/set_profile?key=4500282e6846fe6650de81bd35d27540',
+      URL_UPLOAD_PRIVATE: '/api/planner/upload_private_entity?key=4500282e6846fe6650de81bd35d27540',
+      URL_DELETE_PRIVATE: '/api/planner/delete_private_entity?key=4500282e6846fe6650de81bd35d27540',
+      URL_PAY_FORM: '/api/subscription/get_form?key=4500282e6846fe6650de81bd35d27540',
+      URL_CANCEL_SUBSCRIPTION: '/api/subscription/cancel_subscription?key=4500282e6846fe6650de81bd35d27540',
+      //URL_REGISTRATION:'/api/auth/registration?key=//',
+      URL_FORGOT_PASSWORD: '/api/auth/recover_password?key=4500282e6846fe6650de81bd35d27540',
+      URL_RECOVERY_PASSWORD_REQUEST: '/api2/user/reset-password?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_RECOVERY_PASSWORD_CONFIRM: '/api2/user/reset-password/{token}?key=4500282e6846fe6650de81bd35d27540',//PUT
+      URL_CHANGE_PASSWORD: '/api2/user/change-password?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_UPDATE_PROFILE: '/api2/user/update-profile?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_USER_LOGIN: '/api2/user/login?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_USER_LOGIN_SOCIAL: '/api2/user/login-social?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_USER_REGISTER: '/api2/user/register?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_DELETE_ACCOUNT: '/api2/user',//DELETE
+      URL_CONFIG: '/api/planner/json_config?key=4500282e6846fe6650de81bd35d27540',
+      URL_SAVE_CUSTOM_REGISTRATION: '/api/auth/custom_registration?key=4500282e6846fe6650de81bd35d27540',
+      URL_GET_CUSTOM_REGISTRATION: '/api/auth/get_registration_form?key=4500282e6846fe6650de81bd35d27540',
+      URL_SEND_PROJECT_CALC: '/api/auth/send_project_calc?key=4500282e6846fe6650de81bd35d27540',
+      URL_PLANNER_CONNECT: '/api/planner/connect?key=4500282e6846fe6650de81bd35d27540',
+      URL_FAVORITES_GET: '/api/favorites?key=4500282e6846fe6650de81bd35d27540',
+      URL_FAVORITES_ADD: '/api/favorites/{id}?key=4500282e6846fe6650de81bd35d27540',
+      URL_FAVORITES_DELETE: '/api/favorites/{id}?key=4500282e6846fe6650de81bd35d27540',
+      URL_CATALOG_SEARCH: '/api/catalog/search?key=4500282e6846fe6650de81bd35d27540',
+      URL_PLAN_PDF_CONVERT: '/api/planner/floor_plan_convert?key=4500282e6846fe6650de81bd35d27540',
+
+      URL_UPLOAD_FILE: '/api/entities/upload',
+      URL_UPLOAD_ENTITY: '/api/entities',
+      URL_ENTITY_TAGS: '/api/entities/tags',
+      URL_CONFIG_APPS: '/api/entities/apps',
+
+      URL_CAMERA_VIEWS: '/api2/render-camera-views',
+      URL_360_TOURS_GET: '/api2/tours/list?key=4500282e6846fe6650de81bd35d27540',
+      URL_AUTO_SAVE_UPDATE: '/api2/user/update-autosave',
+      URL_PLAN_SHARING: '/api2/planner-sharing/?key=4500282e6846fe6650de81bd35d27540',
+
+      URL_AI_LIST: '/api2/ai?key=4500282e6846fe6650de81bd35d27540',//GET
+      URL_AI_CREATE: '/api2/ai/?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_AI_GET: '/api2/ai/{id}?key=4500282e6846fe6650de81bd35d27540',//GET
+      URL_AI_GET_LAST_TASK: '/api2/ai/get_last?key=4500282e6846fe6650de81bd35d27540',//GET
+    };
+
+    R2D.OPTIONS = {
+      PRO_PLAN: false,
+      PLAN_HASH: 'bi0t3wvqnek',
+      PLAN_ID: '',
+      CLIENT_KEY: 'd7322ed717dedf1eb4e6e52a37ea7bcd',
+      NEED_DOWNSCALE_TEXTURES: 1,
+      TEXTURE_MULTIPLIER: 1,
+    };
+  </script>
+
+  <!-- 
+  <script src="/switch_image/"></script>
+  <script src="/panoramas_360/"></script>
+  <script src="/renders_2k_4k/"></script>
+
+  <script src="/image_with_model_ai/"></script> 
+  -->
+
+  <!-- <script src="/src_designer/js/social.js?v=7fd718"></script> -->
+  <script src="/src_designer/js/three.min.js"></script>
+  <script src="/src_designer/js/tris.js"></script>
+  <script src="/src_designer/js/jszip.min.js"></script>
+  <script src="/src_designer/js/jszip-utils.min.js"></script>
+  <script src="/src_designer/js/OrbitControls.js"></script>
+
+  <script src="/src_designer/js/plannercore.js"></script>
+  <script src="/src_designer/js/user.js"></script>
+
+  <script src="/src_designer/js/react.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script type="module">
+    import { IFCCreator } from '/src_designer/js/IFCCreator/IFCCreator.js?1';
+    R2D.IFCCreator = IFCCreator;
+  </script>
+  <!-- 
+  <script src="/Assets/libs/socket-io/socket.io.min.js"></script>
+  <script src="/Assets/js/online-dashboard/client.js?v=7fd71830319"></script> 
+  -->
+</body>
+
+</html>
