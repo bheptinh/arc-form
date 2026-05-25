@@ -1,0 +1,1130 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "10",
+    "items": [
+      {
+        "id": 643,
+        "type": 2,
+        "name": "Washing machine",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/6\/643\/7725ba140adb1f2c3258726647fb95ae.png"
+          },
+          "body": {
+            "package": "\/files\/products\/6\/643\/2c1a6f0662f8660a7d253e34f482361a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "22.98,23.28,25.43,-24.69,25.43,-24.94,25.41,-24.98,25.36,-25,7.9,-26.04,3.66,-26.04,3.6,-26.04,3.54,-26.04,3.5,-26.04,3.47,-26.04,3.46,-26.04,-3,-25.65,-17.77,-23.08,-17.79,23.28,-5.5,23.28,-4.26,23.28,8.18,23.28,12.51,23.28,13.66,23.28,14.75,23.28,19.37,23.28,20.09,23.28,20.74,23.28,21.8,23.28,22.2,23.28,22.77,23.28,22.92,23.28",
+            "contourCut": "0.34,-0.01,20.41,-37.25,21.02,-38.43,21.55,-39.65,22,-40.91,22.37,-42.2,22.65,-43.49,22.85,-44.83,25.43,-74.1,25.41,-74.23,25.38,-74.35,25.31,-74.47,25.23,-74.57,25.13,-74.65,25.01,-74.72,24.89,-74.76,5.88,-77.69,5.48,-77.69,5.29,-77.66,-2.03,-76.49,-2.28,-76.41,-2.52,-76.29,-2.73,-76.12,-2.9,-75.91,-14.53,-58.23,-15.21,-57.09,-15.82,-55.9,-16.36,-54.68,-16.81,-53.42,-17.17,-52.14,-17.46,-50.84,-17.65,-49.52,-17.76,-48.19,-17.79,-46.86,-17.72,-45.52,-17.57,-44.2,-17.33,-42.88,-17.01,-41.59,-16.6,-40.32,-16.11,-39.08,-0.29,-0.01",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "f06f555214a43b2f87d5691a18e69f37"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7a91e9e39bd7b40d9cdc9794cdd3680c"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "20ae2c6356acd0aca08c4340e3ba3fd9"
+              },
+              {
+                "id": 3,
+                "default": 119,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "cbea35d9d7a25447bcfed07ab41f1c95"
+              },
+              {
+                "id": 4,
+                "default": 158,
+                "name": "mesh_4",
+                "source": "none",
+                "hash": "21f383833260a5c12476ed227888d8b1"
+              },
+              {
+                "id": 5,
+                "default": 2694,
+                "name": "mesh_5",
+                "source": "none",
+                "hash": "212d5bf270b245a97eb2ab3743866de0"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "household appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 84,
+            "depth": 61
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 4532,
+        "type": 2,
+        "name": "Boiler",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/45\/4532\/ae8997ead200dc89b1f201ed00ad6a69.png"
+          },
+          "body": {
+            "package": "\/files\/products\/45\/4532\/28b292fa3af166495258afc9b875cfd3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "13.42,21.5,18.89,9.36,19.41,8.2,19.86,7.02,20.24,5.8,20.54,4.57,20.77,3.32,20.92,2.06,21,0.79,21,-0.47,20.92,-1.74,20.77,-3,20.54,-4.25,20.24,-5.48,19.86,-6.69,19.41,-7.88,18.89,-9.04,18.3,-10.16,17.64,-11.25,16.92,-12.29,16.14,-13.29,15.3,-14.24,14.4,-15.14,13.45,-15.98,12.45,-16.76,11.41,-17.48,10.32,-18.14,9.2,-18.73,3.41,-21.44,0.01,-21.5,-3.41,-21.44,-9.2,-18.73,-10.32,-18.14,-11.41,-17.48,-12.45,-16.76,-13.45,-15.98,-14.4,-15.14,-15.3,-14.24,-16.14,-13.29,-16.92,-12.29,-17.64,-11.25,-18.3,-10.16,-18.89,-9.04,-19.41,-7.88,-19.86,-6.69,-20.24,-5.48,-20.54,-4.25,-20.77,-3,-20.92,-1.74,-21,-0.47,-21,0.79,-20.92,2.06,-20.77,3.32,-20.54,4.57,-20.24,5.8,-19.86,7.02,-19.41,8.2,-13.65,21.5",
+            "contourCut": "6.97,0,19.26,-8.46,20.67,-10.09,21,-11.72,21,-76.22,20.91,-76.61,20.56,-77.6,19.75,-79.02,18.49,-80.23,16.89,-81,0,-81,-2.04,-81,-4.04,-81,-5.99,-81,-7.85,-81,-9.6,-81,-11.2,-81,-12.64,-81,-13.9,-81,-14.96,-81,-15.8,-81,-16.4,-81,-16.77,-81,-16.89,-81,-18.49,-80.23,-19.75,-79.02,-20.56,-77.6,-20.91,-76.61,-21,-76.22,-21,-11.72,-20.67,-10.09,-19.26,-8.46,-6.99,0,-4.95,0,-4.47,0,4.45,0,5.49,0,6.54,0,6.86,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "Mesh_0005",
+                "source": "bank",
+                "hash": "97a08f7e26cf6f2a966446b742bb8b99"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41803,
+                "default": "#ff0000",
+                "current": "#ff0000",
+                "name": "Mesh_1001",
+                "source": "none",
+                "hash": "60045a461f6fba9ca73ed02d32dcae55"
+              },
+              {
+                "id": 2,
+                "default": 1555,
+                "name": "Mesh_2005",
+                "source": "bank",
+                "hash": "f141f6fd85b024c883c04cb7fcf281c6"
+              },
+              {
+                "id": 3,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "Mesh_3005",
+                "source": "bank",
+                "hash": "852713f3340793b4b2983e3d9c857f6b"
+              },
+              {
+                "id": 4,
+                "default": 4533,
+                "name": "Mesh_4",
+                "source": "none",
+                "hash": "3f647b986a487ab503b397403ba8064d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "household appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 42,
+            "height": 81,
+            "depth": 43
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "150.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64631,
+        "type": 2,
+        "name": "vacuum cleaner",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64631\/13da74ed9beda1a3f1750c1c7414a673.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64631\/c783f353757491fb8a920f002dc40f60.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0,17.32,1.69,17.24,3.37,16.99,5.01,16.58,6.61,16.01,8.14,15.29,9.59,14.42,10.95,13.41,12.2,12.27,13.34,11.01,14.35,9.65,15.22,8.2,15.95,6.67,16.52,5.07,16.93,3.43,17.18,1.76,17.26,0.06,17.18,-1.63,16.93,-3.3,16.52,-4.95,15.95,-6.54,15.22,-8.07,14.35,-9.52,13.34,-10.89,12.2,-12.14,10.95,-13.28,9.59,-14.29,8.14,-15.16,5.89,-16.31,5.75,-16.36,4.96,-16.6,4.06,-16.84,3.6,-16.94,3.04,-17.05,2.55,-17.13,1.99,-17.21,1.5,-17.26,0.98,-17.3,0.47,-17.32,-0.03,-17.32,-0.53,-17.31,-1.03,-17.28,-1.54,-17.23,-2.04,-17.17,-2.59,-17.09,-3.13,-17.01,-3.65,-16.91,-4.16,-16.81,-4.62,-16.7,-5.04,-16.59,-5.39,-16.49,-5.65,-16.41,-5.94,-16.32,-5.97,-16.31,-8.14,-15.16,-9.59,-14.29,-10.95,-13.28,-12.2,-12.14,-13.34,-10.89,-14.35,-9.52,-15.22,-8.07,-15.95,-6.54,-16.52,-4.95,-16.93,-3.3,-17.18,-1.63,-17.26,0.06,-17.18,1.76,-16.93,3.43,-16.52,5.07,-15.95,6.67,-15.22,8.2,-14.35,9.65,-13.34,11.01,-12.2,12.27,-10.95,13.41,-9.59,14.42,-8.14,15.29,-6.61,16.01,-5.01,16.58,-3.37,16.99,-1.69,17.24",
+            "contourCut": "16.8,0,17.07,-0.19,17.24,-0.42,17.26,-0.66,17.26,-6.57,17.15,-7.23,17.02,-7.56,16.73,-7.75,0.82,-8.38,-0.04,-8.38,-0.26,-8.38,-0.86,-8.38,-0.89,-8.38,-16.73,-7.75,-17.02,-7.56,-17.15,-7.23,-17.26,-6.57,-17.26,-0.66,-17.24,-0.42,-17.07,-0.19,-16.8,0,0,0,1.65,0,3.28,0,4.88,0,6.43,0,7.92,0,9.33,0,10.66,0,11.88,0,12.99,0,13.97,0,14.82,0,15.52,0,16.08,0,16.48,0,16.72,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#212121",
+                "current": "#212121",
+                "name": "black_plastic",
+                "source": "bank",
+                "hash": "6933c3f0e6a2aac7fe9bf95ae3d8a897"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#4d4d4d",
+                "current": "#4d4d4d",
+                "name": "gray_plastic",
+                "source": "bank",
+                "hash": "4a156fa2be3d51c916af31269337ff40"
+              },
+              {
+                "id": 2,
+                "default": 0,
+                "name": "buttons",
+                "source": "none",
+                "hash": "92f99078e8f7d8cda632edf0dda716d4"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 35,
+            "height": 8,
+            "depth": 35
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64632,
+        "type": 2,
+        "name": "Vacuum cleaner",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64632\/352e59bb1ce681b697afc59c26c9df4f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64632\/aa94947e5525fbd118ed2aded6828fd4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.01,10.49,2.34,10.47,2.95,10.46,3.77,10.44,4.09,10.43,4.27,10.41,5.24,10.3,10.5,5.54,10.52,5.31,10.53,5.07,10.54,3.66,10.54,3.1,10.54,2.8,10.53,1.74,10.52,1.54,10.5,1.37,5.62,-7.4,4.17,-9.35,4.03,-9.48,3.65,-9.8,3.13,-10.11,2.55,-10.21,0.89,-10.49,0.69,-10.49,-0.63,-10.49,-0.66,-10.49,-0.8,-10.49,-0.83,-10.49,-0.89,-10.48,-2.5,-10.21,-3.07,-10.11,-3.59,-9.8,-3.97,-9.48,-4.11,-9.35,-5.57,-7.39,-10.5,1.37,-10.52,1.54,-10.53,1.74,-10.54,2.8,-10.54,3.1,-10.54,3.66,-10.53,5.07,-10.52,5.31,-10.5,5.54,-9.83,6.51,-5.22,10.3,-4.25,10.41,-4.07,10.43,-3.75,10.44,-2.93,10.46,-2.32,10.47",
+            "contourCut": "10.5,0,10.52,-0.2,10.53,-0.39,10.54,-1.57,10.54,-4.11,10.54,-5.94,10.53,-6.69,5.62,-101.88,3.82,-118.39,3.27,-120.29,3.2,-120.33,-3.14,-120.33,-3.21,-120.29,-3.76,-118.39,-5.57,-101.88,-10.53,-6.69,-10.54,-5.94,-10.54,-4.11,-10.54,-1.57,-10.53,-0.39,-10.52,-0.2,-10.5,0,-9.9,0,8.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#23509e",
+                "current": "#23509e",
+                "name": "Plastik",
+                "source": "bank",
+                "hash": "2bc4dab5da6d9121b6dde4fd2f02893f"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#1a1a1a",
+                "current": "#1a1a1a",
+                "name": "button",
+                "source": "none",
+                "hash": "5c405eb1e97229e09b9788d75e4f56c7"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#4f4f4f",
+                "current": "#4f4f4f",
+                "name": "shaft",
+                "source": "none",
+                "hash": "29b3ed06a308a5077732d06698667342"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#e6e6e6",
+                "current": "#e6e6e6",
+                "name": "rubber",
+                "source": "none",
+                "hash": "d6dc13aba2ca8cf2b511b5d8b716e0a7"
+              },
+              {
+                "id": 4,
+                "default": 41837,
+                "name": "glass",
+                "source": "bank",
+                "hash": "85ad3875d6f5ec136e170f7b6e6a7484"
+              },
+              {
+                "id": 5,
+                "default": 1610,
+                "name": "pipe",
+                "source": "bank",
+                "hash": "46da3ff9ce499663f1d1aa43dc9c215d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 21,
+            "height": 120,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3274,
+        "type": 2,
+        "name": "Iron",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3274\/f3b25dff9f53aefacbf7227243ee3b74.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3274\/c59f1a907fb678de39f0d7f3f01146f7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.98,13.46,5.55,13.3,5.81,13.19,5.88,13.08,6.4,7.08,6.5,3.42,6.41,0.56,6.14,-2.05,5.49,-4.53,5.33,-5.06,4.79,-6.54,4.57,-7.14,3.73,-8.76,3.05,-9.97,2.58,-10.73,2.17,-11.28,0.61,-13.15,0,-13.54,-0.61,-13.15,-2.17,-11.28,-2.58,-10.73,-3.05,-9.97,-3.73,-8.76,-4.57,-7.14,-4.79,-6.54,-5.33,-5.06,-5.49,-4.53,-6.14,-2.05,-6.41,0.56,-6.5,3.42,-6.4,7.08,-5.93,13.08,-5.9,13.19,-5.78,13.28,-5.49,13.37",
+            "contourCut": "6.46,0.19,6.5,-0.93,6.4,-2.26,6.18,-3.64,6.13,-3.86,6.1,-3.99,5.64,-5.46,5.39,-6.12,5.08,-6.79,4.39,-8.14,4.07,-8.73,3.76,-9.27,3.47,-9.74,3.11,-10.27,2.79,-10.72,2.39,-11.18,1.47,-12.16,0.86,-12.77,0.8,-12.81,0.67,-12.81,0.38,-12.81,-0.98,-12.78,-2.55,-11.09,-3.02,-10.49,-3.6,-9.74,-3.92,-9.27,-4.2,-8.73,-4.48,-8.14,-4.75,-7.55,-5.01,-6.98,-5.4,-6.07,-5.64,-5.46,-6.1,-3.99,-6.13,-3.86,-6.18,-3.64,-6.4,-2.26,-6.5,-0.93,-6.46,0.19,-6.33,0.19,-6.11,0.19,-0.65,0.19,-0.19,0.19,0,0.19,6.11,0.19,6.33,0.19,6.4,0.19",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54837,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ed9dad789fe05ccfc651bb748317c8dc"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "43a9e2c6f5461a76d870b51e4eca77eb"
+              },
+              {
+                "id": 2,
+                "default": 55153,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "7391e6476674f53064044c515b2f30be"
+              },
+              {
+                "id": 3,
+                "default": 55338,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "5f9a0cb093944f236dc29ac40ec60b3a"
+              },
+              {
+                "id": 4,
+                "default": 119,
+                "name": "mesh_4",
+                "source": "none",
+                "hash": "3041ee7566f9249689a31dc7eaba5a30"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "household appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 13,
+            "height": 13,
+            "depth": 27
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64633,
+        "type": 2,
+        "name": "Washing and drying machines",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64633\/3e850c2533c945bcacbb7b70c315e054.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64633\/258c21e51c0293c01ff608801e6e5108.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "27.65,31,30.98,30.91,30.98,-24.47,30.92,-28.24,30.64,-28.87,27.55,-30.93,26.5,-30.97,20.94,-31,-20.68,-31,-20.81,-31,-26.37,-30.97,-27.42,-30.93,-30.83,-28.64,-30.94,-28.24,-30.98,-24.09,-30.71,30.91,-27.66,31",
+            "contourCut": "27.65,0,30.96,-0.09,30.98,-84.27,30.98,-170.05,30.64,-170.23,0.12,-170.23,-30.83,-170.23,-30.96,-85.31,-30.98,-0.09,-27.66,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41804,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "-",
+                "source": "bank",
+                "hash": "b15ad7ff6d0a9b159e227342436487cc"
+              },
+              {
+                "id": 1,
+                "default": 55153,
+                "name": "Sklo",
+                "source": "bank",
+                "hash": "049e822afaff7e21bc24cab2d6857ad6"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41804,
+                "default": "#e6e6e6",
+                "current": "#e6e6e6",
+                "name": "korpys",
+                "source": "bank",
+                "hash": "1c53bb77cc12d7bccf99d67843063543"
+              },
+              {
+                "id": 3,
+                "default": 1610,
+                "name": "inside",
+                "source": "bank",
+                "hash": "35aa378d457afb8106b0958cf4e4e5ef"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41804,
+                "default": "#0f0f0f",
+                "current": "#0f0f0f",
+                "name": "gym",
+                "source": "bank",
+                "hash": "5855a4d68711fb3285723014304273fe"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 62,
+            "height": 170,
+            "depth": 62
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 645,
+        "type": 2,
+        "name": "Washing machine",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/6\/645\/0419dcf53bc3ffbb8942a71430ad2167.png"
+          },
+          "body": {
+            "package": "\/files\/products\/6\/645\/9ed3a1429cc82e3e4362817ac9d9998e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-27.29,31,28.5,30.86,29.25,30.61,29.66,30.23,29.83,29.7,29.88,28.99,30,18.12,30,16.24,30,15.36,29.43,-22.83,29.08,-24.84,28.39,-26.31,27.48,-27.36,26.14,-28.06,24.29,-28.5,1.06,-30.94,0.56,-30.99,0.06,-31,-0.45,-30.99,-0.95,-30.94,-24.27,-28.51,-26.12,-28.07,-27.46,-27.37,-28.37,-26.32,-29.07,-24.86,-29.42,-22.84,-30,15.35,-30,16.23,-30,17.93,-30,17.97,-30,18.11,-29.89,28.98,-29.84,29.69,-29.66,30.22,-29.26,30.6,-28.5,30.85",
+            "contourCut": "30,0,30,-77.23,30,-79.72,29.99,-80.13,29.88,-84.04,29.87,-84.2,29.82,-84.49,29.65,-84.68,29.24,-84.81,28.5,-84.9,-27.29,-84.96,-28.5,-84.9,-29.25,-84.8,-29.65,-84.67,-29.82,-84.47,-29.88,-84.2,-29.99,-80.13,-30,-79.72,-30,-77.32,-30,-77.23,-30,-9.53,-30,0,-24.27,0,26.14,0,27.48,0,29.32,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#ffffff",
+                "current": "#ffffff",
+                "name": "Mesh_0",
+                "source": "bank",
+                "hash": "f9c07cbfe15c4b8b3d0a109cd999259e"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Mesh_1",
+                "source": "bank",
+                "hash": "9bb3897186d1c85692cfc7a1a4b47954"
+              },
+              {
+                "id": 2,
+                "default": 119,
+                "name": "Mesh_2",
+                "source": "bank",
+                "hash": "cc784fe8eb0baf2f47c5be3a3f2798f6"
+              },
+              {
+                "id": 3,
+                "default": 2679,
+                "name": "Mesh_3017",
+                "source": "none",
+                "hash": "f3e5123faaa878202a5123bf472e115c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "household appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 85,
+            "depth": 62
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 4547,
+        "type": 2,
+        "name": "Boiler",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/45\/4547\/519efe300b3566ad5ffd1299e22a6d37.png"
+          },
+          "body": {
+            "package": "\/files\/products\/45\/4547\/296ae6ac0fa780ae5c5e241915e5632f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "22.28,14,22.93,13.94,23.49,13.76,23.94,13.43,24.26,12.98,24.44,12.42,24.5,11.77,24.5,-7.18,24.5,-11.16,24.44,-11.81,24.26,-12.37,23.94,-12.83,23.49,-13.15,22.93,-13.34,22.28,-13.39,6.83,-13.97,5.92,-14,5.87,-14,-6.01,-14,-6.11,-14,-6.2,-14,-6.26,-14,-6.3,-14,-6.32,-14,-7.22,-13.97,-22.28,-13.39,-22.93,-13.34,-23.49,-13.15,-23.94,-12.83,-24.26,-12.37,-24.44,-11.81,-24.5,-11.16,-24.5,-7.17,-24.5,11.77,-24.44,12.42,-24.26,12.98,-23.94,13.43,-23.49,13.76,-22.93,13.94,-22.28,14",
+            "contourCut": "22.05,0,22.5,-0.02,22.79,-0.05,22.98,-0.1,23.16,-0.15,23.34,-0.23,23.46,-0.35,23.51,-0.42,24.5,-2.83,24.5,-4.07,24.49,-77.2,23.54,-79.46,23.46,-79.63,23.34,-79.75,23.05,-79.89,22.84,-79.94,22.52,-79.98,22.06,-80,-22.06,-80,-22.52,-79.98,-22.84,-79.94,-23.06,-79.89,-23.34,-79.75,-23.46,-79.63,-23.54,-79.46,-24.49,-77.2,-24.5,-4.07,-24.5,-2.83,-23.51,-0.42,-23.46,-0.35,-23.34,-0.23,-23.16,-0.15,-22.91,-0.08,-22.79,-0.05,-22.5,-0.02,-22.06,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#0d0d0d",
+                "current": "#0d0d0d",
+                "name": "Mesh_0",
+                "source": "bank",
+                "hash": "76f565efee30b41d41a19653a2acf0d9"
+              },
+              {
+                "id": 1,
+                "default": 4548,
+                "name": "Mesh_1",
+                "source": "none",
+                "hash": "77b853dc4b474b9994559752acf5f05e"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "Mesh_2",
+                "source": "bank",
+                "hash": "9aee03df8a95d382b2ed60ec5d720173"
+              },
+              {
+                "id": 3,
+                "default": 55335,
+                "name": "Mesh_3",
+                "source": "bank",
+                "hash": "e4c1b99e51cced9bfe9e0a2ff4d855fa"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "household appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 49,
+            "height": 80,
+            "depth": 28
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "150.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64634,
+        "type": 2,
+        "name": "vacuum cleaner",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64634\/5e75dc457d84c3c84febb1df63233934.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64634\/e6ae7c9edb28fb4b6e978f2d8849044e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "17.68,32.18,19.5,31.68,20.37,31.33,36.53,18.97,37.18,17.11,35.7,12.7,23.83,-16.59,16.65,-24.21,-9.53,-30.61,-11.66,-31.05,-12.79,-31.23,-20.33,-32.15,-20.67,-32.18,-26.93,-31.04,-28.67,-30.43,-30.27,-29.63,-36.61,-25.8,-36.67,-24.62,-36.75,-22.38,-36.95,-15.84,-37.12,-9.24,-37.16,-6.93,-37.18,-5.68,-37.16,-5.63,-11.33,15.02,-7.74,17.52,-2.77,20.84,2.82,24.43,6.27,26.5,15.54,31.63,16.76,32.13",
+            "contourCut": "-34,0,16.94,-0.03,23.83,-0.04,36.9,-99.61,37.18,-102.09,36.71,-104.68,33.15,-120.72,32.37,-123.15,31.16,-125.33,29.53,-126.94,27.59,-127.76,26.24,-127.87,24.19,-127.86,22.26,-127.14,20.6,-125.83,-22.71,-72.91,-23.77,-71.21,-34.36,-45.53,-35.67,-42.24,-35.72,-42.03,-36.44,-38.75,-36.48,-38.55,-37.12,-17.84,-37.16,-15.11,-37.18,-11.78,-37.16,-8.25,-37.1,-4.96,-37.02,-2.29,-36.93,-0.56,-36.83,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#3b3b3b",
+                "current": "#3b3b3b",
+                "name": "black_plastic",
+                "source": "bank",
+                "hash": "1ccbea1cf3b89bb87080dd1965c28e2d"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41819,
+                "default": "#b5b5b5",
+                "current": "#b5b5b5",
+                "name": "grey_plastic",
+                "source": "bank",
+                "hash": "71803c8b54653301b9625413492eaec1"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41819,
+                "default": "#7d7d7d",
+                "current": "#7d7d7d",
+                "name": "black_plastic003",
+                "source": "bank",
+                "hash": "570b932d46aed39a958d84d8df1bf2b7"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41819,
+                "default": "#545454",
+                "current": "#545454",
+                "name": "white_plastic001",
+                "source": "bank",
+                "hash": "ff8988a297886247e0ffb56cd423d482"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 74,
+            "height": 128,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.96089400 1751533026"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3273,
+        "type": 2,
+        "name": "Vacuum cleaner",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3273\/c512a2160457f935d60152d582ab148f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3273\/15666c4d51fb6ea7031c67e95fe374e3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.13,57,8.42,56.82,15.15,56.1,21.19,54.39,21.56,54.2,23.65,52.87,24.61,51.02,24.63,50.3,24.81,41.57,24.99,32.84,25,32.13,15.35,-52.29,15.27,-52.62,15.22,-52.66,15.02,-52.79,-21.88,-57,-22.17,-56.9,-22.32,-56.59,-22.35,-56.42,-22.48,-55.36,-23.66,-45.18,-25,27.77,-24.85,31.88,-24.54,33.56,-24.3,34.8,-23.86,36.94,-23.42,38.51,-23.06,39.45,-22.74,40.07,-21.94,41.4,-15.21,52.09,-13.17,53.5,-12.81,53.71,-6.84,55.65,-0.15,56.64",
+            "contourCut": "13.62,0.07,23.25,0.04,23.88,-0.22,24.81,-2.08,24.88,-2.8,24.94,-4.84,24.99,-7.89,25,-11.48,24.99,-15.08,24.94,-18.13,24.88,-20.17,24.81,-20.88,23.88,-22.75,20.78,-28.31,-15.33,-71.81,-16.84,-73.37,-18.98,-73.93,-21.14,-73.29,-22.69,-71.65,-23.2,-69.5,-25,-33.94,-23.64,-0.31,-23.51,-0.04,-23.23,0.07",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#030303",
+                "current": "#030303",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "76a73f96251bae6084f3a44a7adcb780"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#141414",
+                "current": "#141414",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "29dc032b924d0c69c858e6e06d6c7481"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ff1a1a",
+                "current": "#ff1a1a",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "cb58d4abbd4ff060d0489f4f71e60eac"
+              },
+              {
+                "id": 3,
+                "default": 55333,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "8e468f58ab341ef92330637262b11e76"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "40": [
+            {
+              "id": "40",
+              "name": "Household appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "household appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 50,
+            "height": 74,
+            "depth": 114
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

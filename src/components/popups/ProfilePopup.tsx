@@ -414,15 +414,21 @@ const ProfilePopup = props => {
         dispatch(setActivePopup({name: "completeMessage", data: "NOTIFY_INFORMATION_SAVED", positionX: "left"}));
     };
 
-    useEffect(() => setIsProfileNewsShow(R2D.config.data.ui.profile_news), [R2D.config.data.ui.profile_news]);
-    useEffect(() => setIsProEnabled(R2D.config.data.enable_pro), [R2D.config.data.enable_pro]);
+    useEffect(() => {
+        setIsProfileNewsShow(R2D.config.data.ui.profile_news)
+    }, [R2D.config.data.ui.profile_news]);
+    useEffect(() => {
+        setIsProEnabled(R2D.config.data.enable_pro)
+    }, [R2D.config.data.enable_pro]);
 
     useEffect(() => {
         const timer = setTimeout(() => setAnimPopupClass(true), 0);
         return () => clearTimeout(timer);
     }, []);
 
-    useEffect(() => !isLogged && onClickClosePopUp(), [isLogged]);
+    useEffect(() => {
+        !isLogged && onClickClosePopUp()
+    }, [isLogged]);
 
     return (
         <div datapopup={'popup-profile'} className={animPopupClass ? classes.planner_popup_wrap +' '+ classes.planner_popup_wrap_show : classes.planner_popup_wrap} style={{zIndex: popups.profile.zIndex}}>

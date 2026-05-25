@@ -1,0 +1,3078 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "40",
+    "items": [
+      {
+        "id": 2501,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2501\/d4f62cc155ebeb3fda848bfafb770005.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2501\/6d99d4b0530b752df8bf012f0bbdd99c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2500,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2500\/92073bad81d9e75c9872ca360d7685b0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2500\/fb2a395ca8f786f39f8d9afaba042814.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2506,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2506\/6aaf8a357e2ff94a8fd0ac3d380db4fb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2506\/1ee2d4c38529cfb00b82bfeb883985b9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2489,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2489\/18b575a8b12dab77729eb8c601d4d9a2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2489\/c9fd8ea71f57aeb947f893a045a76c68.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2497,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2497\/bea3db8b49ad9a02f98ffe452fb8cab6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2497\/82581c2af000b4f57ccf03871261a827.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2505,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2505\/215b6e0ba3087b472cf31f4ba6b92327.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2505\/8a36b3b062973d81c7b821aa19b44122.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2480,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2480\/86ab49c13956490ef0dd9f9de2ea487f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2480\/59987069f3e6ac605079ee1f0c9384f6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2503,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2503\/67b800b27cd17e9a3b4a46f4f9c62345.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2503\/9f6ff254f8f7eb933f1afd61260d0956.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2502,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2502\/a0efe3d55faa08d7c78e45e6adad898d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2502\/f4dc1b8c9ead52b1c0fa83766be000fd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2498,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2498\/15c53c4393e34d47f6bf254ca1a992ad.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2498\/39b9eed2ebe3862e0a17de134abbf880.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2496,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2496\/c41fa4677a142a214fec54ee9e98f24c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2496\/6582892e1300eec90acb375655115d22.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2495,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2495\/3df39a5341d769e964dbe43897fa494c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2495\/efee35c23503f06fd608769a83b39ad1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2494,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2494\/5da59f931fc5b16e1b75bf1c42c9d6d6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2494\/4ec9026a8de82ae70a18e6b915aa1026.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2507,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2507\/888e6b6d99b9cec8498ae1cf4642fec4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2507\/943a3f51f251557f590002d8585aacf9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2493,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2493\/b8df49ffd0c8bb2370c729f88472eef7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2493\/a50f2b959643e1641618005e363d5c71.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2478,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2478\/59d0f797593da1b4f6e7d7b346f2d7a4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2478\/eb8e715c246ab86ebbe0280e4b632445.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2490,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2490\/bde49e97574bf401ada1ad7d8e3994ce.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2490\/b790a455a9186ee472d21d933f2c6e2f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2488,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2488\/51c853119aaf7f8f77cc3724e090f105.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2488\/44114b7ab8e6726b6379751f7d8da3f6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2487,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2487\/6e9b49f8e232863c0a28f6493a5c9147.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2487\/c452ab2d3f04bf95fbb8e354e445fc56.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3389,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3389\/a45b6366257757fb48d8f244f22f98ec.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3389\/e02e727163f14553d9ce09cc0dfa10fc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2504,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/25\/2504\/5246db303617dfcd4c7560134fa42304.png"
+          },
+          "body": {
+            "package": "\/files\/products\/25\/2504\/a349f9218155feba4d7eda498186c652.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2492,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2492\/0faeb12bb89356fef921d436890713ae.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2492\/776556febb319d71187bd0d3df2bc402.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 60,
+            "height": 60
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2491,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2491\/8ca41547f08c1d4fe09bb03600f7e0a5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2491\/08b54021685525f9eafb723334a7cbe2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2486,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2486\/31f5d9b550484786e9a6880e920bf3f3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2486\/057866ab1f370a1e72a55bc8bbe8e3ce.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2485,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2485\/956ff3aec2d3d3cb59140ed89d3022ef.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2485\/32b448f0324f34d53460f61ccf7449ea.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2484,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2484\/1953bafe6a039d653b4cca96ddf46691.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2484\/393cc18ebc72cb696f558b19ee18bf99.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2483,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2483\/bc5bdd34499069654d757f8aee37450e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2483\/7379228bca9aae5d1398749c7498c9c3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2482,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2482\/de0a3a45396c81e2c4585156c825555c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2482\/cee6244e35b0356408402b50b2787472.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 60,
+            "height": 60
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1524,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1524\/d5f15f0c9ae4892970c38ea34acf4842.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1524\/dd76e1acedfaf077fe72c497536de011.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1521,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1521\/f2feb93a93e5d4d63275b4d43c5fdb76.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1521\/eb0a5caf27d04fbfe9ccb5261ca3d1ed.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1519,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1519\/27b004620477a64d23cac405ec6ac6a7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1519\/6f9897a009aca0e6ee2f56393be5c726.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1517,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1517\/970a2eb57795e36912c8fa921e278268.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1517\/c906b5e774f91e2e32ad890fd2a4b6b1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1507,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1507\/c21cca66b8230378861b8ca81ca083f1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1507\/ba6560e09396fdc07b247909c3a9b178.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 866,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/866\/f64fcffee67490dccd392554a1b74653.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/866\/4b30997af48c94e6f50afc38831c02e1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 589,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/589\/3a2e297c2c47623045974150592ab043.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/589\/344ad96582b7aeab432dc481f2d3eb19.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 587,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/587\/0987ac5988485b6c981a82a1c5575d8e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/587\/4adedc3244fb4bff7d2c40357d7e9de5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 150,
+            "height": 150
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 381,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/381\/4dd99cffc9dafb98830434e6b2aa291a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/381\/e01c3bade62fad882b197745a0806ef3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 380,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/380\/12a42a926c2bf852222876d2eb2ee062.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/380\/44f95116a59a1deba9d0728d98438e41.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 378,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/378\/b85594411425fca6725e927e6cce2e3b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/378\/6b34839a1b7f22e2719f4ce0f7a0c0e3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 376,
+        "type": 1,
+        "name": "Vinyl flooring",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/376\/7414aca52527059a98f7921e6f1296a6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/376\/fdc687c4bc729d48063065b43106bddf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "61": [
+            {
+              "id": "61",
+              "name": "Linoleum",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "25": [
+            {
+              "id": "25",
+              "name": "Vinyl flooring",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

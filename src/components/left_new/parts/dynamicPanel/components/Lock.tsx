@@ -142,7 +142,9 @@ const Lock = props => {
 
     let imgLock = useRef(null);
 
-    useEffect(() => setParentElem(imgLock.current.closest('.' + parentClass)), [parentClass]);
+    useEffect(() => {
+        setParentElem(imgLock.current.closest('.' + parentClass))
+    }, [parentClass]);
 
     useEffect(() => {
         if(!parentElem) return;

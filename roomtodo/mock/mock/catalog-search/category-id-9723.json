@@ -1,0 +1,2011 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "19",
+    "items": [
+      {
+        "id": 803,
+        "type": 2,
+        "name": "Lemon tree",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/803\/c1e68182eef863f5f271f0144533f1f6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/803\/0853e012ea9175531bf3ab32e616ecf8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "6.17,32,24.15,14.78,28.03,9.74,34,-0.94,31.58,-14.59,25.44,-20.77,3.34,-32,-12.53,-31.28,-27.03,-20,-29.9,-15.05,-34,-7.43,-27.46,14.05,-21.82,19.87",
+            "contourCut": "0.11,0,0.14,-0.05,28.36,-49.16,31.29,-54.97,34,-95.83,28.92,-107.77,26.43,-111.66,23.19,-114.22,18.68,-115.95,-17.57,-128,-26.27,-117.56,-34,-103.41,-31.9,-60.06,-27.17,-49.76,-0.12,-0.05,-0.09,0,-0.07,0,-0.06,0,-0.05,0,0,0,0.01,0,0.09,0,0.1,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "Mesh_1",
+                "source": "bank",
+                "hash": "9dd9bcbb46db28fb9e8b6f71d14ea864"
+              },
+              {
+                "id": 1,
+                "default": 481,
+                "name": "Mesh_2",
+                "source": "bank",
+                "hash": "695f2a6277c5494b8d00376ba8277135"
+              },
+              {
+                "id": 2,
+                "default": 618,
+                "name": "Mesh_3",
+                "source": "none",
+                "hash": "330b0dab7a04d2f519bdba13d224ce88"
+              },
+              {
+                "id": 3,
+                "default": 805,
+                "name": "Mesh_0",
+                "source": "none",
+                "hash": "c01ba3d0d8600d77fef5d0a0dbc3b1fe"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 68,
+            "height": 128,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2188,
+        "type": 2,
+        "name": "Cactus",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2188\/fcdeb1543e90e6a7e34f87ca525c12af.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2188\/b0e7a41c967c4dc3b67333df14c6e296.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.34,7.85,1.34,7.72,2.31,7.48,3.25,7.11,4.13,6.62,4.94,6.03,5.68,5.34,6.32,4.57,6.86,3.72,7.29,2.81,7.6,1.85,7.79,0.87,7.85,-0.14,7.79,-1.14,7.6,-2.13,7.3,-3.09,6.87,-4,6.33,-4.85,5.69,-5.63,4.96,-6.32,4.15,-6.91,3.27,-7.4,2.34,-7.77,1.36,-8.02,0.37,-8.15,-0.64,-8.15,-1.63,-8.03,-2.61,-7.78,-3.54,-7.41,-4.42,-6.92,-5.24,-6.33,-5.97,-5.65,-6.61,-4.87,-7.15,-4.02,-7.58,-3.11,-7.89,-2.16,-8.08,-1.17,-8.15,-0.16,-8.09,0.84,-7.9,1.83,-7.59,2.79,-7.16,3.7,-6.63,4.55,-5.99,5.33,-5.26,6.02,-4.44,6.61,-3.57,7.1,-2.63,7.47,-1.66,7.72,-0.66,7.85",
+            "contourCut": "-0.15,0.03,5.75,-0.02,7.38,-11.73,7.68,-14.13,7.85,-16.66,7.82,-16.76,5.41,-21.43,4.84,-22.33,4.05,-23.44,2.43,-24.59,2.01,-24.76,0.38,-24.94,-0.07,-24.97,-2.09,-24.53,-3.94,-23.48,-4.03,-23.42,-5.05,-21.99,-8.12,-16.81,-8.15,-16.7,-7.97,-14.15,-7.68,-11.73,-6.04,-0.02",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2117,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "2a6dabc442bc55a9a148fb73ff1ed0c2"
+              },
+              {
+                "id": 1,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "f522385ab58d182ddfe485acedd196df"
+              },
+              {
+                "id": 2,
+                "default": 482,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "79184ae725280803d393af631db758e0"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 16,
+            "height": 25,
+            "depth": 16
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "10.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2125,
+        "type": 2,
+        "name": "Plant",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2125\/bb8a3c97f4adb2d089c1287b45026e65.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2125\/a1ba1ff4f6eb99d9796784aab1b3bcfa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "1.47,8,7,4.72,6.38,-7.42,3.22,-8,-4.5,-7.17,-5.99,-1.13,-7,3.95",
+            "contourCut": "0.47,0,2.99,-0.04,4.34,-0.14,4.89,-0.29,5.75,-1.16,6.26,-1.81,6.5,-2.71,7,-9.15,6.9,-9.25,5.55,-9.99,5.48,-10,-5.31,-10.99,-5.65,-11,-5.99,-10.98,-7,-9.15,-6.99,-9.06,-5.57,-2.71,-5.33,-1.81,-4.81,-1.16,-3.96,-0.29,-3.41,-0.14,-2.05,-0.04",
+            "materials": [
+              {
+                "id": 0,
+                "default": 805,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "c5ce7277336f43407d9c004775c561b0"
+              },
+              {
+                "id": 1,
+                "default": 55335,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "2efdde0dc06ad47d869428adea6adf9d"
+              },
+              {
+                "id": 2,
+                "default": 480,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "8e80edce8194685ba99a14c78f86ff23"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 14,
+            "height": 11,
+            "depth": 16
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3179,
+        "type": 2,
+        "name": "Tulips",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3179\/505169702fd3f1a9c81acda0e830457d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3179\/29b4c8801e943bf1d4e298106904ae5d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.04,7,5.42,6.59,5.44,6.51,5.92,3.51,6.5,-0.66,6.49,-0.86,6.46,-0.96,4.42,-5.32,4.22,-5.64,3.42,-6.67,2.8,-7,2.1,-6.88,1.76,-6.8,-0.67,-6.21,-6.11,-3.52,-6.36,-3.01,-6.5,3.58,-6.45,4.03,-6.39,4.38,-6.3,4.74,-6.15,4.96,-5.09,5.53,-4.88,5.61,-0.87,6.99",
+            "contourCut": "1.43,0,1.64,-0.01,5.92,-2.37,6.5,-29.08,6.35,-29.49,6.16,-29.76,5.95,-30.04,5.39,-30.65,5.08,-30.89,4.05,-31,-2.24,-28.95,-5.76,-27.29,-6.15,-27.02,-6.39,-26.79,-6.45,-26.45,-6.5,-25.95,-0.67,-2.76,0.89,-0.04,1.02,-0.03",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3183,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "f4874c2439393bf255ec6a088fea0e1d"
+              },
+              {
+                "id": 1,
+                "default": 3180,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "f9819560715c3516de5a4b41b371832b"
+              },
+              {
+                "id": 2,
+                "default": 3184,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "2ddacc2c6f26ab6fd75a6764e2037834"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 13,
+            "height": 31,
+            "depth": 14
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64878,
+        "type": 2,
+        "name": "Monstera",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/648\/64878\/5d34d67826e3cecf3ba7a88c643ada4c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/648\/64878\/a5063d8a8677ff6c542c4b659ef82910.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.82,60.6,7.73,60.53,8.78,60.25,9.7,59.92,10.6,59.34,12.69,57.81,30.87,38.62,55.14,11.32,56.63,9.07,57.13,8.12,57.5,7.06,57.85,5.83,58.46,2.18,58.57,1.14,58.57,0.14,58.51,-0.82,58.3,-3.1,58.05,-3.9,57.75,-4.57,55.88,-8.24,43.77,-31.71,42.7,-33.71,42.34,-34.21,41.85,-34.71,40.05,-36.12,39.26,-36.54,-16.43,-60.36,-17.18,-60.6,-19.84,-60.1,-20.59,-59.87,-21.34,-59.45,-23.82,-57.79,-24.61,-56.96,-55.03,-21.25,-56.75,-18.71,-57.23,-17.94,-57.57,-17.19,-58.57,-14.54,-58.57,-13.84,-58.46,-13.23,-57.79,-9.64,-57.57,-8.84,-57.23,-8.11,-42.41,17.52,-40.88,19.88,-40.22,20.54,0.31,59.37,0.81,59.82,3.24,60.44,3.98,60.58",
+            "contourCut": "0.54,0,10.54,-0.01,57.13,-7.55,57.5,-7.63,57.85,-7.74,58.46,-8.93,58.57,-9.16,58.57,-9.53,58.51,-9.96,45.14,-83.28,44.8,-83.83,44.38,-84.43,43.86,-85.07,15.55,-119.72,14.76,-120.01,1.64,-124.16,0.9,-124.17,-12.55,-123.98,-13.57,-123.73,-14.42,-123.06,-15.24,-122.4,-42.49,-78.71,-42.74,-78.29,-57.79,-20.93,-58.46,-17.44,-58.57,-16.65,-58.57,-15.93,-57.23,-13.84,-55.03,-11.6,-54.3,-11.29,-53.63,-11.05,-10.65,-0.28,-9.45,-0.01",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1568,
+                "name": "Vase",
+                "source": "bank",
+                "hash": "e1f6f201a4026e85374cc03714c3c239"
+              },
+              {
+                "id": 1,
+                "default": 64876,
+                "name": "Leaf",
+                "source": "none",
+                "hash": "f7aa9dd064cecf2df6fea027180fde10"
+              },
+              {
+                "id": 2,
+                "default": 480,
+                "name": "Earth",
+                "source": "bank",
+                "hash": "b229439206cb613da91f46ab9833c5ea"
+              },
+              {
+                "id": 3,
+                "default": 64877,
+                "name": "Stem",
+                "source": "none",
+                "hash": "babb924de868be09d365bd50ac70ad78"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 117,
+            "height": 124,
+            "depth": 121
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.85807100 1753947380"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2194,
+        "type": 2,
+        "name": "Palm",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2194\/4e95f5e0e3c5a6145682b276feea0e0f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2194\/24ac42fe23cca059cae5e345b46ef907.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-3.27,36.5,27.88,15.66,29.5,9.06,28.92,4.07,23.6,-22.14,1.86,-36.5,-17.8,-36.05,-29.5,-15.31,-29.26,-9.91,-22.54,8.79,-21.54,10.89",
+            "contourCut": "6.5,0,6.64,-0.02,23.58,-26.11,24.79,-28.82,29.5,-52.81,23.68,-84.22,22.39,-86,17.78,-84.77,16.7,-84.28,-8.82,-72.49,-11.73,-70.58,-26.77,-58.82,-29.26,-55.7,-29.5,-51.5,-22.11,-19.79,-19.94,-16.82,-4.15,-0.02,-4.02,0,6.46,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 805,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "a236c2ca29590a25e911910275aae485"
+              },
+              {
+                "id": 1,
+                "default": 778,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "efe6bc457132cc12505982eca74516e4"
+              },
+              {
+                "id": 2,
+                "default": 480,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "ccc96a068f596cabf2a7cb7513537c67"
+              },
+              {
+                "id": 3,
+                "default": 615,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "195b560fd54dad285af93d39e844bcb4"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 59,
+            "height": 86,
+            "depth": 73
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 962,
+        "type": 2,
+        "name": "Palm",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/962\/db3cd66cb2d3b3cfd9128e4cbab50f32.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/962\/db4cd7c0d3888c2ef99d832b36fb0251.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-10.92,40,1.78,38.66,4.66,38.04,8.8,36.34,40.46,14.14,45.83,6.13,48.5,-12.47,47.08,-17.9,36.47,-29.79,19.83,-38.14,10.98,-40,-5.52,-37.77,-14.09,-32.74,-31.45,-17.72,-46.62,0.56,-48.5,10.15,-46.79,23.16,-44.1,28.52,-29.32,39.97",
+            "contourCut": "12.67,0,48.5,-53.01,31.42,-114.64,30.22,-118.68,8.13,-147.74,3.47,-151.38,0.19,-152.95,-1,-153.46,-1.87,-153.81,-4.26,-154.67,-4.55,-154.77,-7.12,-155.51,-9.62,-156.06,-11.95,-156.4,-19.26,-157,-20.1,-157,-22.02,-156.66,-26.49,-155.59,-26.66,-155.52,-28.35,-154.77,-32.83,-152.11,-34.51,-151.1,-36.29,-149.8,-38.14,-148.21,-40,-146.34,-40.42,-145.86,-42.11,-143.9,-43.65,-141.83,-44.16,-141.07,-44.87,-139.97,-46.79,-136.74,-48.5,-126.99,-20.51,-42.99,-6.92,-5.47,-5.44,-2.39,-3.89,0,12,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 615,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "6f944957c74e192192e7aff1e890a45b"
+              },
+              {
+                "id": 1,
+                "default": 805,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "40565e506e5b0d5f1a4509ffa252e454"
+              },
+              {
+                "id": 2,
+                "default": 480,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "8a13208bb4a81db7c2d5abf3e25a18d6"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41825,
+                "default": "#f2f2f2",
+                "current": "#f2f2f2",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "735f6cb39dae15a86804fcd9aa8bee32"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 97,
+            "height": 157,
+            "depth": 80
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 960,
+        "type": 2,
+        "name": "Palm",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/960\/1e59910c6b465214a2f4abac9a4bba0d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/960\/9348b5fde41e81541de3c83a775d94ea.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30.35,52,44.92,42.84,45,41.4,31.71,-4.24,24.18,-13.2,-11.42,-49.46,-13.27,-51.2,-16.37,-52,-17.92,-51.31,-18.57,-50.96,-20.08,-50,-27.94,-44.99,-28.88,-44.36,-30.87,-42.61,-45,32.78,-36.96,44.89",
+            "contourCut": "16.24,0,17.52,-1.95,18.73,-4.47,19.37,-6.5,45,-96.35,44.92,-97.2,42.89,-98.1,41.29,-98.54,39.84,-98.75,33.36,-99,32.98,-99,31.9,-98.82,30.43,-98.38,27.04,-97.27,-35.64,-72.26,-37.75,-71.07,-39.21,-69.89,-44.08,-65.12,-45,-64.18,2.63,0,15.69,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 482,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "a4a8739cf1cb4ec180fe9438cfaad2aa"
+              },
+              {
+                "id": 1,
+                "default": "#f0f0f0",
+                "addMaterial": "41825",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "52d15946ce34d78edbaa8c23bd9aacdc"
+              },
+              {
+                "id": 2,
+                "default": 615,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "d90af75da58d2c422308de22ba032ed6"
+              },
+              {
+                "id": 3,
+                "default": 805,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "47fe8b331b6c9896e78ce1a4fa5e437b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 99,
+            "depth": 104
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2126,
+        "type": 2,
+        "name": "Plant",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2126\/cfc9dd061d78fbe6cd9ce5baf5789a8f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2126\/17e65e7fa587f365fa7a61fcc423128c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-13.21,19,8.27,17.46,9.85,17.24,11.32,16.63,12.59,15.68,13.78,14.61,14.67,13.28,15.2,11.78,15.61,10.22,18.42,-6.5,18.97,-10.69,19,-18.95,18.94,-19,-1.4,-16.53,-10.94,-11.72,-19,-5.01",
+            "contourCut": "-15.1,0,-2.3,-0.7,12.47,-17.44,13.23,-19.9,18.94,-41.03,19,-41.37,18.97,-42.99,18.6,-43.47,18.56,-43.48,11.82,-44.99,10.65,-45,-1.78,-43.02,-15.02,-31.18,-16.67,-28.05,-19,-23.6,-15.32,-0.09",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54839,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "7c44f26506407ed524e6bd48c61b34e2"
+              },
+              {
+                "id": 1,
+                "default": 480,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6d21374a4538be1e359e51ab93db3cce"
+              },
+              {
+                "id": 2,
+                "default": 805,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "ad17565623ca424d3afdf3fb20478f35"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 38,
+            "height": 45,
+            "depth": 38
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2114,
+        "type": 2,
+        "name": "Plant",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2114\/3fb54659962074b03cd259ead022a86e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2114\/69dd12271f3d40dc23cd6c931d9ab3eb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-6.56,33.5,17.43,32.6,36.23,13.77,36.4,13.52,44,-6.63,37.28,-20.8,37.08,-21.03,6.46,-31.24,-17.43,-33.5,-36.23,-14.67,-36.4,-14.42,-44,5.74,-37.75,20.4,-10.82,33.33",
+            "contourCut": "22.27,0,39.62,-4.56,44,-12,38.69,-22.57,27.33,-33.1,13.89,-37,-1.35,-37,-15.12,-36.26,-27.33,-33.1,-38.69,-22.57,-44,-12,-39.62,-4.08,-26.76,0,21.72,0,21.93,0,22.06,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 805,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "805a4fe2397c32465ba5926374584955"
+              },
+              {
+                "id": 1,
+                "default": 616,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "f5d9b2565eba07ac41533d091cdd2ccb"
+              },
+              {
+                "id": 2,
+                "default": 482,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a46fd456e71f7267dbe44e120a0ad322"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 88,
+            "height": 37,
+            "depth": 67
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2192,
+        "type": 2,
+        "name": "Plant",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2192\/dedb089a10e19a103d776ff455046bca.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2192\/fd3a089a5c544a7556cfa342549fba1a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.99,51.5,1.87,50.88,53.5,10.19,7.57,-51.5,-26.19,-38.5,-27.06,-38.15,-27.31,-38.02,-29.28,-36.36,-29.96,-35.33,-46.33,-7.29,-46.48,-6.91,-53.5,30.57,-36.94,38.32,-35.14,39.08,0.64,51.49",
+            "contourCut": "-0.98,0,38.74,-55.76,53.5,-96.24,52.98,-96.66,51.9,-97.5,50.61,-97.99,47.88,-98.56,46.63,-98.78,43.63,-99,-34.31,-93.34,-35.17,-92.89,-53.32,-72.8,-53.5,-72.44,-14.12,0,-7.87,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2191,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "66278791f550516bd768b87a62a4edd6"
+              },
+              {
+                "id": 1,
+                "default": 55155,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "29cd707bde707f14a541939fad289ab8"
+              },
+              {
+                "id": 2,
+                "default": 482,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "4780834ffa2e82a006b6480649661a6f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 107,
+            "height": 99,
+            "depth": 103
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2190,
+        "type": 2,
+        "name": "Sansevieria",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2190\/c333efc02d8b80ba7096792de280b8f9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2190\/845a25df2b6f9e310fd6cf7004ce1c82.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "5.29,20,6.01,19.89,24,16.05,24,-13.71,-12.02,-20,-24,-13.71,-24,16.05,-14.99,19.82",
+            "contourCut": "24,0,24,-24.1,22.24,-113.31,-8.32,-115,-14.99,-112.98,-24,-24.1,-24,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2189,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "44e84a9a5596dbd30faa244725f37ede"
+              },
+              {
+                "id": 1,
+                "default": 549,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "d76dcfd70ee0d61b9a7215d1034a2d67"
+              },
+              {
+                "id": 2,
+                "default": 481,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a82c218c3cf2be4992491bef8cef2074"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 48,
+            "height": 115,
+            "depth": 40
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2201,
+        "type": 2,
+        "name": "Aloe",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/22\/2201\/e43a2ec838a8d938d021d3afb72cacde.png"
+          },
+          "body": {
+            "package": "\/files\/products\/22\/2201\/08879fc6a85bfc1bb24b1246aa040576.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-10.29,14,-9.3,13.86,3.39,11.73,18.45,5.71,18.5,5.59,17.99,4.32,17.42,3.11,15.94,0.93,15.11,-0.17,3.7,-12.43,3.34,-12.74,2.09,-13.04,-10,-14,-18.5,5.4,-18.31,5.88",
+            "contourCut": "5.62,0,6.2,-0.09,6.26,-0.21,15.81,-36.17,16.56,-39.75,17.09,-42.34,17.84,-46.06,18.45,-50.19,18.5,-50.93,-9.8,-52,-18.31,-46.28,-18.5,-46.07,-17.67,-43.13,-3.18,-0.21,-3.12,-0.09,-2.55,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2202,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "93ad61e3ddb3fc6819b66e9dd601b07d"
+              },
+              {
+                "id": 1,
+                "default": 1560,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "61df90b2ed04c52163c3e89fdb224a5e"
+              },
+              {
+                "id": 2,
+                "default": 1441,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "d7d8193e57c64511833f6f515708baba"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 37,
+            "height": 52,
+            "depth": 28
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2199,
+        "type": 2,
+        "name": "Plant",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2199\/4bfbd9de96a9fb1dc5dc57bc9f6e1134.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2199\/47d7ded4d86d49deb27f9881c57a4544.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "18.04,35,20.5,29.22,19.75,26.93,-15.41,-28.53,-16.3,-29.79,-16.63,-30.22,-16.97,-30.65,-20.48,-35,-20.5,-35,-19.69,-15.22,-18.04,-0.8,-17.58,0.73,-16.83,2.13,1.72,30.34,18.02,35",
+            "contourCut": "-5.23,-0.15,-3.9,-2.47,20.5,-60.66,18.04,-76.95,-11.13,-91.7,-19.69,-95.15,-20.5,-24.86,-20.49,-24.71,-18.2,-11.2,-17.24,-6.04,-16.76,-4.05,-16.22,-2.47,-14.9,-0.15,-11.01,-0.15,-10.06,-0.15,-9.12,-0.15,-8.21,-0.15,-7.38,-0.15,-6.64,-0.15,-6.04,-0.15,-5.59,-0.15,-5.32,-0.15",
+            "materials": [
+              {
+                "id": 0,
+                "default": 805,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "11267c5255d5623621350e5c234b939a"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41825,
+                "default": "#f2f2f2",
+                "current": "#f2f2f2",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "e96a556ee1157dba7f1fcab7c3d5de09"
+              },
+              {
+                "id": 2,
+                "default": 480,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "b64562cc06b26276df9000611c6c474b"
+              },
+              {
+                "id": 3,
+                "default": 615,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "cdc106f9c7363ee49388fa3d43746e65"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 41,
+            "height": 95,
+            "depth": 70
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2116,
+        "type": 2,
+        "name": "Rose",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2116\/54a49a10e825c6cbee3f8f5e9c7cd6c0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2116\/24f82427eec888622e7cbc3ed552b63c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-0.6999999999999998,-10.08,3.080000000000001,-9.379999999999999,6.300000000000001,-7.000000000000001,8.120000000000001,-3.9199999999999995,8.399999999999999,-0.5599999999999989,7.839999999999999,2.379999999999999,5.599999999999999,5.46,1.9599999999999986,7.419999999999999,-2.9400000000000004,7.419999999999999,-6.300000000000001,5.599999999999999,-8.54,2.7999999999999994,-9.379999999999999,0.5599999999999989,-9.239999999999998,-3.3600000000000008,-7.56,-6.58,-5.04,-8.82,-2.24,-9.940000000000001",
+            "contourCut": "0,-20.86,1.9599999999999986,-20.58,2.100000000000002,-19.88,2.379999999999999,-20.16,2.24,-19.46,4.48,-19.46,4.759999999999998,-19.04,6.02,-19.04,7.1400000000000015,-18.34,7.700000000000001,-18.06,7.560000000000002,-17.64,7.979999999999998,-17.64,6.999999999999998,-15.96,7.419999999999999,-16.099999999999998,6.1599999999999975,-15.26,5.320000000000002,-14.98,5.46,-14.28,6.999999999999998,-13.299999999999999,8.819999999999999,-10.5,9.239999999999998,-7.000000000000001,8.68,-4.0600000000000005,6.859999999999999,-1.5400000000000005,5.04,-0.1400000000000009,-4.760000000000001,-0.4200000000000004,-7.28,-2.660000000000001,-8.54,-5.739999999999999,-8.4,-9.66,-6.719999999999999,-12.879999999999999,-4.899999999999999,-14.42,-3.499999999999999,-14.84,-4.34,-15.819999999999999,-6.719999999999999,-16.8,-7.98,-16.8,-6.02,-17.220000000000002,-6.300000000000001,-17.36,-5.739999999999999,-17.220000000000002,-5.739999999999999,-18.48,-5.04,-18.759999999999998,-4.619999999999999,-19.32,-2.24,-19.18,-2.52,-19.74,-1.6799999999999993,-19.6,-1.82,-20.58,0,-20.72",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2258,
+                "name": "",
+                "source": "none",
+                "hash": "528e074e552ca85605c51260ad5ddb07"
+              },
+              {
+                "id": 1,
+                "default": 2117,
+                "name": "",
+                "source": "none",
+                "hash": "4db25939b4e53356562764b4cb8df402"
+              },
+              {
+                "id": 2,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "",
+                "source": "bank",
+                "hash": "b58208bd9cbf6b31c33a1fed21cc6655"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 19,
+            "height": 21,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 52706,
+        "type": 2,
+        "name": "Plant",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/527\/52706\/15ea1f16e59e91d44e2bd314477d7b3b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/527\/52706\/f96299a03564a55cfa6eb506b45438de.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "6.45,48.82,33.7,35.99,41.22,30.39,42.37,29.22,44.64,24.54,32.12,-31.88,-6.48,-48.82,-37.85,-33.88,-39.65,-32.45,-44.28,-22.52,-44.54,-21.65,-44.64,-18.71,-44.08,1.56,-41.63,38.32",
+            "contourCut": "-32.79,0,36.6,-0.01,39.55,-0.35,42.37,-1.05,44.64,-6.1,34.04,-20.94,23.26,-32.81,20.39,-35.96,7.52,-39.85,-0.71,-40.97,-3.3,-41.14,-4.56,-41.19,-15.1,-40.27,-16.03,-40.01,-20.25,-36.26,-44.54,-7.2,-44.64,-6.16,-44.28,-3.5,-40.93,-1.68,-37.62,-0.37",
+            "materials": [
+              {
+                "id": 0,
+                "default": 480,
+                "name": "ground",
+                "source": "none",
+                "hash": "265d50175d3cb5ed5de77e6b42fbec3f"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41825,
+                "default": "#e6e6e6",
+                "current": "#e6e6e6",
+                "name": "pot",
+                "source": "bank",
+                "hash": "2e7763a961926dde39a267bdda339ef2"
+              },
+              {
+                "id": 2,
+                "default": 0,
+                "name": "leaves",
+                "source": "none",
+                "hash": "950277b01a0193b4f71bd2dfb01e6fc4"
+              },
+              {
+                "id": 3,
+                "default": 0,
+                "name": "trunk",
+                "source": "none",
+                "hash": "120a1a7aaa993e6a6573040dce9ffc59"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 89,
+            "height": 41,
+            "depth": 98
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3169,
+        "type": 2,
+        "name": "Bouquet of lilies",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3169\/f975d9bba00757521adebc9a37247e1e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3169\/3733c881dbb36959ef5a10b5a7bbb702.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-2.92,11.5,9.75,7.5,11.92,-1.34,12,-1.79,11.96,-1.98,11.82,-2.53,7.9,-11.42,7.86,-11.5,-6.47,-8.84,-12,-7.59,-11.26,4.18",
+            "contourCut": "0.62,0,2.29,-4.29,9.32,-26.27,11.47,-36.05,12,-39.46,11.93,-40.17,7.9,-45.99,7.77,-46,0.49,-43.86,-9.54,-35.7,-10.79,-34.61,-11.5,-33.75,-11.7,-33.49,-11.92,-33.2,-12,-32.98,-11.26,-29.36,-2.31,-0.49,-2.27,-0.4,-2.01,-0.28,-1.8,-0.25",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2442,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "dd7bf31555df89d184394a17a2933fc3"
+              },
+              {
+                "id": 1,
+                "default": 3175,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "568ff2335a67c24c123d7aa3ebfa85b5"
+              },
+              {
+                "id": 2,
+                "default": 2442,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "51737e4f3276459cc7122d160d4a5388"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 24,
+            "height": 46,
+            "depth": 23
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3168,
+        "type": 2,
+        "name": "Roses",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3168\/9c665dd40005806ff92f80f17045b39f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3168\/95ebb77c26e413f2aee4c2dcce99b798.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-1.72,9,-0.34,8.91,6.44,7.62,7.24,7.15,10.28,5.21,10.83,4.46,11,3.12,10.96,2.95,10.9,2.75,10.7,2.32,7.5,-3.34,1.71,-8.17,0.69,-8.58,-0.34,-8.91,-1.72,-9,-3.58,-8.63,-5.91,-6.86,-10.42,-0.79,-11,0.3,-10.8,1.19,-10,2.76,-5.91,6.86,-3.58,8.63",
+            "contourCut": "-0.31,0,0.24,-0.72,11,-28.67,10.9,-29.25,8.27,-40.54,8.14,-40.91,7.19,-41.92,6.27,-42.59,5.52,-43,5.12,-42.96,4.58,-42.87,2.76,-42.42,-9.14,-37.7,-10.4,-36.62,-11,-35.47,-8,-23.5,-2.27,-0.74,-0.64,-0.08",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3182,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "fbe86182b41631d3cbf98c5df93723fe"
+              },
+              {
+                "id": 1,
+                "default": 2117,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "a32e60b912c282914e90b62add80fba4"
+              },
+              {
+                "id": 2,
+                "default": 2442,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "2f4714f5f0a27d25a88c016acd1f6d99"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 22,
+            "height": 43,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3281,
+        "type": 2,
+        "name": "Flower stand",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3281\/5353c8b643afc9de5d95f51f0c9dad90.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3281\/65097d0c64cdf1bd6777481ee314a0bb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "17.38,19,17.49,18.98,17.76,18.9,17.95,18.71,18,18.19,14.84,1.06,14.7,0.35,14.52,-0.35,14.3,-1.04,14.03,-1.72,13.37,-3.03,5.15,-18.74,5.07,-18.81,4.84,-18.97,4.57,-19,4.13,-18.72,-17.9,8.95,-17.93,9.06,-18,9.32,-17.75,9.79,-0.86,14.32,0.56,14.7",
+            "contourCut": "13.41,0,14.71,-0.14,15.66,-0.5,16.66,-1.33,16.98,-1.76,17.31,-2.48,17.64,-3.38,17.67,-5.11,18,-46.44,15,-76.53,14.98,-76.66,14.79,-76.87,14.55,-76.98,14.3,-77,11.54,-77,-4.67,-77,-8.03,-77,-8.5,-77,-8.85,-76.87,-9.04,-76.66,-12.04,-71.79,-13.27,-69.23,-14.12,-66.65,-18,-46.56,-17.55,-4.62,-17.48,-3.34,-17.21,-2.65,-16.97,-2.31,-16.4,-1.51,-15.73,-0.92,-14.89,-0.5,-14.66,-0.41,-13.47,-0.14,-12.07,0,4.14,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54835,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "8192706eeb9198fa552c046dfd899e4e"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "85": [
+            {
+              "id": "85",
+              "name": "Vases",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9723": [
+            {
+              "id": "9723",
+              "name": "Houseplants",
+              "parentId": "48"
+            },
+            {
+              "id": "48",
+              "name": "Plants",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "plants",
+          "vases"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 36,
+            "height": 77,
+            "depth": 38
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -1,0 +1,6464 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "95",
+    "items": [
+      {
+        "id": 1153,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1153\/0bd81ec92aa5866e57d3e0444b253aa3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1153\/e2e3acf7d799946c1d2f1ca70123b248.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 80,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1220,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1220\/7a3142e0c8b321a4742b5cc2ac1f9511.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1220\/9d5d2b78a5305c92de1665d503df68df.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 757,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/757\/d8dbf2b4cab91da8b58c63848b16ea5f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/757\/e812058ef1ae7c51d62edd1e6ad2fc81.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3033,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/30\/3033\/bc92406868134b10ba230adacebab678.png"
+          },
+          "body": {
+            "package": "\/files\/products\/30\/3033\/18d239895d49e7221f700034a63914aa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1221,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1221\/3b9479fcb312daaec58a2b68b779effe.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1221\/9515c260d3edee13b7141807a307a607.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2039,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2039\/f6b949198c523f26da287e5ba36a9a61.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2039\/802b4519cf854470d647c76c2fc9bcb8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1806,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1806\/e8123c5c17257d7026b6d61e615e9de7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1806\/5e067369745054bf8c346db79b673b93.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2077,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2077\/e54026a384b61b323183192fa5f5b68c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2077\/892c8537f4745c8af68310a07f51a6f2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1040,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1040\/8b3d2c62a17038487c283394070f0ddf.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1040\/05e9b61121d54605c21fadaad1ae7449.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 49,
+            "height": 49
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1461,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1461\/528a49b0a4b6dbfebcf9173e62ee1538.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1461\/0290696987213f9f44da8ea93fe25c01.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1464,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1464\/226db9e4fedddd0c84877319f27b25a3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1464\/11cd7315f531cd527a424daf4ca41f8a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1136,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1136\/db4cb3941e233d8fd0c907179c1395c0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1136\/96f22512e91256634f34fe2f2c665898.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2078,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2078\/2135bdf05b7ab9b2228b046bc7c69a8b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2078\/f62849372d462b48d6c5559d949fe8a7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 140,
+            "height": 140
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2055,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2055\/9b863bf9c16f8e765d01b2e078601f45.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2055\/1f46cdebda2cca0fd9dd1d0c2a76e052.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 140,
+            "height": 140
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2053,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2053\/4ba1ecdfa920d77f4c32280dee17fff5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2053\/1a3be135fb3d1ba4c3a1f109b42e8fcb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 140,
+            "height": 140
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1222,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1222\/01a907f2235888c5a9f2d6f89a4c00b9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1222\/7c74a45b823d61adc52045ee3506153a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2026,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2026\/3e17abe8ea50807c6f169a80ef975d9c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2026\/ca1def75a393c987eb5098d59e5d49d5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1807,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1807\/a26a6c16b2f9cef2801571ea90176bf9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1807\/6c9e02fe6ab4d1ff71416710d9cc473f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1113,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1113\/2f5597f02f2efa4ba90980b16a4f3436.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1113\/0221dd7d8bfee284cd0070ca3a9f6d75.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1115,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1115\/11884d23ddf47c9f9dc9bea897141189.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1115\/abd4122c0ebc8a734d225f4f01705c7d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1465,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1465\/3a7bf6ef1dd4349dd41ae9712349fca8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1465\/26045c59946f0898da03525482cf5059.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1462,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1462\/081fd0cf85e3d57afeafe9fa0cf206af.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1462\/90e068f41eea31e90510a53f34991903.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 60,
+            "height": 60
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1460,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1460\/519a1710d9e1c0e18061d2ea12a51fee.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1460\/ffdb25176c6e20211ca52aece33fe631.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 421,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/421\/8e659646a40c31b797dbc9261d4a19a5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/421\/d09a71e55fd7701dc34c537e3e29b3d1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 781,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/781\/266bc75a91fcd133bb3a260a30a09379.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/781\/c24149408417e9841e87831520313ff3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1825,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1825\/71ce144aad6d08d7ad16e344e0bb290a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1825\/4d627d5cb3b6c6e3ee763a7d209b1649.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1822,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1822\/894ba498a11a03dbda0d3d8b1e66dfaf.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1822\/9d1218f0165df38cb7ddd4ca63a45de4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1074,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1074\/a97f8fc2e1d4a5ad40597d3311c01644.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1074\/409cbd77846484a1c8c8ca35a9afc479.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 779,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/779\/60da71da6520ff72c84a519b14922b7d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/779\/1c57d01622d9ba76c1b33302acb6b724.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1037,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1037\/d13cc51acdd188decf2ccee51904ea8e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1037\/e4a4442bdb4cfe0f730a0d7c59fe742a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1036,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1036\/b063d49b660ce03958d0a322a203ee31.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1036\/a768cad3e5f6cb5d7f6cb3629fd6418d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2056,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2056\/e147b4ce8660dd83d45a39ae935206b7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2056\/c0ca7912b2f6d6e89acf1528498c6b0f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 140,
+            "height": 140
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1824,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1824\/0845bf6869a437b762d06ad48b489813.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1824\/aa3f3b89802ec59238ee8573d9129218.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1823,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1823\/53a6f5d044a53b7b2bafe1443656ec6f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1823\/4f91113d879cd7d6c145843949a09085.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2061,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2061\/74f95dff36c6f167185784a1b7a208d5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2061\/576f6758e6e994fb841274414402eb61.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1821,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1821\/4df47cd3570f97e5954b09f18609c3cb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1821\/b5bea8dff45e8fa6b69fb43f89c4f4d0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1820,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1820\/6922a2439c954cef275d606eacc86c04.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1820\/c004af9a6f25a8baaa3c37f5d41d92e6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1827,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1827\/e919c52f5b7e67e67f9522e4af7c6531.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1827\/1d1c639c5878e21c4564180c6ccedd1c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1466,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1466\/27d7216b1fab5b2d1af1476537241916.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1466\/d436d7e9ce265e3766976b0612455e92.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1463,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1463\/14989e4c85f6299bc2f6761e79530fad.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1463\/63e112e01ac23af33f6e5150bf75dd92.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1231,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1231\/e6eeb9a6292e43be8744947edca5ac0f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1231\/122e61a3541c4409e70cf3974040a8c2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1227,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1227\/e5bb15f9db34cd01e100ae6fae0c9e30.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1227\/b2c2e168f7922a861248bf610b37840c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1223,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1223\/d9221879295fdd48d4a6845722272471.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1223\/2bed613dae3fb0a3621550fa900c55ad.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 75,
+            "height": 75
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1152,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1152\/aabcf99eb134ab9e9129b801acc95a74.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1152\/06fd290f7b511acd19a82a5636a73a45.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 80,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1150,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1150\/70ab819f9885bb990272dd60a18e68a3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1150\/644370057a96bff2b08e8465fef506c2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 80,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1149,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1149\/e3c96e19848ab7c722874cd06f4c3b33.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1149\/ab7573daeafa08c9a23b399d1201dc58.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 80,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1148,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1148\/c9727d55ab1bc2478f33913ccaa0bb7a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1148\/d16f0cc66e0d505e5b81fc70d15744ef.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 80,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1145,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1145\/e13d700ed14db514f36af8ee13f57812.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1145\/f8942c9ecb0f288ebf7ea3de14e80104.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 80,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1141,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1141\/6cfbb13660b968a82310476e1da4d17c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1141\/6990a4f021b7f89bfe3ca02f3904972a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1140,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1140\/7373229d4c1d1a65459821bca0ad7f1e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1140\/248b9278b2582c5049515d72dcff7bb0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1139,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1139\/d638272a48525b691609ead4da48e6fa.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1139\/70022024d3bbb16638944d3e666da63b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1135,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1135\/d22ace616f7471593a45800b90739aa9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1135\/0a0bfe7a5cc06089a6c80fb694a205d0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1133,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1133\/4ca4a58e10a8c22645d0058abc520d58.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1133\/6ddb37df6f3ebef893be66bd875a1758.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1103,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1103\/bdac09abd3f82c04e6cd666f90169966.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1103\/00e573be0bb662365282fda44b83dc27.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 121
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1102,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1102\/08803ec0918338d3807bb0ad40f09e71.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1102\/35eaa4da1b02306a667d8e616f17a71d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 121
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1083,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1083\/7ff40e53678f44a7c6731ca524eaf434.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1083\/844f65c1edbf21b4bf0e15deeeccae47.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1081,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1081\/d7291f1cbef740026da4288d4ac78034.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1081\/58f5128bc01cc4d258793c07aaaccff6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1080,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1080\/10e3116911ddd2d5639e15834c93a021.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1080\/adcfaacfe982e2c2c231d51cb620f2c6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1079,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1079\/8e02e21baf6b78d74c0ce9f39f0a7605.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1079\/47369f7165d9945f2ff42a86128b64ab.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1075,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1075\/5055920f3fd123b7b6b6bda58527cbd8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1075\/e33bfe641e3ecf306702c8189f5c2880.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1072,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1072\/e848399ed98974fbd545131049a36038.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1072\/092dbe0f31a23df96be2c74f81eddb68.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1071,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1071\/92682dc8b121b12b07b68b2af6e740f7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1071\/a4f847d833b51ace5a8be16db9e5481e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1063,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1063\/3ffc8bf0cec998816153fffae22496e4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1063\/d9c1335e26549111d99a93fd533a29e3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1061,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1061\/72f829b2256e6772df5f3d62713fec4f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1061\/4e5d8783b45b9643a358cd30d932c9e5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1059,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1059\/c4fcdb3c6311c53577640b35d3427cba.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1059\/ab49b3486c5d47c0b78723ed5b54f17c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1056,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1056\/9dd4049f6fe13dfebb77c1deff14dd4a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1056\/3bc64b754b4e7e6768800dc290695124.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1055,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1055\/f853c66c31cec675ef420287fde8ed17.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1055\/4609755558b0fa6c908df5776f37bf03.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1046,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1046\/60d8b60a7dc159fa5b3d101130d827b6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1046\/aa50dd80c305618f21455c1bd578aac8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1042,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1042\/aa80a50d7e791aff460642161be9e325.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1042\/c025c0f23e50ae1cf4c9e315f199c582.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1041,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1041\/4fefb2201f6fd8f1f9cdcc62c9d756ee.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1041\/4dacf23da597d719caaf191ab10cf57e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 18,
+            "height": 18
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1039,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1039\/21e0d69542dad33399ce4e0776d823d3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1039\/100726a896f055b13fab821b3276b0ef.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1038,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1038\/ed101db2099ceaba826f5f04cc655f8c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1038\/6f2890b4d9fbf9aedb372fa0b25f4078.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1035,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1035\/479d3fab0bdf0e8bcc200d3c65b56cf7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1035\/1e8c16a64f8f427943159ea44ca47dce.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 846,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/846\/f272f285eeb3d828fb0311a99fbe65ea.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/846\/c72c72ee18c077b3796f671514395182.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 842,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/842\/f7d4b69890938ea310f6b73588ded996.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/842\/13f5ce49c6d64edfdff49bc955020a8d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 841,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/841\/9024ce78dbfe21c39e21aa53b26346ea.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/841\/330256f596bf4bcf774dcf090e2edaff.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 142,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 752,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/752\/0a769150ff73247e44f56db99e5bde67.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/752\/a45faff5b09c9f8155a5425bb6ab98df.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 708,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/708\/6e15a568c7cb160bce93ba4944bbe140.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/708\/e75be8ccbd55d56d381b0256c74c3ceb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 427,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/427\/4d4d9fb73edc7aca1aac46d78a148bea.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/427\/4da05120882689dd45955984df6b90c2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 424,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/424\/18a4768aac663a49a2bb117cbafb6a12.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/424\/d918cedf9cf53388b633c55b72f69729.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 422,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/422\/c95359ce26d9a922017963b2f9359fe4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/422\/532391a1d8e3d379799753d013664828.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 420,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/420\/4be1a53146005b6c46dda5dd4fa377ab.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/420\/454366f0b33839f6bf3806373cd0c28b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 419,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/419\/d10ffa4a8bef7de6a3bcfa2231a5ea68.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/419\/82ffcbc675054c247757d1b656428276.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 418,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/418\/cdcf64369827021aee64d9b5f11c9627.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/418\/9d2b328fed06f85ec7d743db1d70f4f2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 290,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/290\/c099218ff99077eeed863dbbc9436648.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/290\/604836c008566316ce57262c4d882900.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 289,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/289\/7c4a1bb41e5044c897026562964b31e6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/289\/606373075dd37f723adf3fd1f83045c2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 272,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/272\/13461ff8287111396a8679a95c2350df.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/272\/c62c4d4918e7ef814c6ea9ad342f5176.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 271,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/271\/26dad218c410b1ae81625177a80ab973.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/271\/e1852f2b27891b304b6e5c8356c190bd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 270,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/270\/298f82079dec56ca136db031a2789f8c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/270\/c64167ea1ca76618cbc1f8eface7a919.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 153,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/153\/5e3754a859d584218f9970a736c11af2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/153\/fbf432a56de6100c497f7727090af032.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 85
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 105,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/105\/3cd4240252955e7864d03bad1af9fd12.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/105\/a0bd0cc585524ddea304c2bc0a56481c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "patterned"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 41830,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/418\/41830\/c6712e16ee8574976d5f2c53ea2c2074.png"
+          },
+          "body": {
+            "package": "\/files\/products\/418\/41830\/cf406e79c74b0fc8cf1fb9f764fc496d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1975,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1975\/2796678be4d93cbddfcfc9ff6de9c106.png"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1975\/b7b6088b332ff9a99a2ab8797d5c8f9a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 59,
+            "height": 59
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1974,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1974\/109e49458458b3cb11840a819d22eff0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1974\/ac89991f0f422e9afd85a0bb60224076.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 59,
+            "height": 59
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1973,
+        "type": 1,
+        "name": "Fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1973\/cf2044f4b3e1f0f43a94badb1580b758.png"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1973\/0d0fc6da5875075f96203233ec249ac0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "927": [
+            {
+              "id": "927",
+              "name": "Patterned",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 59,
+            "height": 59
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

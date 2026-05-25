@@ -10,6 +10,7 @@ import { selectUserProfileData, selectUserProjectActive } from '../../redux/feat
 import { selectIsProjectBelongToLoggedUser, updateIsProjectOnlyView } from '../../redux/features/common/commonSlice';
 import HoverComponent from "../left_new/parts/controlPanel/components/HoverComponent";
 import Checkbox from '../common/Checkbox';
+import { useEffectAsync } from '../../utils/useEffectAsync';
 
 const useStyle = createUseStyles({
     planner_popup_wrap:{
@@ -385,9 +386,11 @@ const SharePopup = props => {
         } else setNeedToUpgrade(true);
     };
 
-    useEffect(() => userData.plan == 'pro' && setNeedToUpgrade(false), [userData.plan]);
+    useEffect(() => {
+        userData.plan == 'pro' && setNeedToUpgrade(false)
+    }, [userData.plan]);
 
-    useEffect(async() => {
+    useEffectAsync(async () => {
         if(popupType == 'listProject') {
             setPreloaderStatus(true);
             if(R2D.scene.getProjectHash() == popupData) {
@@ -431,7 +434,8 @@ const SharePopup = props => {
                                 <div className={classes.planner_popup_facebook}>
                                     <div className={classes.planner_popup_text}>{translation["TEXT_SHARE_BY"]}</div>
 
-                                    <FacebookShareButton
+                                    FACEBOOK BUTTON HERE
+                                    {/* <FacebookShareButton
                                         url={createdLink}
                                         children={<img src={`${R2D.URL.DOMAIN}/files/render/69682/105640/013048a81eb659fe3f17fafaba8c8c70.png`}/>}
                                         hashtag={'#myProjectInRoomtodo'}
@@ -439,7 +443,7 @@ const SharePopup = props => {
                                         <div className={classes.planner_popup_facebook_icon}>
                                             <img src="/src_designer/images/icon_facebook.svg" />
                                         </div>
-                                    </FacebookShareButton>
+                                    </FacebookShareButton> */}
                                 </div>
                                 <div className={classes.planner_popup_facebook_line}></div>
                             </div> : null

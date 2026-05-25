@@ -776,9 +776,9 @@ const Materials = props => {
         }
     }, []);
     
-    useEffect(async () => {
-        let loadedData = await planner.scene.categoryDataLoad(lastHistoryElem.urlList, R2D.controller.getCountry());
-        setLastHistoryElemData(loadedData)
+    useEffect(() => {
+        planner.scene.categoryDataLoad(lastHistoryElem.urlList, R2D.controller.getCountry())
+            .then(loadedData => setLastHistoryElemData(loadedData));
     }, [lastHistoryElem.urlList]);
 
     useEffect(() => {
@@ -797,7 +797,7 @@ const Materials = props => {
                             <div className={classes.prod_item_hover_right}></div>
                             <div className={classes.prod_item_hover_bottom}></div>
                             <div className={classes.prod_item_img_wr}>
-                                <img data-src={R2D.URL.DOMAIN + i.source.images.preview} className={'lazyload'} />
+                                <img src={R2D.URL.DOMAIN + i.source.images.preview} className={'lazyload'} />
                                 <div className={classes.prod_item_custom_delete_btn} onClick={e => dispatch(setActivePopup({name: "confirm", type: "delete_custom_element", data: i.id}))}>
                                     <svg className={classes.prod_item_custom_delete} width="12" height="15" fill="none" viewBox="0 0 12 15">
                                         <path fill="#fff" d="M7.412.585v1.248h-.416v-.832h-2.08v.832H4.5V.585h2.912Z"/>
@@ -827,7 +827,7 @@ const Materials = props => {
                             <div className={classes.prod_item_hover_right}></div>
                             <div className={classes.prod_item_hover_bottom}></div>
                             <div className={classes.prod_item_img_wr}>
-                                <img data-src={R2D.URL.DOMAIN + i.source.images.preview} className={'lazyload'} />
+                                <img data-src={R2D.URL.DOMAIN + i.source.images.preview} src={R2D.URL.DOMAIN + i.source.images.preview} className={'lazyload'} />
 
                                 <div className={isInFavorites ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active : classes.prod_item_fav_btn} onClick={e => updateFavorites(i.id, isInFavorites)}>
                                     <FavoriteStarIcon/>

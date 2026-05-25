@@ -359,7 +359,9 @@ const LoginPopup = props => {
 
     let onRadioPasswordShowStatus = e => setIconPasswordStatus(!iconPasswordStatus);
     
-    useEffect(() => setIsFacebookLoginShow(R2D.config.data.ui.fb_login), [R2D.config.data.ui.fb_login]);
+    useEffect(() => {
+        setIsFacebookLoginShow(R2D.config.data.ui.fb_login)
+    }, [R2D.config.data.ui.fb_login]);
 
     useEffect(() => {
         isCurrDeviceAPhone && document.addEventListener('touchend', onTapToClose);

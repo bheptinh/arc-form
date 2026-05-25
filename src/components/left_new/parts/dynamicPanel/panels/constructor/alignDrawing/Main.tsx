@@ -6,8 +6,8 @@ import SimpleBar from "simplebar-react";
 import { planner } from '../../../../../../../initR2D';
 import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
 import { selectPopupsLastClosedPopup, setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
-import { changeActiveControlPanelMode, selectActiveControlPanelModeData, selectControlPanelData, selectPrevControlPanelMode, updateControlPanelStatus } from '../../../../../../../../redux/features/control/controlPanelSlice';
-import { changeImagePlanUploadType } from '../../../../../../../redux/features/constructor/constructorSlice.js';
+import { changeActiveControlPanelMode, selectActiveControlPanelModeData, selectControlPanelData, selectPrevControlPanelMode, updateControlPanelStatus } from '../../../../../../../redux/features/control/controlPanelSlice';
+import { changeImagePlanUploadType } from '../../../../../../../redux/features/constructor/constructorSlice';
 import {showTip} from "../../../../../../../redux/features/tips/tipsSlice";
 import { setActiveViewMode } from '../../../../../../../redux/features/viewMode/viewModeSlice';
 
@@ -127,7 +127,9 @@ const Main = props => {
 
     let onSetImagePlanAreaPopup = e => dispatch(setActivePopup({name: "setValueInput", type: "setImagePlanArea"}));
 
-    useEffect(() => lastClosedPopup == "imageUpload" && WC.wallsEditor.state.startRectAnimation(), [lastClosedPopup]);
+    useEffect(() => {
+        lastClosedPopup == "imageUpload" && WC.wallsEditor.state.startRectAnimation()
+    }, [lastClosedPopup]);
 
     useEffect(() => {
         R2D.Storage.load("r2d_uploadImagePopup") && WC.wallsEditor.state.startRectAnimation();

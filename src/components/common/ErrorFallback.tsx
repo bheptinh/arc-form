@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {createUseStyles} from "react-jss";
 // import Face from './images/face.svg';
 import {useSelector} from "react-redux";
-import * as Sentry from "@sentry/react";
+
 
 import {selectTranslation} from "../../redux/features/language/languageSlice";
 
@@ -90,7 +90,7 @@ const ErrorFallback = ({ error, resetErrorBoundary }) => {
                     url: window.location.href,
                 }),
             });
-            Sentry.captureException(error);
+            console.error('[ErrorBoundary]', error);
         } catch (e) {
             console.log(e);
         }

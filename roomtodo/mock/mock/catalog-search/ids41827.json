@@ -1,0 +1,79 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "1",
+    "items": [
+      {
+        "id": 41827,
+        "type": 1,
+        "name": "Large-knitted fabric",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/418\/41827\/4d9123e9e545966e006f0f87711588dc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/418\/41827\/b9ac4b422f4228069257544364726612.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "700": [
+            {
+              "id": "700",
+              "name": "Large-knitted",
+              "parentId": "49"
+            },
+            {
+              "id": "49",
+              "name": "One-colored",
+              "parentId": "13"
+            },
+            {
+              "id": "13",
+              "name": "Fabric",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": true,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

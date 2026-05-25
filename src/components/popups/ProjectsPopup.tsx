@@ -709,19 +709,20 @@ const ProjectsPopup = props => {
         return arr;
     };
 
-    useEffect(async () => {
+    useEffect(() => {
         const timer = setTimeout(() => setAnimPopupClass(true), 0);
         planner.scene.addEventListener(planner.scene.PROJECTS_UPDATE, onProjectsUpdate);
 
-        let response = await user.loadProjects(20, 0);
-        if(response.type == "error") {
-            dispatch(setActivePopup({name: "alert", data: response.data}))
-        } else {
-            setProjectsData(response.data.items);
-            setProjectsTotal(response.data.total);
-        };
-
-        setPreloaderStatus(false);
+        user.loadProjects(20, 0)
+            .then(response => {
+                if(response.type == "error") {
+                    dispatch(setActivePopup({name: "alert", data: response.data}))
+                } else {
+                    setProjectsData(response.data.items);
+                    setProjectsTotal(response.data.total);
+                }
+            })
+            .finally(() => setPreloaderStatus(false));
 
         return () => {
             planner.scene.removeEventListener(planner.scene.PROJECTS_UPDATE, onProjectsUpdate);
@@ -738,12 +739,14 @@ const ProjectsPopup = props => {
         }
     }, [projectsShow.length, projectsTotal]);
 
-    useEffect(async () => {
+    useEffect(() => {
         if(needToUploadMore) {
-            let response = await user.loadProjects(20, currentOffsetForRenders);
-            if(response.type == "error") return dispatch(setActivePopup({name: "alert", data: response.data}));
-            setProjectsData(state => state.concat(response.data.items));
-            setNeedToUploadMore(false);
+            user.loadProjects(20, currentOffsetForRenders)
+                .then(response => {
+                    if(response.type == "error") return dispatch(setActivePopup({name: "alert", data: response.data}));
+                    setProjectsData(state => state.concat(response.data.items));
+                })
+                .finally(() => setNeedToUploadMore(false));
         }
     }, [needToUploadMore]);
 

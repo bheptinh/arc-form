@@ -1,0 +1,7245 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "87",
+    "items": [
+      {
+        "id": 64694,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64694\/3d1c20f123c80239dd79f146737bec3f.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64694\/52f90328123983b16c00c6fc1118d908.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64695,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64695\/a4ae87cac02e75ed5341df761eef1833.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64695\/c5a0dadbd846bb09c85bab4ab9aa2a9c.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64696,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64696\/7c42209bf9b663fe3030599654bbec58.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64696\/ee4ac8e495b0b9919ffa51882a16d267.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 146,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64697,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64697\/b4b9f2fb5017f23906d1e164dc60a930.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64697\/1627388e2100d49120fe630bf113453d.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64698,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64698\/940a27e2c0c3a91e81d6ff7fa06111d4.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64698\/634de20ace7250055a63fd9202ce9162.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 67,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64699,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64699\/fc3c71ff526fd935ae044dd1a2d4eb39.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64699\/3926fe1a7880ed2ecc9b0e9b5804e617.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 190,
+            "height": 127,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64700,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64700\/5fac72bd120bb992d1d50c689800ce89.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64700\/cdf1cf27ed3e7dd71b4a44aa5fbea29c.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 190,
+            "height": 127,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64701,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64701\/b26e6a9fab31e5b7fbd2ee50dab6b4ec.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64701\/d0743105965c5c77f03e547642075c2e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 190,
+            "height": 127,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64702,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64702\/e4d72fb1832a2ce7c7824285d49af290.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64702\/4257d906b7aa08ad0012dc7cc0c06a0e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64703,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64703\/3df43b01563a8c499eee7cfb26b48c50.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64703\/15f4ad3f50fcb12053485ff0bfbcb5e1.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64704,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64704\/53e1c42a2c9f876db7af6e7dd2d242f6.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64704\/d5de396b6b4fbdf58c686d9c26efa82b.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64705,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64705\/24ff5641dfb81b3ba0892874f8753418.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64705\/a522a94897c012c86063afdcf721c4cd.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64706,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64706\/e79f307b571737b08540b4580d9e1be8.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64706\/59fc8e60b00138ea7bf275be0360dfce.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64707,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64707\/695c7640f6c7adb0aed8b2986b800326.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64707\/f4f0d2eda13701a23d0ca966b3a8d4c9.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64708,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64708\/e3fe2db596b00e457200ff653affe85d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64708\/cd99233bf647f1494f0f74e29dab21a1.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64709,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64709\/bb0312f41197ca3f8e747240fd17ba18.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64709\/42e5b8c0d91410c1727e4781e1d7faef.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64710,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64710\/1636b3cd672d15c85d8a81c63571f002.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64710\/eb9cb26b781c3174770181afefd6c036.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64711,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64711\/2ca20bcd4d382ab25b8a2e42da18dd31.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64711\/1bdf313e0580774c93f5e362c9de9079.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64712,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64712\/831af61f8bc7a8d91396bfa0d9f04387.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64712\/353ae21136f91b1fabd71f1785bc3c2b.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 205,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64713,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64713\/c56e585ea8f5660d050ac67600c8f988.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64713\/e33f35b910af21cb1ab087e64100e44e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 141,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1904,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1904\/4cf8f80c25db00cf7557f989d1a0d151.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1904\/c05828efb8bfef092332f2fabd79d374.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 138,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64714,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64714\/9e0a70f22926f58629bef41b76d79770.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64714\/cea44b759b531a80bb1266d2dc8fdbe0.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 178,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64715,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64715\/38d235b8fe28a5a1fa1f3139a665639d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64715\/f8e866e9bfc779cea840d6c21a5063d8.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64716,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64716\/49e69be8268bfd7ee8ba2a975e212e6a.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64716\/25adb26c809bd48b9c8f63080ba13371.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64717,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64717\/1d5b76bd7182b1caee39fea5848f4ebc.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64717\/963c4e523311af41dc36f68d44757faa.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64718,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64718\/a254263e7ebc3ee84f8d365e41ebfd41.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64718\/a58a40d59ad4788ee60fb62606f8e909.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 178,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64719,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64719\/a40089838b64742f6839cfba43e7b5d5.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64719\/aa50ea9ca779aaf4f774eb33a7b8ab70.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 125,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64720,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64720\/a93e9842805ca0722d867992108da6d7.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64720\/6f8f99e0c46a215f23fcb174b7c10038.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64721,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64721\/019457c8d2cc0c35d779657efb83dead.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64721\/f50f2707488df109ffbf78b0262a5113.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64722,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64722\/d08dacca4884c4e82e4888e2b5e2a016.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64722\/72ba918da577046756b82b65cb9c8a12.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64723,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64723\/1b61be789569d1b4a6bac02adb0b7f1f.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64723\/120307ac9ee8162c2b65d2fd5e77ce1e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64724,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64724\/0a5ddfb6aab39ee8f9041d7107be2c14.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64724\/094ff88a16c301e2c6ed11dd9d3a97cd.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 160,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64725,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64725\/539943b6bfc34f4f17588c71d73736ee.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64725\/93e2f809941c6fafa50fc7d118bbf90d.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64726,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64726\/3c0af2b85e1aa1c275f14351fc9a0dac.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64726\/6a4ead55d59dd4db9ded35e25d5c27c1.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64727,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64727\/e85ffab95fe95b4191f59600563e8a7b.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64727\/56fe1199ccb1d6e5eace9d2751a1428e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64728,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64728\/d22fe7bf9a46f09f07f68175c0977d3f.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64728\/1af83e601477a46b3de6bb12fffef22a.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 125,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64729,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64729\/fee0e8b6ed3d58613457ee882d11d50b.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64729\/cc767fca6ff432df41c25af71b8b9cda.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64730,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64730\/9ef85ea4bef1934cc4eedc6f613b4378.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64730\/77017287f5b26bf8e63e7d5f954d2bc4.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64731,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64731\/299137b91170afd6f3eac4ef922693bf.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64731\/6d2e23965063deb4706e2a30e242b86e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9905": [
+            {
+              "id": "9905",
+              "name": "Texts and calligraphy",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64732,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64732\/254bfe413707935f65ebe0cb88285b3e.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64732\/955d6e9682def10bfd026ff9743a8572.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64733,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64733\/3014b7778bbb469991ebf9ac40acab1d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64733\/61207d8b068bb46b3bd37bfecbc49860.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 134,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64734,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64734\/f47a6b08926748c60289a95d19e1e47f.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64734\/b4826cbe2805868ea315d97fec1de8f8.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64735,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64735\/d36c3e2012947f9add654863ce0002a7.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64735\/8550cc71573df2f52b4ba321fafb3881.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64736,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64736\/d6a04aade05a255a066a99a41e64f901.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64736\/473ff8f7a332ce7847d0f02603da6ebb.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64737,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64737\/b75a4bc1c1d74abe252ebcc8bd268829.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64737\/cc667837cd877bbe88a57705903f142b.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64738,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64738\/879d047098babefc961416903155e8ee.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64738\/ea060bc1c5ce357e54fce51d66cfa5f2.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64739,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64739\/3fdcb39782180f2e480fff55b77d5f61.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64739\/16427796f2b6c878b7371768cbda19cc.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64760,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64760\/e9385e22569b34f634a6fdbdee224c68.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64760\/f0636169b2ce69a31d02518aad6e56c8.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64758,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64758\/85d1740a2b7b9041ea689b1e5923f8c7.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64758\/5853e05efe94cc503b4463ef8a6c8e2d.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 130,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64759,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64759\/38e31af57b022b3f5bf7933b5256abaa.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64759\/3a6c4da2bc3ba5e41464c66d9d5d0131.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 113,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64740,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64740\/b04cbd2da6fa97ee2198e074d99c76a6.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64740\/061626816595556dac81cc6b9fbb7d2d.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 130,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64741,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64741\/e91b9b601abbaa388a8608c56d9bddd8.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64741\/070f3fd31ecf094a4bb135dfb26a236c.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 138,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64742,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64742\/98d5a66c099e043ec1a446bd4f3a0400.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64742\/98635b7b4a5c79c4177036e8ab5bb4e2.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64743,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64743\/25a35f915e566664ad16b609cdf1bd2f.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64743\/3500350dacc3ae4a1da62ba3456c6ddf.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 139,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64744,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64744\/0011efc0fbd29299297a1420eb138be7.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64744\/a9ca85579a62e2c83729f5eb370b60f5.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 146,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64745,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64745\/e3a8d7200d6d65141828c8ab17ff1920.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64745\/89e3661decc5f5efee13a769c48ffa56.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64746,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64746\/844f05b3c42ce571eb440f4282a37bc1.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64746\/4ee60423f9496bd95681532b12715de2.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64747,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64747\/3c273c2c34635b16cb5c615cf73cf706.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64747\/a6e7f07f648fa26946d9f54a1f1bdf88.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64748,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64748\/07197456c285f790a1515b3852a001a7.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64748\/f741a9af232ba3fc7485f8b145801198.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 178,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64749,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64749\/151884bc96adcdc9daa932e854701cd9.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64749\/f5c120359cb23beb34e065609a919522.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64750,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64750\/12d6ea19f04a64ecde11da41547d6703.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64750\/94f201bc7bd1c1542f9177d24f33faec.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 178,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64751,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64751\/1d2b91a034f868d41b40cd288fd81d8d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64751\/6331c544558c9028a75dd109352a0e03.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 147,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64752,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64752\/b06aaf3a1a94e9039e940db84237be5a.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64752\/c92c8a27445cd087e7b7b69fe8253958.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 142,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64753,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64753\/c92d3f9aae11d367a64be43b13fd70eb.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64753\/f85e18730f98808f77d8b5a256ca02c7.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64754,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64754\/777687f20832205f39c2ebe4f7642409.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64754\/85e7670e1aa544d6cef1d0127aae9381.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 140,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64755,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64755\/63db96ea8d2f80f51ec2417cb555b2db.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64755\/985fb096687e05926eedd3418e37ad26.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 140,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64756,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64756\/e13c13dcff9aeb36e775acc5f256919c.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64756\/42e16ef92e980a5e0174311bded89608.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64757,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64757\/f813f1d2169f15ff57234654a288e71d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64757\/3780c8d8d427c3eafe0b5d9e76a2ea6a.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 103,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2814,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2814\/5e7992b0031d68cdb6f8d5392382bdbc.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2814\/3fd990d11aab33c481f44533d11a25f2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "7b2c9e784916ed237b1df33939bcedd9"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "96165b2975265fa67b15865d825c24ee"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 33,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2813,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2813\/0703afadcbd976a5dd0a7c21f66a16df.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2813\/e676320283ac59406062583bb56cd7c9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "7b2c9e784916ed237b1df33939bcedd9"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "96165b2975265fa67b15865d825c24ee"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 33,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2815,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2815\/e095f1af943fc153183f267de3104ba1.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2815\/358a729355c7dbe9a9f44b0f28c6bad5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "7b2c9e784916ed237b1df33939bcedd9"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "96165b2975265fa67b15865d825c24ee"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 33,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2812,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2812\/abc0e455ccb126acc5f49b2d508126fd.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2812\/d94588a6fcd8bb0cc5327b4fdf998325.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "42a44143fccee1cc2a69101e4b8f92df"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cf50778775e52f72f3298573e7e05d14"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 37,
+            "height": 59,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2811,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2811\/7c516daac7f89c6747cff800b12c9d1d.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2811\/c0f40717fc482b643e094b21276a353a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "c7d0f85a9180dea2fa30df0ec4591590"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "6824668bb1e37883de7bb820780357f2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 68,
+            "height": 59,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2810,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2810\/6842312acb663fd38ab529eaf704a55d.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2810\/97f1fa9b929fe0fa16845ea9a698837d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "42a44143fccee1cc2a69101e4b8f92df"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cf50778775e52f72f3298573e7e05d14"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 37,
+            "height": 59,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2784,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2784\/3e19ce86d08fe38ff63754eb56729088.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2784\/e23769656a1db0efd9932a439c0e8189.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "20be49ff554371d9d41493be480db222"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "ac8b44666e4dd5d416371b72307987ce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 64,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2721,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2721\/9bb480dda6ac28a61524aaafe4c4693e.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2721\/77c3fd6b817b639d03bc6fafeccfc73c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "ea1ea6498093055e29572be56acfaab0"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "af3ba56a59de014a2039ab818f75c8ab"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 94,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2720,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2720\/98e2afa746079c3001d71a9061f94183.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2720\/a874c4cc8d5221678b663481722bb227.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "3434b41fcf0058de4d89426f538a0584"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "98c756e63c366d060d3151a20efc184d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 98,
+            "height": 96,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2718,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2718\/95bb5a59eb7c42563f4f5d1e26431c5b.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2718\/d1d0b1c31222ba1ed3591ffe8f89fd2c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "f11e69fa020cb64f5bb1302e40098e3f"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "6b918e029e0164af3a5be5f5f620e847"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 95,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2717,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2717\/7264b22bbdf5a07d738ca00667ec9b8f.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2717\/bbe8c8b82eb21c6ab80fb7c0ebef3c1b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b914a322616b8204635cc87bd1a50173"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cde91b77240ee75c5de5a86d57b4a3a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2715,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2715\/d2f62844ad2691d92d11e39933ad82f3.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2715\/2f4921b90c875c6df65bfb5a1d74fe5e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "905b6d2a19757ef2c7b43595d596f410"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "797ef41402858baddcced782b8ce6ebb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 66,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2714,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2714\/d52d83634645ea1ed29825c8dbb9aaaf.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2714\/cd65fa13b28b9e154ee8424eb7ad0e04.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "ed0e20609893658833645a1d8acbe21b"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "369e8b4945c9b8649fd32a9bd19f59f8"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 87,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2713,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2713\/784f7d3ab3ece22245dcb0581cefe2aa.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2713\/4d97ecf905fb0036b5841ad74841a31a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "a52efdadb1b46be73420c62c5d013fc1"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "6aafd0e403400ccc953fe58ac622c75b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 88,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2712,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2712\/91e59338891b19c5f4e06f4c77373bf9.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2712\/5f30608e1f59239695e5cfb477a4b92e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "6081ec7be46ab356dc1114fdc9a8eb4e"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "7203f418f6dc1c759fcca53260f064a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 66,
+            "height": 88,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2710,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2710\/9006a0b4b42a78829185086e1a34cd13.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2710\/5437e97f912cd170119ff18fabb85c39.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "ab9ed70f6124d6bb6e5bfb830bae37c8"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "9c14dc4dc7812f8353ee830129bf7c77"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 116,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2709,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2709\/cada637fd73edaf4c52bd49ccba18162.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2709\/f27d389c1b7c0d828dd15163a2f35a23.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 83,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2707,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2707\/8403dfe5973119e529ef15ad24b0d20e.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2707\/b3114218d375f31ad93561c422909ea4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "4c91cbf71bb5c5d125a8bc83bbec02a3"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "2f8f02535adfa1cd3b862d6977ed1ee7"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 94,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2698,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2698\/6abfbb70bf44a0ae535ca375bd4d5019.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2698\/a6c5894054fa076a439456ce25adb712.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "dce56c00a370c32a8bf3a7c6e6bdeed3"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "52e04a556c4c3f5cef64b80d5aafa43c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9895": [
+            {
+              "id": "9895",
+              "name": "Abstract",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 96,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

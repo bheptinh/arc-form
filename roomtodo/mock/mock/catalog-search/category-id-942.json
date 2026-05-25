@@ -1,0 +1,2373 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "29",
+    "items": [
+      {
+        "id": 2664,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2664\/d694d4dee6ece1a8d536629fff527788.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2664\/c7bd53d1cce9fac6eee597fd51eda632.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2674,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2674\/677be49a5dcf69e1ce209c3b49a22b8a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2674\/8f430b48d6d2ac5c80d0c4071feccb76.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 53,
+            "height": 53
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2663,
+        "type": 1,
+        "name": "Wallpapers Lines",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2663\/e36350d7305af30fcbde9db1b5ee0b64.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2663\/f9348d166c9cd441b3a8d2bf929c63e4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2660,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2660\/891aeee4dc8cedb26ba62f4bb0035856.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2660\/cfa25ddbd7a8a51ae3273a5c1c41f365.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2657,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2657\/d46d623ce1db2bc12ffc7f3ae0329a46.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2657\/896dc727be89426040000eac224a278b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2646,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2646\/12f95a5d48a067354d4f0ae5f178d23b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2646\/8d82d9623fbb7ca89bca55a20d75bb73.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2645,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2645\/8b2901f65f41ffb3e3b5ee146c0f5137.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2645\/8a50051c6630dfff3985d9a58dd86faf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2641,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2641\/eb789e9de0fb423c8936534f0bd7a7fb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2641\/4888208c89bd7fa352e260b2807ca313.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2639,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2639\/1a2f68d368474b4b04575bc3efd35aaa.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2639\/dc6899b6d5533585c5dd3b239f627c73.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2637,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2637\/ce76b877da04acdd3f5370a714869444.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2637\/7914fdff5b448649b81df36bdb88ecc0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2636,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2636\/378d5b54c051224662544a580520bad2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2636\/46f42a3b47f97dc56d824c1f5475d0a8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2635,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2635\/2902f088bc593954e1936206c5a65d69.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2635\/3b21dfa06d7e5a1c81cd9fed50221ef5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2634,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2634\/37ad0cded84a4af5ecca8d884a1dff99.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2634\/94212d066f2bdd734b216641cd1dd9b9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2611,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2611\/f975a5ff8f627771709a89056c1897fa.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2611\/7c1f069c2cac8c927f11cb840e2e8280.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 88,
+            "height": 47
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2610,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2610\/6bd477a7130add8b2a4b86aefff70ba7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2610\/bf51a87d5041483f73f8098630919718.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2606,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2606\/239054ec45c9b41d7c167a202c479fe3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2606\/cea0a4642b23b0f67b4f5af7fc3b2952.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2603,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2603\/71fdc386aa5a8e968c02524ff1b6fa05.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2603\/e3222b15230061d4fd8eb412652cdbdf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1430,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1430\/107f50396d97967440cb928e9aec33d7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1430\/72f258e64d448a1dfd768eb56bc962bf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1408,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1408\/406c15f5339fd089ffbef48dff41f25e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1408\/02b5f735a78c84ae43cc557fc213852b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1407,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1407\/b640f7ecaf44a972e8923e41643ae6a9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1407\/e602933c67fa81b96109be5fbbc1af87.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1406,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1406\/9a8ec845a771673b63d74e436ec133f0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1406\/d9dc79cceedde6a54a513925d313a602.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1403,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1403\/0e691657fe81687194dee6139063e36f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1403\/6cc80446e12bf34dd651a761bf5fa49e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 52,
+            "height": 52
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1402,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1402\/f19b104d63471e61e8aea7b701febc89.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1402\/4a60bb79f4fa377fbb4f43ac7ddbf966.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 52,
+            "height": 52
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 876,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/876\/fab2857f5d251ce5e6fbf8feff95e93d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/876\/57148e5475aa74ff83dc1c23e8028ec1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 756,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/756\/83e93c0fc10a882b1933a420669d244a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/756\/2b06982cac4ff3d28791d8bf3f4e7760.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 25,
+            "height": 25
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 355,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/355\/9643382ce9c6bbdc945bcffad62bbc51.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/355\/d584c0c2ba9fce49c9d6bbc7032ed49f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 353,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/353\/de5bb169b7957a4b1aa77ebabd2a7c7a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/353\/2344f18814f98a4bc27eb0d3f746b33b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 352,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/352\/8e2f7cb755c52f7630857a0aff1e4da9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/352\/f0c4f1b481a49dfe4dd14a4f59410b81.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 347,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/347\/11871443bba678837abfa1db870e8a17.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/347\/ed04c3b9ba7409f5caf51590f234c3d3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "942": [
+            {
+              "id": "942",
+              "name": "Striped",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -481,10 +481,16 @@ const Material = () => {
         }
     }
 
-    useEffect(() => setTimeout(() => setStyleAnimation({ transform: "translateX(0%)"}), 50), []);
+    useEffect(() => {
+        setTimeout(() => setStyleAnimation({ transform: "translateX(0%)"}), 50)
+    }, []);
 
-    useEffect(() => lastHistoryElemData && setIsInFavorites(userFavorites?.find(i => i?.id == lastHistoryElemData?.id)), [lastHistoryElemData]);
-    useEffect(() => setUserFavorites(user.data.favorites?.items || []), [isLogged]);
+    useEffect(() => {
+        lastHistoryElemData && setIsInFavorites(userFavorites?.find(i => i?.id == lastHistoryElemData?.id))
+    }, [lastHistoryElemData]);
+    useEffect(() => {
+        setUserFavorites(user.data.favorites?.items || [])
+    }, [isLogged]);
 
     return (
         <div className={classes.cont} style={styleAnimation}>

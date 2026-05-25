@@ -1823,6 +1823,33 @@
           "urlList": "\/api\/category\/products?category_id=9994&key=4500282e6846fe6650de81bd35d27540"
         }
       ]
+    },
+    {
+      "id": 9929,
+      "published": 1,
+      "name": "Random items",
+      "icon": "\/files\/categories\/product\/9925\/d2599de14233eeed62dba57b7ced7c53.jpeg",
+      "roomtodo": 1,
+      "type": "category",
+      "iconFill": 0,
+      "privateMaterialType": 0,
+      "position": 7,
+      "tags": [],
+      "nodes": [
+        {
+          "id": 9882,
+          "published": 1,
+          "name": "Random item 1",
+          "icon": "\/files\/categories\/product\/9177\/aa893c9bc715ab2c958709e395571732.jpeg",
+          "roomtodo": 1,
+          "type": "product",
+          "iconFill": 0,
+          "privateMaterialType": 2,
+          "position": 10,
+          "tags": [],
+          "urlList": "\/api\/category\/products?category_id=9882&key=4500282e6846fe6650de81bd35d27540"
+        }
+      ]
     }
   ]
 }

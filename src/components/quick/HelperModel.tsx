@@ -340,7 +340,9 @@ const HelperModel = () => {
         }
     }, []);
 
-    useEffect(() => dispatch(updateQuickPanelPosition({name: "helper_model", position: panelPosition})), [panelPosition]);
+    useEffect(() => {
+        dispatch(updateQuickPanelPosition({name: "helper_model", position: panelPosition}))
+    }, [panelPosition]);
 
     useEffect(() => {
         if (position.x != undefined) {

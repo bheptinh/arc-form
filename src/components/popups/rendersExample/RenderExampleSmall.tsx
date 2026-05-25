@@ -575,9 +575,13 @@ const Export2DProjectPopup = props => {
         setScaleTypesMain(scaleTypeArray);
     }, [scaleTypeCurrent]);
 
-    useEffect(() => setTimeout(() => pdfFile && setPreloaderStatus(false), 500), [pdfFile]);
+    useEffect(() => {
+        setTimeout(() => pdfFile && setPreloaderStatus(false), 500)
+    }, [pdfFile]);
 
-    useEffect(() => R2D.pdfCreator && !preloaderStatus && updatePDF(), [orientationStatus, sizeTypeCurrent, scaleTypeCurrent, showScaleStatus, showRoomAreaStatus, showRoomNameStatus, showSizesStatus, showTerrainTextureStatus]);
+    useEffect(() => {
+        R2D.pdfCreator && !preloaderStatus && updatePDF();
+    }, [orientationStatus, sizeTypeCurrent, scaleTypeCurrent, showScaleStatus, showRoomAreaStatus, showRoomNameStatus, showSizesStatus, showTerrainTextureStatus]);
 
     useEffect(() => {
         R2D.pdfCreator = new R2D.PDFCreator({ sizeTypes, scaleTypes });
@@ -586,7 +590,9 @@ const Export2DProjectPopup = props => {
         setPdfFile(R2D.pdfCreator.getDataurlstring());
     }, []);
 
-    useEffect(() => setDisabledSizesStatus(activeViewMode == 'constr' ? false : true), [activeViewMode]);
+    useEffect(() => {
+        setDisabledSizesStatus(activeViewMode == 'constr' ? false : true)
+    }, [activeViewMode]);
 
     useEffect(() => {
         if(showSizesStatus == !disabledSizesStatus) updatePDF();

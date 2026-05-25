@@ -309,7 +309,9 @@ const Panorams = props => {
         dispatch(controlPanelUpdateBreadCrumbs({data: {type: "colorpicker"}, updateType: "add"}));
     };
 
-    useEffect(() => setTimeout(() => setStyleAnimation({ transform: "translateX(0%)" }), 0), []);
+    useEffect(() => {
+        setTimeout(() => setStyleAnimation({ transform: "translateX(0%)" }), 0)
+    }, []);
 
     useEffect(() => {
         if(mainDiv.current) mainDiv.current.scrollTop = lastHistoryElemScroll;
@@ -319,7 +321,7 @@ const Panorams = props => {
         panoData.forEach(elem => {
             panorams.push(
                 <div key={elem.id} className={classes.viewItemStandart} onMouseLeave={mouseLeave} onMouseEnter={e => mouseEnter(e, elem)}>
-                    <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} className={classes.viewItemImg + ' lazyload'} />
+                    <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} src={R2D.URL.DOMAIN + elem.source.images.preview} className={classes.viewItemImg + ' lazyload'} />
                     {
                         activePanoId == elem.id ?
                             <div className={classes.activePano} onMouseDown={startRotatePano}>
@@ -363,7 +365,9 @@ const Panorams = props => {
         }
     }, [panoArray]);
 
-    useEffect(async () => planner.scene.dispatchEvent(new Event(planner.scene.TIPS_PANORAMS, {})), []);
+    useEffect(() => {
+        planner.scene.dispatchEvent(new Event(planner.scene.TIPS_PANORAMS, {}))
+    }, []);
 
     return (
         <div className={classes.planner_catalog_cont} ref={rightPanelData} style={styleAnimation}>
@@ -380,7 +384,7 @@ const Panorams = props => {
                         {
                             props.renderType == 'exterior' || props.renderType == 'topView' ?
                             <div className={classes.viewItemStandart + ' ' + (activePano.id?.indexOf && ~activePano.id.indexOf('#') ? classes.viewItemStandart_active : '')} onMouseLeave={mouseLeave} onMouseEnter={e => mouseEnter(e, { name: translation['COLORED_BACKGROUND']})}>
-                                <img data-src={'/src_designer/images/colorPickerBackground.png'} className={classes.viewItemImg + ' lazyload'} />
+                                <img data-src={'/src_designer/images/colorPickerBackground.png'} src={'/src_designer/images/colorPickerBackground.png'} className={classes.viewItemImg + ' lazyload'} />
                                 <div className={classes.planner_catalog_elem_overlay} onClick={onOpenColorPicker}></div>
                             </div>
                             : null
@@ -388,7 +392,7 @@ const Panorams = props => {
                         {
                             props.renderType == 'exterior' || props.renderType == 'topView' ?
                             <div className={classes.viewItemStandart + ' ' + (activePano.id == 'transparent' ? classes.viewItemStandart_active : '')} onMouseLeave={mouseLeave} onMouseEnter={e => mouseEnter(e, { name: translation['TRANSPARENT_BACKGROUND']})}>
-                                <img data-src={'/src_designer/images/transparent_background.png'} className={classes.viewItemImg + ' lazyload'} />
+                                <img data-src={'/src_designer/images/transparent_background.png'} src={'/src_designer/images/transparent_background.png'} className={classes.viewItemImg + ' lazyload'} />
                                 <div className={classes.planner_catalog_elem_overlay} onClick={e => onSelectPano({e, id: 'transparent', rotation: 0, previewImgSrc: '/src_designer/images/transparent_background.png'})}></div>
                             </div>
                             :

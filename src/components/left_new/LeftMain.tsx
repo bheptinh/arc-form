@@ -49,7 +49,9 @@ const LeftMain = props => {
 
     const classes = useStyle();
 
-    useEffect(() => R2D.Storage.load("r2d_blueScreenPopup") && dispatch(updateDynamicPanelStatus(true)), []);
+    useEffect(() => {
+        R2D.Storage.load("r2d_blueScreenPopup") && dispatch(updateDynamicPanelStatus(true))
+    }, []);
 
     useEffect(() => {
         planner.mih()._titlesTool.controlPanelToggle(controlPanelStatus);

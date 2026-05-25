@@ -125,8 +125,12 @@ const Helper = props => {
         dispatch(removeQuickPanelAll());
     };
 
-    useEffect(() => setTypeToHide(R2D.scene.currentConstructorElementData ? R2D.scene.currentConstructorElementData.type == 'topFrame' || R2D.scene.currentConstructorElementData.type == 'bottomFrame' ? 'frames' : R2D.scene.currentConstructorElementData.type == 'cap' ? 'cap' : R2D.scene.currentConstructorElementData.type + 's' : ''), []);
-    useEffect(() => setShowHiddenBtn(!(typeToHide == 'frames' || typeToHide == 'cap' || typeToHide == 'areas' || typeToHide == 'cuts')), [typeToHide]);
+    useEffect(() => {
+        setTypeToHide(R2D.scene.currentConstructorElementData ? R2D.scene.currentConstructorElementData.type == 'topFrame' || R2D.scene.currentConstructorElementData.type == 'bottomFrame' ? 'frames' : R2D.scene.currentConstructorElementData.type == 'cap' ? 'cap' : R2D.scene.currentConstructorElementData.type + 's' : '')
+    }, []);
+    useEffect(() => {
+        setShowHiddenBtn(!(typeToHide == 'frames' || typeToHide == 'cap' || typeToHide == 'areas' || typeToHide == 'cuts'))
+    }, [typeToHide]);
 
     return (
         <motion.div

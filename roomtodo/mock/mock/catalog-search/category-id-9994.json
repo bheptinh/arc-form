@@ -1,0 +1,2453 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "25",
+    "items": [
+      {
+        "id": 68201,
+        "type": 2,
+        "name": "Sink",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68201\/42ddbe9a7c042d7b69acfe4449b59eed.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68201\/a7b03981614f761f9b4564ab1dbeeb4a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68201\/4dd9b95f-73b1-469a-ae21-f8e1baa3f3ec.svg",
+            "contourTop": "30,37.5,30,-37.5,-30,-37.5,-30,37.5",
+            "contourCut": "27.88,0,28.18,-3.99,30,-80.71,30,-84.7,30,-95.16,30,-99.65,1.34,-125.55,1.05,-125.79,0.71,-125.94,0.34,-126,-0.03,-125.96,-0.38,-125.83,-0.68,-125.61,-0.73,-125.57,-30,-99.65,-30,-80.71,-27.9,0,-25.35,0,-24.5,0,27.03,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "ced19e8f64a6f7039febebd6c79e23ea"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "5cb3373cdc2439fe2bb4292938cf4dac"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "41ffae4e50b7d72e99ea07772d4ffd76"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 126,
+            "depth": 75
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68202,
+        "type": 2,
+        "name": "Double sink",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68202\/53942230e9f3eab4273c81f810f5727d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68202\/4e49076f396f9447ac3fbe7ba3346342.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68202\/54e2b7e3-020d-40f3-9171-2478b0a7f15b.svg",
+            "contourTop": "60,37.5,60,-37.5,-60,-37.5,-60,37.5",
+            "contourCut": "58.28,0,58.48,-3.99,60,-80.71,60,-84.7,60,-95.16,60,-99.65,27.5,-125.79,27.16,-125.94,26.79,-126,-27.84,-126,-28.21,-125.96,-28.56,-125.83,-28.87,-125.61,-60,-99.65,-60,-80.71,-58.68,-3.99,-58.44,0,-55.88,0,-55.03,0,57.43,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "4afbe2d9a6f4a2112cfe967e67e2a3b1"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "ec78811179ba5c440404be2c8934f861"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "ab6fbd89df7da2569297ca6e1d41ff11"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 126,
+            "depth": 75
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68203,
+        "type": 2,
+        "name": "Double sink",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68203\/5abc08bbcb5a639f9c5000cd77291c65.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68203\/50e539f4dea9f702d7b38f342ba70e1b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68203\/a3b1598b-b6ac-46ff-be31-2e969d26ad16.svg",
+            "contourTop": "90,37.5,90,-37.5,-90,-37.5,-90,37.5",
+            "contourCut": "88.48,0,88.67,-3.99,90,-80.85,90,-95.8,90,-99.78,-0.7,-125.94,-1.07,-126,-57.23,-126,-57.6,-125.96,-57.95,-125.83,-58.26,-125.61,-90,-99.78,-90,-80.85,-88.91,-3.99,-88.7,0,87.63,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "96103792a79aef87a15fbf3d85113d6a"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "6962aa861cd7b76e34554ea889e43787"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "8577915437552117e6f1c4364e84ac56"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 180,
+            "height": 126,
+            "depth": 75
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68204,
+        "type": 2,
+        "name": "Deep fryer",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68204\/c8a62ca7fc43d06faac522cdb858afe5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68204\/a65bd311dbbefc21b8cab4abe004a1e9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68204\/fd640155-4357-479f-bb8a-f151344154c5.svg",
+            "contourTop": "13.49,27,13.49,17.06,13.49,-18.22,1.51,-26.95,1.35,-26.98,1.22,-26.99,1.08,-27,0.92,-27,-2.05,-27,-2.2,-27,-2.42,-26.99,-2.61,-26.96,-2.64,-26.95,-13.49,-18.22,-13.49,27",
+            "contourCut": "12.69,0,13.49,-2.01,13.49,-34.66,13.49,-38.61,4.79,-39.98,4.14,-40,3.47,-39.98,-13.49,-38.61,-13.49,-34.66,-13.49,-2.01,-12.69,0,-8.72,0,-8.51,0,-8.43,0,12.41,0,12.62,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "48e95a24c52895a92f1d505526f80c39"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "73bd1ad0d3878e8f3baf825af3796c96"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "068e436fdfba7efc3d73755d5e3617cd"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "4862280a2a56fd00748642be2210d6ee"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 27,
+            "height": 40,
+            "depth": 54
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68205,
+        "type": 2,
+        "name": "Commercial gas range",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68205\/f81251abe672be1eb0e8a3fa7ea10608.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68205\/d995504d0e3a9d913272138d74c26549.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68205\/443f1d15-396f-4d7c-bf57-966c434f1f47.svg",
+            "contourTop": "60.37,36,60.49,35.89,60.5,-24.06,60.5,-24.17,60.5,-32.19,60.5,-33.7,58.4,-36,-52.2,-36,-57.93,-36,-60.5,-33.72,-60.5,35.66,-60.5,35.78,-60.37,35.88,57.43,36",
+            "contourCut": "60.37,0,60.49,-0.11,60.5,-70.82,60.5,-89.4,60.5,-89.5,60.37,-113,-60.5,-113,-60.5,-89.65,-60.5,-0.23,-60.37,-0.12,-60.11,-0.02,57.43,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stanlies_steel",
+                "source": "bank",
+                "hash": "de623f11d353301fb0b0cb47ca1a92ce"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "Glass",
+                "source": "bank",
+                "hash": "0f716299370a4350048b5a54c5a57786"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "6777230f617f0e36cb404f47a027b7da"
+              },
+              {
+                "id": 3,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "f1c07f384b8c0b95d9301458b78d95c0"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "e2d2461f189b218f61fa949c747c8193"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 121,
+            "height": 113,
+            "depth": 72
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68206,
+        "type": 2,
+        "name": "Commercial gas cooktop",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68206\/51013160bcc26a31faf38459c05199f1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68206\/335456e3a24e1cafeed7e9070efa95fa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68206\/f46c3cd1-7c44-46fe-a84c-88355ca2f4ff.svg",
+            "contourTop": "61,34.5,61,31.48,61,-25.76,61,-31.32,61,-33.55,50.95,-34.5,-50.98,-34.5,-61,-33.55,-61,31.48,-61,34.5",
+            "contourCut": "61,0,61,-31.53,58.96,-43,-58.96,-43,-61,-31.53,-61,-20.07,-61,-0.64,-61,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stanlies_steel",
+                "source": "bank",
+                "hash": "94091fb68a8412d1b6b6af8b79073ac3"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "d8d4740d81979a6382112fb388433885"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "1f71f4054125ac2ed045295942576d68"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "dbc03ca32ac8f73faeff21ba76557ca2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 122,
+            "height": 43,
+            "depth": 69
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68207,
+        "type": 2,
+        "name": "Professional coffee machine",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68207\/2d39feccc4cf72487ea01f9dc9a12d42.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68207\/eb5d80d5c8908c6c9eb060de7fa786db.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68207\/8e28e982-5f0b-4447-92bd-bb6283f48d9e.svg",
+            "contourTop": "34.98,30,35.35,29.36,35.36,28.93,35.5,20.64,35.5,-11.86,35.36,-23.38,34.98,-24.39,13.84,-30,13.53,-30,13.25,-30,13.03,-30,12.94,-30,-12.98,-30,-13.26,-30,-13.49,-30,-13.57,-30,-35.05,-24.39,-35.46,-23.38,-35.5,-11.86,-35.5,20.64,-35.46,28.93,-35.35,29.36,-35.05,30,34.14,30",
+            "contourCut": "28.12,0,34.98,-2.99,35.36,-3.99,35.5,-10.37,35.35,-52,33.96,-52,-33.96,-52,-35.35,-52,-35.5,-10.37,-35.46,-3.99,-35.05,-2.99,-28.12,0,-24.01,0,-23.44,0,-22.73,0,-22.64,0,26.75,0,27.32,0,28.03,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "75cad9dccee3a964ea7957625f2ad425"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "0d2761e45de9ad39df4c076efcd6efda"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "e784fa83f6c4bdb38feaea15cceeafce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 71,
+            "height": 52,
+            "depth": 60
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68208,
+        "type": 2,
+        "name": "Wall Canopy Hood",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68208\/99c5c1e2cdc04aa1142d164dd957f3c3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68208\/a2213d824463f9db125c2b63f37108d5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68208\/e57a1335-21ed-4469-bd6f-3151531c4470.svg",
+            "contourTop": "57,30,57,1.34,57,-30,-57,-30,-57,30",
+            "contourCut": "57,0,57,-72.01,-57,-72.01,-57,0,-53.44,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Wall_Canopy_Hood",
+                "source": "bank",
+                "hash": "e0c09c9406d41b0881a2a1e4135c403d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 114,
+            "height": 72,
+            "depth": 60
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "190.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68209,
+        "type": 2,
+        "name": "Island Canopy Hood",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68209\/11ddd74df2a0f3dedb3f095c15866eb6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68209\/f638c35279027f065751571a34158aac.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68209\/6695ff16-85ed-464b-a1e2-8e788246c1f4.svg",
+            "contourTop": "46.5,35,46.5,-35,-4.58,-35,-8.34,-35,-46.5,-35,-46.5,35,41.7,35",
+            "contourCut": "46.5,0,46.5,-4.3,16.65,-136,-16.98,-136,-46.5,-4.3,-46.5,0,-41.7,0,41.7,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainles_steel",
+                "source": "bank",
+                "hash": "85b6cbb8324e6b74b088b3ff830f98d7"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#f0f0f0",
+                "current": "#f0f0f0",
+                "name": "Plastic_white",
+                "source": "bank",
+                "hash": "b67845122154ae904d60b38fbc11302b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 93,
+            "height": 136,
+            "depth": 70
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "190.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68210,
+        "type": 2,
+        "name": "Stainless Steel Worktable",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68210\/87a493cd9bdc7489f0b8741b188653d6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68210\/da8f282df86221a4f13f3ef502b097be.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68210\/4caf8315-e986-49eb-84c1-957af0145a57.svg",
+            "contourTop": "60,37.5,60,33.5,60,-37.5,-60,-37.5,-60,37.5",
+            "contourCut": "58.5,0,58.67,-3.99,60,-81.03,60,-96.01,60,-100,-60,-100,-60,-96.01,-60,-81.03,-58.91,-3.99,-58.7,0,57.65,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "7cbe74bee022f576e032f4feacceecb7"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "dd8ca6f5d7492aa003a8a8a42acb4b70"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 100,
+            "depth": 75
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68211,
+        "type": 2,
+        "name": "Stainless Steel Worktable",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68211\/2fbaad119e87202b71291ec429ed70ab.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68211\/fa90e032cc816925e5991ac89e716bdd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68211\/8aed3c6b-44f8-4ad5-91c1-2f2dca514ce5.svg",
+            "contourTop": "90,37.5,90,33.5,90,-37.5,-90,-37.5,-90,37.5",
+            "contourCut": "88.51,0,88.67,-4,90,-81.14,90,-96.14,90,-100.14,-90,-100.14,-90,-96.14,-90,-81.14,-88.91,-4,-88.7,0,87.66,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "b626651036f0fa394185ab29f1571645"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "19848a7d0d00b2a72e93cea1a66bbbfd"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 180,
+            "height": 100,
+            "depth": 75
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68212,
+        "type": 2,
+        "name": "Stainless steel shelving unit",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68212\/3102e47728cc20c9cba90f7a990fab85.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68212\/2fdbb022ea30577ca028f905bdc73007.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68212\/860d7935-2f6f-4c3d-8e0f-1f884d29ca8b.svg",
+            "contourTop": "75,25,75,-21,75,-25,71,-25,-71,-25,-75,-25,-75,-21,-75,21,-75,25,71,25",
+            "contourCut": "75,0,75,-148.7,75,-150,73.7,-150,71,-150,-73.7,-150,-75,-150,-75,-148.7,-75,-105.37,-75,-18.7,-75,-15,-75,-11,-75,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel_rack",
+                "source": "bank",
+                "hash": "b86f26103063e623854153571bd1b13d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 150,
+            "height": 150,
+            "depth": 50
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68213,
+        "type": 2,
+        "name": "Stainless steel cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68213\/78f6b38b6c5aefd6884dfc92aa75d32e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68213\/fb63cd8005075fec53473f8bfe8c6d1c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68213\/bbb18bbd-0edd-4810-988a-cfdca59b1bfc.svg",
+            "contourTop": "75,37.5,75,-35.5,75,-37.5,-75,-37.5,-75,-35.5,-75,37.5",
+            "contourCut": "69.6,0,73.4,-0.04,75,-16.01,75,-81.03,75,-85.03,-75,-85.03,-75,-81.03,-75,-16.01,-73.4,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "c918836d534eb8d196dd4fba7ac0a65d"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "74bac8e7de5ad21598be0798e04db737"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 150,
+            "height": 85,
+            "depth": 75
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68214,
+        "type": 2,
+        "name": "Stainless steel shelving unit",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68214\/9c210f17e0394f78363da02511bed04e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68214\/298496eae34f2b789e241f79eac01a9e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68214\/fb944635-f557-4ab5-8696-6a38915a549e.svg",
+            "contourTop": "75,25,75,20.84,75,-20.54,75,-21,75,-25,-71,-25,-75,-25,-75,-20.54,-75,20.84,-75,21,-75,25,71,25",
+            "contourCut": "75,0,75,-58,75,-58.33,75,-105.37,75,-106.67,75,-150,-73.7,-150,-75,-150,-75,-58,-75,-54.33,-75,0,71,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Perforated_stainless_steel_rack",
+                "source": "bank",
+                "hash": "9e5c1ea9a8ca1edf158e1523e0e9c0f3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 150,
+            "height": 150,
+            "depth": 50
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68215,
+        "type": 2,
+        "name": "Stainless steel cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68215\/6915eda7ac371b2cb6fb59ba7b0a68b9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68215\/2596c80d0d4fcf0c26d3687bdee8d2e9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68215\/3a866624-b463-49a8-9949-dcbacfb054f2.svg",
+            "contourTop": "75,37.5,75,-37.5,-75,-37.5,-75,37.5",
+            "contourCut": "69.6,0,73.4,-0.04,75,-16.01,75,-80.96,75,-84.96,-75,-84.96,-75,-80.96,-75,-16.01,-73.4,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "8064faacdff02ab2e24750879552e3c3"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "20d9f53e0d765dc3b676393f5c55a9e8"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 150,
+            "height": 85,
+            "depth": 75
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68216,
+        "type": 2,
+        "name": "Food warmer (Marmite)",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68216\/2030fa7122c5899d2c2ff666a4927c74.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68216\/5a8a0f0dc4f35e929ec82401edaa14e2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68216\/93248d62-fa69-4f8e-95c9-74c27e9f68f3.svg",
+            "contourTop": "75,39,75,-35.52,35.6,-39,34.6,-39,-75,-35.52,-75,39",
+            "contourCut": "73.26,0,75,-15,75,-85,65,-86,-46.75,-86,-48.53,-86,-50.32,-86,-54.51,-86,-55.2,-86,-55.43,-86,-65,-86,-75,-85,-75,-15,-73.46,0,72.41,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "0c6d0548ee27a4d2b6e4607c853b78f5"
+              },
+              {
+                "id": 1,
+                "default": 1555,
+                "name": "Polished_metal",
+                "source": "bank",
+                "hash": "022a8d038a301a30842894b807f8f055"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "a967091ea358a37e6e638607bc532b69"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "a60843c0bd1cc4a6f7ac0142c3ba3473"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 150,
+            "height": 86,
+            "depth": 78
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68217,
+        "type": 2,
+        "name": "Refrigerated worktable",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68217\/8cd441cc1ad9c93232bd13b084771c23.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68217\/c7da04f3a11d266d5e84c69c62c31d4a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68217\/e0d03f75-b95f-4f67-934b-93085952a9a3.svg",
+            "contourTop": "60,41.5,60,-37.5,23,-41.5,9,-41.5,-60,-37.5,-60,41.5",
+            "contourCut": "57.64,0,60,-15,60,-84.98,-60,-84.98,-60,-15,-58.46,0,-55.91,0,-55.06,0,56.79,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "Screen",
+                "source": "none",
+                "hash": "61e85542e5b6f6b54cb4befdde7fe69c"
+              },
+              {
+                "id": 1,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "99d2384c68d7b270d27f8c7886ddad5a"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "f5dfd02fceae3222c93d4057d974c146"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "44c168d6e51fb7b0fc6571eea27de065"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 85,
+            "depth": 83
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68218,
+        "type": 2,
+        "name": "Refrigerated table",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68218\/ac7933e0a37aeee5c02bfbaf8ca69bf1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68218\/285fb9ff37a07bcea18bbd3882af9472.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68218\/73a32506-3bae-4fb0-bd53-846c03d90043.svg",
+            "contourTop": "90,41.5,90,-37.5,23,-41.5,9,-41.5,-90,-37.5,-90,41.5",
+            "contourCut": "87.64,0,90,-15,90,-84.98,-90,-84.98,-90,-15,-88.45,0,-85.9,0,-85.05,0,86.79,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "Screen",
+                "source": "none",
+                "hash": "03b6e48d9281606182132119836d8488"
+              },
+              {
+                "id": 1,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "bdd4ca6017feeda9eb3c6d792d7721a5"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "5a261f7f1176a9e5a475c841693f036c"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "47eb3a6c4a0de47232d66c95295c8ce4"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 180,
+            "height": 85,
+            "depth": 83
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68219,
+        "type": 2,
+        "name": "Industrial refrigerator",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68219\/7d47de447b6fd829d020d04f5b07bef1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68219\/89aeeb20e344810f984cb341c6f9df55.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68219\/103e0c4c-49ba-463e-8960-dd387858f4c3.svg",
+            "contourTop": "33,41,33,-34.04,33,-34.54,33,-37.02,-25.2,-41,-28.2,-41,-33,-37.02,-33,-34.04,-33,41,-28,41,28,41",
+            "contourCut": "24.37,0,33,-15,33,-87.5,33,-92.5,33,-175,33,-188,33,-201,-33,-201,-33,-15,-24.37,0,22.87,0,23.26,0,23.62,0,23.93,0,24.17,0,24.32,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "Screen",
+                "source": "none",
+                "hash": "3b24981f966e239356350d549212252c"
+              },
+              {
+                "id": 1,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "c2ac899bf36b6794b127687738d34e6a"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "db84a0cfbfdc482f2444b33055c9c0e0"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "4252e095079045a14d97e47c8c8c3645"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 66,
+            "height": 201,
+            "depth": 82
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68220,
+        "type": 2,
+        "name": "Industrial refrigerator",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68220\/3b15200f04fe57b8ce9b66f729803b5e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68220\/b4bc72d5b74ac1e5dc98c0e7f87f42b7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68220\/adac8829-6bf7-4fbf-8e24-7d6320c25dc8.svg",
+            "contourTop": "65,41,65,-32.55,65,-34.54,65,-37.02,6.8,-41,3.8,-41,-7,-41,-65,-37.02,-65,-32.55,-65,41",
+            "contourCut": "56.37,0,65,-15,65,-170,65,-175,65,-201,-65,-201,-65,-170,-65,-15,-56.37,0,54.87,0,55.26,0,55.62,0,55.93,0,56.17,0,56.32,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "Screen",
+                "source": "none",
+                "hash": "c6563ec545315912ba18b95a40f4ce84"
+              },
+              {
+                "id": 1,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "a5672560c74735a5d00b1c6004426672"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "52b7a0514aae10eee2811729cbcadcbf"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "4cc7b60acc692bf0afe5f2b18f5d7a38"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 130,
+            "height": 201,
+            "depth": 82
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68221,
+        "type": 2,
+        "name": "Professional gas stove",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68221\/e76f743012385a20bc7d0e4425a2c9ea.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68221\/ca598552b00eb2c09a86e029d438b5e2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68221\/0ead9d4c-85dd-4c49-93d0-6c645ddeaf4c.svg",
+            "contourTop": "2.87,38,30,37.58,30,-37.01,1.06,-38,0.04,-38,-30,-37.01,-30,37.58",
+            "contourCut": "-24.76,0,28.56,-0.08,30,-16.1,30,-41.13,30,-46.14,30,-101.21,12.92,-118.08,12.79,-118.19,12.47,-118.41,12.34,-118.46,11.95,-118.6,4.74,-119.95,4.31,-120,4.17,-120,3.75,-119.96,3.35,-119.83,3.2,-119.77,-30,-101.21,-30,-16.1,-28.56,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "7df7f7f5fa32d370f6f9c73ed438ea52"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "94cf265871551bc170de4297ad6ef84b"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "2d9aadf6d444efe477a08d49bd8ca5c9"
+              },
+              {
+                "id": 3,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "0ac8b66f84e5aaf215621c37ab93071e"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "37c41defc9d2835df7a4d5ebe4bc3f6b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 120,
+            "depth": 76
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68222,
+        "type": 2,
+        "name": "Professional gas stove",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68222\/9bb0f1c9441e5078bcb13275771e6ecb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68222\/9395a30b2de5681fdba5902a9af7f75e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68222\/84868f54-6044-4781-87d6-eee5c54fae87.svg",
+            "contourTop": "3.76,38,37.5,37.5,37.5,33.53,37.5,-37.01,0.66,-38,0.65,-38,-0.35,-38,-37.5,-37.01,-37.5,33.53,-37.5,37.5",
+            "contourCut": "35.38,0,36.09,-4.98,37.5,-44.85,37.5,-69.77,37.5,-94.69,13.68,-111.2,13.36,-111.41,13.23,-111.46,12.83,-111.6,5.63,-112.95,5.2,-113,5.06,-113,4.64,-112.96,4.24,-112.83,4.09,-112.77,-37.5,-94.69,-37.5,-74.76,-37.5,-44.85,-36.09,-4.98,-35.38,0,-34.09,0,-32.79,0,34.09,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "9b42be960121c6ec1182b9b1bfe0ad1f"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "d0c6e5f7361945ee82ec49bc3a484a39"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "ea471c96de1abdc9679bfbf1323964d4"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "6586743f1f44322342dbf71436228331"
+              },
+              {
+                "id": 4,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "a3d9b9107338c0cdba1a5dd6dfd38baf"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 75,
+            "height": 113,
+            "depth": 76
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68223,
+        "type": 2,
+        "name": "Professional electric oven",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68223\/028563c89653e789be468a984f9b1dfc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68223\/56fd8acb68e48485f3892c947f9f7fa1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68223\/3c1ca8bd-9234-4555-a139-282f5db27067.svg",
+            "contourTop": "35.12,58.01,47.23,57.73,47.5,49.8,47.5,30.97,47.5,-36.27,47.23,-44.27,43.09,-46.75,-41.46,-58.01,-41.5,-58.01,-41.52,-58.01,-41.56,-58.01,-41.59,-58.01,-41.62,-58.01,-41.65,-58.01,-41.68,-58.01,-41.7,-58.01,-41.71,-58.01,-41.72,-58.01,-42.1,-57.93,-42.6,-57.67,-43.31,-57.12,-43.41,-56.94,-47.24,-44.27,-47.5,-33.24,-47.5,46.02,-47.24,57.73,-35.68,58.01,19.37,58.01",
+            "contourCut": "44.38,0,47.23,-11.92,47.5,-92.21,47.5,-158.92,47.23,-167,20.03,-167,19.4,-167,-44.06,-167,-47.24,-167,-47.5,-160.13,-47.5,-157.11,-47.5,-154.08,-47.24,-11.92,-44.39,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "Scoreboard1",
+                "source": "none",
+                "hash": "0f5e1cbac4b4e190ba882f155a430cd3"
+              },
+              {
+                "id": 1,
+                "default": 268,
+                "name": "Stanlies_steel",
+                "source": "bank",
+                "hash": "18606952cf936e907c22f70fad8814e9"
+              },
+              {
+                "id": 2,
+                "default": 55335,
+                "name": "Chrome",
+                "source": "bank",
+                "hash": "9ef94c1d77f04f0a35d019149bc39026"
+              },
+              {
+                "id": 3,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "38204a5cbc0228b36167750a548011b8"
+              },
+              {
+                "id": 4,
+                "default": 1618,
+                "name": "Glass",
+                "source": "bank",
+                "hash": "cbd887212aa4c7785fe4d78b1e694e03"
+              },
+              {
+                "id": 5,
+                "addMaterial": 41818,
+                "default": "#1e1e1e",
+                "current": "#1e1e1e",
+                "name": "Dark_plastic",
+                "source": "bank",
+                "hash": "30195f2f2db72a35d7c1b8f931c9d5dc"
+              },
+              {
+                "id": 6,
+                "default": 0,
+                "name": "Scoreboard2",
+                "source": "none",
+                "hash": "f60d1ce13d639d9981326bdc0aa7ac00"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 95,
+            "height": 167,
+            "depth": 116
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68224,
+        "type": 2,
+        "name": "Industrial food steamer",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68224\/65dd9bcce222865ad0b274f9f4dda55f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68224\/7942ded66e49d69570ecdc7f5c4c93a7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68224\/1de6076f-522e-4f88-b747-e13f56abd4a7.svg",
+            "contourTop": "28,37,28.5,-28.61,28,-33.12,9.68,-35.26,-16.59,-37,-16.99,-36.96,-28.5,-33.12,-28.5,-28.11,-28.5,37",
+            "contourCut": "22.78,0,28,-14.37,28.5,-50.56,28.5,-110.85,28.5,-120.9,28,-140,-28.5,-140,-28.5,-130.95,-28.5,-42.51,-28.5,-18.39,-28.5,-14.37,-23.28,0,-19.56,0,-18.32,0,21.54,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "b76cd2bbd33dacdf9e069b2dc5a46a88"
+              },
+              {
+                "id": 1,
+                "default": 1555,
+                "name": "Polished_metal",
+                "source": "bank",
+                "hash": "f53bafd3d9bba8d8e7ee01e09048ad45"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "63bc6dc7ffc40d84874b2b2d2c5ceb62"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 57,
+            "height": 140,
+            "depth": 74
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68225,
+        "type": 2,
+        "name": "Industrial steamer",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/682\/68225\/a61c8311c3d2a87d6befa60a0950a0d0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/682\/68225\/a46bd9cf7f6c2770870cc6cd48f81557.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/682\/68225\/9833bca4-45d8-4dfb-96c9-ee15ab4028f6.svg",
+            "contourTop": "54.87,37,55.5,-28.61,55.1,-32.12,54.87,-33.12,36.27,-35.26,9.86,-37,-9.91,-37,-36.3,-35.28,-54.85,-33.12,-55.1,-32.12,-55.5,-28.61,-54.85,37",
+            "contourCut": "49.62,0,54.87,-14.49,55.5,-51.13,55.5,-61.17,55.5,-113.19,55.5,-123.23,54.87,-140,-54.85,-140,-55.5,-123.23,-55.5,-113.19,-55.5,-51.13,-54.85,-14.49,-49.6,-0.29,-49.2,0,48.37,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "Stainless_steel",
+                "source": "bank",
+                "hash": "03a35c9da56c30e9a2e832adeb6a96a8"
+              },
+              {
+                "id": 1,
+                "default": 1555,
+                "name": "Polished_metal",
+                "source": "bank",
+                "hash": "f420ad45dd61a18c862d9a60950b527e"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Dark_metal",
+                "source": "bank",
+                "hash": "e96f60cffafe49f8b4475d776928acec"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9994": [
+            {
+              "id": "9994",
+              "name": "Professional kitchen equipment",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 111,
+            "height": 140,
+            "depth": 74
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

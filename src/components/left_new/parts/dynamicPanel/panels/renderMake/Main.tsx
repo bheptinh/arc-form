@@ -832,7 +832,7 @@ const Main = props => {
         setCameraIconMaxTopOffset(cameraIconMaxTopOffset);
     }, [])
 
-    useEffect(async () => {
+    useEffect(() => {
         setTimeout(() => {
             planner.scene.addEventListener(planner.scene.CAMERA_ROTATE, changeVerticalCameraAngle);
             planner.scene.addEventListener(planner.scene.CAMERA_ZOOM, changeVerticalCameraAngle);

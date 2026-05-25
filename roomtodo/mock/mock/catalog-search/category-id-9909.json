@@ -1,0 +1,140 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "1",
+    "items": [
+      {
+        "id": 55097,
+        "type": 2,
+        "name": "Glass door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/550\/55097\/24b50fff3e35d0767390358f634cc4bd.png"
+          },
+          "body": {
+            "package": "\/files\/products\/550\/55097\/86613ed8dea34e2e23411f75e64808cf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "41.57,8.94,41.59,8.92,41.59,-8.92,41.57,-8.94,-37.11,-8.94,-41.57,-8.94,-41.59,-8.92,-41.59,8.92,-41.57,8.94,37.13,8.94",
+            "contourCut": "41.57,0,41.59,-0.02,41.59,-203.2,41.57,-203.22,-37.11,-203.22,-41.57,-203.22,-41.59,-203.2,-41.59,-0.02,-41.57,0,-37.15,0,-32.73,0,31.89,0,36.38,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "door_5_wood",
+                "source": "bank",
+                "hash": "88165d0547cbddcc20b821b0aec5f5ee"
+              },
+              {
+                "id": 1,
+                "default": 55153,
+                "name": "door_1_glas",
+                "source": "bank",
+                "hash": "143cbb0e812642f8b90af7e61d72ee0e"
+              },
+              {
+                "id": 2,
+                "default": 54830,
+                "name": "door_5_handle",
+                "source": "bank",
+                "hash": "020fb16046e84afed5af457c9b275dad"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9909": [
+            {
+              "id": "9909",
+              "name": "Doors",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 83,
+            "height": 203,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

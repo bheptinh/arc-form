@@ -26,6 +26,7 @@ import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
 import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
 import Lock from '../../../../../common/Lock';
 import HoverComponent from "../../../controlPanel/components/HoverComponent";
+import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 
 const useStyle = createUseStyles({
     '@font-face': [
@@ -1071,7 +1072,7 @@ const Main = props => {
         }
     }, []);
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         if(!searchedList) {
             setPreloaderStatus(false);
             return setSearchedReactArray([]);
@@ -1241,7 +1242,7 @@ const Main = props => {
                             <FavoriteStarIcon/>
                         </div>
                         <div className={ classes.prod_item_img_wr }>
-                            <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} className={'lazyload'} />
+                            <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} src={R2D.URL.DOMAIN + elem.source.images.preview} className={'lazyload'} />
 
                             {
                                 elemType == R2D.ProductType.MATERIAL && isObjectAccessible?
@@ -1402,7 +1403,9 @@ const Main = props => {
         }, 100);
     }, [loadedPreviews]);
 
-    useEffect(() => setFavoritesList(user.data.favorites?.items || []), [isLogged]);
+    useEffect(() => {
+        setFavoritesList(user.data.favorites?.items || [])
+    }, [isLogged]);
 
     useEffect(() => {
         if(!lastHistoryElemData) return;

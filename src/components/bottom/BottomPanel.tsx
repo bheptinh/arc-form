@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Tips from './Tips.jsx';
+import Tips from './Tips';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 import {AnimatePresence,motion} from "framer-motion";

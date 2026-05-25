@@ -305,31 +305,37 @@ const MaterialComponent = props => {
         mouseLeaveCopyPaste(e);
     }
     
-    useEffect(() => () => document.querySelector(".product_hover") ? document.querySelector(".product_hover").remove() : null, []);
+    useEffect(() => () => {
+        document.querySelector(".product_hover") ? document.querySelector(".product_hover").remove() : null
+    }, []);
 
-    useEffect(async () => {
-        setIsLoaded({...isLoaded, status: false});
-        if(props.mesh) {
-            let matSrc = R2D.Tool.getPrevEmbeddedMatFromMesh(R2D.scene.currentView3DObject.getMeshByHash(R2D.scene.currentSceneObject.getMaterials()[+props.mesh].hash))?.toDataURL();
-            setIsLoaded({...isLoaded, materialSrc: matSrc || '', status: true});
-        }
-        else if(props.hash) setIsLoaded({...isLoaded, materialSrc: R2D.modelUploader.getPartMatPreview(props.hash).toDataURL(), status: true});
-        else {
-            if(!props.matId) {
-                if(props.matId === 0) setIsLoaded({...isLoaded, materialSrc: "", status: true});
-                else return;
+    useEffect(() => {
+        const loadMaterial = async () => {
+            setIsLoaded({...isLoaded, status: false});
+            if(props.mesh) {
+                let matSrc = R2D.Tool.getPrevEmbeddedMatFromMesh(R2D.scene.currentView3DObject.getMeshByHash(R2D.scene.currentSceneObject.getMaterials()[+props.mesh].hash))?.toDataURL();
+                setIsLoaded({...isLoaded, materialSrc: matSrc || '', status: true});
             }
+            else if(props.hash) setIsLoaded({...isLoaded, materialSrc: R2D.modelUploader.getPartMatPreview(props.hash).toDataURL(), status: true});
             else {
-                if(props.addMaterial) {
-                    let matPrevCanvas = await R2D.Tool.getMatPrevFromMatIdAndColor(props.addMaterial, props.matId);
-                    setIsLoaded({...isLoaded, materialSrc: matPrevCanvas.toDataURL(), status: true});
-                } else {
-                    if(props.matId.indexOf && ~props.matId.indexOf("#")) setIsLoaded({...isLoaded, materialSrc: props.matId, status: true});
-                    else if(R2D.Pool.getProductData(props.matId)) setIsLoaded({...isLoaded, materialSrc: R2D.URL.DOMAIN + R2D.Pool.getProductData(props.matId).source.images.preview, status: true});
-                    else setTimeout(() => setIsLoaded({...isLoaded, needUpdate: Math.random()}), 100);
+                if(!props.matId) {
+                    if(props.matId === 0) setIsLoaded({...isLoaded, materialSrc: "", status: true});
+                    else return;
                 }
-            } 
+                else {
+                    if(props.addMaterial) {
+                        let matPrevCanvas = await R2D.Tool.getMatPrevFromMatIdAndColor(props.addMaterial, props.matId);
+                        setIsLoaded({...isLoaded, materialSrc: matPrevCanvas.toDataURL(), status: true});
+                    } else {
+                        if(props.matId.indexOf && ~props.matId.indexOf("#")) setIsLoaded({...isLoaded, materialSrc: props.matId, status: true});
+                        else if(R2D.Pool.getProductData(props.matId)) setIsLoaded({...isLoaded, materialSrc: R2D.URL.DOMAIN + R2D.Pool.getProductData(props.matId).source.images.preview, status: true});
+                        else setTimeout(() => setIsLoaded({...isLoaded, needUpdate: Math.random()}), 100);
+                    }
+                } 
+            }
         }
+
+        loadMaterial();
     }, [props.matId, props.addMaterial, props.hash, props.mesh, isLoaded.needUpdate]);
 
     useEffect(() => {
@@ -355,7 +361,9 @@ const MaterialComponent = props => {
         }
     }, [props.matId, props.addMaterial]);
 
-    useEffect(() => setShowCopy(props.onCopyPaste.hasOwnProperty('statusCopy') ? props.onCopyPaste.statusCopy : true), [props.onCopyPaste])
+    useEffect(() => {
+        setShowCopy(props.onCopyPaste.hasOwnProperty('statusCopy') ? props.onCopyPaste.statusCopy : true)
+    }, [props.onCopyPaste])
 
     return (
         (props.matId != null || props.hash != null || props.mesh != null) &&

@@ -5,6 +5,7 @@ import {selectTranslation} from '../../../redux/features/language/languageSlice'
 import {createUseStyles} from "react-jss";
 import {user} from "../../../initR2D";
 import Checkbox from '../../common/Checkbox';
+import { useEffectAsync } from '../../../utils/useEffectAsync';
 
 const useStyle = createUseStyles({
     '@font-face': [
@@ -647,7 +648,7 @@ const ExportPopup = props => {
         }
     }, [taskFile]);
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         if(popupType == 'download') {
             if(popupData == 'ifc') {
                 R2D.controller.exportToIFC();
@@ -668,7 +669,9 @@ const ExportPopup = props => {
         }
     }, []);
 
-    useEffect(() => popupStage !== null && setPreloaderStatus(false), [popupStage]);
+    useEffect(() => {
+        popupStage !== null && setPreloaderStatus(false)
+    }, [popupStage]);
 
     useEffect(() => {
         const timer = setTimeout(() => setAnimPopupClass(true), 100);

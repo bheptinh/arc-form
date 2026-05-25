@@ -103,7 +103,9 @@ const Main = () => {
         setСheckboxStatus(isChecked);
     }
 
-    useEffect(() => setStyleAnimation({ transform: "translateX(0%)" }), []);
+    useEffect(() => {
+        setStyleAnimation({ transform: "translateX(0%)" })
+    }, []);
 
     return (
         <div className={classes.planerWallsCont} style={styleAnimation}>

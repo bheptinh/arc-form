@@ -70,7 +70,7 @@ const AdditionalSettings = ({hideCategoryTree}) => {
 
     const classes = useStyle();
     const [previewImage, setPreviewImage] = useState('');
-    const [previewImageCategory, setPreviewImageCategory] = useState('');
+    const [previewImageCategory, setPreviewImageCategory] = useState('/src_designer/images/icon_preview_catalog_big.svg');
     const [dynamicPanelPreviewText, setDynamicPanelPreviewText] = useState('');
     const [dynamicPanelCatalogPreviewText, setDynamicPanelCatalogPreviewText] = useState('');
 

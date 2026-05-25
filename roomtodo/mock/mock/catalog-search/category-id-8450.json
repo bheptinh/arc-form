@@ -1,0 +1,174 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "2",
+    "items": [
+      {
+        "id": 4211,
+        "type": 2,
+        "name": "Man",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/42\/4211\/f7ba2b43b3b33db09e184472b29f8aea.png"
+          },
+          "body": {
+            "package": "\/files\/products\/42\/4211\/b86a80af9be63e4410469aa70f40d09a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "12.14,17.5,13.57,16.95,18.42,14.12,29.5,7.49,28.87,0.61,21.66,-8.63,19.15,-11.34,18.17,-12.1,11.71,-15.03,3.05,-17.5,-7.77,-16.51,-17.21,-13.19,-25.65,-7.32,-29.5,1.63,-26.68,4.57,-13.8,12.68,-12.03,13.27,-8.86,14.26,-7.99,14.52",
+            "contourCut": "-13.15,0,12.94,-0.49,23.39,-1.74,29.5,-116.41,23.91,-141.32,20.72,-149.37,7.87,-176.71,1.98,-180.92,-3.29,-181,-9.16,-174.61,-20.34,-148.19,-24.96,-135.2,-29.5,-116.23,-17.68,-1.28",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#a9a9a9",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "daba27589c093bf354d56dc34b0b0e4a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "8450": [
+            {
+              "id": "8450",
+              "name": "Human",
+              "parentId": "51"
+            },
+            {
+              "id": "51",
+              "name": "Misc",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "human"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 59,
+            "height": 181,
+            "depth": 35
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 4213,
+        "type": 2,
+        "name": "Woman",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/42\/4213\/0147608cb591d8cac0755f3b217b2caa.png"
+          },
+          "body": {
+            "package": "\/files\/products\/42\/4213\/9de25f83567a17cd91e37c7ac7dee801.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-3.16,15.5,9.49,15.26,21.32,8.8,24,-2.38,22.07,-7.57,10.15,-13.08,-12.88,-15.5,-19.45,-14.3,-23.03,-10.31,-24,-7.55,-23.82,0.08,-21.87,6.86,-19.53,10.67,-9.26,14.15",
+            "contourCut": "-7.16,0,1.47,-0.35,7.87,-0.86,8.78,-1.55,23.13,-78.04,24,-89.33,21.32,-126.78,20.08,-139.53,6.51,-167.92,0.04,-174,-5.45,-171.02,-9.33,-164.3,-19.64,-140.56,-21.87,-130.01,-23.82,-97.68,-24,-89.72,-8.11,-4.12",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#a9a9a9",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "e71999ea305ec0b7dea3316ae5a17278"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "8450": [
+            {
+              "id": "8450",
+              "name": "Human",
+              "parentId": "51"
+            },
+            {
+              "id": "51",
+              "name": "Misc",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "human"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 48,
+            "height": 174,
+            "depth": 31
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

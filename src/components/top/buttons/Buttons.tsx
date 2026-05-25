@@ -439,7 +439,9 @@ const LoginButton = props => {
     let dispatch = useDispatch();
     let [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(R2D.config.data.enable_merchant_login);
 
-    useEffect(() => setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login), [R2D.config.data.enable_merchant_login]);
+    useEffect(() => {
+        setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login)
+    }, [R2D.config.data.enable_merchant_login]);
     
     return(
         <div className={classes.bar_login_btn} id="customLogin" onClick={() => !configEnableMerchantLogin ? dispatch(setActivePopup({name: "login"})) : R2D.postMessageToParent(JSON.stringify({ action: "merchant_login" }))}>{translation["TEXT_BUTTON_SIGN_IN"]}</div> 
@@ -606,17 +608,33 @@ const Projects = props => {
         return () => window.removeEventListener('resize', onResizeScreen);
     }, []);
 
-    useEffect(() => setDefaulProjectName(!isScreenSmall ? translation["DEFAULT_SCENE_NAME"] : translation["DEFAULT_SCENE_NAME"].slice(0, 8) + '...'), [translation, isScreenSmall]);
-
-    useEffect(() => setProjectActiveName(projectActive?.name?.length > 15 ? projectActive.name.slice(0, 14) + '...' : projectActive?.name), [projectActive]);
-
-    useEffect(() => setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login), [R2D.config.data.enable_merchant_login]);
-    useEffect(() => setConfigProjectClear(R2D.config.data.ui.top_project_clear), [R2D.config.data.ui.top_project_clear]);
-    useEffect(() => setConfigProjectNew(R2D.config.data.ui.top_project_new), [R2D.config.data.ui.top_project_new]);
-    useEffect(() => setConfigProjectRename(R2D.config.data.ui.top_project_rename), [R2D.config.data.ui.top_project_rename]);
-    useEffect(() => setConfigExportProject(R2D.config.data.ui.config_export_project), [R2D.config.data.ui.config_export_project]);
-    useEffect(() => setConfigSaveAs(R2D.config.data.ui.save_as), [R2D.config.data.ui.save_as]);
-    useEffect(() => setConfigSharing(R2D.config.data.ui.sharing), [R2D.config.data.ui.sharing]);
+    useEffect(() => {
+        setDefaulProjectName(!isScreenSmall ? translation["DEFAULT_SCENE_NAME"] : translation["DEFAULT_SCENE_NAME"].slice(0, 8) + '...')
+    }, [translation, isScreenSmall]);
+    useEffect(() => {
+        setProjectActiveName(projectActive?.name?.length > 15 ? projectActive.name.slice(0, 14) + '...' : projectActive?.name)
+    }, [projectActive]);
+    useEffect(() => {
+        setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login)
+    }, [R2D.config.data.enable_merchant_login]);
+    useEffect(() => {
+        setConfigProjectClear(R2D.config.data.ui.top_project_clear)
+    }, [R2D.config.data.ui.top_project_clear]);
+    useEffect(() => {
+        setConfigProjectNew(R2D.config.data.ui.top_project_new)
+    }, [R2D.config.data.ui.top_project_new]);
+    useEffect(() => {
+        setConfigProjectRename(R2D.config.data.ui.top_project_rename)
+    }, [R2D.config.data.ui.top_project_rename]);
+    useEffect(() => {
+        setConfigExportProject(R2D.config.data.ui.config_export_project)
+    }, [R2D.config.data.ui.config_export_project]);
+    useEffect(() => {
+        setConfigSaveAs(R2D.config.data.ui.save_as)
+    }, [R2D.config.data.ui.save_as]);
+    useEffect(() => {
+        setConfigSharing(R2D.config.data.ui.sharing)
+    }, [R2D.config.data.ui.sharing]);
 
     return (
         <div className={classes.bar_dropdown_wrap + ' ' + classes.profilProject} ref={ mainDiv } onMouseEnter={onEnterDropdown} onMouseLeave={onLeaveDropdown} onTouchStart={onTouchStartDropdown}>
@@ -803,7 +821,9 @@ const SaveButton = props => {
         }, 200);
     };
 
-    useEffect(() => setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login), [R2D.config.data.enable_merchant_login]);
+    useEffect(() => {
+        setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login)
+    }, [R2D.config.data.enable_merchant_login]);
 
     useEffect(() => {
         planner.scene.addEventListener(planner.scene.TIPS_SAVE_PROJECT, onSaveProjectTipShow);

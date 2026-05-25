@@ -392,7 +392,9 @@ const Main = props => {
         }
     }, [currentObjectsMaterialsIds]);
 
-    useEffect(async () => planner.scene.dispatchEvent(new Event(planner.scene.TIPS_MERGE_GROUP_BUTTON, {})), []);
+    useEffect(() => {
+        planner.scene.dispatchEvent(new Event(planner.scene.TIPS_MERGE_GROUP_BUTTON, {}))
+    }, []);
 
     return (
         <div className={classes.planerWallsCont} style={styleAnimation}>

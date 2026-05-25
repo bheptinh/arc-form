@@ -1,0 +1,3455 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "31",
+    "items": [
+      {
+        "id": 20346,
+        "type": 2,
+        "name": "Barbell",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20346\/6b8687ff0f4b77253b562a209e71acd7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20346\/bae7e217340c1932ebcbf485aff84b94.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20346\/b636f7cf-f1f2-4954-849d-555d9b33211b.svg",
+            "contourTop": "88.7,30.9,104.65,16.4,104.65,14.67,88.7,0.15,79.59,0.15,77.77,0.15,-87.1,0.15,-88.92,0.15,-104.65,14.67,-104.65,14.88,-104.65,15.42,-104.65,16.14,-104.65,16.4,-88.92,30.9,79.59,30.9,82.76,30.9,86.88,30.9",
+            "contourCut": "86.14,15.22,88.72,15.21,104.65,1.05,104.65,0.18,104.65,-0.39,104.65,-0.68,88.69,-15.22,86.86,-15.22,83.69,-15.22,-79.82,-15.22,-83,-15.22,-88.94,-15.21,-104.65,-0.68,-104.65,0.18,-104.65,0.34,-104.65,0.91,-104.65,1.05,-88.9,15.22,79.61,15.22,82.78,15.22,83.73,15.22",
+            "materials": [
+              {
+                "id": 0,
+                "default": 844,
+                "name": "27_metal_1.001",
+                "source": "bank",
+                "hash": "15b7ac95982b93c9d412a03ea24bcbdc"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "27_metal_2.001",
+                "source": "bank",
+                "hash": "bbe6ca59d3f7990460ff509b41a7ea9d"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "27_plastic.001",
+                "source": "bank",
+                "hash": "8067c98117ff25416fe2a95237d05099"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "95": [
+            {
+              "id": "95",
+              "name": "Sport",
+              "parentId": "51"
+            },
+            {
+              "id": "51",
+              "name": "Misc",
+              "parentId": null
+            }
+          ],
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 209,
+            "height": 31,
+            "depth": 30
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20347,
+        "type": 2,
+        "name": "Dumbbells",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20347\/45efe56bf139cf6562110090b93766d8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20347\/2db173b711cbdb27f471fac0ebf923a5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20347\/29f4b0b7-8c86-49eb-b0d3-97c8b0ca93a7.svg",
+            "contourTop": "5.79,16.05,17.37,15.97,19.01,15.84,21.3,14.74,23.09,12.69,24.15,9.96,24.3,7.01,24.3,7,23.54,4.15,21.97,1.85,19.81,0.41,17.37,0.03,-1.59,0.03,-3.68,0.03,-5.78,0.03,-25.46,0.11,-25.61,0.21,-32.25,6.42,-32.45,6.65,-32.59,7.25,-32.63,8.07,-32.57,8.87,-32.42,9.42,-25.61,15.95,-25.46,16.05,-21.28,16.05,-19.9,16.05,4.98,16.05",
+            "contourCut": "20.68,17.54,22.05,16.74,23.27,15.74,24.3,6.25,24.3,6.07,23.09,4.3,21.06,1.34,9.48,-15.29,9.31,-15.36,0.25,-17.59,-23.61,-5.28,-31.87,-0.97,-32.38,0.53,-32.63,2.09,-27.38,9.96,-27.26,10.09,-25.16,10.63,-23.08,11.16,-21.7,11.5,-2.02,16.32",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54829,
+                "name": "19_metal",
+                "source": "bank",
+                "hash": "3c8c1c4b76b6940fe733613be6d57f39"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "19_metal_2",
+                "source": "bank",
+                "hash": "69bc7116d6ab1289b3e5101bd718fe46"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "95": [
+            {
+              "id": "95",
+              "name": "Sport",
+              "parentId": "51"
+            },
+            {
+              "id": "51",
+              "name": "Misc",
+              "parentId": null
+            }
+          ],
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 57,
+            "height": 16,
+            "depth": 35
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68051,
+        "type": 2,
+        "name": "T-bar row",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/680\/68051\/db2586b5b72a18f54cfc9d683aa5f790.png"
+          },
+          "body": {
+            "package": "\/files\/products\/680\/68051\/9c5ce03550748f3607a07c72c686a94b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/680\/68051\/e5696f3f-c62b-46d4-97fb-a0a4636167e3.svg",
+            "contourTop": "0.21,145.5,14.58,131.26,14.71,130.95,24.99,-95.63,25,-95.9,25,-98.9,3.34,-145.01,3.21,-145.22,3.03,-145.31,2.57,-145.39,1.85,-145.45,0.95,-145.49,-0.04,-145.5,-1.03,-145.48,-1.92,-145.44,-2.62,-145.38,-3.06,-145.3,-3.21,-145.21,-3.34,-145,-24.99,-98.92,-25,-98.65,-25,-95.65,-14.71,130.95,-14.58,131.26,-0.21,145.5",
+            "contourCut": "14.48,0,14.71,-0.23,21.2,-11.84,22.71,-14.57,23.85,-17.46,24.62,-20.47,25,-23.56,25,-23.83,24.99,-26.93,24.58,-30.01,23.78,-33.01,22.61,-35.89,21.08,-38.61,19.22,-41.11,17.06,-43.37,14.63,-45.33,11.97,-46.99,9.12,-48.3,6.12,-49.24,3.03,-49.81,-0.11,-49.99,-3.25,-49.78,-6.34,-49.19,-9.32,-48.21,-12.16,-46.88,-14.81,-45.21,-17.22,-43.22,-19.37,-40.94,-21.2,-38.42,-22.71,-35.7,-23.85,-32.8,-24.62,-29.79,-25,-26.71,-25,-26.44,-24.99,-23.34,-24.58,-20.26,-23.78,-17.26,-22.61,-14.37,-14.71,-0.23,-14.48,0,-14.47,0,14.47,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "metal_black",
+                "source": "bank",
+                "hash": "2fd9c12b940a3fa01565c5139e93a3b6"
+              },
+              {
+                "id": 1,
+                "default": 55335,
+                "name": "metal_grey",
+                "source": "bank",
+                "hash": "9893f4453a51e591a23988d843598bf9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 50,
+            "height": 50,
+            "depth": 291
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 68052,
+        "type": 2,
+        "name": "Kettlebell",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/680\/68052\/43b153354a10cbd194debbdafb1db922.png"
+          },
+          "body": {
+            "package": "\/files\/products\/680\/68052\/e9862b48beda96eda872a453f360731b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/680\/68052\/b4b137b9-6198-410f-8b0e-7e28e399c957.svg",
+            "contourTop": "0,10.5,1.26,10.39,1.43,10.37,1.83,10.31,2.19,10.25,2.23,10.24,3.19,9.99,4.21,9.63,5.19,9.18,6.11,8.63,6.98,7.99,7.78,7.28,8.5,6.49,9.15,5.63,9.7,4.71,10.16,3.75,10.53,2.75,10.79,1.71,10.95,0.66,11,-0.41,10.95,-1.47,10.79,-2.53,10.53,-3.56,10.16,-4.57,9.7,-5.53,9.15,-6.44,8.5,-7.3,7.78,-8.09,6.98,-8.81,6.11,-9.44,5.19,-9.99,4.21,-10.45,4.08,-10.5,2.84,-10.5,1.14,-10.5,0.44,-10.5,0.36,-10.5,-0.44,-10.5,-1.23,-10.5,-1.96,-10.5,-3.89,-10.5,-4.08,-10.43,-4.13,-10.41,-5.16,-9.97,-6.11,-9.44,-6.98,-8.81,-7.78,-8.09,-8.47,-7.3,-9.12,-6.44,-9.7,-5.53,-10.16,-4.57,-10.53,-3.56,-10.79,-2.53,-10.95,-1.47,-11,-0.41,-10.95,0.66,-10.79,1.71,-10.53,2.75,-10.16,3.75,-9.7,4.71,-9.15,5.63,-8.5,6.49,-7.78,7.28,-6.98,7.99,-6.11,8.63,-5.19,9.18,-4.21,9.63,-3.19,9.99,-2.23,10.24,-2.19,10.25,-1.83,10.31,-1.43,10.37,-1.26,10.39",
+            "contourCut": "0,0,1.08,-0.05,2.15,-0.13,3.19,-0.35,3.7,-0.53,4.21,-0.71,5.19,-1.17,5.65,-1.44,6.11,-1.72,6.98,-2.36,7.78,-3.08,8.5,-3.87,9.15,-4.73,9.7,-5.66,9.93,-6.14,10.16,-6.62,10.53,-7.63,10.66,-8.15,10.79,-8.68,10.95,-9.74,11,-10.81,10.95,-11.88,8.77,-27.09,8.16,-29,7.67,-29.71,7.18,-30.41,6.47,-30.87,5.77,-31.32,4.02,-31.8,2.07,-31.99,0,-32,-2.07,-31.99,-4.02,-31.81,-5.76,-31.31,-7.11,-30.28,-8.15,-29,-8.46,-28.05,-8.77,-27.09,-10.95,-11.88,-11,-10.81,-10.95,-9.74,-10.79,-8.68,-10.66,-8.15,-10.53,-7.63,-10.16,-6.62,-9.93,-6.14,-9.7,-5.66,-9.15,-4.73,-8.5,-3.87,-7.78,-3.08,-6.98,-2.36,-6.11,-1.72,-5.65,-1.44,-5.19,-1.17,-4.21,-0.71,-3.19,-0.35,-2.15,-0.13,-1.08,-0.05",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54835,
+                "name": "kettlebell",
+                "source": "bank",
+                "hash": "9b27aafefd2c60cc8df6c2e042134dec"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 22,
+            "height": 32,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20349,
+        "type": 2,
+        "name": "Barbell Rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20349\/2064171da663b9c9a61bd9fefdae20d0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20349\/04e84357c9cbd22dc6528d6078983608.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20349\/ce170ad5-be5d-4cba-9f5b-79d5a97301a7.svg",
+            "contourTop": "81.35,182.5,81.54,182.44,117.64,119.13,117.64,116.9,109.33,0.32,-110.69,0.32,-111.05,0.32,-122.06,116.9,-122.07,117.17,-122.07,117.67,-122.07,118.28,-122.07,118.82,-122.06,119.13,-82.99,182.44,-82.79,182.5,-74.43,182.5,72.99,182.5",
+            "contourCut": "82.09,46.1,117.59,26.17,117.64,26.12,117.64,25.21,117.64,25.01,117.64,24.7,117.64,24.18,117.64,23.96,117.64,23.88,109.33,-40.19,-110.69,-40.19,-111.05,-40.19,-122.06,23.87,-122.07,25.75,-122.07,26.09,-122.07,26.11,-122.02,26.16,-93.62,41.69,-83.38,46.1,-74.13,46.1,-73.49,46.1,81.45,46.1",
+            "materials": [
+              {
+                "id": 0,
+                "default": 844,
+                "name": "41_metal_1",
+                "source": "bank",
+                "hash": "5245a2a48a9e8c077d0f2764cc852d06"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "41_metal_2",
+                "source": "bank",
+                "hash": "e29bf19f9d594e6acde7a1172bf5336b"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "41_metal_3",
+                "source": "bank",
+                "hash": "aca3099d3c367eb4ec7f7373278e54dd"
+              },
+              {
+                "id": 3,
+                "default": 1555,
+                "name": "41_metal_4",
+                "source": "bank",
+                "hash": "ee28f5ace12bef914985240feb02e614"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 240,
+            "height": 182,
+            "depth": 86
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21154,
+        "type": 2,
+        "name": "Barbell",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/211\/21154\/0c97aff4bf6960c539a23ba0800645ff.png"
+          },
+          "body": {
+            "package": "\/files\/products\/211\/21154\/10715f6bcef00bb86288b581bc7985d1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/211\/21154\/3fb8202e-815c-4135-8077-e53d93d0fc12.svg",
+            "contourTop": "45.64,103.67,46.19,103.28,51.13,99.38,57.03,89.59,57.04,89.56,57.04,89.25,57.04,88.73,57.04,88.14,57.04,87.64,57.03,87.39,50.53,5.97,50.14,5.43,37.54,0.01,32.45,0.01,-32.69,0.01,-36.76,0.01,-37.27,0.01,-49.83,5.43,-50.21,5.98,-57.04,87.44,-57.04,87.79,-57.04,88.33,-57.04,88.92,-57.04,89.38,-57.03,89.59,-56.99,89.66,-51.24,99.38,-46.92,103.28,-46.38,103.67,43.25,103.67",
+            "contourCut": "37.02,44.98,51.13,26.59,57.03,17.09,57.04,15.69,57.04,15.18,57.04,14.9,50.22,-32.62,49.17,-35.9,48.02,-38.25,46.25,-40.17,43.57,-42.34,40.48,-43.88,37.11,-44.64,33.66,-44.66,-36.85,-44.98,-40.21,-44.18,-43.31,-42.67,-45.97,-40.47,-48.09,-37.75,-49.51,-34.6,-50.21,-31.22,-57.03,14.2,-57.04,15.68,-57.04,16.16,-57.04,16.4,-51.23,26.59,-37.27,44.53",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "39_chrome.002",
+                "source": "bank",
+                "hash": "b56d35ce7866a7146006fbd2dfc03ed2"
+              },
+              {
+                "id": 1,
+                "default": 54829,
+                "name": "39_metal.001",
+                "source": "bank",
+                "hash": "bbb5b13e4fd9a9691ca6fbe048ec6e34"
+              },
+              {
+                "id": 2,
+                "default": 1555,
+                "name": "39_metal2.001",
+                "source": "bank",
+                "hash": "2e5e946b9b454c90219efcf77ece697f"
+              },
+              {
+                "id": 3,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "39_plastic.001",
+                "source": "none",
+                "hash": "2a2d10b8f22084944cc6295f1f4fe084"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 114,
+            "height": 104,
+            "depth": 90
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20344,
+        "type": 2,
+        "name": "Barbell",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20344\/f4332c083b02630bd2d388935905849e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20344\/c0038713110b5fc7b5fbf35a9c358661.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20344\/121b1bb7-4925-40f5-88f5-a6ff8f8da962.svg",
+            "contourTop": "44.54,30.11,45.7,29.9,50.94,25.23,57,16.19,57,14.57,57,14.06,50.94,4.94,45.7,0.27,44.54,0.06,-44.54,0.06,-45.69,0.27,-50.94,4.94,-57,14.06,-57,15.09,-57,15.33,-57,15.85,-57,16.19,-50.94,25.23,-45.69,29.9,-44.54,30.11",
+            "contourCut": "44.53,14.97,45.69,14.77,50.93,10.14,57,1.15,57,1.05,57,0.08,57,-0.56,57,-0.99,50.94,-10.06,45.7,-14.73,44.54,-14.94,-44.53,-14.97,-45.69,-14.76,-50.93,-10.1,-57,-1.03,-57,0.04,-57,1,-57,1.11,-50.94,10.1,-45.7,14.73,-44.54,14.94",
+            "materials": [
+              {
+                "id": 0,
+                "default": 844,
+                "name": "23_metal_1",
+                "source": "bank",
+                "hash": "5c29620d1d267dd6f04f20266fb84b31"
+              },
+              {
+                "id": 1,
+                "default": 1555,
+                "name": "23_metal_2",
+                "source": "bank",
+                "hash": "456f162bb1d22646ec8cba8b61365a1a"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "23_plastic",
+                "source": "bank",
+                "hash": "28a9ea82023a6ec48a26f3b2a6735165"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 114,
+            "height": 30,
+            "depth": 30
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20857,
+        "type": 2,
+        "name": "Barbell rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/208\/20857\/03b4615458c65f347935a966d9699b1d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/208\/20857\/7bc15cb41ab468bbbdd0c0f28cf6af16.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/208\/20857\/8aca0934-967a-43aa-8e01-bbfc8d6f2c6a.svg",
+            "contourTop": "60.49,237.04,61.05,236.04,105.49,155.39,105.49,154.74,105.49,153.65,105.49,152.28,105.49,151.62,66.4,0.03,61.05,0,60.62,0,53.41,0,52.98,0,-53.55,0,-60.76,0,-61.19,0,-67.14,0.03,-105.49,151.7,-105.49,153.36,-105.49,153.65,-105.49,154.89,-105.49,155.32,-61.19,236.04,-60.63,237.04,53.64,237.04,60.39,237.04",
+            "contourCut": "65.4,67.73,66.4,66.73,105.49,-17.49,105.49,-17.94,105.49,-19.23,105.49,-20.61,105.49,-21.26,66.4,-66.73,65.4,-67.73,-66.14,-67.73,-67.14,-66.73,-105.49,-21.19,-105.49,-17.57,-67.14,66.73,-66.14,67.73,-49.15,67.73",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "1DFC7_metal",
+                "source": "bank",
+                "hash": "6bb441879f8956ab4581640ed147f56d"
+              },
+              {
+                "id": 1,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1DFC7_metal2",
+                "source": "bank",
+                "hash": "070a431a5f9539cefb221ee9f9e8fd3d"
+              },
+              {
+                "id": 2,
+                "default": "#f91911",
+                "addMaterial": "41803",
+                "name": "1DFC7_red",
+                "source": "bank",
+                "hash": "c841856820273454685ffc9391e10936"
+              },
+              {
+                "id": 3,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1DFC7_rubber",
+                "source": "bank",
+                "hash": "725d98f5ef2aff35000490d2a438bc31"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9988": [
+            {
+              "id": "9988",
+              "name": "Strength training machines",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 211,
+            "height": 237,
+            "depth": 135
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20348,
+        "type": 2,
+        "name": "Dumbbell rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20348\/fbaf6b9b69566cc044518e9ae556d0ba.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20348\/0f8b75680e5958a739891bcd22fce3a7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20348\/7936f6dd-11c9-4c6d-9370-55b15c953352.svg",
+            "contourTop": "-36.06,98.77,62.7,87.89,62.72,86.78,62.72,86.49,62.72,42.01,62.72,41.72,62.63,-0.01,-58.66,-0.01,-59.18,-0.01,-59.2,-0.01,-59.16,81.56,-59.14,82.87,-58.96,87.87,-58.95,87.89,-39.77,97.77,-38.01,98.6",
+            "contourCut": "56.09,46.91,62.11,46.88,62.63,46.2,62.72,36.29,62.72,36.2,62.72,17.48,62.7,12.55,62.68,8.27,62.67,6.14,62.63,-2.16,62.62,-4.2,62.61,-5.06,62.09,-5.74,-10.38,-19.57,-11.13,-19.6,-11.84,-19.53,-58.68,-5.71,-59.2,-5.03,-59.2,42.13,-59.18,46.23,-58.66,46.91",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1555,
+                "name": "32_metal_1.002",
+                "source": "bank",
+                "hash": "4b3c3e1629dc5b100d5ab69d16a44272"
+              },
+              {
+                "id": 1,
+                "default": 839,
+                "name": "32_metal_2.001",
+                "source": "bank",
+                "hash": "b3ea10fad3505c2796fde88a2bfc1cda"
+              },
+              {
+                "id": 2,
+                "default": 1554,
+                "name": "32_metal_3.001",
+                "source": "bank",
+                "hash": "0deff1a802c310f4cda83c0354c640e7"
+              },
+              {
+                "id": 3,
+                "default": 152,
+                "name": "32_mplastic_1.001",
+                "source": "bank",
+                "hash": "8542b6489f22165f32da9b2b73024819"
+              },
+              {
+                "id": 4,
+                "default": 158,
+                "name": "32_plastic_2.001",
+                "source": "bank",
+                "hash": "8ef9729439153ffd9ab2bc2ba487db53"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 122,
+            "height": 99,
+            "depth": 67
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21157,
+        "type": 2,
+        "name": "Scott bench",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/211\/21157\/084e3ac929d14d4511f5ff5f333d2ab7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/211\/21157\/cfc353055c717bbc0484b6d0a0221467.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/211\/21157\/a08fc229-5106-4426-9a61-126a55ee5084.svg",
+            "contourTop": "24.33,95.08,25.14,94.42,64.05,49.82,64.05,48.56,64.05,47.67,64.05,47.2,64.05,46.3,64.05,45.58,64.05,45.14,64.05,45.04,37.03,2.8,32.97,-0.02,-36.53,-0.02,-37.25,-0.02,-38.03,-0.02,-38.81,-0.02,-39.53,-0.02,-40.15,-0.02,-40.63,-0.02,-40.93,-0.02,-41.03,-0.02,-45.75,2.83,-64.05,45.04,-64.05,47.67,-64.05,48.13,-64.05,48.96,-64.05,49.55,-64.05,49.82,-54.11,67.04,-33.17,94.42,-32.33,95.08",
+            "contourCut": "-1.99,68.13,-0.38,67.9,0.78,67.21,13.65,51.39,64.05,-14.95,64.05,-15.22,64.05,-15.82,64.05,-16.64,64.05,-17.58,64.05,-18.47,64.05,-19.2,64.05,-19.64,64.05,-19.73,46.72,-37.41,12.42,-63.27,9.94,-65.07,4.61,-67.4,1.56,-68,-1.59,-68.13,-4.79,-67.75,-7.94,-66.87,-10.85,-65.53,-53.07,-37.97,-54.11,-37.04,-64.05,-19.73,-64.05,-14.95,-54.11,1.69,-21.86,51.39,-8.94,67.21,-7.79,67.9,-6.18,68.13",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "5_1_chrome",
+                "source": "bank",
+                "hash": "3f649ec6b97dd44043c0ed3f2cee64b9"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41803,
+                "default": "#3c3c3c",
+                "current": "#3c3c3c",
+                "name": "5_1_graphit",
+                "source": "bank",
+                "hash": "ffdd0918f270fd010a86581ffade53f1"
+              },
+              {
+                "id": 2,
+                "default": 533,
+                "name": "5_1_leather",
+                "source": "bank",
+                "hash": "1babaa571c193878eeffcca243f8570b"
+              },
+              {
+                "id": 3,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "5_1_red",
+                "source": "bank",
+                "hash": "ac995a6ddf9c90f4d62e6120f25bcd45"
+              },
+              {
+                "id": 4,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "5_1_rubber",
+                "source": "bank",
+                "hash": "885f1abd74575d4229a24c82ad8aa188"
+              },
+              {
+                "id": 5,
+                "default": 119,
+                "name": "5_1_silver",
+                "source": "bank",
+                "hash": "a23da20fe1a0cd6437a9a8fbd7d26b7d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9990": [
+            {
+              "id": "9990",
+              "name": "Benches",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 128,
+            "height": 95,
+            "depth": 136
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21155,
+        "type": 2,
+        "name": "Ultimate power rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/211\/21155\/80540a436e7c96318e12add3ffb6fb17.png"
+          },
+          "body": {
+            "package": "\/files\/products\/211\/21155\/7597fbadd1898e9c584be25c2d2c7c34.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/211\/21155\/e17e263d-56e8-434e-9b9b-914c944b9902.svg",
+            "contourTop": "59.89,237.17,60.16,237.13,60.31,237.06,60.55,236.91,67.52,231.63,105.49,155.39,105.49,152.28,105.49,151.62,66.55,0.06,65.96,0.05,48.45,0.01,-66.2,0.01,-66.5,0.01,-66.86,0.01,-67.04,0.01,-67.16,0.01,-67.22,0.01,-67.28,0.01,-69.25,6.65,-105.49,151.7,-105.49,153.65,-105.49,154.89,-105.49,155.32,-70.58,233.39,-70.38,233.65,-61.85,236.83,-60.85,237.15,-60.59,237.17,-54.49,237.17,53.79,237.17",
+            "contourCut": "57.87,125.93,61.33,125.35,66.49,103.98,105.49,-75.75,105.49,-79.07,105.49,-79.52,66.03,-125.34,65.71,-125.63,65.38,-125.84,60.83,-125.9,49.06,-125.93,-65.88,-125.93,-65.89,-125.93,-66.3,-125.85,-66.66,-125.64,-105.49,-79.45,-105.49,-78.82,-105.49,-77.49,-105.49,-76.26,-105.49,-75.83,-64.36,125.35,-60.89,125.93,-52.57,125.93,49.55,125.93",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "1DFC6E_chrome",
+                "source": "bank",
+                "hash": "d445a34fe8263956fec974acf474ee54"
+              },
+              {
+                "id": 1,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1DFC6E_graphite",
+                "source": "bank",
+                "hash": "6d3c84040c7dc55b65e1175ee670e5b0"
+              },
+              {
+                "id": 2,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "1DFC6E_red",
+                "source": "bank",
+                "hash": "ec956c68ce5a3bdd48462ce808287c63"
+              },
+              {
+                "id": 3,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1DFC6E_rubber",
+                "source": "bank",
+                "hash": "6cc6792d95d941578c3a9a4ce6ec6213"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9988": [
+            {
+              "id": "9988",
+              "name": "Strength training machines",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 211,
+            "height": 237,
+            "depth": 252
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21153,
+        "type": 2,
+        "name": "Dumbbell rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/211\/21153\/53ddcaafdf17342e99350ba8a60e383d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/211\/21153\/d91fbe5b7ff5f9bd73e21efca348c4e5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/211\/21153\/ca7588d8-7cc4-4cea-8c44-7f157a3be148.svg",
+            "contourTop": "26.19,119.85,28.38,119.76,30.48,119.15,32.36,118.05,33.9,116.52,63.02,76,63.19,75.59,63.21,73.94,63.19,72.33,56.98,42.15,37.4,0,-37.52,0,-57.09,42.15,-63.19,72.33,-63.21,73.94,-63.19,75.59,-63.02,76,-36.68,115.26,-35.44,117.02,-33.78,118.43,-31.83,119.39,-29.69,119.85",
+            "contourCut": "37.4,29.04,63.02,-1.15,63.19,-1.57,63.21,-3.23,63.19,-4.86,63.02,-5.27,37.4,-29.04,-37.52,-29.04,-63.02,-5.28,-63.19,-4.86,-63.21,-3.23,-63.19,-1.58,-63.02,-1.16,-37.52,29.04,-32.44,29.04,32.32,29.04",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54829,
+                "name": "40_black",
+                "source": "bank",
+                "hash": "2d39bd62c645ea7acf68453b30460422"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "40_chrome",
+                "source": "bank",
+                "hash": "bdb04ebc166bc3e9a6816da3f8284ae9"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "40_metal",
+                "source": "bank",
+                "hash": "6459a52c3d8d62e8606bc18fd6face67"
+              },
+              {
+                "id": 3,
+                "default": 1555,
+                "name": "40_metal2",
+                "source": "bank",
+                "hash": "8f95a1d83d2dc5bf4fdb57dd963b79a0"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 126,
+            "height": 120,
+            "depth": 58
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21135,
+        "type": 2,
+        "name": "Bench press",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/211\/21135\/6e19a19d077453200c60a937a8500273.png"
+          },
+          "body": {
+            "package": "\/files\/products\/211\/21135\/d973b30edfd62b276e3cc3f6797a6bb9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/211\/21135\/d6528d49-161b-4745-96e9-77317c48ea49.svg",
+            "contourTop": "67.47,140.84,72.65,136.51,73.01,136.12,75.47,133.12,83.13,122.39,83.13,121.1,83.13,120.09,83.13,119.78,50.3,3.5,49.34,1.07,46.98,-0.04,-46.16,-0.04,-48.65,0.77,-49.9,3.05,-83.13,119.78,-83.13,120.09,-83.13,121.1,-83.13,121.4,-83.13,122.02,-83.13,122.39,-75.47,133.12,-73,136.12,-72.65,136.51,-67.47,140.84,65.68,140.84",
+            "contourCut": "49.93,89.1,67.47,85.83,72.65,81.44,73,81.02,75.47,77.99,83.13,67.38,83.13,66.05,83.13,65.17,83.13,64.78,83.13,64.75,22.27,-85.18,21.3,-85.74,0.07,-89.1,-21.07,-85.74,-22.04,-85.18,-83.13,64.76,-83.13,65.18,-83.13,66.06,-83.13,66.42,-83.13,67.03,-83.13,67.29,-83.13,67.39,-75.46,78.05,-72.99,81.09,-72.64,81.5,-67.46,85.89,-49.54,89.1,-43.21,89.1",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54829,
+                "name": "43_black_metal",
+                "source": "bank",
+                "hash": "f035ebeb9ac27d7a01c2dcd606204734"
+              },
+              {
+                "id": 1,
+                "default": 718,
+                "name": "43_leather",
+                "source": "bank",
+                "hash": "da6acc21c8f84f9c4ddbf08d19d8763b"
+              },
+              {
+                "id": 2,
+                "default": 55338,
+                "name": "43_metal",
+                "source": "bank",
+                "hash": "b75117b551bb3dd00001e0bcddce65b1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9990": [
+            {
+              "id": "9990",
+              "name": "Benches",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 166,
+            "height": 141,
+            "depth": 178
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21080,
+        "type": 2,
+        "name": "Barbell squat rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/210\/21080\/1006b30f45d3ee7d82546f17ef1b71d8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/210\/21080\/2decae4a3e0fa3e249165c3ef25dded4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/210\/21080\/a321f8cc-e9f3-4eb1-8061-23f5c34a0791.svg",
+            "contourTop": "62.45,188.25,104.7,171.65,104.97,171.44,105.04,171.15,106.51,5.96,106.51,5.51,106.51,1.41,106.51,0.96,-106.44,0.96,-106.51,167.53,-106.51,168.17,-106.51,169.26,-106.51,169.38,-106.51,170.47,-106.51,171.12,-106.44,171.41,-106.18,171.61,-62.41,188.25,-55.41,188.25,55.45,188.25",
+            "contourCut": "106.51,66.04,106.51,56.04,105.04,-5.59,104.97,-5.82,64.05,-65.71,63.97,-65.8,63.85,-65.88,63.7,-65.95,63.51,-66,63.3,-66.03,63.07,-66.04,55.07,-66.04,-54.96,-66.04,-62.96,-66.04,-63.19,-66.03,-63.4,-66,-63.58,-65.95,-63.74,-65.88,-63.86,-65.8,-63.93,-65.71,-106.44,-5.93,-106.51,-5.7,-106.51,-5.31,-106.51,-4.35,-106.51,-3.2,-106.51,-2.29,-106.51,-1.97,-106.44,66.04",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "1PWL101_chrome",
+                "source": "bank",
+                "hash": "c436e239fb0ec09028ea3d8ec08e2824"
+              },
+              {
+                "id": 1,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1PWL101_graphit",
+                "source": "bank",
+                "hash": "f2a1c0bc284a4c0fc0ecea23a4f9f9af"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "1PWL101_plastic",
+                "source": "bank",
+                "hash": "f55ef56f2de8e586b58e4e615b1466fe"
+              },
+              {
+                "id": 3,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "1PWL101_red",
+                "source": "bank",
+                "hash": "b14d1a29af3d7a018012fb8bcf2e68b5"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 213,
+            "height": 187,
+            "depth": 132
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21120,
+        "type": 2,
+        "name": "Dumbbell rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/211\/21120\/d5dd77b1b0873657d7cfac4415fe7313.png"
+          },
+          "body": {
+            "package": "\/files\/products\/211\/21120\/50f3470457f527d822e5edab06233f07.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/211\/21120\/11b4d4dd-f344-4a17-a600-bd6a8cfb7c91.svg",
+            "contourTop": "5.26,144.94,5.69,144.7,26.27,118.24,26.28,118.2,29.61,92.58,29.88,90.38,37.16,28.29,22.06,0.32,21.48,0.08,-22.31,0.08,-22.76,0.32,-30.58,12.78,-37.16,28.29,-29.88,90.38,-29.61,92.58,-26.28,118.2,-26.27,118.24,-6.41,144.7,-5.95,144.94",
+            "contourCut": "23.97,15.32,24.57,14.72,37.05,1.35,37.11,1.04,37.15,0.54,37.16,-0.04,37.13,-0.59,37.08,-0.97,37.01,-1.11,24.82,-14.72,24.27,-15.32,-25.08,-15.32,-28.51,-15.32,-29.06,-14.72,-37.01,-1.11,-37.08,-0.97,-37.13,-0.59,-37.16,-0.04,-37.15,0.54,-37.11,1.04,-37.05,1.35,-29.35,14.14,-28.81,14.72,-28.2,15.32,-24.77,15.32,-21.63,15.32",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "38_metal",
+                "source": "bank",
+                "hash": "84b7a7c8f1c29a11bdb124ecf9be9ae6"
+              },
+              {
+                "id": 1,
+                "default": 844,
+                "name": "38_metal2",
+                "source": "bank",
+                "hash": "183609d5448f1ac2bb9d1a97bbbd04f2"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "38_plastic",
+                "source": "bank",
+                "hash": "15df1a81cca78fcbac3025d7c685f694"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 74,
+            "height": 145,
+            "depth": 31
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21102,
+        "type": 2,
+        "name": "Multifunctional Smith machine",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/211\/21102\/02db326be7ff2c3a52ea90b3e118933b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/211\/21102\/c5fd10a09b1d7d4ce75a0c6eacb773b5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/211\/21102\/69af959d-7e7b-4aed-adf0-f90df85b5bce.svg",
+            "contourTop": "-0.5,240.88,59.89,237.17,60.16,237.13,60.31,237.06,60.55,236.91,60.67,236.83,67.52,231.63,105.49,155.39,105.49,152.28,105.49,151.62,76.52,38.88,66.45,0.06,65.86,0.05,48.36,0.01,-66.2,0.01,-66.5,0.01,-66.86,0.01,-67.04,0.01,-67.16,0.01,-67.22,0.01,-69.25,6.65,-105.49,151.7,-105.49,153.65,-105.49,154.89,-105.49,155.32,-69.25,231.63,-61.85,236.83,-60.85,237.15,-60.59,237.17",
+            "contourCut": "7.47,128.34,7.85,128.28,8.15,128.19,8.51,127.99,76.37,68.5,76.52,68.15,105.49,-78.16,105.49,-81.48,105.49,-81.93,66.03,-127.75,65.71,-128.04,65.38,-128.25,60.83,-128.31,49.06,-128.34,-65.89,-128.34,-66.3,-128.26,-66.66,-128.05,-105.49,-81.86,-105.49,-81.23,-105.49,-79.9,-105.49,-78.67,-105.49,-78.24,-77.11,68.15,-76.96,68.5,-9.3,127.99,-9,128.17,-8.46,128.29,7.46,128.34",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1DFC5_black",
+                "source": "bank",
+                "hash": "4d455bce6eea3bea75ade34b2e7bd63c"
+              },
+              {
+                "id": 1,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1DFC5_graphit",
+                "source": "bank",
+                "hash": "955c4b762c3311e58ab4c199a49b1e00"
+              },
+              {
+                "id": 2,
+                "default": 151,
+                "name": "1DFC5_leather",
+                "source": "bank",
+                "hash": "b38dea786211922bec20f6d2c59f3247"
+              },
+              {
+                "id": 3,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "1DFC5_red",
+                "source": "bank",
+                "hash": "0449e6d6cf8359912916635ce83d04e0"
+              },
+              {
+                "id": 4,
+                "default": 1610,
+                "name": "1DFC5_silver",
+                "source": "bank",
+                "hash": "549dba94c89c62e270020d2cc649dbc2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9988": [
+            {
+              "id": "9988",
+              "name": "Strength training machines",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 211,
+            "height": 241,
+            "depth": 257
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21079,
+        "type": 2,
+        "name": "Press bench",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/210\/21079\/3a2da6c243dd4311cc41d17f353c49d0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/210\/21079\/477634f0b298e151bd0f6d7d868d7311.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/210\/21079\/16d053e6-9d5c-4e47-90cb-2d62db0d8e28.svg",
+            "contourTop": "62.42,118.85,101.51,77.18,101.58,76.88,106.4,5.83,106.4,5.38,106.4,1.28,106.4,0.83,-63.46,0.83,-100.42,0.83,-106.4,0.83,-109.96,73.26,-109.96,73.91,-109.96,74.99,-109.96,75.12,-109.96,76.2,-109.96,76.85,-109.9,77.15,-62.43,118.85,55.42,118.85",
+            "contourCut": "106.4,27.8,106.4,17.8,101.58,-52.6,101.52,-52.83,61.12,-105.24,14.75,-153.15,14.33,-153.38,8.18,-156.36,6.91,-156.74,-7.02,-156.75,-8.26,-156.38,-14.34,-153.38,-14.77,-153.15,-61.21,-105.24,-109.89,-52.94,-109.96,-52.71,-109.96,-52.32,-109.96,-51.36,-109.96,-50.21,-109.96,-49.3,-109.96,-48.98,-106.4,27.8",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "1PWL102_chrome",
+                "source": "bank",
+                "hash": "d756e279a6f5112cc63825b17d456b9f"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41803,
+                "default": "#3c3c3c",
+                "current": "#3c3c3c",
+                "name": "1PWL102_graphit",
+                "source": "bank",
+                "hash": "13e865041a6ec4fd09c97a4d11bfae70"
+              },
+              {
+                "id": 2,
+                "default": 718,
+                "name": "1PWL102_leather",
+                "source": "bank",
+                "hash": "f4f8a9a11e41431e20f70dfdcc4794a5"
+              },
+              {
+                "id": 3,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "1PWL102_red",
+                "source": "bank",
+                "hash": "e8ba60200e61bb1f2fed818d421ffed1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9990": [
+            {
+              "id": "9990",
+              "name": "Benches",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 216,
+            "height": 118,
+            "depth": 185
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21078,
+        "type": 2,
+        "name": "Bench press",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/210\/21078\/f69c5436a84e692007b88fce160f1122.png"
+          },
+          "body": {
+            "package": "\/files\/products\/210\/21078\/9946ed302ffc0f6bd4c74ff812bf9c68.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/210\/21078\/1128026f-6b85-40d0-b0ea-1eef3e0df0cb.svg",
+            "contourTop": "66.61,92.94,105.44,77.27,105.7,77.07,105.77,76.77,105.77,76.02,105.77,74.91,105.77,73.93,105.77,73.22,105.77,73.18,105.7,72.91,68.05,0.88,67.6,0.43,58.5,0.43,-59.62,0.43,-60.07,0.88,-105.7,72.88,-105.77,73.15,-105.77,73.8,-105.77,74.88,-105.77,75.01,-105.77,76.09,-105.77,76.74,-105.71,77.03,-105.44,77.24,-58.24,92.94,59.61,92.94",
+            "contourCut": "68.05,78.75,105.7,26.38,105.77,26.21,105.77,22.8,105.77,22.48,105.71,22.25,65.31,-30.17,18.62,-78.4,18.21,-78.63,-9.55,-78.75,-10.46,-78.63,-10.9,-78.4,-57.02,-30.17,-105.7,22.13,-105.77,22.37,-105.77,22.76,-105.77,23.71,-105.77,24.87,-105.77,25.78,-105.77,26.1,-105.71,26.27,-60.07,78.72,58.05,78.75",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "1PWL103_chrome",
+                "source": "bank",
+                "hash": "c615041cec9efa0f55a52b12a9fb1b16"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41803,
+                "default": "#3c3c3c",
+                "current": "#3c3c3c",
+                "name": "1PWL103_graphit",
+                "source": "bank",
+                "hash": "b9d7067fe85bbb38bf83753847645bb7"
+              },
+              {
+                "id": 2,
+                "default": 718,
+                "name": "1PWL103_leather",
+                "source": "bank",
+                "hash": "34441efa7d97336b9c873f2c8c5f6250"
+              },
+              {
+                "id": 3,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "1PWL103_red",
+                "source": "bank",
+                "hash": "bff94791ea95a89a1a400af6cf1c0dc2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9990": [
+            {
+              "id": "9990",
+              "name": "Benches",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 212,
+            "height": 93,
+            "depth": 157
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21066,
+        "type": 2,
+        "name": "Dumbbell rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/210\/21066\/95a4e5723603b7ebfc151edf43a7594c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/210\/21066\/b5c9cf6ade2110a44f462ddc46c47bfe.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/210\/21066\/1605e0cc-9684-468e-9e39-84143c18adee.svg",
+            "contourTop": "12.1,116.33,13.89,116.01,15.61,115.32,17.2,114.29,18.52,112.98,19.54,111.47,20.23,109.82,20.6,108.08,30.01,2,30.01,1.5,29.96,0,29.81,0,27.46,0,27.03,0,26.21,0,25.55,0,25.11,0,24.96,0,-25.09,0,-27.44,0,-27.87,0,-28.69,0,-29.35,0,-29.79,0,-29.94,0,-29.99,1.5,-29.99,2,-20.82,107.8,-20.5,109.59,-19.82,111.31,-18.78,112.91,-17.47,114.23,-15.97,115.24,-14.32,115.93,-12.57,116.3,-10.78,116.33",
+            "contourCut": "27.9,22.61,28.71,22.31,29.38,21.75,29.68,21.26,29.77,21.09,29.81,21,29.84,20.92,29.9,20.75,29.95,20.57,29.99,20.38,30.01,20.2,30.01,20.01,30.01,-20.18,29.99,-20.36,29.95,-20.55,29.9,-20.73,29.84,-20.9,29.77,-21.07,29.68,-21.24,29.58,-21.4,29.47,-21.55,29.35,-21.69,29.22,-21.82,29.07,-21.94,28.92,-22.06,28.76,-22.16,28.6,-22.24,28.43,-22.32,28.25,-22.38,28.07,-22.43,27.89,-22.46,27.7,-22.48,27.51,-22.49,-27.49,-22.49,-27.67,-22.48,-27.86,-22.46,-28.04,-22.43,-28.22,-22.38,-28.4,-22.32,-28.74,-22.16,-28.89,-22.06,-29.04,-21.94,-29.19,-21.82,-29.32,-21.69,-29.44,-21.55,-29.55,-21.4,-29.65,-21.24,-29.74,-21.07,-29.81,-20.9,-29.87,-20.73,-29.92,-20.55,-29.96,-20.36,-29.98,-20.18,-29.99,-19.99,-29.99,20.01,-29.98,20.2,-29.96,20.38,-29.92,20.57,-29.87,20.75,-29.79,21,-29.65,21.26,-29.35,21.75,-28.69,22.31,-27.87,22.61",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "1AB310_chrome",
+                "source": "bank",
+                "hash": "f20f12a3d8aa382b9ef73e34c0efc0ec"
+              },
+              {
+                "id": 1,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1AB310_graphite",
+                "source": "bank",
+                "hash": "0b13653c1a7d3e2aaf7ab1c128ec9b77"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "1AB310_rubber",
+                "source": "bank",
+                "hash": "f812f642971ff13d8522710f8007bd50"
+              },
+              {
+                "id": 3,
+                "default": 55338,
+                "name": "1AB310_silver",
+                "source": "bank",
+                "hash": "c61180a88602050c6db74cf9ed98035f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 116,
+            "depth": 45
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21065,
+        "type": 2,
+        "name": "Deadlift Machine",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/210\/21065\/5be31a088c110832ce19ff749774d157.png"
+          },
+          "body": {
+            "package": "\/files\/products\/210\/21065\/1f0c8992f4ea3d3d5940a04006c1081a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/210\/21065\/e5cff46a-d693-4d0b-b7af-5ad9972a52eb.svg",
+            "contourTop": "14.53,136.1,23.92,134.23,31.43,129.35,54.19,108.89,54.71,108.33,55.03,107.35,55.27,105.22,59.08,70.81,63.41,31.26,63.47,30.71,63.48,30.56,56.58,0.08,56.06,0.02,-0.09,-1.01,-55.62,0.02,-56.31,0.08,-63.48,30.56,-63.47,30.71,-63.41,31.26,-59.08,70.81,-55.27,105.22,-55.03,107.35,-54.71,108.33,-54.19,108.89,-33.33,126.17,-26.24,131.97,-17.34,136.1",
+            "contourCut": "48.53,96.14,49.93,96.01,51.29,95.65,62.72,90.92,63.16,90.29,63.41,89.52,63.47,89.01,63.48,88.42,63.47,87.84,52.87,-56.24,52.79,-56.5,38.96,-83.91,38.16,-85.06,37.16,-86.05,36.02,-86.86,34.74,-87.45,33.39,-87.82,2.85,-95.92,2.55,-95.99,2,-96.06,1.25,-96.11,0.4,-96.14,-0.46,-96.13,-1.21,-96.11,-1.77,-96.05,-2.06,-95.99,-34.73,-86.41,-35.38,-86.11,-36,-85.82,-37.15,-85.01,-38.14,-84.02,-38.95,-82.87,-52.4,-56.5,-52.48,-56.24,-63.47,87.84,-63.48,88.42,-63.47,89.01,-63.41,89.52,-63.16,90.29,-62.72,90.92,-51.02,95.65,-49.66,96.01,-48.27,96.14",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1HP505S_graphite",
+                "source": "bank",
+                "hash": "7bc4c2cad48a5ed298dcb5b3974e3320"
+              },
+              {
+                "id": 1,
+                "default": 119,
+                "name": "1HP505S_metal",
+                "source": "bank",
+                "hash": "d1e5342e4e05636af151ea69036e48cb"
+              },
+              {
+                "id": 2,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "1HP505S_red",
+                "source": "bank",
+                "hash": "b2bce0d90897a18d735ac480ef1d8624"
+              },
+              {
+                "id": 3,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1HP505S_rubber",
+                "source": "bank",
+                "hash": "fccc1ceeb0ff4367140458a9ddeec400"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9988": [
+            {
+              "id": "9988",
+              "name": "Strength training machines",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 127,
+            "height": 137,
+            "depth": 192
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21053,
+        "type": 2,
+        "name": "Bumper Weight Plate Storage",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/210\/21053\/5a332ee3edeb881cba945d616055846e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/210\/21053\/041e65726a9d2a1943c861921fae91d2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/210\/21053\/1e235caf-59bb-407b-aacc-2251f3e2f19f.svg",
+            "contourTop": "1.98,114.13,2.33,113.68,23.07,80.79,23.3,80.33,23.47,79.98,23.61,79.62,35.56,43.51,35.66,43.15,40.61,18.69,40.61,0.65,40.49,0.2,40.41,0.14,40.12,0.09,39.44,0.06,36.81,0.01,-0.02,0.01,-36.81,0.01,-39.45,0.06,-40.15,0.09,-40.41,0.14,-40.49,0.2,-40.61,0.65,-40.61,18.69,-35.68,43.15,-35.57,43.51,-23.62,79.62,-23.48,79.98,-23.31,80.33,-23.08,80.78,-2.32,113.74,-2.02,114.13",
+            "contourCut": "37.47,35.62,38.71,35.17,39.72,34.32,40.38,33.17,40.61,31.87,40.38,30.58,39.72,29.43,2.91,-34.32,1.9,-35.17,0.66,-35.62,-0.66,-35.62,-1.9,-35.17,-2.91,-34.32,-39.72,29.43,-40.38,30.58,-40.61,31.87,-40.38,33.17,-39.72,34.32,-38.71,35.17,-37.47,35.62,-36.15,35.62",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1SC252_graphite",
+                "source": "bank",
+                "hash": "e4132b1a9a027f46434a03275f74d664"
+              },
+              {
+                "id": 1,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1SC252_rubber",
+                "source": "bank",
+                "hash": "1ee0a7268c3b50946ad9b9e7c8420a0d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 81,
+            "height": 114,
+            "depth": 71
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 21047,
+        "type": 2,
+        "name": "Bar rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/210\/21047\/125fb3e7fbbffc9a051d5af655bd6941.png"
+          },
+          "body": {
+            "package": "\/files\/products\/210\/21047\/51c9292274b6a45ed79164e3633f7d18.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/210\/21047\/ccd2f29d-d87a-4d69-a71b-d0448a3d9ba1.svg",
+            "contourTop": "30.99,104.54,37.55,99.41,60.07,81.7,60.07,79.39,60.07,78.59,60.07,77.88,60.07,77.35,60.07,77.07,37.7,0.19,37.62,0.13,37.31,0.07,36.6,0.04,34,0,-33.96,0,-36.66,0.04,-37.38,0.07,-37.64,0.12,-37.72,0.17,-60.07,77.07,-60.07,79.39,-60.07,80.19,-60.07,80.9,-60.07,81.42,-60.07,81.7,-31.01,104.54,-30.97,104.54,-30.86,104.54,-30.67,104.54,-30.42,104.54,-30.12,104.54,-29.77,104.54,-29.4,104.54,-29.01,104.54,-28.62,104.54,-28.24,104.54,-27.9,104.54,-27.59,104.54,-27.35,104.54,-27.16,104.54,-27.05,104.54,-27.01,104.54,26.99,104.54,27.03,104.54,27.15,104.54,27.33,104.54,27.58,104.54,27.88,104.54,28.23,104.54,28.6,104.54,28.99,104.54,29.38,104.54,29.76,104.54,30.1,104.54,30.41,104.54,30.66,104.54,30.84,104.54,30.96,104.54",
+            "contourCut": "34.6,27.47,35.85,27.02,36.87,26.16,60.07,-9.24,60.07,-11.59,60.07,-13.94,35.29,-27.24,34,-27.47,-33.96,-27.47,-35.25,-27.24,-60.07,-13.94,-60.07,-13.79,-60.07,-13.39,-60.07,-12.76,-60.07,-11.99,-60.07,-11.18,-60.07,-10.41,-60.07,-9.79,-60.07,-9.38,-60.07,-9.24,-36.89,26.17,-36.35,26.62,-35.87,27.02,-34.62,27.47",
+            "materials": [
+              {
+                "id": 0,
+                "default": 268,
+                "name": "1SC209_chrome",
+                "source": "bank",
+                "hash": "b9635c3f7606a9ecc9bc23216eede440"
+              },
+              {
+                "id": 1,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1SC209_graphite",
+                "source": "bank",
+                "hash": "2011c470448b5ef50d934f5a1b1516a3"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1SC209_rubber",
+                "source": "bank",
+                "hash": "35e7ce3e80dd1c0f5a9e1aa9fc2d6261"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 105,
+            "depth": 55
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20873,
+        "type": 2,
+        "name": "Multifunctional rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/208\/20873\/9cf9d0940749319bf2238c3de421b55d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/208\/20873\/fcf402184646189cb2c27c9c2de9a35d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/208\/20873\/681eb3b7-0b01-4311-ad1a-48ecb4059c31.svg",
+            "contourTop": "44.83,211.51,45.6,210.8,50.3,182.18,50.3,132.68,46.85,24.39,45.37,0.01,-33.97,0.01,-34.57,0.01,-45.79,71.77,-50.3,132.67,-50.3,182.18,-45.82,201.63,-34.03,211.51,-32.52,211.51,-31.45,211.51,-31.01,211.51,32.51,211.51,33.58,211.51,34.02,211.51,43.32,211.51,44.39,211.51",
+            "contourCut": "50.3,20.01,50.3,19.51,49.21,10.59,20.19,-10.78,18.95,-11.56,7.01,-18.6,-0.05,-20.01,-7.1,-18.6,-18.92,-11.56,-20.16,-10.78,-49.92,10.59,-50.3,19.51,-50.3,20.01,-41.2,20.01,-27.37,20.01,41.19,20.01",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "1DFC10_ ball",
+                "source": "bank",
+                "hash": "ced48652c8609edc650b246ccf667700"
+              },
+              {
+                "id": 1,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1DFC10_ metal",
+                "source": "bank",
+                "hash": "2248ade469dced83c13be8d1118495d0"
+              },
+              {
+                "id": 2,
+                "default": 55338,
+                "name": "1DFC10_metal2",
+                "source": "bank",
+                "hash": "147308c0ecd82650a0f5c2067cab5b57"
+              },
+              {
+                "id": 3,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "1DFC10_red ball",
+                "source": "none",
+                "hash": "e1d7c83d40adf033679baf20470faa0a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 101,
+            "height": 211,
+            "depth": 40
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20861,
+        "type": 2,
+        "name": "Multifunctional rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/208\/20861\/9b2b83001791a37f1062aadf26acbe61.png"
+          },
+          "body": {
+            "package": "\/files\/products\/208\/20861\/f54f17ffc84afdf18f80f45c97a3039a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/208\/20861\/083cbecf-19c2-4363-9357-d30d92168377.svg",
+            "contourTop": "9.18,41.24,9.56,41.22,9.68,41.21,9.76,41.2,9.84,41.19,9.9,41.17,9.96,41.15,10.01,41.13,10.21,41.04,10.26,40.99,10.34,40.91,10.4,40.83,10.45,40.76,10.47,40.73,10.48,40.7,10.51,40.6,11.56,36.56,11.58,36.45,11.63,0.16,11,0.05,9.95,0.01,9.88,0.01,8.74,0.01,8.53,0.01,8.13,0.01,7.81,0.01,7.6,0.01,7.52,0.01,-8.69,0.01,-9.83,0.01,-9.9,0.01,-10.73,0.05,-11.35,0.16,-11.61,20.95,-11.63,35.76,-11.63,35.79,-11.63,35.84,-11.63,35.86,-11.63,36.27,-11.63,36.35,-11.63,36.43,-11.63,36.44,-11.62,36.5,-10.49,40.65,-10.48,40.68,-10.41,40.78,-10.32,40.89,-10.25,40.96,-10.22,40.98,-10.17,41.01,-10.02,41.08,-9.97,41.1,-9.91,41.12,-9.77,41.15,-9.69,41.16,-9.57,41.17,-9.19,41.18,-8.21,41.19,7.81,41.24",
+            "contourCut": "-8.8,15.24,9.07,15.2,9.7,15.09,10.31,14.8,10.92,14.33,11.4,13.56,11.58,12.36,11.61,10.99,11.63,9.72,11.6,-7.1,11.58,-10.95,11.57,-11.05,11.56,-11.13,10.53,-14.82,10.33,-15.06,10.17,-15.14,10.05,-15.15,8.85,-15.21,-8.68,-15.24,-9.94,-15.18,-10.07,-15.17,-10.27,-15.03,-10.45,-14.81,-11.59,-11.19,-11.62,-11.05,-11.63,-10.95,-11.63,-4.25,-11.63,-4.23,-11.61,-0.25,-11.31,12.4,-11.13,13.6,-10.65,14.37,-10.03,14.84,-9.43,15.13",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1FE256_ACCESSORY RACK_SCANLINE1_metal",
+                "source": "bank",
+                "hash": "b669e365059344d9fd43ee3a4d1ff3fd"
+              },
+              {
+                "id": 1,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1FE256_ACCESSORY RACK_SCANLINE1_rubber",
+                "source": "bank",
+                "hash": "a5ab086bc86ffbf4ed070d7d5cab8e76"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 23,
+            "height": 41,
+            "depth": 30
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20859,
+        "type": 2,
+        "name": "Bumper Weight Plate Storage",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/208\/20859\/d1b7e7797a47fc82321afdc7c4873f35.png"
+          },
+          "body": {
+            "package": "\/files\/products\/208\/20859\/be59b1438f335a08c386efc0a87f0e4b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/208\/20859\/b75a84fe-7087-4fc0-a1f1-bdca4c0fce1a.svg",
+            "contourTop": "28.37,87.84,28.4,87.82,28.98,87.19,30.85,85.14,31.05,84.92,31.07,84.89,48.88,41.32,48.93,41.18,48.99,41.01,49.41,39.8,49.66,39.07,50.17,37.58,50.18,37.54,47.14,3.1,47.08,2.54,46.91,2.03,46.63,1.57,45.27,0,42.22,0,41.69,0,40.7,0,39.88,0,39.36,0,39.17,0,-42.28,0,-42.81,0,-43.8,0,-44.62,0,-45.14,0,-45.33,0,-46.68,1.57,-46.96,2.03,-47.14,2.54,-47.2,3.1,-50.18,37.54,-50.17,37.58,-49.66,39.07,-49.41,39.8,-48.99,41.01,-48.93,41.18,-48.88,41.32,-31.07,84.89,-31.05,84.92,-30.85,85.14,-28.98,87.19,-28.4,87.82,-28.37,87.84,-27.88,87.84,27.88,87.84",
+            "contourCut": "44.9,31.6,46.15,31.37,46.88,30.81,47.1,30.36,47.13,30.18,50.17,0.39,50.18,0,50.17,-0.39,47.13,-30.18,47.1,-30.36,46.88,-30.81,46.15,-31.37,44.9,-31.6,39.69,-31.6,-39.6,-31.6,-44.81,-31.6,-45,-31.59,-46.21,-31.36,-46.93,-30.81,-47.16,-30.36,-47.19,-30.18,-50.17,-0.39,-50.18,0,-50.17,0.39,-47.19,30.18,-47.16,30.36,-46.93,30.81,-46.21,31.36,-45,31.59,-44.81,31.6",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1FE252_DISK_RACK_SCANLINE1_metal",
+                "source": "bank",
+                "hash": "41098d3a0a94ba1da220aa9f508f1b7e"
+              },
+              {
+                "id": 1,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1FE252_DISK_RACK_SCANLINE1_rubber",
+                "source": "bank",
+                "hash": "9e9023903153adbdcbf169a3f202cd53"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 100,
+            "height": 88,
+            "depth": 63
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20856,
+        "type": 2,
+        "name": "Multifunctional rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/208\/20856\/b0178fc0523139b5c86590d1b60b3f24.png"
+          },
+          "body": {
+            "package": "\/files\/products\/208\/20856\/e1bfbb7c4590d3eabdff8a9387543ccb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/208\/20856\/69084bc9-ecec-48dd-ae8d-aef94eb9fcf3.svg",
+            "contourTop": "58.26,118.28,74.07,87.28,74.07,34.93,74.07,32.65,74.07,32.26,59.75,0.02,-59,0.02,-59.73,0.02,-74.07,32.26,-74.07,32.65,-74.07,33.67,-74.07,34.93,-74.07,36.33,-74.07,83.59,-74.07,84.61,-74.07,85.87,-74.07,87.28,-58.25,118.28,-57.78,118.28,-53.71,118.28,-53.25,118.28,53.72,118.28,57.8,118.28",
+            "contourCut": "59.01,18.94,73.63,10.46,74.07,10.02,74.07,-6.02,74.07,-6.76,74.07,-7.95,74.07,-9.15,74.07,-9.89,73.63,-10.32,59.01,-18.94,-59,-18.94,-73.63,-10.32,-74.07,-9.89,-74.07,-9.15,-74.07,-6.76,-74.07,-6.02,-74.07,6.89,-74.07,9.28,-74.07,10.02,-73.63,10.46,-59,18.94,-52.5,18.94",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1DFC9_metal",
+                "source": "bank",
+                "hash": "d4ef4e8f02c7ef3f4d3f0bc3678788b7"
+              },
+              {
+                "id": 1,
+                "default": "#f91911",
+                "addMaterial": "41803",
+                "name": "1DFC9_metal2",
+                "source": "bank",
+                "hash": "0bc6392355818dff6af02e114a4054af"
+              },
+              {
+                "id": 2,
+                "default": 1762,
+                "name": "1DFC9_metal3",
+                "source": "bank",
+                "hash": "d48344a99016e9fc50953d9140416d10"
+              },
+              {
+                "id": 3,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "1DFC9_rubber",
+                "source": "bank",
+                "hash": "f1aafb3a771b2eecd6e982c3adeea86c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 148,
+            "height": 118,
+            "depth": 38
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20777,
+        "type": 2,
+        "name": "Rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/207\/20777\/6372fd2e57fb75b314656f1ad8829a83.png"
+          },
+          "body": {
+            "package": "\/files\/products\/207\/20777\/d54378653bae1dd66694f0671148a342.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/207\/20777\/8de28b80-be89-49d6-9a38-34ffa8b0bd31.svg",
+            "contourTop": "36.71,100.76,41.11,7.93,41.11,0.14,-27.37,0.14,-40.37,0.14,-40.37,7.51,-40.37,7.93,-35.91,100.76,36.59,100.76",
+            "contourCut": "41.11,12.46,41.11,-60.41,41.11,-67.78,-27.37,-67.78,-40.37,-67.78,-40.37,-60.41,-40.37,5.09,-40.37,12.46,-27.37,12.46",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#3c3c3c",
+                "addMaterial": "41803",
+                "name": "1DFC11_metal",
+                "source": "bank",
+                "hash": "37644df4baa22af3676fac8c87062a72"
+              },
+              {
+                "id": 1,
+                "default": 152,
+                "name": "1DFC11_metal2",
+                "source": "bank",
+                "hash": "9f9044c08a6cb9ee0d9de5f8a4be08b2"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "1DFC11_plastic",
+                "source": "bank",
+                "hash": "1e20960e426e675b3a7a0ccf12bd8639"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 81,
+            "height": 101,
+            "depth": 80
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20363,
+        "type": 2,
+        "name": "Bench press",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20363\/a8b63b3d0b79b8e8c4c104634400add8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20363\/22b2525154d4cc1bcda7413e571115bf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20363\/5130c04d-c277-4b54-b95c-d5588229b46c.svg",
+            "contourTop": "88.7,117.94,104.65,103.44,104.65,101.71,50.89,0.24,49.22,0.12,48.9,0.11,47.65,0.09,22.59,0.09,19.77,0.09,-17.88,0.09,-20.7,0.09,-47.49,0.09,-47.73,0.09,-47.74,0.09,-49.49,0.23,-104.65,101.71,-104.65,101.93,-104.65,102.47,-104.65,103.19,-104.65,103.44,-88.92,117.94,79.59,117.94,82.76,117.94,86.88,117.94",
+            "contourCut": "47.84,115.56,48.68,115.51,88.72,106.43,104.65,92.27,104.65,91.4,104.65,90.82,104.65,90.53,12.87,-57.54,12.71,-57.79,2.06,-62.5,1.79,-62.5,1.05,-62.5,0.15,-62.5,-0.46,-62.5,-0.6,-62.5,-11.4,-57.8,-11.56,-57.55,-104.65,90.53,-104.65,90.82,-104.65,91.4,-104.65,91.56,-104.65,92.13,-104.65,92.27,-88.9,106.44,-47.3,115.56",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "42_metal_1",
+                "source": "bank",
+                "hash": "d5022fc59e2536100f6c937e988324bf"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "42_metal_2",
+                "source": "bank",
+                "hash": "aace761e21f99a7db81527701743a3e3"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "42_plastic",
+                "source": "bank",
+                "hash": "71f42de2aede61364afc785ccc1f1ca9"
+              },
+              {
+                "id": 3,
+                "default": 151,
+                "name": "42_textile",
+                "source": "bank",
+                "hash": "4212c726dfd55f0bfa6118a97a9fcd1c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9990": [
+            {
+              "id": "9990",
+              "name": "Benches",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 209,
+            "height": 118,
+            "depth": 178
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20361,
+        "type": 2,
+        "name": "Dumbbell rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20361\/b6e74d82525fbd49e7779f5fdb38d33d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20361\/99e1b5e01df015bc1a3263f2c3400cb9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20361\/4cef6830-af7e-4fc1-84d5-98427fd2e5a3.svg",
+            "contourTop": "38.9,136.55,42,136.44,44.98,135.58,47.64,134.05,49.82,131.92,51.39,129.35,60.93,113.69,60.96,112.6,60.96,112.31,60.96,76.56,60.96,41.71,60.87,-0.01,-60.42,-0.01,-60.94,-0.01,-60.96,-0.01,-60.87,105.62,-60.77,112.35,-60.72,113.69,35.87,135.92",
+            "contourCut": "39.68,43.77,40.43,43.73,59.6,40.59,59.93,40.18,60.87,36.97,60.96,36.51,60.96,36.42,60.96,13.04,60.96,12.95,60.96,-6.61,60.96,-6.71,60.93,-13.9,60.91,-18.05,60.87,-26.34,60.86,-28.39,60.85,-29.23,60.33,-29.91,-12.14,-43.73,-12.89,-43.77,-39.37,-43.77,-40.08,-43.69,-40.56,-43.52,-40.92,-43.37,-60.44,-29.88,-60.96,-29.2,-60.87,15.57,-60.77,37,-60.48,40.18,-60.15,40.59",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54829,
+                "name": "33_metal_1",
+                "source": "bank",
+                "hash": "bfc68ba01477ba11f5054516a30d5337"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "33_metal_2",
+                "source": "bank",
+                "hash": "c997a70fe5ccc1b31cd7b19005ce897d"
+              },
+              {
+                "id": 2,
+                "default": 1554,
+                "name": "33_metal_3",
+                "source": "bank",
+                "hash": "7133aaed4c6536076e3f25b00fc8cc20"
+              },
+              {
+                "id": 3,
+                "default": 119,
+                "name": "33_metal_4",
+                "source": "bank",
+                "hash": "15df24cdc0deaa0a1424104f3870154c"
+              },
+              {
+                "id": 4,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "33_plastic",
+                "source": "bank",
+                "hash": "86a1ce20ac3497cf97671a0546219afe"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 122,
+            "height": 137,
+            "depth": 88
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20354,
+        "type": 2,
+        "name": "Barbell Rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20354\/8091e34eb88078879ec1adb87f70050e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20354\/a0162500100defacb674ba746a15748c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20354\/75e5c10e-d06a-4894-bde5-78651540ba1f.svg",
+            "contourTop": "40.97,157.6,41.44,157.59,41.84,157.54,42.05,157.5,42.2,157.44,111.85,101.3,111.89,101.25,111.89,100.15,111.89,99.29,111.89,99.03,44.59,1.55,43.37,0.33,-34.62,0.33,-42.02,0.33,-42.15,0.33,-43.37,1.55,-111.89,99.03,-111.89,99.29,-111.89,100.15,-111.89,100.41,-111.89,100.94,-111.89,101.25,-111.85,101.3,-41.7,157.44,-41.56,157.5,-41.35,157.54,-40.94,157.59,-40.47,157.6,-35.89,157.6",
+            "contourCut": "44.39,32.58,111.85,-14.71,111.89,-14.76,111.89,-15.89,111.89,-16.64,111.89,-16.98,111.89,-17,111.85,-17.05,84.15,-32.58,82.35,-32.58,-83.24,-32.53,-111.85,-17.06,-111.89,-17.01,-111.89,-16.65,-111.89,-15.9,-111.89,-15.59,-111.89,-15.07,-111.89,-14.85,-111.89,-14.76,-111.85,-14.72,-43.17,32.58,34.74,32.58,35.87,32.58,43.26,32.58",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "37_metal_1",
+                "source": "bank",
+                "hash": "3d10b2e4373efc27abb9b63b630f5798"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "37_metal_2",
+                "source": "bank",
+                "hash": "39101484e909f8ce55267ae2ffc00156"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "37_plastic_1",
+                "source": "bank",
+                "hash": "915f505eecc8f6b476a3e1c8e5e51d5b"
+              },
+              {
+                "id": 3,
+                "default": 839,
+                "name": "37_plastic_3",
+                "source": "bank",
+                "hash": "e92158c667380c069ae16dec097c20f9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 224,
+            "height": 157,
+            "depth": 65
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20345,
+        "type": 2,
+        "name": "Dumbbell rack",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20345\/a06ae9b690e392430d85726b90c0b16d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20345\/3211dcef50e7432af78b8788a0cc4a5d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20345\/c6e1050f-33da-4032-b62d-05fcebbe6d7d.svg",
+            "contourTop": "6.73,81.98,7.24,81.95,9.52,81.47,9.8,81.34,14.44,77.64,15.31,76.44,24.34,3.4,24.34,0,12.23,-0.01,11.95,-0.01,5.44,-0.01,4.76,-0.01,-5.23,-0.01,-12.15,-0.01,-12.24,-0.01,-24.34,0,-24.34,3.4,-18,68.25,-15.83,76.44,-14.95,77.64,-9.81,81.34,-9.53,81.47,-7.25,81.95,-6.74,81.98,4.99,81.98,6.59,81.98,6.68,81.98",
+            "contourCut": "0.25,25.66,2.64,25.39,4.88,24.68,6.9,23.57,14.49,19.28,15.35,18.07,23.23,3.64,24,1.44,24.34,-0.93,24.19,-3.34,23.59,-5.62,15.27,-21.67,14.37,-22.88,13.84,-23.06,2.16,-25.44,-0.24,-25.66,-2.63,-25.39,-14.46,-22.79,-15,-22.59,-15.87,-21.37,-23.68,-5.17,-24.24,-2.88,-24.34,-0.46,-23.96,1.9,-23.14,4.08,-15.79,18.37,-14.9,19.56,-4.39,24.77,-2.14,25.44",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "30_handle_1.001",
+                "source": "bank",
+                "hash": "3679dbde194bcd3d89a83468e11b8603"
+              },
+              {
+                "id": 1,
+                "default": 54829,
+                "name": "30_handle_2.001",
+                "source": "bank",
+                "hash": "e9e3e74682969e1c90872432c8b0a713"
+              },
+              {
+                "id": 2,
+                "default": 55338,
+                "name": "30_metal1.001",
+                "source": "bank",
+                "hash": "2dce5756b101da0ca0d9912c87de7bce"
+              },
+              {
+                "id": 3,
+                "default": 152,
+                "name": "30_plastic_1.001",
+                "source": "bank",
+                "hash": "57bbccd354abdf4ee236e8d140d6af71"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9987": [
+            {
+              "id": "9987",
+              "name": "Barbels and Dumbbels",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 49,
+            "height": 82,
+            "depth": 51
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -552,7 +552,9 @@ const BuyCredits = props => {
         setTimeout(() => dispatch(closeActivePopup({name: "buyCredits"})), 500);
     }
 
-    useEffect(() => setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login), [R2D.config.data.enable_merchant_login]);
+    useEffect(() => {
+        setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login)
+    }, [R2D.config.data.enable_merchant_login]);
 
     useEffect(() => {
         let itemsToShowArray = [];
@@ -671,7 +673,7 @@ const BuyCredits = props => {
                                     </div>
                                     <div className={classes.done_popup_btn_terms}>
                                         <Checkbox label={translation["RENDER_BUY_TERMS_AGREE"]} onChange={onChangeCheckbox} checked={termsCheckboxStatus} name={"buyCreditsTerms"}/>
-                                        <a href='https://roomtodo.com/en/terms_of_service/' target='_blank'>{translation["RENDER_BUY_TERMS_OF_USE"]}</a>
+                                        <a href='#' target='_blank'>{translation["RENDER_BUY_TERMS_OF_USE"]}</a>
                                     </div>
                                     <div className={classes.done_popup_btn} onClick={onBuyCredits}>{ translation["RENDER_BUY_BUY"] }</div>
                                 </div>

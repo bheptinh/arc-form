@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { changeLockState } from '../../redux/features/common/commonSlice';
 import { selectTranslation } from '../../redux/features/language/languageSlice';
-import HoverComponent from "../../left_new/parts/controlPanel/components/HoverComponent";
+import HoverComponent from "../left_new/parts/controlPanel/components/HoverComponent";
 
 const useStyle = createUseStyles({
     lock_main:{

@@ -1,0 +1,1007 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "11",
+    "items": [
+      {
+        "id": 64457,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64457\/d560a82f4e3e55049fedf043ae544f6f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64457\/e6c6e72349ac601f56ed62ebcf89c5e4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.9,1.5,44.98,1.46,45,1.35,45,-1.35,44.98,-1.46,44.9,-1.5,42.95,-1.5,-44.75,-1.5,-44.9,-1.5,-44.98,-1.46,-45,-1.35,-45,1.35,-44.98,1.46,-44.9,1.5,44.75,1.5,44.84,1.5",
+            "contourCut": "44.89,0,44.95,-0.01,44.99,-0.05,45,-0.12,45,-263.89,44.98,-263.95,44.95,-263.98,44.89,-264,-44.89,-264,-44.95,-263.98,-44.98,-263.95,-45,-263.89,-45,-0.12,-44.99,-0.05,-44.95,-0.01,-44.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "578e732a1ee8a584b95512beb75cdd94"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Frame",
+                "source": "bank",
+                "hash": "70fad91e2dd6a49136195fdcef3e186a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 264,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.25516800 1751052558"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64458,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64458\/bacb2205d2ed6c9649f80d525c176b92.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64458\/c77735943d7852eb3762875ac1b3cf39.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.9,1.5,44.98,1.46,45,1.35,45,-1.35,44.98,-1.46,44.9,-1.5,-44.75,-1.5,-44.9,-1.5,-44.98,-1.46,-45,-1.35,-45,1.35,-44.98,1.46,-44.9,1.5,-42.95,1.5,44.75,1.5,44.84,1.5",
+            "contourCut": "44.89,0,44.95,-0.01,44.99,-0.05,45,-0.12,45,-263.89,44.98,-263.95,44.95,-263.98,44.89,-264,-44.89,-264,-44.95,-263.98,-44.98,-263.95,-45,-263.89,-45,-0.12,-44.99,-0.05,-44.95,-0.01,-44.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "fa312e985a7423b86fccd24e602e9c31"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Frame",
+                "source": "bank",
+                "hash": "b2df3edce1cf0b0b85c2eaea8f0d0128"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 264,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.35044600 1753044477"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64459,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64459\/c6f945c90f802179ac9cc7db3075bcf4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64459\/2bab692e35e013eccd049e3e07767d21.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "119.93,11,120.09,4.11,120.13,-4.41,119.93,-11,-120.12,-11,-120.13,-4.41,-120.12,11",
+            "contourCut": "119.94,0,120.13,-0.18,120.13,-126.44,120.13,-251.67,119.94,-251.85,-119.94,-251.85,-120.12,-251.84,-120.13,-251.67,-120.13,-0.18,-119.94,0,0,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "663f83978732f47e28b67dfa27bab73e"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "frame",
+                "source": "bank",
+                "hash": "5f7171d326224c18251d24a85718f43e"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "f82ce8ac571c37900c7f6a7ce96612d6"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 240,
+            "height": 252,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64460,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64460\/50098418d79180fd816c2022f2c4a0d6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64460\/4441a6897bf4830cb3213ef480070a6c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-129.77,4.79,168.67,4.66,168.98,4.52,168.98,0.74,168.67,0.6,-55.39,-4.79,-58.88,-4.79,-58.93,-4.79,-168.5,0.46,-168.98,0.74,-168.98,4.52,-168.5,4.79",
+            "contourCut": "-54.81,0,168.98,-0.03,168.98,-197.01,168.98,-264.73,-168.98,-264.73,-168.98,-0.03,-128.2,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 844,
+                "name": "frame",
+                "source": "bank",
+                "hash": "3f6b8e78ccf666cddadfe41444446346"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "617405d4701313b102058c25a3e66c0f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 338,
+            "height": 265,
+            "depth": 10
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.22166400 1753044533"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64461,
+        "type": 2,
+        "name": "Glass block",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64461\/425425d25f8e6f2cbd3a2ed5702dd43e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64461\/9c48264985ec7ad82d05a4190a8edea8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "8.69,5,9.04,4.98,10.2,4.66,10.2,4.65,10.2,-4.64,9.04,-4.98,8.69,-5,8.59,-5,-8.57,-5,-8.58,-5,-8.94,-4.99,-9.24,-4.92,-10.2,-4.64,-10.2,4.66,-9.24,4.92,-8.94,4.99,-8.58,5,8.59,5",
+            "contourCut": "10.2,0,10.2,-0.96,10.2,-1.69,10.2,-18.49,10.2,-19.21,10.2,-20,10.2,-20.4,-8.17,-20.4,-8.91,-20.4,-9.63,-20.4,-10.2,-20.4,-10.2,-19.51,-10.2,-18.75,-10.2,-2,-10.2,-1.27,-10.2,-0.48,-10.2,0,-9.31,0,-8.55,0,8.33,0,9.04,0,9.59,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41803,
+                "default": "#f4f0f0",
+                "current": "#f4f0f0",
+                "name": "seam2",
+                "source": "bank",
+                "hash": "7e3ef2560a5d9c53659faf7172f8c20b"
+              },
+              {
+                "id": 1,
+                "default": 1624,
+                "name": "glass2",
+                "source": "bank",
+                "hash": "2e03edae2e1d5352fce631d21b6c04ff"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 20,
+            "height": 20,
+            "depth": 10
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.06382300 1753044504"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64462,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64462\/ecfc078fa7051ef1abeadfe3b1bec59c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64462\/855c2ead1745d2707fae253a1be5bb30.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.9,1.5,44.98,1.46,45,1.35,45,-1.35,44.98,-1.46,44.9,-1.5,-44.75,-1.5,-44.9,-1.5,-44.98,-1.46,-45,-1.35,-45,1.35,-44.98,1.46,-44.9,1.5,-42.95,1.5,44.75,1.5,44.84,1.5",
+            "contourCut": "44.89,0,44.95,-0.01,44.99,-0.05,45,-0.12,45,-263.89,44.98,-263.95,44.95,-263.98,44.89,-264,-44.89,-264,-44.95,-263.98,-44.98,-263.95,-45,-263.89,-45,-0.12,-44.99,-0.05,-44.95,-0.01,-44.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "6a40fc4e4328bd3f17254e03dca31984"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Frame",
+                "source": "bank",
+                "hash": "baf4b995cae57843479c4cbaaf1cb76f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 264,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.84556800 1751052567"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64463,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64463\/669f299b28c2768efff46c2d1ba3fbd9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64463\/eef8bb44f4011537d04cc6d19187a847.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.9,1.5,44.98,1.46,45,1.35,45,-1.35,44.98,-1.46,44.9,-1.5,-44.75,-1.5,-44.9,-1.5,-44.98,-1.46,-45,-1.35,-45,1.35,-44.98,1.46,-44.9,1.5,-42.95,1.5,44.75,1.5,44.84,1.5",
+            "contourCut": "44.89,0,44.95,-0.01,44.99,-0.05,45,-0.12,45,-263.89,44.98,-263.95,44.95,-263.98,44.89,-264,-44.89,-264,-44.95,-263.98,-44.98,-263.95,-45,-263.89,-45,-0.12,-44.99,-0.05,-44.95,-0.01,-44.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "f37f21be678d41bed5b0dbc07f2a5359"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Frame",
+                "source": "bank",
+                "hash": "e28af4525549bdaf996f162f01757d34"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 264,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.60602600 1751052586"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64464,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64464\/f3be7dcf24c38fb5a129bb953279faea.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64464\/57d19df6f078db285a2bb42c9a05ca96.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.9,1.5,44.98,1.46,45,1.35,45,-1.35,44.98,-1.46,44.9,-1.5,-44.75,-1.5,-44.9,-1.5,-44.98,-1.46,-45,-1.35,-45,1.35,-44.98,1.46,-44.9,1.5,-42.95,1.5,44.75,1.5,44.84,1.5",
+            "contourCut": "44.89,0,44.95,-0.01,44.99,-0.05,45,-0.12,45,-263.89,44.98,-263.95,44.95,-263.98,44.89,-264,-44.89,-264,-44.95,-263.98,-44.98,-263.95,-45,-263.89,-45,-0.12,-44.99,-0.05,-44.95,-0.01,-44.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "163c46817a8c60807bc6d068c2e761a7"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Frame",
+                "source": "bank",
+                "hash": "a56a2a9ef9da5eefa3260c763548a3fb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 264,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.20326200 1751052614"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64465,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64465\/383117bf198825199a0dc9f49626a4ee.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64465\/ba627420ed06654813c29e63bf4f0c3d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.9,1.5,44.98,1.46,45,1.35,45,-1.35,44.98,-1.46,44.9,-1.5,-44.75,-1.5,-44.9,-1.5,-44.98,-1.46,-45,-1.35,-45,1.35,-44.98,1.46,-44.9,1.5,-42.95,1.5,44.75,1.5,44.84,1.5",
+            "contourCut": "44.89,0,44.95,-0.01,44.99,-0.05,45,-0.12,45,-263.89,44.98,-263.95,44.95,-263.98,44.89,-264,-44.89,-264,-44.95,-263.98,-44.98,-263.95,-45,-263.89,-45,-0.12,-44.99,-0.05,-44.95,-0.01,-44.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "77dd5d4aa6783d0c1d08b0f2cdaae1b1"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Frame",
+                "source": "bank",
+                "hash": "1aa17b2e46a707264ef6cd174a04bb4b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 264,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.77205000 1751052639"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64466,
+        "type": 2,
+        "name": "Glass partition",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64466\/13fea203159264b71b200b4d27f84fca.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64466\/1aefc0d70128dae12be89d3e2ff93b85.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.88,11,49.98,4.11,50.01,-4.41,49.88,-11,-49.88,-11,-50.01,-4.41,-49.98,4.11,-49.88,11",
+            "contourCut": "49.88,0,50.01,-0.12,50.01,-250.24,49.88,-250.37,-49.88,-250.37,-50.01,-250.24,-50.01,-0.12,-49.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "e26e91a1c1f758e2a054f1eb7230f878"
+              },
+              {
+                "id": 1,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "34e05f497186fbca7a33049920da5232"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "frame",
+                "source": "bank",
+                "hash": "f4d53b90d909ae61edaa6268db477e00"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 100,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64467,
+        "type": 2,
+        "name": "Door handle",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64467\/58459c2c422b5badaa3c110f709d89e8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64467\/f6e1b8aceed7bb6fac17f313a74e4d12.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "1.77,1.7,1.77,-1.65,1.77,-1.7,-1.73,-1.7,-1.77,-1.7,-1.77,-1.17,-1.77,-1.13,1.1,1.7,1.73,1.7",
+            "contourCut": "1.77,0,1.77,-0.04,1.77,-34.21,1.73,-34.25,1.66,-34.25,1.14,-34.25,1.08,-34.25,-1.73,-34.25,-1.77,-34.21,-1.77,-0.04,-1.77,0,1.1,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "handles",
+                "source": "bank",
+                "hash": "ab51f45a956a805cae7b01d2b0396a8d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9915": [
+            {
+              "id": "9915",
+              "name": "Partitions",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 4,
+            "height": 34,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "800.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.05089300 1752927480"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

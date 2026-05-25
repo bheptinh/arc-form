@@ -1,0 +1,2632 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "38",
+    "items": [
+      {
+        "id": 3409,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3409\/52abdbc3f8dbc6021a6d35cdc35fb52e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3409\/529a5e6e4041d6dd2ec2add2b3cbb3f5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 600,
+            "height": 600
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3400,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3400\/e8ad2aa50eb84c137aa279fdba6a439f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3400\/675b01f2baf05e289832f5c335a6f5fb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 600,
+            "height": 600
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3419,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3419\/90bb0dea2d16da887e291df2ce455682.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3419\/d1544401436c9d5428561291033dd9eb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1520,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1520\/2ea1d06f6300456decb063c2c85ba063.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1520\/4371a60067b9319f487324a256898986.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 586,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/586\/dc5650c4453ecb71f5212f7b6b942f8e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/586\/53e480e798ab25d9c085acf8bd3993b9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 432,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/432\/9a04ccd14895edae2b234c82544ddf42.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/432\/d281110d6484dd4310a8ae546175ff1d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3420,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3420\/c2cf83cb990f335db21c71d48eaa6088.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3420\/a4c5edf2bd2bc9734fef26683e12bb65.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3417,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3417\/c400af1d1fb5c6f00c14b56bf36fc618.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3417\/62a369a7468511f3d382ad3b58827f5a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 78,
+            "height": 78
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3416,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3416\/3a3798cdf4b651e54b02908a7ef699f4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3416\/137d6f565ace07827381d253e38b4732.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3415,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3415\/a9fb94e13306414224da215a773682bb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3415\/bfdcc38ea12dca626d9dec6f954c54cd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3414,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3414\/91708d60c26e42017f9e4fea0445856e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3414\/c40925bad7acd4430051cdc9ac0ee11f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3418,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3418\/00d41d8651bb227c748b3bfb9e8e7807.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3418\/72ba6e49d03871d225d21e61fba1d3f9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3413,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3413\/07fc4957e1e18acfe5f79d6b747e29d4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3413\/909dce0c8cbef65eea9caf9a26e18de6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3412,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3412\/e01a978527495aab06beb951458a8861.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3412\/67950e296b20a3a8576440c44d6f1c81.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3411,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3411\/27947b092528a0b58691ec880da744df.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3411\/f89ba1773a94913e6ad951900d743a11.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 600,
+            "height": 600
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3406,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3406\/97663a34a536d38ae3d459449f8a0c6b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3406\/125960d4fef72adf782f7256f003182d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 600,
+            "height": 600
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3399,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3399\/1808a3d4c4d8005b22eb6a7ad78a570e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3399\/8d210e570d3fb41a33276851f3ed1883.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 49,
+            "height": 49
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3398,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3398\/6e559771fdce362580b9ebdba5f42a5e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3398\/d447d47ad5e30ee41a4744dfef60172e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3397,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3397\/9824160d0bc2945e5ea85ed54d218088.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3397\/27a19b5590d941737e4f42ded54c6b89.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3395,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3395\/b7e7823c8dc124b8bd5290cf60624149.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3395\/db000d888a98f0d3f580bc44d23f6dd7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3394,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3394\/93e05ccd656bea774202aa9f3fa7061f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3394\/704fae72a01acf142e9c6e78ce5578ed.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3393,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3393\/8a5be27e73dc1d9381538ce2b2330c35.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3393\/097aa3d8c97ea0e87e2cf96a9263a059.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3392,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3392\/736671c808aa30bc07c21bc8f7df8a9b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3392\/5619fcdfd80b4cfeee1cfd69c985b800.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3391,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3391\/b99030b746b30d9ce45e0733179997c2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3391\/7ddd8ca32ae025246f2646c4577e8fc0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1525,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1525\/667b6a2d173246d3b3a0acbab9df9995.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1525\/344e5497a3ab67cd233df9727208f964.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1523,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1523\/02ca679d843a64cc52609bfe96dbe006.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1523\/bdaeb1c8d338291f30243c7b6a62d995.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1522,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1522\/b5b34bbf29987c70bc3c9bfb07f3a662.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1522\/97d01a5dcf6bdd1a8c6831cd0ef0b368.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 250,
+            "height": 250
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1518,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1518\/8f293a6ff2234eab0329dd71483f1fba.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1518\/5a6f9f486c0aaf68dcc8260915c31b92.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1506,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1506\/ccdff204d54a5e8a53fe691af9af7fc9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1506\/dd563db1a2eb5ac858cdfb3444cbb4d1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 584,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/584\/1466cc398696d248bd809d847efbf1c0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/584\/df1b54b678d3d530ff9d08955f4217e1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 583,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/583\/e9824330e00c2e87d007479bb3ca57e2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/583\/67fb738abe38ecebe27376e35d956f1a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 578,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/578\/5524e8dfe1bdbc5fa8a00f9c206f4698.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/578\/a10de31f00488186069fe77ac3e05376.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 434,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/434\/e706933fd6b00969876b90975b39ef77.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/434\/6869e78fc1f4664f44a5b9087f3556ae.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 433,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/433\/21a59e78d3edeff1fc951719df44867a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/433\/708b94ab214bd16f1db04932064fdf76.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 431,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/431\/90da262953d89577a786c24ee48d2a06.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/431\/3f81c513f416746ef39b0fc1e9a27556.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "laminate",
+          "parquet & laminate"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 382,
+        "type": 1,
+        "name": "Inlaid parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/382\/64fd9191673ca2470d5dd36e23ccb476.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/382\/c64b7679ad70d87d0ff76024b5249487.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 130,
+            "height": 130
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2479,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2479\/765d46cfb36df39e4c320ff033a67d43.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2479\/41995ab1be49658807fce18b29ed15e4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2481,
+        "type": 1,
+        "name": "Parquet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2481\/b33543860091efd41ba83e5a81fc40a2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2481\/5d9045b9b9f7124e87a2cd509d0ab937.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "946": [
+            {
+              "id": "946",
+              "name": "Inlaid parquet",
+              "parentId": "2"
+            },
+            {
+              "id": "2",
+              "name": "Wood",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "linoleum"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

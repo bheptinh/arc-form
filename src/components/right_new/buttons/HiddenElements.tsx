@@ -191,7 +191,9 @@ const HiddenElements = props => {
     exit: { transform:  "scale(10)", opacity: 0}
   };
 
-  useEffect(() => !isHiddenButtonWasShowed && setTimeout(() => dispatch(updateHiddenButtonWasShowedStatus(true)), 2000), []);
+  useEffect(() => {
+    !isHiddenButtonWasShowed && setTimeout(() => dispatch(updateHiddenButtonWasShowedStatus(true)), 2000)
+  }, []);
     
     return (
         <AnimatePresence>

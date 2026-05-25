@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { closeActivePopup, selectPopups, setActivePopup } from '../../redux/features/popups/popupsSlice.js';
+import { closeActivePopup, selectPopups, setActivePopup } from '../../redux/features/popups/popupsSlice';
 import {createUseStyles} from "react-jss";
 import parse from 'html-react-parser';
 
@@ -237,7 +237,9 @@ const CustomRegistrationPopup = props => {
         dispatch(closeActivePopup({name: 'customRegistrationPopup'}));
     }
 
-    useEffect(() => formDiv?.current?.querySelector('form')?.addEventListener('submit', sendRequest), []);
+    useEffect(() => {
+        formDiv?.current?.querySelector('form')?.addEventListener('submit', sendRequest)
+    }, []);
 
     return (
         <div className={classes.planner_popup_wrap +' ' + classes.planner_popup_wrap_show} style={{zIndex: popups.customRegistrationPopup.zIndex}}>

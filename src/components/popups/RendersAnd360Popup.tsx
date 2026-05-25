@@ -626,18 +626,22 @@ const RendersAnd360Popup = props => {
         setActiveRenderTypeShow(type);
     }
 
-    useEffect(async () => {        
+    useEffect(() => {        
         const timer = setTimeout(() => setAnimPopupClass(true), 0);
         clearInterval(planner.renders.activeIntId);
         planner.renders.activeIntId = null;
         planner.renders.inProgressIds = [];
 
-        let response = await user.loadRenders(20, 0);
-        setRendersData(response.data.items);
-        setRendersTotal(response.data.total);
+        user.loadRenders(20, 0)
+            .then((response) => {
+                setRendersData(response.data.items);
+                setRendersTotal(response.data.total);
+            });
 
-        let tours360 = await user.uTours360_load();
-        setTours360Data(tours360.reverse());
+        user.uTours360_load()
+            .then((tours360) => {
+                setTours360Data(tours360.reverse());
+            });
 
         planner.apiScene.addEventListener(planner.apiScene.UPDATE_TOURS, update360Data);
         planner.scene.addEventListener(planner.scene.RENDERS_DATA_UPDATED, onRendersUpdate);
@@ -908,13 +912,17 @@ const RendersAnd360Popup = props => {
         }
     }, [rendersShow.length, rendersTotal]);
 
-    useEffect(async () => {
+    useEffect(() => {
         if(needToUploadMore) {
-            let response = await user.loadRenders(20, currentOffsetForRenders);
-            if(response.type == "error") return dispatch(setActivePopup({name: "alert", data: response.data.items}));
-            setRendersData(state => state.concat(response.data.items || []));
-            setNeedToUploadMore(false);
-            setPreloaderStatus(false);
+            user.loadRenders(20, currentOffsetForRenders)
+                .then(response => {
+                    if(response.type == "error") return dispatch(setActivePopup({name: "alert", data: response.data.items}));
+                    setRendersData(state => state.concat(response.data.items || []));
+                })
+                .finally(() => {
+                    setNeedToUploadMore(false);
+                    setPreloaderStatus(false);
+                });
         }
     }, [needToUploadMore]);
 

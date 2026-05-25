@@ -1,0 +1,3950 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "35",
+    "items": [
+      {
+        "id": 235,
+        "type": 2,
+        "name": "Three sections window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/235\/3643bf10d333ca097b2483d54e63ebb2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/235\/8fde51b03f744e0bebdbb0f1a2a63184.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "71.42,11,71.5,10.93,71.5,9.61,71.5,4.97,71.44,-7.5,71.39,-10.95,71.34,-11,-71.12,-11,-71.41,-11,-71.47,-10.95,-71.48,-7.5,-71.5,4.97,-71.5,9.61,-71.48,10.93,-71.4,11,69.87,11",
+            "contourCut": "71.34,0,71.42,-0.01,71.5,-0.1,71.5,-135,-27.08,-135,-71.5,-135,-71.5,-3.04,-71.48,-0.19,-71.47,-0.07,-71.41,0,-71.12,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "56b6af51c2338f2eb5f06b7bacb23954"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "e2d44225f4c4a2e9ced8f20750b457b4"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "26278101a652ee3207d13d8de465869f"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "5146a2a1eabed365ad3e7ac4f697cea3"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "7cb18091c3e8eb73fe7b62e19cfc7544"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 143,
+            "height": 135,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55163,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55163\/a50d46b5e52ab177a3d57e73dd54b138.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55163\/7cb8a7859b811893313a6eb4e7e1a8de.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30,11,30.01,-4.41,30,-11,-30,-11,-30.01,-4.41,-30,11",
+            "contourCut": "29.88,0,30.01,-0.12,30.01,-60.02,30,-60.13,29.88,-60.14,-29.88,-60.14,-30,-60.13,-30.01,-60.02,-30.01,-0.12,-29.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "a2798a0daed181b739e492a4dbd2ad94"
+              },
+              {
+                "id": 1,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "b2af4f53e121825fc92d931fcdbe3383"
+              },
+              {
+                "id": 2,
+                "default": 53097,
+                "name": "frame",
+                "source": "bank",
+                "hash": "8526e9cdae9edb1389cfa82e9152e4e7"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 60,
+            "height": 60,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 241,
+        "type": 2,
+        "name": "Arched window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/241\/c43b1a723b564b38a2607afd4be45e98.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/241\/e7973a14ce31a9c4f10dee4f9cf6f10a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.79,10.5,49.87,10.43,50,4.45,50,3.44,50,-7.08,50,-9.83,50,-10.45,49.94,-10.5,49.65,-10.5,-49.65,-10.5,-49.94,-10.5,-50,-10.45,-50,8.66,-49.88,10.43,-49.82,10.5,49.76,10.5",
+            "contourCut": "49.94,0,50,-0.07,50,-90.18,49.88,-96.08,49.53,-98.13,48.64,-101.67,46.93,-106.46,44.64,-111.2,41.72,-115.67,38.16,-119.81,33.97,-123.55,29.15,-126.82,23.72,-129.57,17.69,-131.72,11.05,-133.22,3.82,-134,-3.85,-134,-11.09,-133.24,-17.72,-131.77,-23.76,-129.65,-29.19,-126.95,-34,-123.71,-38.19,-120.01,-41.75,-115.89,-44.68,-111.42,-46.96,-106.66,-48.6,-101.98,-49.66,-98.3,-49.92,-96.08,-50,-90.18,-50,-90.15,-50,-90.13,-50,-2.26,-50,-0.49,-50,-0.19,-50,-0.07,-49.94,0,-49.65,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "67636d2b5445990d0a03a5d621cbacdb"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6fd6b0c5a7a6043e4a06af82b57a197c"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "9b9937b52bc690cf21f6258bdcc0ecd5"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "a8b2a92833d87a6175086981289f8070"
+              },
+              {
+                "id": 4,
+                "default": 1618,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "8c927b7efb9103f4e33e3251d37b21ff"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 100,
+            "height": 134,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 240,
+        "type": 2,
+        "name": "Arched window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/240\/bc065da8afec37733d18c5536ca6f2e8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/240\/b238cab9c6139d7cf56ff7f29bbe5811.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.69,11,49.77,10.93,50,9.48,50,4.9,49.9,-10.95,49.84,-11,49.55,-11,-49.66,-11,-49.95,-11,-50,-10.95,-50,-10.3,-50,-7.42,-49.97,9.48,-49.88,10.93,-49.82,11,49.67,11",
+            "contourCut": "49.84,0,49.9,-0.07,50,-2.25,49.99,-95.26,49.89,-96.72,49.64,-98.62,48.75,-102.21,47.03,-107.07,44.74,-111.88,41.81,-116.41,38.25,-120.61,34.05,-124.4,29.23,-127.72,23.79,-130.51,17.74,-132.69,11.09,-134.21,3.85,-135,-3.83,-135,-11.08,-134.23,-17.72,-132.74,-23.77,-130.59,-29.21,-127.85,-34.03,-124.57,-38.23,-120.81,-41.8,-116.63,-44.73,-112.1,-47.01,-107.28,-48.66,-102.53,-49.72,-98.8,-49.89,-97.27,-49.97,-95.81,-50,-3.19,-50,-3.06,-50,-0.49,-50,-0.19,-50,-0.07,-49.95,0,-49.66,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b032c238e2ee4794c29c9080d770c97f"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7278305b1a39a711f7917d99e3f49e63"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "697422ca9b2de924353494b2ab87ed85"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 100,
+            "height": 135,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2143,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2143\/a8cfd90b4045e19a98f488317df8cb99.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2143\/c4bba01c3cd1742604de96337d2fc4ea.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "107.42,12.5,107.5,12.43,107.5,10.02,107.5,-4.6,107.47,-12.45,107.42,-12.5,-107.06,-12.5,-107.35,-12.5,-107.4,-12.45,-107.5,-4.6,-107.5,10.02,-107.5,12.43,-107.42,12.5,106.71,12.5",
+            "contourCut": "107.42,0,107.5,-0.1,107.5,-159.83,107.33,-160,-107.33,-160,-107.5,-159.83,-107.5,-3.24,-107.5,-0.19,-107.5,-0.1,-107.42,-0.01,-107.35,0,-107.06,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "908611e82249c697bd690c7fdd112e4d"
+              },
+              {
+                "id": 1,
+                "default": 551,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6cb07b3a621c8300197a61e724f92a6a"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "a9feed5658c32864d5e0fa38b413fc12"
+              },
+              {
+                "id": 3,
+                "default": 551,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "48143af63ecfc0a7249c1e997272abe1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 215,
+            "height": 160,
+            "depth": 25
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 46552,
+        "type": 2,
+        "name": "Round window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/465\/46552\/ee5b654608bc6b9d074eb9f5fd508315.png"
+          },
+          "body": {
+            "package": "\/files\/products\/465\/46552\/9847c649fee91329d1ed59bfd1dee5cc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "56.51,13.5,62.5,13.45,62.5,-13.5,62.13,-13.5,61.06,-13.5,59.31,-13.5,56.93,-13.5,53.96,-13.5,50.43,-13.5,46.39,-13.5,41.86,-13.5,36.9,-13.5,31.53,-13.5,25.8,-13.5,19.74,-13.5,13.4,-13.5,6.8,-13.5,0,-13.5,-6.8,-13.5,-13.4,-13.5,-19.74,-13.5,-25.8,-13.5,-31.53,-13.5,-36.9,-13.5,-41.86,-13.5,-46.39,-13.5,-50.43,-13.5,-53.96,-13.5,-56.93,-13.5,-59.31,-13.5,-61.06,-13.5,-62.13,-13.5,-62.5,-13.5,-62.5,13.45,-56.51,13.5",
+            "contourCut": "0,0,6.8,-0.37,13.4,-1.44,19.74,-3.19,25.8,-5.57,31.53,-8.54,36.9,-12.07,41.86,-16.11,46.39,-20.64,50.43,-25.6,53.96,-30.97,56.93,-36.7,59.31,-42.76,61.06,-49.1,62.13,-55.7,62.5,-62.5,62.13,-69.3,61.06,-75.9,59.31,-82.24,56.93,-88.3,53.96,-94.03,50.43,-99.4,46.39,-104.36,41.86,-108.89,36.9,-112.93,31.53,-116.46,25.8,-119.43,19.74,-121.81,13.4,-123.56,6.8,-124.63,0,-125,-6.8,-124.63,-13.4,-123.56,-19.74,-121.81,-25.8,-119.43,-31.53,-116.46,-36.9,-112.93,-41.86,-108.89,-46.39,-104.36,-50.43,-99.4,-53.96,-94.03,-56.93,-88.3,-59.31,-82.24,-61.06,-75.9,-62.13,-69.3,-62.5,-62.5,-62.13,-55.7,-61.06,-49.1,-59.31,-42.76,-56.93,-36.7,-53.96,-30.97,-50.43,-25.6,-46.39,-20.64,-41.86,-16.11,-36.9,-12.07,-31.53,-8.54,-25.8,-5.57,-19.74,-3.19,-13.4,-1.44,-6.8,-0.37",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "130da97afd6483f6c5abc95db74989e3"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "a53328bb8b113e3862ebc16815cb0833"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "6de53490c9d6d171b2c6e75aeb531e81"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 125,
+            "height": 125,
+            "depth": 27
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2030,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2030\/6fb97ef08f38f6529012c064623b7ae8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2030\/f055e57ff2580c8f4cce3eb4f611ad6f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "62.5,11,62.5,3.98,62.5,-8.53,62.5,-10.93,62.42,-11,61.71,-11,-60.94,-11,-61.54,-11,-61.62,-10.93,-62.5,3.98,-62.5,11,59.18,11",
+            "contourCut": "62.42,0,62.5,-0.01,62.5,-126.69,62.5,-163,-62.5,-163,-62.5,-0.01,-61.46,0,-61.18,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "22c91314a433dee28ed62797853b38b7"
+              },
+              {
+                "id": 1,
+                "default": 53097,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "41261e14c74b113535160ee3da8bf948"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "8d349f12c21cdb6ec4973f64c881fca9"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "c0843b49cad272e9b4c5fb23d992307d"
+              },
+              {
+                "id": 4,
+                "default": 53097,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "e53a361cbff2d5ee50b4514b21daf0cd"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 125,
+            "height": 163,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 239,
+        "type": 2,
+        "name": "Arc window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/239\/aaffa879e9d58abcbde73803809b2006.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/239\/73537ecadc3d3f4147ed6d15e6c5d98c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.69,11,49.77,10.93,50,9.48,50,4.9,49.9,-10.95,49.84,-11,49.55,-11,-49.66,-11,-49.95,-11,-50,-10.95,-50,-10.3,-50,-7.42,-49.97,9.48,-49.88,10.93,-49.82,11,49.67,11",
+            "contourCut": "49.84,0,49.9,-0.07,50,-2.25,49.99,-95.26,49.89,-96.72,49.64,-98.62,48.75,-102.21,47.03,-107.07,44.74,-111.88,41.81,-116.41,38.25,-120.61,34.05,-124.4,29.23,-127.72,23.79,-130.51,17.74,-132.69,11.09,-134.21,3.85,-135,-3.83,-135,-11.08,-134.23,-17.72,-132.74,-23.77,-130.59,-29.21,-127.85,-34.03,-124.57,-38.23,-120.81,-41.8,-116.63,-44.73,-112.1,-47.01,-107.28,-48.66,-102.53,-49.72,-98.8,-49.89,-97.27,-49.97,-95.81,-50,-3.19,-50,-3.06,-50,-0.49,-50,-0.19,-50,-0.07,-49.95,0,-49.66,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b032c238e2ee4794c29c9080d770c97f"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "039e719a5034d34c58c9778358d72fe9"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "7278305b1a39a711f7917d99e3f49e63"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "0aa9db7f8d8f04b3c4923c0a3194b623"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "697422ca9b2de924353494b2ab87ed85"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 100,
+            "height": 135,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 1,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2138,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2138\/9288b668e246ed2604aadc602780a647.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2138\/c5c25362e676901035ab670e30f8f756.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "57.5,11,57.5,-11,-57.5,-11,-57.5,11",
+            "contourCut": "57.5,0,57.5,-160,-57.5,-160,-57.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "a6ad031ccf8169073dfc77f8b7c2944f"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "71a3856b2688c05aab2fc5b1f0a47008"
+              },
+              {
+                "id": 2,
+                "default": 53097,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "736bbd401bd0e6bec97233f71d25309a"
+              },
+              {
+                "id": 3,
+                "default": 53097,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "530598466bd1a82898c87db045689588"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 115,
+            "height": 160,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55162,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55162\/4cb365d403ee2999fd69dc80c9225e00.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55162\/3ab0856aadc0f4682018c15e0649310a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30,11,30.01,-4.41,30,-11,-30,-11,-30.01,-4.41,-30,11",
+            "contourCut": "29.88,0,30.01,-0.12,30.01,-115.55,30,-115.66,29.88,-115.67,-29.88,-115.67,-30,-115.66,-30.01,-115.55,-30.01,-57.83,-30.01,-0.12,-29.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "17ff5d4f03ddfc5236a4545f2e3a48d6"
+              },
+              {
+                "id": 1,
+                "default": 53097,
+                "name": "frame",
+                "source": "bank",
+                "hash": "e0e5a71ab9c4d46f62e6e85c6f672ab8"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "d629a64d649778a87cd661c514726ccc"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 60,
+            "height": 116,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2027,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2027\/9ceb9db59e87ec63df41cd89e5d6868d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2027\/19a622c85e6af822525d55d6bbd0824c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "27.91,10.5,27.99,10.44,28,9.07,28,4.54,27.97,-10.46,27.91,-10.5,-27.53,-10.5,-27.82,-10.5,-27.87,-10.46,-28,4.54,-28,9.07,-27.97,10.44,-27.89,10.5,27.2,10.5",
+            "contourCut": "27.91,0,27.97,-0.07,27.99,-0.1,28,-3.04,28,-126.64,28,-163,-28,-163,-28,-126.64,-28,-3.04,-27.97,-0.1,-27.89,-0.01,-27.82,0,-27.53,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "2a688757c91e56b334dcce8991d35671"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "c058b946ec5710db89ecf7795a0ff87d"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "669c158d07e4613852910adb6966b37b"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "413582d4adaef94b993c11e492f406f4"
+              },
+              {
+                "id": 4,
+                "default": 53097,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "95e557dc40619289736989fdac625580"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 56,
+            "height": 163,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2029,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2029\/cd6910685c25db66ac9ee023fcfc814f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2029\/cd2001c5ff3784ece8d35415502f1e37.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "48,11,48,3.98,47.79,-10.93,47.71,-11,47,-11,-46.45,-11,-47.04,-11,-47.12,-10.93,-48,3.98,-48,11,44.69,11",
+            "contourCut": "47.71,0,48,-0.01,48,-126.69,48,-163,-48,-163,-48,-0.01,-46.97,0,-46.68,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9a848287f4d6e34c16106dedbfa8e694"
+              },
+              {
+                "id": 1,
+                "default": 53097,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b4533f791a5d1e06666a02159f786c14"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "9ef71438ca50e3c8d1907b22418cb3d0"
+              },
+              {
+                "id": 3,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "1d827ebf1da6caa6c5cfa983a763541a"
+              },
+              {
+                "id": 4,
+                "default": 53097,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "6d5b1a22605ce6b06de9951350762756"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 96,
+            "height": 163,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55168,
+        "type": 2,
+        "name": "window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55168\/04563c6b07c06e5dd241ecf720451e43.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55168\/88fcf6fb81949f61bef3fd91ca282ecc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30.07,11,30.08,-4.41,30.07,-11,-30.07,-11,-30.08,-4.41,-30.07,11",
+            "contourCut": "29.94,0,30.08,-0.12,30.08,-110.02,30.07,-110.14,29.94,-110.14,-29.94,-110.14,-30.07,-110.14,-30.08,-110.02,-30.08,-0.12,-29.94,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "frame",
+                "source": "bank",
+                "hash": "0200fe8f4573fd7201ce23a1c98620cd"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "50e26f1a78603007e6917d3339872602"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "85f142c3cb3a4c7d7d496b6e8c632ff5"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 60,
+            "height": 110,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2144,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2144\/9bc5c83056b84f9311adff5351af0b1c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2144\/d87d268b068d9c75996aea91e8a6fb47.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "41.92,12.5,42,12.44,42,10.62,42,-3.63,41.9,-12.46,41.85,-12.5,-41.56,-12.5,-41.85,-12.5,-41.9,-12.46,-42,-3.63,-42,10.62,-42,12.44,-41.92,12.5,-41.33,12.5",
+            "contourCut": "41.85,0,41.92,-0.01,42,-0.1,42,-159.83,41.83,-160,-41.83,-160,-42,-159.83,-42,-3.33,-42,-0.19,-42,-0.1,-41.92,-0.01,-41.85,0,-41.56,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "d5740e0917b0fa4204bac437202f5dd8"
+              },
+              {
+                "id": 1,
+                "default": 53097,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "656e34ce7073d4d40f99aa3e59a73446"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "d96c7ec114d2ce87f88379bed4c46738"
+              },
+              {
+                "id": 3,
+                "default": 53097,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "3ef1f1cbbc59cf45e0a295674b89f453"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 84,
+            "height": 160,
+            "depth": 25
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55164,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55164\/ba6a219dee0e15cadac1254ecb142d42.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55164\/a6745c4548bc80ca49808ec6ffc6d121.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "119.93,11,120.09,4.11,120.13,-4.41,119.93,-11,-120.12,-11,-120.13,-4.41,-120.12,11",
+            "contourCut": "119.94,0,120.13,-0.18,120.13,-126.44,120.13,-251.67,119.94,-251.85,-119.94,-251.85,-120.12,-251.84,-120.13,-251.67,-120.13,-0.18,-119.94,0,0,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "663f83978732f47e28b67dfa27bab73e"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "frame",
+                "source": "bank",
+                "hash": "5f7171d326224c18251d24a85718f43e"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "f82ce8ac571c37900c7f6a7ce96612d6"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 240,
+            "height": 252,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55169,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55169\/67947bd290bfe995c10f5a538178e263.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55169\/4f9e375740ec824e7fa20cf65577df19.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30.07,11,30.08,-4.41,30.07,-11,-30.07,-11,-30.08,-4.41,-30.07,11",
+            "contourCut": "29.94,0,30.08,-0.12,30.08,-110.02,30.07,-110.14,29.94,-110.14,-29.94,-110.14,-30.07,-110.14,-30.08,-110.02,-30.08,-0.12,-29.94,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "frame",
+                "source": "bank",
+                "hash": "2caffa9ada421925f0afe6b192a7ed9e"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "9423f8078f72ff04d90dcc6696794b55"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "99d451dc759c907f371114f82fee507a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 60,
+            "height": 110,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55166,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55166\/b141af3c621fbbaeae80c9303d743801.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55166\/d6f195d6ecc20fadab2426d2070c70d7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.88,11,49.98,4.11,50.01,-4.41,49.88,-11,-49.88,-11,-50.01,-4.41,-49.98,4.11,-49.88,11",
+            "contourCut": "49.88,0,50.01,-0.12,50.01,-50.14,49.88,-50.26,49.87,-50.26,-49.88,-50.26,-50.01,-50.14,-50.01,-0.12,-49.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "e833867c230cd3845a2920b1b7c10bd0"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "721bf822401500d6160ff41c158a05db"
+              },
+              {
+                "id": 2,
+                "default": 53097,
+                "name": "frame",
+                "source": "bank",
+                "hash": "8d021462bafb046a7c36270fddeead61"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 100,
+            "height": 50,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3228,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3228\/576ff95a66f9244b8a3f3dc3ea099feb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3228\/0e004a04e6f3d1846a7975dff42669fe.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "84.5,11,84.5,-11,-84.5,-11,-84.5,11",
+            "contourCut": "84.5,0,84.5,-250,-84.5,-250,-84.49,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "Mesh_1",
+                "source": "bank",
+                "hash": "9b511f2e49d8d0857bb514f2b091b44b"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "Mesh_0",
+                "source": "bank",
+                "hash": "233e1e9702f651131129c73728614d54"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "50fdc644e66030e47bf72e806cf86707"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 169,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55161,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55161\/2105d1491df702309c13b61c923e6447.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55161\/595c05f72022db365bde067baece5241.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "80.91,11,80.92,-4.36,80.91,-11,-80.87,-11,-80.92,-4.36,-80.87,11",
+            "contourCut": "80.73,0,80.92,-0.18,80.92,-86.48,80.92,-251.13,80.91,-251.84,-80.87,-251.84,-80.92,-251.13,-80.92,-0.18,-80.73,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "frame",
+                "source": "bank",
+                "hash": "2018f12f853048f83ff5c95961dcf695"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "a69ed626bd3787606b3eea1b48f2348d"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "686562f6dc6473d51a8e393d660819e6"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 162,
+            "height": 252,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55165,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55165\/6e455405c732dd5e6822bc89ad53e8ae.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55165\/bd6e749e1b7757b1fd499531d39fc76a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.88,11,49.98,4.11,50.01,-4.41,49.88,-11,-49.88,-11,-50.01,-4.41,-49.98,4.11,-49.88,11",
+            "contourCut": "49.88,0,50.01,-0.12,50.01,-200.04,49.88,-200.16,-49.88,-200.16,-50.01,-200.04,-50.01,-0.12,-49.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "8d5b466b6f50fa5bddf8928972adba34"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "657a8cd1cf94e673aca9b55ad8e0154e"
+              },
+              {
+                "id": 2,
+                "default": 55338,
+                "name": "frame",
+                "source": "bank",
+                "hash": "f2aab3fdaf438298cec3d42a3d27ba72"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 100,
+            "height": 200,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2034,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2034\/777701b38cd777a53b5e701183fd772d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2034\/0d570a61092d4c0639f6ffd74971ccf7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.51,11,47.42,10.81,47.47,10.76,47.5,-8.53,47.5,-10.93,47.42,-11,46.72,-11,-46.27,-11,-46.86,-11,-46.94,-10.93,-47.5,-0.03,-47.5,0.15,-46.84,10.76,-46.79,10.81,-45.26,11",
+            "contourCut": "47.42,0,47.5,-0.1,47.5,-0.19,47.5,-3.04,47.5,-3.27,47.5,-3.58,47.31,-68,-47.5,-68,-47.5,-3.53,-46.94,-0.1,-46.86,-0.01,-46.79,0,-46.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "dc96deb0210065d8d9d928f142cba2cd"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "c31afea1c005a56a41dd26b5ed8e1ccc"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "fb827cb5d2a0610795a54d13b4173559"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 68,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55167,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55167\/32ccdc12ad1404c7c952f7826ef9af65.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55167\/7d71aa16b4c0ac3aba6dc984c33cb13d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.88,11,49.98,4.11,50.01,-4.41,49.88,-11,-49.88,-11,-50.01,-4.41,-49.98,4.11,-49.88,11",
+            "contourCut": "49.88,0,50.01,-0.12,50.01,-250.24,49.88,-250.37,-49.88,-250.37,-50.01,-250.24,-50.01,-0.12,-49.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "e26e91a1c1f758e2a054f1eb7230f878"
+              },
+              {
+                "id": 1,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "34e05f497186fbca7a33049920da5232"
+              },
+              {
+                "id": 2,
+                "default": 55338,
+                "name": "frame",
+                "source": "bank",
+                "hash": "f4d53b90d909ae61edaa6268db477e00"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 100,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2024,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2024\/23004e0f2584400bb237acc079e55b49.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2024\/31a445fb04b835e240bc1b722c2cefd6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "84.5,11,84.5,6.2,84.5,1.46,84.5,-11,-84.5,-11,-84.5,11",
+            "contourCut": "84.5,0,84.5,-250,28.16,-250,28.08,-250,-28.26,-250,-84.49,-250,-84.5,-250,-84.49,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "be1447c72ee078276efc06bea9380af1"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "461712c3bf2cecfb9a20a6c409c77c1d"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "mesh_2001",
+                "source": "none",
+                "hash": "0a0275736374bd3e645b3e29ce423e2a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 169,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2032,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2032\/58ea623c9971465192f99eb8feba6f2b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2032\/448586a5eaaef23a0ccbf61e0da2d444.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.51,11,47.42,10.81,47.47,10.76,47.5,-8.53,47.5,-10.93,47.42,-11,46.72,-11,-46.27,-11,-46.86,-11,-46.94,-10.93,-47.5,-0.03,-47.5,0.15,-46.84,10.76,-46.79,10.81,-45.26,11",
+            "contourCut": "47.42,0,47.5,-0.1,47.5,-0.19,47.5,-3.06,47.5,-3.29,47.5,-3.61,47.31,-163,-47.5,-163,-47.5,-3.55,-46.94,-0.1,-46.86,-0.01,-46.79,0,-46.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c16f28f12a4ca4e846743fc0a0462239"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "9bee72f46fe8269b9a1031dce2bcf06c"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "d3912c87410e672da7558805d93e0ce9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 163,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55316,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/553\/55316\/e3fc42311345a61585a35661783f11e3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/553\/55316\/9781113c9b733664be5c016441e0c739.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "71.42,11,71.5,10.93,71.5,9.61,71.5,4.97,71.44,-7.5,71.39,-10.95,71.34,-11,-71.12,-11,-71.41,-11,-71.47,-10.95,-71.48,-7.5,-71.5,4.97,-71.5,9.61,-71.48,10.93,-71.4,11,69.87,11",
+            "contourCut": "71.34,0,71.42,-0.01,71.5,-0.1,71.5,-3.04,71.5,-94.39,71.5,-139.22,-71.5,-139.22,-71.5,-3.04,-71.48,-0.19,-71.47,-0.07,-71.41,0,-71.12,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "w8_frame",
+                "source": "bank",
+                "hash": "6cd95ca31c933c60cf11185040bc6e02"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "w8_glass",
+                "source": "bank",
+                "hash": "4ec2c6f484067bfabf316568d8130247"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "handle",
+                "source": "bank",
+                "hash": "36874cba6d9aa9e85afab2dd70edc4ce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 143,
+            "height": 139,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3229,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3229\/b7e3b1cea1939d9e462acf11610a3600.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3229\/b7d7dcff4ec21b9b8d03921c49c5afa5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "55.99,11,55.99,6.2,55.99,1.46,55.99,-11,-55.95,-11,-55.99,1.46,-55.99,6.2,-55.98,11",
+            "contourCut": "55.99,0,55.99,-250,-0.06,-250,-55.99,-250,-55.99,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_2001",
+                "source": "none",
+                "hash": "f0a1f1a5fdaa768e1583493f620a69bf"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c07616408ee24acfe2c6965d756a9f79"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "ae9cb9b10629e4a6578522499eb6cb2a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 112,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3230,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3230\/954031787d7f80aa663e272c273e1890.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3230\/6237298327a628df4207d31f13e113e6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "27.95,11,28,6.2,28,1.46,27.95,-11,-28,-11,-28,11",
+            "contourCut": "28,0,28,-250,-27.99,-250,-28,-250,-27.99,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c8a0c54eb08e826d0ac944efe3f6f0c7"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "00ddec7661ae76919de1a8ddaecbf628"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "mesh_2002",
+                "source": "none",
+                "hash": "547c8b2c2fc24f13b3cc83691b1c88af"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 56,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2021,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2021\/d0193e2db47e4c5a2a7c5f4b46996a61.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2021\/ad5841d9cdf364f295e2ac6ce3f4b2f4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "56,11,56,6.66,56,1.92,56,-11,-56,-11,-56,6.66,-56,11",
+            "contourCut": "56,0,56,-250,0.01,-250,-0.01,-250,-56,-250,-56,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "53edabebbd76b51f9399d0ba8b51b4c2"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "82a4071b489e09b90c18fda1a08aadc1"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "acde2eaa7df5ec02e000e04cde8d2553"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 112,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 46553,
+        "type": 2,
+        "name": "Window horizontal",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/465\/46553\/c934e7820bace6071fd269bd2382c69c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/465\/46553\/bbf5634cf0bab9790878ba0c6b061490.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "66,11,66,9.5,66,4.76,66,-10.31,66,-10.74,66,-10.85,66,-10.87,66,-10.94,66,-10.95,65.95,-11,-65.66,-11,-65.95,-11,-66,-10.95,-66,9.5,-66,11,-65.6,11,65.6,11",
+            "contourCut": "65.95,0,66,-0.07,66,-3.05,66,-59,-66,-59,-66,-3.05,-66,-0.49,-66,-0.07,-65.95,0,-65.66,0,65.66,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ddc6c11977f89135393aa57db4e93409"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "ccd5d76cc4fd5a3037cfd85bd48144d9"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "39b028753d2bedcc1db09b32f2f1159a"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "e55b8627b44dec83ff2d15274f70f777"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "7cd20756f6eefb31c7739012fe31d07a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 132,
+            "height": 59,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "120.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2020,
+        "type": 2,
+        "name": "Panoramic window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2020\/0429b729a17f336053c2cbcccadb9021.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2020\/2e94f173d75d2b662e738df93a9e885f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "28,11,28,6.66,28,1.92,28,-11,-28,-11,-28,6.66,-28,11",
+            "contourCut": "28,0,28,-250,-28,-250,-28,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "a6b25fadfe0d5862e513db708aeeb107"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b163042ebca6d56b5c8f3ceb2ac7d6fb"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "1ae109fd505fb5d0213919e46cebb60b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 56,
+            "height": 250,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 236,
+        "type": 2,
+        "name": "Two sections window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/236\/41ddcb6d42c4919bf01de03fb2227a54.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/236\/1945a04095c8d48b336c8abc2b6272ae.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "49.93,11,50.01,10.93,50.5,9.63,50.5,4.87,50.03,-10.95,49.98,-11,-49.96,-11,-50.25,-11,-50.3,-10.95,-50.5,5.02,-50.5,9.7,-50.38,10.93,-50.3,11,48.38,11",
+            "contourCut": "49.98,0,50.03,-0.07,50.06,-0.19,50.5,-3.05,50.5,-135,-5.97,-135,-50.5,-135,-50.5,-3.05,-50.38,-0.19,-50.37,-0.1,-50.29,-0.01,-50.25,0,-49.96,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c4779a1b263209bc2a639c63770c58d5"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "84e0fad2331af8b8542c811d5b63720b"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "7ed729f4ce4fb18bfba3aecccd03802c"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "2d052efc36e4ddaab87c99154b3b971a"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "199955dc251680a65097c9f8219bbd6c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 101,
+            "height": 135,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 238,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/238\/9fed4619c8786122be3f38dabbf70674.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/238\/d529072487799ecd3fc3b8d73af274fa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "27.91,11,27.99,10.93,28,9.5,28,4.76,27.97,-10.95,27.91,-11,-27.53,-11,-27.82,-11,-27.87,-10.95,-28,4.76,-28,9.5,-27.97,10.93,-27.89,11,27.2,11",
+            "contourCut": "27.91,0,27.97,-0.07,27.99,-0.1,28,-3.05,28,-135,-28,-135,-28,-3.05,-27.97,-0.1,-27.89,-0.01,-27.82,0,-27.53,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "49d90310bc18e7f8b51935c8dc44709a"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "08971258256b51e97dc71148a9ac4149"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "f572e710a4be40b9588e07d6c3eeaab2"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "da166fadb7b2ab44f9c64ecdc975f08f"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "e5b42c7a81f180f1c54abe4626ca2d67"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "windows"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 56,
+            "height": 135,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64442,
+        "type": 2,
+        "name": "Glass block",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64442\/49bf8895a496a68fec528f3288432da7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64442\/830a9c1c5cd0d66b72d9d5acaf03c0d6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "8.69,5,9.04,4.98,10.2,4.66,10.2,4.65,10.2,-4.64,9.04,-4.98,8.69,-5,8.59,-5,-8.57,-5,-8.58,-5,-8.94,-4.99,-9.24,-4.92,-10.2,-4.64,-10.2,4.66,-9.24,4.92,-8.94,4.99,-8.58,5,8.59,5",
+            "contourCut": "10.2,0,10.2,-0.96,10.2,-1.69,10.2,-18.49,10.2,-19.21,10.2,-20,10.2,-20.4,-8.17,-20.4,-8.91,-20.4,-9.63,-20.4,-10.2,-20.4,-10.2,-19.51,-10.2,-18.75,-10.2,-2,-10.2,-1.27,-10.2,-0.48,-10.2,0,-9.31,0,-8.55,0,8.33,0,9.04,0,9.59,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41803,
+                "default": "#f4f0f0",
+                "current": "#f4f0f0",
+                "name": "seam2",
+                "source": "bank",
+                "hash": "7e3ef2560a5d9c53659faf7172f8c20b"
+              },
+              {
+                "id": 1,
+                "default": 1624,
+                "name": "glass2",
+                "source": "bank",
+                "hash": "2e03edae2e1d5352fce631d21b6c04ff"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 20,
+            "height": 20,
+            "depth": 10
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.84364700 1753390231"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55170,
+        "type": 2,
+        "name": "Window",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55170\/3fc8b84465b0b56d053fba7eb952f128.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55170\/65af938e8839c1dfe21f93d15521e80a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "62.5,11,62.5,-4.41,62.5,-11,-62.37,-11,-62.5,-4.41,-62.47,4.11,-62.37,11",
+            "contourCut": "62.37,0,62.5,-0.12,62.5,-139.88,62.37,-140,-62.37,-140,-62.5,-139.88,-62.5,-0.12,-62.37,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 3008,
+                "name": "top",
+                "source": "none",
+                "hash": "545c8de60ae7cbbf517e53ec7d9cb1f8"
+              },
+              {
+                "id": 1,
+                "default": 53097,
+                "name": "frame",
+                "source": "bank",
+                "hash": "733887ab5a8a5603ed931c74c647b84a"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "glass",
+                "source": "bank",
+                "hash": "f9da180fdf99abfae96bd9368c88e6fe"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9907": [
+            {
+              "id": "9907",
+              "name": "Windows",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 125,
+            "height": 140,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 250,
+        "type": 2,
+        "name": "Balcony window and door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/250\/ad6c29d38085269d2e792c0d034b7c8f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/250\/bb9fe2760e8b7f317ed2d29682bab172.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-4.01,11,71,10.87,71,10.14,71,-10.37,71,-10.78,71,-10.88,70.94,-10.93,-4.07,-11,-70.64,-11,-70.94,-11,-71,-10.95,-71,-10.8,-71,8.29,-71,11,-4.09,11",
+            "contourCut": "-4.07,0,-4.01,-0.01,71,-73.38,71,-73.84,71,-76.65,71,-79.1,70.99,-208,-4.88,-208,-71,-207.91,-71,-0.41,-71,-0.16,-71,-0.07,-71,-0.01,-70.94,0,-70.64,0,-4.37,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "35c6e9d7ec79691fbf0612ec057571a6"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "4915a4a32267a8b27b3e863399d855c0"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#e9e9e9",
+                "current": "#e9e9e9",
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "f48022be60732764793d0fba66f4e0d2"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "03a7ee0c9c21f708a0b599ef4d8ffe82"
+              },
+              {
+                "id": 4,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "mesh_4",
+                "source": "none",
+                "hash": "9677e2befa3cac2f077eaaae4d2cd24b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 142,
+            "height": 208,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {createUseStyles} from "react-jss";
 import { useSelector } from 'react-redux';
-import 'lazysizes';
+// import 'lazysizes';
 
 import { selectActiveControlPanelModeData } from '../../../../../../redux/features/control/controlPanelSlice';
 

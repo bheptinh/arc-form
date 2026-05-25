@@ -32,7 +32,9 @@ const WallSlice = () => {
 
     let tileConfigurator = planner.scene.getConfigurator();
 
-    useEffect(() => tileConfigurator.appendCanvas(), []);
+    useEffect(() => {
+        tileConfigurator.appendCanvas()
+    }, []);
 
     useEffect(() => {
         if(lastHistoryElemType) {

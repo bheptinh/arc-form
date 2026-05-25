@@ -78,7 +78,9 @@ export const TopPanel = props => {
     let isCurrDeviceAPhone = currOS == "iOS" || currOS == "Android";
     let [isProOptionEnabled, setIsProOptionEnabled] = useState(R2D.OPTIONS.PRO_PLAN);
 
-    useEffect(() => setIsProOptionEnabled(R2D.OPTIONS.PRO_PLAN), [R2D.OPTIONS.PRO_PLAN]);
+    useEffect(() => {
+        setIsProOptionEnabled(R2D.OPTIONS.PRO_PLAN)
+    }, [R2D.OPTIONS.PRO_PLAN]);
 
     return(
         <div className={classes.top}>

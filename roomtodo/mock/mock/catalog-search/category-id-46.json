@@ -1,0 +1,2798 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "26",
+    "items": [
+      {
+        "id": 3342,
+        "type": 2,
+        "name": "Mirror INVE",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3342\/65f46591e49ca51cfaf5b325fb0bd807.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3342\/1d67bea56dbec4fea6cddc4a427730c9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "27,0.5,27,-0.36,26.95,-0.47,26.8,-0.5,25.05,-0.5,-26.8,-0.5,-26.95,-0.47,-27,-0.36,-27,0.5",
+            "contourCut": "27,0,27,-87,-27,-87,-27,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55155,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "e3037c8b1bd38a82893e0a5f1c99938e"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "65ac7de1677baea80936e1c2a7ae4c65"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "bathroom",
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 54,
+            "height": 87,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "110.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3353,
+        "type": 2,
+        "name": "Cabinet with mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3353\/d95be72f4b0ea5348efc6d0022ef6487.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3353\/cc7f0c8e8554d323bd2523849898535a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "50,13.5,50,-1.5,50,-13.5,-50,-13.5,-50,13.5",
+            "contourCut": "50,0,50,-80,-50,-80,-50,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2025,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "4fda0a02ce3d776b920c3c444e388d69"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "06c085d08af41dfbda1ce8e95ae58dbe"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#f7f7f7",
+                "current": "#f7f7f7",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "7f132aa6f808e93962af19fdbf836f28"
+              },
+              {
+                "id": 3,
+                "default": 1555,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "d407a705443aa1a6067a36cf3549ccf0"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "bathroom",
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 100,
+            "height": 80,
+            "depth": 27
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "110.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2676,
+        "type": 2,
+        "name": "Vertical mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2676\/c7539a8690dd1938c050b2b8a8ee6129.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2676\/8ab425e4b9cb158a23a22f5d3bd8408f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "50,1,50,-1,-50,-1,-50,1",
+            "contourCut": "50,0,50,-155,-50,-155,-50,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "d868a9831788f3efb722716e17d2c68f"
+              },
+              {
+                "id": 1,
+                "default": 42619,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b112ac2e0329d71dba47c14b0a1cd36f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 100,
+            "height": 155,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3327,
+        "type": 2,
+        "name": "Console mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3327\/5b0632b726729ea219d5209e398c6169.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3327\/8dc8c21e01a21b4389144a98e6caafb1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "73.5,26,73.5,-26,-73.5,-26,-73.5,26",
+            "contourCut": "70.81,0,73.5,-75.57,47.86,-186.84,38.78,-187.77,24.82,-188.72,19.99,-188.82,1.86,-189,-18.79,-188.82,-23.62,-188.72,-33,-188.17,-37.58,-187.77,-46.66,-186.84,-73.5,-75.57,-70.75,0,-70.55,0,70.61,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 551,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "3c361877cb36c770114d2b54eba6563a"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "824a72966a71ae2854b6a4c7b37be5d4"
+              },
+              {
+                "id": 2,
+                "default": 55344,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "63c56d736a41bf31c6c7a2118814864d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9888": [
+            {
+              "id": "9888",
+              "name": "Dressers, Consoles, vanities",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves",
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 147,
+            "height": 189,
+            "depth": 52
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64573,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64573\/54490a5fb5c05f2480426892e0f6794d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64573\/1163f8e66a90f49050b7be3877b17b49.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "53.17,1.25,55,-1.02,55,-1.16,54.93,-1.25,1.73,-1.25,0,-1.25,-1.73,-1.25,-3.45,-1.25,-5.17,-1.25,-6.88,-1.25,-8.59,-1.25,-10.29,-1.25,-11.98,-1.25,-13.66,-1.25,-15.32,-1.25,-16.97,-1.25,-18.61,-1.25,-20.22,-1.25,-21.81,-1.25,-23.39,-1.25,-24.94,-1.25,-26.46,-1.25,-27.96,-1.25,-29.43,-1.25,-30.87,-1.25,-32.29,-1.25,-33.67,-1.25,-35.01,-1.25,-36.32,-1.25,-37.6,-1.25,-38.84,-1.25,-40.04,-1.25,-41.2,-1.25,-42.32,-1.25,-43.4,-1.25,-44.44,-1.25,-45.43,-1.25,-46.38,-1.25,-47.28,-1.25,-48.13,-1.25,-48.94,-1.25,-49.7,-1.25,-50.41,-1.25,-51.07,-1.25,-51.68,-1.25,-52.24,-1.25,-52.75,-1.25,-53.2,-1.25,-53.6,-1.25,-53.95,-1.25,-54.25,-1.25,-54.49,-1.25,-54.68,-1.25,-54.82,-1.25,-54.9,-1.25,-54.93,-1.25,-55,-1.16,-55,-1.02,-53.17,1.25,0,1.25,1.67,1.25,3.34,1.25,5,1.25,6.66,1.25,8.32,1.25,9.96,1.25,11.6,1.25,13.22,1.25,14.83,1.25,16.43,1.25,18.01,1.25,19.57,1.25,21.11,1.25,22.64,1.25,24.14,1.25,25.61,1.25,27.06,1.25,28.49,1.25,29.88,1.25,31.25,1.25,32.59,1.25,33.89,1.25,35.16,1.25,36.39,1.25,37.59,1.25,38.76,1.25,39.88,1.25,40.97,1.25,42.01,1.25,43.01,1.25,43.97,1.25,44.89,1.25,45.76,1.25,46.59,1.25,47.37,1.25,48.11,1.25,48.79,1.25,49.43,1.25,50.02,1.25,50.56,1.25",
+            "contourCut": "0,0,1.73,-0.03,3.45,-0.11,5.18,-0.24,6.89,-0.43,8.6,-0.68,10.31,-0.97,12,-1.32,13.68,-1.73,15.34,-2.18,17,-2.69,18.63,-3.25,20.25,-3.86,21.84,-4.52,23.42,-5.23,24.97,-5.99,26.5,-6.8,28,-7.66,29.47,-8.56,30.91,-9.51,32.33,-10.5,33.71,-11.54,35.06,-12.62,36.37,-13.74,37.65,-14.91,38.89,-16.11,40.09,-17.35,41.26,-18.63,42.38,-19.94,43.46,-21.29,44.5,-22.67,45.49,-24.09,46.44,-25.53,47.34,-27,48.2,-28.5,49.01,-30.03,49.77,-31.58,50.48,-33.16,51.14,-34.75,51.75,-36.37,52.31,-38,52.82,-39.66,53.27,-41.32,53.68,-43,54.03,-44.69,54.32,-46.4,54.57,-48.11,54.76,-49.82,54.89,-51.55,54.97,-53.27,55,-55,54.97,-56.73,54.89,-58.45,54.76,-60.18,54.57,-61.89,54.32,-63.6,54.03,-65.31,53.68,-67,53.27,-68.68,52.82,-70.34,52.31,-72,51.75,-73.63,51.14,-75.25,50.48,-76.84,49.77,-78.42,49.01,-79.97,48.2,-81.5,47.34,-83,46.44,-84.47,45.49,-85.91,44.5,-87.33,43.46,-88.71,42.38,-90.06,41.26,-91.37,40.09,-92.65,38.89,-93.89,37.65,-95.09,36.37,-96.26,35.06,-97.38,33.71,-98.46,32.33,-99.5,30.91,-100.49,29.47,-101.44,28,-102.34,26.5,-103.2,24.97,-104.01,23.42,-104.77,21.84,-105.48,20.25,-106.14,18.63,-106.75,17,-107.31,15.34,-107.82,13.68,-108.27,12,-108.68,10.31,-109.03,8.6,-109.32,6.89,-109.57,5.18,-109.76,3.45,-109.89,1.73,-109.97",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "frame",
+                "source": "bank",
+                "hash": "3018559cc1191d31dd7ded0d9bf6426f"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "Mirror",
+                "source": "bank",
+                "hash": "c5b819758364bdeeed9c3242939ce2cc"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "90.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64574,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64574\/1f83e5b53cf4e21950bed3a36f3f2a78.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64574\/365261d18b081a18d7def6609e8094ec.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "75.07,2.4,75.98,2.35,76.8,2.21,77.52,1.97,78.14,1.63,78.67,1.2,79.1,0.67,79.44,0.05,79.68,-0.67,79.82,-1.49,79.86,-2.24,79.8,-2.38,79.71,-2.4,57.56,-2.4,54.64,-2.4,52.2,-2.4,49.09,-2.4,45.89,-2.4,42.6,-2.4,39.23,-2.4,35.77,-2.4,32.25,-2.4,28.67,-2.4,25.03,-2.4,21.34,-2.4,17.61,-2.4,13.85,-2.4,10.06,-2.4,6.25,-2.4,2.43,-2.4,-1.4,-2.4,-5.22,-2.4,-9.04,-2.4,-12.84,-2.4,-16.62,-2.4,-20.37,-2.4,-24.08,-2.4,-27.75,-2.4,-31.36,-2.4,-34.92,-2.4,-38.41,-2.4,-41.83,-2.4,-45.17,-2.4,-48.42,-2.4,-51.58,-2.4,-54.64,-2.4,-57.56,-2.4,-60.29,-2.4,-62.85,-2.4,-65.23,-2.4,-67.42,-2.4,-69.44,-2.4,-71.28,-2.4,-72.94,-2.4,-74.41,-2.4,-75.71,-2.4,-76.83,-2.4,-77.76,-2.4,-78.51,-2.4,-79.09,-2.4,-79.48,-2.4,-79.68,-2.4,-79.71,-2.4,-79.8,-2.38,-79.86,-2.24,-79.82,-1.49,-79.68,-0.67,-79.44,0.05,-79.1,0.67,-78.67,1.2,-78.14,1.63,-77.52,1.97,-76.8,2.21,-75.98,2.35,-75.07,2.4,-51.46,2.4,-48.58,2.4,-45.61,2.4,-42.54,2.4,-39.4,2.4,-36.18,2.4,-32.89,2.4,-29.54,2.4,-26.14,2.4,-22.69,2.4,-19.19,2.4,-15.66,2.4,-12.1,2.4,-8.52,2.4,-4.92,2.4,-1.32,2.4,2.29,2.4,5.89,2.4,9.48,2.4,13.05,2.4,16.6,2.4,20.11,2.4,23.58,2.4,27.01,2.4,30.38,2.4",
+            "contourCut": "1.4,0,5.23,-0.16,9.06,-0.5,12.87,-1.02,16.65,-1.73,20.41,-2.62,24.13,-3.69,27.8,-4.95,31.43,-6.39,34.99,-8.02,38.49,-9.83,41.91,-11.83,45.26,-14.01,48.52,-16.38,51.68,-18.93,54.75,-21.67,57.67,-24.56,60.41,-27.57,62.97,-30.67,65.35,-33.88,67.56,-37.18,69.58,-40.56,71.42,-44.02,73.08,-47.55,74.56,-51.14,75.86,-54.79,76.98,-58.48,77.91,-62.22,78.67,-65.99,79.24,-69.78,79.63,-73.6,79.84,-77.43,79.86,-81.26,79.71,-85.1,79.37,-88.92,78.84,-92.73,78.14,-96.52,77.25,-100.27,76.17,-103.99,74.91,-107.67,73.47,-111.29,71.84,-114.85,70.03,-118.35,68.03,-121.78,65.85,-125.12,63.48,-128.38,60.93,-131.55,58.19,-134.61,55.3,-137.53,52.3,-140.27,49.19,-142.84,45.98,-145.22,42.68,-147.42,39.3,-149.44,35.84,-151.28,32.32,-152.94,28.72,-154.42,25.08,-155.72,21.38,-156.84,17.65,-157.78,13.88,-158.53,10.08,-159.1,6.26,-159.49,2.43,-159.7,-1.4,-159.73,-5.23,-159.57,-9.06,-159.23,-12.87,-158.71,-16.65,-158,-20.41,-157.11,-24.13,-156.04,-27.8,-154.78,-31.43,-153.33,-34.99,-151.71,-38.49,-149.89,-41.91,-147.9,-45.26,-145.72,-48.52,-143.35,-51.68,-140.79,-54.75,-138.06,-57.67,-135.16,-60.41,-132.16,-62.97,-129.05,-65.35,-125.85,-67.56,-122.55,-69.58,-119.17,-71.42,-115.71,-73.08,-112.18,-74.56,-108.59,-75.86,-104.94,-76.98,-101.25,-77.91,-97.51,-78.67,-93.74,-79.24,-89.95,-79.63,-86.13,-79.84,-82.3,-79.86,-78.46,-79.71,-74.63,-79.37,-70.81,-78.84,-67",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41803,
+                "default": "#312d28",
+                "current": "#312d28",
+                "name": "frame_Mirror",
+                "source": "bank",
+                "hash": "c1144d139f6f144a518e6478827d23ad"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "Mirror",
+                "source": "bank",
+                "hash": "eb2a890376a1e728836a78ad591c7e3a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 160,
+            "height": 160,
+            "depth": 5
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "66.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64575,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64575\/edc4626bc53fb9cb3ceb38d2c94581b9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64575\/ea2a0bea5e613e6542f9ec2d4b081caf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "24.65,0.37,24.65,-0.23,24.5,-0.37,-24.01,-0.37,-24.5,-0.37,-24.65,-0.23,-24.65,0.37,7.56,0.37,7.63,0.37,9.96,0.37,12.32,0.37,14.42,0.37,16.48,0.37,18.24,0.37,19.91,0.37,21.27,0.37,22.47,0.37,23.37,0.37,24.05,0.37",
+            "contourCut": "1.29,0,2.54,-0.13,5.15,-0.62,7.56,-1.26,10.03,-2.21,12.26,-3.34,14.48,-4.79,16.42,-6.36,18.27,-8.25,20.57,-11.25,21.92,-13.53,22.93,-15.81,23.75,-18.33,24.55,-22.07,24.65,-65.44,24.05,-69.22,23.37,-71.78,22.47,-74.11,21.27,-76.47,19.91,-78.56,18.24,-80.62,16.48,-82.39,14.42,-84.06,12.32,-85.41,9.96,-86.62,7.63,-87.51,5.07,-88.2,1.29,-88.8,-1.29,-88.8,-5.07,-88.2,-7.63,-87.51,-9.96,-86.62,-12.32,-85.41,-14.42,-84.06,-16.48,-82.39,-18.24,-80.62,-19.91,-78.56,-21.27,-76.47,-22.47,-74.11,-23.37,-71.78,-24.05,-69.22,-24.65,-65.44,-24.65,-23.36,-24.05,-19.58,-23.37,-17.02,-22.47,-14.69,-21.27,-12.33,-19.91,-10.23,-18.24,-8.17,-16.48,-6.41,-14.42,-4.74,-12.32,-3.38,-9.96,-2.18,-7.63,-1.28,-5.07,-0.6,-1.29,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 844,
+                "name": "Case",
+                "source": "bank",
+                "hash": "7dfdf3c9ae6654e901089ab34a8384ba"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "Mirror",
+                "source": "bank",
+                "hash": "b9677fd5199f492534684fa9d7019640"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 49,
+            "height": 89,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "110.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.34302000 1754999923"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64576,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64576\/e594f08cd9ce669163a50391dc45ab3d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64576\/d602d5df53273b2dd1e6a25a1fd9c3c0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-4.48,6.03,25.62,6.02,25.62,-5.68,25.47,-5.83,-23.73,-6.03,-25.59,-6.03,-25.62,-6,-25.62,-5.86,-24.31,6.02,-23.71,6.03",
+            "contourCut": "1.96,0,3.22,-0.13,5.87,-0.62,8.31,-1.28,10.82,-2.24,13.07,-3.39,15.32,-4.85,17.28,-6.44,19.15,-8.36,21.48,-11.39,22.85,-13.7,23.88,-16.01,24.71,-18.56,25.52,-22.35,25.62,-66.27,25.01,-70.1,24.32,-72.7,23.41,-75.06,22.19,-77.45,20.82,-79.57,19.13,-81.65,17.34,-83.44,15.25,-85.13,13.14,-86.51,10.74,-87.72,8.38,-88.63,5.79,-89.33,1.96,-89.93,-0.65,-89.93,-4.48,-89.33,-7.08,-88.63,-9.44,-87.72,-11.83,-86.51,-13.95,-85.13,-16.03,-83.44,-17.82,-81.65,-19.51,-79.57,-20.89,-77.45,-22.11,-75.06,-23.01,-72.7,-23.71,-70.1,-24.31,-66.27,-25.62,-25.7,-25.62,-23.76,-22.11,-14.88,-20.89,-12.48,-19.51,-10.36,-17.82,-8.28,-16.03,-6.49,-13.95,-4.8,-11.83,-3.43,-9.44,-2.21,-7.08,-1.3,-4.48,-0.61,-0.65,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1554,
+                "name": "Case",
+                "source": "bank",
+                "hash": "32b30b7e772dbdc28292f1d9633797f7"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "Mirror",
+                "source": "bank",
+                "hash": "6504ecb844833dc232527493862b8386"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 51,
+            "height": 90,
+            "depth": 12
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "110.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.68041400 1754999935"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64577,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64577\/895a6fb17ef287b8a4ae0ccd487d1067.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64577\/86ebd8010526b14f7264ec08655242cd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30,0.95,29.99,-0.9,29.97,-0.93,29.94,-0.95,10.21,-0.95,4.05,-0.95,-4.05,-0.95,-10.21,-0.95,-16.08,-0.95,-21.13,-0.95,-25.17,-0.95,-28.04,-0.95,-29.55,-0.95,-29.94,-0.95,-29.97,-0.93,-29.99,-0.9,-30,0.95,-1.26,0.95,1.26,0.95,7.11,0.95,13.26,0.95,18.76,0.95,23.33,0.95,26.82,0.95,29.03,0.95,29.61,0.95",
+            "contourCut": "1.26,0,4,-0.34,4.06,-0.35,7.11,-0.91,10.23,-1.85,13.26,-3.13,16.11,-4.72,18.76,-6.61,21.17,-8.78,23.33,-11.19,25.22,-13.83,26.82,-16.68,28.1,-19.72,29.03,-22.91,29.61,-26.24,30,-29.86,30,-130.04,29.61,-133.65,29.03,-136.98,28.1,-140.18,26.82,-143.21,25.22,-146.06,23.33,-148.7,21.17,-151.12,18.76,-153.28,16.11,-155.17,13.26,-156.77,10.23,-158.04,7.11,-158.98,4.06,-159.54,4,-159.55,1.26,-159.89,-1.26,-159.89,-4,-159.55,-4.06,-159.54,-7.11,-158.98,-10.23,-158.04,-13.26,-156.77,-16.11,-155.17,-18.76,-153.28,-21.17,-151.12,-23.33,-148.7,-25.22,-146.06,-26.82,-143.21,-28.1,-140.18,-29.03,-136.98,-29.61,-133.65,-30,-130.04,-30,-29.86,-29.61,-26.24,-29.03,-22.91,-28.1,-19.72,-26.82,-16.68,-25.22,-13.83,-23.33,-11.19,-21.17,-8.78,-18.76,-6.61,-16.11,-4.72,-13.26,-3.13,-10.23,-1.85,-7.11,-0.91,-4.06,-0.35,-4,-0.34,-1.26,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "frame",
+                "source": "bank",
+                "hash": "c034fa23819419079f091f227a125c85"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "Mirror",
+                "source": "bank",
+                "hash": "6e0a407bace38278332a5e24d0bfaf8a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 160,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "50.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2070,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2070\/27821ec68de1562049e78e99ac4a3c4f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2070\/9fbba81a8812f0c09bcdae8cf7e268fa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "23.48,0.5,23.49,0.49,23.5,-0.46,23.47,-0.49,-13.9,-0.5,-23.33,-0.5,-23.46,-0.5,-23.47,-0.5,-23.5,-0.47,-23.49,0.48,-23.48,0.49,23.4,0.5,23.46,0.5",
+            "contourCut": "23.4,0,23.42,-0.02,23.48,-0.08,23.5,-0.1,23.5,-94.9,23.42,-94.98,23.4,-95,-23.4,-95,-23.42,-94.98,-23.5,-94.9,-23.5,-0.1,-23.42,-0.02,-23.4,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "bc9d190d3021a9fdad3d55b6a83eb6e5"
+              },
+              {
+                "id": 1,
+                "default": 549,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "42502b9201a2b8b0a2a9a6d47ed3e4ec"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 47,
+            "height": 95,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "100.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2072,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2072\/569bdedd955f489e2bf62074d4d36870.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2072\/74012f32c3f09883d0c0da7d9f2078ca.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "38.36,10,45.65,9.99,45.79,9.94,45.97,9.33,46,7.44,46,6.2,46,3.69,46,2.45,46,-0.65,45.99,-3.82,45.89,-7.45,45.79,-8.09,45.52,-9.38,44.92,-9.69,44.2,-9.95,39.75,-9.98,34.08,-10,-33.8,-10,-43.19,-9.99,-44.22,-9.83,-44.97,-9.71,-45.54,-9.34,-45.7,-8.59,-45.89,-7.23,-45.99,-4.36,-46,-2.48,-46,-1.24,-46,1.28,-46,5.61,-45.99,8.78,-45.95,9.88,-45.77,9.99,-38.42,10,-30.84,10,-14.99,10,0.54,10",
+            "contourCut": "14.98,0,38.65,-0.02,44.42,-0.24,45.77,-0.76,45.94,-7.78,45.99,-14.98,46,-53.94,46,-138.18,46,-153.39,45.98,-168.91,45.97,-176.63,45.79,-184.06,45.69,-184.58,45.65,-184.75,45.56,-184.89,42.5,-184.93,35.95,-184.98,28.33,-185,-40.76,-184.97,-45.2,-184.84,-45.74,-184.8,-45.77,-184.74,-45.95,-183.34,-45.99,-169.89,-46,-130.9,-46,-46.66,-46,-31.45,-45.99,-8.26,-45.91,-1.14,-45.76,-0.66,-45.56,-0.51,-44.5,-0.23,-38.38,-0.05,-31.17,-0.02,-0.54,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "2d5dad51a488f4db02d52c024be87192"
+              },
+              {
+                "id": 1,
+                "default": 151,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "ce7cebf44fad033837e4f53d8c291158"
+              },
+              {
+                "id": 2,
+                "default": 54830,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "134556e2754d071fb408be9d26966275"
+              },
+              {
+                "id": 3,
+                "default": 55328,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "77e25698bd09527d0a4f0d2c97bcebe3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 92,
+            "height": 185,
+            "depth": 20
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2097,
+        "type": 2,
+        "name": "Round Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2097\/47bbd798dbf7b3e057adecabeacfa320.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2097\/894b8c9300ee1ebe724ddeba7e2acde5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "26,0.5,26,0.45,25.89,0.11,25.87,0.06,25.82,0.02,23.68,-0.17,17.46,-0.49,2.82,-0.5,-16.38,-0.5,-17.33,-0.5,-19.25,-0.41,-23.69,-0.18,-25.85,0.02,-25.87,0.04,-25.9,0.07,-25.91,0.09,-26,0.44,-26,0.49,2.55,0.5,25.87,0.5",
+            "contourCut": "0,0,2.55,-0.13,5.07,-0.5,7.55,-1.12,9.95,-1.98,12.26,-3.07,14.44,-4.38,16.49,-5.9,18.38,-7.62,20.1,-9.51,21.62,-11.56,22.93,-13.74,24.02,-16.05,24.88,-18.45,25.5,-20.93,25.87,-23.45,26,-26,25.87,-28.55,25.5,-31.07,24.88,-33.55,24.02,-35.95,22.93,-38.26,21.62,-40.44,20.1,-42.49,18.38,-44.38,16.49,-46.1,14.44,-47.62,12.26,-48.93,9.95,-50.02,7.55,-50.88,5.07,-51.5,2.55,-51.87,0,-52,-2.55,-51.87,-5.07,-51.5,-7.55,-50.88,-9.95,-50.02,-12.26,-48.93,-14.44,-47.62,-16.49,-46.1,-18.38,-44.38,-20.1,-42.49,-21.62,-40.44,-22.93,-38.26,-24.02,-35.95,-24.88,-33.55,-25.5,-31.07,-25.87,-28.55,-26,-26,-25.87,-23.45,-25.5,-20.93,-24.88,-18.45,-24.02,-16.05,-22.93,-13.74,-21.62,-11.56,-20.1,-9.51,-18.38,-7.62,-16.49,-5.9,-14.44,-4.38,-12.26,-3.07,-9.95,-1.98,-7.55,-1.12,-5.07,-0.5,-2.55,-0.13",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "bb552068e57a257b1b7b60a365e5a36f"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "1f04f0f7202e49842b003fc183cc7c9b"
+              },
+              {
+                "id": 2,
+                "default": 42619,
+                "name": "Object001",
+                "source": "none",
+                "hash": "e8945dada4bd43310ae8323e15b1e852"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 52,
+            "height": 52,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "110.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3310,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3310\/a823ee51c3be0f0cd6e58002163b4c25.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3310\/db551449f7e7e3d56dc29ab878dd8669.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.02,3.5,0.22,3.49,0.42,3.47,0.63,3.44,0.82,3.39,1.02,3.33,1.21,3.26,1.4,3.17,1.58,3.07,1.75,2.96,1.92,2.84,5.5,0.02,5.5,-0.02,5.48,-0.35,5.46,-0.68,5.45,-0.72,5.44,-0.73,1.55,-3.06,1.36,-3.16,1.18,-3.25,0.79,-3.39,0.59,-3.44,0.39,-3.47,0.19,-3.49,-0.02,-3.5,-0.22,-3.49,-0.42,-3.47,-0.63,-3.44,-0.82,-3.39,-1.02,-3.33,-1.21,-3.26,-1.4,-3.17,-1.58,-3.07,-1.75,-2.96,-1.92,-2.84,-5.47,-0.05,-5.49,-0.03,-5.5,-0.02,-5.5,0.02,-5.48,0.35,-5.46,0.68,-5.45,0.72,-5.44,0.74,-1.55,3.06,-1.36,3.16,-1.18,3.25,-0.79,3.39,-0.59,3.44,-0.39,3.47,-0.19,3.49",
+            "contourCut": "3.22,0,3.24,-0.02,5.48,-13.72,5.49,-13.79,5.5,-13.92,5.5,-14.03,5.5,-14.15,5.49,-14.35,5.48,-14.46,4.07,-16.78,3.92,-17.01,3.73,-17.27,3.33,-17.71,3.11,-17.91,2.87,-18.09,2.63,-18.26,2.39,-18.4,2.11,-18.55,1.85,-18.66,1.56,-18.77,1.27,-18.86,0.98,-18.92,0.69,-18.96,0.39,-19,0.1,-19,-0.21,-19,-0.51,-18.97,-0.8,-18.92,-1.1,-18.86,-1.67,-18.67,-1.95,-18.54,-2.22,-18.41,-2.48,-18.25,-2.73,-18.09,-2.98,-17.89,-3.2,-17.71,-3.43,-17.48,-3.62,-17.27,-3.81,-17.03,-3.99,-16.76,-4.15,-16.52,-5.48,-14.46,-5.49,-14.35,-5.5,-14.03,-5.5,-13.92,-5.48,-13.72,-3.24,-0.02,-3.22,0,-0.59,0,2.71,0,3.12,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "fd3d1a4f5688c17823d64a4700de8674"
+              },
+              {
+                "id": 1,
+                "default": 55155,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6888ca999cc5642f8cdff2b6a32deb88"
+              },
+              {
+                "id": 2,
+                "default": 54830,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "d94482133be073dfc7d242d3be268685"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 11,
+            "height": 19,
+            "depth": 7
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "70.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3370,
+        "type": 2,
+        "name": "Console mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3370\/67180284cb45172fd65e92a7de215639.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3370\/0e948df74e4b1d003302813eff8c9152.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "36.18,11.5,36.82,11.49,41,11.3,41,4.04,36.82,-10.83,35.79,-11.04,32.96,-11.36,15.36,-11.5,-15.36,-11.5,-32.96,-11.36,-35.79,-11.04,-36.82,-10.83,-41,4.04,-41,11.3,-36.82,11.49,-36.18,11.5,29.73,11.5",
+            "contourCut": "33.94,0,34.12,-0.22,34.57,-2.56,37.03,-44.16,40.98,-193.91,41,-195,35.22,-195,0,-195,-41,-195,-40.98,-193.91,-37.03,-44.16,-34.57,-2.56,-34.12,-0.22,-33.94,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 548,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ea483992d0e0029f4586158b0a678204"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "fe18953c481bc2c99b610d05f208a3d0"
+              },
+              {
+                "id": 2,
+                "default": 774,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "8476c4c7d478768687afaa69ce093b0a"
+              },
+              {
+                "id": 3,
+                "default": 55344,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "e513f38b322ddb2eedb5f328ddd0ac9f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9888": [
+            {
+              "id": "9888",
+              "name": "Dressers, Consoles, vanities",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves",
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 82,
+            "height": 195,
+            "depth": 23
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3328,
+        "type": 2,
+        "name": "Pier-glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3328\/1708766ced8e61d42557052cf8516459.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3328\/1183722c88473912a9e332847c4af833.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "2.88,35,8.59,34.78,14.19,34.3,19.6,33.52,24.75,32.37,29.56,30.78,33.97,28.68,37.92,26.02,41.36,22.8,44.24,18.99,46.52,14.69,48.17,9.94,49.17,4.9,49.5,-0.31,49.17,-5.51,48.17,-10.55,46.52,-15.29,44.24,-19.58,41.36,-23.35,37.92,-26.52,33.97,-29.11,29.56,-31.13,24.75,-32.63,19.6,-33.7,14.19,-34.4,8.59,-34.82,2.88,-35,-2.88,-35,-8.59,-34.79,-14.19,-34.36,-19.6,-33.64,-24.75,-32.57,-29.56,-31.06,-33.97,-29.04,-37.92,-26.45,-41.36,-23.27,-44.24,-19.52,-46.51,-15.23,-48.17,-10.52,-49.16,-5.49,-49.5,-0.3,-49.16,4.89,-48.17,9.92,-46.51,14.64,-44.24,18.95,-41.36,22.73,-37.92,25.96,-33.97,28.61,-29.56,30.72,-24.75,32.32,-19.6,33.48,-14.19,34.27,-8.59,34.76,-2.88,35",
+            "contourCut": "32.16,0,48.14,-67.17,48.19,-67.4,49.37,-77.43,49.5,-78.59,27.66,-127.83,27.41,-128.18,11.56,-139.76,9.77,-140.89,7.89,-141.79,5.93,-142.45,3.9,-142.86,1.81,-143,-0.28,-142.86,-2.31,-142.45,-4.27,-141.79,-6.15,-140.89,-7.94,-139.76,-24.07,-128.18,-24.32,-127.83,-49.5,-78.59,-49.37,-77.43,-48.19,-67.4,-48.14,-67.17,-32.8,0,30.54,0,32.15,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 551,
+                "name": "Line002",
+                "source": "bank",
+                "hash": "7cd8b27ede3f17a5e21eee9133ef0a5a"
+              },
+              {
+                "id": 1,
+                "default": 774,
+                "name": "Object002",
+                "source": "none",
+                "hash": "a1bef33ff7fdca14930d918385fafd59"
+              },
+              {
+                "id": 2,
+                "default": 42619,
+                "name": "Object001",
+                "source": "none",
+                "hash": "b8ea3164072f8e0a3008f1651f596f03"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9888": [
+            {
+              "id": "9888",
+              "name": "Dressers, Consoles, vanities",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves",
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 99,
+            "height": 143,
+            "depth": 70
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3372,
+        "type": 2,
+        "name": "Mirror Turri",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3372\/e403f2461d75d9b5ef600d1e1f56fb88.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3372\/2379e3545bda5f70a4dc72ae04cda868.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "29,1,28.99,-0.94,28.96,-0.98,28.92,-0.99,25.55,-1,25.22,-1,-25.56,-1,-28.92,-0.99,-28.96,-0.98,-28.99,-0.94,-29,1,28.85,1,28.92,1",
+            "contourCut": "28.8,0,28.92,-0.02,28.96,-0.03,29,-0.06,29,-73.82,28.99,-73.83,28.96,-73.86,28.82,-74,28.81,-74,-28.84,-74,-28.87,-73.97,-29,-73.82,-29,-0.06,-28.96,-0.03,-28.86,0,-28.84,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54831,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "735aa37ae8b22ff2bb3fa0c2167585d4"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "e15b5b5a0486a2fdd840eebe33efe208"
+              },
+              {
+                "id": 2,
+                "default": 548,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "1ec680221537711dff3df7e9c3488f51"
+              },
+              {
+                "id": 3,
+                "default": 774,
+                "name": "mesh_3001",
+                "source": "none",
+                "hash": "e54817f7ccf4aff679715a05d3f35258"
+              },
+              {
+                "id": 4,
+                "default": 42619,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "c16593887d11dcce9d5edc5a80b54396"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 58,
+            "height": 74,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "100.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 786,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/786\/de26945af85d787eacdc9cb07bff83d7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/786\/24e8cf8850eb3c6dbde16ad9bb5ebc89.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "62.94,2.5,64.18,2.44,64.57,2.08,64.79,1.85,64.94,1.64,65,1.49,65,-1.49,64.94,-1.64,64.79,-1.85,64.57,-2.1,64.18,-2.44,62.94,-2.49,8.65,-2.5,4.97,-2.5,1.92,-2.5,0.04,-2.5,-0.45,-2.5,-1.85,-2.5,-4.43,-2.5,-4.89,-2.5,-6,-2.5,-7.62,-2.5,-8.57,-2.5,-62.94,-2.49,-64.12,-2.44,-64.34,-2.29,-64.57,-2.1,-64.79,-1.85,-64.94,-1.64,-65,-1.49,-65,1.49,-64.94,1.64,-64.79,1.85,-64.57,2.08,-64.34,2.29,-64.12,2.44,-61.92,2.5,60.89,2.5",
+            "contourCut": "64.28,0,65,-94.12,64.94,-94.34,64.79,-94.49,64.57,-94.65,0.08,-105,-64.57,-94.65,-64.79,-94.49,-64.94,-94.34,-65,-94.12,-64.28,0,-55.3,0,-55.14,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "529c32f6a572ba6d1435792bb2afbe07"
+              },
+              {
+                "id": 1,
+                "default": 142,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "68bb8c65840b79126d1c0ee7ab9c8e56"
+              },
+              {
+                "id": 2,
+                "default": 53097,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "cc74eba675ae508a0a9faf1066fcbfa1"
+              },
+              {
+                "id": 3,
+                "default": 42619,
+                "name": "Object001",
+                "source": "none",
+                "hash": "9b74f92993153cb320051270ecd65235"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 130,
+            "height": 105,
+            "depth": 5
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "100.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2677,
+        "type": 2,
+        "name": "Horizontal mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2677\/08f5350281eb8391b60517dafe75670a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2677\/e99ca2870e8f890989760f6f565e0659.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "77.5,1,77.5,-1,-77.5,-1,-77.5,1",
+            "contourCut": "77.5,0,77.5,-100,-77.5,-100,-77.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "c54666ca68ebbc7bb50059c55ee66300"
+              },
+              {
+                "id": 1,
+                "default": 42619,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "6a0564ab109bcdb2f76637ba63f78941"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9899": [
+            {
+              "id": "9899",
+              "name": "Bathroom storage, mirrors",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 155,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "100.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3371,
+        "type": 2,
+        "name": "Mirror Modenese Gastone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3371\/ebe288946e1664d29a9b7894233643b3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3371\/cbb6a24a6df8913de213e15549d77803.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.07,19,8,18.4,11.78,17.8,15.31,16.79,18.58,15.53,21.66,14.32,23.35,13.57,26.48,10.38,28.36,8.24,29.78,5.91,30.68,3.39,31,0.74,30.69,-1.92,29.8,-4.44,28.39,-6.78,26.53,-8.93,24.09,-11.73,22.59,-12.82,15.38,-15.39,11.86,-16.41,0.83,-19,-0.73,-19,-11.78,-16.47,-16.43,-15.07,-22.63,-12.92,-24.13,-11.83,-27.78,-7.65,-29.36,-5.37,-30.68,-2.06,-31,0.6,-30.69,3.25,-29.8,5.77,-28.39,8.11,-26.53,10.26,-23.48,13.48,-21.79,14.23,-15.38,16.72,-11.82,17.6,-8.1,18.51,-4.15,18.98,-0.04,19",
+            "contourCut": "24.23,0,30.42,-8.01,31,-8.98,31,-22,30,-101.47,26.45,-122.17,13.62,-154.61,11.23,-159.57,8.64,-163.57,5.87,-166.53,2.96,-168.37,-0.09,-169,-3.13,-168.37,-6.04,-166.53,-8.81,-163.57,-11.4,-159.57,-13.78,-154.61,-26.34,-122.17,-30.1,-101.47,-31,-22,-31,-8.98,-30.42,-8.01,-24.31,0,-20.1,0,17.78,0,19.37,0,23.36,0,24.19,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "344f5176a2c44d2befac5574bf8cd86d"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "71af82b4d00f159d60e60884d92da9dd"
+              },
+              {
+                "id": 2,
+                "default": 2924,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "2606824937c3f1041533349efb7a802d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ],
+          "9888": [
+            {
+              "id": "9888",
+              "name": "Dressers, Consoles, vanities",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves",
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 62,
+            "height": 169,
+            "depth": 38
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 785,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/7\/785\/2e7783261dfd1387cb49915311570c48.png"
+          },
+          "body": {
+            "package": "\/files\/products\/7\/785\/2e4b8478e81d1939ea8e267215c8d9a0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "36.5,3,36.5,-0.62,36.49,-0.74,35.7,-3,-36.37,-3,-36.5,-0.62,-36.5,3,-21.39,3,21.39,3,29.94,3",
+            "contourCut": "35.7,0,36.5,-61.26,36.5,-85.37,23.78,-98.51,18.78,-103.61,16.56,-105.59,13.83,-106.93,4.24,-111.49,1.43,-112.59,0.93,-112.75,0.29,-112.91,-0.31,-113,-0.92,-112.91,-1.56,-112.75,-2.06,-112.59,-4.86,-111.49,-5.39,-111.24,-16.56,-105.59,-18.78,-103.61,-23.78,-98.51,-36.5,-85.37,-36.5,-61.26,-36.37,0,-32.36,0,31.69,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "Object001",
+                "source": "none",
+                "hash": "c73ef6dc274c96e83c611a714caff276"
+              },
+              {
+                "id": 1,
+                "default": 55342,
+                "name": "Line09",
+                "source": "bank",
+                "hash": "215a50e32985e2f420e59b1c4030dbdd"
+              },
+              {
+                "id": 2,
+                "default": 42619,
+                "name": "Object002",
+                "source": "none",
+                "hash": "78c7407db949b497067574f0ab6d04de"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 73,
+            "height": 113,
+            "depth": 6
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "100.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2071,
+        "type": 2,
+        "name": "Round Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2071\/573f216de2b24ed1a1af4a799fa04480.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2071\/10f34c8d3aa40d975d8d14567807a5d4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "36.1,2.5,57.14,-0.39,57.5,-0.7,57.5,-0.87,57.49,-1.1,57.16,-1.21,45.66,-1.91,35.72,-2.5,34.94,-2.5,34.38,-2.5,34.35,-2.5,34.14,-2.5,33.97,-2.5,33.84,-2.5,33.43,-2.5,33.06,-2.5,32.22,-2.5,31.96,-2.5,30.7,-2.5,30.54,-2.5,30.52,-2.5,28.87,-2.5,28.81,-2.5,28.65,-2.5,26.76,-2.5,26.49,-2.5,24.37,-2.5,24.07,-2.5,21.75,-2.5,21.42,-2.5,18.91,-2.5,18.55,-2.5,15.88,-2.5,15.49,-2.5,12.7,-2.5,12.29,-2.5,9.39,-2.5,8.96,-2.5,5.99,-2.5,5.54,-2.5,2.52,-2.5,2.07,-2.5,-0.97,-2.5,-1.43,-2.5,-4.44,-2.5,-4.91,-2.5,-7.88,-2.5,-8.34,-2.5,-11.23,-2.5,-11.68,-2.5,-14.48,-2.5,-14.91,-2.5,-17.58,-2.5,-18,-2.5,-20.5,-2.5,-20.9,-2.5,-23.22,-2.5,-23.6,-2.5,-25.71,-2.5,-26.06,-2.5,-27.95,-2.5,-27.97,-2.5,-28.26,-2.5,-29.9,-2.5,-30.04,-2.5,-30.18,-2.5,-31.56,-2.5,-31.81,-2.5,-32.91,-2.5,-33.26,-2.5,-33.92,-2.5,-34.04,-2.5,-34.39,-2.5,-34.61,-2.5,-34.94,-2.5,-35.17,-2.5,-35.5,-2.5,-35.6,-2.5,-35.71,-2.5,-45.66,-1.91,-57.15,-1.21,-57.5,-1.1,-57.5,-0.7,-57.15,-0.39,-35.87,2.5",
+            "contourCut": "1.16,0,1.4,-0.01,5.56,-0.26,5.97,-0.3,10.09,-0.88,10.49,-0.95,14.56,-1.86,14.72,-1.9,14.95,-1.96,18.93,-3.19,19.32,-3.33,23.19,-4.86,23.56,-5.03,27.3,-6.87,27.45,-6.95,27.66,-7.07,31.23,-9.2,31.38,-9.29,31.58,-9.42,34.97,-11.83,35.11,-11.93,35.3,-12.08,38.49,-14.75,38.8,-15.03,41.77,-17.94,42.05,-18.24,44.78,-21.38,45.04,-21.7,47.51,-25.05,47.74,-25.39,49.94,-28.93,50.14,-29.29,52.05,-32.98,52.22,-33.36,53.83,-37.19,53.98,-37.58,55.28,-41.53,55.39,-41.93,56.37,-45.97,56.45,-46.38,57.11,-50.49,57.13,-50.65,57.16,-50.89,57.48,-55.04,57.49,-55.21,57.5,-55.45,57.5,-59.62,57.48,-60.03,57.15,-64.18,57.13,-64.34,57.1,-64.58,56.44,-68.69,56.36,-69.09,55.37,-73.14,55.26,-73.53,53.95,-77.49,53.81,-77.87,52.19,-81.71,52.02,-82.08,50.1,-85.77,50.02,-85.92,49.9,-86.13,47.7,-89.66,47.47,-90,44.99,-93.35,44.89,-93.48,44.73,-93.67,42,-96.81,41.72,-97.11,38.74,-100.02,38.62,-100.13,38.44,-100.29,35.24,-102.96,34.92,-103.21,31.52,-105.62,31.18,-105.84,27.6,-107.97,27.45,-108.05,27.24,-108.16,23.5,-110,23.34,-110.07,23.12,-110.16,19.25,-111.7,18.87,-111.83,14.72,-113.1,14.49,-113.16,10.42,-114.06,10.26,-114.09,10.02,-114.13,5.9,-114.71,5.49,-114.75,1.16,-115,0.92,-115,-3.24,-114.91,-3.65,-114.89,-7.79,-114.47,-7.96,-114.45,-8.2,-114.42,-12.3,-113.67,-12.46,-113.64",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "1b53f92f37dd538703fe6a0120da2109"
+              },
+              {
+                "id": 1,
+                "default": 551,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "db70d8139dd67317a498b218d4d65655"
+              },
+              {
+                "id": 2,
+                "default": 55346,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "c2d8a1b6d7d3f3478c3ca729927fcd09"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 115,
+            "height": 115,
+            "depth": 5
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2098,
+        "type": 2,
+        "name": "Floor Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2098\/6f105b39f8a8376796bf53e5e95e9e4d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2098\/7a696b41f6b49012fd7a5c7458bcd7b6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "32.25,27.5,33.5,26.38,33.5,12.33,33.5,-26.74,32.25,-27.5,30.86,-27.5,29.47,-27.5,-29.47,-27.5,-30.86,-27.5,-32.25,-27.5,-33.5,-26.76,-33.5,-12.11,-33.5,26.38,-32.25,27.5",
+            "contourCut": "32.25,0,33.5,-2.04,31.84,-120.32,28.24,-183.69,11.96,-195.43,8.31,-197.35,4.27,-198.57,-0.08,-199,-4.42,-198.57,-8.46,-197.35,-12.12,-195.43,-28.4,-183.69,-31.93,-120.32,-33.5,-2.04,-32.25,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "b768419eab0ca1739d08d22fc8fce079"
+              },
+              {
+                "id": 1,
+                "default": 53097,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "65263d402f8a18b41204504bbaeac502"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 67,
+            "height": 199,
+            "depth": 55
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2095,
+        "type": 2,
+        "name": "Round Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2095\/0f8f64ee7324d43586f37ba51caadd4b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2095\/9bc9dfa010bdf6a3f283f1c7d112cc3d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "50,1,50,-0.77,50,-0.78,49.93,-0.97,49.9,-1,-49.36,-1,-49.9,-1,-49.92,-0.98,-50,-0.77,-50,1,-39.89,1,-39.88,1,-25.92,1,-6.42,1,6.4,1,16.46,1,30.96,1,39.86,1,49.99,1",
+            "contourCut": "6.41,0,30.99,-10.11,39.87,-19.1,50,-43.6,50,-56.41,39.87,-80.98,39.86,-80.99,30.91,-89.89,30.89,-89.9,6.4,-100,-6.41,-100,-6.42,-100,-31,-89.89,-39.87,-80.91,-39.88,-80.89,-50,-56.51,-50,-43.59,-39.87,-19.01,-30.92,-10.11,-30.9,-10.1,-6.4,0,6.4,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "7404fcd8701653868f40a3b3d6f6766c"
+              },
+              {
+                "id": 1,
+                "default": 54830,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "c42f7d407545a82b657a49098cdaaf0f"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41819",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "0186dc28a4636a46ea2bea7943c4207b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 100,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "90.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2100,
+        "type": 2,
+        "name": "Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2100\/e8bd566cdf99e02567632b48588614a0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2100\/a235872db524125123f1e6e782d4d95d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-38.49,1.5,50,1.27,50,0.38,49.59,-0.51,49.32,-0.75,47.27,-1.31,44.5,-1.5,-25.65,-1.34,-44.46,-1.29,-47.25,-1.09,-50,-0.69,-50,0.6,-50,0.65,-49.98,1.5",
+            "contourCut": "47.06,0,50,-0.06,50,-112.62,50,-161.29,50,-166.82,50,-169.97,47.06,-170,41.53,-170,-38.49,-170,-44.63,-170,-48.06,-170,-49.98,-169.97,-50,-167.92,-50,-57.52,-50,-33.14,-50,-8.55,-50,-2.01,-50,-0.18,-49.98,-0.06,-47.14,0,16.06,0,41.53,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0001",
+                "source": "none",
+                "hash": "844852904e7d7d7c7c2267e4125ba886"
+              },
+              {
+                "id": 1,
+                "default": 738,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "3ebff0f05c95324ededd24557944271f"
+              },
+              {
+                "id": 2,
+                "default": 42619,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "55ee95e6cadb70b9fc926b49692708da"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 100,
+            "height": 170,
+            "depth": 3
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2129,
+        "type": 2,
+        "name": "Mirror Tonin casa CALLAS",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2129\/e2fdc071f2cecbccd561ca47d2451c73.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2129\/718c7317b91b6372af3e2d63dbe30c73.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "37.03,4.5,38.01,4.48,39,4.4,39.32,4.36,39.86,4.28,40.73,4.11,41.75,3.9,53.79,-1,53.99,-1.19,54,-3.63,54,-4.18,53.8,-4.37,-51.17,-4.5,-53.71,-4.5,-53.79,-4.5,-53.99,-4.31,-54,-2.37,-54,-2.03,-54,-1.32,-53.8,-1.13,-41.8,3.8,-39.91,4.19,-39.37,4.27,-39.05,4.31,-38.06,4.38,-35.72,4.39,-23.82,4.43",
+            "contourCut": "48.35,0,48.63,-0.07,53.23,-1.83,53.61,-2.02,53.67,-2.07,53.91,-2.39,54,-2.8,54,-9.9,54,-14.63,54,-19.36,54,-26.45,54,-33.55,54,-38.28,54,-50.11,54,-59.57,54,-64.3,54,-69.03,54,-76.13,53.99,-194.36,53.89,-194.71,52.17,-199.23,51.97,-199.62,51.93,-199.67,51.61,-199.91,51.2,-200,0.19,-200,-48.36,-200,-48.7,-199.89,-53.23,-198.17,-53.61,-197.98,-53.66,-197.93,-53.89,-197.63,-53.9,-197.61,-53.99,-197.2,-54,-145.17,-54,-100.24,-54,-5.64,-53.89,-5.29,-52.17,-0.77,-51.97,-0.38,-51.92,-0.33,-51.63,-0.11,-51.59,-0.09,-51.2,0,-2.64,0,-0.18,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "f33b3c9488a36e21e39e3b0346fc3f65"
+              },
+              {
+                "id": 1,
+                "default": 1555,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "fca51026529c4b5738f3d73191a5a8c8"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 108,
+            "height": 200,
+            "depth": 9
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2127,
+        "type": 2,
+        "name": "Garabato Mirror",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2127\/9f80443663e066b08f95953de14b7ae0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2127\/d4a79170ab4e2aefe3f89099f47cd893.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "57,1,56.97,-1,-3.6,-1,-9.28,-1,-55.08,-1,-55.13,-1,-55.95,-1,-57,-1,-57,1,49.11,1,56.51,1",
+            "contourCut": "-21.45,0,-19.69,-0.04,-17.96,-0.16,17.74,-3.64,21.92,-4.17,25.99,-4.99,29.92,-6.09,33.68,-7.47,37.25,-9.11,40.6,-11,43.71,-13.13,46.55,-15.49,49.11,-18.07,51.34,-20.86,53.23,-23.86,54.04,-25.42,55.37,-28.63,56.3,-31.85,56.85,-35.08,56.97,-36.69,57,-38.3,56.93,-39.9,56.77,-41.49,56.51,-43.07,55.7,-46.18,42.78,-95.02,42.11,-97.15,41.3,-99.27,40.37,-101.36,38.39,-105.36,36.4,-109.03,34.4,-112.36,32.38,-115.36,30.32,-118.04,19.51,-131.19,17.77,-133.06,15.88,-134.72,13.84,-136.18,11.67,-137.42,9.35,-138.43,6.92,-139.21,5.65,-139.51,4.35,-139.74,3.03,-139.91,1.67,-140,0.27,-140,-1.16,-139.91,-2.61,-139.74,-4.09,-139.48,-5.58,-139.15,-7.09,-138.73,-8.6,-138.23,-10.12,-137.66,-11.63,-137.02,-13.13,-136.31,-14.62,-135.52,-16.09,-134.67,-17.53,-133.76,-18.94,-132.78,-20.32,-131.74,-21.67,-130.65,-22.96,-129.49,-24.21,-128.28,-25.4,-127.02,-26.53,-125.71,-27.59,-124.36,-28.59,-122.95,-49.4,-91.64,-51.8,-87.75,-53.73,-83.71,-55.13,-79.57,-55.95,-75.35,-56.17,-71.11,-57,-37.77,-56.83,-33.96,-56.31,-30.27,-55.48,-26.71,-54.34,-23.31,-52.91,-20.07,-51.22,-17.02,-49.27,-14.17,-47.09,-11.53,-44.69,-9.13,-42.08,-6.96,-39.3,-5.07,-36.34,-3.44,-33.24,-2.12,-30.01,-1.1,-26.65,-0.4,-23.21,-0.05",
+            "materials": [
+              {
+                "id": 0,
+                "default": 774,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "95aae30d35ac74062e45afe422742caf"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "35b8008af48171249f97b9cd4faae6fa"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "46": [
+            {
+              "id": "46",
+              "name": "Mirrors",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "mirrors"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 114,
+            "height": 140,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "80.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

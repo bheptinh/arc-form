@@ -495,7 +495,8 @@ const ControlPanel = props => {
     };
 
     let onClickSupport = e => {
-        window.location.href = 'mailto:support@roomtodo.com?subject=support:%20';
+        throw new Error("Support email is currently unavailable");
+        // window.location.href = 'mailto:support@roomtodo.com?subject=support:%20';
     }
 
     let favoritesButtonEvent = e => setFavoritesList(user.data.favorites?.items ? [...user.data.favorites?.items] : []);

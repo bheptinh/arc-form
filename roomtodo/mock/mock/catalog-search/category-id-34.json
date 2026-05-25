@@ -1,0 +1,2833 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "28",
+    "items": [
+      {
+        "id": 832,
+        "type": 2,
+        "name": "TV 46'",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/832\/b49201d09dba17b71e3364fc0563cbf3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/832\/efc5ab65ba518ff4c5dfebecaa877fbd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "15.35,11,55.03,0.18,58.66,-1.5,59,-1.92,59,-2.5,58.94,-2.56,15.45,-9.45,5.96,-10.5,3.59,-10.76,2.4,-10.88,1.21,-10.99,0.03,-11,-1.16,-10.9,-2.35,-10.79,-15.41,-9.5,-58.93,-3.14,-59,-3.08,-59,-2.5,-58.64,-2.08,-55.05,-0.36,-15.51,10.85",
+            "contourCut": "14.63,0,58.72,-4.26,58.86,-4.3,58.96,-4.4,59,-4.54,59,-65.73,58.96,-65.86,58.86,-65.96,58.72,-66,-58.72,-66,-58.86,-65.96,-58.96,-65.86,-59,-65.73,-59,-4.54,-58.96,-4.4,-58.86,-4.3,-58.72,-4.26,-14.68,0,1.14,0,5.79,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "d9fde2fdaf7d0e0620da332621873a78"
+              },
+              {
+                "id": 1,
+                "default": 158,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "427cc9ef3c7e8de2981856c879222a11"
+              },
+              {
+                "id": 2,
+                "default": 1583,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a3a4d9f8ba0fb413130dfc46eabac6a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 118,
+            "height": 66,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 867,
+        "type": 2,
+        "name": "TV 46'",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/867\/c2afe8a7b4352da0abd39cc680104b46.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/867\/107cadae2eca5c2e7e69c59f8f915d9e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "17.57,3,52,0.72,55.03,0.39,58.68,-1.34,59.01,-1.78,59.01,-2.38,58.92,-2.45,52.6,-2.48,-58.51,-3,-58.68,-3,-58.71,-3,-58.89,-3,-58.98,-2.94,-58.99,-2.33,-58.66,-1.9,-55.03,-0.13,-52,0.23,-17.62,2.83",
+            "contourCut": "58.73,0,58.87,-0.04,58.97,-0.14,59.01,-0.28,59.01,-61.72,58.97,-61.86,58.87,-61.96,58.73,-62,54.92,-62,52.4,-62,52,-62,-52,-62,-54.92,-62,-58.7,-62,-58.85,-61.96,-58.95,-61.86,-58.99,-61.72,-58.99,-0.28,-58.95,-0.14,-58.85,-0.04,-58.7,0,-52.77,0,52.79,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 158,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "3ff09421748b34e88437c9e01d1be5a3"
+              },
+              {
+                "id": 1,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "501dcde0640309c1de4e1d7c5cc76e53"
+              },
+              {
+                "id": 2,
+                "default": 1583,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "fcc3dcfc057f18720dfb92b0e01c5fd1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 118,
+            "height": 62,
+            "depth": 6
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "90.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 868,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/868\/8e81a65212079f2ce9ed664550560c72.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/868\/6e5040adfe79fb8479995a9a2a110a26.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "23.92,9.5,24.84,9.48,24.97,9.34,25,-8.34,25,-8.99,24.86,-9.13,20.99,-9.48,19.51,-9.49,13.19,-9.5,7.51,-9.5,7.25,-9.5,7.04,-9.5,6.58,-9.5,6.41,-9.5,-19.93,-9.5,-20.19,-9.5,-20.4,-9.5,-20.86,-9.5,-21.04,-9.5,-22.05,-9.49,-24.86,-9.13,-25,-8.99,-25,-8.34,-24.98,9.34,-24.85,9.48,-23.95,9.5,-0.01,9.5",
+            "contourCut": "23.92,0,24.84,-0.01,25,-0.17,25,-9.71,25,-18.82,24.97,-18.85,24.86,-18.96,24.84,-18.98,23.92,-19,-23.95,-19,-24.85,-18.98,-25,-18.82,-25,-0.17,-24.85,-0.01,-23.95,0,-0.01,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ab16729637431a2632f8167ae4abc732"
+              },
+              {
+                "id": 1,
+                "default": 1597,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "9d884db140a636df62e2379c4ec7c16b"
+              },
+              {
+                "id": 2,
+                "default": 1583,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "2057b729ee89e02baeef735f08d26c35"
+              },
+              {
+                "id": 3,
+                "default": 1610,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "e0ab9d128309e5bd83d15e61db0dc2ba"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41818,
+                "default": "#000000",
+                "current": "#000000",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "67fa3f4a02b88d2622d8e39f8870c7ba"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 50,
+            "height": 19,
+            "depth": 19
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64614,
+        "type": 2,
+        "name": "TV remote",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64614\/afbe14dfad5696fbdd037dc9fb60eed5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64614\/8b604e83be3c7152eaf17c7ea3a54866.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "1.05,2.51,2.85,2.47,7.41,2.18,8.35,1.89,8.79,1.64,9.39,0.74,9.47,0.18,9.42,-0.38,8.86,-1.3,8.43,-1.57,7.5,-1.89,2.95,-2.36,1.16,-2.47,0.41,-2.49,-2.35,-2.51,-4.49,-2.41,-6.43,-2.19,-7.05,-2.1,-8.79,-1.76,-9.31,-1.58,-9.41,-1.46,-9.47,-0.22,-9.46,1.06,-9.37,1.19,-8.86,1.39,-7.13,1.8,-6.52,1.92,-4.59,2.22,-2.45,2.4,-0.84,2.46",
+            "contourCut": "7.51,0,8.43,-0.01,8.79,-0.05,9.36,-0.19,9.45,-0.39,9.47,-0.68,9.27,-0.9,9.19,-0.96,8.94,-1.04,8.11,-1.28,6.72,-1.66,4.2,-2.08,3.94,-2.12,1.16,-2.53,-2.47,-2.83,-2.73,-2.85,-3.52,-2.87,-7.79,-2.67,-8.45,-2.62,-9.04,-2.48,-9.22,-2.42,-9.24,-2.41,-9.37,-2.08,-9.47,-1.17,-9.46,-0.81,-9.12,-0.73,-2.4,-0.17",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#292929",
+                "current": "#292929",
+                "name": "remote_control",
+                "source": "bank",
+                "hash": "8d389224a9aab4a9e7f272f21167c824"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41835,
+                "default": "#d1d1d1",
+                "current": "#d1d1d1",
+                "name": "buttons",
+                "source": "bank",
+                "hash": "16b82acdc7e0bfb8daa92e3f181101d2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 19,
+            "height": 3,
+            "depth": 5
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.92045000 1752959067"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3243,
+        "type": 2,
+        "name": "Tv_ 60\"",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3243\/15a3cb92d0cbc895f928b4ff3b3f9fb1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3243\/965ae97e79219662f8f05a619a53d4fd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "11.16,3.5,50.07,3.49,54.15,3.37,55.9,3.23,57.3,3.1,58.35,2.9,60.71,2.32,62.17,1.79,62.96,1.43,63.77,1.01,64.57,0.57,65.34,0.11,66.69,-0.82,67.96,-1.75,68,-1.79,67.76,-3.44,67.69,-3.5,66.9,-3.5,65.18,-3.5,-66.9,-3.5,-67.68,-3.5,-67.76,-3.44,-68,-1.79,-67.96,-1.75,-66.05,-0.35,-65.35,0.11,-64.59,0.57,-63.79,1.01,-62.97,1.43,-62.19,1.79,-60.72,2.32,-58.36,2.9,-57.31,3.1,-55.92,3.23,-54.16,3.37,-50.08,3.49,-11.91,3.5",
+            "contourCut": "67.87,0,68,-0.13,67.99,-78.94,67.93,-79,-67.93,-79,-67.99,-78.94,-68,-0.13,-67.93,-0.01,65.1,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1762,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "fe0234385168965f6bfc27ba89d6557a"
+              },
+              {
+                "id": 1,
+                "default": 158,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "a59abe4b5460b36587f02d452f7f6a94"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 136,
+            "height": 79,
+            "depth": 7
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "90.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3242,
+        "type": 2,
+        "name": "Tv_ 60\"",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3242\/864d537a3ee13ee0104f2d58dad80084.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3242\/16f37c66b91d379bbfa8f8141fa48aac.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "37.85,15.5,38.03,15.37,67.96,-6.45,68,-6.49,67.76,-8.09,67.69,-8.14,37.85,-15.5,-37.86,-15.5,-67.68,-8.14,-67.76,-8.09,-68,-6.49,-67.96,-6.45,-37.86,15.5",
+            "contourCut": "35.16,0,38.25,-0.01,67.87,-9.29,68,-9.42,67.99,-87.94,67.93,-88,-67.93,-88,-67.99,-87.94,-68,-9.42,-67.93,-9.3,-38.25,-0.01,-35.28,0,-34.82,0,34.73,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1762,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "22ec162dcb019f7e0b4b982ad81047ec"
+              },
+              {
+                "id": 1,
+                "default": 158,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "3f9049267262526a524b070fd1ab7dc1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 136,
+            "height": 88,
+            "depth": 31
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64615,
+        "type": 2,
+        "name": "TV",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64615\/c1f3088715525cff0ed089ac572e9360.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64615\/6e6c6e16c0e48ed225bcba4baeca20c8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-0.14,9.13,10.13,8.51,16.27,7.21,36.62,2.64,38.85,2.1,48.8,-0.32,58.23,-3.5,60.5,-4.27,60.8,-4.52,60.9,-4.82,60.9,-5.41,60.89,-5.42,24.07,-9.13,24.03,-9.13,-24.35,-9.13,-60.89,-5.42,-60.9,-5.41,-60.9,-4.82,-60.8,-4.52,-60.5,-4.27,-57.87,-3.38,-55.18,-2.47,-52.1,-1.43,-48.8,-0.32,-36.62,2.64,-16.56,7.21,-10.41,8.51",
+            "contourCut": "30.23,0,30.36,-0.03,60.9,-8.09,60.9,-83.89,48.8,-83.99,36.6,-83.99,24.4,-83.99,12.2,-83.99,0,-83.99,-12.2,-83.99,-24.4,-83.99,-36.6,-83.99,-48.8,-83.99,-60.9,-83.89,-60.9,-8.09,-30.65,-0.03,-30.52,0,-0.14,0,10.37,0,17.38,0,23.22,0,24.14,0,24.68,0,26.53,0,26.62,0,27.56,0,28.55,0,28.6,0,28.99,0,29.56,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#d6d6d6",
+                "current": "#d6d6d6",
+                "name": "corpus",
+                "source": "bank",
+                "hash": "f8777051accaefff4f9ec3c336297fa3"
+              },
+              {
+                "id": 1,
+                "default": 158,
+                "name": "screen",
+                "source": "bank",
+                "hash": "6c9b30b11879a0a04c723f8de2b3ea8f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 122,
+            "height": 84,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.39755700 1752958991"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 864,
+        "type": 2,
+        "name": "TV 32'",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/864\/47a248c1b4a8d6e7f33f7eecffab4be9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/864\/60709bf22d1bae100ca00bb4d578b53a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-15.62,11.5,15.79,11.26,37.17,-2.16,37.5,-2.6,37.5,-3.21,37.43,-3.27,15.63,-10.08,4.75,-11.17,2.33,-11.4,1.12,-11.5,-0.08,-11.49,-1.29,-11.37,-2.5,-11.24,-15.78,-9.73,-37.44,-2.71,-37.5,-2.64,-37.5,-2.04,-37.16,-1.6",
+            "contourCut": "14.95,0,37.21,-4.33,37.36,-4.37,37.46,-4.47,37.5,-4.61,37.5,-46.72,37.46,-46.86,37.36,-46.96,37.21,-47,-37.21,-47,-37.36,-46.96,-37.46,-46.86,-37.5,-46.72,-37.5,-4.61,-37.46,-4.47,-37.36,-4.37,-37.21,-4.33,-14.94,0,7,0,8.21,0,14.8,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1583,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "72e9a8cc13b6347ce25275724cc1f0b6"
+              },
+              {
+                "id": 1,
+                "default": 158,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "328041d3285b3f2a31b9db282c4663ee"
+              },
+              {
+                "id": 2,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "d0d80420c21f9b126ee92b35b81594df"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 75,
+            "height": 47,
+            "depth": 23
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 863,
+        "type": 2,
+        "name": "TV 40'",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/863\/c8e66d0db0dc6fa2343693c74d97f28e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/863\/0e4a0f8cb61474fb317582c229e7985a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "15.74,11.5,44.95,0,48.63,-1.77,49,-2.21,49,-2.82,48.9,-2.89,15.77,-9.94,6.06,-11,4.85,-11.13,3.63,-11.26,2.42,-11.38,1.21,-11.5,-0.01,-11.5,-1.22,-11.39,-2.44,-11.27,-15.79,-9.88,-48.9,-3.04,-49,-2.97,-49,-2.36,-48.66,-1.92,-44.96,-0.14,-15.82,11.45",
+            "contourCut": "14.93,0,48.71,-4.39,48.86,-4.43,48.96,-4.53,49,-4.67,49,-55.72,48.96,-55.86,48.86,-55.96,48.71,-56,-48.71,-56,-48.86,-55.96,-48.96,-55.86,-49,-55.72,-49,-4.67,-48.96,-4.53,-48.86,-4.43,-48.71,-4.39,-14.98,0,7.1,0,8.32,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "7da28398cb013e8d2e206445a57ba8d8"
+              },
+              {
+                "id": 1,
+                "default": 158,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "95c6b0f87665c0dd46aa11a865ea4c49"
+              },
+              {
+                "id": 2,
+                "default": 1583,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "6056b00a00696d9b360daba0037726bb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 98,
+            "height": 56,
+            "depth": 23
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 865,
+        "type": 2,
+        "name": "TV 40'",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/865\/7613b078c063f66353361860839bc466.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/865\/1e3e57ac518bc53d3377755ad7bceb87.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "17.87,3.01,33.47,0.4,37.18,-1.31,37.52,-1.73,37.52,-2.33,37.42,-2.39,31.39,-2.44,-37.38,-2.99,-37.47,-2.92,-37.48,-2.33,-37.15,-1.9,-33.47,-0.13,-17.95,2.73",
+            "contourCut": "37.23,0,37.38,-0.04,37.48,-0.14,37.52,-0.28,37.52,-42.72,37.48,-42.86,37.38,-42.96,37.23,-43,-37.19,-43,-37.34,-42.96,-37.44,-42.86,-37.48,-42.72,-37.48,-0.28,-37.44,-0.14,-37.34,-0.04,-37.19,0,30.39,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "de4aa223f42c8faecfcf42ad1c91764e"
+              },
+              {
+                "id": 1,
+                "default": 1583,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "80ebf98c6e04ecf9d52d403f4c0b01c5"
+              },
+              {
+                "id": 2,
+                "default": 158,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "b9fce8b0fdea171011356a01607cdf99"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 75,
+            "height": 43,
+            "depth": 6
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64616,
+        "type": 2,
+        "name": "Amplifier",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64616\/3c023a825e58732de4063822ea526178.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64616\/ed8b308e7f0ef660e8d3907f143da6d6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "17.5,16.68,17.49,-12.93,17.45,-13.78,17.27,-15.3,15.88,-16.58,14.3,-16.68,12.54,-16.68,12.29,-16.68,12.04,-16.68,11.52,-16.68,10.87,-16.68,10.43,-16.68,10.32,-16.68,10.28,-16.68,-14.92,-16.59,-17.26,-15.3,-17.45,-13.78,-17.49,-12.93,-17.5,16.68",
+            "contourCut": "14.9,0,17.5,-0.9,17.5,-11.61,17.49,-11.61,-17.21,-11.61,-17.49,-11.61,-17.5,-11.61,-17.5,-0.9,-14.72,0,-13.93,0,-13.67,0,-12.19,0,11.74,0,11.95,0,14.77,0,14.87,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "blue",
+                "source": "none",
+                "hash": "38fe01b2d1aa66c2ef3aa6ff9a098cbe"
+              },
+              {
+                "id": 1,
+                "default": 1762,
+                "name": "metal",
+                "source": "bank",
+                "hash": "ee413a7ed5593fadfbf0a19f7fdb0616"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#2e2e2e",
+                "current": "#2e2e2e",
+                "name": "plastic",
+                "source": "bank",
+                "hash": "2eca4682c3c79b6afb464cae14841954"
+              },
+              {
+                "id": 3,
+                "default": 268,
+                "name": "radial",
+                "source": "bank",
+                "hash": "0523bb614966a751a18b3e18174a5263"
+              },
+              {
+                "id": 4,
+                "default": 54830,
+                "name": "shteker",
+                "source": "none",
+                "hash": "1308bf8c8a8082e23928366f104f4cb5"
+              },
+              {
+                "id": 5,
+                "default": 0,
+                "name": "display",
+                "source": "none",
+                "hash": "c83d991bd257932614ca758602e8f156"
+              },
+              {
+                "id": 6,
+                "default": 0,
+                "name": "pered",
+                "source": "none",
+                "hash": "60c7f88a07c24efa05290679235bbd02"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 35,
+            "height": 12,
+            "depth": 33
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64617,
+        "type": 2,
+        "name": "headphone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64617\/b03076350820505de33abec628a7a14e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64617\/720005a2327b993180dca55d26da9457.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "6.19,4.71,6.52,4.7,6.85,4.65,7.4,4.54,7.75,4.45,8.1,4.27,8.44,3.98,8.93,3.5,9.05,3.35,9.2,3.14,9.45,2.59,9.65,2,9.77,1.48,9.83,1,9.88,0.53,9.91,0.06,9.89,-0.41,9.85,-0.88,9.79,-1.36,9.67,-1.88,9.47,-2.48,9.22,-3.04,8.95,-3.42,8.47,-3.89,8.13,-4.2,7.77,-4.39,7.42,-4.5,6.54,-4.67,6.22,-4.69,-5.74,-4.71,-6.08,-4.69,-6.43,-4.63,-6.97,-4.52,-7.34,-4.42,-7.71,-4.23,-8.08,-3.92,-8.55,-3.45,-8.83,-3.08,-9.1,-2.52,-9.86,-0.22,-9.91,0.01,-9.86,0.24,-9.36,1.8,-9.11,2.54,-8.85,3.1,-8.57,3.47,-8.1,3.94,-7.74,4.24,-7.36,4.42,-7,4.51,-6.46,4.63,-6.11,4.68,-5.76,4.69",
+            "contourCut": "-3.36,0,3.93,-0.03,4.67,-0.12,5.1,-0.43,6.42,-2.78,7.8,-5.26,8.15,-5.89,9.86,-8.97,9.91,-9.51,9.87,-11.77,9.66,-14,9.36,-15.04,9,-15.84,8.6,-16.5,8.2,-17.09,7.69,-17.76,6.8,-18.79,6.04,-19.53,5.09,-20.27,4.04,-20.89,2.93,-21.35,1.76,-21.67,-0.67,-21.82,-1.87,-21.61,-3.03,-21.25,-4.13,-20.76,-5.16,-20.11,-6.08,-19.34,-6.82,-18.58,-7.35,-17.95,-7.88,-17.27,-8.18,-16.84,-8.56,-16.23,-8.94,-15.56,-9.28,-14.75,-9.54,-13.7,-9.91,-11.39,-9.62,-9.07,-9.51,-8.59,-5.9,-2.58,-4.57,-0.39,-4.52,-0.32,-4.09,-0.04",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#292929",
+                "current": "#292929",
+                "name": "AirPod_Max",
+                "source": "bank",
+                "hash": "4f996abf1a1bdb95d7be65b09ffa5c93"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41826,
+                "default": "#686868",
+                "current": "#686868",
+                "name": "ear_pads",
+                "source": "bank",
+                "hash": "28d568e792dfddd6f5f6e444c852f592"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41826,
+                "default": "#686868",
+                "current": "#686868",
+                "name": "net",
+                "source": "bank",
+                "hash": "6577fa057bf0d4d996c63db1c10ba8b2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ],
+          "9850": [
+            {
+              "id": "9850",
+              "name": "Computers & Gadgets",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 20,
+            "height": 22,
+            "depth": 9
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.37157800 1753219863"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3270,
+        "type": 2,
+        "name": "Digital clock",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3270\/f3c72cd17e1ebfd56c581ea24da41a90.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3270\/d4defbf46f8514a1e9b7a72bd3411ed6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "9.99,1.99,9.99,-1.99,-9.99,-1.99,-9.99,1.99",
+            "contourCut": "9.48,0,9.99,-0.12,9.99,-6,-9.99,-6,-9.99,-0.12,-9.51,0,9.3,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#1a1a1a",
+                "current": "#1a1a1a",
+                "name": "Circle001",
+                "source": "bank",
+                "hash": "29ac5896c40932ffba64956d9e2ffa90"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#f7f7f7",
+                "current": "#f7f7f7",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "96c135d6272ff2aa1a27b20bddd152f8"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#212121",
+                "current": "#212121",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "0dda541cd05057956e4a1176058cb16a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 20,
+            "height": 6,
+            "depth": 4
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "60.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2982,
+        "type": 2,
+        "name": "Tablet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/29\/2982\/d00f9273bb7f92400c5c55dcb25bc329.png"
+          },
+          "body": {
+            "package": "\/files\/products\/29\/2982\/b08a568f943188d19fe8dc4f4db3970a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-8.8,-11.92,9.120000000000001,-11.76,9.44,-10.879999999999999,9.2,11.52,8.8,11.84,-9.2,11.68,-9.52,11.28,-9.36,-11.6",
+            "contourCut": "-9.44,-0.9599999999999995,9.36,-0.8800000000000003,8.719999999999999,-0.2400000000000002,-8.8,-0.2400000000000002,-9.36,-0.5599999999999996",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "884126d181acc58a51cc7e19d0c52856"
+              },
+              {
+                "id": 1,
+                "default": 119,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "13f980ff1d7624ae4abe62076163bcd3"
+              },
+              {
+                "id": 2,
+                "default": 2984,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "3562a04d7b7bec627358d2a7ae58d819"
+              },
+              {
+                "id": 3,
+                "default": 2985,
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "bdeeb56a68c3a6151adfd8d5346fa3bc"
+              },
+              {
+                "id": 4,
+                "default": 2688,
+                "name": "mesh_4",
+                "source": "none",
+                "hash": "1750d90ca525ed356224c9504f5ab6fc"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ],
+          "9850": [
+            {
+              "id": "9850",
+              "name": "Computers & Gadgets",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio",
+          "computers"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 19,
+            "height": 1,
+            "depth": 24
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64618,
+        "type": 2,
+        "name": "Record player",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64618\/45f07728b7aa2e1f8b596d1fc3159487.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64618\/8ef8a05da1ed782a474494278eab821c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "22.31,17.58,22.45,17.56,22.53,17.47,22.56,17.34,22.56,-17.34,22.53,-17.47,22.45,-17.56,22.31,-17.58,-22.31,-17.58,-22.39,-17.56,-22.53,-17.47,-22.56,-17.34,-22.56,17.34,-22.53,17.42,-22.45,17.56,-22.31,17.58",
+            "contourCut": "20.76,0,22.53,-1.91,22.56,-2.05,22.56,-6.88,22.53,-7.02,20.64,-9.63,17.41,-12.43,15.7,-13.18,15.34,-13.18,11.72,-13.18,-21.31,-8.84,-21.68,-8.66,-22.53,-7.02,-22.56,-6.88,-22.56,-2.05,-22.53,-1.91,-20.94,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1762,
+                "name": "chrome_elements4",
+                "source": "bank",
+                "hash": "04bdf0f67fc33a31cbe5b4eb1bf9e51a"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#212121",
+                "current": "#212121",
+                "name": "corpus",
+                "source": "bank",
+                "hash": "6170b07dfc74e0fb6b0a2ceaf4caa9ae"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 45,
+            "height": 13,
+            "depth": 35
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.54421800 1751116380"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3424,
+        "type": 2,
+        "name": "Surveillance Camera",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/34\/3424\/131d5bcab35efa5a66b09f622af7d5b3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/34\/3424\/df4ae9a680931ea7677d13eddda15bda.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-0.37000000000000033,-18.376666666666665,1.9733333333333336,-18.13,4.4399999999999995,-12.086666666666666,8.263333333333335,-0.7400000000000007,8.139999999999999,2.096666666666666,6.783333333333334,3.8233333333333355,4.563333333333332,5.180000000000001,2.589999999999998,5.550000000000001,2.589999999999998,17.02,6.043333333333333,17.39,6.413333333333334,18.25333333333333,-3.0833333333333326,18.006666666666668,-2.2199999999999998,17.143333333333334,0.7400000000000007,17.02,0.6166666666666686,5.426666666666665,-0.9866666666666668,4.686666666666668,-2.7133333333333325,1.9733333333333336,-8.51,-13.566666666666668,-8.016666666666667,-15.170000000000002,-4.193333333333333,-17.143333333333334",
+            "contourCut": "-4.069999999999999,-16.033333333333335,0.8633333333333327,-15.54,7.523333333333334,-13.69,8.263333333333335,-12.579999999999998,8.139999999999999,-9.99,6.906666666666666,-8.016666666666667,5.426666666666665,-7.5233333333333325,2.466666666666666,-7.4,2.9599999999999986,-5.919999999999999,2.7133333333333343,-3.206666666666667,0.9866666666666648,-0.9866666666666668,-1.110000000000001,-0.12333333333333413,-3.6999999999999993,-0.4933333333333324,-5.673333333333333,-1.9733333333333336,-6.66,-4.3166666666666655,-6.289999999999999,-6.906666666666666,-5.303333333333333,-8.633333333333333,-7.153333333333334,-9.496666666666666,-8.263333333333334,-11.223333333333334,-8.263333333333334,-13.813333333333333,-6.66,-15.416666666666668",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1554,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9703b5d7f55e1c9e17c8616dc8cab942"
+              },
+              {
+                "id": 1,
+                "default": 1555,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "0b28a7476c589e97fc939fd1d97c421b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 17,
+            "height": 16,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "150.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1837,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1837\/aef5ffaa3f0e75d5a4cc2c2dfcd92b48.png"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1837\/33497e94edcb6852deb0231a1d5d9f10.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-7.9999999999999964,-14.66666666666666,8.666666666666668,-14.000000000000002,9.333333333333327,13.99999999999999,-9.999999999999998,13.99999999999999,-9.333333333333337,-14.000000000000002",
+            "contourCut": "-9.999999999999998,-99.33333333333333,9.333333333333327,-99.33333333333333,9.333333333333327,-0.666666666666671,-9.999999999999998,-0.666666666666671",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "42e775cdf6ca127242a83b42a4af2b8a"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "9b6348d053ab235d85b66276e932fb37"
+              },
+              {
+                "id": 2,
+                "default": 888,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "54ff957d07fd127980aa2188c9642916"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 20,
+            "height": 100,
+            "depth": 30
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 879,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/879\/ba86e1f0b0193bd9385ce9fbf6aacc89.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/879\/2b8e50c03838f373c41d4cdaaf82950c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-8.399999999999995,-15.399999999999995,9.1,-13.999999999999996,9.799999999999994,14.69999999999999,-10.499999999999998,14.69999999999999,-9.1,-14.700000000000001",
+            "contourCut": "-10.499999999999998,-104.3,9.799999999999994,-104.3,9.799999999999994,-0.7000000000000045,-10.499999999999998,-0.7000000000000045",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "8a36d66c7e2ad63c3a14d9a78482d614"
+              },
+              {
+                "id": 1,
+                "default": 888,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "83b3c66cf6d2dc89ab81688344cc474c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 21,
+            "height": 105,
+            "depth": 31
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2348,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2348\/7d28f54b35e500f003c482da72e0fd16.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2348\/84b7bf87f5edbb0c4e4b7d99dc1ee827.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-0.7066666666666653,-10.423333333333332,0.8833333333333361,-9.893333333333333,23.673333333333332,-9.716666666666667,25.439999999999998,-8.656666666666666,26.146666666666665,-7.950000000000001,26.146666666666665,10.246666666666668,-26.32333333333333,10.246666666666668,-25.97,-8.303333333333335,-24.733333333333334,-9.54,-22.083333333333336,-10.07,-1.060000000000001,-10.07",
+            "contourCut": "-15.370000000000001,-18.196666666666665,-10.953333333333333,-17.666666666666668,-7.773333333333333,-15.370000000000001,-6.183333333333332,-12.719999999999999,-6.183333333333332,-7.596666666666666,-8.479999999999999,-4.240000000000001,-12.013333333333334,-2.296666666666667,-16.60666666666667,-2.4733333333333345,-20.14,-4.770000000000001,-21.906666666666666,-7.950000000000001,-21.73,-12.896666666666667,-19.256666666666668,-16.43,-16.076666666666668,-18.02",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ccdbe5eab825c1650fba5c29d9854f37"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "1762c5ea3500748bd768b1b4977ffa4b"
+              },
+              {
+                "id": 2,
+                "default": 888,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "fd7bdc27bbba7f9480fe220233a352e2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 53,
+            "height": 20,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 893,
+        "type": 2,
+        "name": "Subwoofer",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/893\/53ba2b2e95511cde44f0881cc88c0d34.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/893\/123c5695b018d9a10f20648baa82a17b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "14.89,19.5,16.62,17.61,16.9,17.05,17,16.44,17,-14.23,16.9,-14.85,16.62,-15.4,13.9,-19.2,7.4,-19.5,-3.69,-19.5,-6.91,-19.5,-7.32,-19.5,-7.49,-19.5,-13.96,-19.2,-16.62,-15.4,-16.9,-14.85,-17,-14.23,-17,16.44,-16.9,17.05,-16.62,17.6,-14.96,19.5",
+            "contourCut": "15.28,0,16.98,-2.16,17,-5.16,14.89,-47,-14.96,-47,-17,-5.16,-16.95,-2.18,-15.27,0,-14.74,0,15.09,0,15.17,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53097,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "711f5043af297e4413ba64577f92299d"
+              },
+              {
+                "id": 1,
+                "default": 54829,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "a6f6b133f0458d705c472730b1b84165"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 34,
+            "height": 47,
+            "depth": 39
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 880,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/880\/a8ef84f55d99234717c974867e3bf606.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/880\/5e022fa4c256d83ff7ce1cedf5811b41.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "17.43,9,17.51,8.94,17.52,-8.71,17.43,-8.79,15.45,-9,-5.38,-9,-12.66,-9,-15.42,-9,-17.4,-8.79,-17.48,-8.71,-17.48,6,-17.48,8.94,-17.4,9",
+            "contourCut": "17.43,0,17.51,-0.03,17.52,-0.09,17.52,-12.77,17.51,-13.92,17.43,-14,-17.4,-14,-17.48,-13.92,-17.48,-13.42,-17.48,-0.03,-17.4,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "4755e2dd7d943972c32c9942a0f54619"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6995c0280b47bbb7811a729fbfbd8b75"
+              },
+              {
+                "id": 2,
+                "default": 1597,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "d8d75e6a878fa4d9c8cb9f29a51b60be"
+              },
+              {
+                "id": 3,
+                "default": 888,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "794974417f11cfbf65a86f3c75cc158b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 35,
+            "height": 14,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2681,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2681\/de52621896b0d7c32e34fb3b62adfdb5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2681\/973e5b4b865cc6befe831c37a33efb83.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-8.866666666666665,-13.533333333333335,8.633333333333331,-13.533333333333335,10.266666666666662,-2.7999999999999985,9.56666666666667,8.866666666666669,8.633333333333331,13.299999999999997,-8.866666666666665,13.299999999999997,-10.500000000000002,3.966666666666665,-9.8,-7.933333333333334",
+            "contourCut": "-10.500000000000002,-34.766666666666666,10.266666666666662,-34.766666666666666,10.266666666666662,-0.23333333333333484,-10.500000000000002,-0.23333333333333484",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "31b41fea14b0cb4505c659bb762e5c13"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "e3ffe72ef15d6e6a110300bb3e7b1592"
+              },
+              {
+                "id": 2,
+                "default": 887,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "f39c2ed2880051e13418bcb0aa92c800"
+              },
+              {
+                "id": 3,
+                "default": 268,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "f868c549e1c0c82ea45a0464a2db9d8a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 21,
+            "height": 35,
+            "depth": 27
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 875,
+        "type": 2,
+        "name": "Subwoofer",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/875\/d56526577e806677ca6adfc231f583a2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/875\/b83dff2b9bfded43517cb30a61023cbb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "1.03,254.52,20.54,252.6,39.3,246.91,56.58,237.68,71.74,225.26,84.17,210.12,93.41,192.85,99.11,174.11,101.03,154.62,99.11,135.13,93.41,116.39,84.17,99.12,15.25,-12.86,14.93,-13.17,14.49,-13.35,12.57,-13.82,0.47,-13.82,0.46,-13.82,-0.12,-13.82,-0.2,-13.82,-0.42,-13.82,-11.34,-13.82,-11.92,-13.82,-12,-13.82,-12.23,-13.82,-14.49,-13.35,-14.93,-13.17,-15.25,-12.86,-82.12,99.12,-91.36,116.39,-97.05,135.13,-98.97,154.62,-97.05,174.11,-91.36,192.85,-82.12,210.12,-69.68,225.26,-54.53,237.68,-37.24,246.91,-18.48,252.6",
+            "contourCut": "13.34,0,15.48,-2.26,101.03,-108.35,1.03,-108.35,-18.48,-108.35,-37.24,-108.35,-54.53,-108.35,-69.68,-108.35,-82.12,-108.35,-91.36,-108.35,-97.05,-108.35,-98.97,-108.35,-13.73,0,12.89,0,13.21,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 888,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "2288a4867a47dcc368b4567bc81a2848"
+              },
+              {
+                "id": 1,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "f5e9fb33cec6239736bdbf04cee84af3"
+              },
+              {
+                "id": 2,
+                "default": 1597,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "946c5d89b162f48d4a736a87f8f3fed5"
+              },
+              {
+                "id": 3,
+                "default": 268,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "11907a025554ee75aa52471ac6153ed3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 31,
+            "height": 35,
+            "depth": 28
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 886,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/886\/ae5d43757b23ea4bf13ae3d9328ba14d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/886\/10fda7aed2bf4bf15245658616c503ee.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "20.9,16.88,21,16.78,21,-15.31,20.71,-16.02,20.61,-16.12,-20.61,-16.12,-20.71,-16.02,-21,-15.31,-21,16.78,-20.9,16.88",
+            "contourCut": "20.9,0,21,-0.1,21,-41.9,20.9,-42,-20.9,-42,-21,-41.9,-21,-0.1,-20.9,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "8896aaf6490511a75922c669184e1f9e"
+              },
+              {
+                "id": 1,
+                "default": 1583,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "afe3c42f0312fd93025ee8a22af9798f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 42,
+            "height": 42,
+            "depth": 33
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 874,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/874\/3e3f0d30f8f58f1b5fa9bbec86d99237.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/874\/5c2260173f46293f9f33c5810b1675a7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-10.999999999999998,-11.733333333333336,11.00000000000001,-10.999999999999998,10.266666666666659,11.00000000000001,-11.733333333333336,10.266666666666659",
+            "contourCut": "-9.533333333333333,-109.26666666666667,8.800000000000008,-109.26666666666667,8.800000000000008,-0.733333333333338,-10.999999999999998,-2.200000000000002",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "5ec3c6e2122cd3f3b3a6fb12b8cd3217"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "007f89ed6ab1af49f7e20d1eeee31ccf"
+              },
+              {
+                "id": 2,
+                "default": 1597,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "ee28c7920564bd687ea00241af9bb77d"
+              },
+              {
+                "id": 3,
+                "default": 1583,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "fb8548d1defcc230fb0a8c1e0a6db8d3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 23,
+            "height": 110,
+            "depth": 23
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 892,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/892\/b727f1cc16a7821f97fe553522591ff4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/892\/85ba5e7f93885b616885f54bcefda526.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "9.47,11.5,9.85,11.46,10.14,11.34,10.34,11.13,10.46,10.84,10.5,10.46,10.5,-10.46,10.46,-10.84,10.34,-11.13,10.14,-11.34,9.85,-11.46,9.47,-11.5,-9.47,-11.5,-9.85,-11.46,-10.14,-11.34,-10.34,-11.13,-10.46,-10.84,-10.5,-10.46,-10.5,10.46,-10.46,10.84,-10.34,11.13,-10.14,11.34,-9.85,11.46,-9.47,11.5",
+            "contourCut": "8.88,0,10.5,-1.84,8.8,-104.85,8.67,-104.98,7.77,-105,-7.68,-105,-8.55,-104.98,-8.69,-104.85,-10.5,-1.84,-10.41,-1.75,-8.59,0,8.83,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1597,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c9ac391e1be5b4867b007a006a8cfab3"
+              },
+              {
+                "id": 1,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "5f07a9b6d60ad871b37dfa1957e32159"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 21,
+            "height": 105,
+            "depth": 23
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 896,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/8\/896\/0b0aeeb9c782b23da8b96441b43b7e47.png"
+          },
+          "body": {
+            "package": "\/files\/products\/8\/896\/e47a7f026fe6a3b7298489ca6d18de5b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-2.559999999999995,-12.160000000000004,7.039999999999992,-9.599999999999998,10.879999999999995,-3.8400000000000034,9.600000000000009,5.760000000000005,1.9200000000000017,11.52000000000001,-6.399999999999999,9.600000000000009,-11.52,3.20000000000001,-10.240000000000002,-7.040000000000003",
+            "contourCut": "-7.040000000000003,-95.36,6.399999999999999,-95.36,6.399999999999999,-63.35999999999999,0.6399999999999935,-63.35999999999999,1.9200000000000017,-3.8400000000000034,10.240000000000002,-0.6400000000000041,-9.599999999999998,-1.2799999999999976,-1.2799999999999976,-4.479999999999997,-1.2799999999999976,-63.35999999999999,-7.040000000000003,-63.35999999999999",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "f025fd404c6f833839e4164b52d89918"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "a5fac70ba4986290558030d274887b51"
+              },
+              {
+                "id": 2,
+                "default": 1583,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "0ab0d1a2970395fafee082f0a0c90c64"
+              },
+              {
+                "id": 3,
+                "default": 1597,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "3038d388792b60cb52e166971f79e1ed"
+              },
+              {
+                "id": 4,
+                "default": 1554,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "7c3b26899ccb20c7004f506f95076f62"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 24,
+            "height": 96,
+            "depth": 24
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2675,
+        "type": 2,
+        "name": "Speaker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/26\/2675\/bd62ef712bcb7e2a1a05f605d74b5c84.png"
+          },
+          "body": {
+            "package": "\/files\/products\/26\/2675\/d6379376e96b4af96217534d8eb1ba5f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-8.233333333333334,-15.200000000000003,7.600000000000007,-15.200000000000003,7.600000000000007,14.566666666666666,-8.233333333333334,14.566666666666666",
+            "contourCut": "-9.499999999999998,-94.36666666666666,8.86666666666666,-94.36666666666666,8.86666666666666,-3.166666666666666,-9.499999999999998,-3.166666666666666",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "47c324616d058b35027101cfef81ad83"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "80dbc5cdeb41dd3794a8b185cc227d94"
+              },
+              {
+                "id": 2,
+                "default": 887,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "393760ff301c9fd5c368da8a81cc7ea1"
+              },
+              {
+                "id": 3,
+                "default": 268,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "0cbc94c4563131b98940c4af16a225bb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "34": [
+            {
+              "id": "34",
+              "name": "TV \/ Video \/ Audio",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tv & video & audio"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 19,
+            "height": 95,
+            "depth": 30
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -300,7 +300,9 @@ const HelperGroup = () => {
         dispatch(removeQuickPanelAll());
     }
 
-    useEffect(() => info_bottom?.current && setInfoBottomPanelWidth(info_bottom?.current.offsetWidth), [info_bottom]);
+    useEffect(() => {
+        info_bottom?.current && setInfoBottomPanelWidth(info_bottom?.current.offsetWidth)
+    }, [info_bottom]);
 
     return (
         <motion.div

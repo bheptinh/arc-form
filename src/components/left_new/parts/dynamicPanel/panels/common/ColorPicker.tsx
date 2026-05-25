@@ -15,6 +15,7 @@ import FavoriteStarIcon from "../../../../../common/FavoriteStarIcon";
 
 import HoverComponent from "../../../controlPanel/components/HoverComponent";
 import Navigation from '../../navigation/Navigation';
+import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 
 const useStyle = createUseStyles({
     planner_catalog_cont:{
@@ -737,7 +738,8 @@ const ColorPicker = props => {
 
     let copyMaterial = e => R2D.CopyPaste.copyMaterial({id: text.current.value, addMaterial: selectedMaterialId});
 
-    useEffect(async () => {
+    // TODO: optimize this, maybe move some code to onClickMaterial and onColorPickedMouseUp
+    useEffectAsync(async () => {
         setStyleAnimation({ transform: "translateX(0%)" });
         if(props.onlyColor) {
             setPreloaderStatus(true);
@@ -772,7 +774,9 @@ const ColorPicker = props => {
         return () => planner.scene.removeEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
     }, []);
 
-    useEffect(() => setIsInFavorites(userFavorites?.find(i => i?.id == selectedMaterialId && i?.addData == currentColor) ? true : false), [selectedMaterialId, currentColor])
+    useEffect(() => {
+        setIsInFavorites(userFavorites?.find(i => i?.id == selectedMaterialId && i?.addData == currentColor) ? true : false)
+    }, [selectedMaterialId, currentColor])
 
     useEffect(() => {
         if(props.onlyColor) {
@@ -807,9 +811,11 @@ const ColorPicker = props => {
         }
     }, [materialsArrayData, prevContext, currentColor, selectedMaterialId]);
 
-    useEffect(() => isPreviewLoaded && colorPrev.current && setPrevContext(colorPrev.current.getContext('2d')), [isPreviewLoaded]);
+    useEffect(() => {
+        isPreviewLoaded && colorPrev.current && setPrevContext(colorPrev.current.getContext('2d'))
+    }, [isPreviewLoaded]);
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         if(props.onlyColor) return setIsPreviewLoaded(true);
         setPreloaderStatus(true);
         setIsPreviewLoaded(false);
@@ -826,9 +832,13 @@ const ColorPicker = props => {
         setPreloaderStatus(false);
     }, [selectedMaterialId, materialsArrayData]);
 
-    useEffect(() => sliderCtx && drawSlider(sliderCtx, sliderWidth, palHeight), [sliderCtx]);
+    useEffect(() => {
+        sliderCtx && drawSlider(sliderCtx, sliderWidth, palHeight)
+    }, [sliderCtx]);
 
-    useEffect(() => palCtx && drawPalette(palCtx, palWidth, palHeight), [palCtx]);
+    useEffect(() => {
+        palCtx && drawPalette(palCtx, palWidth, palHeight)
+    }, [palCtx]);
 
     useEffect(() => {
         if(props.isForLightObjects) {
@@ -852,8 +862,12 @@ const ColorPicker = props => {
         return () => window.removeEventListener('mouseup', mouseUpListener);
     }, [mouseDown]);
 
-    useEffect(() => setUserFavorites(user.data.favorites?.items || []), [isLogged]);
-    useEffect(() => currMatMesh && drawColorPrev((materialsArrayData.some(i => selectedMaterialId == i.id) && currentColor) || "#aaaaaa"), [currMatMesh]);
+    useEffect(() => {
+        setUserFavorites(user.data.favorites?.items || [])
+    }, [isLogged]);
+    useEffect(() => {
+        currMatMesh && drawColorPrev((materialsArrayData.some(i => selectedMaterialId == i.id) && currentColor) || "#aaaaaa")
+    }, [currMatMesh]);
 
     return (
         <div className={classes.planner_catalog_cont} style={styleAnimation}>

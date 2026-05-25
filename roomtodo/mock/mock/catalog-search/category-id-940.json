@@ -1,0 +1,1815 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "25",
+    "items": [
+      {
+        "id": 65051,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65051\/8ac547205df3a476668ec75fe0da5d7b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65051\/c53b82429b5e637371f97c6afeb25ec5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65052,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65052\/3cb702869b753026267040a34802b049.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65052\/1284328246a9c011fd04820b247fbdf6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65053,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65053\/7e290865946bf30b98a8165427223444.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65053\/b54e6f39196023bbc107bdc3c9843b1d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65054,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65054\/a673050e880c51152fd204332be8fb06.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65054\/c0040175a5854412149e02bc0736247f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65055,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65055\/540eb2ac67595ffa82330f1a6651a647.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65055\/a2852b062eff27968232ee75637ddcc2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65056,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65056\/278da1093af20ac6d21038c12404e432.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65056\/a5b3595d2c6b1f9b4fd3f705c979049d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65057,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65057\/be3347450515203f79a5e969d91e16ac.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65057\/38d8c1c7b2b910fb7425e82c186aa99a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65058,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65058\/d2a408685569ae7872f4e9e3e8aa5b42.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65058\/009ab6743c47eb3fa5b191fe919feaae.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65059,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65059\/8b0b499e306d751f2af5eb3a75e0d20b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65059\/544e5f9f2e94b579c566800c35bd6900.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65060,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65060\/1470ad72e98ebd728a8c7d9a0a4ccb1b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65060\/db39ea1fef3728016496ee50caec13c5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65061,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65061\/eaaa97fbbc3cd56f34a89c388ce77e15.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65061\/23041b33c0789d8e27caf77691f87056.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65062,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65062\/a47aacf6667720a2268ab459d1b748ee.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65062\/3bdf2b0461685ae4b5ba86bd7ddfee01.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65063,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65063\/7e84ea7bd6dcd09188d1746a4f25cece.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65063\/1dd71a335664f05deef1abca6ab983dd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65064,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65064\/7ff211532628211156311e471f297b14.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65064\/4ca8683d4f32d32b98bfcd61c30dc323.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65065,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65065\/62735825aa94ddbbaa1cbaa96da1e747.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65065\/dbb2d4542557133b94ff27efadca89b1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65066,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65066\/c440608c7bb37136a3496bfbb62d546e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65066\/ed8996394b4dee935d829ff831716c98.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65067,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65067\/47e614b39fc4fc8b3ca5416130f6d7d6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65067\/3cd5b3b4f209eb570b5acc304bd9f149.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65068,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65068\/3f352bbcce50f0982c8acf212d2c4292.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65068\/121ee5450e921661d36c60d8d86bc965.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65069,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65069\/e3f2bf036eb18a0b7a4556b15f323e83.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65069\/b983b14f2d9c23f8972a5c6325d3b059.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65070,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65070\/af2c83c40daed58038df9e2defb23457.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65070\/18ba5b8324c45aeeda5f6f160f44622c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65071,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65071\/b5636f9a47b8b23da881ee8cd3a79a99.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65071\/223700e4dcce85dcba550fc584547079.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65072,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65072\/7eb0516f4e34195f15358245b9f5c11d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65072\/767c78613d7af63344d6628dce65a887.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65073,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65073\/51ee028e719037afc8caad8d01bfc2e0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65073\/46bb68d7c72e1996f747dcc860b41f1c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ],
+          "939": [
+            {
+              "id": "939",
+              "name": "3D",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65074,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65074\/a999378e255f4ecfb86867b2b59e982a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65074\/aa17a6e814a2c2436e59604eeffe4ac0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 65075,
+        "type": 1,
+        "name": "Photo wallpaper",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/650\/65075\/a3325d425e071e9e678c38572e61ed1b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/650\/65075\/a82c7a4aee21a7c3fea516d37123a4c8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "940": [
+            {
+              "id": "940",
+              "name": "Kids",
+              "parentId": "935"
+            },
+            {
+              "id": "935",
+              "name": "Wall mural",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 393,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -9,6 +9,7 @@ import {
     selectDynamicPanelStatus
 } from "../../redux/features/control/controlPanelSlice";
 import {selectTranslation} from "../../redux/features/language/languageSlice";
+import { useEffectAsync } from '../../utils/useEffectAsync';
 
 const useStyle = createUseStyles({
     item_more_info_content_wrap:{
@@ -150,7 +151,7 @@ const ModalMoreInfo = props => {
     let currOS = R2D.controller.getCurrentOS();
     let isCurrDeviceAPhone = currOS == "iOS" || currOS == "Android";
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         let htmlElem;
         let attributesArray = props.productElemHover.attributes && Object.values(props.productElemHover.attributes);
         let elemColors, attributesBrand, elemWidth, elemDepth, elemHeight, attributesStartingFrom, attributesSeatingHeight, attributesCurrency, othersAttributes;

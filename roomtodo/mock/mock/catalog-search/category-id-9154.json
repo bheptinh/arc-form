@@ -1,0 +1,3054 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "30",
+    "items": [
+      {
+        "id": 192,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/192\/059b96697cefc55d1f6be3d920ea2a2e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/192\/ce935520c492e466ee6aaa4c14224da1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "26.400000000000002,-20.160000000000004,27.359999999999992,-16.32,28.799999999999994,-16.32,28.799999999999994,19.680000000000007,-29.279999999999998,19.680000000000007,-29.279999999999998,-14.879999999999999,-27.840000000000003,-14.879999999999999,-27.840000000000003,-16.32,26.400000000000002,-16.32",
+            "contourCut": "-29.279999999999998,-71.52,28.799999999999994,-71.52,28.799999999999994,-0.4800000000000031,-29.279999999999998,-0.4800000000000031",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "6e2e2f07c2bcbf247d6bbdfe0b9adc16"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7193895980299c4ac74cab57e4ccf969"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "0b221ebf034e6a20b4bb8b6fb7ef4789"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 59,
+            "height": 72,
+            "depth": 40
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 199,
+        "type": 2,
+        "name": "Corner cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/199\/59a0ebec706112a73fda9664a3257204.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/199\/5650f98d9531b938beef5bdd828e2c45.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-30.240000000000002,-30.240000000000002,7.200000000000006,-29.279999999999998,25.92000000000001,-10.080000000000002,28.32,-11.04,28.32,-7.6800000000000015,29.280000000000005,29.280000000000005,-30.240000000000002,29.280000000000005",
+            "contourCut": "-30.240000000000002,-71.52,29.280000000000005,-71.52,29.280000000000005,-0.4800000000000031,-30.240000000000002,-0.4800000000000031",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "d9dd0f9e795edc38919aa995efa80fe3"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "20e8542e63ba3852c89dbd496cc7f052"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "889129971148f88dc7f102e19c1b1bbb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 72,
+            "depth": 60
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 193,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/193\/5407c53396984d99f0a225cfad7bb202.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/193\/a9e40159abebda209e8158c0a4912bf6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-20.160000000000004,-20.160000000000004,-19.200000000000003,-16.32,22.08,-16.32,22.08,19.680000000000007,-22.560000000000002,19.680000000000007,-22.560000000000002,-16.32,-20.160000000000004,-16.32",
+            "contourCut": "-22.560000000000002,-71.52,22.08,-71.52,22.08,-0.4800000000000031,-22.560000000000002,-0.4800000000000031",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "7e9cc756e2c83651ef629e14126d42fd"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "4fdacbf3959f6487e925ecaa0cdc1f7e"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "bdaed181bf028f934238f54f344de61a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 45,
+            "height": 72,
+            "depth": 40
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 191,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/191\/fa6344cba2915b1b8f0eb9bc5a2d61ad.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/191\/63655e4caaf3f18110883271b2e623b6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-27.840000000000003,-20.160000000000004,-26.879999999999995,-16.32,28.799999999999994,-16.32,28.799999999999994,19.680000000000007,-29.279999999999998,19.680000000000007,-28.8,-16.32",
+            "contourCut": "-29.279999999999998,-71.52,28.799999999999994,-71.52,28.799999999999994,-0.4800000000000031,-29.279999999999998,-0.4800000000000031",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "60e9ae8ea1f9d288f0735f80741318ea"
+              },
+              {
+                "id": 1,
+                "default": 183,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "fb6b7983c855b48a3fc3a678584827a0"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "988ec4a5aa2482f76fb0287080eb7aa9"
+              },
+              {
+                "id": 3,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "7f5650e9326c4ef7a2a87188f6b7656b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 59,
+            "height": 72,
+            "depth": 40
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 185,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/185\/19717b75953ebe0331b7e829a79fa7eb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/185\/599fd54eb0be4292247d151ea7c0bbfa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-21.12,-20.160000000000004,-20.160000000000004,-16.32,22.08,-16.32,22.08,19.680000000000007,-22.560000000000002,19.680000000000007,-22.560000000000002,-16.32,-21.12,-16.32",
+            "contourCut": "-22.560000000000002,-71.52,22.08,-71.52,22.08,-0.4800000000000031,-22.560000000000002,-0.4800000000000031",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "79702e4ccff05c0f3490429207a5a460"
+              },
+              {
+                "id": 1,
+                "default": 183,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7b24c3ae85da72f78dc7ff93e080351a"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "428714f9b4a91b38e133bb4f467b8254"
+              },
+              {
+                "id": 3,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "0087f6c515cf34b61be9f7f7e88d1847"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 45,
+            "height": 72,
+            "depth": 40
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3141,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3141\/f4264f9d1dad579cf79f89cd3e741084.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3141\/b38430b797ff5aeac96c48441aecaec9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "29.9,18.5,30,18.4,30,-16.4,29.86,-18.4,29.76,-18.5,29.69,-18.5,-29.59,-18.5,-29.7,-18.5,-29.8,-18.4,-30,-16.4,-30,18.4,-29.9,18.5,-27.99,18.5,28.07,18.5,28.27,18.5,29.87,18.5",
+            "contourCut": "29.9,0,30,-0.1,30,-91.23,29.97,-124.9,29.87,-125,-29.79,-125,-29.89,-124.9,-30,-91.23,-30,-0.1,-29.9,0,-28.1,0,28.1,0,28.3,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2924,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "fa024b86461636b0cc4f108747610756"
+              },
+              {
+                "id": 1,
+                "default": 55361,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "48040de0935dde3669bb86d6849fc812"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 125,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3113,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3113\/4c2791d8b66abf8ba396e03eae3726d2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3113\/3741ecf475e11c02baa752a3004d5adc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "35,24,35,-19.5,34.82,-21.17,34.78,-21.34,34.68,-21.44,29.93,-24,-29.41,-24,-34.57,-21.44,-34.67,-21.34,-34.7,-21.18,-35,-19.5,-35,24",
+            "contourCut": "35,0,35,-104,33.06,-104,-35,-104,-35,-65.85,-35,0,-32.71,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "2e122410ca5367e4cc02b32552400357"
+              },
+              {
+                "id": 1,
+                "default": 54826,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "1c192ad9f484f3bd5749b771665130f7"
+              },
+              {
+                "id": 2,
+                "default": 55153,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "48d6aae69b031192f02a83b7e6a6ec9b"
+              },
+              {
+                "id": 3,
+                "default": 1610,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "f8b6fa3a941efc7a53be699dc690fd41"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 70,
+            "height": 104,
+            "depth": 48
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "146.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3224,
+        "type": 2,
+        "name": "Wall cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3224\/977782c2b8c5a925412418888c4eb331.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3224\/bcbe804b58c2f06684527be5cf9a8128.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "45.4,18.5,45.5,18.4,45.5,-16.4,45.5,-16.8,45.5,-18.4,45.4,-18.5,-45.01,-18.5,-45.2,-18.5,-45.3,-18.4,-45.5,-16.4,-45.5,18.4,-45.4,18.5,-43.59,18.5,43.59,18.5,43.79,18.5",
+            "contourCut": "45.4,0,45.5,-0.1,45.5,-91.23,45.5,-124.9,45.4,-125,-45.4,-125,-45.5,-124.9,-45.5,-91.23,-45.5,-0.1,-45.4,0,-43.59,0,43.59,0,43.79,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2924,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "7449b5e307e7d7ae484e245158e31992"
+              },
+              {
+                "id": 1,
+                "default": 55361,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "e8dd76b3f2a5b93506d0be90cf68e77a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 91,
+            "height": 125,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3177,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3177\/115c7f2084ba838b6f4cb2b70be06b62.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3177\/07d9dbe3d8259102c354ed3a5a41d9ad.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-14.16666666666666,-18.333333333333325,13.333333333333336,-18.333333333333325,13.333333333333336,17.49999999999999,-14.16666666666666,17.49999999999999",
+            "contourCut": "-14.16666666666666,-124.16666666666666,13.333333333333336,-124.16666666666666,13.333333333333336,-0.8333333333333387,-14.16666666666666,-0.8333333333333387",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2924,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "99c92cec546cbb49d92880947955881c"
+              },
+              {
+                "id": 1,
+                "default": 55361,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "cab9e521749c94b12bbf2ddce79e84fa"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 29,
+            "height": 125,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3288,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3288\/b07b8e449ffd348bcd7c549b488cc841.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3288\/8a1371edffd792f37b76ae137b186a66.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "48.4,48.5,48.5,48.4,48.5,13.6,48.36,11.6,-11.42,-48.2,-11.52,-48.3,-13.52,-48.5,-48.38,-48.5,-48.48,-48.4,-48.5,13.6,-48.5,48.4,-48.4,48.5,-46.49,48.5,46.56,48.5,46.76,48.5,48.36,48.5",
+            "contourCut": "48.4,0,48.5,-0.1,48.5,-91.23,48.47,-124.9,48.36,-125,-48.29,-125,-48.38,-125,-48.48,-124.9,-48.5,-91.23,-48.5,-0.1,-48.4,0,-46.6,0,46.6,0,46.8,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2924,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "987349712b629e4492de9d4db0e492fb"
+              },
+              {
+                "id": 1,
+                "default": 55361,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "43b8efb0c797f7f663098046de25b30c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 97,
+            "height": 125,
+            "depth": 97
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3289,
+        "type": 2,
+        "name": "Wall Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3289\/e892490546eacbf129dcbbbce281d68f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3289\/097c926a2e8b171a73a3a8b456a93cd3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "63.4,63.5,63.5,63.4,63.5,28.74,63.5,26.74,63.4,26.64,-26.63,-63.3,-28.63,-63.5,-63.4,-63.5,-63.5,-63.4,-63.5,63.4,-63.5,63.5,61.6,63.5,61.8,63.5",
+            "contourCut": "63.4,0,63.5,-0.1,63.5,-91.23,63.5,-124.9,63.4,-125,61.8,-125,-63.5,-125,-63.5,-1.8,-63.5,-0.1,-63.5,0,61.6,0,61.8,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2924,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "707826c5a4ec954e57076a80bcf49599"
+              },
+              {
+                "id": 1,
+                "default": 55361,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7b89ff278e184ce2fbbc0470c6cc1ea0"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 127,
+            "height": 125,
+            "depth": 127
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1706,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/17\/1706\/10900fa2d54e6bc99e1f269e8f095c47.png"
+          },
+          "body": {
+            "package": "\/files\/products\/17\/1706\/a9b3c8a3a6d70fba3f9c5950bc850874.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "28.5,18.72,28.5,-13.89,28.34,-14.96,26.97,-15.74,3.68,-18.28,-3.16,-18.28,-27.13,-15.74,-28.5,-14.96,-28.5,-13.96,-28.35,18.72,-28.3,18.72,0.1,18.72",
+            "contourCut": "28.49,0,28.5,-4.15,28.5,-89.78,28.5,-91.13,28.5,-91.98,28.49,-92,-27.37,-92,-28.33,-92,-28.48,-92,-28.5,-91.93,-28.5,0,-27.38,0,0.07,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "8ff3a857f027736fdd931c4ee2451efc"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "855d69318223a7ee5b3fe45a512cd444"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "52279097ce0c7bb0206ad888f981b166"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 57,
+            "height": 92,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "110.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1704,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/17\/1704\/0264145f47611be546eb85dce03b49ab.png"
+          },
+          "body": {
+            "package": "\/files\/products\/17\/1704\/19171ff92754d28cce758866ef1781e5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-23.459999999999997,-18.400000000000002,-21.62,-17.020000000000003,-22.08,-15.64,25.3,-14.720000000000002,25.759999999999998,17.94,-26.22,17.94,-25.3,-15.179999999999998,-23.000000000000004,-16.56",
+            "contourCut": "-25.759999999999998,-68.53999999999999,25.3,-68.53999999999999,25.759999999999998,-0.46000000000000296,-25.759999999999998,-0.9199999999999983",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c3890ca2e76d22f7605fceaf625e817b"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "f1b4e65e7562e3fe21aef3197c6c4764"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a0ee8233a8ca4e683885ef5202e79b8f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 52,
+            "height": 69,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1703,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/17\/1703\/63caaf3cb5fab293647d159667d2722d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/17\/1703\/98780801c503183c960465ff1d28c239.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-20.24,-18.400000000000002,-18.400000000000002,-17.020000000000003,-18.86,-15.64,28.060000000000006,-15.179999999999998,28.52,17.94,-28.980000000000004,17.94,-28.980000000000004,-14.26,-22.54,-13.799999999999997,-22.54,-15.179999999999998,-20.24,-15.64",
+            "contourCut": "-28.980000000000004,-68.53999999999999,28.52,-68.53999999999999,28.52,-0.46000000000000296,-28.980000000000004,-0.46000000000000296",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "47ee24750fcc2a51e93ae9562ed73ca2"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "96ff853db1559e85fe884a78c02f6e2a"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "358310cd13a4cfa226c58883d9257313"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 58,
+            "height": 69,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1702,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/17\/1702\/82e4a5b8c41ece28474b305fdbe0bd5d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/17\/1702\/6d186c7723a8590bec09890e3ad9f7fa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "31,18.5,31,17.39,31,-13.79,30.86,-14.76,28.52,-18.2,28.05,-18.44,27.56,-18.5,-27.66,-18.5,-28.18,-18.44,-28.57,-18.2,-30.96,-14.76,-31,-13.78,-31,18.43,-30.99,18.5",
+            "contourCut": "30.86,0,31,-0.02,31,-35.79,31,-36.87,30.85,-37,-30.97,-37,-30.99,-36.87,-31,-1.44,-31,-0.01,-30.96,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "aa532e7281c543c0dd039c7f0c97fcd1"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6529ceac126a976dac42d4306328ee32"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a3d748470d3896fa8e04d49f7ba1205c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 62,
+            "height": 37,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "162.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1701,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/17\/1701\/0bf5560b037fb62b7ac6a49132d23434.png"
+          },
+          "body": {
+            "package": "\/files\/products\/17\/1701\/966590a2832d6b7a5805d7629801be55.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-11.71,18.5,12.7,18.4,13,18.39,13,18.02,12.89,-15.4,10.23,-18.28,9.79,-18.48,9.26,-18.5,8.83,-18.4,-2.08,-12,-3.41,-11.16,-4.66,-10.26,-5.84,-9.29,-6.97,-8.22,-7.98,-7.12,-8.94,-5.92,-9.74,-4.75,-10.52,-3.42,-11.11,-2.2,-11.65,-0.86,-12.06,0.46,-12.19,1,-12.93,5.49,-13,8.33,-13,15.05,-12.93,17.88,-12.39,18.5",
+            "contourCut": "12.89,0,13,-1.34,13,-109.95,12.89,-111,-12.21,-111,-12.31,-111,-12.39,-110.98,-12.93,-110.1,-13,-106.36,-13,-4.67,-12.93,-0.92,-12.39,-0.05,-12.31,0,-7.94,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "619ac1b42596b1ff4febc6df289ae367"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "f02812bde7a5e4c64fab1de4e2741adc"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "7a6da97830a1837f86355b04d986c8a8"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 26,
+            "height": 111,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1700,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/17\/1700\/acd5b265f04ff7b9031821e49018a574.png"
+          },
+          "body": {
+            "package": "\/files\/products\/17\/1700\/cc3fd96f05414337ce194c66a6ffdece.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-11.71,18.5,12.7,18.4,13,18.39,13,18.02,12.89,-15.26,10.28,-18.28,9.83,-18.48,9.31,-18.5,8.87,-18.4,8.38,-18.11,-2.08,-11.87,-3.41,-11.04,-4.66,-10.14,-5.84,-9.17,-6.97,-8.11,-7.98,-7.01,-8.94,-5.82,-9.74,-4.66,-10.52,-3.33,-11.11,-2.12,-11.65,-0.77,-12.06,0.54,-12.19,1.07,-12.93,5.55,-13,8.37,-13,15.06,-12.93,17.88,-12.39,18.5",
+            "contourCut": "12.89,0,13,-1.34,13,-109.95,12.89,-111,-12.21,-111,-12.31,-111,-12.39,-110.98,-12.93,-110.1,-13,-106.36,-13,-4.67,-12.93,-0.92,-12.39,-0.05,-12.31,0,-7.94,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55344,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "4dbc7862fb43a17a6bec99451aa85c5e"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "e58f364afaf6c1b0592f4528cfc2d709"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 26,
+            "height": 111,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 208,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/208\/a9df4d6261d1f2f9d3833a343347cd74.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/208\/9fdfa2c9b509c70725808f7973fb6188.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "29,18.5,29,16.53,28.97,-13.83,28.95,-14.95,27.22,-15.54,-19.25,-18.5,-19.78,-18.44,-29,-14.95,-29,18.5,20.31,18.5",
+            "contourCut": "28.97,0,29,-110.48,28.95,-111,-29,-111,-29,-68.96,-28.91,-0.18,-28.79,-0.06,-22.78,0,28.41,0,28.95,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "becea1257aa6a146c9af47ceeacabb4a"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "d11286f7247cc634d796a550a99c7186"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "f3e17a18ee7e9f74197d10c4b5b572a1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 58,
+            "height": 111,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 206,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/206\/02bf294ae66841a11a9182e68616f8a8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/206\/d1842bed42289d8bdce289a6016a328a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "15.72,18.53,15.72,-14.28,15.64,-14.6,14.52,-15.36,-12.76,-18.47,-13.27,-18.4,-13.72,-18.17,-14.1,-17.4,-15.27,-14.61,-15.28,-14.57,-15.28,18.53,-15.25,18.53,15.6,18.53",
+            "contourCut": "15.64,0,15.72,-33.66,15.72,-34.69,15.64,-71.38,15.55,-112,-15.24,-112,-15.28,-112,-15.28,-110.57,-15.27,-71.48,-15.25,-0.25,-15.22,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "957bf5403739bd62ec8cddd062ce03bb"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "40f30a4966f0797fbb1fc51e43f5222b"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "c464ee7f44580c5bef1de0abec43c990"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 31,
+            "height": 112,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "129.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 205,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/205\/b9e0081e5d741c55b85ba65483070b84.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/205\/a704a9ecae5bb5f44a9f262c398a9098.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "8.13999999999999,-27.380000000000003,10.359999999999992,-21.46,25.900000000000006,-5.179999999999996,26.64,26.64,-28.119999999999997,25.900000000000006,-28.119999999999997,-26.64",
+            "contourCut": "-28.119999999999997,-110.25999999999999,27.379999999999992,-110.25999999999999,27.379999999999992,-0.7400000000000048,-28.119999999999997,-0.7400000000000048",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55344,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "97d1a21d607b4ed674df482407905c71"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "275f9d6b7b4cf02c64e1f9da9d114c39"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 56,
+            "height": 111,
+            "depth": 55
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 204,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/204\/0569e63406d587181ea07a18d3fc6ee5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/204\/7b92f1538f195a3cdebfcd0530dc5898.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "28.5,18.72,28.5,-13.89,28.35,-14.96,27.29,-15.74,3.68,-18.28,-3.16,-18.28,-27.4,-15.74,-28.5,-14.96,-28.5,-13.96,-28.35,18.72,28.49,18.72",
+            "contourCut": "28.49,0,28.5,-131.78,28.35,-132,-0.19,-132,-28.45,-132,-28.5,-92.64,-28.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55344,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c20cd050cbd6602b4f48c15939bf07ae"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "db6eb123713a5ec6bfc6669837d06fb6"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 57,
+            "height": 132,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "109.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 203,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/203\/156b55ec6fffb3a68d3cf68a6d9879f7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/203\/939d9cf3dba543984990d48495825adf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-7.399999999999999,-17.760000000000005,-5.920000000000001,-14.799999999999997,24.419999999999998,-14.799999999999997,25.900000000000006,-17.760000000000005,26.64,-14.060000000000004,28.120000000000008,17.02,-28.119999999999997,17.02,-26.64,-2.9599999999999946,-16.279999999999994,-12.579999999999995,-6.6600000000000055,-16.279999999999994",
+            "contourCut": "-28.86,-110.25999999999999,27.379999999999992,-110.25999999999999,27.379999999999992,-0.7400000000000048,-28.86,-0.7400000000000048",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "131428ad5ee651cdb28952efd546952c"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "1eb3566293debed08cdd16cf499a1478"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "c4288caa5e1833d482569bb08566a0fd"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 57,
+            "height": 111,
+            "depth": 36
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 202,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/202\/0b9e532355ee072e3b4d77396a0ed8b2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/202\/8222809362e8a81349c05ec78cc3456d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-28.86,-18.499999999999996,-27.380000000000003,-15.540000000000001,-3.6999999999999993,-17.02,-2.9599999999999946,-17.02,1.4800000000000095,-15.540000000000001,2.9599999999999946,-18.499999999999996,2.220000000000002,-15.540000000000001,26.64,-15.540000000000001,28.120000000000008,-18.499999999999996,27.379999999999992,-15.540000000000001,30.34000000000001,-14.799999999999997,30.34000000000001,17.75999999999999,-31.080000000000002,17.75999999999999,-30.34,-15.540000000000001,-28.119999999999997,-17.02",
+            "contourCut": "-31.080000000000002,-110.25999999999999,30.34000000000001,-110.25999999999999,30.34000000000001,-0.7400000000000048,-31.080000000000002,-0.7400000000000048",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "192ae8c87d78051d738825d139e90e02"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "d5b4020cbfaa393abd5e5ac3a676038d"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "6b9ee8f2b24ed5498c6cb014dfbf3241"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 62,
+            "height": 111,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 200,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/200\/a5f1ef068d23f746fddbe0b2f2f83a1a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/200\/9a9e41b7032ecad8a14d5a87cd29c3da.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "31.5,18.63,31.5,-13.29,31.5,-14.29,30.29,-15.08,3.09,-18.31,2.56,-18.37,-2.98,-18.37,-3.52,-18.31,-30.45,-15.08,-31.5,-14.29,-31.5,-13.29,-31.5,18.63",
+            "contourCut": "31.5,0,31.5,-40,0.01,-40,-31.5,-40,-31.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55344,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "2ef03bcef3f2ffbed9eaa0438fc8a112"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "be928f4c5b27719fcff26510ca1b1603"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 63,
+            "height": 40,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "201.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1705,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/17\/1705\/bc2ac4135973356d582831d6c11b4381.png"
+          },
+          "body": {
+            "package": "\/files\/products\/17\/1705\/3e67d2e8c68fb85a69f414a0c7901388.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "28.5,18.72,28.5,-13.89,28.35,-14.96,27.29,-15.74,3.68,-18.28,-3.16,-18.28,-27.4,-15.74,-28.5,-14.96,-28.5,-13.96,-28.35,18.72,-28.3,18.72,0.1,18.72",
+            "contourCut": "28.49,0,28.5,-4.18,28.5,-90.39,28.5,-130.96,28.5,-131.81,28.35,-132,-0.05,-132,-0.19,-132,-28.45,-132,-28.5,-92.55,-28.5,0,-27.38,0,0.07,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "557a22c831dc27221443bb1d4333ee46"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "ee100f4bef1a0282f3c418c8db02c677"
+              },
+              {
+                "id": 2,
+                "default": 617,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "80e3a9cbd77449734bd4b90e3376ee50"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 57,
+            "height": 132,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "109.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1699,
+        "type": 2,
+        "name": "Shelf for plates",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1699\/e26c8259975d7cf742e7e76c71f84685.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1699\/0bb34fea23af4a073567de5aabb1f7cc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-31.053333333333335,-16.093333333333334,30.826666666666668,-16.093333333333334,30.826666666666668,15.866666666666664,-31.053333333333335,15.866666666666664",
+            "contourCut": "-31.053333333333335,-33.77333333333333,30.826666666666668,-33.77333333333333,30.826666666666668,-0.22666666666666813,-31.053333333333335,-0.22666666666666813",
+            "materials": [
+              {
+                "id": 0,
+                "default": 617,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "e8a4e76c1434c61455615d51226781c4"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 62,
+            "height": 34,
+            "depth": 32
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "130.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2993,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/29\/2993\/e51b64c97cf65d84943fe354914d95a1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/29\/2993\/1f12f9ebd67080981e0ea2c23b57f83c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "60,21,60,19,60,-19,60,-21,0.02,-21,-59.96,-21,-60,-19.07,-60,20.99,-59.96,21,0.02,21",
+            "contourCut": "60,0,60,-64.94,59.96,-65,-0.02,-65,-60,-65,-60,-0.03,-59.96,0,0.02,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 613,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "56bd9b45adc09a11d682456d9916edb3"
+              },
+              {
+                "id": 1,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "2c458b2d03918960bee21789ec4ef169"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9888": [
+            {
+              "id": "9888",
+              "name": "Dressers, Consoles, vanities",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 65,
+            "depth": 42
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3133,
+        "type": 2,
+        "name": "Shelf",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3133\/df629b27b878f4b9ed33a06888d5fdac.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3133\/0d638240d85bbcf44d5a7aca8ca85f69.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-37.333333333333336,-13.44,36.959999999999994,-13.44,36.959999999999994,13.06666666666667,35.46666666666667,13.06666666666667,35.46666666666667,4.8533333333333335,-35.84,4.8533333333333335,-35.84,13.06666666666667,-37.333333333333336,13.06666666666667",
+            "contourCut": "-37.333333333333336,-55.626666666666665,-35.84,-55.626666666666665,-35.84,-28,35.46666666666667,-28,35.46666666666667,-55.626666666666665,36.959999999999994,-55.626666666666665,36.959999999999994,-0.37333333333333574,35.46666666666667,-0.37333333333333574,35.46666666666667,-27.626666666666665,-35.84,-27.626666666666665,-35.84,-0.37333333333333574,-37.333333333333336,-0.37333333333333574",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "13105c893a1342467f5f39ba10de0fd9"
+              },
+              {
+                "id": 1,
+                "default": 55153,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "bb344d7a445c69ac3ceca1bec4e1f59f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9886": [
+            {
+              "id": "9886",
+              "name": "Shelves",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 75,
+            "height": 56,
+            "depth": 27
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "90.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2185,
+        "type": 2,
+        "name": "Shelf",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2185\/c5158d69733486f6be50a98b04ba95cc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2185\/59226d7c7bef73b7d1a71031235fd15a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "55,11,55,-11,-55,-11,-55,11",
+            "contourCut": "55,0,55,-2,-55,-2,-55,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 548,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b36e25da285e2a0111fc5bc3fec62694"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9886": [
+            {
+              "id": "9886",
+              "name": "Shelves",
+              "parentId": "9883"
+            },
+            {
+              "id": "9883",
+              "name": "Cabinets&Shelves",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves",
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 110,
+            "height": 2,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "140.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64547,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64547\/35b9e335fafc371d69ce64092929a159.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64547\/b282f932ae3de09ae8bb4b277330d03b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "90.5,18.5,90.5,-17.05,90.5,-18.5,-30.01,-18.5,-90.5,-18.5,-90.5,-17.05,-90.5,18.5,30.48,18.5",
+            "contourCut": "90.5,0,90.5,-60.82,90.5,-121,30.48,-121,30.01,-121,-30.01,-121,-30.48,-121,-90.5,-121,-90.5,-60.82,-90.5,0,-30.01,0,30.01,0,30.48,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41804,
+                "default": "#f2f2f2",
+                "current": "#f2f2f2",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "d3ff5efb5cce833468cf306b10720b80"
+              },
+              {
+                "id": 1,
+                "default": 549,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "0cdecebe021f3f8e614fb8907cebcc22"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9154": [
+            {
+              "id": "9154",
+              "name": "Wall cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "cabinets&shelves"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 181,
+            "height": 121,
+            "depth": 37
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "135.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

@@ -1,0 +1,1520 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "16",
+    "items": [
+      {
+        "id": 3147,
+        "type": 2,
+        "name": "Socket",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3147\/d40d74f6401190c9c20bb17cc5663aea.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3147\/9f10a2a1d8be3c2335eb7bc14f2064ba.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "3.99,0.5,4,-0.06,1.27,-0.42,0.42,-0.5,-0.42,-0.5,-1.26,-0.42,-4,-0.07,-3.99,0.49,2.8,0.5",
+            "contourCut": "2.8,0,3.88,-0.01,3.95,-0.06,3.99,-0.13,4,-0.23,4,-7.77,3.99,-7.87,3.95,-7.94,3.88,-7.99,2.8,-8,-2.81,-8,-3.88,-7.99,-3.95,-7.94,-3.99,-7.87,-4,-7.77,-4,-0.23,-3.99,-0.13,-3.95,-0.06,-3.88,-0.01,-2.81,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "6f0da5f11933a0810eecc4aa22907fb5"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#fcfcfc",
+                "current": "#fcfcfc",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "a3831703afdb08c5c95e076c4c2abf69"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "sockets & switches"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 8,
+            "height": 8,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "30.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1534,
+        "type": 2,
+        "name": "Light switch",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/15\/1534\/4a44e6fe19a0843412ee0fd1c6b20fa3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/15\/1534\/1745fd654cbf3a7f3e4e54dad0830273.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.49,0.5,4.5,0.06,4.49,0.03,2.41,-0.31,1.45,-0.43,0.49,-0.5,-0.47,-0.5,-1.43,-0.44,-2.39,-0.31,-4.46,0.02,-4.48,0.03,-4.49,0.05,-4.5,0.5,-3.21,0.5,-3.15,0.5,3.14,0.5,3.2,0.5",
+            "contourCut": "4.25,0,4.36,-0.02,4.44,-0.06,4.48,-0.14,4.5,-0.25,4.5,-1.29,4.5,-7.71,4.5,-8.75,4.48,-8.86,4.44,-8.94,4.36,-8.98,4.25,-9,-4.25,-9,-4.36,-8.98,-4.44,-8.94,-4.48,-8.86,-4.5,-8.75,-4.5,-1.29,-4.5,-0.25,-4.48,-0.14,-4.44,-0.06,-4.36,-0.02,-4.25,0,-3.21,0,-3.15,0,3.14,0,3.2,0,4.24,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#fcfcfc",
+                "current": "#fcfcfc",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "0accc7f0b096516fc8e0a540ab3c85fd"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "sockets & switches"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 9,
+            "height": 9,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "75.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 4657,
+        "type": 2,
+        "name": "Electrical panel",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/46\/4657\/38fd9c21618bf8a2efbde7f373c551ec.png"
+          },
+          "body": {
+            "package": "\/files\/products\/46\/4657\/02ea726e3194c2c8edb68387e7320447.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0,-2.5600000000000005,12.053333333333335,-2.346666666666666,12.373333333333335,-2.0266666666666673,12.373333333333335,2.3466666666666676,-12.48,2.3466666666666676,-12.266666666666666,-2.453333333333333",
+            "contourCut": "-12.16,-15.893333333333333,12.266666666666666,-15.68,12.16,-0.3200000000000003,-12.266666666666666,-0.3200000000000003,-12.266666666666666,-15.786666666666667",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#fce3a7",
+                "addMaterial": "41838",
+                "name": "",
+                "source": "bank",
+                "hash": "b0fd5e33c51cabba1863e57ea28239dc"
+              },
+              {
+                "id": 1,
+                "default": 54829,
+                "name": "",
+                "source": "none",
+                "hash": "f4ee8076bccd889354f0a4410a183b50"
+              },
+              {
+                "id": 2,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "",
+                "source": "bank",
+                "hash": "dd003e31fd3601f9703de80990cbd89c"
+              },
+              {
+                "id": 3,
+                "default": 4656,
+                "name": "",
+                "source": "none",
+                "hash": "064d26244a5fbeafc3a842b02b572c76"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "sockets & switches"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 25,
+            "height": 16,
+            "depth": 5
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64681,
+        "type": 2,
+        "name": "wall-mounted electrical panel",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64681\/d86b9cfd94e879b9cfdd42547cb552a2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64681\/2efe4382fd2c2fcd5a1b447f1055dd00.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "10.9,2.81,10.93,2.8,10.94,2.78,10.94,1.19,10.94,-1.95,10.94,-2.04,10.94,-2.12,10.94,-2.2,10.94,-2.28,10.94,-2.35,10.94,-2.41,10.94,-2.47,10.94,-2.52,10.94,-2.57,10.94,-2.61,10.94,-2.65,10.94,-2.68,10.94,-2.71,10.94,-2.73,10.94,-2.75,10.94,-2.76,10.94,-2.77,10.94,-2.78,10.93,-2.8,10.9,-2.81,10.88,-2.81,10.5,-2.81,-10.88,-2.81,-10.9,-2.81,-10.93,-2.8,-10.94,-2.78,-10.94,2.76,-10.94,2.78,-10.93,2.8,-10.9,2.81,10.88,2.81",
+            "contourCut": "10.9,0,10.93,-0.02,10.94,-0.04,10.94,-17.1,10.94,-17.13,10.93,-17.15,10.91,-17.16,10.88,-17.16,10.43,-17.16,-10.88,-17.16,-10.9,-17.16,-10.91,-17.16,-10.93,-17.15,-10.94,-17.13,-10.94,-0.06,-10.94,-0.04,-10.93,-0.02,-10.9,0,10.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41838,
+                "default": "#383838",
+                "current": "#383838",
+                "name": "OBJ001",
+                "source": "bank",
+                "hash": "e55d90b55906827690e7835506721e1e"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ004",
+                "source": "bank",
+                "hash": "5aba27100b14982016e5673526612e82"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 22,
+            "height": 17,
+            "depth": 6
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.78964900 1751710517"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64682,
+        "type": 2,
+        "name": "Thermostat",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64682\/db8b131b6d83f320dcb56c559e4cf0f2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64682\/c618341112cbde3850c518a060746fd3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "6.73,0.79,6.73,-0.36,6.73,-0.4,6.72,-0.43,6.67,-0.45,3.93,-0.79,-2.25,-0.79,-3.91,-0.79,-6.63,-0.45,-6.69,-0.44,-6.72,-0.43,-6.73,-0.4,-6.73,-0.36,-6.73,0.79,6.4,0.79",
+            "contourCut": "6.47,0,6.54,-0.02,6.6,-0.04,6.65,-0.08,6.69,-0.14,6.72,-0.2,6.73,-0.27,6.73,-13.14,6.73,-13.2,6.72,-13.27,6.69,-13.33,6.65,-13.39,6.6,-13.43,6.54,-13.45,6.47,-13.47,-6.4,-13.47,-6.47,-13.47,-6.54,-13.45,-6.6,-13.43,-6.65,-13.39,-6.69,-13.33,-6.72,-13.27,-6.73,-13.2,-6.73,-0.33,-6.73,-0.27,-6.72,-0.2,-6.69,-0.14,-6.65,-0.08,-6.6,-0.04,-6.54,-0.02,-6.47,0,6.4,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ003_1",
+                "source": "bank",
+                "hash": "aeade5e605708fe3a320015387a691d3"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ003_2",
+                "source": "bank",
+                "hash": "eab80f5bae0f12b50ee58bc4797f277c"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41819,
+                "default": "#a8a8a8",
+                "current": "#a8a8a8",
+                "name": "OBJ002",
+                "source": "bank",
+                "hash": "a24d55fdba4d18e07781886a80876e27"
+              },
+              {
+                "id": 3,
+                "default": 158,
+                "name": "OBJ003",
+                "source": "none",
+                "hash": "c3710f2f0d3a24ac39057db1fb81e7ef"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 13,
+            "height": 13,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.04584300 1753006330"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64683,
+        "type": 2,
+        "name": "Double switch",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64683\/90c6f32258d69ee7651254bb4f577a03.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64683\/dbd90583420817ab1325c01213c5c33a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.1,0.61,4.1,-0.09,4.1,-0.11,4.09,-0.13,4.08,-0.14,2.76,-0.61,-2.73,-0.61,-2.75,-0.61,-2.76,-0.61,-2.77,-0.61,-4.08,-0.14,-4.09,-0.13,-4.1,-0.11,-4.1,-0.09,-4.1,0.61,3.9,0.61",
+            "contourCut": "3.94,0,3.98,-0.01,4.02,-0.03,4.05,-0.05,4.07,-0.08,4.09,-0.12,4.1,-0.16,4.1,-8,4.1,-8.04,4.09,-8.08,4.07,-8.12,4.05,-8.15,4.02,-8.18,3.98,-8.19,3.94,-8.2,-3.9,-8.2,-3.94,-8.2,-3.98,-8.19,-4.02,-8.18,-4.05,-8.15,-4.07,-8.12,-4.09,-8.08,-4.1,-8.04,-4.1,-0.2,-4.1,-0.16,-4.09,-0.12,-4.07,-0.08,-4.05,-0.05,-4.02,-0.03,-3.98,-0.01,-3.94,0,3.9,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ020",
+                "source": "bank",
+                "hash": "5ebf492d2d5bab590428f4ab4f5a724e"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 8,
+            "height": 8,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.03129900 1753006234"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64684,
+        "type": 2,
+        "name": "Light switch",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64684\/adc7158d8b581a14df7ed979718d072d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64684\/b5e450d7875029de0e29cc4ed4010d4e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.01,0.6,4.01,-0.09,4,-0.11,3.99,-0.13,3.98,-0.14,2.71,-0.6,-2.65,-0.6,-2.66,-0.6,-2.67,-0.6,-2.68,-0.6,-3.98,-0.14,-3.99,-0.13,-4.01,-0.09,-4.01,0.6,3.81,0.6",
+            "contourCut": "3.85,0,3.89,-0.01,3.96,-0.05,3.98,-0.08,4,-0.12,4.01,-0.2,4.01,-7.81,4,-7.89,3.98,-7.93,3.96,-7.96,3.92,-7.99,3.89,-8,3.85,-8.01,-3.81,-8.01,-3.85,-8.01,-3.89,-8,-3.92,-7.99,-3.96,-7.96,-3.98,-7.93,-4,-7.89,-4.01,-7.81,-4.01,-0.2,-4,-0.12,-3.98,-0.08,-3.96,-0.05,-3.89,-0.01,-3.85,0,3.81,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ017",
+                "source": "bank",
+                "hash": "73dd81226cf72f9bb079f4d33ea2392d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 8,
+            "height": 8,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.96822100 1753006197"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64685,
+        "type": 2,
+        "name": "Dimmer switch",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64685\/2cffec073f91e00dbdc4d46079e0c073.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64685\/ce786dca7b9010b53eda27f56a00b6c8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4,1.11,4,0.2,3.99,0.16,3.04,-1.11,2.95,-1.11,2.76,-1.11,2.5,-1.11,2.16,-1.11,1.75,-1.11,1.29,-1.11,0.79,-1.11,0.27,-1.11,-0.27,-1.11,-0.79,-1.11,-1.29,-1.11,-1.75,-1.11,-2.16,-1.11,-2.5,-1.11,-2.76,-1.11,-2.95,-1.11,-3.04,-1.11,-3.99,0.16,-4,0.2,-4,1.11",
+            "contourCut": "3.89,0,3.92,-0.01,3.97,-0.03,3.99,-0.08,4,-0.11,4,-7.89,3.99,-7.92,3.97,-7.97,3.92,-8,-3.92,-8,-3.97,-7.97,-3.99,-7.92,-4,-7.89,-4,-0.11,-3.99,-0.08,-3.97,-0.03,-3.92,-0.01,-3.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ009",
+                "source": "bank",
+                "hash": "854ea2000c221aaa67dca6960a6e6019"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ009001",
+                "source": "bank",
+                "hash": "5a95658086dd302f0f25ce432d8ee62d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 8,
+            "height": 8,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.59489400 1753005872"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64686,
+        "type": 2,
+        "name": "Computer socket",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64686\/a86af19c6386361692a1daa0d68179af.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64686\/7b131d6bd9152b6a2d2c8389638748b9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4,0.55,4,-0.48,4,-0.5,3.99,-0.53,3.98,-0.55,-2.66,-0.55,-2.72,-0.55,-3.82,-0.55,-3.98,-0.55,-3.99,-0.53,-4,-0.5,-4,-0.48,-4,0.55,3.84,0.55,3.97,0.55,3.99,0.55",
+            "contourCut": "3.84,0,3.88,-0.01,3.92,-0.03,3.95,-0.05,3.97,-0.08,3.99,-0.12,4,-0.16,4,-7.84,3.99,-7.88,3.97,-7.92,3.95,-7.95,3.92,-7.97,3.88,-7.99,3.84,-8,-3.8,-8,-3.84,-8,-3.88,-7.99,-3.92,-7.97,-3.95,-7.95,-3.97,-7.92,-3.99,-7.88,-4,-7.84,-4,-0.16,-3.99,-0.12,-3.97,-0.08,-3.95,-0.05,-3.92,-0.03,-3.88,-0.01,-3.84,0,3.8,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ003",
+                "source": "bank",
+                "hash": "36c4123ed9b2adb7f21f291360ebf551"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41819,
+                "default": "#7a7a7a",
+                "current": "#7a7a7a",
+                "name": "OBJ001",
+                "source": "bank",
+                "hash": "556555108c309c7941d2a17f4f4b13a5"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 8,
+            "height": 8,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.98378200 1758272861"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64687,
+        "type": 2,
+        "name": "single socket",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64687\/ff6cd78ae0e0bf8412854cdf66dbfb3f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64687\/8b9e64033cd3249d4f1adc86f0ac2589.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.33,0.4,4.33,-0.34,4.32,-0.37,4.29,-0.4,-2.88,-0.4,-2.9,-0.4,-2.97,-0.4,-4.26,-0.4,-4.3,-0.39,-4.32,-0.37,-4.33,-0.34,-4.33,0.4,4.11,0.4",
+            "contourCut": "4.16,0,4.2,-0.01,4.24,-0.03,4.27,-0.05,4.3,-0.08,4.32,-0.12,4.33,-0.2,4.33,-7.94,4.32,-8.02,4.3,-8.06,4.27,-8.09,4.24,-8.11,4.2,-8.13,4.16,-8.14,-4.11,-8.14,-4.16,-8.14,-4.2,-8.13,-4.24,-8.11,-4.27,-8.09,-4.3,-8.06,-4.32,-8.02,-4.33,-7.94,-4.33,-0.2,-4.32,-0.12,-4.3,-0.08,-4.27,-0.05,-4.24,-0.03,-4.2,-0.01,-4.16,0,4.11,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ002",
+                "source": "bank",
+                "hash": "786c65786f05e2ec7d062ace3654316f"
+              },
+              {
+                "id": 1,
+                "default": 1555,
+                "name": "OBJ001",
+                "source": "bank",
+                "hash": "ad7d6d95d117b15ef3dad9cbcd5e0433"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 9,
+            "height": 8,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.55974300 1751709501"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64688,
+        "type": 2,
+        "name": "Double socket",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64688\/bf1cc263e3ed89ce99266f27d3ec188e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64688\/0c81cf79c64290cfd34298af8112c9f7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "7.79,0.37,7.79,-0.32,7.79,-0.34,7.78,-0.36,7.77,-0.37,-7.73,-0.37,-7.77,-0.37,-7.78,-0.36,-7.79,-0.34,-7.79,-0.32,-7.79,0.37,-7.63,0.37",
+            "contourCut": "7.63,0,7.71,-0.02,7.74,-0.05,7.77,-0.08,7.78,-0.12,7.79,-0.16,7.79,-0.21,7.79,-8.24,7.79,-8.28,7.78,-8.32,7.77,-8.36,7.74,-8.39,7.71,-8.42,7.67,-8.44,-7.63,-8.44,-7.67,-8.44,-7.71,-8.42,-7.74,-8.39,-7.77,-8.36,-7.78,-8.32,-7.79,-8.28,-7.79,-0.21,-7.79,-0.16,-7.78,-0.12,-7.77,-0.08,-7.74,-0.05,-7.71,-0.02,-7.63,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ001",
+                "source": "bank",
+                "hash": "2f37b694b6206db1984de21be54db991"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "OBJ002",
+                "source": "bank",
+                "hash": "cef9931874e96cae4ba0cde8003a362e"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 16,
+            "height": 8,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.78021900 1753005750"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64689,
+        "type": 2,
+        "name": "intercom",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64689\/6849d568c054ac79d6f2b5a12717c398.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64689\/ebc5510b5220d0570fc2c5612c270b0c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "12.02,2.99,12.02,1.35,12.02,-0.14,12.02,-0.38,12.02,-0.39,12,-0.44,11.97,-0.45,11.91,-0.46,-6.86,-2.98,-6.94,-2.99,-7.02,-2.99,-7.04,-2.99,-7.14,-2.98,-7.22,-2.97,-7.44,-2.94,-7.65,-2.9,-7.74,-2.88,-7.87,-2.84,-7.9,-2.83,-8.04,-2.78,-8.15,-2.74,-8.31,-2.68,-8.36,-2.66,-8.47,-2.61,-8.71,-2.5,-8.9,-2.4,-9.25,-2.21,-9.32,-2.17,-9.69,-1.94,-10.01,-1.73,-10.16,-1.62,-10.4,-1.44,-10.85,-1.07,-11.05,-0.88,-11.13,-0.8,-11.23,-0.69,-11.39,-0.51,-11.45,-0.44,-11.52,-0.35,-11.57,-0.28,-11.63,-0.19,-11.67,-0.13,-11.75,0.01,-11.81,0.14,-11.86,0.26,-11.99,0.62,-12.02,0.78,-12.02,0.83,-12.02,0.93,-12.02,0.97,-12.01,1.06,-12,1.1,-11.99,1.14,-11.51,2.95,-11.49,2.97,-11.47,2.99,-11.4,2.99,-11.32,2.99,-5.63,2.99,-5.61,2.99,-5.52,2.99,-5.5,2.99,-5.48,2.99,-4.46,2.99,-4.39,2.99,11.72,2.99",
+            "contourCut": "-10.04,0,-9.76,-0.02,-9.59,-0.05,-9.49,-0.07,-9.32,-0.12,-9.22,-0.16,-9.05,-0.23,-8.82,-0.36,-8.73,-0.42,-8.58,-0.53,11.93,-16.05,11.97,-16.11,12,-16.18,12.02,-16.25,12.02,-16.67,12.02,-40.7,12,-40.78,11.97,-40.85,11.93,-40.91,11.87,-40.95,11.8,-40.98,11.72,-41,-11.22,-41,-11.3,-40.98,-11.36,-40.95,-11.42,-40.91,-11.47,-40.85,-11.5,-40.78,-11.51,-40.7,-12.02,-3.31,-12.02,-2.94,-12.02,-2.75,-12,-2.48,-11.99,-2.39,-11.95,-2.12,-11.92,-1.93,-11.83,-1.57,-11.77,-1.4,-11.73,-1.3,-11.66,-1.13,-11.53,-0.91,-11.37,-0.69,-11.26,-0.54,-11.21,-0.49,-11.06,-0.34,-10.85,-0.2,-10.76,-0.15,-10.6,-0.08,-10.5,-0.05,-10.33,-0.01",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ005",
+                "source": "bank",
+                "hash": "88ed3bb357dbda90780270e7604fe500"
+              },
+              {
+                "id": 1,
+                "default": 158,
+                "name": "Ekran",
+                "source": "none",
+                "hash": "f3bef10724d5796926172ed71d1e0356"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 24,
+            "height": 41,
+            "depth": 6
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.73342500 1751709678"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64690,
+        "type": 2,
+        "name": "Switches",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64690\/88bc64ca430fd1cfd6e726453237691d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64690\/eeb6dcf45ab78bf07e0cb97213252070.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "7.65,0.57,7.65,-0.05,7.65,-0.07,7.64,-0.09,7.63,-0.1,6.31,-0.57,-0.79,-0.57,-6.22,-0.57,-6.24,-0.57,-6.26,-0.57,-6.28,-0.57,-6.29,-0.57,-6.3,-0.57,-6.31,-0.57,-7.63,-0.1,-7.64,-0.09,-7.65,-0.07,-7.65,-0.05,-7.65,0.57,-0.69,0.57,3.48,0.57,6.32,0.57",
+            "contourCut": "7.49,0,7.53,-0.01,7.57,-0.03,7.6,-0.05,7.63,-0.08,7.65,-0.16,7.65,-0.21,7.65,-8.09,7.65,-8.13,7.63,-8.21,7.57,-8.27,7.49,-8.29,0,-8.29,-7.45,-8.29,-7.49,-8.29,-7.57,-8.27,-7.63,-8.21,-7.65,-8.13,-7.65,-0.21,-7.65,-0.16,-7.63,-0.08,-7.6,-0.05,-7.57,-0.03,-7.53,-0.01,-7.49,0,-7.45,0,-7.44,0,0,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ001",
+                "source": "bank",
+                "hash": "f6da2188ec5a1978efa0c81c7b0059aa"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 15,
+            "height": 8,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.66024300 1753006047"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64691,
+        "type": 2,
+        "name": "electrical panel",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64691\/6485a25051b8fd0cd88e72a62a187d80.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64691\/6a6048d15e5c856fda7602c37a7f9a95.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "14.5,0.61,14.5,0.59,14.49,0.54,14.48,0.5,14.46,0.47,14.43,0.45,12.78,-0.54,12.72,-0.56,12.63,-0.57,-8.91,-0.61,-8.92,-0.61,-9.03,-0.61,-9.05,-0.61,-9.07,-0.61,-9.1,-0.61,-9.14,-0.61,-9.19,-0.61,-9.24,-0.61,-9.3,-0.61,-9.36,-0.61,-9.39,-0.61,-9.43,-0.61,-9.47,-0.61,-9.5,-0.61,-9.56,-0.61,-9.58,-0.61,-9.65,-0.61,-9.75,-0.61,-9.84,-0.61,-9.92,-0.61,-10,-0.61,-10.08,-0.61,-10.15,-0.61,-10.21,-0.61,-10.27,-0.61,-10.31,-0.61,-10.35,-0.61,-10.38,-0.61,-10.39,-0.61,-10.4,-0.61,-12.63,-0.57,-12.72,-0.56,-12.78,-0.54,-14.43,0.45,-14.46,0.47,-14.48,0.5,-14.49,0.54,-14.5,0.59,-14.5,0.61",
+            "contourCut": "14.4,0,14.44,-0.01,14.47,-0.03,14.49,-0.06,14.5,-0.11,14.5,-37.85,14.49,-37.9,14.47,-37.93,14.43,-37.95,-12.7,-37.95,-14.39,-37.95,-14.43,-37.95,-14.47,-37.93,-14.49,-37.9,-14.5,-37.85,-14.5,-0.11,-14.49,-0.06,-14.47,-0.03,-14.44,-0.01,-14.4,0,12.7,0,14.39,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ001",
+                "source": "bank",
+                "hash": "d6e0d9539163270ecdc1522811c164bd"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#dedede",
+                "current": "#dedede",
+                "name": "OBJ002",
+                "source": "bank",
+                "hash": "32ac2583c881067a50d64284b853f03e"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "OBJ003",
+                "source": "none",
+                "hash": "2eb72928d442d14de751f737351551d1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 29,
+            "height": 38,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.66660600 1751710243"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64692,
+        "type": 2,
+        "name": "extension cord",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64692\/ef165d1ab78ee5d1ed46d982d335aa6f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64692\/2e791a1875d0560972c0c96d2a342154.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.71,14.91,2.41,14.74,2.85,14.53,3,14.02,3,-13.97,2.85,-14.49,2.41,-14.7,0.59,-14.91,-0.61,-14.9,-2.41,-14.7,-2.85,-14.49,-3,-13.97,-3,14.02,-2.85,14.53,-2.41,14.74,-0.71,14.91",
+            "contourCut": "2.61,0,3,-1.62,3,-1.69,2.61,-3.33,2.28,-3.68,-1.31,-3.86,-2.28,-3.68,-2.61,-3.33,-3,-1.69,-3,-1.62,-2.61,0,2.48,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#1f1f1f",
+                "current": "#1f1f1f",
+                "name": "Extension_cable002",
+                "source": "bank",
+                "hash": "3fc2aa4ba0077ac142807b75e5b38936"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41819,
+                "default": "#d51010",
+                "current": "#d51010",
+                "name": "Extension_cable001",
+                "source": "bank",
+                "hash": "47858fa21b3c6fd70cfdd27b0d63076a"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "Extension_cable003",
+                "source": "none",
+                "hash": "ce1c0cb3b10b447edecc11c0b66b0ef6"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 6,
+            "height": 4,
+            "depth": 30
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.23217800 1751710695"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 48466,
+        "type": 2,
+        "name": "Ventilation grille",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/484\/48466\/c721ce9a810d7b0f2a5ac57a5373547a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/484\/48466\/b93c851b816317a7c13f9a60ce5d494a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "7.5,0.5,7.5,0.02,5.66,-0.5,-5.66,-0.5,-7.5,0.02,-7.5,0.5",
+            "contourCut": "7.5,0,7.5,-15,-7.5,-15,-7.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#d6d6d6",
+                "current": "#d6d6d6",
+                "name": "Box19",
+                "source": "bank",
+                "hash": "ff43cf414ee783eb121716e83d4c15ad"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "42": [
+            {
+              "id": "42",
+              "name": "Climate",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ],
+          "82": [
+            {
+              "id": "82",
+              "name": "Sockets & Switches",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 15,
+            "height": 15,
+            "depth": 1
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "240.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

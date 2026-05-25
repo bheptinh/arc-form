@@ -1013,7 +1013,9 @@ const Main = props => {
         }
     }, [is3DModeRotationActive]);
 
-    useEffect(() => setUserFavorites(user.data.favorites?.items || []), [isLogged]);
+    useEffect(() => {
+        setUserFavorites(user.data.favorites?.items || [])
+    }, [isLogged]);
 
     return (
         previewMaterials ?

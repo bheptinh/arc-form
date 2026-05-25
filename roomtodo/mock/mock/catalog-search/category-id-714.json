@@ -1,0 +1,3166 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "46",
+    "items": [
+      {
+        "id": 183,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/183\/0f34ac27d89733f59a19b5e97df0db36.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/183\/711b8aa4bb402dee3da9a73723a88886.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1674,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1674\/02ed299324205ebcfc2d276270017511.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1674\/add9208e5d4ed80c2461a1f09ae38fed.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1624,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1624\/85c4915969f4bb4d0e4a386801bdf0eb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1624\/ba39fd48395d71578f61c82d2585960c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 32,
+            "height": 33
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1692,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1692\/e765090a1c9fdacddfbd3ebfed4ffbac.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1692\/bdff6b073eff37fd7b1c4853bc580bbb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 32,
+            "height": 33
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1672,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1672\/1bc9ae4e7062c734299582e1d493dabb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1672\/a534bf7c4a4ec40c138a84981179589d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1627,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1627\/1b6f0327ec0b7dbe3fad460855e9cd0e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1627\/a454b3581cf9906c98f6db98563d17ce.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1694,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1694\/c4451909e8377939f02d217e390ab8ad.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1694\/546ba840bd8c1798f3fb41af039b930a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 32,
+            "height": 33
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1689,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1689\/59fade5975d49a1b3dedf7cb976417dc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1689\/b53ae0b218548ef244e131aa7dfe499a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 32,
+            "height": 33
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1669,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1669\/bb00497578fc8843b502821619e823ed.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1669\/38a57b96a239a316933bf836a8a48832.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 9
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1693,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1693\/ee53733c4fef84facd472ac1ab0b5e49.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1693\/09dc78d204efb070b34251ba68c8d300.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 32,
+            "height": 33
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1691,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1691\/bb8695a0f9a613ed5225e446ce575baf.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1691\/9d1586dc0cc5486b9c6c0c3a5150a925.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 32,
+            "height": 33
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1682,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1682\/fc40010c965df7dc67695f4d3afe385d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1682\/2b18912b1f2e53641496f06d46b760c4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1690,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1690\/46beb406a6eca206bc499ee4f8b4cc87.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1690\/cb4761cceec2f5e09b5acf1aa86f5d34.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 32,
+            "height": 33
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1681,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1681\/e28a9efbd3cc82078534ea957fa2bb9a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1681\/e30807b5eb55624d053fe9ad797f82c4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1680,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1680\/83abfd6ea2dbd082410ee66c7da7fbad.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1680\/cbb89d85ae4f7a391b306bd891cd6264.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1679,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1679\/6c20ce5d49cbe2e85964bd0ae81e2b29.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1679\/f3c74f6ead2d7c652d2661b1bee08e8d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1678,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1678\/91345887b061e62a49be21cdc9f8719d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1678\/2ba066b2ba0e1810dd89ecfcc3c1cd3f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1677,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1677\/392c71cb365bbcc15183528d4561cfe3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1677\/6f6092abe61f32c144b438a04e375e5e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1676,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1676\/618aceb6c444dbd7260f3806ca54a57f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1676\/b26c07543a9021b23ebd513bd1c91b57.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1675,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1675\/852268b1d9a52ac79621109efffd5339.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1675\/73d0bd0647ef81db7d9988a9f73c9479.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1673,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1673\/05334176a13a0dc54f8653d3aa7eea59.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1673\/b5c61d6889a44c311d2bf1ee0a062678.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1671,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1671\/1d21581e23102e716930113c0afff9b8.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1671\/3afc5fd20de588a5516a846caa1d1284.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1670,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1670\/4d35a2303bbbb57bfeb1785146f08a13.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1670\/2c863c264bc8bd7709eefc0430b3702f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 9
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1668,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1668\/c0f1f53a55e5201a7c49ed2f423311a6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1668\/b7180b793ee0b36c13daffdf4488c4ac.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 9
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1667,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1667\/033f49441c0a13820ac13dd7bbf10ba1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1667\/2c98cceaf8c31c618c53eb89f9525b70.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 9
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1666,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1666\/43551503a1148203c3031410e09b8b89.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1666\/dd327e04a51f9cbb91bdfa59b879079c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 9
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1665,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1665\/e89af9817ed3824a4171bb5721f5c6e1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1665\/a94d9c46bddfd669f21a5d0191d3035e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 9
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1664,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1664\/df6cbf17fc3c746bf1ef9d91a054cdb7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1664\/3c79d18931527a42ea192465dbf81b85.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1663,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1663\/b5b558888303272cc38724aaccd9138e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1663\/958cafd37f890297ceda08357a9180be.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1662,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1662\/9c44b435923716388207a234b59aac20.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1662\/1191fde36565b9110e97965a1ac0ee43.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1661,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1661\/cb749330347082c2febba0643343e94e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1661\/4ab2e122e51a4796ad54eb1522a92e86.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1660,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1660\/0d36429d3ad00f163278e133ca5b36c7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1660\/ee84897b213f109174f6e99440c10441.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1659,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1659\/4e6d9067bdfac0b89b999a20090d7bca.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1659\/f7144c369f4dfe72b03786ddfbb88e50.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1628,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1628\/7f36e98c2ac22d645bd311eefc1172aa.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1628\/23603f24b528ee3fb6c6ade5412cded7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1652,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1652\/3a58de0a80ddeebc4af823b0e20b86d0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1652\/db1833b908ee4d0d9847064aea5620a5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1651,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1651\/55844edb1c28dcb94bc433456ecec775.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1651\/c054daf8e833bb109abf335ee1d4e987.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1650,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1650\/6e8a779b3a63112827e59858d93412fa.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1650\/31b8cb70351040ccd1a5c163b39598b9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1649,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1649\/a6f994ce2feb8e6306d873c5e1bd8503.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1649\/a452934308919ed89458d68e8433fe15.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1648,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1648\/9965841a697b3171ac076e9dc6841d8f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1648\/43569a451c37095eb6a5a8955fc2f755.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1647,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1647\/ed80e2a1853fcaec7df8d84df27cb013.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1647\/1d89fad7f08f31b9158e5fd83caf7061.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1629,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1629\/82a8e1ce628fcc7d0852a4461de0e0a5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1629\/67e14ba5ff72e5af232309c5b1722301.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 20,
+            "height": 20
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1630,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1630\/6e1da00f14cbbfed3c0d75a33867e386.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1630\/a34104edce3056c5c6fbb60e0024ce2f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 29,
+            "height": 27
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1626,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1626\/39780c3958c1b7f417bde24c9985540c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1626\/9be60a7b73124a19a48dcba5e0d2873b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1625,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1625\/6133681d0bcc47931b3b0efe108256fc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1625\/8facff7afedd163a7d55f794711b35dc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1623,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/16\/1623\/2773fcbd66f4792e5586295a33b6a7ef.png"
+          },
+          "body": {
+            "package": "\/files\/products\/16\/1623\/c1235e6bf86e3f9a5cc5a64cd3c298fa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 9
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1021,
+        "type": 1,
+        "name": "Patterned glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1021\/e79e176fca70a68987c6550cba937fdb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1021\/7dd9e831611dd09e151cdf3dc2fb331d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "714": [
+            {
+              "id": "714",
+              "name": "Patterned",
+              "parentId": "23"
+            },
+            {
+              "id": "23",
+              "name": "Glass",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "glass"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

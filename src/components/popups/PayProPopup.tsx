@@ -410,9 +410,13 @@ const PayProPopup = props => {
         setTimeout(() => dispatch(closeActivePopup({name: "payPro"})), 500);
     };
 
-    useEffect(() => setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login), [R2D.config.data.enable_merchant_login]);
+    useEffect(() => {
+        setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login)
+    }, [R2D.config.data.enable_merchant_login]);
 
-    useEffect(() => isLogged && userProfileData.plan == 'pro' && dispatch(closeActivePopup({name: "payPro"})), [isLogged])
+    useEffect(() => {
+        isLogged && userProfileData.plan == 'pro' && dispatch(closeActivePopup({name: "payPro"}))
+    }, [isLogged])
 
     useEffect(() => {
         window.addEventListener("message", receiveMessage, false);

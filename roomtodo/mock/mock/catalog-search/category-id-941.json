@@ -1,0 +1,1963 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "24",
+    "items": [
+      {
+        "id": 1421,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1421\/80877d387cb8b4186c42ceb6640a3d90.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1421\/7f8a2ab8ed8575d6bfe8b796648e94e9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1420,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1420\/852495ce44930fc8ba3c344b1b137b99.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1420\/186cb7ce5596c04e9a386156c9697436.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1422,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1422\/91d3b8ce02f07827c9cd2b533007ea68.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1422\/3762b64c6ed754f4e30008bbb2798983.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1419,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1419\/7ea53bad5c18f8c4a6d94137c915914d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1419\/e65bdd2f13ac363e45e58af6e667b0b1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1418,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1418\/5e987d9f57943194eb13e5fd650c1b6d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1418\/59b9d114f839d227b5ba68f327131964.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1417,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1417\/963de11760d21aa6c4f225541c4bff51.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1417\/732ab644b583d695c158453e3b8c68d9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1416,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1416\/bfa61d3857f65d2bcb20db6dbedc501b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1416\/8146588b76e5bd44750629d711a1c926.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1415,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1415\/d5d9b95f64e8285583a984994599d43a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1415\/b2f262b33d3d166d3b445c9b396bb264.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1414,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1414\/8eae31c9ba32827e7d7f8e4d183d6a77.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1414\/98acc5e091dd85ed67042c055d518576.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1413,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1413\/959e51241deba090927508bf69a9083e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1413\/6d0efb254e2a67d1e0fcb99f7a89c995.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1412,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1412\/612251019e4dd6b5650170842cca0ccc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1412\/7d9bdc96df40116434e56f406081e33e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1411,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/14\/1411\/1ccd07f944b5a30a675e40c8a4d5f16c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/14\/1411\/0a7afd7e44872a62eb2b8dbb1e5a1068.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1399,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1399\/7d5695dc5868c6660295325aa3ceb87d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1399\/c93fe2a60c688d786482c92002551efd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1398,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1398\/3fc2ec3da05e197cee528c3e2780b437.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1398\/8ded55144eaf18bf71fce493cd5cca1b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1394,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1394\/358e1b4cb9f8e77a97734e003d66a36e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1394\/e979da023665215ef3a8ea318ddf3253.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1393,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1393\/643feb3a892702ae67ff9f155e65b93a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1393\/b584c942bbd8a379f82ebcb897ce322b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1392,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1392\/d4013173615f8f86d109c7bca4c19bfc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1392\/bff4a884e845dbfef3cd8bfbb3dfbb23.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1391,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1391\/592e17357d5e09f954159d6f1be522fe.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1391\/b60e4d4a8829b5e22fde6bdc06e00873.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1390,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1390\/abc4c8a7ec36a510ef91b97c28be0478.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1390\/bc8c356a8784fe2697c3142e7d3cab5a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1384,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1384\/14178c218231f3e5a8ae71f1d6ac7a35.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1384\/19d8752ee6414835a9b3fb8e34a50a82.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1383,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/13\/1383\/af2244e116c0055e310caa60547d36fc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/13\/1383\/c52583e8b2116643d96ce518e50b6a4e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 361,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/361\/9570257e316a1b808414c8e954fcc51f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/361\/f5694e6e7b97c07194f6216b3a8f6fd4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 359,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/359\/eea2de26e574a4d7ca0aee575285aa8d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/359\/c9faad0ad1d1d9c7340ebf55d80739cf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 344,
+        "type": 1,
+        "name": "Wallpapers",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/344\/4e3904daa1609798a8b0b16b4c2ff264.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/344\/8c3a4dba71e619f4cba985a4e5069916.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "18": [
+            {
+              "id": "18",
+              "name": "Wallpapers",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "941": [
+            {
+              "id": "941",
+              "name": "Plain",
+              "parentId": "21"
+            },
+            {
+              "id": "21",
+              "name": "Wallpapers",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "wallpapers"
+        ],
+        "property": {
+          "sizes": {
+            "width": 30,
+            "height": 30
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

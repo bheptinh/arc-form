@@ -268,7 +268,7 @@ const Main = props => {
         setPreviewAddMaterialId(currObj?.getAddMaterial());
     };
 
-    useEffect(async () => {
+    useEffect(() => {
         let keyTimeout = setTimeout(() => setStyleAnimation({ transform: "translateX(0%)"}), 50);
         let id = R2D.scene.currentConstructorElementData?.addMaterialID || R2D.scene.currentConstructorElementData?.materialID;
         if (id && Array.isArray(user.data.favorites?.items)) {

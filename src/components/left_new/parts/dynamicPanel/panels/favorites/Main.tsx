@@ -28,6 +28,7 @@ import FavoriteStarIcon from "../../../../../common/FavoriteStarIcon";
 import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
 import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
 import Lock from '../../../../../common/Lock';
+import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 
 
 const useStyle = createUseStyles({
@@ -1031,7 +1032,7 @@ const Main = props => {
         return () => planner.scene.removeEventListener(planner.scene.PRODUCTS_UPDATED, onFavoritesUpdate);
     }, []);
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         let arrayReact = [];
         let htmlElem;
         let loadedPrevs = [];
@@ -1192,7 +1193,7 @@ const Main = props => {
                             <FavoriteStarIcon/>
                         </div>
                         <div className={ classes.prod_item_img_wr }>
-                            <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} className={'lazyload'} />
+                            <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} src={R2D.URL.DOMAIN + elem.source.images.preview} className={'lazyload'} />
 
                             {
                                 elemType == R2D.ProductType.MATERIAL && isObjectAccessible?

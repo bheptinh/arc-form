@@ -225,15 +225,19 @@ const LogoComponent = props => {
     
     useEffect(() => {
         setMatName(activeLogoData?.src ? translation["EDIT_YOUR_IMAGE"] : translation["UPLOAD_YOUR_IMAGE"]);
-        return () => document.querySelector(".product_hover") && document.querySelector(".product_hover").remove();
+        return () => {
+            document.querySelector(".product_hover") && document.querySelector(".product_hover").remove()
+        };
     }, [props.onCopyPaste.index]);
 
-    useEffect(async () => {
+    useEffect(() => {
         setIsLoaded({...isLoaded, status: false});
         setTimeout(() => setIsLoaded({...isLoaded, materialSrc: props.previewSrc, status: true}), 500);
     }, [props.previewSrc, isLoaded.needUpdate]);
 
-    useEffect(() => setShowCopy(props.onCopyPaste.hasOwnProperty('statusCopy') ? props.onCopyPaste.statusCopy : true), [props.onCopyPaste])
+    useEffect(() => {
+        setShowCopy(props.onCopyPaste.hasOwnProperty('statusCopy') ? props.onCopyPaste.statusCopy : true)
+    }, [props.onCopyPaste])
 
     return (
         <div className={classes.editMatItemWr} ref={mainDiv} style={props.customStyles}>

@@ -1,0 +1,4044 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "33",
+    "items": [
+      {
+        "id": 197,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/197\/24eba0e88c54bfcc40a6f442d263d396.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/197\/8fbfc97151a69c31778e68173c168d9a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-25.800000000000004,-32.10666666666666,24.65333333333333,-32.10666666666666,24.65333333333333,-28.66666666666667,28.66666666666666,-28.66666666666667,28.66666666666666,31.533333333333335,-29.24,31.533333333333335,-29.24,-28.66666666666667,-25.800000000000004,-28.66666666666667",
+            "contourCut": "-29.24,-85.42666666666666,28.66666666666666,-85.42666666666666,28.66666666666666,-0.573333333333337,-29.24,-0.573333333333337",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "2b7382140818d9763dd63eae4d7d4953"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "9ebb362b6a3bb372cb7ed63249718b01"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "06d80146b68e7e1a379ad056d5e16cb9"
+              },
+              {
+                "id": 3,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "6292a3437fbdcce8b15c1a0c86c8621a"
+              },
+              {
+                "id": 4,
+                "default": 1563,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "3e0f5a0bf741f903184d9e8dc038fa54"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 59,
+            "height": 86,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 198,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/198\/f16447a225266bc1898c76b18a13fd33.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/198\/6f9c6147185994fe1254ad3dcab284f5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-25.226666666666667,-32.10666666666666,24.080000000000002,-32.10666666666666,24.080000000000002,-28.66666666666667,28.66666666666666,-28.66666666666667,28.66666666666666,31.533333333333335,-29.24,31.533333333333335,-29.24,-28.66666666666667,-25.226666666666667,-28.66666666666667",
+            "contourCut": "-29.24,-85.42666666666666,28.66666666666666,-85.42666666666666,28.093333333333334,-0.573333333333337,-28.66666666666667,-0.573333333333337",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "02f503db1a471b3e9f9e7da4a0c9c4a6"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "2d3be784d43c3280c2034ffe8027899b"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "382b2f1fe88072251dc529df78dad4ca"
+              },
+              {
+                "id": 3,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "dbba69fb349a67642b8436ad7e39cfcb"
+              },
+              {
+                "id": 4,
+                "default": 1563,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "b9eeaf75a2ae947e499ff198953812f7"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 58,
+            "height": 86,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 189,
+        "type": 2,
+        "name": "Sink & cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/189\/06bed77d59b13f7beec148beef9ae81c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/189\/4569181b470c20f390ad9b4478e13077.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "51.29,32,51.49,31.94,51.5,-22.69,51.5,-27.66,51.48,-27.84,51.29,-28.93,47.2,-31.97,47.04,-32,-47.74,-32,-47.9,-31.97,-51.5,-28.93,-51.5,-28.89,-51.5,32",
+            "contourCut": "51.5,0,51.5,-11.83,51.5,-82.05,51.29,-86.27,33.66,-112.09,33.05,-112.87,32.73,-113.11,32.07,-113.6,31.43,-113.79,31.03,-113.87,23.98,-114.74,21.96,-114.9,21.81,-114.87,21.32,-114.76,-51.5,-86.27,-51.5,-84.68,-51.5,-84.19,-51.5,-81.88,-51.3,0,51.49,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ce0a79e093d5d70f60e9f0efa39aab91"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "891baf47d2b3f27d2e2b3e555ead757b"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "08b1434fa3ec67369c5d1d4ee4024f45"
+              },
+              {
+                "id": 3,
+                "default": 1610,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "c1f83196f8362a4b21e1ac62e38de39f"
+              },
+              {
+                "id": 4,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "3ce16ac6b50aaff7031e4d4acdbdc55f"
+              },
+              {
+                "id": 5,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "ec3cd092aca4866f4659df814770e0db"
+              },
+              {
+                "id": 6,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_6",
+                "source": "bank",
+                "hash": "3b5f7df8b3ac5b8be5927930ce84afbb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 103,
+            "height": 115,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 226,
+        "type": 2,
+        "name": "Built-in cooker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/226\/13849fae73b77a8ae973d3aa90322a91.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/226\/5b0693b4e569e76a143e55a8bccecb05.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30.5,31.5,30.5,-28.49,30.5,-29.39,30.5,-29.66,30.5,-29.69,23.46,-30.29,9.77,-31.13,1.56,-31.5,-1.28,-31.5,-9.49,-31.13,-23.19,-30.29,-30.5,-29.68,-30.5,-27.83,-30.5,31.5",
+            "contourCut": "30.35,0,30.5,-81.54,30.5,-85.93,29.54,-86.64,24.09,-90,8.72,-90,8.51,-90,-19.98,-90,-20.19,-90,-20.21,-90,-28.88,-86.64,-30.5,-85.93,-30.5,-82.36,-30.5,-81.54,-30.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "d8ea906d2ec91f12c299d4a4c1c22979"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#ededed",
+                "current": "#ededed",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "3e256cff37d94b1aeec82c732a19c53a"
+              },
+              {
+                "id": 2,
+                "default": 119,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "44e70c47a023744b959c6a825bf36d3f"
+              },
+              {
+                "id": 3,
+                "default": 1618,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "bba57311f306ef1210f77a9e33df16e6"
+              },
+              {
+                "id": 4,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "f8c263aa4272a96eaefcbbdf6ae10a14"
+              },
+              {
+                "id": 5,
+                "default": 1554,
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "3a0ad3fc4848de09d3cf8361e8342782"
+              },
+              {
+                "id": 6,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_6",
+                "source": "bank",
+                "hash": "3c20733f9da7ac89aaf7dfd9c5621907"
+              },
+              {
+                "id": 7,
+                "addMaterial": 41818,
+                "default": "#ff0000",
+                "current": "#ff0000",
+                "name": "mesh_7",
+                "source": "bank",
+                "hash": "f0d7dceec5073cca04605d979de09ae4"
+              },
+              {
+                "id": 8,
+                "default": 3159,
+                "name": "mesh_8",
+                "source": "none",
+                "hash": "a57aa8ff4cd317cc2617a1591e758683"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9202": [
+            {
+              "id": "9202",
+              "name": "Stoves & Microwaves",
+              "parentId": "9200"
+            },
+            {
+              "id": "9200",
+              "name": "Kitchen Appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen",
+          "kitchen appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 61,
+            "height": 90,
+            "depth": 63
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3225,
+        "type": 2,
+        "name": "Corner cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3225\/9af7b4f46fa3bef8511a906e2b6e0a8b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3225\/bda6ff71ee26784ec1c6e3abdcfb7b25.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-59.626666666666665,-59.626666666666665,0.5733333333333275,-59.626666666666665,0.5733333333333275,-54.46666666666666,3.440000000000003,-53.32,0.5733333333333275,-53.32,0.5733333333333275,-1.1466666666666645,7.453333333333333,-1.1466666666666645,8.600000000000009,-4.01333333333333,8.600000000000009,-1.1466666666666645,59.05333333333334,-1.1466666666666645,59.05333333333334,59.05333333333334,-59.626666666666665,59.05333333333334",
+            "contourCut": "-59.626666666666665,-85.42666666666666,59.05333333333334,-85.42666666666666,59.05333333333334,-0.573333333333337,-59.053333333333335,-0.573333333333337",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b453fb7d896f0ca38065d0e7475f5073"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "78ed1f8e3e99bfbca57102956ad1df9e"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "769c968e81080d76c9a1c0401788f600"
+              },
+              {
+                "id": 3,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "5945fc2e080520c70d69c3bf063e85e9"
+              },
+              {
+                "id": 4,
+                "default": 1610,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "78f84425bba3a194bb91a47aa19f0c13"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 119,
+            "height": 86,
+            "depth": 119
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 194,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/194\/1810d228acbf1ec5f0b95da8d5478cb6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/194\/724d402f091ae9cf1489156f21e3c027.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-26.60000000000001,-32.199999999999996,23.79999999999999,-32.199999999999996,23.79999999999999,-27.999999999999993,27.999999999999993,-27.999999999999993,27.999999999999993,29.39999999999998,-29.400000000000002,29.39999999999998",
+            "contourCut": "-29.400000000000002,-208.6,27.999999999999993,-208.6,27.999999999999993,-1.400000000000009,-29.400000000000002,-1.400000000000009",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "57711c539a67ebf77235579726dae489"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b2e7c709b95b283f1d14147d2345e847"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "fb006c2d439d62b8587e7de4c6345b8b"
+              },
+              {
+                "id": 3,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "cbe9420035a8cecabecd3c86c5a4ab7c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 210,
+            "depth": 63
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 196,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/196\/fa76ed4a5c73ed86c5b58b1b8d5bf62f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/196\/d3b0445787a398874de4fbd69ce43858.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-25.226666666666667,-32.10666666666666,24.080000000000002,-32.10666666666666,24.080000000000002,-28.66666666666667,28.66666666666666,-28.66666666666667,28.66666666666666,31.533333333333335,-29.24,31.533333333333335,-29.24,-28.66666666666667,-25.226666666666667,-28.66666666666667",
+            "contourCut": "-29.24,-85.42666666666666,28.66666666666666,-85.42666666666666,28.093333333333334,-0.573333333333337,-28.66666666666667,-0.573333333333337",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ddc487fc8decdc338fcb4650ecb78b93"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "2d3be784d43c3280c2034ffe8027899b"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a0e1460af622cca1698e667011d1a275"
+              },
+              {
+                "id": 3,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "dbba69fb349a67642b8436ad7e39cfcb"
+              },
+              {
+                "id": 4,
+                "default": 1563,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "b9eeaf75a2ae947e499ff198953812f7"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 58,
+            "height": 86,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 252,
+        "type": 2,
+        "name": "Built-in cooker",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/252\/0295d6cc91048b9c6378c8c889f0c003.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/252\/6de32140153e860828c9902396ca07d0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "52.5,32,52.42,-29.02,50.93,-29.27,45.45,-30.13,31.72,-30.94,23.49,-31.3,-11.15,-32,-48.33,-31.95,-52.5,-28.88,-52.5,-27.6,-52.42,32",
+            "contourCut": "52.49,0,52.5,-81.9,52.5,-86.19,46.14,-90,30.78,-90,30.56,-90,2.07,-90,1.86,-90,1.85,-90,-52.5,-86.19,-52.5,-81.9,-52.44,0,-52.37,0,52.42,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "Mesh_0",
+                "source": "bank",
+                "hash": "e360091e6460319477ce4a5eebdccde0"
+              },
+              {
+                "id": 1,
+                "default": 119,
+                "name": "Mesh_1",
+                "source": "bank",
+                "hash": "403534232b033dc85f5485a07416c579"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "Mesh_2",
+                "source": "bank",
+                "hash": "206db91738a8e610c805e49dae5e784d"
+              },
+              {
+                "id": 3,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "Mesh_3",
+                "source": "bank",
+                "hash": "144d8d3caf624da933f62ebd7bf67e60"
+              },
+              {
+                "id": 4,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "Mesh_4",
+                "source": "bank",
+                "hash": "4c2352c07dba5ddc6dd661f4b0b1526d"
+              },
+              {
+                "id": 5,
+                "default": 119,
+                "name": "Mesh_5",
+                "source": "bank",
+                "hash": "54f376b7b1761567ac249d384d2509dd"
+              },
+              {
+                "id": 6,
+                "default": 1618,
+                "name": "Mesh_6",
+                "source": "none",
+                "hash": "a568b24a9493b10c70997d0c622a1966"
+              },
+              {
+                "id": 7,
+                "default": 1554,
+                "name": "Mesh_7",
+                "source": "none",
+                "hash": "d904eb8619fb54ca98a69ecac7b856b3"
+              },
+              {
+                "id": 8,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "Mesh_8",
+                "source": "bank",
+                "hash": "08f2a460b11a82b6258fd29421b82331"
+              },
+              {
+                "id": 9,
+                "default": "#f35536",
+                "addMaterial": "41818",
+                "name": "Mesh_9",
+                "source": "bank",
+                "hash": "5c58dfcda7e4ba586cef71db40015e3c"
+              },
+              {
+                "id": 10,
+                "default": 3159,
+                "name": "Mesh_10",
+                "source": "none",
+                "hash": "64c3f0d1a4ed9584a4fec7dd661b10c0"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9202": [
+            {
+              "id": "9202",
+              "name": "Stoves & Microwaves",
+              "parentId": "9200"
+            },
+            {
+              "id": "9200",
+              "name": "Kitchen Appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen",
+          "kitchen appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 105,
+            "height": 90,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 195,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/195\/b3cfdaf4fdd07d14782af3b962864c00.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/195\/921b37627585a7fe5a1c24ae337903a0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-18.34666666666667,-32.10666666666666,18.34666666666667,-32.10666666666666,18.34666666666667,-28.66666666666667,21.786666666666672,-28.66666666666667,21.786666666666672,31.533333333333335,-22.36,31.533333333333335,-22.36,-28.66666666666667,-18.34666666666667,-28.66666666666667",
+            "contourCut": "-22.36,-85.42666666666666,21.786666666666672,-85.42666666666666,21.786666666666672,-0.573333333333337,-22.36,-0.573333333333337",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "3a724846682a4e95a403b9fbb102d5cd"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "5976366ca19fa2d38534cd8a89dc780e"
+              },
+              {
+                "id": 2,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "e88f688908e41d14143745b5c7f8f6f2"
+              },
+              {
+                "id": 3,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "3b24d13f0f28380aea6cac77fc5e1833"
+              },
+              {
+                "id": 4,
+                "default": 1563,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "6c0c5c98923bdb891f9adecbef625393"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 45,
+            "height": 86,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3234,
+        "type": 2,
+        "name": "Sink & cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3234\/4260040b4b483790e34402d2887af20a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3234\/e9e8838af7f01ec1ea1b776e013b15e3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-59.5,59.5,59.5,59.36,59.49,-1.12,1.05,-59.5,0.24,-59.5,-1.03,-59.5,-59.49,-59.49",
+            "contourCut": "59.22,0,59.38,-11.84,59.5,-81.75,59.5,-86.13,-16.55,-117.85,-17.13,-118,-17.7,-117.85,-59.49,-86.13,-59.5,-0.02,-5.16,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "208c45b9962b101e2048b16076468b62"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "f2be995681a67648bd6bea6a86b79183"
+              },
+              {
+                "id": 2,
+                "default": 839,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "e7da1cb66b662a8bec1bbef6945aaba0"
+              },
+              {
+                "id": 3,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "9c13ebdb345fe770f14d8a243bd5308a"
+              },
+              {
+                "id": 4,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "0339af6d4f6c730a690ad0009d1834f6"
+              },
+              {
+                "id": 5,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "1da49ba02429cd9eb3591a96848db2c3"
+              },
+              {
+                "id": 6,
+                "default": 1610,
+                "name": "mesh_6",
+                "source": "bank",
+                "hash": "ccf0abe72db48bd23803f52b742951c5"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 119,
+            "height": 118,
+            "depth": 119
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3324,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3324\/c0b826cc6ccca099b2f042a0a0f154ce.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3324\/2f879e00fa3a136cd9ef47eb8ea846ff.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30,31.5,30,-26.19,29.09,-28.18,25.37,-31.47,25.21,-31.5,-25.93,-31.5,-26.09,-31.47,-26.19,-31.37,-29.09,-28.18,-30,-26.19,-30,31.5",
+            "contourCut": "30,0,30,-210,-30,-210,-30,-117.02,-30,-11.06,-30,-11.05,-30,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ca1c4389a9727e7ba9791e34f4e3caab"
+              },
+              {
+                "id": 1,
+                "default": "#9f917c",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "111e1c4bc928ac09cc4bf2bf7c34e4c7"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "37ecc6217458f28a7b97b1f81ee81dd9"
+              },
+              {
+                "id": 3,
+                "default": "#776f5f",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "724712b86dd0862005e8d298e9c8d33c"
+              },
+              {
+                "id": 4,
+                "default": 1618,
+                "name": "mesh_4",
+                "source": "none",
+                "hash": "ce0a29feca8a18cbc588b4afe9ba3fb2"
+              },
+              {
+                "id": 5,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "b69ba81a872986775646a48e7ef6620f"
+              },
+              {
+                "id": 6,
+                "default": 55338,
+                "name": "mesh_6",
+                "source": "bank",
+                "hash": "66c50ee3750d7943b215b93a137f5a61"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 210,
+            "depth": 63
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3140,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3140\/7a42bdb4af787a2a1f599c2a694b4fdb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3140\/ff4d822627d42e146e57e593c4bc90ba.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "29.9,31,30,30.9,30,30.45,30,-30.6,30,-31,-29.99,-31,-30,-26.48,-30,30.9,-29.9,31,-28.09,31,28.09,31,28.29,31",
+            "contourCut": "29.62,0,30,-16.14,30,-86.19,30,-90,-29.99,-90,-30,-86.09,-30,-16.14,-29.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "3bbeed64a739cc83802c5e3ecc4b072f"
+              },
+              {
+                "id": 1,
+                "default": 2924,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "1765990a988d82b215c239fd849a18b4"
+              },
+              {
+                "id": 2,
+                "default": 55361,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "729d5352edf2448ea4a5bd18f573b2f2"
+              },
+              {
+                "id": 3,
+                "default": 2924,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "50427dcbc3132a102af5231746e442d2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 90,
+            "depth": 62
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3137,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3137\/1fdf071e0ee1a201ea7d36337d16af87.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3137\/00849ac3bb5ca5935ae727fa181ba1e6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30,31,30,30.9,30,-30.6,30,-31,-29.99,-31,-30,-26.9,-30,30.9,-29.99,31",
+            "contourCut": "29.62,0,30,-16.14,30,-86.19,30,-90,-29.99,-90,-30,-86.09,-30,-16.14,-29.88,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "1cc62592e618c3225aa5a5f66004ce02"
+              },
+              {
+                "id": 1,
+                "default": 2924,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "12fca3786ae7ecdd5fe5ad22ee4c6ab8"
+              },
+              {
+                "id": 2,
+                "default": 55361,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "c52d1606a6996a2b780ebba97437a319"
+              },
+              {
+                "id": 3,
+                "default": 2924,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "e247170684805d81a78a28de63dac1ac"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 60,
+            "height": 90,
+            "depth": 62
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3135,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3135\/534d68364080770d1c8cdcf121677b9e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3135\/f11337dfadbe63cfa3f32d4dec5ce672.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "30.49,31,30.5,30.9,30.5,-26.9,30.49,-31,-30.5,-31,-30.5,30.9,-30.5,31",
+            "contourCut": "30.31,0,30.5,-16.14,30.5,-86.09,30.49,-90,-30.5,-90,-30.5,-86.19,-30.49,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "5573aef57122770f457b6890331452ad"
+              },
+              {
+                "id": 1,
+                "default": 2924,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "d6b5fde35253d699b22ed518e6cf599b"
+              },
+              {
+                "id": 2,
+                "default": 55361,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "0a3deedd5ae3f397b9142b6b6d3b4003"
+              },
+              {
+                "id": 3,
+                "default": 2924,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "4006daab42ac568fc89be799797c8a32"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 61,
+            "height": 90,
+            "depth": 62
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3227,
+        "type": 2,
+        "name": "Corner cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3227\/8a32f792a00a1c59561d3bdc96d163f4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3227\/8625d26e379f6891e4f8a9f03a864fb8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "61,61,61,-0.74,61,-1.14,1.14,-61,-60.9,-61,-61,-61,-60.99,61",
+            "contourCut": "60.62,0,61,-16.14,61,-86.19,61,-90,-60.9,-90,-61,-89.9,-61,-86.29,-60.99,-0.1,-60.89,0,-4.97,0,-4.87,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2924,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "a950368f0bc39dbbbd18e68859d6ea0c"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "a5ae5c918cd5f5a0e51289d177b701d6"
+              },
+              {
+                "id": 2,
+                "default": 55361,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "9d8fe0be8290f3b076f5f77fc319a1bd"
+              },
+              {
+                "id": 3,
+                "default": 2924,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "45b1710f88aee8a4287bf4d54e4e5b92"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 122,
+            "height": 90,
+            "depth": 122
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3134,
+        "type": 2,
+        "name": "Cabinet with sink",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3134\/010325762d4b60aa57bd4bbfa830985f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3134\/86fb2577a91ce4884d74e2c9f3ab9daa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "45.25,31,45.4,30.92,45.5,30.82,45.5,-30.59,45.5,-30.81,45.5,-30.87,45.5,-30.9,45.4,-31,-45.4,-31,-45.5,-30.9,-45.5,30.82,-45.39,31,43.65,31",
+            "contourCut": "45.25,0,45.35,-0.1,45.5,-86.09,45.5,-89.69,45.4,-89.79,-4.73,-123.82,-5.03,-124,-5.33,-123.83,-45.4,-89.79,-45.5,-89.69,-45.5,-86.09,-45.39,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ededed",
+                "current": "#ededed",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "29a6688f441f2d298e125524730153f7"
+              },
+              {
+                "id": 1,
+                "default": 2924,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "c7a5bd3f81dc9ed08146a31e5039dd94"
+              },
+              {
+                "id": 2,
+                "default": 55361,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "e0376566f23b7776528732fc1cb0bb1d"
+              },
+              {
+                "id": 3,
+                "default": 2924,
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "9b8cf139d86d3797e8c5f688896c5875"
+              },
+              {
+                "id": 4,
+                "default": 55338,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "f4ff1a78fc0bc2222b3e10cec4fd1c4b"
+              },
+              {
+                "id": 5,
+                "default": 839,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "cb2a1c0e1b7273c704ab41dc117996d7"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 91,
+            "height": 124,
+            "depth": 62
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3233,
+        "type": 2,
+        "name": "Sink & cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3233\/34f44adfeb98b0e98fd56b7493665200.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3233\/a6f4efd307c84d1cc7f1c5702135861e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "61,61,61,60.9,61,-1.11,61,-1.14,1.14,-61,-60.9,-61,-61,-61,-60.99,61",
+            "contourCut": "60.62,0,61,-16.1,61,-89.81,-15.64,-121.85,-16.21,-122,-16.78,-121.85,-60.94,-89.81,-61,-89.71,-61,-86.11,-60.99,-0.1,-60.89,0,-4.87,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "7c11f2a9dc16ff95f7a0eb4ebb557a56"
+              },
+              {
+                "id": 1,
+                "default": 839,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "513887e810080754bf6e591e3a19c2c1"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "4dbcc68fa020981662911d2fbd07473d"
+              },
+              {
+                "id": 3,
+                "default": 2924,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "eaf3c1135b3743b47d49aa2653253e08"
+              },
+              {
+                "id": 4,
+                "default": 2924,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "706f6c8f837aad48a9c4dec205eb3b3f"
+              },
+              {
+                "id": 5,
+                "default": 55361,
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "7d5838b65e4f068c6ca51d78a7d58a1a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 122,
+            "height": 122,
+            "depth": 122
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3119,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3119\/0ef840a47d5f2089d12d18952d6703a1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3119\/b6a70ead30a7ee52f92ee3e63fccbdb5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "35,35.5,35,12.98,35,-34.42,35,-34.52,35,-34.62,35,-34.69,35,-34.75,35,-34.79,35,-34.8,28.91,-35.5,-29.59,-35.5,-35,-34.8,-35,12.98,-35,35.5",
+            "contourCut": "34.69,0,35,-84,35,-90,-35,-90,-35,-89.99,-35,-89.95,-35,-89.89,-35,-89.81,-35,-89.72,-35,-89.61,-35,-89.5,-35,-88.82,-35,-88.34,-35,-88.33,-35,-84.2,-35,-84.16,-35,-84.11,-35,-84.08,-35,-84.05,-35,-84.02,-35,-84.01,-35,-84,-35,-15.03,-35,-14.98,-35,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "0c4226d6216ed1f17736c4bed9641f24"
+              },
+              {
+                "id": 1,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "96870507702b70aecf5ec6f448961f26"
+              },
+              {
+                "id": 2,
+                "default": 54826,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "88acc7171be0d05c88fe4d83705e963b"
+              },
+              {
+                "id": 3,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "df9175f3441f84900d124362ea6aeeb6"
+              },
+              {
+                "id": 4,
+                "default": 1610,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "57229c9c724fe1974ece1652369cf67f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 70,
+            "height": 90,
+            "depth": 71
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3118,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3118\/c1fbd151890e9be118fdb78a0c23b5bd.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3118\/9c0643d79fa624e94c5963f03a8769dd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "35,35.5,35,12.98,35,-34.42,35,-34.52,35,-34.62,35,-34.69,35,-34.75,35,-34.79,35,-34.8,28.91,-35.5,-29.59,-35.5,-35,-34.8,-35,12.98,-35,35.5",
+            "contourCut": "34.69,0,35,-84,35,-90,-35,-90,-35,-89.99,-35,-89.95,-35,-89.89,-35,-89.81,-35,-89.72,-35,-89.61,-35,-89.5,-35,-88.82,-35,-88.34,-35,-88.33,-35,-84.2,-35,-84.16,-35,-84.11,-35,-84.08,-35,-84.05,-35,-84.02,-35,-84.01,-35,-84,-35,-15.03,-35,-14.98,-35,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "0c4226d6216ed1f17736c4bed9641f24"
+              },
+              {
+                "id": 1,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "96870507702b70aecf5ec6f448961f26"
+              },
+              {
+                "id": 2,
+                "default": 54826,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "22044aa803b2ad1cc37fbd3962fc4a2b"
+              },
+              {
+                "id": 3,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "df9175f3441f84900d124362ea6aeeb6"
+              },
+              {
+                "id": 4,
+                "default": 1610,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "4b2c0029e1249d3db4c19e608fd03e82"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen",
+          "3118"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 70,
+            "height": 90,
+            "depth": 71
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3114,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3114\/812fb40e1b1027fa5dad18e3e826080d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3114\/30eea355af2d75026ac179cd364364fc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "20.5,35.5,20.5,12.98,20.5,-34.42,20.5,-34.52,20.5,-34.62,20.5,-34.69,20.5,-34.75,20.5,-34.79,20.5,-34.8,14.02,-35.5,-14.22,-35.5,-20.5,-34.8,-20.5,12.98,-20.5,35.5",
+            "contourCut": "20.5,0,20.5,-90,-20.5,-90,-20.5,-89.99,-20.5,-89.95,-20.5,-89.89,-20.5,-89.81,-20.5,-89.72,-20.5,-89.61,-20.5,-89.5,-20.5,-88.82,-20.5,-88.34,-20.5,-88.33,-20.5,-84.2,-20.5,-84.16,-20.5,-84.11,-20.5,-84.08,-20.5,-84.05,-20.5,-84.02,-20.5,-84.01,-20.5,-84,-20.5,-15.03,-20.5,-14.98,-20.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "d275e2cd904c6d929545220957f6e757"
+              },
+              {
+                "id": 1,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "bbce92f1f26efdc3953439f330db0178"
+              },
+              {
+                "id": 2,
+                "default": 54826,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "797316574ad44228421815f141a39f20"
+              },
+              {
+                "id": 3,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "542988a54d1931466e9b623f9aa998ad"
+              },
+              {
+                "id": 4,
+                "default": 1610,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "724f4a567fbe1ee8281e57ca6213720b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen",
+          "3114"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 41,
+            "height": 90,
+            "depth": 71
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3232,
+        "type": 2,
+        "name": "Corner cabinet with sink",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3232\/e05c36552bdfe57067b0f260101de2be.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3232\/78567b935b35be30153a5b63d438982f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "55.5,53.5,55.5,-16.54,14.73,-53.5,6.94,-53.5,-55.43,-53.5,-55.5,-53.5,-55.5,-12.71,-55.5,53.46,-55.5,53.5",
+            "contourCut": "55.47,0,55.5,-84.13,55.5,-89.22,55.5,-89.52,55.5,-90.22,-8.99,-121.85,-9.56,-122,-10.13,-121.85,-55.5,-90.22,-55.5,-84.15,-55.5,-15.05,-55.5,0,6.94,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "5df013b1bcdda2bb97d219eb02a3d7ad"
+              },
+              {
+                "id": 1,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "2831d7689424b95c82ba22df296d5c5f"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "75da9d8b98474706d23ef0e884f50149"
+              },
+              {
+                "id": 3,
+                "default": 55338,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "e5d830ff0872c0f85e1efb3fb67d8f8a"
+              },
+              {
+                "id": 4,
+                "default": 839,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "427394048d024a60365d195d20ba6482"
+              },
+              {
+                "id": 5,
+                "default": 54826,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "970a8117bbd15a8bfc1e6c08e7c8f302"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 111,
+            "height": 122,
+            "depth": 107
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3120,
+        "type": 2,
+        "name": "Sink & cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3120\/33d3aac1aa3a77d28b10857bd3136dc1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3120\/11aea14f143815ef9c17117192375acd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "35,35.5,35,28.34,35,-34.42,35,-34.52,35,-34.62,35,-34.69,35,-34.75,35,-34.79,35,-34.8,28.91,-35.5,-29.59,-35.5,-35,-34.8,-35,35.5",
+            "contourCut": "34.69,0,35,-84.24,35,-90.26,1.16,-117.96,1.09,-118,-1.08,-118,-1.16,-117.98,-35,-90.26,-35,-90.24,-35,-90.21,-35,-90.15,-35,-90.07,-35,-89.98,-35,-89.87,-35,-89.76,-35,-89.07,-35,-88.59,-35,-84.44,-35,-84.4,-35,-84.35,-35,-84.32,-35,-84.29,-35,-84.26,-35,-84.25,-35,-84.24,-35,-70.41,-35,-15.07,-35,-15.03,-35,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "fb525296363023cb0c52718e39a4e433"
+              },
+              {
+                "id": 1,
+                "default": 55335,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "c197fdb24ca131bc9a0c46c2c2004a2a"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "41531da92125e705517cb9344637fc8b"
+              },
+              {
+                "id": 3,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "a53bb29b3e94ac74503a25783fbc7fad"
+              },
+              {
+                "id": 4,
+                "default": 54826,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "6e300d9cfe561084a6643d5480019d2d"
+              },
+              {
+                "id": 5,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "c567bae95db5224fbb8a0f999140cf31"
+              },
+              {
+                "id": 6,
+                "default": 1610,
+                "name": "mesh_6",
+                "source": "bank",
+                "hash": "260542f49e758489cd293cfde84a9286"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen",
+          "3120"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 70,
+            "height": 118,
+            "depth": 71
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3216,
+        "type": 2,
+        "name": "Corner cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3216\/5c289e140871b262bd8d26199afa8713.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3216\/62e2c452e3629016bcb8ec2dc2714de6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "55.5,53.5,55.5,-12.69,55.37,-16.73,14.72,-53.25,10.81,-53.5,-55.43,-53.5,-55.5,-12.69,-55.5,53.5",
+            "contourCut": "55.5,0,55.5,-83.99,55.37,-90,-55.3,-90,-55.5,-83.99,-55.5,-15.02,-55.5,0,-55.43,0,6.96,0,6.99,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "e33371e8a4718c3df40bff184cfe7b3c"
+              },
+              {
+                "id": 1,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "8b43978339d8cf372c917aa15114b8d9"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "9c5f4d8fdf6adec6bfb7161238d2ff14"
+              },
+              {
+                "id": 3,
+                "default": 54826,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "a730c1229dd1af8be5b17c8c1887cccb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 111,
+            "height": 90,
+            "depth": 107
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3131,
+        "type": 2,
+        "name": "Oven",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/31\/3131\/540235bda6affe6f5949741f2d0488cb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/31\/3131\/c7acddbeea3cdfccced097f866e82e5a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "69.41,35.5,69.5,-30.86,69.5,-32.57,69.41,-34.8,64.65,-35.5,-24.37,-35.5,-63.26,-35.5,-69.5,-34.8,-69.5,-34.76,-69.5,-31.35,-69.5,12.98,-69.5,35.5",
+            "contourCut": "69.4,0,69.5,-15.34,69.5,-49.02,69.5,-83.58,69.41,-90.48,33.06,-94.96,27.84,-95,-22.54,-95,-23.69,-95,-24.47,-95,-24.6,-95,-24.83,-95,-29.49,-94.92,-69.5,-90.48,-69.5,-89.29,-69.5,-84.45,-69.5,-15.11,-69.5,-15.06,-69.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "a6c03a6e8f0b65559b367fa50146d180"
+              },
+              {
+                "id": 1,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "Mesh_1",
+                "source": "bank",
+                "hash": "d205a18714567c60bbb834e5a17251c2"
+              },
+              {
+                "id": 2,
+                "default": 54826,
+                "name": "Mesh_2",
+                "source": "bank",
+                "hash": "bcd28d346bf9d6d43030486ea453cc52"
+              },
+              {
+                "id": 3,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "Mesh_3",
+                "source": "bank",
+                "hash": "9340ba90ce1ce4c72888a3949ede3de5"
+              },
+              {
+                "id": 4,
+                "default": 1610,
+                "name": "Mesh_4",
+                "source": "bank",
+                "hash": "2497b4d7208ac3e75929b056b7f7a749"
+              },
+              {
+                "id": 5,
+                "default": 1618,
+                "name": "Mesh_5",
+                "source": "bank",
+                "hash": "4a7a49015ea85a93ff5332a958b4817a"
+              },
+              {
+                "id": 6,
+                "default": 3252,
+                "name": "Mesh_6",
+                "source": "none",
+                "hash": "fcd0da5dc16935dc16312d2f8bc18b1f"
+              },
+              {
+                "id": 7,
+                "default": 1555,
+                "name": "Mesh_7",
+                "source": "bank",
+                "hash": "0cb3292c1d682f5b396c84c71ce80b34"
+              },
+              {
+                "id": 8,
+                "default": 3132,
+                "name": "Mesh_8",
+                "source": "none",
+                "hash": "71fc189c41da621db6b0e75b7a311668"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9202": [
+            {
+              "id": "9202",
+              "name": "Stoves & Microwaves",
+              "parentId": "9200"
+            },
+            {
+              "id": "9200",
+              "name": "Kitchen Appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 139,
+            "height": 95,
+            "depth": 71
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3235,
+        "type": 2,
+        "name": "Corner cabinet with sink",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3235\/b07fa4ef46229e353a7f01e72a36ee6b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3235\/f19f49386122e0f8416c1ad4bacd44f2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "60,60,60,-1.24,1.28,-60,-60,-60,-60,60",
+            "contourCut": "59.63,0,59.95,-10.38,60,-79.76,60,-79.77,60,-83.76,-16.55,-115.61,-17.13,-115.77,-17.7,-115.61,-60,-83.76,-60,-79.77,-60,-79.76,-59.71,-0.05,-59.18,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "785bcc3f8d895c7569c4f9478d332271"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "2ad7bcd1c83a4dc860290a04dd4e85ef"
+              },
+              {
+                "id": 2,
+                "default": 839,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "48ce89d2e34ca8754bc0b758625ce87e"
+              },
+              {
+                "id": 3,
+                "default": 617,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "cd769435ab64ec9661fe98df839f79d1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 116,
+            "depth": 120
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3226,
+        "type": 2,
+        "name": "Corner cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3226\/91fcd47d9893cb3049e9d23fe5a2243d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3226\/6d16f10dce1e75bb815f685b7404d4b0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-59.92,-59.92,0.5599999999999943,-59.92,0.5599999999999943,-1.1199999999999979,59.36000000000001,-1.1199999999999979,59.36000000000001,59.36000000000001,-59.92,59.36000000000001",
+            "contourCut": "-59.36,-79.52,59.36000000000001,-79.52,59.36000000000001,-0.5600000000000036,-59.36,-0.5600000000000036",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b2ce0e4691d5492ed5f043d54cad5a88"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "ee4a812680de2277376fe4631573098b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 84,
+            "depth": 120
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 222,
+        "type": 2,
+        "name": "Built-in Oven",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/222\/8f02e86e71c4106c039a78d2ca85d0c4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/222\/6a06abc9efeaa21a86875950a2668d46.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "42.86,32,46,31.9,46,-28.99,46,-29.17,38.57,-31.94,38.05,-32,-0.26,-32,-38.83,-32,-39.32,-31.94,-45.99,-29.17,-46,-28.56,-46,31.76,-46,31.89,-45.99,31.9,-43,32",
+            "contourCut": "46,0,46,-83.97,22.52,-88,-12.07,-88,-12.28,-88,-15.84,-88,-16.05,-88,-21.65,-88,-21.86,-88,-21.88,-88,-45.99,-83.97,-46,-10.5,-46,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "el1",
+                "source": "bank",
+                "hash": "0dc0bf1f5d641f7e8eb230f1a13e378a"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "el2",
+                "source": "bank",
+                "hash": "4464386983556623659a972bdbf4a5fe"
+              },
+              {
+                "id": 2,
+                "default": 1762,
+                "name": "el3",
+                "source": "bank",
+                "hash": "924ce2178121f5fd847095f3025fb176"
+              },
+              {
+                "id": 3,
+                "default": "#404541",
+                "addMaterial": "41838",
+                "name": "el4",
+                "source": "bank",
+                "hash": "90b6a2fc80838f94444b352255c53881"
+              },
+              {
+                "id": 4,
+                "default": 55344,
+                "name": "el5",
+                "source": "bank",
+                "hash": "db78b8f3623b6c1a0532328cf21af66e"
+              },
+              {
+                "id": 5,
+                "default": 53098,
+                "name": "el6",
+                "source": "bank",
+                "hash": "e677b7e2bb15f2797b28a5fa8ad0b38f"
+              },
+              {
+                "id": 6,
+                "default": 54829,
+                "name": "el7",
+                "source": "bank",
+                "hash": "a03a6b512f97dc276ae6866d9aa5b9bb"
+              },
+              {
+                "id": 7,
+                "default": 3159,
+                "name": "el8",
+                "source": "none",
+                "hash": "9f7c1f91fd9eef6b72ae2620d1609a3e"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9202": [
+            {
+              "id": "9202",
+              "name": "Stoves & Microwaves",
+              "parentId": "9200"
+            },
+            {
+              "id": "9200",
+              "name": "Kitchen Appliances",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen",
+          "kitchen appliances"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 92,
+            "height": 88,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 221,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/221\/7e3c694503fcf8f6e4e04ea79b762fda.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/221\/3fb0c3e5a3e73e8a0de91d81a2a086fc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-1.1199999999999979,-31.92,0.5599999999999943,-31.92,0,-29.12,29.12,-29.12,29.12,31.359999999999996,-29.680000000000003,31.359999999999996,-29.12,-29.12,-0.5600000000000036,-30.24",
+            "contourCut": "-29.680000000000003,-83.44,28.560000000000006,-83.44,28.560000000000006,-0.5600000000000036,-29.12,-0.5600000000000036",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55344,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "2b31060883aad06373ee30237b5e9fd8"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "55d4690ae9cc2280a786a045cf80504d"
+              },
+              {
+                "id": 2,
+                "default": 1563,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "09cfdf0c11e35ef3baedd81f495c30a3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 59,
+            "height": 84,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 220,
+        "type": 2,
+        "name": "Cabinet with sink",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/220\/25860a3897d2fa72bdd98511a18ab788.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/220\/86d9977f1636cda34659b9d73e142529.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "60.5,32,60.5,29.65,60.5,-29.09,30.94,-32,-30.69,-32,-60.5,-29.1,-60.5,32",
+            "contourCut": "60.44,0,60.5,-79.96,60.5,-83.96,0.85,-117.92,0.44,-118,0.04,-117.92,-60.5,-83.96,-60.5,-79.96,-60.46,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1563,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c212fc84931bb24e2953c2f106931da8"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "0eb17833bcb4ce6c7d128dbb9f773c72"
+              },
+              {
+                "id": 2,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "211ee07c95139c9370d3f41bd4032b77"
+              },
+              {
+                "id": 3,
+                "default": 1610,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "12b4d13281f1ffbe26f07477b4f2e41c"
+              },
+              {
+                "id": 4,
+                "default": 55338,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "bd2b87bdf826371bf6ef442c35d083be"
+              },
+              {
+                "id": 5,
+                "default": 617,
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "6b41470558d5521d8621ff29f3692eda"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 121,
+            "height": 118,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 201,
+        "type": 2,
+        "name": "Cabinet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/201\/529990903bddd643dd4dff03688f08b4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/201\/78955f58a8766fb15ca4efddb90b81fe.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-4.900000000000004,-32.66666666666666,60.433333333333316,-29.4,60.433333333333316,31.033333333333342,-62.066666666666656,31.033333333333342,-62.066666666666656,-29.4",
+            "contourCut": "-62.066666666666656,-243.36666666666665,60.433333333333316,-243.36666666666665,60.433333333333316,-1.633333333333344,-62.066666666666656,-1.633333333333344",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55344,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9c9443fe54f430af479eeaa9fef3024f"
+              },
+              {
+                "id": 1,
+                "default": 617,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "729dc5966a1a89b618e201042bd5997e"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "kitchen"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 124,
+            "height": 245,
+            "depth": 65
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42460,
+        "type": 2,
+        "name": "Water tap",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/424\/42460\/b3a56adf9007a2ad27dd8149384b1c90.png"
+          },
+          "body": {
+            "package": "\/files\/products\/424\/42460\/67093c768a4626e7187199bcd00ca1e6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.55,4.25,17.96,0.48,18.94,-0.03,25.63,-5.06,25.88,-5.29,26,-5.53,26,-5.63,25.96,-5.72,25.81,-5.85,25.76,-5.88,0.58,-15.65,0.2,-15.75,-0.2,-15.75,-0.58,-15.65,-25.76,-5.88,-25.81,-5.85,-25.96,-5.72,-26,-5.63,-26,-5.53,-25.88,-5.29,-25.63,-5.06,-18.94,-0.03,-17.96,0.48,-0.55,4.25",
+            "contourCut": "20.76,0,25.97,-8.33,26,-8.41,26,-8.51,25.9,-8.68,25.79,-8.79,0.8,-29.76,0.51,-29.92,0.17,-30,-0.17,-30,-0.51,-29.92,-0.8,-29.76,-25.79,-8.79,-25.9,-8.68,-26,-8.51,-26,-8.41,-25.97,-8.33,-20.76,0,1.62,0,2.57,0,4.17,0,19.31,0,20.04,0,20.53,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 839,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "42506b2e7ad213c4d15aed8e409e3301"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9885": [
+            {
+              "id": "9885",
+              "name": "Washbasins",
+              "parentId": "32"
+            },
+            {
+              "id": "32",
+              "name": "Bathroom",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 52,
+            "height": 30,
+            "depth": 20
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64548,
+        "type": 2,
+        "name": "Kitchen faucet",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64548\/4fe432af80c7d7751f24342c2751b5ef.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64548\/73bcb6403258b1c68216717c25a097a7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-2.56,11.76,-2.18,11.73,5.36,11.03,5.49,10.89,5.49,9.36,5.49,8.83,5.49,8.29,5.49,7.8,5.49,7.37,5.49,7.04,5.49,6.83,5.49,6.76,-1.03,-10.74,-1.39,-11.27,-1.93,-11.63,-2.56,-11.76,-3.2,-11.63,-3.73,-11.27,-4.09,-10.74,-4.22,-10.1,-5.47,8.45,-5.49,8.83,-5.47,9.21,-5.39,9.59,-5.27,9.95,-5.1,10.29,-4.89,10.61,-4.63,10.9,-4.35,11.15,-4.03,11.37,-3.68,11.54,-3.32,11.66,-2.94,11.73",
+            "contourCut": "0.31,0,0.35,-0.01,0.37,-0.04,5.49,-8.27,5.49,-8.34,5.49,-8.55,5.49,-8.88,5.49,-9.31,5.49,-9.8,5.49,-10.34,5.49,-12.33,5.49,-12.4,4.76,-17.03,-1.5,-47.02,-1.75,-47.39,-2.12,-47.64,-2.56,-47.73,-3,-47.64,-3.37,-47.39,-3.62,-47.02,-3.71,-46.58,-5.49,-0.66,-5.49,-0.56,-5.49,-0.13,-5.49,-0.04,-5.48,-0.01,-5.44,0,0.17,0,0.29,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41835,
+                "default": "#1f1f1f",
+                "current": "#1f1f1f",
+                "name": "hose",
+                "source": "bank",
+                "hash": "a822889a7922cb86e111cbeee6990e6d"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "corpus",
+                "source": "bank",
+                "hash": "bb8160f42c81bf3121a4a53f88ebd6e3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 11,
+            "height": 48,
+            "depth": 24
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.25948800 1751119102"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42461,
+        "type": 2,
+        "name": "Water tap",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/424\/42461\/b8fdbcd94ead24fa1d11a2b2d9c027f3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/424\/42461\/0f49dd15bde14ba42bb5a2cd4fac3c69.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.5,17,4.5,7.55,1.49,-17,-1.61,-17,-4.5,7.55,-4.5,17",
+            "contourCut": "4.5,0,4.5,-1.61,1.49,-48.96,-1.61,-48.96,-4.5,-1.61,-4.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1555,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "e702ed152095a6340d26f69cfeea22f3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9155": [
+            {
+              "id": "9155",
+              "name": "Base & pantry cabinets",
+              "parentId": "9153"
+            },
+            {
+              "id": "9153",
+              "name": "Kitchen",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 9,
+            "height": 49,
+            "depth": 34
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

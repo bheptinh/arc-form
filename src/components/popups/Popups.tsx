@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import {createUseStyles} from "react-jss";
 
-import { selectPopups } from '../../redux/features/popups/popupsSlice.js';
+import { selectPopups } from '../../redux/features/popups/popupsSlice';
 
 import RegistrationPopup from './RegistrationPopup';
 import LoginPopup from './LoginPopup';

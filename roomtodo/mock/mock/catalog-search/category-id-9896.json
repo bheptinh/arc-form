@@ -1,0 +1,6943 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "78",
+    "items": [
+      {
+        "id": 2803,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2803\/b37ffe3ff43213049beb88c67811fbf3.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2803\/76c640c89135d26f717184c668f9acfd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "905b6d2a19757ef2c7b43595d596f410"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "797ef41402858baddcced782b8ce6ebb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 66,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1920,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1920\/c6b10fed3992d313473e5f5da6687f8f.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1920\/8496962a2c3bdc5a93c0641d39009155.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "dc9d9b09baacfdde3aaace1770174145"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "12e5e1eef0d1bdafb86715ba3c725f92"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 145,
+            "height": 95,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64761,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64761\/507479b821dabf916d82f62649cbc253.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64761\/89c10a9d1f6cf3d9765d63a59a077541.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64762,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64762\/85f1a217b228f2bd9f5cd848034b79ed.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64762\/05d2c39df4ac996591ec6e313cb80359.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 154,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2850,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2850\/b8b2d6ca38f72166c5d6b0cfb1be45ef.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2850\/5026af0cc8ae736b60ae66a41f007f8f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "396d106d27d552bb7183a76621e5a056"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "c09941da2132bcb36ff5a5986a9ceb75"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 84,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2847,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2847\/7b04190ce01f9817f371780f67cc9a26.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2847\/43b40510c633978b3d3a95fbb39b8b2d.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 78,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2846,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2846\/5ea9fe9b22ee7540badc231a1bf52892.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2846\/6bed5896210932010678ac3159ba2c31.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 78,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2842,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2842\/7f90973c8976d8ab4e247239fbf142ea.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2842\/67b5a4620853fc4ad93cf68b7cae51e4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "fac6a58661a945cae954ebea59ade601"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "477ecd698b42265081899d5258dbc01d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 66,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2832,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2832\/229400cf7188540eed4c2af3a2990c60.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2832\/d328fd3b219a1df08ba191de447bd5fb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "d00e8e9306ae4b0a26442dbbc27afe42"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "eff954eddfb7bf5de88c0f391bb77480"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 97,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2827,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2827\/576ea7d2eaae5f06e202a7058f1a730c.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2827\/1e25a919f28dd754d919810afa6c5d7e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "2229ef00cebc531f696103a7ff622aa8"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "c4a87988f262a63f2b66c81acc09b4d5"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 83,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2809,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2809\/a0b32a3e9d7095d82faa30be1e73c2d6.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2809\/f469b27b80fe7936682d09848fb3c282.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "5c83d9e7db28bae52a0503b7080e354b"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "7724290c369805fabdc88edddfacd5de"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 77,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2808,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2808\/1bc5f29738bbb4894343279c92a0a80d.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2808\/c4f85d119a5a91a0064f0dc59309111d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "5c83d9e7db28bae52a0503b7080e354b"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "7724290c369805fabdc88edddfacd5de"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 77,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2807,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2807\/d473fc1356edcdf76138020edc1877f7.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2807\/bf8c9f97f803ffeb5571e7cca9f4229a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "5c83d9e7db28bae52a0503b7080e354b"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "7724290c369805fabdc88edddfacd5de"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 77,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2805,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2805\/3a484307e248ba1e55a7ad9d6e3a0291.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2805\/8eaf4a105d0cb7f9578db4bfcc4dfa58.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "20be49ff554371d9d41493be480db222"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "ac8b44666e4dd5d416371b72307987ce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 64,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2804,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2804\/155ebce9a904876727df8ef08f301538.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2804\/fba33d1c94e79c3b2a488d4430543db0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "20be49ff554371d9d41493be480db222"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "ac8b44666e4dd5d416371b72307987ce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 64,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2802,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2802\/99d2355e1ba0db040d8a00ae191199a3.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2802\/3e71083efaac2c5c30ededa6e47b8477.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "ddc7f417bc0be4efbd91891a659f475b"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "a7fe84756e7eb403c61be3300d2ca82c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 73,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2801,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2801\/d2683a5247afccd7f32f22f1fa829233.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2801\/474e5d731162e80af6b8891362ccf66c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b914a322616b8204635cc87bd1a50173"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cde91b77240ee75c5de5a86d57b4a3a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2800,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/28\/2800\/57e5f08ff41e8375d4632c9b2c6b05ec.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/28\/2800\/10a5b1bf926d52e9b4f3f7c29ffba3c3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b914a322616b8204635cc87bd1a50173"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cde91b77240ee75c5de5a86d57b4a3a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2799,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2799\/16c203f6c2deead6895e8d081b9ae6ba.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2799\/6d7836f2d505a5ef7af74c3448fd1f4b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b914a322616b8204635cc87bd1a50173"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cde91b77240ee75c5de5a86d57b4a3a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2798,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2798\/2761377669d201f5ef690dd22b01f449.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2798\/ec4d3c8e024030675bc75d050ca01311.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b914a322616b8204635cc87bd1a50173"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cde91b77240ee75c5de5a86d57b4a3a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2797,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2797\/cc0c8e09923d3c8c640f02a3f86d289e.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2797\/99c2edad0974fd861c290a84ccede173.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "20be49ff554371d9d41493be480db222"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "ac8b44666e4dd5d416371b72307987ce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 64,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2795,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2795\/9695e138dae8ed902d773e9197013bf1.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2795\/d7eac40ce82587faf9fb480bff40ab24.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "905b6d2a19757ef2c7b43595d596f410"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "797ef41402858baddcced782b8ce6ebb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 66,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2793,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2793\/3bdd72a4bbb3db1953d58eed999e903f.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2793\/7ce1a765d611eba331170dff8741565f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "20be49ff554371d9d41493be480db222"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "ac8b44666e4dd5d416371b72307987ce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 64,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2792,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2792\/2002f886b4c16ea7efef2ff6e4c57094.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2792\/8189b39534a0787c092704e390b0ec4c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "20be49ff554371d9d41493be480db222"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "ac8b44666e4dd5d416371b72307987ce"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 64,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2789,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2789\/7dd42b22c8ab1c85081a7400e355519a.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2789\/afb58a6a7307c3e758ebec3ad22ba285.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "818c1d807bfc96269ab491e74560bdc8"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cf467bdb768c6c5483cf2f151eef9aff"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 61,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2787,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2787\/1bf3e757c8a6af95f354abd90ce2715d.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2787\/bc3d3e35921916a2c071cf0c98e79dd8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "905b6d2a19757ef2c7b43595d596f410"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "797ef41402858baddcced782b8ce6ebb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 66,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2745,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2745\/7401fe4f05d8400cdf4a111bb5c433a1.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2745\/0316e15e118460013ef8c903e6a53cdf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "aff60af741e96ae08dceb7c9e5a3432e"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "3ec97a99abb11a14286e092c2a662400"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 76,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2716,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/27\/2716\/2b62bc369fa2cd033d02a118ecb4e4b4.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/27\/2716\/460bf2d99e60899bf384f239f792ab95.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b914a322616b8204635cc87bd1a50173"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "cde91b77240ee75c5de5a86d57b4a3a9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 117,
+            "height": 78,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1928,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1928\/6014f38240b624306f3c7138cb83ebbf.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1928\/c854ec7ecd051726b943c1c3332236a5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "66462c6cd32bd347f15d324d737d8431"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "eb7ff38dd630d5268481bccd0eaf74ac"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 138,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1927,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1927\/8677e5e3ae7e1ca5a121a37be1ed0cc6.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1927\/c54f0e7a58dd2196da35f67c31aecb8e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "66462c6cd32bd347f15d324d737d8431"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "eb7ff38dd630d5268481bccd0eaf74ac"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 138,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1926,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1926\/0b47f953ba7b963783fb2bb666a411d3.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1926\/53e72c55edea287f7d4ae48cc898c9d2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "6c24b2376fef64df60fbfca37132c084"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "831c7f1a068a0cf08d63b7f8c385fa50"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 132,
+            "height": 95,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1925,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1925\/145d85af6035465f9cad65e14d459f82.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1925\/96f6e2516c296ea099201c9c8d809365.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "f259c9e34452702b4cd130ea931d40f8"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "7196ef4dc351d737133a82377b61efe6"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1924,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1924\/b462bfa3e213318096ffbca3a4ef04ac.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1924\/79072cff69e460fc0e8da10b4662a4e2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "41fc9e1d66bb5f3b85198cabda0c1a1d"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "636224701ed149d306dec52668f06d47"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 140,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1923,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1923\/f27eebe2acdfab2102a7d0d1093458f8.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1923\/76c12a598e48235050fe40d7c1704bfa.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "66462c6cd32bd347f15d324d737d8431"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "eb7ff38dd630d5268481bccd0eaf74ac"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 138,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1922,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1922\/812e36df8db1b031895307d962df4000.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1922\/0dffdeb5a32888d5304194440bb0f5b5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "be50271897fee101b9881837b180d86f"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "f53783481fb47b55e561b064f2d04beb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 144,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1919,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1919\/fdb49dbaf5a0971a32d525dcb0b54de8.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1919\/15040edc228b79a76f2e5132c7421f07.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 149,
+            "height": 90,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1918,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1918\/2649fded1bbeb006b50eec5cb58496d2.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1918\/a15b45adec1e0153f2faa5a9d9e1c64f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "8cbab620282f5bcfcbe68d5f16bf2f6f"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "4473f9f4ed7a024b60264c29fd760358"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 90,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1917,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1917\/1e7859cbbbb80b1a64aa7a7775f99e2e.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1917\/8463a2259cf29b9e17e7ae7bb662c597.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "8cbab620282f5bcfcbe68d5f16bf2f6f"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "4473f9f4ed7a024b60264c29fd760358"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 90,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1916,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1916\/b0bb35f8704d43e3f5ed98a2428d0fc5.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1916\/ae8815a93f8f25bc14d5e07f7c92618f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "73e980f71a4f5fb051f29032250af459"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "ed27427584fca1798e96ee251c77efba"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 140,
+            "height": 90,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1915,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1915\/8aaa91280f230746856c265429168739.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1915\/c0a8f232f7c627d0a62a910294d03763.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "fd89f18586fa0a1a671e10993a7e22fa"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "9eeb0bcd97c8a86a68fe10b1ed99a70a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 136,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1914,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1914\/662cf533ce565c93e03d40754b10bb6d.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1914\/5be5b6e4d4f03b703ff7b9da7b0fa373.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "7d0209b36f7bbdf9a0ff1b193e49ef20"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "a72830c28b34e79b4da9dd7170a19c25"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 136,
+            "height": 105,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1913,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1913\/3db713cbce771b4cf6ff97e34986ff51.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1913\/f46600bbcdc718d09a1bb49a1575f082.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "59d2e8bca9cfe7c21c388ab4e0f9890d"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "6cc9bd5afbb30b8be896a7fc08774a43"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 137,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1911,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1911\/a8d4260757a32473ecf28b7862b3a8d0.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1911\/0d018766c97b7010626a82cc82d8ba0a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "075a88857c6a7e4d083ed9aada07d7a9"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "37e42786bac51de44b21a3e35d85f412"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 133,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1910,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1910\/a64a005839c13a19d67b3716724c290b.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1910\/f3ff963bef744d99f8c69ce7c843b75e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "5d25ad4137ba6859946d49a80c8e4e35"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "7846b07e2045573a246a98d2801dbf46"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 126,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1909,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1909\/995cc3ca99afc5b37cb8c3e98b7d9ac9.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1909\/c20fabf030d773a14763ba6e75a29272.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "66462c6cd32bd347f15d324d737d8431"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "eb7ff38dd630d5268481bccd0eaf74ac"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 138,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1908,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1908\/35afad576e20e3ab35f4a3ec4fd2d900.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1908\/0c6ab263cbd66f452b64cd37f03074d3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "a05f2e4078feae4fab3d61c490948d46"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "5082f0ebedb8cbb766904b47c74c60e9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 124,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1907,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1907\/c16f4b503db3ec3aca488c26de55ce85.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1907\/7e4a11fa7d2d953e4b549e332152bf27.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "c9d25f2ddaa13600a7adc2c56bc69d59"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "f32284004a5c6df650d5b81df0995619"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 132,
+            "height": 105,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1905,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1905\/bc682d20d35b504086dae0729d5ec5f4.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1905\/d0e1563262b7e5013d52be3d1a148e4c.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 123,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1902,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1902\/a713a77c994828fb9cca4ecb6a485a76.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1902\/c733b7b1865c02dbbb433baf41fdb9be.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "ee84ecfb641ca3798936ad5b8c8c7e88"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "66c7484765ed0521a2b66ad2dab7b366"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 127,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1901,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1901\/bce1900c575b29c2f21c067de5de774f.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1901\/7ee4a89467d76a63c4f145ba5240e405.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "a376f38bd03fa59b829ab7c911bbfc97"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "5710b1d64e34d8b580b59fa27ba399c5"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 124,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1900,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/19\/1900\/392a93ddb6126deb00bb1edb37e9f511.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/19\/1900\/110846261861bc607f0f2d6ed59d6029.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "f606777253cfbd5925c89a0e23d08aed"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "c7f0b68573a729ee5f978bb1ae92f922"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 85,
+            "height": 140,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1899,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1899\/d9a3c2f66629cc41cf7bd66c41352e39.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1899\/fc43ff6605a43f719c3321a5bd25c6e7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "17ab07627087e54172eb320727eb071b"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "a46f53855500be029558484f8fee6c4a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 129,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1898,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1898\/a502019fdc0741f719dd4490463ff3e5.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1898\/ca30760d6ede4dca41e7b4c0f06a8ae2.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 121,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1897,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1897\/0136c922046e64f8507b9c21cef40c2b.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1897\/a06f0e9332732bc5abc91feca6dd6712.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 129,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1895,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1895\/76a75fb05f07e2b4e06df8d1008f5d5e.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1895\/0fc1d7bd7e81f5ebf65755633d2a2765.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 128,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1892,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1892\/9edd741ddf6dce858299d64d5dfe116b.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1892\/c7de5f6252308146b984946d948d3504.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 120,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1890,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/18\/1890\/e54700e202542ba420aa51107a367516.jpg"
+          },
+          "body": {
+            "package": "\/files\/products\/18\/1890\/a7b45873febfd64e42dcda30a491bcda.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": [
+              {
+                "id": 0,
+                "default": 0,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "b5fcdb9c303e4ec7a73b64703b0969bc"
+              },
+              {
+                "id": 1,
+                "default": 0,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "3faf1d53fdb42a68fe5dbb9a1ff2bb55"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "pictures"
+        ],
+        "property": {
+          "sizes": {
+            "width": 120,
+            "height": 100,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64763,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64763\/1f685cd235affcc5f16b7e4567bae7ed.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64763\/ba02de2ad6e56a8fe93be925d8869700.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 125,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64764,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64764\/85db3b4eabf1f953743de11c12f704ea.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64764\/773ee482ce42d540d89a08342b6cc11c.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64765,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64765\/283b2d3c3f024f15b54c95f055aaaa7d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64765\/ac113fa184757088c04a24ecdda40a1a.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 190,
+            "height": 127,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64766,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64766\/2faaba70c3c74ba250c1eb4dc4c7d13e.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64766\/9e1451f2a2fb73719e82c6012edca75e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64767,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64767\/54a7aeee68a0b52b4310fa78120a6386.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64767\/4f5c3442873101e330294053896add0a.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64768,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64768\/859217ff0968fa7505a81db038e62907.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64768\/b371600f969fe33a8b27410805aa4ed6.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64780,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64780\/b39d13f44ac8670e7b681f2c43d09236.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64780\/2d79b53977675190a9d76f4af66b624b.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64781,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64781\/12e5db1dae570cc34afef66b7fa596ed.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64781\/ed262d9a82ed0217b02122314c322ac8.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64782,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64782\/9f251ca45bada62398f0f8c4758a3ad9.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64782\/a2f080d3e73214db630f6e0d72fdf84e.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64783,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64783\/83abf2e58adad7bc78d52d36d14837b6.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64783\/929607405f13a3f6fcf3115e8df2da1c.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64769,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64769\/f61678c35918f85978ed458c659ded1d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64769\/aef38541e774a76e85604632889b7743.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64770,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64770\/b996a323a733776126f3f21e79c5101f.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64770\/8138d52553615fcbe7103a4d351e34fd.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64771,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64771\/487913a3a5ccb54867e86e900ede3c9d.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64771\/a813deabba7f9b0e7eeb01c80b7e4d28.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64772,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64772\/36e1067700f2c9c2420d8039d91966c8.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64772\/1ed5d81f64c827fe240fff7ffb9dbba8.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64773,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64773\/bfc8c669a594d5ad72a8687496b49f94.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64773\/fcfb5d608974b9808dca322da6b4413b.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64774,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64774\/04c180141717602f3dcc7e74b8bc399c.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64774\/69adffa583fabfe64d1c2989fd7e0ae4.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 150,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64775,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64775\/d0805e4fce5135c26b02b2e946d216ad.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64775\/7be0cc5813280919c80f4aacbcdffd49.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 117,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64776,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64776\/539442be0e72661fd72b066b1ec413c7.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64776\/3485f1ad36762d6560b5c8cf41e0b3a9.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 125,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64777,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64777\/ffa08e6f888b807b53dc0099a5ca91b7.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64777\/a9c38d6e109a48ce22acac25e3199cc9.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 133,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64778,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64778\/e4de4bf2df456f937309e522d8b4f64a.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64778\/0a1d39869f8bc6115e825aa791cb43b8.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 110,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64779,
+        "type": 3,
+        "name": "Art print",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/647\/64779\/2311885f43680b3067afde41d0f43c4c.jpeg"
+          },
+          "body": {
+            "package": "\/files\/products\/647\/64779\/e2deecbb75d3e852cc4463a4f0c9e3bf.prtd",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": "",
+            "materials": []
+          }
+        },
+        "categoryProduct": {
+          "9896": [
+            {
+              "id": "9896",
+              "name": "Landscapes and plants",
+              "parentId": "9894"
+            },
+            {
+              "id": "9894",
+              "name": "Wall art",
+              "parentId": "44"
+            },
+            {
+              "id": "44",
+              "name": "Decor",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          ""
+        ],
+        "property": {
+          "sizes": {
+            "width": 110,
+            "height": 109,
+            "depth": 2
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

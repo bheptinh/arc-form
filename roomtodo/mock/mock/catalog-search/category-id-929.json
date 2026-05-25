@@ -1,0 +1,5483 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "61",
+    "items": [
+      {
+        "id": 2477,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2477\/682caafbcab93697871f8ba2f0de2bde.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2477\/a7f51ad8df54382a2d124f0a622ee56e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 90,
+            "height": 90
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2476,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2476\/d72f8f8d924405f56a1c13a9802700a1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2476\/2e31f0fe4e60b5a2730231ba170c8e6d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 150,
+            "height": 150
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2475,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2475\/ddd8ce48e6a164846f087e8b06f9471e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2475\/a902d741d13e4ea75d756ce15d5f3e47.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 527,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/527\/9ce4a05f2fbeea6ebc4bed0d1e3c6320.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/527\/f4238280d61c140e62bf19e8093e2d9e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 47
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 529,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/529\/d98a5e2f8157bbfcd2c052d8633d1637.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/529\/000cabae3d00bc6c4414554bdb10bcff.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2427,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2427\/bc4d7c687b1fab53f2bb8df286e75bc5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2427\/9ce58ab3b23d0d5683cc2bdddbe1975e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2470,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2470\/6ba06e42ae2277e84c73a3ac9a4d4d73.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2470\/67a633804f14f4254264707fe7c2cfdd.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1034,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1034\/42dad207dae2fca8e5a2ba4d457dfc85.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1034\/6b6217684004eefb6705f829a9ca7feb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 150,
+            "height": 150
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2467,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2467\/13ab2c271479e3d31a0815e9be83e496.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2467\/0aa3e33ad957bf130146d095d38bd22b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 120,
+            "height": 120
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2466,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2466\/33ab176c8933d92045245ae7efd1bb89.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2466\/d05289bb6cc64016296e7e0d48e12f1f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 120,
+            "height": 120
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2400,
+        "type": 1,
+        "name": "Natural stone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2400\/647f18bfc3d7799e06d265e73aa7eaf7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2400\/2953a3edc343133d6500d1dc03cca8d7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2398,
+        "type": 1,
+        "name": "Natural stone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2398\/90fc06bf2989f8c36156c0f3a5d7e050.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2398\/908564b4e1f688d61d6a20350fff3ca0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 303,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/303\/0bfc380947c49d01bec1a00db1f6db88.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/303\/6339f0aedfb0380461f80ae10c86c5ce.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2431,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2431\/4a6eca9dc61a6d14cf54fd7230ac5e10.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2431\/512d96874f0e1b83a6ca21b9fb3c711c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 120,
+            "height": 177
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 525,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/525\/4d7ce892e37d05ee9bad7aeb610f6185.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/525\/d52530afe632763669a0d22ca55d7fd7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 526,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/526\/04f3073e18af4dec098488c3544a1315.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/526\/72965a39bb9ddb9c25509a0b89716c2e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 150,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 524,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/524\/ca84458ca55f443936e1e6dcb3cb4630.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/524\/ec47173e48bb7eb2ecb947dc1b628035.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 523,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/523\/f426ca3ea19df5318ad53168d5ade309.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/523\/9f13fd70826d23901fa02dd1004ca19c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 107,
+        "type": 1,
+        "name": "Black marble",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/107\/0342d8c39afd1e1c74fe318032e891f3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/107\/67f9696ab4efb1b59ce728c563e11b5f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 300,
+            "height": 300
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1195,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1195\/9709b9fddc99198c375bccb337b868e0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1195\/880e494ac4d9a041af11ea742681ace3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 170,
+            "height": 170
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2399,
+        "type": 1,
+        "name": "Natural stone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2399\/5b3926b86646e98acfc4ab3c79108127.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2399\/a531ff53f8dab6540e83da809928aa82.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 522,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/522\/1ab160c717a7068512ccbef0475cf376.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/522\/73a008074ea0b5a531addf6165a41330.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2469,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2469\/719539bc395bccb2551e55cc1a6208dd.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2469\/0de2c9cfea7e7f4e4a04ad992b9e4940.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 556,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/556\/e63fd3cd3a2d3415b1c97844e2c1f666.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/556\/fe0e07d58ae9607ccf1c0431ab25e597.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 67,
+            "height": 67
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2448,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2448\/ec720703111f6ade10f003a00bbb0d2e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2448\/b1422c37a0856532418c01a49f639965.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2447,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2447\/be09987b4d91f570af21efd7d52f8e55.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2447\/a0940d3ff1f208d0afbc0afb85183a8f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 308,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/308\/a2c4fe49434194368e99c7902d0bd315.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/308\/5eebc48758007390e9a30aab56d21e8b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2446,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2446\/b94262de9a0385bcfac5f14ee800cb4e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2446\/8c0b63f25172e9826c0fa4d3eb950a0e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 311,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/311\/0de549ad4879bfc8ed9372ac45e0382d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/311\/0f748e8db85f859103b76e93bb3366f0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 75,
+            "height": 75
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2445,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2445\/2390855d76f4da742ce7d2aafa7e5028.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2445\/086dd3c639c773b03a005a278a47ea75.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2444,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2444\/e39d6dce7c2dddfa24f4cd412808b223.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2444\/3b413f9956cb5475fcd0cc5cb049d43a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2441,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2441\/78a9d538871829595119f4b7a10a8d79.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2441\/f7cff50787fc7c531678ca99e02fa71d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2440,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2440\/d608d1240f6ba341b8783cce02fcdd3d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2440\/93e4824e95fafe75a8242f8b33ff646a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2468,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2468\/aa1eecceae52ca7ea1ab2df144e90add.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2468\/4524b221b7d8bf101d97647f32fb8934.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2439,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2439\/2a4786cc8d0f1865bbfce03afab5da12.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2439\/ad12e6193524bf30917aabce82929d15.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2438,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2438\/dc469a14422b6c83ecf5408ef511c7b4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2438\/1bb4cdf78d93d08a302a86aec7e95fe7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2474,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2474\/cd7ef0db5a332762211f628ac9efce91.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2474\/57c055ce94f60afd1a366d36a0487d97.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2436,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2436\/87096c6e6470622419aa072fe098e054.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2436\/7913f6f99c55311690d5bb77b6f5b044.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2435,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2435\/15d6a70c219ac74cbdd581b94343fe9d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2435\/3403801601be243662a842a00697744c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2434,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2434\/6ecd4b333482cd655f603ea6d7182f2a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2434\/1fe0211f9377dc0262715549e5f5b66f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2433,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2433\/76e08913dde5414352589f1b1b019d4f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2433\/783363735f9a915d8d7b300bfb646111.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 10,
+            "height": 10
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2425,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2425\/7f680fbb1bbdd07f54e9f3c45a8129fc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2425\/6afedc2af932d9e301b0b7f93897a39b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 40,
+            "height": 40
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2471,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2471\/5889854b06eba9e2cfd6a3ba8fabcf6b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2471\/8a6642497f031833cee62587cf7ac8af.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2472,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2472\/86b2f1293d04c28fd5ee42d8bd2898cc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2472\/0c07d21bd2fe9a33d96d62a96c53293a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1031,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1031\/672d06c213f3582a1db631a38befa47d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1031\/e58ae3ffcc0349b0cde49f202bf53b5f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2414,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2414\/4074e3d0436085b2ae353fd1e3219e0a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2414\/82927310ea84080ab9f66dc9f81e76f7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2396,
+        "type": 1,
+        "name": "Natural stone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2396\/31b49bd0ec290c54b4cead768cf5bd9d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2396\/7830acf3ffbc6b521f1764b9737078e7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2394,
+        "type": 1,
+        "name": "Natural stone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2394\/a9754ff37ebea0d1848b86ad0fb63df6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2394\/41b097d0d81988120ab02d76d83cd187.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 400,
+            "height": 400
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2393,
+        "type": 1,
+        "name": "Natural stone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2393\/891c59de32e64e6137ab76e96049e89a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2393\/3f735d06defcc1b2f51416ca0451280b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 400,
+            "height": 400
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2392,
+        "type": 1,
+        "name": "Natural stone",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/23\/2392\/0deaf83a9abe2ea53860fa737eef5ad6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/23\/2392\/65fa4dde09b30ce21a9b3fdc28f2d018.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1194,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1194\/3a48252625e6562cb4835ae2abf8d4a2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1194\/6c0f70740e23a8602987bff3751c59a7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1192,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/11\/1192\/68c5716d88d89375881f03eadd9bdc42.png"
+          },
+          "body": {
+            "package": "\/files\/products\/11\/1192\/d046dc0e16d718f0f34cb90aa0ddec07.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1030,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1030\/5d30bd1205713c15e62e42123174af85.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1030\/3bce870b62d11a641265ff927f5d17af.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1029,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1029\/7cae27daa2e228d31a919743a45870be.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1029\/fa4d8260219afc54680978082ba828c7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 552,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/552\/0f6bf49b851fe9fd42ec8bb56194a0e7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/552\/e2fa5254703690087255a33c6f600dcc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 528,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/528\/7050396297a31f406d4e98627d42f030.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/528\/778171f83ed485bec27398e16091b225.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 150,
+            "height": 150
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 478,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/4\/478\/6e0242402925522e9849b3c0b7bdce3e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/4\/478\/dd6c604ead8acd94583d6695a4af0065.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 309,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/309\/351d9b72588574978b4b6cb62960454c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/309\/784e011304565f36396871f67dc9e7c3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 306,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/3\/306\/2a55f261f710230bf0dcb075dbb56d21.png"
+          },
+          "body": {
+            "package": "\/files\/products\/3\/306\/2d7e01ee6e009cf71a5e38717219d9c0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 108,
+        "type": 1,
+        "name": "Yellow marble",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/108\/7de93397f820cf891738d504969b60da.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/108\/372263ead1bb5d22312285271f256208.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 400,
+            "height": 400
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 106,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/106\/d7052e537355d0909143526210489078.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/106\/3653a58b848f8265af1b2e14cac0380a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "929": [
+            {
+              "id": "929",
+              "name": "Small format",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

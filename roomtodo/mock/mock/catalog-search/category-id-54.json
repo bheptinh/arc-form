@@ -1,0 +1,1039 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "12",
+    "items": [
+      {
+        "id": 2170,
+        "type": 1,
+        "name": "Stone facing",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2170\/be5681d3d0e6bcd8dfc0b807455ea4b3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2170\/8c18dc50deede6a9fb56bbfd207f58da.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3377,
+        "type": 1,
+        "name": "Stonework",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3377\/c1f5f213d1d41501178bd164334e21ed.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3377\/75bc10f79da75c8e02cd5beda7b49a93.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ],
+          "59": [
+            {
+              "id": "59",
+              "name": "Pave",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework",
+          "pave"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2261,
+        "type": 1,
+        "name": "Stone facing",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/22\/2261\/a60b66bb4353ff7c9985b86977326b60.png"
+          },
+          "body": {
+            "package": "\/files\/products\/22\/2261\/6717d16547ae5a763e132f9104cd361f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "brick",
+          "bricks&stone"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 101,
+        "type": 1,
+        "name": "Stonework",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/1\/101\/eff62c0665f4810ab5a3f3c62f895c91.png"
+          },
+          "body": {
+            "package": "\/files\/products\/1\/101\/2a6a8a3ae250ef305813b7e8c2be1466.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ],
+          "77": [
+            {
+              "id": "77",
+              "name": "Stone",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "brick",
+          "stone",
+          "bricks&stone"
+        ],
+        "property": {
+          "sizes": {
+            "width": 75,
+            "height": 75
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 52804,
+        "type": 1,
+        "name": "Stonework",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/528\/52804\/79e1547a7da871659fb209509551d750.png"
+          },
+          "body": {
+            "package": "\/files\/products\/528\/52804\/4dcfb404f8d39e090b22b7104667df79.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2167,
+        "type": 1,
+        "name": "Stone facing",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2167\/b3fdbe226f7b71738b066f17136c9f30.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2167\/54d78cdb34bcf60a7ac106d9c2b35fc1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2169,
+        "type": 1,
+        "name": "Stone facing",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2169\/2da8c4139b8de15c557b48fb536bf5a0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2169\/c6b44d8023f23edbc407221ca73f2835.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2168,
+        "type": 1,
+        "name": "Stone facing",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2168\/e8b7352bd7cc0dbb19d906894e2de0f3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2168\/4b0515139681bd34f4da9aa7fac0faa9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1235,
+        "type": 1,
+        "name": "Stonework",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1235\/3a77916c72730363c02e27ba601c02b7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1235\/38134477f216800fd91330f54c24ebb0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3375,
+        "type": 1,
+        "name": "Stonework",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3375\/dd5250450ed40ef7045e26026ca9199c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3375\/5b198edf46bb6e78866aac035c5921c8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ],
+          "59": [
+            {
+              "id": "59",
+              "name": "Pave",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework",
+          "pave"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3374,
+        "type": 1,
+        "name": "Breccia",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3374\/819438c92302c538d40dee9e4c75ac12.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3374\/dbd32a3d90092c3f552ba44d546771a6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ],
+          "59": [
+            {
+              "id": "59",
+              "name": "Pave",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework",
+          "pave"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3376,
+        "type": 1,
+        "name": "Stonework",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3376\/c1af94a24cf909e5442c5b5d18e38de4.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3376\/bb3d9e85337574994c6d62cf5e68408a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "22": [
+            {
+              "id": "22",
+              "name": "Bricks&Stone",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "54": [
+            {
+              "id": "54",
+              "name": "Stonework",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ],
+          "59": [
+            {
+              "id": "59",
+              "name": "Pave",
+              "parentId": "5"
+            },
+            {
+              "id": "5",
+              "name": "Stone",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stonework",
+          "pave"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

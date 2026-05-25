@@ -1,0 +1,5493 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "52",
+    "items": [
+      {
+        "id": 2173,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2173\/a5a095adc0088644786571396876f2ad.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2173\/16f564d75f4a0d1d9851d6ba6a1f11c6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "48.04,9,48.16,8.98,48.27,8.94,48.37,8.87,48.44,8.77,48.48,8.66,48.5,8.54,48.5,6.98,48.5,-8.54,48.48,-8.66,48.44,-8.77,48.37,-8.87,48.27,-8.94,48.16,-8.98,48.04,-9,41.45,-9,-40.54,-9,-41.45,-9,-48.04,-9,-48.16,-8.98,-48.27,-8.94,-48.37,-8.87,-48.44,-8.77,-48.48,-8.66,-48.5,-8.54,-48.5,8.54,-48.48,8.66,-48.44,8.77,-48.37,8.87,-48.27,8.94,-48.16,8.98,-48.04,9",
+            "contourCut": "41.94,0,48.5,-0.07,48.5,-208,41,-208,-41,-208,-48.5,-208,-48.5,-0.07,-41.89,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 534,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "f52ceee0b789dfdf5d30b3dd2b76375b"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "9999b148e89fe5bee8c27bada7315ccb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 97,
+            "height": 208,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 956,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/956\/cf81366f202524fa31f7093bffc2d02c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/956\/1d8885a89e108ac2f6b0d70c1f7f82c5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.01,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.94,-44.63,8.97",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,-132.66,-47.5,-78.27,-47.5,0,46.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c16f8429af36ca443805a39791013e60"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "62fbf8936c93c3b9ea4dd11a68995c25"
+              },
+              {
+                "id": 2,
+                "default": 534,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a48019de0167a5b91fd7d6751b3be03a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 937,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/937\/24fbc58e3a770d0ed7ed676292095501.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/937\/8aceef1eb3e4eb9436bb1ec621c65da9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.01,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.94,-44.63,8.97",
+            "contourCut": "40.67,0,47.5,-0.39,47.5,-210,-47.5,-210,-47.5,-132.8,-47.5,-78.51,-47.5,-0.39,-40.25,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1624,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "322fd96425b91cc33118edfb278d437e"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6465d656fd7dfd8b835b2b4c7d6104a1"
+              },
+              {
+                "id": 2,
+                "default": 2890,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "0f6a03832cd7860f13c5da237ab5e36f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 941,
+        "type": 2,
+        "name": "Entrance door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/941\/7adf25690c17338a6aa928da00800650.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/941\/7effb804d26d11ed5b7bf93ebe68959c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.01,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.94,-44.63,8.97",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,-132.66,-47.5,-78.27,-47.5,0,46.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 839,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c03f0e83f0abe8ead2282fcf77323fce"
+              },
+              {
+                "id": 1,
+                "default": 55155,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b7ff48b7331e5cfef86287c3560f5cf9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2147,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2147\/deab81daadd55643dd913a240559eeb3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2147\/7b566b4797bb5512ea169103fbd1960e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "48.51,9,51.62,8.94,51.97,7.88,52,7.69,52,-7.69,51.97,-7.88,51.62,-8.92,48.51,-9,-48.51,-9,-51.95,-8.92,-52,-7.69,-52,7.69,-51.95,8.94,-49.13,8.97",
+            "contourCut": "52,0,52,-211,-52,-211,-52,0,-45.42,0,45.42,0,50.34,0,51.62,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "390c4f693a1619195c528905fddf4c7f"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "c89157b16986a5a7006ac912d7952415"
+              },
+              {
+                "id": 2,
+                "default": 1692,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "4c376365563dafebd964fd1c241df244"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 104,
+            "height": 211,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 944,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/944\/160aae4f505d9aa09ee7b547cf7ef911.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/944\/3b79ddedeba93f30c76feef49021ae82.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-47.31,9,41.31,8.92,47.33,8.91,47.35,8.89,47.49,8.73,47.5,8.69,47.5,7.24,47.48,-7.33,47.47,-8.82,47.33,-8.98,47.31,-9,41.43,-9,-41.29,-8.9,-47.35,-8.88,-47.49,-8.72,-47.5,-8.69,-47.5,-7.24,-47.48,7.33,-47.47,8.82,-47.33,8.98",
+            "contourCut": "47.5,0,47.5,-210,-47.48,-210,-47.5,-210,-47.5,0,-45.73,0,47.49,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "29aa34ac0fbd05810ae5d87d5fce34fb"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "6b434a1b51e10f0c9738d132df87a482"
+              },
+              {
+                "id": 2,
+                "default": 140,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "c1197189bf56ba0ee1208ee8952796b9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64443,
+        "type": 2,
+        "name": "Concealed doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64443\/157389785c6f24d7cc15cd7a2d00e983.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64443\/ff882d0bc9b361b69671932ece21fd6c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "39.99,9.95,39.99,-4.89,39.99,-5.86,39.99,-8.98,39.42,-9.87,39.22,-9.95,-39.22,-9.95,-39.42,-9.87,-39.99,-8.98,-39.99,9.95,-38.74,9.95",
+            "contourCut": "39.99,0,39.99,-220,-39.99,-220,-39.99,0,-38.74,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41803,
+                "default": "#e9e8e8",
+                "current": "#e9e8e8",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b6c23b3a37148710aa851390d6201314"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41803,
+                "default": "#e9e8e8",
+                "current": "#e9e8e8",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "62523efc406fb1266cc60a72e6e20efb"
+              },
+              {
+                "id": 2,
+                "default": 3008,
+                "name": "Mesh_3",
+                "source": "none",
+                "hash": "07519056b0ec5f0b18a6dd7638d6ea26"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#e9e8e8",
+                "current": "#e9e8e8",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "b4806353013a1462837c46824933c562"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 80,
+            "height": 220,
+            "depth": 20
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2037,
+        "type": 2,
+        "name": "Glass doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2037\/18dbec01f226d414c5bbeb40caf7834f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2037\/9fa4433f92143a6b3f777045df4fad04.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "46.01,9,49.12,8.94,49.47,7.88,49.5,7.69,49.5,-7.67,49.47,-7.85,49.12,-8.9,46.01,-8.98,-34.15,-9,-35.61,-9,-36.08,-9,-36.36,-9,-46.01,-8.97,-49.45,-8.89,-49.5,-7.66,-49.5,7.7,-49.45,8.95,-46.63,8.98",
+            "contourCut": "49.5,0,49.5,-210,-49.5,-210,-49.5,-132.66,-49.5,-78.27,-49.5,0,47.84,0,48.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55153,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "4b9b88387230db5e98dc7c4b05b1d9b1"
+              },
+              {
+                "id": 1,
+                "default": 55333,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6f6d9a5e11aa1360c051678f772e754f"
+              },
+              {
+                "id": 2,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "4f3ace77dd061c23227447c90edac151"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 99,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2964,
+        "type": 2,
+        "name": "Balcony door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/29\/2964\/edbe7641ade0722ba398e94bd318dd7b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/29\/2964\/c2061682f2ef32c87f54b250e9b9b50a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-27.28,10.5,33.38,9.15,33.46,9.09,33.5,7.66,33.5,3.25,33.47,-9.51,33.46,-10.46,33.4,-10.5,-33.12,-10.5,-33.42,-10.5,-33.48,-10.46,-33.5,3.25,-33.5,7.66,-33.48,9.09,-33.39,9.15,-27.81,10.46",
+            "contourCut": "33.4,0,33.46,-0.07,33.47,-0.19,33.5,-1.94,33.5,-208,-33.5,-208,-33.5,-1.94,-33.48,-0.07,-33.42,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9347660bdcfbd2c501c90084522723ef"
+              },
+              {
+                "id": 1,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6bae3e68b5fb3d7f79324e090ca0ca20"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "c400e55327d7bc8c82d88b1bc4127c2f"
+              },
+              {
+                "id": 3,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "303eff31e05eb8fd74d3cc1bc1353200"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 67,
+            "height": 208,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 945,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/945\/d1a0859d94c6033e8a8f40e963dd1505.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/945\/4c854f2c7374cb559d832e5f32f495b0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.95,9,45.56,8.99,46.18,8.94,46.81,8.83,47.46,8.66,47.48,8.65,47.5,8.62,47.5,7.39,47.5,-7.4,47.5,-8.53,47.48,-8.59,47.46,-8.62,47.43,-8.66,47.39,-8.69,47.34,-8.72,46.7,-8.87,46.07,-8.96,45.45,-9,-45.46,-9,-46.08,-8.96,-46.71,-8.87,-47.4,-8.68,-47.5,-8.56,-47.5,-7.38,-47.5,7.36,-47.5,8.63,-47.49,8.64,-47.47,8.66,-46.82,8.83,-46.19,8.94,-45.56,8.99,-44.96,9",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-209.99,-47.5,0,45.07,0,46.81,0,47.48,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55153,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "db65e44140d4cf56b6d001ba72b52bd1"
+              },
+              {
+                "id": 1,
+                "default": 54824,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "bedf26b38ed8cefb49a94294575c2ffc"
+              },
+              {
+                "id": 2,
+                "default": 549,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "47b6c3477b78bd483c5e11cb8de3b024"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 928,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/928\/faebbc4345a58a4d0b722cde2f9c173e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/928\/026ea338fb9ec5b7a8a2b49ebdf56567.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "47.5,9,47.5,-8.98,-29.93,-9,-33.5,-9,-47.5,-9,-47.5,-8.98,-47.5,8.98,-33.51,8.99,42.42,9",
+            "contourCut": "47.5,0,47.5,-209.97,-47.5,-210,-47.5,-45.87,-47.5,0,45.65,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1554,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "649d1302b67fcf9bfabf5e80ba24b60b"
+              },
+              {
+                "id": 1,
+                "default": 534,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "34c34ef401e4aa75bf2ee03e89a98e51"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 932,
+        "type": 2,
+        "name": "Doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/932\/20ac8aedc8293496e03615d629956b38.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/932\/21d9fa967ed56cdf8094a3f3e9185606.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-45.41,9,44.39,8.98,47.03,8.87,47.87,8.58,48,8.33,48,-8.33,47.87,-8.58,47.03,-8.88,44.39,-8.99,-45.41,-9,-45.88,-8.98,-47.03,-8.88,-47.87,-8.58,-48,-8.33,-48,-6.75,-48,6.75,-48,8.33,-47.87,8.58,-47.03,8.87,-45.88,8.98",
+            "contourCut": "48,0,48,-210,-48,-210,-48,0,-46.79,0,46.58,0,47.03,0,47.87,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54824,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "59c5c4d77e83cc7d701b653997fba374"
+              },
+              {
+                "id": 1,
+                "default": 548,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "adcda3d86dce03bc494438cca30715a3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 96,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 930,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/930\/9efc3d52ff2db14eaece427ef319848d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/930\/3bbe4e45dd5b80cfd1c114593d81347e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.01,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.94,-44.63,8.97",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,-132.66,-47.5,-78.27,-47.5,0,46.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54824,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c33418922c26ea81d28fc4c9ecd24873"
+              },
+              {
+                "id": 1,
+                "default": 548,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "a99694f706ea70592103ecf13d8e7d2f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 929,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/929\/52565a6a58859f132a4defe5bf3836d5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/929\/1bc99457a18a1bee14ea93263757555a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-47.33,9,42.66,8.97,47.49,8.96,47.5,8.12,47.5,-8.15,47.49,-8.99,42.66,-9,-47.34,-9,-47.47,-8.98,-47.5,-8.13,-47.5,8.14,-47.47,8.98",
+            "contourCut": "33.28,0,47.5,-0.11,47.49,-210,-47.44,-210,-47.45,-210,-47.46,-209.92,-47.5,-202.37,-47.46,-0.11,-32.85,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54824,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "b88af289461ea318a7a0ffe7ce8cc928"
+              },
+              {
+                "id": 1,
+                "default": 548,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "761161b9aeafd869575acf57b65b47f2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55100,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55100\/36fc984803125a1e3a9d71e4e69bbf06.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55100\/216e095275f46aa606adfb7e8aa8d877.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "42.79,8.94,42.81,8.92,42.81,-8.92,42.79,-8.94,-38.34,-8.94,-42.79,-8.94,-42.81,-8.92,-42.81,8.92,-42.79,8.94,38.36,8.94",
+            "contourCut": "38.41,0,42.79,-0.01,42.81,-0.03,42.81,-202.97,42.79,-202.99,-38.34,-202.99,-42.79,-202.99,-42.81,-202.97,-42.81,-0.03,-42.79,-0.01,-38.28,0,-30.25,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "door_6_handle",
+                "source": "bank",
+                "hash": "8f500741e9586f430769dc2081db06e3"
+              },
+              {
+                "id": 1,
+                "default": 534,
+                "name": "door_6_body",
+                "source": "bank",
+                "hash": "e1ad517a3a9d3de2f2ec8555e0750565"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 86,
+            "height": 203,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55102,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55102\/d95fcedc578e5e262815f65c4a4f790e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55102\/39eeaeab86ac3f3a7e3f8f86110dc31d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "42.79,8.94,42.81,8.92,42.81,-8.92,42.79,-8.94,38.36,-8.94,-38.34,-8.94,-38.4,-8.94,-42.79,-8.94,-42.81,-8.92,-42.81,8.92,-42.79,8.94,-38.34,8.94,38.36,8.94,38.4,8.94",
+            "contourCut": "38.38,0,42.79,-0.02,42.81,-0.04,42.81,-202.98,42.79,-203,38.36,-203,-38.34,-203,-38.4,-203,-42.79,-203,-42.81,-202.98,-42.81,-0.04,-42.79,-0.02,-38.36,0,-30.9,0,-30.86,0,30.88,0,30.92,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "door_2_handle",
+                "source": "bank",
+                "hash": "39c0d8a153688cb9ace857dc02693f3b"
+              },
+              {
+                "id": 1,
+                "default": 534,
+                "name": "door_2_body",
+                "source": "bank",
+                "hash": "0573b35a1fd7d498293d35f1a1a06bae"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 86,
+            "height": 203,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55099,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/550\/55099\/373f63db046ed5f8e2e58bcb63ffb8e7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/550\/55099\/92138f51fe7b76637cafa9386f3df318.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "45.39,8.94,45.41,8.92,45.41,-8.92,45.39,-8.94,-40.94,-8.94,-45.39,-8.94,-45.41,-8.92,-45.41,8.92,-45.39,8.94,40.96,8.94",
+            "contourCut": "45.39,0,45.41,-0.02,45.41,-208.1,45.39,-208.12,-40.94,-208.12,-45.39,-208.12,-45.41,-208.1,-45.41,-0.02,-45.39,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "door_4_handle",
+                "source": "bank",
+                "hash": "5db354601db5568d62bb58666fda230b"
+              },
+              {
+                "id": 1,
+                "default": 534,
+                "name": "door_4_body",
+                "source": "bank",
+                "hash": "1a2c6bcd094ec626cb6bc785a0d21384"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 91,
+            "height": 208,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 923,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/923\/e0f2f81caa6ae143ad6999e7cb1dd125.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/923\/4887fe32b7e568d64a9fcf6efe91017b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.02,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.95,-44.63,8.97",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,-132.66,-47.5,-78.27,-47.5,0,46.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 183,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c23a1fc801654baf9c38e3da7db13eb1"
+              },
+              {
+                "id": 1,
+                "default": 54829,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "9df9f464548af7bda8c711e6a5643ea8"
+              },
+              {
+                "id": 2,
+                "default": 548,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "add49d55406476c046f9274fd05616cf"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 920,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/920\/811361e2d0ba9d9d93e7536e7de0324e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/920\/781c9e8b72120010f18560132ceb976d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-42.41,9,47.5,8.99,47.5,-8.99,47.49,-9,42.78,-9,-42.42,-8.99,-47.5,-8.98,-47.5,8.99",
+            "contourCut": "-42.41,0,42.78,-0.01,47.49,-0.03,47.5,-209.96,47.5,-209.97,0,-210,-47.5,-209.98,-47.5,-209.96,-47.5,0,-45.95,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1554,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "270a173025e5e819f4376380110665df"
+              },
+              {
+                "id": 1,
+                "default": 548,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "081f79edbbb19025a47a5bdf77ab0136"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 927,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/927\/5ca29b46a3ff557c3cbb62c4f1a07395.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/927\/c3411bf93fc70d16cd01623388c0222c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-26.46,9,47.2,8.93,47.34,8.91,47.5,8.7,47.5,6.94,47.5,-6.94,47.5,-8.7,47.34,-8.91,47.19,-8.94,-26.46,-9,-47.37,-8.93,-47.5,-8.7,-47.5,6.94,-47.5,8.7,-47.37,8.93,-47.19,8.94",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,0,43.01,0,43.82,0,47.34,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1554,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "f808418a8b839f6009393e021eee4088"
+              },
+              {
+                "id": 1,
+                "default": 55328,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "39e2a1bf83791f28562cba8cb1570623"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64444,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64444\/947f0a72479479013a910b9e73aa744c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64444\/97796f34284c21f9e1322e7bc6533f40.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-23.95,6.85,41.45,2.49,41.45,-2.51,-23.95,-6.85,-37.21,-6.85,-37.27,-6.84,-41.45,-2.51,-41.45,2.49,-37.27,6.84,-37.21,6.85,-37.16,6.85,-37.08,6.85,-36.94,6.85,-36.71,6.85,-36.32,6.85,-34.02,6.85,-24.84,6.85,-24.46,6.85,-24.22,6.85,-24.08,6.85,-24,6.85,-23.97,6.85",
+            "contourCut": "41.45,0,41.45,-205.3,-41.45,-205.3,-41.45,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55361,
+                "name": "door",
+                "source": "bank",
+                "hash": "0ae29e30536a3528b9e5b1d27fba00a0"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "door_handle2",
+                "source": "bank",
+                "hash": "6c5a6a3b75ea6b3df621db95a3b8e130"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41803,
+                "default": "#262626",
+                "current": "#262626",
+                "name": "Object015",
+                "source": "none",
+                "hash": "717ac096507cf8da882e5fd13a5049a4"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 83,
+            "height": 205,
+            "depth": 14
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64445,
+        "type": 2,
+        "name": "Tall doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64445\/094323c9dfcca24e3aaefc7a0ed784c9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64445\/513a26798866d55c3d6979c65bcb39cb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-23.95,6.85,41.45,2.49,41.45,-2.51,-23.95,-6.85,-37.21,-6.85,-37.27,-6.84,-41.45,-2.51,-41.45,2.49,-37.27,6.84,-37.21,6.85,-37.16,6.85,-37.08,6.85,-36.94,6.85,-36.71,6.85,-36.32,6.85,-34.02,6.85,-24.84,6.85,-24.46,6.85,-24.22,6.85,-24.08,6.85,-24,6.85,-23.97,6.85",
+            "contourCut": "41.45,0,41.45,-240.45,-41.45,-240.45,-41.45,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55361,
+                "name": "door",
+                "source": "bank",
+                "hash": "cfd179f22e131209c4109a544aa2b85a"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "door_handle2",
+                "source": "bank",
+                "hash": "29509d1b37bbb9b1dfa5b4c52fb8b323"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "Object015",
+                "source": "bank",
+                "hash": "895802ec06e6c8e3999972701924187e"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 83,
+            "height": 240,
+            "depth": 14
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 952,
+        "type": 2,
+        "name": "Entrance door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/952\/e02b2308c43c03a439dd413655deac2f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/952\/c61ee78dce0472bc982b1c9d996b45b1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-29.77,10,47.45,7.75,47.5,6.51,47.5,-8.7,47.45,-9.92,44.01,-10,-44.01,-10,-47.12,-9.92,-47.47,-8.89,-47.5,-8.7,-47.5,6.51,-47.47,6.69,-47.12,7.75,-36.25,9.58,-34.52,9.78,-32.14,9.97",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,0,-46.98,0,-45.84,0,40.93,0,47.47,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "ea46d13ee2d613936cb7afff5c0ae39b"
+              },
+              {
+                "id": 1,
+                "default": 54836,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "816e5be2bf70de0406994784c45607cb"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 20
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 47199,
+        "type": 2,
+        "name": "Entrance door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/471\/47199\/268f819e1b10c0527a8652a68ad79410.png"
+          },
+          "body": {
+            "package": "\/files\/products\/471\/47199\/a3b5a855eb154269b7fdb17b8ebbba22.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "48.51,9,51.73,8.94,52,7.69,52,-7.69,51.73,-8.92,48.51,-9,-48.51,-9,-51.95,-8.92,-52,-7.69,-52,7.69,-51.95,8.94,-48.51,9",
+            "contourCut": "32.08,0,44.24,-0.05,52,-0.09,52,-211,-52,-211,-52,-0.09,-44.19,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "3ededb9bcfdb004961ae07ca43973780"
+              },
+              {
+                "id": 1,
+                "default": 844,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "748ad2b3756e5eaaf349b464672b8d37"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "e1ab9e9f6f8fbc8175077fd7cc33e8a8"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 104,
+            "height": 211,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2148,
+        "type": 2,
+        "name": "Entrance door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2148\/f55b9881e9ff6e893ae7ef6219f80910.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2148\/18f6a995fc981021d150d915eddd3fb4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "48.51,9,51.62,8.94,51.97,7.88,52,7.69,52,-7.69,51.62,-8.92,48.51,-9,-48.51,-9,-51.95,-8.92,-52,-7.69,-52,7.69,-51.95,8.94,-49.13,8.97",
+            "contourCut": "31.99,0,44.14,-0.05,52,-0.09,52,-211,-52,-211,-52,-0.09,-44.2,0,-43.06,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "325b3088e03238e79eaa9338b2f3a37e"
+              },
+              {
+                "id": 1,
+                "default": 1554,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7f3d58e015a1bf8840f164e61bff8fef"
+              },
+              {
+                "id": 2,
+                "default": 1661,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "166402b85c900c1436be4eea0cf28fda"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 104,
+            "height": 211,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55101,
+        "type": 2,
+        "name": "Doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/551\/55101\/5724d3854ae7adeec95cdb1f9cfbb3ed.png"
+          },
+          "body": {
+            "package": "\/files\/products\/551\/55101\/145685f605e0d48b4d4ebc14b49ec17f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "42.79,8.94,42.81,8.92,42.81,-8.92,42.79,-8.94,38.36,-8.94,-38.34,-8.94,-38.4,-8.94,-42.79,-8.94,-42.81,-8.92,-42.81,8.92,-42.79,8.94,-38.34,8.94,38.36,8.94,38.4,8.94",
+            "contourCut": "38.41,0,42.79,-0.01,42.81,-0.03,42.81,-202.97,42.79,-202.99,38.36,-202.99,-38.34,-202.99,-38.4,-202.99,-42.79,-202.99,-42.81,-202.97,-42.81,-0.03,-42.79,-0.01,-38.28,0,-28.51,0,-28.42,0,28.67,0,28.76,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "door_3_handle",
+                "source": "bank",
+                "hash": "368a431c5942e2ed3e623839d6080f86"
+              },
+              {
+                "id": 1,
+                "default": 2890,
+                "name": "door_3_body",
+                "source": "none",
+                "hash": "e214eabd366e0bd846582f0dd0f8956f"
+              },
+              {
+                "id": 2,
+                "default": 55153,
+                "name": "door_3_glass",
+                "source": "bank",
+                "hash": "447246813f0fd92500b0f8ae613d91a3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 86,
+            "height": 203,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2965,
+        "type": 2,
+        "name": "Balcony door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/29\/2965\/f30e3510027262cee022130e8d6b14c5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/29\/2965\/2fa452aa6698bd8e4e613bedb8ed6fd0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-27.28,10.5,33.39,9.15,33.48,9.09,33.5,7.66,33.5,3.25,33.48,-10.46,33.42,-10.5,33.12,-10.5,-33.4,-10.5,-33.46,-10.46,-33.47,-9.51,-33.5,3.25,-33.5,7.66,-33.46,9.09,-33.38,9.15,-27.81,10.46",
+            "contourCut": "33.42,0,33.48,-0.07,33.5,-1.94,33.5,-208,-33.5,-208,-33.5,-1.94,-33.47,-0.19,-33.46,-0.07,-33.4,0,-33.1,0,33.12,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "5d35e8979c4ec1512147ee45c4169428"
+              },
+              {
+                "id": 1,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "1f4ca3c08eec77fbb3014df1cfaeaafa"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "c400e55327d7bc8c82d88b1bc4127c2f"
+              },
+              {
+                "id": 3,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "303eff31e05eb8fd74d3cc1bc1353200"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 67,
+            "height": 208,
+            "depth": 21
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 46551,
+        "type": 2,
+        "name": "French balcony doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/465\/46551\/9f90b017bf5b3e167f03bbabae04cda9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/465\/46551\/c4c299f5209718d753fcabcceaeda032.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "33.5,17.5,33.5,3,33.5,-1.98,33.5,-17.3,33.5,-17.43,33.5,-17.45,33.44,-17.5,-33.14,-17.5,-33.44,-17.5,-33.5,-17.45,-33.5,3,-33.5,17.5",
+            "contourCut": "33.5,0,33.5,-208,-33.5,-208,-33.5,-1.94,-33.5,-0.41,-33.5,-0.16,-33.5,0,-33.14,0,33.14,0,33.44,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "6bab19eeb313c74127d5c58d92e6a393"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "01b9371922cb0708657324b9939abdbd"
+              },
+              {
+                "id": 2,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "6b77498f73d2b6960a9c8d34ecfa482d"
+              },
+              {
+                "id": 3,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "f8e5b7a0414bcdb4cb3310de48fd6aa0"
+              },
+              {
+                "id": 4,
+                "default": "#f7f7f7",
+                "addMaterial": "41818",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "e1d61aa92c4dc06e56c0006758bd2107"
+              },
+              {
+                "id": 5,
+                "default": 53098,
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "321621433bd604226e6d836ea97890ae"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 67,
+            "height": 208,
+            "depth": 35
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2172,
+        "type": 2,
+        "name": "Glass door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2172\/ab11207b598fa7e5101418a3429af814.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2172\/572010a6dadd5d6a1e1887c5aa919ef0.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "48.04,9,48.16,8.98,48.27,8.94,48.37,8.87,48.44,8.77,48.48,8.66,48.5,8.54,48.5,6.98,48.5,-8.54,48.48,-8.66,48.44,-8.77,48.37,-8.87,48.27,-8.94,48.16,-8.98,48.04,-9,41.45,-9,-40.54,-9,-41.45,-9,-48.04,-9,-48.16,-8.98,-48.27,-8.94,-48.37,-8.87,-48.44,-8.77,-48.48,-8.66,-48.5,-8.54,-48.5,8.54,-48.48,8.66,-48.44,8.77,-48.37,8.87,-48.27,8.94,-48.16,8.98,-48.04,9",
+            "contourCut": "48.5,0,48.5,-208,41,-208,-41,-208,-48.5,-208,-48.5,0,41,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 534,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9827dcfaedc70e38d3c9af13cfdc945b"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "4930df479e835de279b32ca82e99ed32"
+              },
+              {
+                "id": 2,
+                "default": "#b39dfc",
+                "addMaterial": "41838",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "b361a41965fdba114b22dd117364072c"
+              },
+              {
+                "id": 3,
+                "default": "#e8c79e",
+                "addMaterial": "41838",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "a9df22f5ed40cd1a9ec2fc78625e497a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 97,
+            "height": 208,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2044,
+        "type": 2,
+        "name": "Stained glass doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2044\/375b9836608617c1d5721ba5fcd60285.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2044\/0c9d84f91603a196737a319d0610beae.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.02,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.95,-44.63,8.97",
+            "contourCut": "36.14,0,47.5,-0.22,47.5,-210,-47.5,-210,-47.5,-132.74,-47.5,-78.41,-47.5,-0.22,-37.43,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 551,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c5bc12244c4836063daa3bfed060c0af"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "15aa3ed989a234d099bd60947ea8a815"
+              },
+              {
+                "id": 2,
+                "default": 55343,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a253292fcb011272fa4dfe4965e46796"
+              },
+              {
+                "id": 3,
+                "default": "#e8c79e",
+                "addMaterial": "41838",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "a29be35d0f5de895d3d4f26763299c92"
+              },
+              {
+                "id": 4,
+                "default": "#b39dfc",
+                "addMaterial": "41838",
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "ccd2a6dc556718c6cc35a265a1e2ad44"
+              },
+              {
+                "id": 5,
+                "default": 53098,
+                "name": "mesh_5",
+                "source": "bank",
+                "hash": "e494a97790e8a469fd7322a2f81686a2"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2038,
+        "type": 2,
+        "name": "Stained glass doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2038\/972af4096552b7ba18efc00641181d7c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2038\/93ded507723416c2be1e501594341364.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "46.01,9,49.12,8.94,49.47,7.88,49.5,7.69,49.5,-7.69,49.47,-7.88,49.12,-8.92,46.01,-9,-46.01,-8.99,-49.45,-8.91,-49.5,-7.68,-49.5,7.7,-49.45,8.95,-46.63,8.98",
+            "contourCut": "42.58,0,49.5,-0.08,49.5,-210,-49.5,-210,-49.5,-132.69,-49.5,-78.31,-49.5,-0.08,-42.14,0,-35.61,0,0.34,0,35.4,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#e2e3e4",
+                "addMaterial": "41818",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "5372443a6d7fcbbd6b69fb8164c9d0db"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "49ce1e54c85ae96982c913165bc66e07"
+              },
+              {
+                "id": 2,
+                "default": 55343,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "a931cd3f84fb460851503ede1910752f"
+              },
+              {
+                "id": 3,
+                "default": "#e8c79e",
+                "addMaterial": "41838",
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "ef4d3d69ebea85a61deaa62e0107a7cb"
+              },
+              {
+                "id": 4,
+                "default": 1554,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "164ebff467e39d148f74fc2aad485724"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 99,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 949,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/949\/95bad710a3ef24dffeabcfaca1a0fdc2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/949\/9d04f4f11ac38b3655cc2bedef2fec7b.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "43.66,9,44.41,8.97,45.16,8.92,45.88,8.85,46.52,8.75,47.03,8.63,47.37,8.48,47.49,8.29,47.5,-7.33,47.5,-8.27,47.5,-8.29,47.38,-8.48,47.04,-8.63,46.53,-8.75,45.89,-8.85,45.17,-8.92,44.42,-8.97,43.67,-9,-42.9,-9,-43.64,-9,-43.66,-9,-44.41,-8.97,-45.16,-8.92,-45.88,-8.85,-46.52,-8.75,-47.03,-8.63,-47.37,-8.48,-47.49,-8.29,-47.5,7.33,-47.5,8.27,-47.5,8.29,-47.38,8.48,-47.04,8.63,-46.53,8.75,-45.89,8.85,-45.17,8.92,-44.42,8.97,-43.67,9,42.9,9,43.64,9",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,0,44.61,0,44.62,0,45.87,0,47.49,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": "#fce3a7",
+                "addMaterial": "41838",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "8f1343af253835eeb58bdc4c857960cc"
+              },
+              {
+                "id": 1,
+                "default": 54829,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "8af623f075d22128ce6ee0095cc25a5b"
+              },
+              {
+                "id": 2,
+                "default": 54838,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "4185c7ad2b79d5d8b389804aa7a465c1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 942,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/942\/9d1118ff4ffe832772a647d1957ab27b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/942\/425b3f1ba162eff43efc0c1e55b26fb2.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "47.11,9,47.45,8.97,47.5,6.92,47.5,-6.94,47.45,-8.98,47.11,-9,-47.46,-9,-47.47,-9,-47.5,-6.94,-47.5,6.93,-47.46,9",
+            "contourCut": "47.11,0,47.5,-0.1,47.5,-210,-47.5,-210,-47.5,-0.1,-47.46,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1610,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "6873b0ef957ddfa2027cc956971b338e"
+              },
+              {
+                "id": 1,
+                "default": 55155,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "9600d91b0dd7826c27a60dc05fd1397b"
+              },
+              {
+                "id": 2,
+                "default": 55153,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "546d533b7a7ff98cdb6292ffbef94ab8"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 943,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/943\/7cf9adab34f74bc4bdf91b1f9f168026.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/943\/95acd325cecc120d7a4c7d8074433a2d.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.09,9,47.11,8.94,47.5,8.47,47.5,7.45,47.5,-7.45,47.5,-8.46,47.11,-8.93,44.09,-9,-44.14,-9,-47.46,-8.93,-47.5,-8.46,-47.5,8.47,-47.46,8.94,-44.14,9",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,0,39.59,0,44.85,0,46.15,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1554,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9597a0e934bdcc25152af633f15e2d4d"
+              },
+              {
+                "id": 1,
+                "default": 551,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "e26de43fa3ab1a4947c834eb2447d606"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 935,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/935\/06b41bf35996a23ab7b3f64723616439.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/935\/5359167c3a803d65166fb5bb119cf0d3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "44.01,9,47.12,8.94,47.47,7.88,47.5,7.69,47.5,-7.69,47.47,-7.88,47.12,-8.92,44.01,-9,-44.02,-9,-47.45,-8.92,-47.5,-7.69,-47.5,7.69,-47.45,8.95,-44.63,8.97",
+            "contourCut": "47.5,0,47.5,-210,-47.5,-210,-47.5,-132.66,-47.5,-78.27,-47.5,0,46.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1627,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "c7b801957c89c473e88df40d1c16eb67"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "3aeb5d7af7b35f39853d34b252f67e2b"
+              },
+              {
+                "id": 2,
+                "default": 613,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "ddf3cb050e0065e6be747a1de45d3368"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 933,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/9\/933\/7b73ba8a39808615c669406c79b97d58.png"
+          },
+          "body": {
+            "package": "\/files\/products\/9\/933\/a710c8d9f1d9a562854a4f155909314f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "43.07,9,43.58,8.99,44.35,8.97,46.73,8.38,46.99,8.3,47.25,8.1,47.38,7.94,47.45,7.78,47.5,7.66,47.5,-7.66,47.45,-7.78,47.38,-7.94,47.25,-8.1,46.99,-8.3,46.73,-8.38,44.35,-8.97,43.58,-8.99,43.07,-9,-43.03,-9,-43.54,-8.99,-44.31,-8.97,-46.78,-8.38,-47.04,-8.3,-47.3,-8.1,-47.43,-7.94,-47.5,-7.78,-47.5,-6.74,-47.5,6.74,-47.5,7.66,-47.5,7.78,-47.43,7.94,-47.3,8.1,-47.04,8.3,-46.78,8.38,-44.31,8.97,-43.54,8.99,-43.03,9",
+            "contourCut": "47.5,0,47.5,-209.99,47.5,-210,-47.5,-210,-47.5,0,41.83,0,46.09,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55153,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "f064eb19d46ac25a09286d5913e37e90"
+              },
+              {
+                "id": 1,
+                "default": 54824,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7dd5988ff5d393a0e44b4cf9ccb57a2a"
+              },
+              {
+                "id": 2,
+                "default": 55155,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "9bc819f39a929f2293f289f6e91af310"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 95,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 46547,
+        "type": 2,
+        "name": "Doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/465\/46547\/4d98afbdf7cfb74f69abaf65ca89fbff.png"
+          },
+          "body": {
+            "package": "\/files\/products\/465\/46547\/4a363b25de3b2439acf14d58b9fd2c8c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "47.03,9,47.87,8.7,48,8.44,48,-8.44,47.87,-8.7,47.03,-9,-43.41,-9,-47.03,-9,-47.87,-8.7,-48,-8.44,-48,-6.84,-48,8.44,-47.87,8.7,-47.03,9,-43.41,9,43.41,9",
+            "contourCut": "48,0,48,-209,-48,-209,-48,0,-47.87,0,-31.33,0,47.87,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54824,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "900e2b01dd53fd48996e1b9fc69e2188"
+              },
+              {
+                "id": 1,
+                "default": 54826,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "16e659e949d4956b1d8e1e285b2539d9"
+              },
+              {
+                "id": 2,
+                "default": 54829,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "c2c3210a69a5f3d99d4ae6aed54c8c50"
+              },
+              {
+                "id": 3,
+                "default": 55153,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "c06fbaaddc1c2e091dc57ff124a57e37"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 96,
+            "height": 209,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42616,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/426\/42616\/7e3e6c6ddb5ffc42505b70c935a7b2e1.png"
+          },
+          "body": {
+            "package": "\/files\/products\/426\/42616\/7d05b20590479cb558b6710e73a4fdc8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "50.3,11.5,50.38,11.48,50.4,11.47,50.44,11.44,50.47,11.4,50.5,11.34,50.5,11.3,50.5,9.91,50.5,-6.68,50.47,-6.74,50.44,-6.78,50.4,-6.81,50.38,-6.82,50.3,-6.84,-25.77,-11.5,-38.21,-11.5,-50.38,-6.82,-50.4,-6.81,-50.44,-6.78,-50.47,-6.74,-50.5,-6.68,-50.5,11.34,-50.47,11.4,-50.44,11.44,-50.4,11.47,-50.38,11.48,-50.3,11.5",
+            "contourCut": "50.5,0,50.5,-213,-50.5,-213,-50.5,0,42.21,0,48,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "67d7b70cf50b970c9f3f971b1635a88b"
+              },
+              {
+                "id": 1,
+                "default": 183,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "f559217d4eaaf8194b48278f2be552a0"
+              },
+              {
+                "id": 2,
+                "default": 1762,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "422f3f0b76505456c1a32c243572b098"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 101,
+            "height": 213,
+            "depth": 23
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55097,
+        "type": 2,
+        "name": "Glass door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/550\/55097\/24b50fff3e35d0767390358f634cc4bd.png"
+          },
+          "body": {
+            "package": "\/files\/products\/550\/55097\/86613ed8dea34e2e23411f75e64808cf.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "41.57,8.94,41.59,8.92,41.59,-8.92,41.57,-8.94,-37.11,-8.94,-41.57,-8.94,-41.59,-8.92,-41.59,8.92,-41.57,8.94,37.13,8.94",
+            "contourCut": "41.57,0,41.59,-0.02,41.59,-203.2,41.57,-203.22,-37.11,-203.22,-41.57,-203.22,-41.59,-203.2,-41.59,-0.02,-41.57,0,-37.15,0,-32.73,0,31.89,0,36.38,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54836,
+                "name": "door_5_wood",
+                "source": "bank",
+                "hash": "88165d0547cbddcc20b821b0aec5f5ee"
+              },
+              {
+                "id": 1,
+                "default": 55153,
+                "name": "door_1_glas",
+                "source": "bank",
+                "hash": "143cbb0e812642f8b90af7e61d72ee0e"
+              },
+              {
+                "id": 2,
+                "default": 54830,
+                "name": "door_5_handle",
+                "source": "bank",
+                "hash": "020fb16046e84afed5af457c9b275dad"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9909": [
+            {
+              "id": "9909",
+              "name": "Doors",
+              "parentId": "9882"
+            },
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 83,
+            "height": 203,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 55098,
+        "type": 2,
+        "name": "Double doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/550\/55098\/f58cc4c76096447452d6553532e5523c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/550\/55098\/5464bb8392267becc5e521f447654a0a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "65.44,8.94,65.46,8.92,65.46,-8.92,65.44,-8.94,-60.99,-8.94,-65.44,-8.94,-65.46,-8.92,-65.46,8.92,-65.44,8.94,61.01,8.94",
+            "contourCut": "65.44,0,65.46,-0.02,65.46,-203.2,65.44,-203.22,-60.99,-203.22,-65.44,-203.22,-65.46,-203.2,-65.46,-0.02,-65.44,0,-56.53,0,-5.14,0,-5.06,0,-0.64,0,55.76,0,60.26,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55153,
+                "name": "door_5_glas",
+                "source": "bank",
+                "hash": "1bf201a68bbf7792b81370e1bbe972b4"
+              },
+              {
+                "id": 1,
+                "default": 54830,
+                "name": "door_5_handle",
+                "source": "bank",
+                "hash": "1d5b1f3b875f53dd6c1ab4d6a536db7e"
+              },
+              {
+                "id": 2,
+                "default": 54836,
+                "name": "door_5_wood",
+                "source": "bank",
+                "hash": "99154cf77b19f9bdbcca3c178740af5d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9882": [
+            {
+              "id": "9882",
+              "name": "DiamondFurniture",
+              "parentId": "9872"
+            },
+            {
+              "id": "9872",
+              "name": "Experiments",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 131,
+            "height": 203,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64446,
+        "type": 2,
+        "name": "Entrance door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64446\/77dd2b4436963e4fd5bcb551fc8f411e.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64446\/9431ba8bef8d19f4a5ed92e75a4c7bc1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "52.35,11.81,52.5,11.66,52.5,-8.24,52.35,-8.39,-32.27,-11.81,-52.35,-8.39,-52.5,-8.24,-52.5,11.66,-52.35,11.81,47.65,11.81",
+            "contourCut": "46.29,0,52.5,-0.01,52.5,-302.8,47.5,-302.8,47.49,-302.8,-47.49,-302.8,-47.5,-302.8,-47.65,-302.8,-48.75,-302.8,-52.5,-302.8,-52.5,-0.01,-46.28,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 844,
+                "name": "handles",
+                "source": "bank",
+                "hash": "e3a2b9020663fcc7fa71dbe09634773a"
+              },
+              {
+                "id": 1,
+                "default": 55153,
+                "name": "glass",
+                "source": "bank",
+                "hash": "ba47e8bca4216ff02854af25f0d58639"
+              },
+              {
+                "id": 2,
+                "default": 1762,
+                "name": "Gasket001",
+                "source": "none",
+                "hash": "264c43ac4602eb6ed7b9cf76967635f0"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41803,
+                "default": "#5e5e5e",
+                "current": "#5e5e5e",
+                "name": "Frame",
+                "source": "bank",
+                "hash": "2f7f57d7453c79c626d1e182d30954d1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 105,
+            "height": 303,
+            "depth": 24
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64447,
+        "type": 2,
+        "name": "Entrance door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64447\/a55ca8115fddf3831dee11cec7177ca6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64447\/318b366b92cb08c90e90972c3ae9b60e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "77.46,11.81,77.61,11.66,77.61,1.31,77.61,-3.89,77.61,-8.24,77.46,-8.39,-7.17,-11.81,-77.24,-8.39,-77.39,-8.24,-77.61,-3.53,-77.39,11.66,-77.24,11.81,72.76,11.81",
+            "contourCut": "71.4,0,77.61,-0.01,77.61,-302.8,72.61,-302.8,-77.39,-302.8,-77.6,-302.8,-77.61,-302.8,-77.61,-0.01,-21.17,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41803,
+                "default": "#5e5e5e",
+                "current": "#5e5e5e",
+                "name": "Frame2",
+                "source": "bank",
+                "hash": "385d3091f296d0fcfa4de46d91712115"
+              },
+              {
+                "id": 1,
+                "default": 1762,
+                "name": "Gasket",
+                "source": "none",
+                "hash": "37fbfcb55a11a7f9edfbc0c69bc99654"
+              },
+              {
+                "id": 2,
+                "default": 55153,
+                "name": "glass",
+                "source": "bank",
+                "hash": "b593d97d6d32b66b3c52da4697062f10"
+              },
+              {
+                "id": 3,
+                "default": 844,
+                "name": "handles001",
+                "source": "bank",
+                "hash": "d9a52bb5ebde3dc21f3bb4ce4d3ab68a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 155,
+            "height": 303,
+            "depth": 24
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2046,
+        "type": 2,
+        "name": "Double doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/20\/2046\/b801ba230f8f21c7ec44f23a3482b475.png"
+          },
+          "body": {
+            "package": "\/files\/products\/20\/2046\/a8da88248564a3aac339a878df5e44be.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "5.26,9.5,81.72,5.7,82,5.42,82,-5.42,81.72,-5.7,5.28,-9.5,-5.4,-9.5,-81.72,-5.72,-82,-5.43,-82,5.43,-81.72,5.72,-5.42,9.5",
+            "contourCut": "82,0,82,-250,-82,-250,-82,0,-77.68,0,77.68,0,81.72,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55328,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "10f9a7331bd0f9aa5469e555ff88d128"
+              },
+              {
+                "id": 1,
+                "default": 54830,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "4edf474e64d0cd39eb0894b21278f33c"
+              },
+              {
+                "id": 2,
+                "default": 1652,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "4f8f52c1e2013622218ce7faaa201cb1"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 164,
+            "height": 250,
+            "depth": 19
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2141,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2141\/359543c6633167f4ac65ddb22570d83a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2141\/5c62c5ef8ef2e4e769452c72050a34f5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "84.51,9,87.62,8.94,87.97,7.88,88,7.69,88,-7.69,87.97,-7.88,87.62,-8.92,84.51,-9,-84.51,-9,-87.95,-8.92,-88,-7.69,-88,7.69,-87.95,8.94,-85.12,8.97",
+            "contourCut": "88,0,88,-223,-88,-223,-88,-132.47,-88,-78.15,-88,0,87.47,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1660,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "492190aea2663811e178bfc19a14a1fc"
+              },
+              {
+                "id": 1,
+                "default": 55344,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "f9e2997b982046b2c250e6cb7b2322fd"
+              },
+              {
+                "id": 2,
+                "default": 536,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "93a6a663933c7f5618cb48ea06b95334"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 176,
+            "height": 223,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2122,
+        "type": 2,
+        "name": "Double doors",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2122\/545b49e395cfba810c6747fc8e9a7f4c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2122\/61d46f4fe969463a32472d1311b04ec7.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "69.03,9,69.87,8.7,70,8.44,70,6.84,70,-8.44,69.87,-8.7,69.03,-9,-69.03,-9,-69.87,-8.7,-70,-8.44,-70,6.84,-70,8.44,-69.87,8.7,-69.03,9,-65.41,9,65.24,9",
+            "contourCut": "70,0,70,-210,-70,-210,-70,0,-68.78,0,68.58,0,69.03,0,69.87,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54830,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "e7160f47342132451680f340dd84aa41"
+              },
+              {
+                "id": 1,
+                "default": 613,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "d09b2b95d605fc416afda84254507afb"
+              },
+              {
+                "id": 2,
+                "default": 1652,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "36222b65f7faf2142ea409f758fc79c3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 140,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2133,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/21\/2133\/e636bbdc1ec9895b665b963e1b360702.png"
+          },
+          "body": {
+            "package": "\/files\/products\/21\/2133\/8594184ea486e54e930bd73c0961c4f3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "90.66,9,95.49,8.99,95.5,8.15,95.5,-8.15,95.49,-8.99,90.66,-9,-90.42,-9,-95.5,-8.98,-95.5,8.98,-90.42,9",
+            "contourCut": "95.5,0,95.49,-210,-95.49,-210,-95.5,-209.92,-95.5,0,-93.68,0,89.3,0,93.68,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55155,
+                "name": "door-vhod12",
+                "source": "bank",
+                "hash": "5679ed8a1e19e12be9d68e82bd5ef9f0"
+              },
+              {
+                "id": 1,
+                "default": 1659,
+                "name": "Rectangle001",
+                "source": "bank",
+                "hash": "18906b776d9ccca92dfe4ff4a3348a15"
+              },
+              {
+                "id": 2,
+                "default": 55344,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "2ba07631669c968725cf60122ef991c3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "doors"
+        ],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 191,
+            "height": 210,
+            "depth": 18
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64448,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64448\/9132dd54e57fd877eba9639c6f4fcc69.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64448\/97912cb7646199f196a4bd9c1b220ceb.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "82.1,8.7,82.33,8.64,82.5,8.47,82.56,8.23,82.56,-3.46,82.5,-3.7,82.33,-3.86,82.1,-3.93,-60.23,-8.69,-61.21,-8.7,-62.1,-8.68,-62.89,-8.63,-64.29,-8.5,-64.96,-8.41,-65.66,-8.27,-82.1,-3.93,-82.33,-3.86,-82.5,-3.7,-82.56,-3.46,-82.56,8.23,-82.5,8.47,-82.33,8.64,-82.1,8.7,74.57,8.7",
+            "contourCut": "82.56,0,82.56,-231.18,74.1,-231.18,-74.1,-231.18,-74.16,-231.18,-74.33,-231.18,-74.57,-231.18,-82.1,-231.18,-82.33,-231.18,-82.5,-231.18,-82.56,-231.18,-82.56,0,35.42,0,61.22,0,72.19,0,72.3,0,72.52,0,72.74,0,74.71,0,82.1,0,82.33,0,82.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2890,
+                "name": "wood",
+                "source": "bank",
+                "hash": "9a37bd62e6ff8166b0677bf5f092230d"
+              },
+              {
+                "id": 1,
+                "default": 1692,
+                "name": "glass",
+                "source": "bank",
+                "hash": "4d197f71954803f5fe81c2663d6436c3"
+              },
+              {
+                "id": 2,
+                "default": 55345,
+                "name": "Handle",
+                "source": "bank",
+                "hash": "26be4df45790d10aa19771476de00c30"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 165,
+            "height": 231,
+            "depth": 17
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.66454700 1752926697"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64449,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64449\/cf8d5eca2ff057ef5f293dc4b56270c0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64449\/d6b4977f917e8b3c17bc57386d8df0b5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "112.12,8.7,112.36,8.64,112.52,8.47,112.59,8.23,112.59,-3.46,112.52,-3.7,112.36,-3.86,112.12,-3.93,-30.2,-8.69,-31.19,-8.7,-32.07,-8.68,-112.12,-3.93,-112.36,-3.86,-112.52,-3.7,-112.59,-3.46,-112.59,8.23,-112.52,8.47,-112.36,8.64,-112.12,8.7,104.59,8.7",
+            "contourCut": "112.59,0,112.59,-291.27,104.13,-291.27,-104.13,-291.27,-104.19,-291.27,-104.36,-291.27,-104.59,-291.27,-112.12,-291.27,-112.36,-291.27,-112.52,-291.27,-112.59,-291.27,-112.59,0,65.44,0,91.24,0,102.21,0,102.32,0,102.54,0,102.76,0,104.74,0,112.12,0,112.36,0,112.52,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2890,
+                "name": "wood",
+                "source": "bank",
+                "hash": "1cfe7b8b316ed2036bb197022b4ff1eb"
+              },
+              {
+                "id": 1,
+                "default": 1692,
+                "name": "glass",
+                "source": "bank",
+                "hash": "d204db911bf0e44c20eb9796e607db27"
+              },
+              {
+                "id": 2,
+                "default": 55345,
+                "name": "Handle",
+                "source": "bank",
+                "hash": "8b24a30a8a0f5da44520ecda09bb8366"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 225,
+            "height": 291,
+            "depth": 17
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64450,
+        "type": 2,
+        "name": "Door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64450\/712c983c92413151a1942d66363946e7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64450\/1949abe3722ef3c98c0ee2ff82d56d26.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "14.7,11.2,15.98,11.16,83.04,7.56,83.19,7.51,83.24,7.36,83.25,-8.12,83.25,-11,83.2,-11.15,83.05,-11.2,78.72,-11.2,-83.05,-11.2,-83.2,-11.15,-83.25,-11,-83.25,-8.12,-83.23,7.36,-83.18,7.51,-83.03,7.56,-16.02,11.16,-14.74,11.2",
+            "contourCut": "83.25,0,83.24,-275.69,83.22,-275.74,83.17,-275.77,83.16,-275.77,-83.17,-275.77,-83.22,-275.74,-83.24,-275.69,-83.25,0,-83.03,0,-78.51,0,-78.49,0,-73.05,0,83.24,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55346,
+                "name": "handles",
+                "source": "bank",
+                "hash": "27da88d4a94e67d80c8ddb0c985a7710"
+              },
+              {
+                "id": 1,
+                "default": 1624,
+                "name": "glass",
+                "source": "bank",
+                "hash": "fa33065fe60c5f7621f424408ed2f78a"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41804,
+                "default": "#ececec",
+                "current": "#ececec",
+                "name": "Wood",
+                "source": "bank",
+                "hash": "20f37671d15bfe7c9eb913c83b7ad08b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 166,
+            "height": 276,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64451,
+        "type": 2,
+        "name": "Door with glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64451\/5ecf7abbe1fd862742c3b5c03d402df5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64451\/998cd91d677037d092fdae8105da74bc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "31,9.64,114.24,9.12,114.38,9.07,114.43,8.93,114.43,7.92,114.43,-4.69,114.38,-4.82,114.27,-4.87,39.51,-9.51,31.05,-9.64,26.45,-9.64,-114.27,-4.87,-114.38,-4.81,-114.43,-4.69,-114.43,7.92,-114.43,8.93,-114.38,9.07,-114.24,9.12,26.45,9.64",
+            "contourCut": "114.43,0,114.43,-263.92,-114.43,-263.92,-114.43,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55153,
+                "name": "glass",
+                "source": "bank",
+                "hash": "6f395bd742f1f7ac63c09810df565468"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41803,
+                "default": "#384263",
+                "current": "#384263",
+                "name": "door_2",
+                "source": "bank",
+                "hash": "b2e3ced8febf3f07fee3c506497f6d28"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41803,
+                "default": "#516292",
+                "current": "#516292",
+                "name": "shield",
+                "source": "bank",
+                "hash": "b6c58f51cf890779ffebf879d228c772"
+              },
+              {
+                "id": 3,
+                "default": 53098,
+                "name": "Castles",
+                "source": "bank",
+                "hash": "1a97cc04f002c2cddce80ae78488a1de"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 229,
+            "height": 264,
+            "depth": 19
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64452,
+        "type": 2,
+        "name": "Door with glass",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64452\/6d1495b0a3441262005c661ec5930ddc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64452\/c7b25bf146d182d50b1f01962d54fd8c.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "60.45,9.64,84.79,9.12,84.93,9.07,84.98,8.93,84.98,7.92,84.98,-4.69,84.93,-4.82,84.82,-4.87,69.38,-9.43,68.97,-9.51,60.5,-9.64,55.9,-9.64,-84.82,-4.87,-84.93,-4.81,-84.98,-4.69,-84.98,7.92,-84.98,8.93,-84.93,9.07,-84.79,9.12,55.9,9.64",
+            "contourCut": "84.98,0,84.98,-216.89,-84.98,-216.89,-84.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41803,
+                "default": "#384263",
+                "current": "#384263",
+                "name": "door_2",
+                "source": "bank",
+                "hash": "72a4c32c1c30ae105d980a8f87066e57"
+              },
+              {
+                "id": 1,
+                "default": 53098,
+                "name": "Castles",
+                "source": "bank",
+                "hash": "4e3dcfef4128fd149263a859141afedd"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41803,
+                "default": "#516292",
+                "current": "#516292",
+                "name": "shield",
+                "source": "bank",
+                "hash": "a9e9de0a96f501d3786e98ad1e0a4cf0"
+              },
+              {
+                "id": 3,
+                "default": 55153,
+                "name": "glass",
+                "source": "bank",
+                "hash": "7b02a87063fd76bad66363eba02d6acd"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 170,
+            "height": 217,
+            "depth": 19
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 250,
+        "type": 2,
+        "name": "Balcony window and door",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/2\/250\/ad6c29d38085269d2e792c0d034b7c8f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/2\/250\/bb9fe2760e8b7f317ed2d29682bab172.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-4.01,11,71,10.87,71,10.14,71,-10.37,71,-10.78,71,-10.88,70.94,-10.93,-4.07,-11,-70.64,-11,-70.94,-11,-71,-10.95,-71,-10.8,-71,8.29,-71,11,-4.09,11",
+            "contourCut": "-4.07,0,-4.01,-0.01,71,-73.38,71,-73.84,71,-76.65,71,-79.1,70.99,-208,-4.88,-208,-71,-207.91,-71,-0.41,-71,-0.16,-71,-0.07,-71,-0.01,-70.94,0,-70.64,0,-4.37,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1618,
+                "name": "mesh_0",
+                "source": "none",
+                "hash": "35c6e9d7ec79691fbf0612ec057571a6"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "4915a4a32267a8b27b3e863399d855c0"
+              },
+              {
+                "id": 2,
+                "addMaterial": 41818,
+                "default": "#e9e9e9",
+                "current": "#e9e9e9",
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "f48022be60732764793d0fba66f4e0d2"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#ebebeb",
+                "current": "#ebebeb",
+                "name": "mesh_3",
+                "source": "none",
+                "hash": "03a7ee0c9c21f708a0b599ef4d8ffe82"
+              },
+              {
+                "id": 4,
+                "default": "#e4e4e4",
+                "addMaterial": "41818",
+                "name": "mesh_4",
+                "source": "none",
+                "hash": "9677e2befa3cac2f077eaaae4d2cd24b"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "56": [
+            {
+              "id": "56",
+              "name": "Windows",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "9206": [
+            {
+              "id": "9206",
+              "name": "Swing doors",
+              "parentId": "9205"
+            },
+            {
+              "id": "9205",
+              "name": "Doors",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "wall",
+          "sizes": {
+            "width": 142,
+            "height": 208,
+            "depth": 22
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

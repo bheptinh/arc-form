@@ -287,9 +287,13 @@ const ChangeSize = props => {
         
     }, [props.value, metrics]);
 
-    useEffect(() => inputEl.current.disabled = props.isFixedSize && props.valueChangeType !== "elevation" ? true : false, [props.isFixedSize]);
+    useEffect(() => {
+        inputEl.current.disabled = props.isFixedSize && props.valueChangeType !== "elevation" ? true : false
+    }, [props.isFixedSize]);
 
-    useEffect(() => { if(inputEl.current) inputEl.current.style.width = ((inputEl.current.value.length + 1) * 7) + (props.type && (props.type == 'style_1' || props.type == 'style_2') ? -3 : 5) + 'px'});
+    useEffect(() => { 
+        if(inputEl.current) inputEl.current.style.width = ((inputEl.current.value.length + 1) * 7) + (props.type && (props.type == 'style_1' || props.type == 'style_2') ? -3 : 5) + 'px'
+    }, []);
 
     return (
         <div className={classes.changerMain + ' ' + classes["addStyles_" + props.type + "_main"]} style={{ ...props.additionalStyles}}>

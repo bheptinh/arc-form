@@ -23,6 +23,7 @@ import FavoriteStarIcon from "../../../../../common/FavoriteStarIcon";
 import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
 import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
 import HoverComponent from "../../../controlPanel/components/HoverComponent";
+import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 
 const useStyle = createUseStyles({
     '@font-face': [
@@ -1087,7 +1088,7 @@ const Main = props => {
 
     let copyMaterial = (e, elem) => R2D.CopyPaste.copyMaterial({id: elem.id});
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         let arrayReact = [];
         let htmlElem;
         let loadedPrevs = [];
@@ -1128,7 +1129,7 @@ const Main = props => {
                         <FavoriteStarIcon/>
                     </div>
                     <div className={ classes.prod_item_img_wr }>
-                        <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} className={'lazyload'} />
+                        <img data-src={R2D.URL.DOMAIN + elem.source.images.preview} src={R2D.URL.DOMAIN + elem.source.images.preview} className={'lazyload'} />
 
                         {
                             elemType == R2D.ProductType.MATERIAL && isObjectAccessible?
@@ -1284,15 +1285,20 @@ const Main = props => {
         }, 100);
     }, [loadedPreviews]);
 
-    useEffect(() => setFavoritesList(user.data.favorites?.items || []), [isLogged]);
+    useEffect(() => {
+        setFavoritesList(user.data.favorites?.items || [])
+    }, [isLogged]);
 
-    useEffect(async () => {
+    useEffect(() => {
         setStyleAnimation({ transform: "translateX(0%)" });
-        let loadedData = await planner.scene.categoryDataLoad(`${R2D.URL.DOMAIN + R2D.URL.URL_CATALOG_SEARCH}&category_tag&my=1`);
-        if(loadedData.type == "error" || loadedData?.length < 1 || loadedData?.length == 0 || !loadedData[0]) {
-            dispatch(setActivePopup({name: "alert", data: "TEXT_ERROR_LOAD_DATA"}));
-        }
-        setUserUploadList(loadedData);
+
+        planner.scene.categoryDataLoad(`${R2D.URL.DOMAIN + R2D.URL.URL_CATALOG_SEARCH}&category_tag&my=1`)
+            .then((loadedData) => {
+                if(loadedData.type == "error" || loadedData?.length < 1 || loadedData?.length == 0 || !loadedData[0]) {
+                    dispatch(setActivePopup({name: "alert", data: "TEXT_ERROR_LOAD_DATA"}));
+                }
+                setUserUploadList(loadedData);
+            });
 
         planner.scene.addEventListener(planner.scene.PRODUCTS_UPDATED, onProductsUpdated);
         return () => planner.scene.removeEventListener(planner.scene.PRODUCTS_UPDATED, onProductsUpdated);

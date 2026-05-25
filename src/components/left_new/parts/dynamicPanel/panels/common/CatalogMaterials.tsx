@@ -281,7 +281,9 @@ const Catalog = props => {
         dispatch(controlPanelUpdateBreadCrumbs({data: dataObj, updateType: "add"}));
     };
 
-    useEffect(() => setStyleAnimation({ transform: "translateX(0%)" }), []);
+    useEffect(() => {
+        setStyleAnimation({ transform: "translateX(0%)" })
+    }, []);
 
     useEffect(() => {
         if(catalogMain.current && catalogMain.current.getScrollElement) {

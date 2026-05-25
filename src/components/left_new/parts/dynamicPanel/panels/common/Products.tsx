@@ -1271,7 +1271,7 @@ const Products = props => {
                                 <div className={classes.prod_item_hover_bottom}></div>
 
                                 <div className={classes.prod_item_img_wr}>
-                                    <img data-src={R2D.URL.DOMAIN + elem.source?.images.preview} className={'lazyload'} />
+                                    <img data-src={R2D.URL.DOMAIN + elem.source?.images.preview} src={R2D.URL.DOMAIN + elem.source?.images.preview} className={'lazyload'} />
 
                                     {
                                         elem.type == R2D.ProductType.MATERIAL && isObjectAccessible?
@@ -1357,7 +1357,7 @@ const Products = props => {
                             <div className={classes.prod_item_hover_right}></div>
                             <div className={classes.prod_item_hover_bottom}></div>
                             <div className={classes.prod_item_img_wr}>
-                                <img data-src={R2D.URL.DOMAIN + elem.source?.images.preview} className={'lazyload'} />
+                                <img data-src={R2D.URL.DOMAIN + elem.source?.images.preview} src={R2D.URL.DOMAIN + elem.source?.images.preview} className={'lazyload'} />
 
                                 {
                                     elemType == R2D.ProductType.MATERIAL && isObjectAccessible?
@@ -1490,15 +1490,20 @@ const Products = props => {
         };
     }, [lastHistoryElemData, userFavorites, userProjectActive, isProjectBelongToLoggedUser, isLogged, dynamicPanelPreviewViewType, userData]);
 
-    useEffect(async () => setUserFavorites(user.data.favorites?.items || []), [isLogged]);
+    useEffect(() => {
+        setUserFavorites(user.data.favorites?.items || [])
+    }, [isLogged]);
     
-    useEffect(async () => {
+    useEffect(() => {
         if(lastHistoryElem?.urlList) {
             setPreloaderStatus(true);
-            let loadedData = await planner.scene.categoryDataLoad(lastHistoryElem.urlList, R2D.controller.getCountry());
-            setShowBottomUpgradeTip(false);
-            setLastHistoryElemData(loadedData);
-            setPreloaderStatus(false);
+
+            planner.scene.categoryDataLoad(lastHistoryElem.urlList, R2D.controller.getCountry())
+                .then(loadedData => {
+                    setShowBottomUpgradeTip(false);
+                    setLastHistoryElemData(loadedData);
+                })
+                .finally(() => setPreloaderStatus(false))
         }
     }, [userData]);
 

@@ -1,0 +1,2886 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "27",
+    "items": [
+      {
+        "id": 531,
+        "type": 2,
+        "name": "Chaise lounge",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/5\/531\/6fa6cc926429c01f67a8c85ffce33006.png"
+          },
+          "body": {
+            "package": "\/files\/products\/5\/531\/6fb7975e85070307dc5c3ecbfc903acc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "31.15,81.5,31.47,81.43,31.74,81.24,31.98,80.62,32.5,73.51,32.5,64.64,32.5,63.79,32.5,57.95,32.5,57.44,31.65,-73.53,30.87,-80.63,30.62,-81.25,30.35,-81.43,30.02,-81.5,-30.01,-81.5,-30.34,-81.43,-30.6,-81.25,-30.85,-80.63,-31.65,-73.53,-32.5,57.5,-32.5,58.41,-32.5,73.47,-31.97,80.62,-31.9,80.82,-31.73,81.24,-31.46,81.43,-31.14,81.5",
+            "contourCut": "26.19,0,31.43,-0.02,31.69,-0.17,31.96,-1.19,32.5,-18.51,32.5,-30.74,32.5,-31,32.5,-31.22,32.5,-39.44,32.5,-39.95,32.5,-40.03,32.5,-40.32,31.69,-66.26,31.59,-67.15,29.94,-81.82,29.84,-81.96,29.54,-82,-29.58,-82,-29.88,-81.96,-29.98,-81.82,-31.64,-66.87,-31.67,-66.26,-32.5,-40.21,-32.5,-39.66,-32.5,-18.73,-32.5,-18.53,-31.93,-0.69,-31.68,-0.17,-31.42,-0.02,-26.17,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#2083d3",
+                "current": "#2083d3",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "234ca9560ce712699efd53e1463f546a"
+              },
+              {
+                "id": 1,
+                "default": 1610,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "2fa51329cc2703f6d5193eb0af2860f2"
+              },
+              {
+                "id": 2,
+                "default": 53098,
+                "name": "mesh_2",
+                "source": "none",
+                "hash": "e2fa86d2444f17f993e723de066a6d1d"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "armchairs"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 65,
+            "height": 82,
+            "depth": 163
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64606,
+        "type": 2,
+        "name": "Patio umbrella",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64606\/b18e04bac91595ec30d310ad398127d0.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64606\/55677807452ecafcaa52911b3e75dafc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "145.23,96.63,145.37,96.52,145.91,95.72,145.91,95.56,145.9,-95.55,145.86,-95.7,145.33,-96.51,145.19,-96.56,-144.67,-96.63,-145.23,-96.55,-145.26,-96.53,-145.38,-96.44,-145.87,-95.7,-145.91,-95.52,-145.91,95.6,-145.87,95.78,-145.38,96.52,-145.26,96.61,-145.23,96.63",
+            "contourCut": "21.41,0,21.44,-0.03,145.51,-196.03,145.91,-197.68,145.9,-197.81,145.5,-199.09,145.38,-199.23,133.91,-204.81,123.92,-209.32,1.23,-258.18,-0.01,-258.43,-1.25,-258.18,-125.06,-208.84,-134.51,-204.71,-145.35,-199.42,-145.9,-197.81,-145.91,-197.67,-145.52,-196.07,-21.46,-0.03,-21.44,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55333,
+                "name": "frame",
+                "source": "bank",
+                "hash": "8f7f9041660c96689b0888c3cef337df"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41826,
+                "default": "#d6d6d6",
+                "current": "#d6d6d6",
+                "name": "fabric",
+                "source": "bank",
+                "hash": "32b2f9d9f8d5dd8db75f728b92ed1135"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 292,
+            "height": 258,
+            "depth": 193
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42437,
+        "type": 2,
+        "name": "Chaise lounge",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/424\/42437\/9022c1dc7cd3d1847254f750e53ffb22.png"
+          },
+          "body": {
+            "package": "\/files\/products\/424\/42437\/6d3da4b040411b22cc906418601373a1.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "36.89,94,44.8,91.57,45,91.37,45,7.94,40.13,-93.9,39.84,-94,37.23,-94,-37.25,-94,-39.87,-94,-40.16,-93.9,-45,7.94,-45,9.56,-45,89.73,-45,91.37,-44.8,91.57,-36.96,94,34.15,94",
+            "contourCut": "44.82,0,45,-0.27,45,-0.31,44.88,-56.58,37.06,-99.87,36.88,-100,-34.22,-100,-36.95,-100,-37.12,-99.87,-44.9,-56.58,-44.91,-55.11,-45,-0.31,-45,-0.28,-45,-0.27,-44.82,0,40.15,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "mesh_1",
+                "source": "none",
+                "hash": "1893dca4df733977bf53163c03e6c0e0"
+              },
+              {
+                "id": 1,
+                "default": 55117,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "6f498898f7ccc4e8cf0ee42761527b6b"
+              },
+              {
+                "id": 2,
+                "default": 1009,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "1bc011b576703c1f54f85b041815ba46"
+              },
+              {
+                "id": 3,
+                "default": 839,
+                "name": "mesh_4",
+                "source": "bank",
+                "hash": "0120ef2bbeb952c38affc01847732856"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "deck chair"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 90,
+            "height": 100,
+            "depth": 188
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64607,
+        "type": 2,
+        "name": "Kettle charcoal grill",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64607\/1d56581f4cd2adb2d9b5067767b4a1cc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64607\/f07ab9e9ba471527d3806f349d54f5fe.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "4.15,32.78,27.41,30.88,27.61,30.79,27.87,30.42,28.38,26.22,28.88,0,27.2,-26.49,26.85,-26.93,26.32,-27.1,4.15,-32.78,4.14,-32.78,-4.12,-32.78,-26.37,-27.1,-26.9,-26.93,-27.25,-26.49,-28.88,-2.05,-28.29,26.22,-27.77,30.42,-27.52,30.79,-27.31,30.88,-4.12,32.78,4.14,32.78",
+            "contourCut": "25.99,0,27.41,-0.15,27.61,-0.23,27.87,-0.6,28.38,-4.8,28.88,-105.62,28.88,-106.14,27.64,-109.28,26.96,-110.88,26.28,-112.03,25.17,-113.5,23.84,-114.88,22.31,-116.17,20.61,-117.37,0.41,-129.54,-0.46,-129.54,-20.63,-117.37,-22.32,-116.17,-23.84,-114.88,-25.17,-113.5,-26.29,-112.03,-26.96,-110.88,-27.64,-109.28,-28.88,-106.14,-28.88,-105.62,-28.29,-4.8,-27.77,-0.6,-27.52,-0.23,-27.31,-0.15,-26.03,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "metal2",
+                "source": "none",
+                "hash": "3453009908d17d76ebafff7eeb76f42e"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#000000",
+                "current": "#000000",
+                "name": "plastic",
+                "source": "bank",
+                "hash": "9eef1589a49f0a34420f1cd1a5d188c1"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "Object001",
+                "source": "bank",
+                "hash": "66b0be64188657540f0bb48e04039974"
+              },
+              {
+                "id": 3,
+                "default": 54835,
+                "name": "body",
+                "source": "bank",
+                "hash": "256e688710a87dfed69a3ea18a53d1ea"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 58,
+            "height": 130,
+            "depth": 66
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 667,
+        "type": 2,
+        "name": "Recliner",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/6\/667\/5f3e269edbcb5baf0100c6eb2fc3a5a7.png"
+          },
+          "body": {
+            "package": "\/files\/products\/6\/667\/9405d585fa32d037f728e99ce862a9c6.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0,85,25.54,84.99,26.14,84.97,26.31,84.94,26.44,84.89,26.47,84.87,26.49,84.84,26.5,84.76,26.5,84.64,26.5,83.35,26.5,83.15,25.9,21.06,25.88,19.15,25.06,-27.67,24.88,-37.81,23.45,-83.96,23.42,-84.67,23.4,-84.82,23.38,-84.84,23.25,-84.93,23.12,-84.96,22.63,-85,-0.01,-85,-22.67,-84.99,-23.13,-84.96,-23.27,-84.93,-23.38,-84.86,-23.43,-84.81,-23.44,-84.74,-23.46,-84.39,-24.89,-37.8,-25.08,-27.67,-25.89,19.16,-25.91,21.06,-26.5,83.15,-26.5,84.77,-26.48,84.85,-26.47,84.87,-26.44,84.9,-26.31,84.95,-26.14,84.98,-25.51,85",
+            "contourCut": "22.62,0,23.1,-0.05,23.25,-0.07,23.36,-0.14,23.4,-0.19,23.42,-0.33,25.86,-30.49,25.88,-30.94,25.9,-32.46,26.5,-96.11,26.5,-96.45,26.5,-97.65,26.5,-97.78,26.48,-97.86,26.47,-97.88,26.44,-97.9,26.31,-97.95,26.16,-97.97,25.52,-98,-25.52,-98,-26.16,-97.97,-26.31,-97.95,-26.44,-97.9,-26.47,-97.88,-26.49,-97.86,-26.5,-97.78,-26.5,-96.45,-26.5,-96.11,-25.91,-32.46,-25.89,-30.94,-25.87,-30.49,-23.44,-0.27,-23.43,-0.19,-23.41,-0.17,-23.38,-0.14,-23.27,-0.07,-23.13,-0.05,-22.64,0,-0.01,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#f7f7f8",
+                "current": "#f7f7f8",
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "cd5ea987e4d37d3037436da6df81fb50"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41826,
+                "default": "#3cc3c3",
+                "current": "#3cc3c3",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "6c5a014fc09f4986ba340ec42eaefc67"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "77afac87a47ccc534cb15ef5eef7f62c"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "armchairs"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 53,
+            "height": 98,
+            "depth": 170
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64608,
+        "type": 2,
+        "name": "swing",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64608\/a1e550c9532332e311d9fa19096ed93d.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64608\/9ce60459107d70199631a7dc7f99602a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-12.77,81.31,98.28,80.56,105.9,80.35,110.97,80.16,115.32,79.9,116.91,79.47,120.8,77.15,121,75.94,130.75,-3.85,130.75,-31.15,121.08,-75.51,120.6,-77.04,117.48,-79.24,115.18,-79.84,110.82,-80.14,12.66,-81.26,-13.3,-81.31,-60.44,-81.07,-84.26,-80.86,-111.01,-80.02,-114.64,-79.48,-117.95,-76.93,-118.36,-76.21,-130.75,-31.15,-130.75,-3.85,-118.36,76.51,-117.77,77.37,-114.48,79.61,-112.28,79.99,-108.51,80.18,-99.07,80.52",
+            "contourCut": "119.68,0,130.75,-72.89,130.75,-75.24,122.15,-186.01,121.29,-191.65,120.78,-193.04,119.78,-194.03,118,-194.73,115.08,-195.14,109.18,-195.32,-106.22,-195.36,-111.54,-195.24,-114.81,-194.79,-116.57,-194.14,-117.93,-192.96,-118.65,-191.47,-119.62,-185.16,-130.75,-75.24,-130.75,-72.89,-118.19,0,113.02,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41826,
+                "default": "#b4cd5b",
+                "current": "#b4cd5b",
+                "name": "roof",
+                "source": "bank",
+                "hash": "46fdf943aadb3f04dcadfcf256610121"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#242424",
+                "current": "#242424",
+                "name": "legs",
+                "source": "bank",
+                "hash": "6cc2cbb81a96d80c0b1893c3ff2a99a2"
+              },
+              {
+                "id": 2,
+                "default": 55338,
+                "name": "frame",
+                "source": "bank",
+                "hash": "32810b2b00574160a6c738a88febd1f1"
+              },
+              {
+                "id": 3,
+                "addMaterial": 41818,
+                "default": "#404040",
+                "current": "#404040",
+                "name": "Cylinder033004",
+                "source": "bank",
+                "hash": "246dcfd1acedc47fa15366e1599d7ba8"
+              },
+              {
+                "id": 4,
+                "addMaterial": 41827,
+                "default": "#e8d717",
+                "current": "#e8d717",
+                "name": "pillow",
+                "source": "bank",
+                "hash": "f02f73471a7042ecc2a26d07b8236ea8"
+              },
+              {
+                "id": 5,
+                "addMaterial": 41827,
+                "default": "#73a13a",
+                "current": "#73a13a",
+                "name": "cover001",
+                "source": "bank",
+                "hash": "9e90bdad15ab34369a5af04b3a66f532"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 261,
+            "height": 195,
+            "depth": 163
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64609,
+        "type": 2,
+        "name": "Swing",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64609\/86d5a28fef873fd4a7e68369d9372cee.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64609\/d0347895f5c2362782c0fd46bf13ca33.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/646\/64609\/3f54f6df-1d61-46fe-ab80-04454a3dbaa7.svg",
+            "contourTop": "89.55,74.81,89.84,74.69,93.62,56.81,93.81,54.52,98.11,2.34,98.11,-0.04,98.11,-2.3,98.11,-2.43,97.82,-12.4,89.8,-74.69,89.5,-74.81,83.18,-74.81,-89.8,-74.81,-90.09,-74.69,-98.11,-12.4,-98.11,-5.04,-97.62,2.34,-94.11,54.52,-93.91,56.81,-90.14,74.69,-89.84,74.81",
+            "contourCut": "89.76,0,89.8,-0.03,89.84,-0.38,93.62,-44.49,93.81,-50.55,98.11,-191.92,98.11,-195.95,98.11,-197.64,98.11,-198.94,98.11,-199.69,98.11,-199.99,97.93,-200.23,-97,-200.31,-97.62,-199.99,-98.11,-199.56,-94.11,-50.55,-93.91,-44.49,-90.14,-0.38,-90.1,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55361,
+                "name": "arch22_024_55",
+                "source": "bank",
+                "hash": "d24139aae300a35f23dab21bfb2cb9c0"
+              },
+              {
+                "id": 1,
+                "default": 55333,
+                "name": "arch22_024_056",
+                "source": "none",
+                "hash": "1b8c6f2eebd9c7dbf0b4a296dc03817a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 196,
+            "height": 200,
+            "depth": 150
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64513,
+        "type": 2,
+        "name": "Picnic table",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64513\/ff6cdb65e23fd90a4a4120ba656191fd.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64513\/d050eff0c2737b6457ab85ea8ab35c5a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/645\/64513\/d579a813-e4b9-41e4-a67f-413549df971d.svg",
+            "contourTop": "76.24,42.78,76.78,42.63,77.16,42.25,77.31,41.71,77.31,-41.71,77.16,-42.25,76.78,-42.63,76.24,-42.78,42.28,-42.78,-76.24,-42.78,-76.78,-42.63,-77.16,-42.25,-77.31,-41.71,-77.31,41.71,-77.16,42.25,-76.78,42.63,-76.24,42.78,51.91,42.78,64.07,42.78",
+            "contourCut": "77.15,0,77.31,-48.28,77.31,-50.45,77.2,-50.64,29.57,-88.37,28.9,-88.48,-19.61,-88.48,-29.84,-88.48,-30.5,-88.37,-77.2,-50.64,-77.31,-50.45,-77.31,-48.28,-77.23,0,-61.42,0,76.9,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55361,
+                "name": "arch22_026_00",
+                "source": "bank",
+                "hash": "a78c4eab9e27a41877e9a1c94b900e78"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9150": [
+            {
+              "id": "9150",
+              "name": "Dining tables",
+              "parentId": "9149"
+            },
+            {
+              "id": "9149",
+              "name": "Tables",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 155,
+            "height": 88,
+            "depth": 86
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64495,
+        "type": 2,
+        "name": "Garden chair",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/644\/64495\/c48abf6ed9459abebd96f67a4bef6a43.png"
+          },
+          "body": {
+            "package": "\/files\/products\/644\/64495\/48065a4da06fc4218066257080fd07b4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "28.76,52.08,29.07,51.99,29.26,51.55,35.68,24.61,35.79,23.74,35.79,-16.82,35.68,-25.58,29.26,-51.55,29.07,-51.99,28.76,-52.08,27.76,-52.08,-28.76,-52.08,-29.07,-51.99,-29.26,-51.55,-35.68,-25.58,-35.79,-16.82,-35.79,-16.77,-35.79,-16.65,-35.79,-16.46,-35.79,-16.22,-35.79,-15.97,-35.79,-15.73,-35.79,-15.54,-35.79,-15.41,-35.79,-15.37,-35.79,22.29,-35.79,22.34,-35.79,22.46,-35.79,22.66,-35.79,22.89,-35.79,23.15,-35.79,23.38,-35.79,23.57,-35.79,23.7,-35.79,23.74,-35.68,24.61,-29.26,51.55,-29.07,51.99,-28.76,52.08",
+            "contourCut": "28.76,0,29.07,-0.09,29.26,-0.53,31.32,-5.83,31.45,-6.2,35.79,-44.21,35.79,-51.39,35.79,-51.64,35.79,-51.86,35.79,-52.02,35.79,-52.1,35.68,-53.47,29.26,-81.06,29.07,-81.5,28.76,-81.59,27.76,-81.59,-28.76,-81.59,-29.07,-81.5,-29.26,-81.06,-35.68,-53.47,-35.79,-52.1,-35.79,-51.39,-35.79,-51.14,-35.79,-50.92,-35.79,-50.76,-35.79,-50.68,-35.79,-44.92,-35.79,-44.67,-35.79,-44.45,-35.79,-44.29,-35.79,-44.21,-31.45,-6.2,-31.32,-5.83,-29.26,-0.53,-29.07,-0.09,-28.76,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41826,
+                "default": "#c7c7c7",
+                "current": "#c7c7c7",
+                "name": "Cloth",
+                "source": "bank",
+                "hash": "f51675dc0d9801cd4520963e65c7a8de"
+              },
+              {
+                "id": 1,
+                "default": 55333,
+                "name": "Metall",
+                "source": "none",
+                "hash": "34cb1784c249dbaeec43f474864f2c8a"
+              },
+              {
+                "id": 2,
+                "default": 2890,
+                "name": "Wood",
+                "source": "bank",
+                "hash": "3c03904622671ae0909a98b389698181"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "26": [
+            {
+              "id": "26",
+              "name": "Armchairs",
+              "parentId": "83"
+            },
+            {
+              "id": "83",
+              "name": "Upholstered furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 72,
+            "height": 82,
+            "depth": 104
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42436,
+        "type": 2,
+        "name": "Patio umbrella",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/424\/42436\/5403f2848a3ffb416e1268b5f2ec7963.png"
+          },
+          "body": {
+            "package": "\/files\/products\/424\/42436\/a8ca9e31318ac133262a2fbbbe29b690.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "219.79,200,221.3,198.86,221.92,194.95,221.98,190.41,222.5,-196.68,221,-198.98,217.19,-199.38,-176.13,-200,-177.88,-199.26,-179.66,-198.3,-180.44,-197.53,-222.5,-54.2,-222.5,54.8,-181.45,198.24,-179.91,199.72",
+            "contourCut": "-149.35,0,222.11,-229.8,222.5,-245.52,221.6,-259.07,221.3,-260.61,220.15,-263.87,219.25,-264.32,22.48,-350,18.52,-350,-205.51,-325.57,-220.09,-321.3,-222.5,-4.87,-222.45,0,-162.58,0,-162.5,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 53098,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "6e801b08ae294467a6daa515af244bb4"
+              },
+              {
+                "id": 1,
+                "default": 54828,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "288221d8537a86961787d8eff9fa8288"
+              },
+              {
+                "id": 2,
+                "default": 839,
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "c0e48bec2b97d48d39b6352d47a85ee3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "square umbrella"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 445,
+            "height": 350,
+            "depth": 400
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64610,
+        "type": 2,
+        "name": "Gas grill",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64610\/105f7a24c7c6f52c1534c44679baf7d6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64610\/48b907470b3c0ea3c42f18abdb4d0a9e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/646\/64610\/e0b90c8e-f849-47cf-8b8e-2c601db1987b.svg",
+            "contourTop": "54.7,35.29,83.26,34.76,83.4,34.59,83.4,-25.48,83.26,-25.64,50.92,-35.27,49.2,-35.29,-49.2,-35.29,-50.92,-35.27,-83.26,-25.64,-83.4,-25.48,-83.4,34.59,-83.26,34.76,-58.12,35.29,51.06,35.29,53.42,35.29,53.47,35.29,54.18,35.29",
+            "contourCut": "51.46,0,52,-0.02,53.03,-0.36,53.87,-1.03,54.42,-1.95,54.74,-2.56,83.22,-83.74,83.4,-84.55,83.22,-85.35,82.72,-85.97,50.66,-121.48,-50.75,-121.48,-82.72,-85.97,-83.22,-85.35,-83.4,-84.55,-83.22,-83.74,-58.16,-6.05,-56.06,-1.71,-55.43,-0.83,-54.53,-0.24,-53.48,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41819,
+                "default": "#000000",
+                "current": "#000000",
+                "name": "wheels",
+                "source": "none",
+                "hash": "29b6af72e146e59b503f7b9867b64997"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41819,
+                "default": "#000000",
+                "current": "#000000",
+                "name": "knobs",
+                "source": "bank",
+                "hash": "a2d4d2c4add18209ddb475bd2e7eb079"
+              },
+              {
+                "id": 2,
+                "default": 1610,
+                "name": "arch22_106_061",
+                "source": "bank",
+                "hash": "9e5931ba1453fb08c284d90c17b6e98a"
+              },
+              {
+                "id": 3,
+                "default": 54835,
+                "name": "metal_top",
+                "source": "bank",
+                "hash": "b58718839db19adfaaba239d1963d823"
+              },
+              {
+                "id": 4,
+                "default": 1610,
+                "name": "metal",
+                "source": "bank",
+                "hash": "e6e3df498702e5327c20425f40276c4c"
+              },
+              {
+                "id": 5,
+                "default": 53098,
+                "name": "body",
+                "source": "bank",
+                "hash": "13a1b7ab021b988d45da32b46c582ffe"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 167,
+            "height": 121,
+            "depth": 71
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 4658,
+        "type": 2,
+        "name": "Barbecue",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/46\/4658\/2c5fd508e56d3402d2c8059c0c1c7e48.png"
+          },
+          "body": {
+            "package": "\/files\/products\/46\/4658\/b9bfebabea6d2566e162e3d6350b4576.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "42.79,16.33,44.89,16.15,50.24,2.24,50.67,0,50.24,-2.24,44.89,-16.1,42.79,-16.33,-38.23,-16.33,-38.87,-16.33,-42.15,-16.33,-42.83,-16.33,-44.93,-16.1,-50.24,-2.24,-50.67,0,-50.24,2.24,-44.93,16.15,-42.83,16.33,-38.23,16.33,-37.4,16.33,-33.63,16.33,-33.61,16.33,-31.05,16.33,-30.34,16.33,30.87,16.33,30.95,16.33,39.93,16.33",
+            "contourCut": "44.89,0,50.67,-95.95,50.45,-96.33,44.71,-100,29.04,-100,23.04,-100,-15.64,-100,-21.72,-100,-44.8,-100,-50.45,-96.33,-50.67,-95.95,-44.93,0,-42.58,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54835,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9a614e2acebe919f0095f838661e62a2"
+              },
+              {
+                "id": 1,
+                "default": 54829,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "fb2a44c6b83d9a5f18cc3cba974585af"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "67": [
+            {
+              "id": "67",
+              "name": "Fireplaces",
+              "parentId": "8"
+            },
+            {
+              "id": "8",
+              "name": "Construction",
+              "parentId": null
+            }
+          ],
+          "90": [
+            {
+              "id": "90",
+              "name": "Kitchenware",
+              "parentId": "51"
+            },
+            {
+              "id": "51",
+              "name": "Misc",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "fireplaces",
+          "kitchenware"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 101,
+            "height": 100,
+            "depth": 33
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64505,
+        "type": 2,
+        "name": "Bench",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64505\/0159c1afe742cf9fdad8c92a3c7c9ec3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64505\/f31ec521c997f338c71dfa43f36b5220.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/645\/64505\/209ab34b-3ce3-40a6-9d5f-d74ab172a4ac.svg",
+            "contourTop": "94.91,32.17,95.03,31.85,95.03,27.12,95.03,24.19,95.03,23.94,95.03,23.87,95.03,-17.28,95.03,-17.63,95.03,-17.85,95.03,-17.87,95.03,-17.97,95.03,-18.25,95.03,-18.63,95.03,-19.05,95.03,-19.45,95.03,-19.74,95.03,-19.85,95.03,-19.86,95.03,-19.9,95.03,-20.08,95.03,-24.82,95.03,-25,95.03,-25.05,95.03,-25.85,95.03,-26.68,95.03,-27.36,95.03,-27.85,95.03,-28.35,95.03,-29.19,95.03,-29.95,95.03,-30.63,95.03,-31.19,95.03,-31.62,95.03,-31.89,95.03,-31.99,94.82,-32.17,-91.76,-32.17,-94.72,-32.17,-94.93,-31.99,-95.03,23.87,-95.03,28.92,-95.03,31.85,-94.91,32.17,-91.45,32.17,91.45,32.17",
+            "contourCut": "94.82,0,94.91,-0.04,95.03,-0.2,95.03,-92.17,95.03,-92.22,95.03,-93.32,95.03,-94.18,95.03,-94.66,94.91,-95,-94.91,-95,-95.03,-94.66,-95.03,-39.66,-95.03,-39.62,-95.03,-28.34,-95.03,-0.76,-95.03,-0.52,-95.03,-0.39,-94.91,-0.04,-94.72,0,-91.76,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55361,
+                "name": "arch22_032_06",
+                "source": "bank",
+                "hash": "b3458409daf7554bcf8495e7d4ca0c39"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9181": [
+            {
+              "id": "9181",
+              "name": "Benches",
+              "parentId": "9178"
+            },
+            {
+              "id": "9178",
+              "name": "Chairs, benches",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 190,
+            "height": 95,
+            "depth": 64
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64506,
+        "type": 2,
+        "name": "Bench",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64506\/487cb2e5d22ad47ea948e9de934f025f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64506\/6396b2c19faf15cfac1bc36c74de7992.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/645\/64506\/0703e9d9-cc65-405c-9f6d-b21754bc9315.svg",
+            "contourTop": "82.52,33.58,100.95,22.66,101,22.47,101,20.22,101,20,101,17.75,101,17.37,101,17.21,101,14.96,101,13.56,101,-7.82,101,-9.21,101,-30.6,100.95,-30.79,100.79,-30.82,82.52,-33.58,-78.99,-33.58,-82.47,-33.58,-100.91,-30.82,-100.99,-30.71,-101,-30.6,-101,20.22,-101,22.47,-100.91,22.69,-82.47,33.58,-78.99,33.58",
+            "contourCut": "79.03,0,82.52,-0.01,82.74,-0.24,100.95,-38.01,101,-38.21,101,-93.93,100.95,-94.13,100.79,-94.16,-100.91,-94.16,-101,-93.93,-101,-93.6,-101,-76.82,-101,-74.58,-101,-74.25,-101,-57.85,-101,-40.48,-101,-38.21,-100.99,-38.09,-82.69,-0.24,-82.47,-0.01,-79.33,0,-78.57,0,-75.1,0,75.1,0,78.57,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55361,
+                "name": "arch22_027_05",
+                "source": "bank",
+                "hash": "37d9862faaa8899ec334537e35680767"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9181": [
+            {
+              "id": "9181",
+              "name": "Benches",
+              "parentId": "9178"
+            },
+            {
+              "id": "9178",
+              "name": "Chairs, benches",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 202,
+            "height": 94,
+            "depth": 67
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64507,
+        "type": 2,
+        "name": "Bench",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/645\/64507\/bd51ec1fbd4623b6a5d31f3f7e87d2e6.png"
+          },
+          "body": {
+            "package": "\/files\/products\/645\/64507\/22a66339b42b5f3315261b297416f671.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/645\/64507\/0aa5d37b-54f2-49e0-b066-764e725b1597.svg",
+            "contourTop": "93.74,47.65,93.99,47.38,93.99,45.96,93.99,40.62,93.97,-45.84,93.74,-46.11,71.64,-47.65,-72.11,-47.65,-93.76,-46.11,-93.99,-45.84,-93.99,-45.54,-93.99,-42.53,-93.99,47.44,-93.76,47.65",
+            "contourCut": "71.64,0,93.74,-17.67,93.97,-17.89,93.99,-107.97,93.99,-110.86,93.99,-111.02,93.99,-113.91,93.97,-114.73,93.74,-115,-93.76,-115,-93.99,-114.73,-93.99,-24.76,-93.99,-24.6,-93.99,-17.89,-93.76,-17.67,-72.11,0,-68.39,0,67.92,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55361,
+                "name": "arch22_028_02",
+                "source": "bank",
+                "hash": "839a73a7712cdb68923dbf7608533ab4"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9181": [
+            {
+              "id": "9181",
+              "name": "Benches",
+              "parentId": "9178"
+            },
+            {
+              "id": "9178",
+              "name": "Chairs, benches",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 188,
+            "height": 115,
+            "depth": 95
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 42435,
+        "type": 2,
+        "name": "Lounger",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/424\/42435\/2056e5b3e769b2e28db162fd0ebee79c.png"
+          },
+          "body": {
+            "package": "\/files\/products\/424\/42435\/8c8dd5d9e561e43a86bdab438de0b3a5.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-69.4,35,87.4,31.72,87.48,31.63,87.5,-31.89,87.42,-31.98,87.4,-31.99,-69.4,-35,-86.37,-35,-86.58,-34.71,-86.95,-33.71,-87.5,-31.76,-87.5,31.77,-86.96,33.71,-86.58,34.71,-86.37,35,-86.1,35,-85.32,35,-84.07,35,-82.43,35,-80.51,35,-78.42,35,-76.29,35,-74.27,35,-72.47,35,-71.02,35,-69.99,35,-69.46,35",
+            "contourCut": "63.55,0,63.61,-0.05,87.4,-22.79,87.48,-22.87,87.5,-24.63,86.07,-30.82,85.95,-31.23,85.72,-31.65,84.76,-32.76,84.33,-32.97,-80.85,-74.95,-82.03,-75,-82.12,-74.99,-82.8,-74.53,-83.54,-73.83,-85.41,-71.25,-87.5,-68.22,-86.96,-9.42,-86.93,-8.81,-86.88,-8.21,-86.78,-7.62,-86.65,-7.03,-86.47,-6.45,-86.27,-5.88,-86.02,-5.34,-85.75,-4.8,-85.43,-4.29,-85.1,-3.79,-84.71,-3.33,-84.32,-2.88,-83.88,-2.48,-83.43,-2.09,-82.95,-1.74,-82.45,-1.42,-81.92,-1.14,-81.39,-0.88,-80.84,-0.68,-80.27,-0.49,-79.7,-0.37,-79.12,-0.26,-78.53,-0.21,-77.94,-0.18,60.44,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2924,
+                "name": "mesh_3",
+                "source": "bank",
+                "hash": "46c79600ae39b5989a792101db522ed4"
+              },
+              {
+                "id": 1,
+                "default": 54828,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "32bcefb5ae38874e99546ea158a04591"
+              },
+              {
+                "id": 2,
+                "default": 839,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "b9b5be9d4cf6458fba853e10efa88356"
+              },
+              {
+                "id": 3,
+                "default": "#1c1c1c",
+                "addMaterial": "41818",
+                "name": "mesh_2",
+                "source": "bank",
+                "hash": "75b1ce7e93606e9d9843a3c9b1ac0aef"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "lounger"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 175,
+            "height": 75,
+            "depth": 70
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3302,
+        "type": 2,
+        "name": "Rattan sofa",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3302\/c9e51d45defde048e75bb70d1559c951.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3302\/c451d2fb3edc46c9beaab2bd7aaf930e.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "33.03,40,116.01,39.98,117.73,39.94,118.47,39.76,118.76,39.65,118.97,39.46,119.29,38.97,119.44,38.21,119.5,-37.08,119.44,-38.27,119.36,-38.62,119.16,-39.22,119,-39.46,118.95,-39.52,118.76,-39.64,118.47,-39.75,117.73,-39.94,117.24,-39.97,104.8,-39.99,33.03,-40,-106.32,-40,-116.67,-39.99,-117.72,-39.91,-118.14,-39.87,-118.47,-39.75,-118.76,-39.64,-118.98,-39.45,-119.29,-38.94,-119.38,-38.62,-119.42,-38.27,-119.5,-37.08,-119.48,36.41,-119.44,38.21,-119.36,38.62,-119.27,38.96,-119.16,39.26,-118.97,39.46,-118.76,39.65,-118.47,39.76,-117.73,39.94,-117.24,39.98,-32.86,40",
+            "contourCut": "-19.74,0,118.76,-0.01,118.97,-0.06,119,-0.08,119.04,-0.32,119.44,-5.06,119.5,-60.11,119.44,-61.2,119.38,-61.64,119.27,-62.01,119.16,-62.34,118.97,-62.58,118.76,-62.8,118.47,-62.93,118.13,-63.04,102.66,-67.61,101.57,-67.87,94.03,-67.95,-25.04,-68,-94.03,-67.98,-101.57,-67.87,-102.66,-67.61,-118.48,-62.96,-118.76,-62.8,-118.97,-62.58,-119.16,-62.34,-119.27,-62.01,-119.38,-61.64,-119.48,-60.69,-119.5,-5.98,-119.44,-5.06,-118.96,-0.24,-118.94,-0.17,-118.86,-0.04,-104.96,-0.03,-35.92,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2595,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "9dc757f0ae237eea82255b1e39e74a5b"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41826,
+                "default": "#b9c674",
+                "current": "#b9c674",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "95f117ac882836cb6b8c02fbb3f78825"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9183": [
+            {
+              "id": "9183",
+              "name": "Straight",
+              "parentId": "9182"
+            },
+            {
+              "id": "9182",
+              "name": "Sofas",
+              "parentId": "83"
+            },
+            {
+              "id": "83",
+              "name": "Upholstered furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "sofas"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 239,
+            "height": 68,
+            "depth": 80
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3298,
+        "type": 2,
+        "name": "Armchair rattan",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3298\/0e171db32950148a24f4db04e2e3b13a.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3298\/2b376cfd0390299dc07eb6d92ebf7276.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0.01,34.5,6.24,34.25,13.94,33.49,24.33,31.85,29.26,30.71,29.33,30.64,29.39,30.5,29.42,30.14,29.43,29.98,29.44,29.73,29.5,26.86,29.47,-32.54,29.46,-33.77,29.41,-34.22,29.37,-34.29,29.33,-34.36,29.2,-34.44,29.1,-34.45,28.49,-34.47,-24.84,-34.5,-29.19,-34.44,-29.33,-34.36,-29.37,-34.29,-29.4,-34.22,-29.46,-32.54,-29.5,26.71,-29.43,29.73,-29.42,29.99,-29.41,30.15,-29.38,30.51,-29.32,30.64,-29.25,30.71,-24.32,31.86,-19.58,32.68,-6.23,34.26",
+            "contourCut": "29,0,29.4,-0.09,29.48,-0.16,29.5,-0.22,29.47,-54.89,29.46,-68.4,29.45,-73.37,29.44,-76.12,29.43,-77,29.42,-77.73,29.39,-78.6,29.36,-78.81,29.33,-78.92,29.29,-78.97,29.24,-78.98,29.12,-78.99,28.64,-79,-27,-79,-29.11,-78.99,-29.23,-78.98,-29.28,-78.97,-29.32,-78.92,-29.35,-78.81,-29.37,-78.6,-29.39,-78.25,-29.41,-77.73,-29.42,-77,-29.43,-76.04,-29.44,-73.37,-29.45,-66.74,-29.5,-0.21,-29.46,-0.16,-29.24,-0.06,-28.58,-0.02,-25.21,-0.01",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2595,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "066c3d6f5fb7fb3c0fa579c41939647a"
+              },
+              {
+                "id": 1,
+                "default": "#b9c674",
+                "addMaterial": "41826",
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "819d841b7ff4659d66b1f5261917c30f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "26": [
+            {
+              "id": "26",
+              "name": "Armchairs",
+              "parentId": "83"
+            },
+            {
+              "id": "83",
+              "name": "Upholstered furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "chairs"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 59,
+            "height": 79,
+            "depth": 69
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3299,
+        "type": 2,
+        "name": "Table rattan",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3299\/6f3d11b96ad003e8d042b5c7ce7d700b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3299\/a4b96ea82d856b5caf59bfd912e443b8.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "52.07,30,52.71,29.99,53.73,29.94,54.14,29.89,54.48,29.8,54.76,29.68,54.98,29.52,55.16,29.31,55.29,29.06,55.38,28.75,55.44,28.38,55.48,27.95,55.5,26.9,55.5,-27.47,55.44,-28.39,55.38,-28.75,55.29,-29.06,55.15,-29.32,54.98,-29.52,54.76,-29.68,54.48,-29.8,54.14,-29.89,53.25,-29.98,52.07,-30,-41.28,-30,-42.45,-30,-52.07,-29.99,-53.25,-29.98,-54.13,-29.88,-54.47,-29.8,-54.75,-29.68,-54.98,-29.52,-55.15,-29.31,-55.28,-29.06,-55.38,-28.75,-55.44,-28.38,-55.48,-27.95,-55.49,-27.46,-55.5,-14.07,-55.5,-9.81,-55.5,-8.5,-55.49,27.47,-55.47,27.96,-55.44,28.39,-55.37,28.75,-55.28,29.06,-55.15,29.32,-54.97,29.52,-54.75,29.68,-54.47,29.8,-54.13,29.89,-53.72,29.95,-53.25,29.98,-52.7,30,-52.06,30,-39.22,30",
+            "contourCut": "54.42,0,54.64,-0.01,54.82,-0.04,54.88,-0.09,54.91,-0.17,55.48,-3.81,55.5,-4.04,55.5,-41.86,55.5,-42.04,55.44,-42.36,55.38,-42.49,55.29,-42.61,55.16,-42.72,54.97,-42.8,54.76,-42.87,54.48,-42.92,53.73,-42.98,52.7,-43,43.58,-43,41,-43,-40.99,-43,-52.07,-43,-52.7,-43,-53.73,-42.98,-54.47,-42.92,-54.75,-42.87,-54.96,-42.8,-55.15,-42.72,-55.28,-42.61,-55.38,-42.49,-55.44,-42.36,-55.48,-42.21,-55.49,-42.04,-55.5,-32.36,-55.5,-31.61,-55.5,-18.81,-55.49,-4.04,-55.48,-3.81,-54.95,-0.17,-54.94,-0.12,-54.92,-0.09,-54.87,-0.04,-54.68,-0.01,-54.47,0,-40.46,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2595,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "353c254791d06cc36729b82f66332918"
+              },
+              {
+                "id": 1,
+                "default": 183,
+                "name": "mesh_1",
+                "source": "bank",
+                "hash": "7ea1d393c283dc8957d4183ab893bfb3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9151": [
+            {
+              "id": "9151",
+              "name": "Coffee tables",
+              "parentId": "9149"
+            },
+            {
+              "id": "9149",
+              "name": "Tables",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "tables"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 111,
+            "height": 43,
+            "depth": 60
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3301,
+        "type": 2,
+        "name": "Ottoman rattan",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3301\/b01fc00da1d3cf37cae99ebf89f53f16.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3301\/0d7d21c07e6a53bb10f78079c0c2d3fc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-18.346666666666664,-20.066666666666666,19.20666666666667,-19.493333333333336,19.779999999999998,19.493333333333336,-20.066666666666666,19.493333333333336,-19.493333333333336,-19.493333333333336",
+            "contourCut": "-19.206666666666667,-42.71333333333333,19.493333333333336,-42.14,19.20666666666667,-4.013333333333335,18.059999999999995,-3.1533333333333347,19.20666666666667,-3.1533333333333347,18.919999999999998,-0.2866666666666685,4.300000000000004,-0.2866666666666685,4.300000000000004,-3.439999999999998,-4.586666666666668,-3.439999999999998,-4.586666666666668,-0.2866666666666685,-19.493333333333336,-0.2866666666666685,-19.493333333333336,-3.1533333333333347,-18.060000000000002,-3.7266666666666666,-19.779999999999998,-4.299999999999999,-19.493333333333336,-42.42666666666667",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2595,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "fba618bbf3c827d50973c34c8004499f"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "84": [
+            {
+              "id": "84",
+              "name": "Ottomans",
+              "parentId": "83"
+            },
+            {
+              "id": "83",
+              "name": "Upholstered furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "ottomans"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 40,
+            "height": 43,
+            "depth": 40
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64611,
+        "type": 2,
+        "name": "Street light",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64611\/89ad6fddca1cb93f094ba8caf881cdbc.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64611\/9108b2b7f7c12c8f2df0ec2e479dec3f.glb",
+            "metaZip": "\/files\/products\/646\/64611\/e3d81deea76a05cd1bd9cbdd7d714f9b.zip",
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-6.31,16.24,9.83,16.21,14.93,11.14,16.11,6.49,17.26,0.05,16.07,-9.88,11.07,-15.05,6.49,-16.24,-9.64,-16.21,-14.75,-11.14,-15.92,-6.49,-17.26,0.05,-15.89,9.88,-10.88,15.05",
+            "contourCut": "17.26,0,16.11,-232.25,7.77,-242.3,0.63,-249.26,0.09,-249.66,-0.45,-249.26,-7.58,-242.3,-15.92,-232.25,-17.25,-1.8,-17.26,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 1554,
+                "name": "Line002001",
+                "source": "bank",
+                "hash": "866eebe95f4f7ab57467a3220a246190"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "r2d_noShadow",
+                "source": "bank",
+                "hash": "6d1dea501d700cab11b762b75d847900"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9188": [
+            {
+              "id": "9188",
+              "name": "Floor lamps",
+              "parentId": "9185"
+            },
+            {
+              "id": "9185",
+              "name": "Lighting",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "lighting",
+          "r2d_light"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 35,
+            "height": 250,
+            "depth": 32
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": {
+          "dirty": "0.06563900 1754578402"
+        },
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64612,
+        "type": 2,
+        "name": "trash can",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64612\/da20c0ea7b8cd6b851c1046924511370.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64612\/96264db4369cb9ee69964cfca0659f02.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "15.62,30.62,16.72,30.07,22.01,24.94,22.87,22.95,23.68,21.02,23.78,-17.69,23.3,-20.35,22.06,-22.93,20.17,-25.4,18,-27.36,13.99,-29.75,7.74,-30.62,-7.88,-30.62,-14.1,-29.75,-18.14,-27.36,-20.17,-25.4,-22.06,-22.93,-23.3,-20.35,-23.78,-17.69,-23.68,21.02,-23.03,24.94,-17.27,30.07,-16.45,30.62,-15.98,30.62",
+            "contourCut": "22.01,0,22.23,-1.68,23.76,-81.62,23.78,-84.79,22.04,-87.19,18.25,-91.92,-7.26,-91.92,-19.07,-91.92,-22.86,-87.19,-23.78,-84.79,-23.26,-1.68,-23.03,0,-20.59,0",
+            "materials": [
+              {
+                "id": 0,
+                "addMaterial": 41818,
+                "default": "#143008",
+                "current": "#143008",
+                "name": "trash_container002",
+                "source": "bank",
+                "hash": "cef40490cf944fa79bc27e8db2065d20"
+              },
+              {
+                "id": 1,
+                "addMaterial": 41818,
+                "default": "#1c1c1c",
+                "current": "#1c1c1c",
+                "name": "wheels001",
+                "source": "bank",
+                "hash": "05e06e242a94bf84bb5b616ffe0bdccb"
+              },
+              {
+                "id": 2,
+                "default": 0,
+                "name": "mark",
+                "source": "none",
+                "hash": "5cabdef627f344c5b7e765fac2f66a2a"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "52": [
+            {
+              "id": "52",
+              "name": "Housekeeping",
+              "parentId": "51"
+            },
+            {
+              "id": "51",
+              "name": "Misc",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 48,
+            "height": 92,
+            "depth": 61
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20498,
+        "type": 2,
+        "name": "Bench",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/204\/20498\/1ac2c6e7f7454c9d3269ccc8181a8b22.png"
+          },
+          "body": {
+            "package": "\/files\/products\/204\/20498\/63cbd6c917c098ad534a2139d2f97fed.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/204\/20498\/8b44ce43-d8e3-43b6-8a26-e43f0a8b2113.svg",
+            "contourTop": "-118.3925225830078,-16.686194458007815,117.59794189453125,-16.686194458007815,117.59794189453125,15.891613769531247,-118.3925225830078,15.891613769531247",
+            "contourCut": "-118.3925225830078,-48.469421997070306,117.59794189453125,-48.469421997070306,117.59794189453125,-27.01574340820313,-116.80336120605469,-27.01574340820313,-117.59794189453125,-0.7945806884765676",
+            "materials": [
+              {
+                "id": 0,
+                "default": 55338,
+                "name": "81_metal",
+                "source": "bank",
+                "hash": "318de98ae35d1aa5d1b6ca4612b2f0b8"
+              },
+              {
+                "id": 1,
+                "default": 54836,
+                "name": "81_wood",
+                "source": "bank",
+                "hash": "6e9ef40013b505da17444e950792690e"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9993": [
+            {
+              "id": "9993",
+              "name": "Locker room",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9181": [
+            {
+              "id": "9181",
+              "name": "Benches",
+              "parentId": "9178"
+            },
+            {
+              "id": "9178",
+              "name": "Chairs, benches",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 238,
+            "height": 48,
+            "depth": 33
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 20386,
+        "type": 2,
+        "name": "Bench",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/203\/20386\/12b04d9f211681533d97751e2ab1e64b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/203\/20386\/cedad751bfafb332a886a5f96b6d1ee9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": "\/files\/products\/203\/20386\/b02e0cf0-5379-41eb-a5b4-2016080c9707.svg",
+            "contourTop": "-57.39991364796957,-17.66151189168294,59.406903635660804,-17.26011389414469,59.406903635660804,17.26011389414469,-59.80830163319905,17.26011389414469,-59.80830163319905,-17.26011389414469",
+            "contourCut": "-59.80830163319905,-44.15377972920736,59.406903635660804,-44.15377972920736,59.406903635660804,-0.4013979975382513,57.39991364796957,-0.4013979975382513,57.39991364796957,-40.54119775136312,-58.20270964304606,-40.54119775136312,-58.20270964304606,-0.4013979975382513,-59.80830163319905,-0.4013979975382513",
+            "materials": [
+              {
+                "id": 0,
+                "default": 54838,
+                "name": "76_wood_1",
+                "source": "bank",
+                "hash": "4b58096ea81536ddb024ba2a0db6f635"
+              },
+              {
+                "id": 1,
+                "default": 55338,
+                "name": "76_wood_2",
+                "source": "bank",
+                "hash": "c5ad1b152177a2d89c745cbd1d3917ab"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9993": [
+            {
+              "id": "9993",
+              "name": "Locker room",
+              "parentId": "9986"
+            },
+            {
+              "id": "9986",
+              "name": "Gym",
+              "parentId": "9925"
+            },
+            {
+              "id": "9925",
+              "name": "Commercial Spaces",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9181": [
+            {
+              "id": "9181",
+              "name": "Benches",
+              "parentId": "9178"
+            },
+            {
+              "id": "9178",
+              "name": "Chairs, benches",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 120,
+            "height": 44,
+            "depth": 35
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3297,
+        "type": 2,
+        "name": "Rotang stool",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3297\/d8c06e74fc43c82a5735e5b530a7f708.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3297\/dad057fba38cad1b3d7d25574790f683.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "-11.59,16.45,12.76,16.41,13.18,16.39,13.68,16.35,16.3,16.05,16.64,16,16.91,15.94,17.23,15.76,17.64,15.2,18.57,13.36,19.47,11.05,20.1,8.51,20.44,5.78,20.4,2.9,19.96,-0.06,19.11,-3.04,17.77,-5.97,15.88,-8.73,13.56,-11.23,10.88,-13.28,7.85,-14.88,4.54,-15.95,1.08,-16.46,-2.44,-16.34,-5.87,-15.61,-9.11,-14.29,-10.64,-13.44,-12.08,-12.46,-13.43,-11.35,-15.76,-8.87,-16.8,-7.36,-18.55,-4.38,-19.66,-1.33,-20.29,1.65,-20.48,4.56,-20.3,7.34,-19.79,9.96,-19,12.38,-18.07,14.4,-17.7,15.09,-17.26,15.75,-17.11,15.87,-16.78,15.97,-16.5,16.02,-12.84,16.36,-11.95,16.44",
+            "contourCut": "13.97,0,14.12,-0.02,14.71,-0.19,15.08,-0.73,20.44,-23.83,20.43,-24.16,20.31,-24.45,20.13,-24.7,19.89,-24.9,19.81,-24.93,19.6,-24.97,19.5,-24.98,19.19,-24.99,18.45,-25,7.37,-25,6.29,-25,5.08,-25,-6.43,-25,-7.09,-25,-17.39,-25,-17.8,-25,-17.9,-25,-18.77,-24.99,-19.46,-24.98,-19.79,-24.95,-20.08,-24.79,-20.29,-24.53,-20.45,-24.25,-20.48,-23.91,-15.11,-1.13,-14.88,-0.39,-14.33,-0.04,-13.67,-0.01,-12.89,0,-7.72,0,-6.06,0,-6.02,0,-2.77,0,-2.53,0,2.67,0,2.98,0,4.52,0,5.09,0,5.9,0,6.55,0,7.25,0,8.79,0,8.95,0,9.12,0,9.75,0,10.29,0,10.86,0,11.47,0,11.84,0,12.31,0,12.51,0,13.24,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2594,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "799d62fe3c1615ddc4b0f0e714d73d48"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9180": [
+            {
+              "id": "9180",
+              "name": "Stools",
+              "parentId": "9178"
+            },
+            {
+              "id": "9178",
+              "name": "Chairs, benches",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 41,
+            "height": 25,
+            "depth": 33
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3296,
+        "type": 2,
+        "name": "Rotang stool",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/32\/3296\/394ce0e01c082751cfb4887ceb629dee.png"
+          },
+          "body": {
+            "package": "\/files\/products\/32\/3296\/6f3ade9af0f1f42bf36c0652f1af53d4.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "0,21,2.06,20.9,4.1,20.6,6.1,20.1,8.04,19.4,9.9,18.52,11.67,17.46,13.32,16.23,14.85,14.85,16.23,13.32,17.46,11.67,18.52,9.9,19.4,8.04,20.1,6.1,20.6,4.1,20.9,2.06,21,0,20.9,-2.06,20.6,-4.1,20.1,-6.1,19.4,-8.04,18.52,-9.9,17.46,-11.67,16.23,-13.32,14.85,-14.85,13.32,-16.23,11.67,-17.46,9.9,-18.52,8.04,-19.4,6.1,-20.1,4.1,-20.6,2.06,-20.9,0,-21,-2.06,-20.9,-4.1,-20.6,-6.1,-20.1,-8.04,-19.4,-9.9,-18.52,-11.67,-17.46,-13.32,-16.23,-14.85,-14.85,-16.23,-13.32,-17.46,-11.67,-18.52,-9.9,-19.4,-8.04,-20.1,-6.1,-20.6,-4.1,-20.9,-2.06,-21,0,-20.9,2.06,-20.6,4.1,-20.1,6.1,-19.4,8.04,-18.52,9.9,-17.46,11.67,-16.23,13.32,-14.85,14.85,-13.32,16.23,-11.67,17.46,-9.9,18.52,-8.04,19.4,-6.1,20.1,-4.1,20.6,-2.06,20.9",
+            "contourCut": "14.05,0,14.51,-0.06,15.04,-0.23,15.31,-0.5,15.47,-0.85,21,-23.77,21,-24.18,20.88,-24.53,20.58,-24.8,20.2,-24.97,19.76,-25.03,5.74,-25.03,3.86,-25.03,1.94,-25.03,0,-25.03,-1.94,-25.03,-3.86,-25.03,-5.74,-25.03,-7.56,-25.03,-9.32,-25.03,-10.98,-25.03,-12.54,-25.03,-13.97,-25.03,-15.28,-25.03,-16.43,-25.03,-17.43,-25.03,-18.26,-25.03,-18.91,-25.03,-19.38,-25.03,-19.67,-25.03,-19.76,-25.03,-20.2,-24.97,-20.58,-24.8,-20.88,-24.53,-21,-24.18,-21,-23.77,-15.47,-0.85,-15.31,-0.5,-15.04,-0.23,-14.51,-0.06,-14.05,0,-1.38,0,0,0,1.38,0,2.74,0,4.08,0,5.38,0,6.62,0,7.8,0,8.91,0,9.93,0,10.86,0,11.68,0,12.39,0,12.98,0,13.44,0,13.78,0,13.98,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2594,
+                "name": "mesh_0",
+                "source": "bank",
+                "hash": "267c6cbf306fdba6093a38f29e404df3"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9180": [
+            {
+              "id": "9180",
+              "name": "Stools",
+              "parentId": "9178"
+            },
+            {
+              "id": "9178",
+              "name": "Chairs, benches",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 42,
+            "height": 25,
+            "depth": 42
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "0.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": "",
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64613,
+        "type": 2,
+        "name": "Street lamp",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/646\/64613\/fa30c9b08c5028dcf7c55c61321100b9.png"
+          },
+          "body": {
+            "package": "\/files\/products\/646\/64613\/b0ca57f3fc0d8680b0c66fb2c5524164.glb",
+            "metaZip": "\/files\/products\/646\/64613\/3104aaf7baf51e6c426478a6112ed243.zip",
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "6.51,13.49,6.57,13.47,13.04,-1.92,13.09,-2.11,13.04,-2.3,6.68,-13.3,6.55,-13.44,6.35,-13.49,-6.35,-13.49,-6.55,-13.44,-6.68,-13.3,-13.04,-2.3,-13.09,-2.11,-13.04,-1.92,-6.57,13.47,-6.51,13.49,5.5,13.49,6.02,13.49",
+            "contourCut": "8.31,0,8.4,-0.03,13.09,-20.28,13.09,-20.68,4.32,-32.86,0.62,-36.99,0.26,-37.1,-0.15,-37.1,-0.26,-37.1,-0.62,-36.99,-4.32,-32.86,-13.09,-20.68,-13.09,-20.28,-8.4,-0.03,-8.31,0,-3.96,0,3.96,0,8.25,0",
+            "materials": [
+              {
+                "id": 0,
+                "default": 2899,
+                "name": "Metall",
+                "source": "bank",
+                "hash": "4757826b8b247d76fd143c7878bfd067"
+              },
+              {
+                "id": 1,
+                "default": 1618,
+                "name": "r2d_lamp",
+                "source": "bank",
+                "hash": "46f8408c650bd1a447ee2816d147050e"
+              },
+              {
+                "id": 2,
+                "default": 1618,
+                "name": " r2d_noShadow",
+                "source": "bank",
+                "hash": "1d4715568e7f25001e1f7ad8680f7de9"
+              }
+            ]
+          }
+        },
+        "categoryProduct": {
+          "9177": [
+            {
+              "id": "9177",
+              "name": "Outdoor furniture",
+              "parentId": "24"
+            },
+            {
+              "id": "24",
+              "name": "Furniture",
+              "parentId": null
+            }
+          ],
+          "9898": [
+            {
+              "id": "9898",
+              "name": "Wall lights",
+              "parentId": "9185"
+            },
+            {
+              "id": "9185",
+              "name": "Lighting",
+              "parentId": "33"
+            },
+            {
+              "id": "33",
+              "name": "Electric appliances",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": [],
+        "tags": [
+          "lighting",
+          "r2d_light"
+        ],
+        "property": {
+          "appointment": "scene",
+          "sizes": {
+            "width": 26,
+            "height": 37,
+            "depth": 27
+          },
+          "position": {
+            "x": "0.0000",
+            "y": "150.00",
+            "z": "0.0000"
+          }
+        },
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": [],
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

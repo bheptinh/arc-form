@@ -226,9 +226,13 @@ const AlignerWidthSetPopup = props => {
         return () => document.removeEventListener("keydown", onKeyDown);
     }, [textErrorStatus]);
 
-    useEffect(() => setInputType(metrics.active == 'ft' ? 'text' : 'number'), [metrics]);
+    useEffect(() => {
+        setInputType(metrics.active == 'ft' ? 'text' : 'number')
+    }, [metrics]);
 
-    useEffect(() => setInputDefaultValue(planner.units.valueToString(WC.WallsEditor._instance.state.getAlignerValue())), [inputType]);
+    useEffect(() => {
+        setInputDefaultValue(planner.units.valueToString(WC.WallsEditor._instance.state.getAlignerValue()))
+    }, [inputType]);
 
     return (
         <div className={animPopupClass ? classes.planner_popup_wrap +' '+ classes.planner_popup_wrap_show : classes.planner_popup_wrap}>

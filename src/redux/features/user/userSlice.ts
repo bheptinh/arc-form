@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { user } from '../../../init'
+import { user } from '../../../initR2D'
 
 export const userLogout = createAsyncThunk(
     'user/logout',

@@ -269,7 +269,7 @@ const CameraViews = () => {
         cameraViews.length > 0 && cameraViews.forEach && cameraViews.forEach(item => {
             viewsArray.push(
                 <div className={ classes.plannerRenderWrap_views_wr} key={item.id}>
-                    <img data-src={R2D.URL.DOMAIN + item.previewUrl} className={classes.plannerRenderWrap_views_img + ' lazyload'} />
+                    <img data-src={R2D.URL.DOMAIN + item.previewUrl} src={R2D.URL.DOMAIN + item.previewUrl} className={classes.plannerRenderWrap_views_img + ' lazyload'} />
                     <div className={classes.plannerRenderWrap_views_info}>
                         <div className={ classes.plannerRenderWrap_views_buttons } >
                             <div className={classes.plannerRenderWrap_views_btn} onClick={e => onApplyCamera(item.id)}>
@@ -305,10 +305,10 @@ const CameraViews = () => {
         setCameraViewsArray(viewsArray);
     }, [cameraViews]);
 
-    useEffect(async () => {
+    useEffect(() => {
         let keyTimeout = setTimeout(() => setStyleAnimation({ transform: "translateX(0%)"}), 50);
         planner.scene.addEventListener(planner.scene.UPDATE_CAMERA_VIEWS, updateCameraViews);
-        R2D.controller.getProjectId() && R2D.controller.getProjectUserKey() == user.getKey() && await updateCameraViews();
+        R2D.controller.getProjectId() && R2D.controller.getProjectUserKey() == user.getKey() && updateCameraViews();
         return () => {
             planner.scene.removeEventListener(planner.scene.UPDATE_CAMERA_VIEWS, updateCameraViews);
             clearTimeout(keyTimeout);

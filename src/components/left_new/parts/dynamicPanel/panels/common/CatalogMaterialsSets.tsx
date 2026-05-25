@@ -616,7 +616,9 @@ const CatalogMaterialsSets = props => {
     }
 
 
-    useEffect(() => setStyleAnimation({ transform: "translateX(0%)" }), []);
+    useEffect(() => {
+        setStyleAnimation({ transform: "translateX(0%)" })
+    }, []);
 
     useEffect(() => {
         if(lastHistoryElemData) {

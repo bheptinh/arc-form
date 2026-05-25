@@ -797,7 +797,7 @@ const UploadCustomModelAiPopup = props => {
                                             </div>
 
                                             <div className={classes.upload_popup_checkbox_wr} ref={checkBoxRef}>
-                                                <Checkbox name={"agreeUmovu"} label={<>{translation["RENDER_BUY_TERMS_AGREE"]} <a href="https://roomtodo.com/en/terms_of_service/" target="_blank">{translation["RENDER_BUY_TERMS_OF_USE"]}</a></>} onChange={agreeUmovuClick} checked={agreeUmovu}/>
+                                                <Checkbox name={"agreeUmovu"} label={<>{translation["RENDER_BUY_TERMS_AGREE"]} <a href="#" target="_blank">{translation["RENDER_BUY_TERMS_OF_USE"]}</a></>} onChange={agreeUmovuClick} checked={agreeUmovu}/>
                                             </div>
 
                                             <div className={classes.planner_popup_generate_btn_wr}>

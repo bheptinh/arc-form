@@ -100,7 +100,9 @@ const HelperPlinth = props => {
         dispatch(removeQuickPanelAll());
     };
 
-    useEffect(() => setTypeToHide(R2D.scene.currentConstructorElementData ? R2D.scene.currentConstructorElementData.type == 'topFrame' || R2D.scene.currentConstructorElementData.type == 'bottomFrame' ? 'frames' : R2D.scene.currentConstructorElementData.type + 's' : ''), []);
+    useEffect(() => {
+        setTypeToHide(R2D.scene.currentConstructorElementData ? R2D.scene.currentConstructorElementData.type == 'topFrame' || R2D.scene.currentConstructorElementData.type == 'bottomFrame' ? 'frames' : R2D.scene.currentConstructorElementData.type + 's' : '')
+    }, []);
 
     return (
         <motion.div

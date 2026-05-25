@@ -47,7 +47,9 @@ const Ruler = props => {
 
     const onRullerActive = e => setPlannerConstrEvent(e.data.status);
 
-    useEffect(() => setActiveRuller(plannerConstrEvent), [plannerConstrEvent]);
+    useEffect(() => {
+        setActiveRuller(plannerConstrEvent)
+    }, [plannerConstrEvent]);
 
     useEffect(() => {
         planner.apiConstr.addEventListener(planner.apiConstr.RULLER_ACTIVE, onRullerActive);

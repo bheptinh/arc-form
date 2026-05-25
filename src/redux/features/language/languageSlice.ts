@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { planner, user } from '../../../init'
+import { planner, user } from '../../../initR2D'
 import { controlPanelHistoryClear, controlPanelHistoryDataUpdate, controlPanelUpdateBreadCrumbs } from '../control/controlPanelSlice';
 
 export const languagesInit = createAsyncThunk(

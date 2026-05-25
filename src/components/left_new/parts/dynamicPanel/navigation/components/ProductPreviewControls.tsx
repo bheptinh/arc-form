@@ -205,7 +205,7 @@ const ProductPreviewControls = ({
 
         return () => clearInterval(interval);
 
-    }, []);
+    }, []);    
 
     return ReactDOM.createPortal(
         <div className={classes.fil_wrap + ' ' + (isFilterOpen ? classes.fil_wrap_open : '')} style={{ left: `${leftOffset}px` }} >

@@ -1,0 +1,774 @@
+{
+  "status": "ok",
+  "data": {
+    "total": "11",
+    "items": [
+      {
+        "id": 1238,
+        "type": 1,
+        "name": "Stone tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/12\/1238\/5cfe9d7e522b4e16070dd041c8b27d14.png"
+          },
+          "body": {
+            "package": "\/files\/products\/12\/1238\/f05f7c07ef385395dfcba38940a99f8f.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3387,
+        "type": 1,
+        "name": "Stone mosaic",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3387\/e9c95c8b900d7c66b14d9d9b7428f474.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3387\/1d131a29b8c55b5d8a16db3779628e69.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 3386,
+        "type": 1,
+        "name": "Stone mosaic",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/33\/3386\/451a3def9ecfd8770b3993266d6eb0f5.png"
+          },
+          "body": {
+            "package": "\/files\/products\/33\/3386\/91c8c93a933cc32bf4c1edad7022a2a9.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "stone",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 200,
+            "height": 200
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": "free",
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64983,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/649\/64983\/5eb98bb822747778fae2ec3ff1108861.png"
+          },
+          "body": {
+            "package": "\/files\/products\/649\/64983\/8e7bdbebe706b1ecd331931a472d6d34.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64984,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/649\/64984\/8bfc8c4ec112ee7ea904b63c4149b5a2.png"
+          },
+          "body": {
+            "package": "\/files\/products\/649\/64984\/a0ceeaaa968af34be15f5672f8fc310a.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64985,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/649\/64985\/cbc6b09b75ccc3c73a24d06cd73a726b.png"
+          },
+          "body": {
+            "package": "\/files\/products\/649\/64985\/a826077c2fe16c90894382e2db82b507.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64986,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/649\/64986\/4874a63e858be05b3f13bd431664cb8f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/649\/64986\/8abd37981c19329ced4d2c7f294855d3.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 64987,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/649\/64987\/1eb4b1ea9f12d87ffbabbac8947a6ed3.png"
+          },
+          "body": {
+            "package": "\/files\/products\/649\/64987\/f27134c80f8ee03da7ae2d423a8b3dbc.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [],
+        "property": {
+          "sizes": {
+            "width": 61,
+            "height": 61
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1033,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1033\/3e87ae8c741b1534981a016aa54ff3bb.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1033\/17abf62a9f26e979f0f9831d71f2a758.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 100,
+            "height": 100
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 1028,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/10\/1028\/09bc41232fad1422a25f045e86d8148f.png"
+          },
+          "body": {
+            "package": "\/files\/products\/10\/1028\/4aa15dce1067065d2b797a364dd4c942.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": {
+          "20": [
+            {
+              "id": "20",
+              "name": "Ceramic",
+              "parentId": "75"
+            },
+            {
+              "id": "75",
+              "name": "Tiles",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Coverings",
+              "parentId": null
+            }
+          ]
+        },
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      },
+      {
+        "id": 2429,
+        "type": 1,
+        "name": "Ceramic tiles",
+        "description": null,
+        "source": {
+          "images": {
+            "preview": "\/files\/products\/24\/2429\/ff279e2d7559fb72d2ace742dea83b92.png"
+          },
+          "body": {
+            "package": "\/files\/products\/24\/2429\/dd41a4045d67f309945bde026c775bed.glb",
+            "metaZip": null,
+            "svgFile": null,
+            "svgOutline": null,
+            "contourTop": "",
+            "contourCut": ""
+          }
+        },
+        "categoryProduct": [],
+        "categoryMaterial": {
+          "934": [
+            {
+              "id": "934",
+              "name": "Ornamental",
+              "parentId": "16"
+            },
+            {
+              "id": "16",
+              "name": "Ceramic Tiles",
+              "parentId": null
+            }
+          ]
+        },
+        "tags": [
+          "ceramic",
+          "tiles"
+        ],
+        "property": {
+          "sizes": {
+            "width": 50,
+            "height": 50
+          }
+        },
+        "isColorPicker": false,
+        "details": {
+          "description": null,
+          "availableForPurchase": false,
+          "productPage": {
+            "url": null,
+            "available": false
+          }
+        },
+        "plan": [
+          "basic",
+          "pro"
+        ],
+        "applications": [],
+        "configurationAppId": 0,
+        "configAppFile": "",
+        "isOriginalModel": 0,
+        "originalEntityId": 0,
+        "metadata": null,
+        "attributes": [],
+        "langId": "1",
+        "userKey": "d7322ed717dedf1eb4e6e52a37ea7bcd",
+        "fixedSize": false,
+        "materialOwner": false,
+        "isOwner": false,
+        "isFavorite": false
+      }
+    ],
+    "offset": 0,
+    "limit": 9223372036854775807
+  }
+}

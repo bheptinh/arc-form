@@ -16,6 +16,7 @@ import ColorPicker from '../common/ColorPicker';
 import CameraViews from '../common/CameraViews';
 
 import Main from './Main';
+import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 
 
 const useStyle = createUseStyles({
@@ -209,7 +210,7 @@ const RenderMake = () => {
         dispatch(updateControlPanelStatus(true));
     }
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         if(activeViewMode == "view2d" || activeViewMode == "constr") {
             planner["view3d"].activate();
             planner.mih()._currentViewer.setRenderMakeType(renderMakeState.type);
@@ -298,7 +299,7 @@ const RenderMake = () => {
         return () => clearTimeout(keyTimeoutClearActiveComponents);
     }, [activePanelComponents]);
 
-    useEffect(async () => {
+    useEffectAsync(async () => {
         if(renderMakeState.fromApply) return;
         let panoObj, panoData;
         let curViewerType = R2D.Viewers.getCurrentViewerType();
@@ -345,7 +346,7 @@ const RenderMake = () => {
 
     }, [renderMakeState]);
 
-    useEffect(async () => {
+    useEffect(() => {
         planner.scene.dispatchEvent(new Event(planner.scene.TIPS_RENDER_MAKE, {}));
     }, []);
 

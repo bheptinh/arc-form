@@ -143,7 +143,9 @@ const Lock = props => {
         mouseLeave(e);
     }
 
-    useEffect(() => setParentElem(imgLock.current.closest('.' + props.parentClass)), []);
+    useEffect(() => {
+        setParentElem(imgLock.current.closest('.' + props.parentClass))
+    }, []);
 
     useEffect(() => {
         if(!parentElem) return;

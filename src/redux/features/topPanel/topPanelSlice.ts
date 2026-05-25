@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { planner } from '../../../init';
+import { planner } from '../../../initR2D';
 
 export const changeUndoRedo = createAsyncThunk(
   'top/changeUndoRedo',
