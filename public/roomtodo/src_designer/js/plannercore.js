@@ -10258,6 +10258,10 @@ R2D.makeURL = function(domain, path = '') {
         }
     }
 
+		if (domain.endsWith('/') && path.startsWith('/')) {
+			return `${domain}${path.substring(1)}`;
+		}
+
     return domain + path;
 };
 R2D.detectWebGL = function() {
@@ -15786,6 +15790,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
                     }
                     
                 } else {
+										console.error("Event type not successful");
                     resolve({error: event, alertText: 'TEXT_ERROR_LOAD_DATA'});
                     //scope.dispatchEvent(new Event(Event.ERROR, scope));
                 }

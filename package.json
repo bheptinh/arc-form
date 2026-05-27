@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 5115",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -34,7 +34,9 @@
   "devDependencies": {
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@types/redux-logger": "^3.0.13",
     "@vitejs/plugin-react": "^6.0.2",
+    "redux-logger": "^3.0.6",
     "typescript": "^6.0.3",
     "vite": "^8.0.13"
   }

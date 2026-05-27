@@ -25,6 +25,7 @@ const MIME: Record<string, string> = {
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
+  '.glb': 'model/gltf-binary',
 };
 
 function localFirstAssets(): Plugin {
@@ -74,35 +75,38 @@ function localFirstAssets(): Plugin {
     },
   };
 }
+ 
 
-export default defineConfig({
-  plugins: [react(), viteMockPlugin, localFirstAssets()],
-  define: {
-    __APP_VERSION__: JSON.stringify('1.0.0'),
-  },
+export default defineConfig(() => {
+  return {
+    plugins: [react(), viteMockPlugin, localFirstAssets()],
+    define: {
+      __APP_VERSION__: JSON.stringify('1.0.0'),
+    },
 
-  // root: 'roomtodo',
-  build: {
-    sourcemap: true
-  },
-  server: {
-    proxy: {
-      '/src_designer/images/': {
-        target: 'https://roomtodo.com',
-        changeOrigin: true,
-      },
-      '/Assets/css/': {
-        target: 'https://roomtodo.com',
-        changeOrigin: true,
-      },
-      '/files/products/': {
-        target: 'https://roomtodo.com',
-        changeOrigin: true,
-      },
-      '/files/categories/product/': {
-        target: 'https://roomtodo.com',
-        changeOrigin: true,
-      },
+    // root: 'roomtodo',
+    build: {
+      sourcemap: true
+    },
+    server: {
+      // proxy: {
+      //   '/src_designer/images/': {
+      //     target: 'https://roomtodo.com',
+      //     changeOrigin: true,
+      //   },
+      //   '/Assets/css/': {
+      //     target: 'https://roomtodo.com',
+      //     changeOrigin: true,
+      //   },
+      //   '/files/products/': {
+      //     target: 'https://roomtodo.com',
+      //     changeOrigin: true,
+      //   },
+      //   '/files/categories/product/': {
+      //     target: 'https://roomtodo.com',
+      //     changeOrigin: true,
+      //   },
+      // }
     }
   }
 });

@@ -1,5 +1,7 @@
 import { configureStore, combineReducers  } from '@reduxjs/toolkit';
 
+import { logger } from 'redux-logger'
+
 import popupsReducer from "./features/popups/popupsSlice"
 import viewModeReducer_new from "./features/viewMode/viewModeSlice";
 import viewModeReducer from "./features/viewMode/viewModeSlice_legacy"
@@ -14,6 +16,8 @@ import commonReducer from './features/common/commonSlice';
 import controlReducer from './features/control/controlPanelSlice';
 
 export const store = configureStore({
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+
   reducer: combineReducers({
     popups: popupsReducer, 
     viewMode: viewModeReducer, 

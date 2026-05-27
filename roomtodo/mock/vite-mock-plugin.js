@@ -95,243 +95,249 @@ export default {
           mockFilePath = './mock/catalog-search/ids41805.json';
 
 
-        } else if (url.includes('category_id=8450')) {
+        } else if (url.includes('category_id=8450') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-8450.json';
 
-        } else if (url.includes('category_id=9154')) {
+        } else if (url.includes('category_id=9154') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9154.json';
-        } else if (url.includes('category_id=9155')) {
+        } else if (url.includes('category_id=9155') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9155.json';
-        } else if (url.includes('category_id=9156')) {
+        } else if (url.includes('category_id=9156') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9156.json';
-        } else if (url.includes('category_id=9174')) {
+        } else if (url.includes('category_id=9174') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9174.json';
-        } else if (url.includes('category_id=9175')) {
+        } else if (url.includes('category_id=9175') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9175.json';
-        } else if (url.includes('category_id=9176')) {
+        } else if (url.includes('category_id=9176') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9176.json';
-        } else if (url.includes('category_id=9177')) {
+        } else if (url.includes('category_id=9177') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9177.json';
-        } else if (url.includes('category_id=9179')) {
+        } else if (url.includes('category_id=9179') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9179.json';
-        } else if (url.includes('category_id=9180')) {
+        } else if (url.includes('category_id=9180') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9180.json';
-        } else if (url.includes('category_id=9181')) {
+        } else if (url.includes('category_id=9181') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9181.json';
-        } else if (url.includes('category_id=9183')) {
+        } else if (url.includes('category_id=9183') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9183.json';
-        } else if (url.includes('category_id=9184')) {
+        } else if (url.includes('category_id=9184') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9184.json';
-        } else if (url.includes('category_id=9188')) {
+        } else if (url.includes('category_id=9188') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9188.json';
-        } else if (url.includes('category_id=9191')) {
+        } else if (url.includes('category_id=9191') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9191.json';
-        } else if (url.includes('category_id=9199')) {
+        } else if (url.includes('category_id=9199') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9199.json';
         
-        } else if (url.includes('category_id=9201')) {
+        } else if (url.includes('category_id=9201') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9201.json';
-        } else if (url.includes('category_id=9202')) {
+        } else if (url.includes('category_id=9202') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9202.json';
-        } else if (url.includes('category_id=9203')) {
+        } else if (url.includes('category_id=9203') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9203.json';
-        } else if (url.includes('category_id=9204')) {
+        } else if (url.includes('category_id=9204') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9204.json';
-        } else if (url.includes('category_id=9206')) {
+        } else if (url.includes('category_id=9206') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9206.json';
-        } else if (url.includes('category_id=9207')) {
+        } else if (url.includes('category_id=9207') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9207.json';
-        } else if (url.includes('category_id=9210')) {
+        } else if (url.includes('category_id=9210') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9210.json';
         
-        } else if (url.includes('category_id=9511')) {
+        } else if (url.includes('category_id=9511') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9511.json';
 
 
-        } else if (url.includes('category_id=9721')) {
+        } else if (url.includes('category_id=9721') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9721.json';
-        } else if (url.includes('category_id=9722')) {
+        } else if (url.includes('category_id=9722') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9722.json';
-        } else if (url.includes('category_id=9723')) {
+        } else if (url.includes('category_id=9723') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9723.json';
-        } else if (url.includes('category_id=9724')) {
+        } else if (url.includes('category_id=9724') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9724.json';
-        } else if (url.includes('category_id=9778')) {
+        } else if (url.includes('category_id=9778') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9778.json';
         
-        } else if (url.includes('category_id=9850')) {
+        } else if (url.includes('category_id=9850') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9850.json';
-        } else if (url.includes('category_id=9853')) {
+        } else if (url.includes('category_id=9853') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9853.json';
-        } else if (url.includes('category_id=9855')) {
+        } else if (url.includes('category_id=9855') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9855.json';
-        } else if (url.includes('category_id=9856')) {
+        } else if (url.includes('category_id=9856') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9856.json';
-        } else if (url.includes('category_id=9858')) {
+        } else if (url.includes('category_id=9858') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9858.json';
-        } else if (url.includes('category_id=9870')) {
+        } else if (url.includes('category_id=9870') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9870.json';
-        } else if (url.includes('category_id=9871')) {
+        } else if (url.includes('category_id=9871') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9871.json';
-        } else if (url.includes('category_id=9881')) {
+        } else if (url.includes('category_id=9881') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9881.json';
-        } else if (url.includes('category_id=9882')) {
+        } else if (url.includes('category_id=9882') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9882.json';
-        } else if (url.includes('category_id=9884')) {
+        } else if (url.includes('category_id=9884') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9884.json';
-        } else if (url.includes('category_id=9885')) {
+        } else if (url.includes('category_id=9885') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9885.json';
-        } else if (url.includes('category_id=9886')) {
+        } else if (url.includes('category_id=9886') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9886.json';
-        } else if (url.includes('category_id=9887')) {
+        } else if (url.includes('category_id=9887') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9887.json';
-        } else if (url.includes('category_id=9888')) {
+        } else if (url.includes('category_id=9888') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9888.json';
-        } else if (url.includes('category_id=9889')) {
+        } else if (url.includes('category_id=9889') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9889.json';
-        } else if (url.includes('category_id=9890')) {
+        } else if (url.includes('category_id=9890') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9890.json';
-        } else if (url.includes('category_id=9891')) {
+        } else if (url.includes('category_id=9891') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9891.json';
-        } else if (url.includes('category_id=9892')) {
+        } else if (url.includes('category_id=9892') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9892.json';
-        } else if (url.includes('category_id=9893')) {
+        } else if (url.includes('category_id=9893') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9893.json';
-        } else if (url.includes('category_id=9895')) {
+        } else if (url.includes('category_id=9895') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9895.json';
-        } else if (url.includes('category_id=9896')) {
+        } else if (url.includes('category_id=9896') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9896.json';
-        } else if (url.includes('category_id=9897')) {
+        } else if (url.includes('category_id=9897') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9897.json';
-        } else if (url.includes('category_id=9898')) {
+        } else if (url.includes('category_id=9898') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9898.json';
-        } else if (url.includes('category_id=9899')) {
+        } else if (url.includes('category_id=9899') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9899.json';
 
-        } else if (url.includes('category_id=9900')) {
+        } else if (url.includes('category_id=9900') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9900.json';
-        } else if (url.includes('category_id=9901')) {
+        } else if (url.includes('category_id=9901') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9901.json';
-        } else if (url.includes('category_id=9902')) {
+        } else if (url.includes('category_id=9902') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9902.json';
-        } else if (url.includes('category_id=9903')) {
+        } else if (url.includes('category_id=9903') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9903.json';
-        } else if (url.includes('category_id=9904')) {
+        } else if (url.includes('category_id=9904') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9904.json';
-        } else if (url.includes('category_id=9905')) {
+        } else if (url.includes('category_id=9905') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9905.json';
-        } else if (url.includes('category_id=9906')) {
+        } else if (url.includes('category_id=9906') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9906.json';
-        } else if (url.includes('category_id=9907')) {
+        } else if (url.includes('category_id=9907') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9907.json';
-        } else if (url.includes('category_id=9908')) {
+        } else if (url.includes('category_id=9908') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9908.json';
-        } else if (url.includes('category_id=9909')) {
+        } else if (url.includes('category_id=9909') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9909.json';
-        } else if (url.includes('category_id=9910')) {
+        } else if (url.includes('category_id=9910') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9910.json';
-        } else if (url.includes('category_id=9911')) {
+        } else if (url.includes('category_id=9911') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9911.json';
-        } else if (url.includes('category_id=9912')) {
+        } else if (url.includes('category_id=9912') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9912.json';
-        } else if (url.includes('category_id=9913')) {
+        } else if (url.includes('category_id=9913') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9913.json';
-        } else if (url.includes('category_id=9914')) {
+        } else if (url.includes('category_id=9914') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9914.json';
-        } else if (url.includes('category_id=9915')) {
+        } else if (url.includes('category_id=9915') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9915.json';
-        } else if (url.includes('category_id=9926')) {
+        } else if (url.includes('category_id=9926') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9926.json';
-        } else if (url.includes('category_id=9928')) {
+        } else if (url.includes('category_id=9928') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9928.json';
-        } else if (url.includes('category_id=9985')) {
+        } else if (url.includes('category_id=9985') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9985.json';
-        } else if (url.includes('category_id=9987')) {
+        } else if (url.includes('category_id=9987') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9987.json';
-        } else if (url.includes('category_id=9988')) {
+        } else if (url.includes('category_id=9988') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9988.json';
-        } else if (url.includes('category_id=9989')) {
+        } else if (url.includes('category_id=9989') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9989.json';
-        } else if (url.includes('category_id=9990')) {
+        } else if (url.includes('category_id=9990') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9990.json';
-        } else if (url.includes('category_id=9991')) {
+        } else if (url.includes('category_id=9991') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9991.json';
-        } else if (url.includes('category_id=9992')) {
+        } else if (url.includes('category_id=9992') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9992.json';
-        } else if (url.includes('category_id=9993')) {
+        } else if (url.includes('category_id=9993') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9993.json';
-        } else if (url.includes('category_id=9994')) {
+        } else if (url.includes('category_id=9994&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-9994.json';
         
 
         
         } else if (url.includes('category_id=389&')) {
-          mockFilePath = './mock/catalog-search/category-id-389.json';
+          if (url.includes('category_type=1')) {
+            mockFilePath = './mock/catalog-search/category-id-389-1.json';
+          } else {
+            mockFilePath = './mock/catalog-search/category-id-389.json';
+          }
         
-        } else if (url.includes('category_id=686&')) {
+        } else if (url.includes('category_id=686&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-686.json';
-        } else if (url.includes('category_id=687&')) {
+        } else if (url.includes('category_id=687&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-687.json';
-        } else if (url.includes('category_id=688&')) {
+        } else if (url.includes('category_id=688&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-688.json';
-        } else if (url.includes('category_id=689&')) {
+        } else if (url.includes('category_id=689&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-689.json';
-        } else if (url.includes('category_id=690&')) {
+        } else if (url.includes('category_id=690&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-690.json';
-        } else if (url.includes('category_id=691&')) {
+        } else if (url.includes('category_id=691&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-691.json';
-        } else if (url.includes('category_id=692&')) {
+        } else if (url.includes('category_id=692&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-692.json';
-        } else if (url.includes('category_id=693&')) {
+        } else if (url.includes('category_id=693&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-693.json';
-        } else if (url.includes('category_id=694&')) {
+        } else if (url.includes('category_id=694&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-694.json';
         } else if (url.includes('category_id=695&')) {
-          mockFilePath = './mock/catalog-search/category-id-695.json';
-        } else if (url.includes('category_id=697&')) {
+          if (url.includes('category_type=1')) {
+            mockFilePath = './mock/catalog-search/category-id-695-1.json';
+          }
+        } else if (url.includes('category_id=697&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-697.json';
-        } else if (url.includes('category_id=698&')) {
+        } else if (url.includes('category_id=698&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-698.json';
-        } else if (url.includes('category_id=699&')) {
+        } else if (url.includes('category_id=699&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-699.json';
         
         
-        } else if (url.includes('category_id=700&')) {
+        } else if (url.includes('category_id=700&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-700.json';
-        } else if (url.includes('category_id=701&')) {
+        } else if (url.includes('category_id=701&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-701.json';
-        } else if (url.includes('category_id=702&')) {
+        } else if (url.includes('category_id=702&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-702.json';
-        } else if (url.includes('category_id=703&')) {
+        } else if (url.includes('category_id=703&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-703.json';
-        } else if (url.includes('category_id=704&')) {
+        } else if (url.includes('category_id=704&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-704.json';
-        } else if (url.includes('category_id=705&')) {
+        } else if (url.includes('category_id=705&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-705.json';
-        } else if (url.includes('category_id=706&')) {
+        } else if (url.includes('category_id=706&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-706.json';
-        } else if (url.includes('category_id=707&')) {
+        } else if (url.includes('category_id=707&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-707.json';
-        } else if (url.includes('category_id=708&')) {
+        } else if (url.includes('category_id=708&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-708.json';
-        } else if (url.includes('category_id=710&')) {
+        } else if (url.includes('category_id=710&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-710.json';
-        } else if (url.includes('category_id=711&')) {
+        } else if (url.includes('category_id=711&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-711.json';
-        } else if (url.includes('category_id=712&')) {
+        } else if (url.includes('category_id=712&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-712.json';
-        } else if (url.includes('category_id=713&')) {
+        } else if (url.includes('category_id=713&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-713.json';
-        } else if (url.includes('category_id=714&')) {
+        } else if (url.includes('category_id=714&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-714.json';
-        } else if (url.includes('category_id=719&')) {
+        } else if (url.includes('category_id=719&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-719.json';
-        } else if (url.includes('category_id=720&')) {
+        } else if (url.includes('category_id=720&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-720.json';
         
         
         
-        } else if (url.includes('category_id=857&')) {
+        } else if (url.includes('category_id=857&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-857.json';
 
 
@@ -387,37 +393,37 @@ export default {
           }
         } else if (url.includes('category_id=27&')) {
           mockFilePath = './mock/catalog-search/category-id-27.json';
-        } else if (url.includes('category_id=34&')) {
+        } else if (url.includes('category_id=34&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-34.json';
-        } else if (url.includes('category_id=40&')) {
+        } else if (url.includes('category_id=40&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-40.json';
-        } else if (url.includes('category_id=42&')) {
+        } else if (url.includes('category_id=42&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-42.json';
-        } else if (url.includes('category_id=46&')) {
+        } else if (url.includes('category_id=46&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-46.json';
-        } else if (url.includes('category_id=49&')) {
+        } else if (url.includes('category_id=49&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-49.json';
-        } else if (url.includes('category_id=50&')) {
+        } else if (url.includes('category_id=50&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-50.json';
         } else if (url.includes('category_id=51&')) {
           mockFilePath = './mock/catalog-search/category-id-51.json';
-        } else if (url.includes('category_id=52&')) {
+        } else if (url.includes('category_id=52&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-52.json';
         } else if (url.includes('category_id=54&')) {
           mockFilePath = './mock/catalog-search/category-id-54.json';
-        } else if (url.includes('category_id=56&')) {
+        } else if (url.includes('category_id=56&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-56.json';
-        } else if (url.includes('category_id=57&')) {
+        } else if (url.includes('category_id=57&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-57.json';
         } else if (url.includes('category_id=59&')) {
           mockFilePath = './mock/catalog-search/category-id-59.json';
         } else if (url.includes('category_id=66&')) {
           mockFilePath = './mock/catalog-search/category-id-66.json';
-        } else if (url.includes('category_id=67&')) {
+        } else if (url.includes('category_id=67&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-67.json';
         } else if (url.includes('category_id=69&')) {
           mockFilePath = './mock/catalog-search/category-id-69.json';
-        } else if (url.includes('category_id=70&')) {
+        } else if (url.includes('category_id=70&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-70.json';
         } else if (url.includes('category_id=71&')) {
           if (url.includes('category_type=1')) {
@@ -425,31 +431,31 @@ export default {
           } else {
             mockFilePath = './mock/catalog-search/category-id-71.json';
           }
-        } else if (url.includes('category_id=72&')) {
+        } else if (url.includes('category_id=72&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-72.json';
-        } else if (url.includes('category_id=79&')) {
+        } else if (url.includes('category_id=79&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-79.json';
-        } else if (url.includes('category_id=80&')) {
+        } else if (url.includes('category_id=80&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-80.json';
-        } else if (url.includes('category_id=82&')) {
+        } else if (url.includes('category_id=82&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-82.json';
-        } else if (url.includes('category_id=84&')) {
+        } else if (url.includes('category_id=84&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-84.json';
-        } else if (url.includes('category_id=85&')) {
+        } else if (url.includes('category_id=85&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-85.json';
-        } else if (url.includes('category_id=90&')) {
+        } else if (url.includes('category_id=90&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-90.json';
-        } else if (url.includes('category_id=91&')) {
+        } else if (url.includes('category_id=91&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-91.json';
-        } else if (url.includes('category_id=92&')) {
+        } else if (url.includes('category_id=92&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-92.json';
-        } else if (url.includes('category_id=93&')) {
+        } else if (url.includes('category_id=93&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-93.json';
-        } else if (url.includes('category_id=95&')) {
+        } else if (url.includes('category_id=95&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-95.json';
-        } else if (url.includes('category_id=96&')) {
+        } else if (url.includes('category_id=96&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-96.json';
-        } else if (url.includes('category_id=97&')) {
+        } else if (url.includes('category_id=97&') && !url.includes('category_type=1')) {
           mockFilePath = './mock/catalog-search/category-id-97.json';
         
         
