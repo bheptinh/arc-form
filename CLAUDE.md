@@ -85,6 +85,27 @@ Keyboard shortcuts skip when focus is in `<input>` or `<select>`.
 | `DEFAULT_DOOR_WIDTH_MM` | 900 | Default door width |
 | `DEFAULT_WINDOW_WIDTH_MM` | 1200 | Default window width |
 
+## Vite Plugins — `vite-plugins/`
+
+Custom dev-server plugins registered in `vite.config.ts`. All are plain ES module objects (no factory call needed).
+
+### `local-first-assets/`
+Intercepts static asset URLs (images, GLBs, CSS, fonts under `/src_designer/images/`, `/Assets/css/`, `/files/products/`, `/files/categories/`). Serves from `public/roomtodo/{url}` if the file exists locally; otherwise fetches from `https://roomtodo.com` and caches it there for next time.
+
+### `catalog-search-fallback/`
+Intercepts `/api/catalog/search?...` requests. Derives a flat filename from query params and looks it up in `vite-plugins/catalog-search-fallback/mocks/`. Falls back to `https://roomtodo.com` and caches on miss.
+
+Filename convention (no subdirectories):
+- `?ids=41805` → `ids-41805.json`
+- `?ids=260,354,...` → `ids-260_354_....json` (commas → underscores)
+- `?category_id=8450` → `category-8450.json`
+- `?category_id=695&category_type=1` → `category-695-1.json`
+- `?category_tag=moldings` → `tag-moldings.json`
+- `?category_tag&my=1` → `tag-my.json`
+
+### `roomtodo/mock/vite-mock-plugin.js`
+Handles all other `/api/` and `/api2/` endpoints (language, translations, favorites, planner config, planner save/load) via static JSON files in `roomtodo/mock/`.
+
 ## Roadmap
 - **Week 1** ✅ Boilerplate: canvas, grid, pan/zoom, toolbar, store
 - **Week 2** ✅ Wall drawing: click to place points, snap, miter corner geometry
