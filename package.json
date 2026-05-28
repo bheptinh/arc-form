@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite --port 5115",
-    "build": "tsc && vite build",
+    "dev": "concurrently -n client,server -c cyan,magenta \"npm run dev:fe\" \"npm run dev:be\"",
+    "dev:fe": "vite --config client/vite.config.ts --port 5115",
+    "dev:be": "tsx watch server/index.ts",
+    "build": "vite build --config client/vite.config.ts && npm run build:server",
+    "build:server": "tsc -p server/tsconfig.json",
+    "start": "NODE_ENV=production node dist-server/index.js",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -15,6 +19,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
     "classnames": "^2.5.1",
+    "express": "^5.2.1",
     "framer-motion": "^12.40.0",
     "html-react-parser": "^6.1.1",
     "konva": "^10.3.0",
@@ -32,11 +37,15 @@
     "zustand": "^5.0.13"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.9.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@types/redux-logger": "^3.0.13",
     "@vitejs/plugin-react": "^6.0.2",
+    "concurrently": "^9.2.1",
     "redux-logger": "^3.0.6",
+    "tsx": "^4.22.3",
     "typescript": "^6.0.3",
     "vite": "^8.0.13"
   }
