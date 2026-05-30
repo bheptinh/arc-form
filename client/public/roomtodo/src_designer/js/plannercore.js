@@ -17438,14 +17438,14 @@ R2D.Config = function()
                 type: "text",
                 show: true,
                 text: '',
-                href: 'https://roomtodo.com/en/terms_of_service/',
+                href: '/terms_of_service/',
                 target: "_blank"
             },
             copyright: {
                 type: "text",
                 show: true,
                 text: '2023 © Roomtodo',
-                href: 'https://roomtodo.com/',
+                href: '/',
                 target: "_blank"
             },
             orderFloorPlanUrl: ""

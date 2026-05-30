@@ -47,26 +47,9 @@ export default {
         return;
       }
 
-      try {
-        server.config.logger.info(`[catalog-search-fallback] cache miss, fetching: ${name}`);
-        const remote = await fetch(`https://roomtodo.com/api/catalog/search?${search}`);
-        if (!remote.ok) {
-          server.config.logger.warn(`[catalog-search-fallback] remote ${remote.status} for: ${name}`);
-          res.statusCode = remote.status;
-          res.end('Remote error');
-          return;
-        }
-        const json = await remote.text();
-        fs.mkdirSync(MOCKS_DIR, { recursive: true });
-        fs.writeFileSync(localFile, json, 'utf-8');
-        server.config.logger.info(`[catalog-search-fallback] cached: ${name}.json`);
-        res.setHeader('Content-Type', 'application/json');
-        res.end(json);
-      } catch (e) {
-        server.config.logger.error(`[catalog-search-fallback] fetch failed for ${name}: ${e}`);
-        res.statusCode = 502;
-        res.end('Fetch failed');
-      }
+      server.config.logger.warn(`[catalog-search-fallback] MISSING mock: ${name}.json`);
+      res.statusCode = 404;
+      res.end('Mock not found');
     });
   },
 };

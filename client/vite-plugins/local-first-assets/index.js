@@ -48,28 +48,9 @@ export default {
         return;
       }
 
-      try {
-        server.config.logger.info(`[local-first-assets] cache miss, fetching: ${url}`);
-        const remote = await fetch(`https://roomtodo.com${url}`);
-        if (!remote.ok) {
-          server.config.logger.warn(`[local-first-assets] remote ${remote.status} for: ${url}`);
-          return next();
-        }
-        const buffer = Buffer.from(await remote.arrayBuffer());
-        fs.mkdirSync(path.dirname(localFile), { recursive: true });
-        fs.writeFileSync(localFile, buffer);
-        server.config.logger.info(`[local-first-assets] cached: ${url}`);
-        const ext = path.extname(localFile).toLowerCase();
-        const mime = MIME[ext] ?? remote.headers.get('content-type') ?? 'application/octet-stream';
-        if (!MIME[ext]) {
-          server.config.logger.error(`[local-first-assets] unknown MIME for extension "${ext}": ${url}`);
-        }
-        res.setHeader('Content-Type', mime);
-        res.end(buffer);
-      } catch (e) {
-        server.config.logger.error(`[local-first-assets] fetch failed for ${url}: ${e}`);
-        next();
-      }
+      server.config.logger.warn(`[local-first-assets] MISSING local asset: ${url}`);
+      res.statusCode = 404;
+      res.end('Asset not found locally');
     });
   },
 };

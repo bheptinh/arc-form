@@ -1,9 +1,9 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import viteMockPlugin from './roomtodo/mock/vite-mock-plugin.js';
 import catalogSearchPlugin from './vite-plugins/catalog-search-fallback/index.js';
 import localFirstAssets from './vite-plugins/local-first-assets/index.js';
+import viteMockPlugin from './vite-plugins/vite-mock-plugin/vite-mock-plugin.js';
 
 
 export default defineConfig(() => {
