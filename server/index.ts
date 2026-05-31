@@ -3,6 +3,7 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import projectsRouter from './routes/projects.js';
+import userRouter from './routes/user.js';
 
 const app = express();
 const PORT = process.env.PORT ?? 3001;
@@ -15,6 +16,7 @@ app.get('/server-api/health', (_req, res) => {
 });
 
 app.use('/server-api/projects', projectsRouter);
+app.use('/server-api/user', userRouter);
 
 // In production, serve the Vite build and handle SPA routing
 if (process.env.NODE_ENV === 'production') {

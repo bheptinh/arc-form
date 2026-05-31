@@ -113,29 +113,5 @@ export default {
       res.setHeader('Content-Type', 'application/json')
       res.end(json)
     });
-    
-    
-    server.middlewares.use('/api2/', (req, res) => {
-      let mockFilePath = '';
-
-      const url = req.url || '';
-      if (url.startsWith('/user/info')) {
-        // TODO: MIGRATE TO BACKEND → GET /server-api/user/info
-        //       api2 prefix folds into api after full migration (api2 → api redirect).
-        //       Remove this handler once the Express route is live.
-        mockFilePath = './mock/api2-user-info.json';
-      } else {
-        res.statusCode = 404;
-        res.end('Not found');
-        return;
-      }
-      
-
-      const filePath = path.resolve(__dirname, mockFilePath);
-      const json = fs.readFileSync(filePath, 'utf-8')
-
-      res.setHeader('Content-Type', 'application/json')
-      res.end(json)
-    });
   },
 };
