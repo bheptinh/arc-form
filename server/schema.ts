@@ -1,4 +1,3 @@
-import { randomUUID } from 'crypto';
 import db from './db.js';
 
 db.exec(`
@@ -23,7 +22,8 @@ db.exec(`
   );
 
   CREATE TABLE IF NOT EXISTS products (
-    id                  INTEGER PRIMARY KEY,
+    id                  TEXT    PRIMARY KEY,
+    external_id         INTEGER UNIQUE,
     type                TEXT,
     name                TEXT    NOT NULL DEFAULT '',
     description         TEXT    NOT NULL DEFAULT '',
@@ -37,14 +37,14 @@ db.exec(`
     position_z          REAL,
     fixed_size          INTEGER NOT NULL DEFAULT 0,
     is_original_model   INTEGER NOT NULL DEFAULT 0,
-    original_entity_id  INTEGER,
+    original_entity_id  TEXT,
     user_key            TEXT,
     lang_id             INTEGER
   );
 
   CREATE TABLE IF NOT EXISTS product_files (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
-    product_id  INTEGER NOT NULL REFERENCES products(id),
+    product_id  TEXT    NOT NULL REFERENCES products(id),
     file_type   TEXT    NOT NULL,
     file_path   TEXT    NOT NULL,
     file_hash   TEXT
@@ -52,37 +52,38 @@ db.exec(`
 
   CREATE TABLE IF NOT EXISTS product_material_slots (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
-    product_id      INTEGER NOT NULL REFERENCES products(id),
+    product_id      TEXT    NOT NULL REFERENCES products(id),
     slot_index      INTEGER NOT NULL,
     mesh_name       TEXT,
     default_value   TEXT,
     source          TEXT,
     hash            TEXT,
-    add_material_id INTEGER
+    add_material_id TEXT    REFERENCES products(id)
   );
 
   CREATE TABLE IF NOT EXISTS categories (
-    id            INTEGER PRIMARY KEY,
+    id            TEXT    PRIMARY KEY,
+    external_id   INTEGER UNIQUE,
     name          TEXT    NOT NULL DEFAULT '',
-    parent_id     INTEGER,
+    parent_id     TEXT    REFERENCES categories(id),
     category_type TEXT    NOT NULL DEFAULT 'product'
   );
 
   CREATE TABLE IF NOT EXISTS product_categories (
-    product_id  INTEGER NOT NULL REFERENCES products(id),
-    category_id INTEGER NOT NULL REFERENCES categories(id),
+    product_id  TEXT    NOT NULL REFERENCES products(id),
+    category_id TEXT    NOT NULL REFERENCES categories(id),
     PRIMARY KEY (product_id, category_id)
   );
 
   CREATE TABLE IF NOT EXISTS product_tags (
-    product_id  INTEGER NOT NULL REFERENCES products(id),
+    product_id  TEXT    NOT NULL REFERENCES products(id),
     tag         TEXT    NOT NULL,
     PRIMARY KEY (product_id, tag)
   );
 
   CREATE TABLE IF NOT EXISTS favorites (
     user_id    TEXT    NOT NULL REFERENCES users(id),
-    product_id INTEGER NOT NULL REFERENCES products(id),
+    product_id TEXT    NOT NULL REFERENCES products(id),
     PRIMARY KEY (user_id, product_id)
   );
 `);

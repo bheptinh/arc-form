@@ -89,13 +89,13 @@ All under `/server-api` prefix for now. Migration strategy:
 - All `R2D.URL` entries in `index.html` are updated per route as it goes live.
 
 ### 5a. No DB needed
-- `GET /server-api/planner/config` — serve static `planner-json-config.json`
+- `GET /server-api/projects/config` ✅
 
 ### 5b. User
-- `GET /server-api/user/info` — return user row (covers session check; auth folds in here)
+- `GET /server-api/user` ✅
 
-### 5c. Catalog reads
-- `GET /server-api/catalog/tree` — categories tree
+### 5c. Catalog navigation
+- `GET /server-api/catalog/nav` — UI-shaped category tree for FE navigation
 - `GET /server-api/catalog/materials` — material categories (category_type = material)
 
 ### 5d. Favorites
@@ -103,20 +103,18 @@ All under `/server-api` prefix for now. Migration strategy:
 - `POST /server-api/catalog/favorites/:id` — add favorite
 - `DELETE /server-api/catalog/favorites/:id` — remove favorite
 
-### 5e. Planner
-- `GET /server-api/planner/open` — load project by id
-- `GET /server-api/planner/open-shared` — load project by hash (view-only)
-- `POST /server-api/planner/save` — upsert project by hash
-- `POST /server-api/planner/rename` — update project name
-- `POST /server-api/planner/copy` — duplicate project row
-- `DELETE /server-api/planner/delete` — delete project
+### 5e. Catalog products
+- `GET /server-api/catalog/collections/:id` — products in a category/collection
+- `GET /server-api/catalog/products/:id` — single product by UUID
+- `GET /server-api/catalog/products?ids=uuid1,uuid2` — fetch multiple products by UUID
 
-### 5f. Catalog search (most complex)
-- `GET /server-api/catalog/search` — query products with filters:
-  - `?category_id=` + optional `?category_type=`
-  - `?ids=` (comma-separated)
-  - `?category_tag=`
-  - `?query=` (text search on name)
+### 5f. Projects
+- `GET /server-api/projects/open` — load project by id
+- `GET /server-api/projects/open-shared` — load project by hash (view-only)
+- `POST /server-api/projects/save` — upsert project by hash
+- `POST /server-api/projects/rename` — update project name
+- `POST /server-api/projects/copy` — duplicate project row
+- `DELETE /server-api/projects/delete` — delete project
 
 ---
 
