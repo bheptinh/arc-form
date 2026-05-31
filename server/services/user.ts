@@ -15,6 +15,7 @@ export function getUser() {
 
   return {
     id: row.id,
+    key: row.id, // TODO: DELETE — check all FE/engine usages of user.data.key and replace with user.data.id, then remove this field
     email: row.email,
     name: row.name,
     plan: row.plan,

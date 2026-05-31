@@ -6,6 +6,7 @@ import localFirstAssets from './vite-plugins/local-first-assets/index.js';
 import viteMockPlugin from './vite-plugins/vite-mock-plugin/vite-mock-plugin.js';
 
 
+
 export default defineConfig(() => {
   return {
     root: path.resolve('client'),
@@ -22,7 +23,7 @@ export default defineConfig(() => {
     server: {
       proxy: {
         '/server-api': {
-          target: 'http://localhost:3001',
+          target: 'http://localhost:3015',
           changeOrigin: true,
         },
       },
