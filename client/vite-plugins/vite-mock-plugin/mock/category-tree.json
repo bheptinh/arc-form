@@ -5,7 +5,7 @@
       "id": 8,
       "published": 1,
       "name": "Construction",
-      "icon": "\/files\/categories\/product\/8\/10cbd653b77b99152207b1c00e4e3e58.jpeg",
+      "icon": "/files/categories/product/8/10cbd653b77b99152207b1c00e4e3e58.jpeg",
       "roomtodo": 1,
       "type": "category",
       "iconFill": 0,
@@ -17,7 +17,7 @@
           "id": 56,
           "published": 1,
           "name": "Windows",
-          "icon": "\/files\/categories\/product\/56\/d02b3b1c9ab5f3048c4395b28c068fb0.jpeg",
+          "icon": "/files/categories/product/56/d02b3b1c9ab5f3048c4395b28c068fb0.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -26,13 +26,13 @@
           "tags": [
             "windows"
           ],
-          "urlList": "\/api\/category\/products?category_id=56&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=56&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9205,
           "published": 1,
           "name": "Doors",
-          "icon": "\/files\/categories\/product\/9205\/3227d97be1a74607015d98701c1e9f35.jpeg",
+          "icon": "/files/categories/product/9205/3227d97be1a74607015d98701c1e9f35.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -44,7 +44,7 @@
               "id": 9206,
               "published": 1,
               "name": "Swing doors",
-              "icon": "\/files\/categories\/product\/9206\/fe17d377da190db0a8e5a192d9dd043b.jpeg",
+              "icon": "/files/categories/product/9206/fe17d377da190db0a8e5a192d9dd043b.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -53,13 +53,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9206&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9206&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9207,
               "published": 1,
               "name": "Sliding & accordion doors",
-              "icon": "\/files\/categories\/product\/9207\/fa378941468973ac9b65a93489ca408b.jpeg",
+              "icon": "/files/categories/product/9207/fa378941468973ac9b65a93489ca408b.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -68,7 +68,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9207&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9207&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -76,7 +76,7 @@
           "id": 57,
           "published": 1,
           "name": "Stairs",
-          "icon": "\/files\/categories\/product\/57\/9d6de285f91a3ed31cc9e7af928d070a.jpeg",
+          "icon": "/files/categories/product/57/9d6de285f91a3ed31cc9e7af928d070a.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -85,13 +85,13 @@
           "tags": [
             "stairs"
           ],
-          "urlList": "\/api\/category\/products?category_id=57&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=57&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 67,
           "published": 1,
           "name": "Fireplaces",
-          "icon": "\/files\/categories\/product\/67\/c662b8410bf4452774b45425148bafcc.jpeg",
+          "icon": "/files/categories/product/67/c662b8410bf4452774b45425148bafcc.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -100,13 +100,13 @@
           "tags": [
             "fireplaces"
           ],
-          "urlList": "\/api\/category\/products?category_id=67&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=67&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 80,
           "published": 1,
           "name": "Arcs",
-          "icon": "\/files\/categories\/product\/80\/26b2c0d8d405334f43dbcda1577209cc.jpeg",
+          "icon": "/files/categories/product/80/26b2c0d8d405334f43dbcda1577209cc.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -115,52 +115,52 @@
           "tags": [
             "arcs"
           ],
-          "urlList": "\/api\/category\/products?category_id=80&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=80&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9855,
           "published": 1,
           "name": "Pillars and beams",
-          "icon": "\/files\/categories\/product\/9855\/3b5cab31e16bd899e376e73c5756410f.jpeg",
+          "icon": "/files/categories/product/9855/3b5cab31e16bd899e376e73c5756410f.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
           "privateMaterialType": 2,
           "position": 6,
           "tags": [],
-          "urlList": "\/api\/category\/products?category_id=9855&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9855&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9915,
           "published": 1,
           "name": "Partitions",
-          "icon": "\/files\/categories\/product\/9915\/a1f8591ad59976fe061389b179ae56ce.png",
+          "icon": "/files/categories/product/9915/a1f8591ad59976fe061389b179ae56ce.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
           "privateMaterialType": 2,
           "position": 7,
           "tags": [],
-          "urlList": "\/api\/category\/products?category_id=9915&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9915&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9856,
           "published": 1,
           "name": "Wall panels",
-          "icon": "\/files\/categories\/product\/9856\/8f5d6eaa797d212e20afedfbe45ade16.png",
+          "icon": "/files/categories/product/9856/8f5d6eaa797d212e20afedfbe45ade16.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
           "privateMaterialType": 2,
           "position": 8,
           "tags": [],
-          "urlList": "\/api\/category\/products?category_id=9856&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9856&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 91,
           "published": 1,
           "name": "Fences",
-          "icon": "\/files\/categories\/product\/91\/68c059f76c60d10ca518e2d292a88fbf.jpeg",
+          "icon": "/files/categories/product/91/68c059f76c60d10ca518e2d292a88fbf.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -169,13 +169,13 @@
           "tags": [
             "fences"
           ],
-          "urlList": "\/api\/category\/products?category_id=91&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=91&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9724,
           "published": 1,
           "name": "Roof",
-          "icon": "\/files\/categories\/product\/9724\/084b256f34dbddba31856f924ebd9f44.jpeg",
+          "icon": "/files/categories/product/9724/084b256f34dbddba31856f924ebd9f44.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -184,13 +184,13 @@
           "tags": [
             ""
           ],
-          "urlList": "\/api\/category\/products?category_id=9724&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9724&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9721,
           "published": 1,
           "name": "Shapes",
-          "icon": "\/files\/categories\/product\/9721\/a3be3a0a5602923982807eda36502827.jpeg",
+          "icon": "/files/categories/product/9721/a3be3a0a5602923982807eda36502827.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -199,7 +199,7 @@
           "tags": [
             ""
           ],
-          "urlList": "\/api\/category\/products?category_id=9721&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9721&key=4500282e6846fe6650de81bd35d27540"
         }
       ]
     },
@@ -207,7 +207,7 @@
       "id": 24,
       "published": 1,
       "name": "Furniture",
-      "icon": "\/files\/categories\/product\/24\/0a542ab67ce137926e8a3b012fc0d564.jpeg",
+      "icon": "/files/categories/product/24/0a542ab67ce137926e8a3b012fc0d564.jpeg",
       "roomtodo": 1,
       "type": "category",
       "iconFill": 0,
@@ -219,7 +219,7 @@
           "id": 83,
           "published": 1,
           "name": "Upholstered furniture",
-          "icon": "\/files\/categories\/product\/83\/3acc053d49cc9a1adbd956e20b1a7ad8.jpeg",
+          "icon": "/files/categories/product/83/3acc053d49cc9a1adbd956e20b1a7ad8.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -231,7 +231,7 @@
               "id": 9182,
               "published": 1,
               "name": "Sofas",
-              "icon": "\/files\/categories\/product\/9182\/083cbb1f66e62b54963a3f0df50bd5b7.jpeg",
+              "icon": "/files/categories/product/9182/083cbb1f66e62b54963a3f0df50bd5b7.jpeg",
               "roomtodo": 1,
               "type": "category",
               "iconFill": 1,
@@ -243,7 +243,7 @@
                   "id": 9183,
                   "published": 1,
                   "name": "Straight",
-                  "icon": "\/files\/categories\/product\/9183\/adef4b144f3d34277f18c21089f20b9d.jpeg",
+                  "icon": "/files/categories/product/9183/adef4b144f3d34277f18c21089f20b9d.jpeg",
                   "roomtodo": 1,
                   "type": "product",
                   "iconFill": 0,
@@ -252,13 +252,13 @@
                   "tags": [
                     ""
                   ],
-                  "urlList": "\/api\/category\/products?category_id=9183&key=4500282e6846fe6650de81bd35d27540"
+                  "urlList": "/api/category/products?category_id=9183&key=4500282e6846fe6650de81bd35d27540"
                 },
                 {
                   "id": 9184,
                   "published": 1,
                   "name": "Corner",
-                  "icon": "\/files\/categories\/product\/9184\/549b9e75cbbc5d43b1b9093f4c46c89f.jpeg",
+                  "icon": "/files/categories/product/9184/549b9e75cbbc5d43b1b9093f4c46c89f.jpeg",
                   "roomtodo": 1,
                   "type": "product",
                   "iconFill": 0,
@@ -267,13 +267,13 @@
                   "tags": [
                     ""
                   ],
-                  "urlList": "\/api\/category\/products?category_id=9184&key=4500282e6846fe6650de81bd35d27540"
+                  "urlList": "/api/category/products?category_id=9184&key=4500282e6846fe6650de81bd35d27540"
                 },
                 {
                   "id": 9210,
                   "published": 1,
                   "name": "Modular",
-                  "icon": "\/files\/categories\/product\/9210\/1c8a936f507acc1f3631456221d46b9d.jpeg",
+                  "icon": "/files/categories/product/9210/1c8a936f507acc1f3631456221d46b9d.jpeg",
                   "roomtodo": 1,
                   "type": "product",
                   "iconFill": 0,
@@ -282,7 +282,7 @@
                   "tags": [
                     ""
                   ],
-                  "urlList": "\/api\/category\/products?category_id=9210&key=4500282e6846fe6650de81bd35d27540"
+                  "urlList": "/api/category/products?category_id=9210&key=4500282e6846fe6650de81bd35d27540"
                 }
               ]
             },
@@ -290,7 +290,7 @@
               "id": 26,
               "published": 1,
               "name": "Armchairs",
-              "icon": "\/files\/categories\/product\/26\/6927f2c8ac2e4d57faebdc3dd2fecaf7.jpeg",
+              "icon": "/files/categories/product/26/6927f2c8ac2e4d57faebdc3dd2fecaf7.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -299,13 +299,13 @@
               "tags": [
                 "armchairs"
               ],
-              "urlList": "\/api\/category\/products?category_id=26&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=26&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 84,
               "published": 1,
               "name": "Ottomans",
-              "icon": "\/files\/categories\/product\/84\/706464e1013059ff9045c7e02bd79a25.jpeg",
+              "icon": "/files/categories/product/84/706464e1013059ff9045c7e02bd79a25.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -314,7 +314,7 @@
               "tags": [
                 "ottomans"
               ],
-              "urlList": "\/api\/category\/products?category_id=84&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=84&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -322,7 +322,7 @@
           "id": 9178,
           "published": 1,
           "name": "Chairs, benches",
-          "icon": "\/files\/categories\/product\/9178\/cbf274352120de4d07074c0627c56be2.jpeg",
+          "icon": "/files/categories/product/9178/cbf274352120de4d07074c0627c56be2.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -334,7 +334,7 @@
               "id": 9179,
               "published": 1,
               "name": "Chairs",
-              "icon": "\/files\/categories\/product\/9179\/a53a933f31aeef1370c6ef8eecf1ea1a.jpeg",
+              "icon": "/files/categories/product/9179/a53a933f31aeef1370c6ef8eecf1ea1a.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -343,26 +343,26 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9179&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9179&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9892,
               "published": 1,
               "name": "Bar stools",
-              "icon": "\/files\/categories\/product\/9892\/4443552bab979fcfd9882c08c33e8905.jpeg",
+              "icon": "/files/categories/product/9892/4443552bab979fcfd9882c08c33e8905.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 2,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9892&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9892&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9180,
               "published": 1,
               "name": "Stools",
-              "icon": "\/files\/categories\/product\/9180\/33056f2d5eb2821b44a662fe37b7ecd4.jpeg",
+              "icon": "/files/categories/product/9180/33056f2d5eb2821b44a662fe37b7ecd4.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -371,13 +371,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9180&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9180&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9181,
               "published": 1,
               "name": "Benches",
-              "icon": "\/files\/categories\/product\/9181\/1226d6066459cdac4a2751b70498e20c.jpeg",
+              "icon": "/files/categories/product/9181/1226d6066459cdac4a2751b70498e20c.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -386,7 +386,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9181&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9181&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -394,7 +394,7 @@
           "id": 9149,
           "published": 1,
           "name": "Tables",
-          "icon": "\/files\/categories\/product\/9149\/1949ab9e83afde6a8c8de200f93faab5.jpeg",
+          "icon": "/files/categories/product/9149/1949ab9e83afde6a8c8de200f93faab5.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -406,7 +406,7 @@
               "id": 9150,
               "published": 1,
               "name": "Dining tables",
-              "icon": "\/files\/categories\/product\/9150\/ba222703658eec05750607b1f7a7aaa0.jpeg",
+              "icon": "/files/categories/product/9150/ba222703658eec05750607b1f7a7aaa0.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -415,13 +415,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9150&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9150&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9151,
               "published": 1,
               "name": "Coffee tables",
-              "icon": "\/files\/categories\/product\/9151\/add57c05580fb291d5845dc0cfb1821a.png",
+              "icon": "/files/categories/product/9151/add57c05580fb291d5845dc0cfb1821a.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -430,13 +430,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9151&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9151&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9870,
               "published": 1,
               "name": "Office desks",
-              "icon": "\/files\/categories\/product\/9870\/7ca451343b386255efea0a244f61b3ef.jpeg",
+              "icon": "/files/categories/product/9870/7ca451343b386255efea0a244f61b3ef.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -445,7 +445,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9870&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9870&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -453,7 +453,7 @@
           "id": 9167,
           "published": 1,
           "name": "Beds",
-          "icon": "\/files\/categories\/product\/9167\/ee141c7c197073c3654a6e35a98d3e41.jpeg",
+          "icon": "/files/categories/product/9167/ee141c7c197073c3654a6e35a98d3e41.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -465,7 +465,7 @@
               "id": 9174,
               "published": 1,
               "name": "Single beds",
-              "icon": "\/files\/categories\/product\/9174\/e1a3f15b10ca841af6628d372bd607e3.jpeg",
+              "icon": "/files/categories/product/9174/e1a3f15b10ca841af6628d372bd607e3.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -474,13 +474,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9174&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9174&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9175,
               "published": 1,
               "name": "Double, queen, king beds",
-              "icon": "\/files\/categories\/product\/9175\/c36cfb766e7ceece795111de3ea6db76.jpeg",
+              "icon": "/files/categories/product/9175/c36cfb766e7ceece795111de3ea6db76.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -489,13 +489,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9175&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9175&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9176,
               "published": 1,
               "name": "Children's beds",
-              "icon": "\/files\/categories\/product\/9176\/fc16520b7839da3f2063c87701480c1b.jpeg",
+              "icon": "/files/categories/product/9176/fc16520b7839da3f2063c87701480c1b.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -504,7 +504,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9176&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9176&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -512,7 +512,7 @@
           "id": 9883,
           "published": 1,
           "name": "Cabinets&Shelves",
-          "icon": "\/files\/categories\/product\/9883\/a1071ef2494f55fb8cc87b65376c6956.jpeg",
+          "icon": "/files/categories/product/9883/a1071ef2494f55fb8cc87b65376c6956.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -524,79 +524,79 @@
               "id": 9887,
               "published": 1,
               "name": "Cabinets, closets, wardrobes",
-              "icon": "\/files\/categories\/product\/9887\/00d81381a0a6b65d87cd276236f9b099.jpeg",
+              "icon": "/files/categories/product/9887/00d81381a0a6b65d87cd276236f9b099.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 1,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9887&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9887&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9888,
               "published": 1,
               "name": "Dressers, Consoles, vanities",
-              "icon": "\/files\/categories\/product\/9888\/0328a2a464c3949f272df345b42fe67e.jpeg",
+              "icon": "/files/categories/product/9888/0328a2a464c3949f272df345b42fe67e.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 2,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9888&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9888&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9886,
               "published": 1,
               "name": "Shelves",
-              "icon": "\/files\/categories\/product\/9886\/12cbee0bdd9fd5ff862f12cc4e1bd2be.jpeg",
+              "icon": "/files/categories/product/9886/12cbee0bdd9fd5ff862f12cc4e1bd2be.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
               "privateMaterialType": 2,
               "position": 3,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9886&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9886&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9884,
               "published": 1,
               "name": "Stands",
-              "icon": "\/files\/categories\/product\/9884\/e3338d61957db667f01bccf6ac493bf2.jpeg",
+              "icon": "/files/categories/product/9884/e3338d61957db667f01bccf6ac493bf2.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 4,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9884&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9884&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9889,
               "published": 1,
               "name": "TV stands",
-              "icon": "\/files\/categories\/product\/9889\/9212e75ded50ce3eeec4d8463f2bc3c1.jpeg",
+              "icon": "/files/categories/product/9889/9212e75ded50ce3eeec4d8463f2bc3c1.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 5,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9889&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9889&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9893,
               "published": 1,
               "name": "Hangers, shoe storage",
-              "icon": "\/files\/categories\/product\/9893\/0928edc48af081cdfe4a9ab3fca11787.jpeg",
+              "icon": "/files/categories/product/9893/0928edc48af081cdfe4a9ab3fca11787.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 6,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9893&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9893&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -604,7 +604,7 @@
           "id": 9153,
           "published": 1,
           "name": "Kitchen",
-          "icon": "\/files\/categories\/product\/9153\/72af6a41bf259b4d24ea9e797cfca677.jpeg",
+          "icon": "/files/categories/product/9153/72af6a41bf259b4d24ea9e797cfca677.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -616,7 +616,7 @@
               "id": 9154,
               "published": 1,
               "name": "Wall cabinets",
-              "icon": "\/files\/categories\/product\/9154\/cbe72fd09c37398201f88b0852d649ac.jpeg",
+              "icon": "/files/categories/product/9154/cbe72fd09c37398201f88b0852d649ac.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -625,13 +625,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9154&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9154&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9155,
               "published": 1,
               "name": "Base & pantry cabinets",
-              "icon": "\/files\/categories\/product\/9155\/9c51b8a08f5b98b5381f0b79d1540f41.jpeg",
+              "icon": "/files/categories/product/9155/9c51b8a08f5b98b5381f0b79d1540f41.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -640,13 +640,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9155&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9155&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9156,
               "published": 1,
               "name": "Bar stands",
-              "icon": "\/files\/categories\/product\/9156\/ab564d945ac8348954a5df3ae928f92f.jpeg",
+              "icon": "/files/categories/product/9156/ab564d945ac8348954a5df3ae928f92f.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -655,7 +655,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9156&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9156&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -663,7 +663,7 @@
           "id": 32,
           "published": 1,
           "name": "Bathroom",
-          "icon": "\/files\/categories\/product\/32\/0e4c2845be905baaa584031770f74859.jpeg",
+          "icon": "/files/categories/product/32/0e4c2845be905baaa584031770f74859.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -677,66 +677,66 @@
               "id": 9914,
               "published": 1,
               "name": "Baths and showers",
-              "icon": "\/files\/categories\/product\/9914\/800ccb51e22a9a775c925c995fc47a4e.jpeg",
+              "icon": "/files/categories/product/9914/800ccb51e22a9a775c925c995fc47a4e.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 1,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9914&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9914&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9881,
               "published": 1,
               "name": "Toilets & bidet",
-              "icon": "\/files\/categories\/product\/9881\/58ec989c1f20002124949cda082b6e21.jpeg",
+              "icon": "/files/categories/product/9881/58ec989c1f20002124949cda082b6e21.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 2,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9881&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9881&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9885,
               "published": 1,
               "name": "Washbasins",
-              "icon": "\/files\/categories\/product\/9885\/f570f38d92f32cab9e7de800b4c582e5.jpeg",
+              "icon": "/files/categories/product/9885/f570f38d92f32cab9e7de800b4c582e5.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 3,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9885&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9885&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9899,
               "published": 1,
               "name": "Bathroom storage, mirrors",
-              "icon": "\/files\/categories\/product\/9899\/065f8d21476db6014cf0996e82de2b60.jpeg",
+              "icon": "/files/categories/product/9899/065f8d21476db6014cf0996e82de2b60.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 4,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9899&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9899&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9853,
               "published": 1,
               "name": "Bathroom accessories",
-              "icon": "\/files\/categories\/product\/9853\/d53ff842fb6dbc1e8ef82fc6662027a2.jpeg",
+              "icon": "/files/categories/product/9853/d53ff842fb6dbc1e8ef82fc6662027a2.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 5,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9853&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9853&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -744,7 +744,7 @@
           "id": 86,
           "published": 1,
           "name": "Office",
-          "icon": "\/files\/categories\/product\/86\/3dc8febb77c2568d719da606645abc59.png",
+          "icon": "/files/categories/product/86/3dc8febb77c2568d719da606645abc59.png",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -758,7 +758,7 @@
               "id": 9890,
               "published": 1,
               "name": "Office chairs",
-              "icon": "\/files\/categories\/product\/9890\/d33df712c13e6d3b039bc00edb270c02.png",
+              "icon": "/files/categories/product/9890/d33df712c13e6d3b039bc00edb270c02.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -767,46 +767,46 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9890&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9890&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9871,
               "published": 1,
               "name": "Office desks & tables",
-              "icon": "\/files\/categories\/product\/9871\/24cc8edc767f9e7e0b89d5b739976c16.jpeg",
+              "icon": "/files/categories/product/9871/24cc8edc767f9e7e0b89d5b739976c16.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 2,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9871&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9871&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9913,
               "published": 1,
               "name": "Office case furniture",
-              "icon": "\/files\/categories\/product\/9913\/2866e7ba8274ebd3127c49ad463b4f2d.png",
+              "icon": "/files/categories/product/9913/2866e7ba8274ebd3127c49ad463b4f2d.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 3,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9913&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9913&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9891,
               "published": 1,
               "name": "Office equipment",
-              "icon": "\/files\/categories\/product\/9891\/7208457b1092102aec84641a6871f520.jpeg",
+              "icon": "/files/categories/product/9891/7208457b1092102aec84641a6871f520.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 4,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9891&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9891&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -814,7 +814,7 @@
           "id": 9177,
           "published": 1,
           "name": "Outdoor furniture",
-          "icon": "\/files\/categories\/product\/9177\/aa893c9bc715ab2c958709e395571732.jpeg",
+          "icon": "/files/categories/product/9177/aa893c9bc715ab2c958709e395571732.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -823,13 +823,13 @@
           "tags": [
             ""
           ],
-          "urlList": "\/api\/category\/products?category_id=9177&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9177&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9778,
           "published": 1,
           "name": "Children's furniture",
-          "icon": "\/files\/categories\/product\/9778\/3673616d2f7ce5a16c8b7d6788bcd655.jpeg",
+          "icon": "/files/categories/product/9778/3673616d2f7ce5a16c8b7d6788bcd655.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -838,7 +838,18 @@
           "tags": [
             ""
           ],
-          "urlList": "\/api\/category\/products?category_id=9778&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9778&key=4500282e6846fe6650de81bd35d27540"
+        },
+        {
+          "id": 9861,
+          "name": "Chairs, benches2",
+          "nodes": [
+            {
+              "id": 9862,
+              "name": "Chairs2",
+              "nodes": []
+            }
+          ]
         }
       ]
     },
@@ -846,7 +857,7 @@
       "id": 33,
       "published": 1,
       "name": "Electric appliances",
-      "icon": "\/files\/categories\/product\/33\/69aa5294638c1f152886eb417b86bb5a.jpeg",
+      "icon": "/files/categories/product/33/69aa5294638c1f152886eb417b86bb5a.jpeg",
       "roomtodo": 1,
       "type": "category",
       "iconFill": 1,
@@ -857,8 +868,8 @@
         {
           "id": 34,
           "published": 1,
-          "name": "TV \/ Video \/ Audio",
-          "icon": "\/files\/categories\/product\/34\/77be70ac5633b338ea98e927830e4634.jpeg",
+          "name": "TV / Video / Audio",
+          "icon": "/files/categories/product/34/77be70ac5633b338ea98e927830e4634.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -867,26 +878,26 @@
           "tags": [
             "tv & video & audio"
           ],
-          "urlList": "\/api\/category\/products?category_id=34&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=34&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9850,
           "published": 1,
           "name": "Computers & Gadgets",
-          "icon": "\/files\/categories\/product\/9850\/73a3f9035451acf656814472737c05ea.jpeg",
+          "icon": "/files/categories/product/9850/73a3f9035451acf656814472737c05ea.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
           "privateMaterialType": 2,
           "position": 2,
           "tags": [],
-          "urlList": "\/api\/category\/products?category_id=9850&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9850&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 40,
           "published": 1,
           "name": "Household appliances",
-          "icon": "\/files\/categories\/product\/40\/d188229e3594bc0aecddb8e118814c7d.jpeg",
+          "icon": "/files/categories/product/40/d188229e3594bc0aecddb8e118814c7d.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -895,13 +906,13 @@
           "tags": [
             "household appliances"
           ],
-          "urlList": "\/api\/category\/products?category_id=40&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=40&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9200,
           "published": 1,
           "name": "Kitchen Appliances",
-          "icon": "\/files\/categories\/product\/9200\/8c8c37a2749bdb8d63cf323bcdf1be55.jpeg",
+          "icon": "/files/categories/product/9200/8c8c37a2749bdb8d63cf323bcdf1be55.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -913,7 +924,7 @@
               "id": 9201,
               "published": 1,
               "name": "Refrigerators",
-              "icon": "\/files\/categories\/product\/9201\/6950a06a374667b1c9affaffec58af30.jpeg",
+              "icon": "/files/categories/product/9201/6950a06a374667b1c9affaffec58af30.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -922,13 +933,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9201&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9201&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9202,
               "published": 1,
               "name": "Stoves & Microwaves",
-              "icon": "\/files\/categories\/product\/9202\/d856a31be84e2a3bed5b5336affb1bdc.jpeg",
+              "icon": "/files/categories/product/9202/d856a31be84e2a3bed5b5336affb1bdc.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -937,13 +948,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9202&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9202&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9203,
               "published": 1,
               "name": "Stove hoods",
-              "icon": "\/files\/categories\/product\/9203\/b706e0583fb8ac1d481ffd95454b58bf.jpeg",
+              "icon": "/files/categories/product/9203/b706e0583fb8ac1d481ffd95454b58bf.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -952,13 +963,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9203&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9203&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9204,
               "published": 1,
               "name": "Small kitchen appliances",
-              "icon": "\/files\/categories\/product\/9204\/cff9a03b7fa7571982728fb192dc1853.jpeg",
+              "icon": "/files/categories/product/9204/cff9a03b7fa7571982728fb192dc1853.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -967,7 +978,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9204&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9204&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -975,7 +986,7 @@
           "id": 9185,
           "published": 1,
           "name": "Lighting",
-          "icon": "\/files\/categories\/product\/9185\/dfbe9c69e9e477cb1fbd65d9a8d72175.jpeg",
+          "icon": "/files/categories/product/9185/dfbe9c69e9e477cb1fbd65d9a8d72175.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -987,46 +998,46 @@
               "id": 9902,
               "published": 1,
               "name": "Ceiling lights",
-              "icon": "\/files\/categories\/product\/9902\/5b0fc9506b01f460e5b28a934bfd8eb1.jpeg",
+              "icon": "/files/categories/product/9902/5b0fc9506b01f460e5b28a934bfd8eb1.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 1,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9902&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9902&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9911,
               "published": 1,
               "name": "Pendant lights",
-              "icon": "\/files\/categories\/product\/9911\/17b031fb1f2e53de8c77359099860812.png",
+              "icon": "/files/categories/product/9911/17b031fb1f2e53de8c77359099860812.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 2,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9911&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9911&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9898,
               "published": 1,
               "name": "Wall lights",
-              "icon": "\/files\/categories\/product\/9898\/54d3491b69c0402923c7fdf9205c3c29.jpeg",
+              "icon": "/files/categories/product/9898/54d3491b69c0402923c7fdf9205c3c29.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 2,
               "position": 3,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9898&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9898&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9188,
               "published": 1,
               "name": "Floor lamps",
-              "icon": "\/files\/categories\/product\/9188\/12fd9c14cf4a412f9959db80ce00dd21.jpeg",
+              "icon": "/files/categories/product/9188/12fd9c14cf4a412f9959db80ce00dd21.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1035,13 +1046,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9188&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9188&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9199,
               "published": 1,
               "name": "Table lamps, nightlights",
-              "icon": "\/files\/categories\/product\/9199\/36da942e0366657cce1c01c904609fd1.jpeg",
+              "icon": "/files/categories/product/9199/36da942e0366657cce1c01c904609fd1.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1050,7 +1061,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9199&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9199&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -1058,7 +1069,7 @@
           "id": 42,
           "published": 1,
           "name": "Climate",
-          "icon": "\/files\/categories\/product\/42\/4e1f84ce1312e7904ccc7d62941cf9a8.jpeg",
+          "icon": "/files/categories/product/42/4e1f84ce1312e7904ccc7d62941cf9a8.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1067,13 +1078,13 @@
           "tags": [
             "climate"
           ],
-          "urlList": "\/api\/category\/products?category_id=42&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=42&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 82,
           "published": 1,
           "name": "Sockets & Switches",
-          "icon": "\/files\/categories\/product\/82\/75449322b17272864e20306385e166a3.jpeg",
+          "icon": "/files/categories/product/82/75449322b17272864e20306385e166a3.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1082,7 +1093,7 @@
           "tags": [
             "sockets & switches"
           ],
-          "urlList": "\/api\/category\/products?category_id=82&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=82&key=4500282e6846fe6650de81bd35d27540"
         }
       ]
     },
@@ -1090,7 +1101,7 @@
       "id": 44,
       "published": 1,
       "name": "Decor",
-      "icon": "\/files\/categories\/product\/44\/b82a021088bb197f784795afe08c27d3.jpeg",
+      "icon": "/files/categories/product/44/b82a021088bb197f784795afe08c27d3.jpeg",
       "roomtodo": 1,
       "type": "category",
       "iconFill": 0,
@@ -1102,7 +1113,7 @@
           "id": 47,
           "published": 1,
           "name": "Carpets&Rugs",
-          "icon": "\/files\/categories\/product\/47\/8a040ac63089076e06f48fa87085a065.jpeg",
+          "icon": "/files/categories/product/47/8a040ac63089076e06f48fa87085a065.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -1116,40 +1127,40 @@
               "id": 9910,
               "published": 1,
               "name": "Rectangular and square",
-              "icon": "\/files\/categories\/product\/9910\/d284fc3f3b53de3aba1e518555ce24cf.png",
+              "icon": "/files/categories/product/9910/d284fc3f3b53de3aba1e518555ce24cf.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 4,
               "position": 1,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9910&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9910&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9906,
               "published": 1,
               "name": "Round and oval",
-              "icon": "\/files\/categories\/product\/9906\/53e9a4ffa9c4550037e674ef6828847d.png",
+              "icon": "/files/categories/product/9906/53e9a4ffa9c4550037e674ef6828847d.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 4,
               "position": 2,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9906&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9906&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9904,
               "published": 1,
               "name": "Other shapes",
-              "icon": "\/files\/categories\/product\/9904\/ddc8bacb3fc126378d29af19a8dd22c6.png",
+              "icon": "/files/categories/product/9904/ddc8bacb3fc126378d29af19a8dd22c6.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 4,
               "position": 3,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9904&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9904&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -1157,7 +1168,7 @@
           "id": 69,
           "published": 1,
           "name": "Textile",
-          "icon": "\/files\/categories\/product\/69\/d2020bf4bd308b42a23bcc80e628feb7.jpeg",
+          "icon": "/files/categories/product/69/d2020bf4bd308b42a23bcc80e628feb7.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -1169,7 +1180,7 @@
               "id": 70,
               "published": 1,
               "name": "Covers",
-              "icon": "\/files\/categories\/product\/70\/dbd8a636a44f188676a394954ee09221.jpeg",
+              "icon": "/files/categories/product/70/dbd8a636a44f188676a394954ee09221.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -1178,13 +1189,13 @@
               "tags": [
                 "covers"
               ],
-              "urlList": "\/api\/category\/products?category_id=70&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=70&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 72,
               "published": 1,
               "name": "Pillows",
-              "icon": "\/files\/categories\/product\/72\/ed1b24a6bd53d17070c5fdd5e760dd55.jpeg",
+              "icon": "/files/categories/product/72/ed1b24a6bd53d17070c5fdd5e760dd55.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -1193,13 +1204,13 @@
               "tags": [
                 "pillows"
               ],
-              "urlList": "\/api\/category\/products?category_id=72&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=72&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 79,
               "published": 1,
               "name": "Misc textile",
-              "icon": "\/files\/categories\/product\/79\/c638d5a58f3b3ae93531bed434fed38d.jpeg",
+              "icon": "/files/categories/product/79/c638d5a58f3b3ae93531bed434fed38d.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 1,
@@ -1208,7 +1219,7 @@
               "tags": [
                 "textile-miscellaneuos"
               ],
-              "urlList": "\/api\/category\/products?category_id=79&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=79&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -1216,7 +1227,7 @@
           "id": 9894,
           "published": 1,
           "name": "Wall art",
-          "icon": "\/files\/categories\/product\/9894\/54725fddfdaa88f479ccae23c76545ba.jpeg",
+          "icon": "/files/categories/product/9894/54725fddfdaa88f479ccae23c76545ba.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -1228,105 +1239,105 @@
               "id": 9895,
               "published": 1,
               "name": "Abstract",
-              "icon": "\/files\/categories\/product\/9895\/0fe56d9c4bd2fe8d20b4d503c503cd99.png",
+              "icon": "/files/categories/product/9895/0fe56d9c4bd2fe8d20b4d503c503cd99.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 1,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9895&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9895&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9896,
               "published": 1,
               "name": "Landscapes and plants",
-              "icon": "\/files\/categories\/product\/9896\/b5a87c2521bbea7fe401de105b827c08.png",
+              "icon": "/files/categories/product/9896/b5a87c2521bbea7fe401de105b827c08.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 2,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9896&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9896&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9908,
               "published": 1,
               "name": "Animals",
-              "icon": "\/files\/categories\/product\/9908\/dc276d3399b5cf8adec110f0bf6fb679.png",
+              "icon": "/files/categories/product/9908/dc276d3399b5cf8adec110f0bf6fb679.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 3,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9908&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9908&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9897,
               "published": 1,
               "name": "People",
-              "icon": "\/files\/categories\/product\/9897\/8026cf5c4b5c7d593d0a1f0684719d2a.png",
+              "icon": "/files/categories/product/9897/8026cf5c4b5c7d593d0a1f0684719d2a.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 4,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9897&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9897&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9900,
               "published": 1,
               "name": "Architecture and technology",
-              "icon": "\/files\/categories\/product\/9900\/dfd7a28a2076305c4558d0576d85c59d.png",
+              "icon": "/files/categories/product/9900/dfd7a28a2076305c4558d0576d85c59d.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 5,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9900&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9900&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9905,
               "published": 1,
               "name": "Texts and calligraphy",
-              "icon": "\/files\/categories\/product\/9905\/1ababb41344278367362ee97aecd20e8.png",
+              "icon": "/files/categories/product/9905/1ababb41344278367362ee97aecd20e8.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 6,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9905&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9905&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9912,
               "published": 1,
               "name": "Anime and cartoons",
-              "icon": "\/files\/categories\/product\/9912\/3eb1f2f8853f9385cc8de999693bb91f.png",
+              "icon": "/files/categories/product/9912/3eb1f2f8853f9385cc8de999693bb91f.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 7,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9912&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9912&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9903,
               "published": 1,
               "name": "Religious",
-              "icon": "\/files\/categories\/product\/9903\/35789a82ddc2ef19bcb2442a9bb5f68f.png",
+              "icon": "/files/categories/product/9903/35789a82ddc2ef19bcb2442a9bb5f68f.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
               "privateMaterialType": 3,
               "position": 8,
               "tags": [],
-              "urlList": "\/api\/category\/products?category_id=9903&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9903&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -1334,7 +1345,7 @@
           "id": 46,
           "published": 1,
           "name": "Mirrors",
-          "icon": "\/files\/categories\/product\/46\/051e67c8ae6f1d66dc7148748be5b761.jpeg",
+          "icon": "/files/categories/product/46/051e67c8ae6f1d66dc7148748be5b761.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1343,13 +1354,13 @@
           "tags": [
             "mirrors"
           ],
-          "urlList": "\/api\/category\/products?category_id=46&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=46&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 85,
           "published": 1,
           "name": "Vases",
-          "icon": "\/files\/categories\/product\/85\/00f5573fa4771d995cdfd1537978f2a7.png",
+          "icon": "/files/categories/product/85/00f5573fa4771d995cdfd1537978f2a7.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1358,13 +1369,13 @@
           "tags": [
             "vases"
           ],
-          "urlList": "\/api\/category\/products?category_id=85&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=85&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 48,
           "published": 1,
           "name": "Plants",
-          "icon": "\/files\/categories\/product\/48\/23cb70bf5570d76237a1e68058115b6e.jpeg",
+          "icon": "/files/categories/product/48/23cb70bf5570d76237a1e68058115b6e.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 1,
@@ -1376,7 +1387,7 @@
               "id": 9723,
               "published": 1,
               "name": "Houseplants",
-              "icon": "\/files\/categories\/product\/9723\/173b3ba0ca491c1b6af88ead41b364b4.jpeg",
+              "icon": "/files/categories/product/9723/173b3ba0ca491c1b6af88ead41b364b4.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1385,13 +1396,13 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9723&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9723&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9722,
               "published": 1,
               "name": "Outdoor plants",
-              "icon": "\/files\/categories\/product\/9722\/a9036271150b822b06d8749148e28928.jpeg",
+              "icon": "/files/categories/product/9722/a9036271150b822b06d8749148e28928.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1400,7 +1411,7 @@
               "tags": [
                 ""
               ],
-              "urlList": "\/api\/category\/products?category_id=9722&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9722&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -1408,7 +1419,7 @@
           "id": 49,
           "published": 1,
           "name": "Window decor",
-          "icon": "\/files\/categories\/product\/49\/97e23eb7bce460d3cff97aba447232a9.png",
+          "icon": "/files/categories/product/49/97e23eb7bce460d3cff97aba447232a9.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1417,13 +1428,13 @@
           "tags": [
             "window decor"
           ],
-          "urlList": "\/api\/category\/products?category_id=49&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=49&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9191,
           "published": 1,
           "name": "Wall plates",
-          "icon": "\/files\/categories\/product\/9191\/3b3b6d4bac5b7c9dd2c9041663264439.png",
+          "icon": "/files/categories/product/9191/3b3b6d4bac5b7c9dd2c9041663264439.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1432,13 +1443,13 @@
           "tags": [
             ""
           ],
-          "urlList": "\/api\/category\/products?category_id=9191&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9191&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 50,
           "published": 1,
           "name": "Misc decor",
-          "icon": "\/files\/categories\/product\/50\/35f61e60e4cc8edc6dce0e451a9823a1.png",
+          "icon": "/files/categories/product/50/35f61e60e4cc8edc6dce0e451a9823a1.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1447,20 +1458,20 @@
           "tags": [
             "miscellaneous"
           ],
-          "urlList": "\/api\/category\/products?category_id=50&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=50&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9858,
           "published": 1,
           "name": "Holidays",
-          "icon": "\/files\/categories\/product\/9858\/afdc2c281941473666e93703766cd4f3.png",
+          "icon": "/files/categories/product/9858/afdc2c281941473666e93703766cd4f3.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
           "privateMaterialType": 2,
           "position": 11,
           "tags": [],
-          "urlList": "\/api\/category\/products?category_id=9858&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9858&key=4500282e6846fe6650de81bd35d27540"
         }
       ]
     },
@@ -1468,7 +1479,7 @@
       "id": 51,
       "published": 1,
       "name": "Misc",
-      "icon": "\/files\/categories\/product\/51\/91acb6196e53bb6c059ce1daa5f61979.jpeg",
+      "icon": "/files/categories/product/51/91acb6196e53bb6c059ce1daa5f61979.jpeg",
       "roomtodo": 1,
       "type": "category",
       "iconFill": 0,
@@ -1482,7 +1493,7 @@
           "id": 90,
           "published": 1,
           "name": "Kitchenware",
-          "icon": "\/files\/categories\/product\/90\/da78c03fd0ab210060e3c118504b3fbb.jpeg",
+          "icon": "/files/categories/product/90/da78c03fd0ab210060e3c118504b3fbb.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1491,13 +1502,13 @@
           "tags": [
             "kitchenware"
           ],
-          "urlList": "\/api\/category\/products?category_id=90&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=90&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 52,
           "published": 1,
           "name": "Housekeeping",
-          "icon": "\/files\/categories\/product\/52\/85f733e68cd5eed03e961ed32aa24304.png",
+          "icon": "/files/categories/product/52/85f733e68cd5eed03e961ed32aa24304.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1506,13 +1517,13 @@
           "tags": [
             "housekeeping"
           ],
-          "urlList": "\/api\/category\/products?category_id=52&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=52&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 8450,
           "published": 1,
           "name": "Human",
-          "icon": "\/files\/categories\/product\/8450\/c0e3aae034b1e61737ffca653ba79e90.jpeg",
+          "icon": "/files/categories/product/8450/c0e3aae034b1e61737ffca653ba79e90.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1521,13 +1532,13 @@
           "tags": [
             "human"
           ],
-          "urlList": "\/api\/category\/products?category_id=8450&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=8450&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 93,
           "published": 1,
           "name": "Animals",
-          "icon": "\/files\/categories\/product\/93\/f05301eb4b7ebb3b98f117024adfbc98.jpeg",
+          "icon": "/files/categories/product/93/f05301eb4b7ebb3b98f117024adfbc98.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1536,26 +1547,26 @@
           "tags": [
             "animals"
           ],
-          "urlList": "\/api\/category\/products?category_id=93&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=93&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9901,
           "published": 1,
           "name": "Clothing, footwear, accessories",
-          "icon": "\/files\/categories\/product\/9901\/6f6b1155894766cefa35b5c692d1ecc0.png",
+          "icon": "/files/categories/product/9901/6f6b1155894766cefa35b5c692d1ecc0.png",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
           "privateMaterialType": 2,
           "position": 5,
           "tags": [],
-          "urlList": "\/api\/category\/products?category_id=9901&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9901&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9511,
           "published": 1,
           "name": "Garage",
-          "icon": "\/files\/categories\/product\/9511\/ad0fb8f413e7e5663ed12bf06806a03a.jpeg",
+          "icon": "/files/categories/product/9511/ad0fb8f413e7e5663ed12bf06806a03a.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1564,13 +1575,13 @@
           "tags": [
             ""
           ],
-          "urlList": "\/api\/category\/products?category_id=9511&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9511&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 95,
           "published": 1,
           "name": "Sport",
-          "icon": "\/files\/categories\/product\/95\/935386c90a433171e92c337a71da359f.jpeg",
+          "icon": "/files/categories/product/95/935386c90a433171e92c337a71da359f.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1579,13 +1590,13 @@
           "tags": [
             "sport"
           ],
-          "urlList": "\/api\/category\/products?category_id=95&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=95&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 96,
           "published": 1,
           "name": "Music",
-          "icon": "\/files\/categories\/product\/96\/7310c0ca88908698c44a4d3ad5f2eace.jpeg",
+          "icon": "/files/categories/product/96/7310c0ca88908698c44a4d3ad5f2eace.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1594,13 +1605,13 @@
           "tags": [
             "music"
           ],
-          "urlList": "\/api\/category\/products?category_id=96&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=96&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 97,
           "published": 1,
           "name": "Toys",
-          "icon": "\/files\/categories\/product\/97\/c0e290225fbae886dae9ca8289a8b718.jpeg",
+          "icon": "/files/categories/product/97/c0e290225fbae886dae9ca8289a8b718.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 1,
@@ -1609,7 +1620,7 @@
           "tags": [
             "toys"
           ],
-          "urlList": "\/api\/category\/products?category_id=97&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=97&key=4500282e6846fe6650de81bd35d27540"
         }
       ]
     },
@@ -1617,7 +1628,7 @@
       "id": 9925,
       "published": 1,
       "name": "Commercial Spaces",
-      "icon": "\/files\/categories\/product\/9925\/d2599de14233eeed62dba57b7ced7c53.jpeg",
+      "icon": "/files/categories/product/9925/d2599de14233eeed62dba57b7ced7c53.jpeg",
       "roomtodo": 1,
       "type": "category",
       "iconFill": 0,
@@ -1631,7 +1642,7 @@
           "id": 9986,
           "published": 1,
           "name": "Gym",
-          "icon": "\/files\/categories\/product\/9986\/98b69afeb455d1de7d05f775e6abfa86.jpeg",
+          "icon": "/files/categories/product/9986/98b69afeb455d1de7d05f775e6abfa86.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -1643,7 +1654,7 @@
               "id": 9987,
               "published": 1,
               "name": "Barbels and Dumbbels",
-              "icon": "\/files\/categories\/product\/9987\/477b048169b0fedc2678d50caf258206.jpeg",
+              "icon": "/files/categories/product/9987/477b048169b0fedc2678d50caf258206.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1652,13 +1663,13 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9987&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9987&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9988,
               "published": 1,
               "name": "Strength training machines",
-              "icon": "\/files\/categories\/product\/9988\/d764232266811b94c7fce96145a9fddf.jpeg",
+              "icon": "/files/categories/product/9988/d764232266811b94c7fce96145a9fddf.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1667,13 +1678,13 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9988&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9988&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9989,
               "published": 1,
               "name": "Cardio",
-              "icon": "\/files\/categories\/product\/9989\/10409da54a6f012a6b9419ca57ea43e4.jpeg",
+              "icon": "/files/categories/product/9989/10409da54a6f012a6b9419ca57ea43e4.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1682,13 +1693,13 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9989&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9989&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9990,
               "published": 1,
               "name": "Benches",
-              "icon": "\/files\/categories\/product\/9990\/b074d7af21acbfd1916eb074b969db56.jpeg",
+              "icon": "/files/categories/product/9990/b074d7af21acbfd1916eb074b969db56.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1697,13 +1708,13 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9990&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9990&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9991,
               "published": 1,
               "name": "Gym bars",
-              "icon": "\/files\/categories\/product\/9991\/5b4ed70331342431440ca7161ef72feb.jpeg",
+              "icon": "/files/categories/product/9991/5b4ed70331342431440ca7161ef72feb.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1712,13 +1723,13 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9991&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9991&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9992,
               "published": 1,
               "name": "Other sport equipment",
-              "icon": "\/files\/categories\/product\/9992\/bb9514b8a0788431770d175441de8edb.jpeg",
+              "icon": "/files/categories/product/9992/bb9514b8a0788431770d175441de8edb.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1727,13 +1738,13 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9992&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9992&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9993,
               "published": 1,
               "name": "Locker room",
-              "icon": "\/files\/categories\/product\/9993\/52069ec6ef5ecc98421b56d152194a62.jpeg",
+              "icon": "/files/categories/product/9993/52069ec6ef5ecc98421b56d152194a62.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1742,7 +1753,7 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9993&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9993&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -1750,7 +1761,7 @@
           "id": 9926,
           "published": 1,
           "name": "Exhibition Stands",
-          "icon": "\/files\/categories\/product\/9926\/49fcb1a3b91b7b154e3f931658e74138.jpeg",
+          "icon": "/files/categories/product/9926/49fcb1a3b91b7b154e3f931658e74138.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1759,13 +1770,13 @@
           "tags": [
             "r2d_subscription_pro "
           ],
-          "urlList": "\/api\/category\/products?category_id=9926&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9926&key=4500282e6846fe6650de81bd35d27540"
         },
         {
           "id": 9927,
           "published": 1,
           "name": "Retail equipment",
-          "icon": "\/files\/categories\/product\/9927\/5197988f65ec798cfcdbf5e21a4390e0.jpeg",
+          "icon": "/files/categories/product/9927/5197988f65ec798cfcdbf5e21a4390e0.jpeg",
           "roomtodo": 1,
           "type": "category",
           "iconFill": 0,
@@ -1779,7 +1790,7 @@
               "id": 9928,
               "published": 1,
               "name": "Retail shelving",
-              "icon": "\/files\/categories\/product\/9928\/94546f4160069fbc3a00152767c1c04d.png",
+              "icon": "/files/categories/product/9928/94546f4160069fbc3a00152767c1c04d.png",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1788,13 +1799,13 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9928&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9928&key=4500282e6846fe6650de81bd35d27540"
             },
             {
               "id": 9985,
               "published": 1,
               "name": "Display cases",
-              "icon": "\/files\/categories\/product\/9985\/345275199d5898054613fe1e2fef6481.jpeg",
+              "icon": "/files/categories/product/9985/345275199d5898054613fe1e2fef6481.jpeg",
               "roomtodo": 1,
               "type": "product",
               "iconFill": 0,
@@ -1803,7 +1814,7 @@
               "tags": [
                 "r2d_subscription_pro "
               ],
-              "urlList": "\/api\/category\/products?category_id=9985&key=4500282e6846fe6650de81bd35d27540"
+              "urlList": "/api/category/products?category_id=9985&key=4500282e6846fe6650de81bd35d27540"
             }
           ]
         },
@@ -1811,7 +1822,7 @@
           "id": 9994,
           "published": 1,
           "name": "Professional kitchen equipment",
-          "icon": "\/files\/categories\/product\/9994\/1740b26ef310b35cdfb997b530e520fd.jpeg",
+          "icon": "/files/categories/product/9994/1740b26ef310b35cdfb997b530e520fd.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
@@ -1820,7 +1831,7 @@
           "tags": [
             "r2d_subscription_pro "
           ],
-          "urlList": "\/api\/category\/products?category_id=9994&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9994&key=4500282e6846fe6650de81bd35d27540"
         }
       ]
     },
@@ -1828,7 +1839,7 @@
       "id": 9929,
       "published": 1,
       "name": "Random items",
-      "icon": "\/files\/categories\/product\/9925\/d2599de14233eeed62dba57b7ced7c53.jpeg",
+      "icon": "/files/categories/product/9925/d2599de14233eeed62dba57b7ced7c53.jpeg",
       "roomtodo": 1,
       "type": "category",
       "iconFill": 0,
@@ -1840,14 +1851,125 @@
           "id": 9882,
           "published": 1,
           "name": "Random item 1",
-          "icon": "\/files\/categories\/product\/9177\/aa893c9bc715ab2c958709e395571732.jpeg",
+          "icon": "/files/categories/product/9177/aa893c9bc715ab2c958709e395571732.jpeg",
           "roomtodo": 1,
           "type": "product",
           "iconFill": 0,
           "privateMaterialType": 2,
           "position": 10,
           "tags": [],
-          "urlList": "\/api\/category\/products?category_id=9882&key=4500282e6846fe6650de81bd35d27540"
+          "urlList": "/api/category/products?category_id=9882&key=4500282e6846fe6650de81bd35d27540",
+          "nodes": [
+            {
+              "id": 9907,
+              "name": "Windows",
+              "nodes": []
+            },
+            {
+              "id": 9909,
+              "name": "Doors",
+              "nodes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Coverings",
+      "nodes": [
+        {
+          "id": 62,
+          "name": "Carpeting",
+          "nodes": []
+        },
+        {
+          "id": 61,
+          "name": "Linoleum",
+          "nodes": []
+        },
+        {
+          "id": 63,
+          "name": "Grass&Ground",
+          "nodes": []
+        },
+        {
+          "id": 22,
+          "name": "Bricks&Stone",
+          "nodes": []
+        },
+        {
+          "id": 8376,
+          "name": "Paint",
+          "nodes": []
+        },
+        {
+          "id": 75,
+          "name": "Tiles",
+          "nodes": [
+            {
+              "id": 21,
+              "name": "Mosaic",
+              "nodes": []
+            },
+            {
+              "id": 20,
+              "name": "Ceramic",
+              "nodes": []
+            },
+            {
+              "id": 77,
+              "name": "Stone",
+              "nodes": []
+            }
+          ]
+        },
+        {
+          "id": 92,
+          "name": "Stucco",
+          "nodes": []
+        },
+        {
+          "id": 68,
+          "name": "Wood",
+          "nodes": []
+        },
+        {
+          "id": 58,
+          "name": "Metal",
+          "nodes": []
+        },
+        {
+          "id": 18,
+          "name": "Wallpapers",
+          "nodes": []
+        },
+        {
+          "id": 65,
+          "name": "Laminate",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "id": 9872,
+      "name": "Experiments",
+      "nodes": [
+        {
+          "id": 9873,
+          "name": "Unsorted",
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "id": 9751,
+      "name": "Construction",
+      "nodes": [
+        {
+          "id": 9752,
+          "name": "Plinths",
+          "nodes": []
         }
       ]
     }
