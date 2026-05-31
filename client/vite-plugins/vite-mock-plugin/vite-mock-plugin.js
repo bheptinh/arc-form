@@ -45,10 +45,6 @@ export default {
         // TODO: MIGRATE TO BACKEND → GET /server-api/catalog/favorites
         //       Remove this handler once the Express route is live.
         mockFilePath = './mock/favorites.json';
-      } else if (url.startsWith('/planner/json_config')) {
-        // TODO: MIGRATE TO BACKEND → GET /server-api/planner/config
-        //       Remove this handler once the Express route is live.
-        mockFilePath = './mock/planner-json-config.json';
       } else if (url.startsWith('/category/public_materials')) {
         // TODO: MIGRATE TO BACKEND → GET /server-api/catalog/materials
         //       Remove this handler once the Express route is live.
