@@ -13,6 +13,12 @@ export function getNavTree() {
   return JSON.parse(readFileSync(navTreePath, 'utf-8'));
 }
 
+const materialsTreePath = path.resolve(__dirname, '../..', dbDir, 'materials-tree.json');
+
+export function getMaterialsTree() {
+  return JSON.parse(readFileSync(materialsTreePath, 'utf-8'));
+}
+
 // --- collections ---
 
 const stmtProducts = db.prepare(`

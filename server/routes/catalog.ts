@@ -1,12 +1,16 @@
 import { Router } from 'express';
-import { getNavTree, getCollectionProducts } from '../services/catalog.js';
+import { getNavTree, getMaterialsTree, getCollectionProducts } from '../services/catalog.js';
 
 const router = Router();
 
 // R2D expects { status: 'success', tree: NavNode[] }
-// NavNode ids are UUIDs; urlList points to /server-api/catalog/collections/:uuid
-router.get('/nav', (_req, res) => {
+router.get('/products/nav', (_req, res) => {
   res.json(getNavTree());
+});
+
+// R2D expects { status: 'success', materials: [...] }
+router.get('/materials/nav', (_req, res) => {
+  res.json(getMaterialsTree());
 });
 
 // R2D expects { status: 'ok', data: { total, items, offset, limit } }

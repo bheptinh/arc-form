@@ -197,5 +197,19 @@ const navTree = { ...catTree, tree: catTree.tree.map(transformNavNode) };
 writeFileSync(path.resolve(root, dbDir, 'nav-tree.json'), JSON.stringify(navTree, null, 2));
 console.log('nav-tree.json written.');
 
+// --- phase 6: generate materials-tree.json ---
+
+function transformMatNode(node) {
+  const uuid = matCatExtToUuid.get(Number(node.id));
+  const out = { ...node, id: uuid ?? node.id };
+  if (uuid && node.urlList) out.urlList = `/server-api/catalog/collections/${uuid}`;
+  if (node.nodes?.length) out.nodes = node.nodes.map(transformMatNode);
+  return out;
+}
+
+const materialsTree = { ...matTree, materials: matTree.materials.map(transformMatNode) };
+writeFileSync(path.resolve(root, dbDir, 'materials-tree.json'), JSON.stringify(materialsTree, null, 2));
+console.log('materials-tree.json written.');
+
 db.close();
 console.log('done.');
