@@ -37,6 +37,7 @@
     "simplebar-react": "^3.3.2",
     "suneditor": "^2.47.10",
     "swiper": "^8.4.7",
+    "zod": "^4.4.3",
     "zustand": "^5.0.13"
   },
   "devDependencies": {

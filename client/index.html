@@ -25,7 +25,7 @@
     R2D.RECURRING_PLANS = { "": { "1": "11" }, "basic": { "1": "5", "6": "6", "12": "7" }, "pro": { "1": "8", "6": "9", "12": "10" } };
     R2D.URL = {
       MERCHANT_SITE_KEY: '',
-      REACT_BASEPATH: '/planner',
+      REACT_BASEPATH: '',
       // URL_SIGN_IN_VIA_FB: '/api/auth/login_via_fb?key=4500282e6846fe6650de81bd35d27540',
       // URL_SIGN_IN_VIA_GOOGLE: '/api2/user/login_via_google?key=4500282e6846fe6650de81bd35d27540',
       // DOMAIN: 'https://roomtodo.com',
@@ -42,12 +42,12 @@
       URL_GET_CATEGORY_PRODUCTS: '/api/category/products?key=4500282e6846fe6650de81bd35d27540',
       URL_GET_MATERIALS_SET: '/api/category/getMaterialsBySetId?key=4500282e6846fe6650de81bd35d27540',
       URL_GET_SET_TREE: '/api/category/get_set_tree?key=4500282e6846fe6650de81bd35d27540',
-      URL_LOAD_SHARED_PLAN: '/api/planner/open_shared?key=4500282e6846fe6650de81bd35d27540&plan_hash=bi0t3wvqnek',
-      URL_LOAD_PLAN: '/api/planner/open?key=4500282e6846fe6650de81bd35d27540',
-      URL_SAVE_PLAN: '/api/planner/save?key=4500282e6846fe6650de81bd35d27540',
-      URL_RENAME_PLAN: '/api/planner/rename?key=4500282e6846fe6650de81bd35d27540',
-      URL_COPY_PLAN: '/api/planner/copy?key=4500282e6846fe6650de81bd35d27540',
-      URL_DELETE_PLAN: '/api/planner/delete?key=4500282e6846fe6650de81bd35d27540',
+      URL_LOAD_SHARED_PLAN: '/server-api/projects/',
+      URL_LOAD_PLAN: '/server-api/projects/',
+      URL_SAVE_PLAN: '/server-api/projects/',
+      URL_RENAME_PLAN: '/server-api/projects/',
+      URL_COPY_PLAN: '/server-api/projects/',
+      URL_DELETE_PLAN: '/server-api/projects/',
       URL_SHARE_PLAN: '/api/planner/shareLink?key=4500282e6846fe6650de81bd35d27540',
       URL_LANGUAGE_LIST: '/api/language/list?key=4500282e6846fe6650de81bd35d27540',
       URL_SET_LANGUAGE: '/api/language/set?key=4500282e6846fe6650de81bd35d27540',
@@ -109,7 +109,7 @@
 
     R2D.OPTIONS = {
       PRO_PLAN: false,
-      PLAN_HASH: 'bi0t3wvqnek',
+      PLAN_HASH: 'dev00000-0000-0000-0000-000000000001',
       PLAN_ID: '',
       CLIENT_KEY: 'd7322ed717dedf1eb4e6e52a37ea7bcd',
       NEED_DOWNSCALE_TEXTURES: 1,

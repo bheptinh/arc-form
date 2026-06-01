@@ -15275,15 +15275,9 @@ R2D.SceneRename = function(planId, oldName, newName) {
     scope.getSceneName = function() { return newName };
     scope.getSceneNameOld = function() { return oldName };
     scope.execute = function() {
-        var params = 'json=' + JSON.stringify({
-                plan_id:planId,
-                plan_name:newName,
-                plan_old_name:oldName
-            });
-        var url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_RENAME_PLAN);
-
-        loader = R2D.XHRLoader.getPostLoader(url, params, null, null, true);
-
+        var url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_RENAME_PLAN) + planId;
+        loader = new R2D.XHRLoader();
+        loader.load(url, JSON.stringify({name: newName}), 'PATCH', [{header: 'Content-Type', value: 'application/json'}], null, true);
         loader.addEventListener(Event.COMPLETE, loaderEventHandler);
         loader.addEventListener(Event.ERROR, loaderEventHandler);
     };
@@ -15364,15 +15358,9 @@ R2D.SceneCopy = function(planId, oldName, newName) {
     scope.getSceneName = function() { return newName };
     scope.getSceneNameOld = function() { return oldName };
     scope.execute = function() {
-        let params = 'json=' + JSON.stringify({
-                plan_id:planId,
-                plan_new_name:newName,
-                plan_old_name:oldName
-            });
-        let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_COPY_PLAN);
-
-        loader = R2D.XHRLoader.getPostLoader(url, params, null, null, true);
-
+        let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_COPY_PLAN) + planId + '/copy';
+        loader = new R2D.XHRLoader();
+        loader.load(url, JSON.stringify({name: newName}), 'POST', [{header: 'Content-Type', value: 'application/json'}], null, true);
         loader.addEventListener(Event.COMPLETE, loaderEventHandler);
         loader.addEventListener(Event.ERROR, loaderEventHandler);
     };
@@ -15437,13 +15425,9 @@ R2D.SceneDelete = function(planId) {
 
     scope.getSceneId = function() { return planId };
     scope.execute = function() {
-        var params = 'json=' + JSON.stringify({
-                plan_id:planId
-            });
-        var url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_DELETE_PLAN);
-
-        loader = R2D.XHRLoader.getPostLoader(url, params, null, null, true);
-
+        var url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_DELETE_PLAN) + planId;
+        loader = new R2D.XHRLoader();
+        loader.load(url, null, 'DELETE', null, null, true);
         loader.addEventListener(Event.COMPLETE, loaderEventHandler);
         loader.addEventListener(Event.ERROR, loaderEventHandler);
     };
@@ -23338,38 +23322,12 @@ R2D.SceneLoader = function (apiDispatcher, sceneToOpen = true) {
     };
 
     scope.load = function (planId, asHash) {
-        let params = "";
-        let url = "";
-
-        if (asHash) {
-            params =
-                "json=" +
-                JSON.stringify({
-                    plan_hash: planId,
-                });
-            //-----
-
-            url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_LOAD_SHARED_PLAN);
-            let urlParts = url.split("?");
-            try {
-                let urlParams = new URLSearchParams(urlParts[1]);
-                if (!urlParams.has("plan_hash") || urlParams.get("plan_hash") == "" || urlParams.get("plan_hash") != planId) urlParams.set("plan_hash", planId);
-                url = urlParts[0] + "?" + urlParams.toString();
-            } catch (e) {
-                console.log(e);
-            }
-        } else {
-            params =
-                "json=" +
-                JSON.stringify({
-                    plan_id: planId,
-                });
-            url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_LOAD_PLAN);
-        }
+        const url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_LOAD_PLAN) + planId;
 
         R2D.scene.stopClearingPool();
 
-        sceneLoader = R2D.XHRLoader.getPostLoader(url, params, null, null, true);
+        sceneLoader = new R2D.XHRLoader();
+        sceneLoader.load(url, null, 'get', null, null, true);
 
         sceneLoader.addEventListener(Event.COMPLETE, sceneLoaderEventHandler);
         sceneLoader.addEventListener(Event.ERROR, sceneLoaderEventHandler);
@@ -23461,17 +23419,12 @@ R2D.SceneSaver = function() {
     };
     scope.save = function(data, autoSave) {
         if ( loader != null ) return;
-        
-        var params = {json: encodeURIComponent(JSON.stringify(data))};
-
-        if(autoSave) params.autoSave = 1;
-
-        params = R2D.XHRLoader.makeParamsString(params);
-
-        // console.log(params);
-
-        loader = R2D.XHRLoader.getPostLoader(R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_SAVE_PLAN), params, null, null, true);
-
+        var planId = data.plan && data.plan.id;
+        var url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_SAVE_PLAN) + (planId || '');
+        var method = planId ? 'PUT' : 'POST';
+        var body = JSON.stringify(autoSave ? {...data, autoSave: 1} : data);
+        loader = new R2D.XHRLoader();
+        loader.load(url, body, method, [{header: 'Content-Type', value: 'application/json'}], null, true);
         loader.addEventListener(Event.COMPLETE, loaderEventHandler);
         loader.addEventListener(Event.ERROR, loaderEventHandler);
     };

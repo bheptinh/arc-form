@@ -41,46 +41,6 @@ export default {
         // TODO: MOVE TO FE — translation strings belong in the React i18n bundle, not the backend.
         //       Remove this handler and URL_TRANSLATION from index.html R2D.URL once i18n is in place.
         mockFilePath = './mock/user-translations.json';
-      } else if (url.startsWith('/planner/open_shared')) {
-        // TODO: MIGRATE TO BACKEND → GET /server-api/planner/open-shared
-        //       Remove this handler once the Express route is live.
-        if (url.includes('plan_hash=bi0t3wvqnek')) {
-          mockFilePath = './mock/planner/bi0t3wvqnek.json';
-        } else {
-          res.statusCode = 404;
-          res.end('Not found');
-          return;
-        }
-
-
-      } else if (url.startsWith('/planner/save')) {
-        // TODO: MIGRATE TO BACKEND → POST /server-api/planner/save
-        //       Remove this handler once the Express route is live.
-        let body = '';
-        req.on('data', chunk => body += chunk);
-        req.on('end', () => {
-          const params = new URLSearchParams(body);
-
-
-          const data = JSON.parse(params.get('json') || '{}');
-
-          const mockProjectPath = `./mock/planner/${data.plan.hash}.json`;
-          const jsonData = {
-            status: "success",
-            viewOnly: false,
-            userPlan: "pro",
-            plan: data.plan,
-          }
-          console.log('Saving planner data to', mockProjectPath);
-
-          // fs.writeFileSync(path.resolve(__dirname, mockProjectPath), JSON.stringify(jsonData, null, 2), 'utf-8');
-
-
-          res.statusCode = 200;
-          res.end();
-        });
-        return;
-
       } else if (url.startsWith('/planner/connect')) {
         // TODO: DELETE — this endpoint has no purpose. Remove handler and URL_CONNECT (if any) from R2D.URL.
         res.statusCode = 200;

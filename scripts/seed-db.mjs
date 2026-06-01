@@ -1,5 +1,5 @@
 import Database from 'better-sqlite3';
-import { readFileSync, readdirSync, writeFileSync } from 'fs';
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'fs';
 import { randomUUID } from 'crypto';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -214,6 +214,32 @@ function transformMatNode(node) {
 const materialsTree = { ...matTree, materials: matTree.materials.map(transformMatNode) };
 writeFileSync(path.resolve(root, dbDir, 'materials-tree.json'), JSON.stringify(materialsTree, null, 2));
 console.log('materials-tree.json written.');
+
+// --- phase 7: seed dev project ---
+
+const DEV_USER_ID = '57022071-c204-6e51-1e36-78691b317b3f';
+db.prepare(`INSERT OR IGNORE INTO users (id, email, name, plan) VALUES (?, 'varjatua@gmail.com', 'Bohdan Heptinh', 'pro')`).run(DEV_USER_ID);
+
+const DEV_PROJECT_ID = 'dev00000-0000-0000-0000-000000000001';
+const mockProjectSrc = path.join(root, 'client/vite-plugins/vite-mock-plugin/mock/planner/bi0t3wvqnek.json');
+const projectsDir = path.resolve(root, dbDir, 'projects');
+const mockProjectDst = path.join(projectsDir, `${DEV_PROJECT_ID}.json`);
+
+mkdirSync(projectsDir, { recursive: true });
+
+const mockProjectData = JSON.parse(readFileSync(mockProjectSrc, 'utf-8'));
+const mockPlan = mockProjectData.plan ?? mockProjectData;
+
+if (!existsSync(mockProjectDst)) {
+  writeFileSync(mockProjectDst, JSON.stringify({ ...mockPlan, id: DEV_PROJECT_ID }));
+}
+
+db.prepare(`
+  INSERT OR IGNORE INTO projects (id, user_id, name, view_only)
+  VALUES (?, ?, ?, 0)
+`).run(DEV_PROJECT_ID, DEV_USER_ID, mockPlan.name ?? 'Dev project');
+
+console.log('dev project seeded.');
 
 db.close();
 console.log('done.');
