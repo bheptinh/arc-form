@@ -32,6 +32,8 @@ CREATE TABLE IF NOT EXISTS products (
   position_x          REAL,
   position_y          REAL,
   position_z          REAL,
+  contour_top         TEXT,
+  contour_cut         TEXT,
   fixed_size          INTEGER NOT NULL DEFAULT 0,
   is_original_model   INTEGER NOT NULL DEFAULT 0,
   original_entity_id  TEXT,

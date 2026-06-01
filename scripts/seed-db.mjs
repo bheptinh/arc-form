@@ -75,10 +75,12 @@ const insertProduct = db.prepare(`
   INSERT OR IGNORE INTO products
     (id, external_id, type, name, description, plan, appointment,
      width, height, depth, position_x, position_y, position_z,
+     contour_top, contour_cut,
      fixed_size, is_original_model, original_entity_id, user_key, lang_id)
   VALUES
     (@id, @external_id, @type, @name, @description, @plan, @appointment,
      @width, @height, @depth, @position_x, @position_y, @position_z,
+     @contour_top, @contour_cut,
      @fixed_size, @is_original_model, @original_entity_id, @user_key, @lang_id)
 `);
 
@@ -118,6 +120,8 @@ const seedProducts = db.transaction(() => {
       position_x: pos.x ?? null,
       position_y: pos.y ?? null,
       position_z: pos.z ?? null,
+      contour_top: item.source?.body?.contourTop ?? null,
+      contour_cut: item.source?.body?.contourCut ?? null,
       fixed_size: item.fixedSize ? 1 : 0,
       is_original_model: item.isOriginalModel ? 1 : 0,
       original_entity_id: origExtId ? prodUuid(origExtId) : null,
