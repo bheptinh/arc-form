@@ -41,10 +41,6 @@ export default {
         // TODO: MOVE TO FE — translation strings belong in the React i18n bundle, not the backend.
         //       Remove this handler and URL_TRANSLATION from index.html R2D.URL once i18n is in place.
         mockFilePath = './mock/user-translations.json';
-      } else if (url.startsWith('/favorites')) {
-        // TODO: MIGRATE TO BACKEND → GET /server-api/catalog/favorites
-        //       Remove this handler once the Express route is live.
-        mockFilePath = './mock/favorites.json';
       } else if (url.startsWith('/planner/open_shared')) {
         // TODO: MIGRATE TO BACKEND → GET /server-api/planner/open-shared
         //       Remove this handler once the Express route is live.

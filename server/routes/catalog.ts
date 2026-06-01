@@ -1,5 +1,6 @@
 import { Router } from 'express';
-import { getNavTree, getMaterialsTree, getCollectionProducts, getProductsByExternalIds, getProductsByTag } from '../services/catalog.js';
+import { getNavTree, getMaterialsTree, getCollectionProducts, getProductsByExternalIds, getProductsByTag, getFavorites, addFavorite, removeFavorite } from '../services/catalog.js';
+import { DEV_USER_ID } from '../schema.js';
 
 const router = Router();
 
@@ -29,6 +30,23 @@ router.get('/products', (req, res) => {
 router.get('/collections/:id', (req, res) => {
   const data = getCollectionProducts(req.params.id);
   res.json({ status: 'ok', data });
+});
+
+router.get('/favorites', (_req, res) => {
+  res.json({ status: 'ok', data: getFavorites(DEV_USER_ID) });
+});
+
+router.post('/favorites/:id', (req, res) => {
+  const externalId = parseInt(req.params.id, 10);
+  const product = addFavorite(DEV_USER_ID, externalId);
+  if (!product) { res.status(404).json({ status: 'error', message: 'Product not found' }); return; }
+  res.json({ status: 'ok', data: product });
+});
+
+router.delete('/favorites/:id', (req, res) => {
+  const externalId = parseInt(req.params.id, 10);
+  removeFavorite(DEV_USER_ID, externalId);
+  res.json({ status: 'ok', data: { success: true } });
 });
 
 export default router;

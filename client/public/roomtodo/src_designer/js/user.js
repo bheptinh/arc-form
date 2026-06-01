@@ -611,7 +611,7 @@ R2D.UserCore.UserFavorites = function(user)
             loader.addEventListener(Event.COMPLETE, loaderEventHandler);
             loader.addEventListener(Event.ERROR, loaderEventHandler);
 
-            loader.load(url, params, 'put', null, null, true);
+            loader.load(url, params, 'post', null, null, true);
 
             async function loaderEventHandler(event)
             {
