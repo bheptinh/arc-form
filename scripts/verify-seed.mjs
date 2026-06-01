@@ -59,6 +59,10 @@ const getFiles   = db.prepare('SELECT file_type, file_path FROM product_files WH
 const getSlots   = db.prepare('SELECT slot_index, mesh_name, default_value, source, hash FROM product_material_slots WHERE product_id = ? ORDER BY slot_index');
 const getProdCatIds = db.prepare("SELECT c.external_id FROM categories c JOIN product_categories pc ON pc.category_id = c.id WHERE pc.product_id = ? AND c.category_type = 'product'");
 const getMatCatIds  = db.prepare("SELECT c.external_id FROM categories c JOIN product_categories pc ON pc.category_id = c.id WHERE pc.product_id = ? AND c.category_type = 'material'");
+
+// Categories intentionally absent from the DB (stripped ghost categories not in remote tree)
+const knownProdCats  = new Set(db.prepare("SELECT external_id FROM categories WHERE category_type = 'product'").all().map(r => r.external_id));
+const knownMatCats   = new Set(db.prepare("SELECT external_id FROM categories WHERE category_type = 'material'").all().map(r => r.external_id));
 const getTags    = db.prepare('SELECT tag FROM product_tags WHERE product_id = ? ORDER BY tag');
 
 const mismatches = [];
@@ -145,10 +149,14 @@ for (const item of allJsonProducts.values()) {
   const dbProdCatSet = new Set(getProdCatIds.all(row.id).map(r => r.external_id));
   const dbMatCatSet  = new Set(getMatCatIds.all(row.id).map(r => r.external_id));
   for (const extId of Object.keys(item.categoryProduct ?? {})) {
-    if (!dbProdCatSet.has(Number(extId))) mismatches.push({ id: item.id, field: `categoryProduct[${extId}] missing` });
+    const id = Number(extId);
+    if (knownProdCats.has(id) && !dbProdCatSet.has(id))
+      mismatches.push({ id: item.id, field: `categoryProduct[${extId}] missing` });
   }
   for (const extId of Object.keys(item.categoryMaterial ?? {})) {
-    if (!dbMatCatSet.has(Number(extId))) mismatches.push({ id: item.id, field: `categoryMaterial[${extId}] missing` });
+    const id = Number(extId);
+    if (knownMatCats.has(id) && !dbMatCatSet.has(id))
+      mismatches.push({ id: item.id, field: `categoryMaterial[${extId}] missing` });
   }
 
   // tags

@@ -839,17 +839,6 @@
             ""
           ],
           "urlList": "/api/category/products?category_id=9778&key=4500282e6846fe6650de81bd35d27540"
-        },
-        {
-          "id": 9861,
-          "name": "Chairs, benches2",
-          "nodes": [
-            {
-              "id": 9862,
-              "name": "Chairs2",
-              "nodes": []
-            }
-          ]
         }
       ]
     },
@@ -1859,116 +1848,6 @@
           "position": 10,
           "tags": [],
           "urlList": "/api/category/products?category_id=9882&key=4500282e6846fe6650de81bd35d27540",
-          "nodes": [
-            {
-              "id": 9907,
-              "name": "Windows",
-              "nodes": []
-            },
-            {
-              "id": 9909,
-              "name": "Doors",
-              "nodes": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Coverings",
-      "nodes": [
-        {
-          "id": 62,
-          "name": "Carpeting",
-          "nodes": []
-        },
-        {
-          "id": 61,
-          "name": "Linoleum",
-          "nodes": []
-        },
-        {
-          "id": 63,
-          "name": "Grass&Ground",
-          "nodes": []
-        },
-        {
-          "id": 22,
-          "name": "Bricks&Stone",
-          "nodes": []
-        },
-        {
-          "id": 8376,
-          "name": "Paint",
-          "nodes": []
-        },
-        {
-          "id": 75,
-          "name": "Tiles",
-          "nodes": [
-            {
-              "id": 21,
-              "name": "Mosaic",
-              "nodes": []
-            },
-            {
-              "id": 20,
-              "name": "Ceramic",
-              "nodes": []
-            },
-            {
-              "id": 77,
-              "name": "Stone",
-              "nodes": []
-            }
-          ]
-        },
-        {
-          "id": 92,
-          "name": "Stucco",
-          "nodes": []
-        },
-        {
-          "id": 68,
-          "name": "Wood",
-          "nodes": []
-        },
-        {
-          "id": 58,
-          "name": "Metal",
-          "nodes": []
-        },
-        {
-          "id": 18,
-          "name": "Wallpapers",
-          "nodes": []
-        },
-        {
-          "id": 65,
-          "name": "Laminate",
-          "nodes": []
-        }
-      ]
-    },
-    {
-      "id": 9872,
-      "name": "Experiments",
-      "nodes": [
-        {
-          "id": 9873,
-          "name": "Unsorted",
-          "nodes": []
-        }
-      ]
-    },
-    {
-      "id": 9751,
-      "name": "Construction",
-      "nodes": [
-        {
-          "id": 9752,
-          "name": "Plinths",
           "nodes": []
         }
       ]

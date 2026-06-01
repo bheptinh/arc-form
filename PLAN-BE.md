@@ -95,7 +95,7 @@ All under `/server-api` prefix for now. Migration strategy:
 - `GET /server-api/user` ✅
 
 ### 5c. Catalog navigation
-- `GET /server-api/catalog/nav` — UI-shaped category tree for FE navigation
+- `GET /server-api/catalog/nav` ✅ — UI-shaped category tree for FE navigation
 - `GET /server-api/catalog/materials` — material categories (category_type = material)
 
 ### 5d. Favorites

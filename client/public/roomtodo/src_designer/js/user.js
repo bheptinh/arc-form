@@ -2139,13 +2139,10 @@ R2D.UserCore.RightPanelData = function(user)
         return new Promise(async (resolve, reject) => {
             if ( loader ) return;
             let urlFull = R2D.makeURL(R2D.URL.DOMAIN, url);
-            loader = R2D.XHRLoader.getPostLoader(urlFull, null, country ? [{
-                header: "x-country",
-                value: country
-            }] : null, null, true);
-
+            loader = new R2D.XHRLoader();
             loader.addEventListener(Event.COMPLETE, loaderEventHandler);
             loader.addEventListener(Event.ERROR, loaderEventHandler);
+            loader.load(urlFull, null, 'get', null, country ? [{ header: "x-country", value: country }] : null, true);
             
             function loaderEventHandler(event) {
                 if ( event.type == Event.COMPLETE ) {

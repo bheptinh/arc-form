@@ -1,5 +1,5 @@
 import Database from 'better-sqlite3';
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync, readdirSync, writeFileSync } from 'fs';
 import { randomUUID } from 'crypto';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -180,5 +180,22 @@ const seedSlots = db.transaction(() => {
 seedSlots();
 
 db.pragma('foreign_keys = ON');
+
+// --- phase 5: generate nav-tree.json ---
+// Transform category-tree.json: replace numeric ids with UUIDs, rewrite urlList
+// to /server-api/catalog/collections/:uuid. Written once to data/ alongside the DB.
+
+function transformNavNode(node) {
+  const uuid = prodCatExtToUuid.get(Number(node.id));
+  const out = { ...node, id: uuid ?? node.id };
+  if (uuid && node.urlList) out.urlList = `/server-api/catalog/collections/${uuid}`;
+  if (node.nodes?.length) out.nodes = node.nodes.map(transformNavNode);
+  return out;
+}
+
+const navTree = { ...catTree, tree: catTree.tree.map(transformNavNode) };
+writeFileSync(path.resolve(root, dbDir, 'nav-tree.json'), JSON.stringify(navTree, null, 2));
+console.log('nav-tree.json written.');
+
 db.close();
 console.log('done.');

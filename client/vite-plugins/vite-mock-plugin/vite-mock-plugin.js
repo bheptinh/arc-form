@@ -49,12 +49,6 @@ export default {
         // TODO: MIGRATE TO BACKEND → GET /server-api/catalog/materials
         //       Remove this handler once the Express route is live.
         mockFilePath = './mock/category-public-materials.json';
-      } else if (url.startsWith('/category/tree')) {
-        // TODO: MIGRATE TO BACKEND → GET /server-api/catalog/tree
-        //       Remove this handler once the Express route is live.
-        mockFilePath = './mock/category-tree.json';
-
-
       } else if (url.startsWith('/planner/open_shared')) {
         // TODO: MIGRATE TO BACKEND → GET /server-api/planner/open-shared
         //       Remove this handler once the Express route is live.
