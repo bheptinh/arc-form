@@ -17,7 +17,7 @@ function projectFile(hash: string) {
 }
 
 
-type ProjectRow = { id: string; user_id: string; name: string; view_only: number };
+type ProjectRow = { id: string; user_id: string; name: string; view_only: number; created_at: string; updated_at: string };
 
 function buildResponse(row: ProjectRow) {
   const filePath = projectFile(row.id);
@@ -40,6 +40,20 @@ export function getConfig() {
     additional: {
       copyright: { type: 'text', show: String(branding.copyright.show), text: branding.copyright.text },
       terms: { type: 'text', show: String(branding.terms.show), text: branding.terms.text, href: branding.terms.href },
+    },
+  };
+}
+
+export function listProjects(userId: string, limit: number, offset: number) {
+  const rows = db.prepare(
+    'SELECT id, name, created_at, updated_at FROM projects WHERE user_id = ? ORDER BY updated_at DESC LIMIT ? OFFSET ?'
+  ).all(userId, limit || 100, offset) as ProjectRow[];
+  const { count } = db.prepare('SELECT COUNT(*) as count FROM projects WHERE user_id = ?').get(userId) as { count: number };
+  return {
+    status: 'ok',
+    data: {
+      items: rows.map(r => ({ id: r.id, hash: r.id, name: r.name, modified: r.updated_at, opened: r.created_at, userPlan: 'pro' })),
+      total: count,
     },
   };
 }

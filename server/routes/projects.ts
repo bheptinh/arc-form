@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { z } from 'zod';
-import { getConfig, loadProject, saveProject, renameProject, copyProject, deleteProject } from '../services/projects.js';
+import { getConfig, listProjects, loadProject, saveProject, renameProject, copyProject, deleteProject } from '../services/projects.js';
 import { DEV_USER_ID } from '../schema.js';
 
 const router = Router();
@@ -12,6 +12,13 @@ function badRequest(res: Response, msg: string) {
 // GET /config
 router.get('/config', (_req, res) => {
   res.json({ status: 'success', result: JSON.stringify(getConfig()), location: 'UA' });
+});
+
+// GET / — list projects
+router.get('/', (req, res) => {
+  const limit = parseInt(req.query.limit as string) || 20;
+  const offset = parseInt(req.query.offset as string) || 0;
+  res.json(listProjects(DEV_USER_ID, limit, offset));
 });
 
 // GET /:id

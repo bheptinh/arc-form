@@ -27,6 +27,7 @@ import { saveLoggedStatus } from './redux/features/user/userSlice';
 import { setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
 
 import App from './App';
+import ProjectsPage from './pages/ProjectsPage';
 
 import './index.css';
 
@@ -84,6 +85,7 @@ async function init() {
                                 <App/>
                             </Provider>
                         } />
+                        <Route path="/projects" element={<ProjectsPage />} />
                         <Route path="/project/*" element={
                             <Provider store={store}>
                                 <App />
