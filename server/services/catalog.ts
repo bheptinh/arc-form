@@ -73,7 +73,8 @@ function fetchRelated(uuids: string[]): { files: FileMap; tags: TagMap; slots: S
 function buildItem(row: Record<string, unknown>, files: FileMap, tags: TagMap, slots: SlotMap, isFavorite = false) {
   const f = files.get(row.uuid as string) ?? {};
   return {
-    id: row.external_id,
+    id: row.uuid,
+    externalId: row.external_id,
     type: row.type != null ? Number(row.type) : null,
     name: row.name,
     description: row.description ?? null,
@@ -192,6 +193,8 @@ export function getCollectionProducts(categoryId: string) {
   return buildCollection(rows, filesRaw, tagsRaw, slotsRaw);
 }
 
+// TODO: DEPRECATE — only needed for legacy saved projects that stored integer productIds.
+//       Once all clients send UUIDs, remove this and rename getProductsByUuids → getProductsByIds.
 export function getProductsByExternalIds(externalIds: number[]) {
   if (externalIds.length === 0) return { total: 0, items: [], offset: 0, limit: 0 };
 
@@ -206,6 +209,36 @@ export function getProductsByExternalIds(externalIds: number[]) {
   const { files, tags, slots } = fetchRelated(uuids);
   const items = rows.map(r => buildItem(r, files, tags, slots));
   return { total: items.length, items, offset: 0, limit: items.length };
+}
+
+export function getProductsByUuids(uuids: string[]) {
+  if (uuids.length === 0) return { total: 0, items: [], offset: 0, limit: 0 };
+
+  const ph = uuids.map(() => '?').join(',');
+  const rows = db.prepare(`
+    SELECT ${PRODUCT_COLS} FROM products p WHERE p.id IN (${ph})
+  `).all(...uuids) as Record<string, unknown>[];
+
+  if (rows.length === 0) return { total: 0, items: [], offset: 0, limit: 0 };
+
+  const { files, tags, slots } = fetchRelated(rows.map(r => r.uuid as string));
+  const items = rows.map(r => buildItem(r, files, tags, slots));
+  return { total: items.length, items, offset: 0, limit: items.length };
+}
+
+export function searchProducts(query: string) {
+  const rows = db.prepare(`
+    SELECT ${PRODUCT_COLS} FROM products p
+    WHERE p.name LIKE ?
+    ORDER BY p.external_id
+  `).all(`%${query}%`) as Record<string, unknown>[];
+
+  if (rows.length === 0) return { total: 0, items: [] };
+
+  const uuids = rows.map(r => r.uuid as string);
+  const { files, tags, slots } = fetchRelated(uuids);
+  const items = rows.map(r => buildItem(r, files, tags, slots));
+  return { total: items.length, items };
 }
 
 export function getProductsByTag(tag: string) {
@@ -226,15 +259,16 @@ export function getProductsByTag(tag: string) {
 
 // --- favorites ---
 
-export function getFavorites(userId: string) {
-  const rows = db.prepare(`
-    SELECT ${PRODUCT_COLS} FROM products p
-    JOIN favorites f ON f.product_id = p.id
-    WHERE f.user_id = ?
-    ORDER BY p.external_id
-  `).all(userId) as Record<string, unknown>[];
+export function getFavoriteItemIds(userId: string): string[] {
+  return (db.prepare(`SELECT item_id FROM favorites WHERE user_id = ?`).all(userId) as { item_id: string }[]).map(r => r.item_id);
+}
 
-  if (rows.length === 0) return { total: '0', items: [] };
+export function getFavorites(userId: string) {
+  const itemIds = getFavoriteItemIds(userId);
+  if (itemIds.length === 0) return { total: '0', items: [] };
+
+  const ph = itemIds.map(() => '?').join(',');
+  const rows = db.prepare(`SELECT ${PRODUCT_COLS} FROM products p WHERE p.id IN (${ph})`).all(...itemIds) as Record<string, unknown>[];
 
   const uuids = rows.map(r => r.uuid as string);
   const { files, tags, slots } = fetchRelated(uuids);
@@ -242,20 +276,21 @@ export function getFavorites(userId: string) {
   return { total: String(items.length), items };
 }
 
-export function addFavorite(userId: string, externalId: number) {
-  const product = db.prepare(`SELECT ${PRODUCT_COLS} FROM products p WHERE p.external_id = ?`)
-    .get(externalId) as Record<string, unknown> | undefined;
+export function addFavoriteItem(userId: string, itemUuid: string) {
+  db.prepare('INSERT OR IGNORE INTO favorites (user_id, item_id) VALUES (?, ?)').run(userId, itemUuid);
+}
+
+export function addFavorite(userId: string, productUuid: string) {
+  const product = db.prepare(`SELECT ${PRODUCT_COLS} FROM products p WHERE p.id = ?`)
+    .get(productUuid) as Record<string, unknown> | undefined;
   if (!product) return null;
 
-  db.prepare('INSERT OR IGNORE INTO favorites (user_id, product_id) VALUES (?, ?)').run(userId, product.uuid);
+  db.prepare('INSERT OR IGNORE INTO favorites (user_id, item_id) VALUES (?, ?)').run(userId, productUuid);
 
-  const { files, tags, slots } = fetchRelated([product.uuid as string]);
+  const { files, tags, slots } = fetchRelated([productUuid]);
   return buildItem(product, files, tags, slots, true);
 }
 
-export function removeFavorite(userId: string, externalId: number) {
-  const row = db.prepare('SELECT id FROM products WHERE external_id = ?').get(externalId) as { id: string } | undefined;
-  if (!row) return false;
-  db.prepare('DELETE FROM favorites WHERE user_id = ? AND product_id = ?').run(userId, row.id);
-  return true;
+export function removeFavorite(userId: string, itemUuid: string) {
+  db.prepare('DELETE FROM favorites WHERE user_id = ? AND item_id = ?').run(userId, itemUuid);
 }
