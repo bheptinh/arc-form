@@ -41,6 +41,10 @@ export default {
         // TODO: MOVE TO FE — translation strings belong in the React i18n bundle, not the backend.
         //       Remove this handler and URL_TRANSLATION from index.html R2D.URL once i18n is in place.
         mockFilePath = './mock/user-translations.json';
+      } else if (url.startsWith('/render')) {
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify({ status: 'ok', data: { items: [], total: 0, limit: 20, offset: 0 } }));
+        return;
       } else if (url.startsWith('/planner/connect')) {
         // TODO: DELETE — this endpoint has no purpose. Remove handler and URL_CONNECT (if any) from R2D.URL.
         res.statusCode = 200;
