@@ -218,6 +218,11 @@ export function getUserModels(userId: string) {
   return { total: items.length, items, offset: 0, limit: items.length };
 }
 
+export function deleteUserModel(userId: string, modelId: string): boolean {
+  const result = db.prepare('DELETE FROM user_models WHERE id = ? AND user_id = ?').run(modelId, userId);
+  return result.changes > 0;
+}
+
 export function deleteUserMaterial(userId: string, materialId: string): boolean {
   const result = db.prepare('DELETE FROM user_materials WHERE id = ? AND user_id = ?').run(materialId, userId);
   return result.changes > 0;

@@ -13,6 +13,7 @@ import {
   getUserModels,
   createUserMaterial,
   deleteUserMaterial,
+  deleteUserModel,
 } from '../../services/catalog-private.js';
 
 const router = Router();
@@ -86,6 +87,12 @@ router.post(
     res.json({ status: 'ok', data });
   },
 );
+
+router.delete('/products/:id', (req, res) => {
+  const deleted = deleteUserModel(DEV_USER_ID, req.params.id);
+  if (!deleted) { res.status(404).json({ status: 'error', message: 'Not found' }); return; }
+  res.json({ status: 'ok', data: { success: true } });
+});
 
 router.delete('/materials/:id', (req, res) => {
   const deleted = deleteUserMaterial(DEV_USER_ID, req.params.id);
