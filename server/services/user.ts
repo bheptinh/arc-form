@@ -9,6 +9,15 @@ type UserRow = {
   tips: string;
 };
 
+export function updateUser(data: Record<string, unknown>) {
+  const allowed = ['name', 'email'] as const;
+  for (const field of allowed) {
+    if (typeof data[field] === 'string') {
+      db.prepare(`UPDATE users SET ${field} = ? WHERE id = ?`).run(data[field], DEV_USER_ID);
+    }
+  }
+}
+
 export function getUser() {
   const row = db.prepare('SELECT id, email, name, plan, tips FROM users WHERE id = ?').get(DEV_USER_ID) as UserRow;
   const { count: projectCount } = db.prepare('SELECT COUNT(*) as count FROM projects WHERE user_id = ?').get(DEV_USER_ID) as { count: number };

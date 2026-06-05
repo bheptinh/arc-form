@@ -940,7 +940,8 @@ R2D.UserCore.UserLogin = function(user)
             
             let params = JSON.stringify(data);
     
-            loader = R2D.XHRLoader.getPostLoader(R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_UPDATE_PROFILE), params, null, null, true);
+            loader = new R2D.XHRLoader();
+            loader.load(R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_UPDATE_PROFILE), params, 'PATCH', [{header: 'Content-type', value: 'application/json'}], null, true);
     
             loader.addEventListener(Event.COMPLETE, loaderSetListener);
             loader.addEventListener(Event.ERROR, loaderSetListener);
