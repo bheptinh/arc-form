@@ -218,6 +218,11 @@ export function getUserModels(userId: string) {
   return { total: items.length, items, offset: 0, limit: items.length };
 }
 
+export function deleteUserMaterial(userId: string, materialId: string): boolean {
+  const result = db.prepare('DELETE FROM user_materials WHERE id = ? AND user_id = ?').run(materialId, userId);
+  return result.changes > 0;
+}
+
 export function createUserMaterial(
   userId: string,
   body: Record<string, unknown>,
