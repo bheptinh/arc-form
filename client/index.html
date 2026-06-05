@@ -38,10 +38,10 @@
       URL_LOAD_ALL_PLANS: '/server-api/projects?',
       CATALOG_TREE: '/server-api/catalog/products/nav',
       CATALOG_MATERIALS_TREE_FOR_MODELS: '/server-api/catalog/materials/nav',
-      URL_GET_PRODUCT: '/api/category/productsByIds?key=4500282e6846fe6650de81bd35d27540',
+      URL_GET_PRODUCT: '/server-api/catalog/products?',
+      // URL_GET_CATEGORY_PRODUCTS: '/api/category/products?key=4500282e6846fe6650de81bd35d27540',
       URL_GET_CATEGORY_PRODUCTS: '/api/category/products?key=4500282e6846fe6650de81bd35d27540',
-      URL_GET_MATERIALS_SET: '/api/category/getMaterialsBySetId?key=4500282e6846fe6650de81bd35d27540',
-      URL_GET_SET_TREE: '/api/category/get_set_tree?key=4500282e6846fe6650de81bd35d27540',
+      URL_GET_SET_TREE: '/server-api/catalog/set-tree?',
       URL_LOAD_SHARED_PLAN: '/server-api/projects/',
       URL_LOAD_PLAN: '/server-api/projects/',
       URL_SAVE_PLAN: '/server-api/projects/',
@@ -66,7 +66,7 @@
       URL_INFORMATION_DATA: '/api/user/get_tips_data?key=4500282e6846fe6650de81bd35d27540',
       URL_PROFILE: '/api/user/profile?key=4500282e6846fe6650de81bd35d27540',
       URL_SET_PROFILE: '/api/user/set_profile?key=4500282e6846fe6650de81bd35d27540',
-      URL_UPLOAD_PRIVATE: '/api/planner/upload_private_entity?key=4500282e6846fe6650de81bd35d27540',
+      URL_UPLOAD_PRIVATE: '/server-api/catalog/private/materials/upload',
       URL_DELETE_PRIVATE: '/api/planner/delete_private_entity?key=4500282e6846fe6650de81bd35d27540',
       URL_PAY_FORM: '/api/subscription/get_form?key=4500282e6846fe6650de81bd35d27540',
       URL_CANCEL_SUBSCRIPTION: '/api/subscription/cancel_subscription?key=4500282e6846fe6650de81bd35d27540',
@@ -75,7 +75,7 @@
       URL_RECOVERY_PASSWORD_REQUEST: '/api2/user/reset-password?key=4500282e6846fe6650de81bd35d27540',//POST
       URL_RECOVERY_PASSWORD_CONFIRM: '/api2/user/reset-password/{token}?key=4500282e6846fe6650de81bd35d27540',//PUT
       URL_CHANGE_PASSWORD: '/api2/user/change-password?key=4500282e6846fe6650de81bd35d27540',//POST
-      URL_UPDATE_PROFILE: '/api2/user/update-profile?key=4500282e6846fe6650de81bd35d27540',//POST
+      URL_UPDATE_PROFILE: '/server-api/user',//PATCH
       URL_USER_LOGIN: '/api2/user/login?key=4500282e6846fe6650de81bd35d27540',//POST
       URL_USER_LOGIN_SOCIAL: '/api2/user/login-social?key=4500282e6846fe6650de81bd35d27540',//POST
       URL_USER_REGISTER: '/api2/user/register?key=4500282e6846fe6650de81bd35d27540',//POST
@@ -91,8 +91,8 @@
       URL_CATALOG_SEARCH: '/server-api/catalog/products?',
       URL_PLAN_PDF_CONVERT: '/api/planner/floor_plan_convert?key=4500282e6846fe6650de81bd35d27540',
 
-      URL_UPLOAD_FILE: '/api/entities/upload',
-      URL_UPLOAD_ENTITY: '/api/entities',
+      URL_UPLOAD_FILE: '/server-api/catalog/private/products/upload',
+      URL_UPLOAD_ENTITY: '/server-api/catalog/private/products',
       URL_ENTITY_TAGS: '/api/entities/tags',
       URL_CONFIG_APPS: '/api/entities/apps',
 

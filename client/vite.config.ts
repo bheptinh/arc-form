@@ -1,7 +1,6 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import catalogSearchPlugin from './vite-plugins/catalog-search-fallback/index.js';
 import localFirstAssets from './vite-plugins/local-first-assets/index.js';
 import viteMockPlugin from './vite-plugins/vite-mock-plugin/vite-mock-plugin.js';
 
@@ -10,7 +9,7 @@ import viteMockPlugin from './vite-plugins/vite-mock-plugin/vite-mock-plugin.js'
 export default defineConfig(() => {
   return {
     root: path.resolve('client'),
-    plugins: [react(), catalogSearchPlugin, viteMockPlugin, localFirstAssets],
+    plugins: [react(), viteMockPlugin, localFirstAssets],
     define: {
       __APP_VERSION__: JSON.stringify('1.0.0'),
     },
@@ -23,6 +22,10 @@ export default defineConfig(() => {
     server: {
       proxy: {
         '/server-api': {
+          target: 'http://localhost:3015',
+          changeOrigin: true,
+        },
+        '/uploads': {
           target: 'http://localhost:3015',
           changeOrigin: true,
         },

@@ -17799,9 +17799,13 @@ R2D.Pool.getProductData = function(id) {
 };
 R2D.Pool.addProductData = function(productData) {
     if ( !productData.hasOwnProperty("productId") || !productData.productId ) return;
-    
+
     R2D.Pool._products_data[productData.productId] = productData;
-    
+
+    // Also index by externalId so legacy saved projects (integer productIds) still resolve
+    if (productData.externalId != null) {
+        R2D.Pool._products_data[productData.externalId] = productData;
+    }
 };
 R2D.Pool.isLoaderProductData = function(id) {
 
