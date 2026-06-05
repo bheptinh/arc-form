@@ -4,24 +4,53 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 ```bash
-npm run dev        # Vite (port 5115) + Express (port 3001) together
+npm run dev        # Vite (port 5115) + Express (port 3015) together
 npm run dev:fe     # Vite only
 npm run dev:be     # Express only, with tsx hot-reload
 npm run build      # vite build → dist/  +  tsc server → dist-server/
 npm run start      # production: node dist-server/index.js (serves dist/ + /server-api)
 npm run preview    # preview vite build only
+npm run seed       # seed SQLite DB from source data (reads DB_DIR from .env)
+```
+
+## Environment (.env)
+```
+PORT=3015
+DB_DIR=data    # path to SQLite DB dir, relative to project root
 ```
 
 ## Repo Layout
 ```
-client/       frontend — Vite + React source, index.html, tsconfig.json
-  client/src/        React source
-  public/     static assets (R2D engine scripts, images)
-  roomtodo/   Vite dev mocks + R2D engine JS files
-  vite-plugins/ custom Vite dev-server plugins
-server/       Express backend (TypeScript, compiled to dist-server/)
-dist/         Vite build output (frontend)
-dist-server/  tsc build output (server)
+client/             frontend — Vite + React source, index.html, tsconfig.json
+  src/              React source
+  public/           static assets (R2D engine scripts, images)
+  vite-plugins/     custom Vite dev-server plugins
+    local-first-assets/       serves local assets, falls back to roomtodo.com + caches
+    catalog-search-fallback/  intercepts /api/catalog/search, serves mocks + caches
+    vite-mock-plugin/         handles remaining /api/ and /api2/ endpoints
+server/             Express backend (TypeScript, compiled to dist-server/)
+  routes/
+    catalog/
+      index.ts      public catalog routes (/server-api/catalog/...)
+      private.ts    user upload routes (/server-api/catalog/private/...)
+    projects.ts     project save/load (/server-api/projects/...)
+    user.ts         user profile (/server-api/user)
+  services/
+    catalog.ts      catalog DB queries
+    catalog-private.ts  user model/material DB queries + file handling
+    projects.ts     project DB queries
+    user.ts         user DB queries
+  schema.sql        SQLite table definitions (source of truth)
+  schema.ts         runs schema.sql on startup (CREATE TABLE IF NOT EXISTS — idempotent)
+  db.ts             better-sqlite3 connection, WAL mode
+data/               SQLite DB + uploaded files (gitignored, path set by DB_DIR env)
+  arcform.db        SQLite database
+  uploads/          user-uploaded model/material files
+  nav-tree.json     product navigation tree (served by /server-api/catalog/products/nav)
+  materials-tree.json  materials navigation tree
+docs/               feature documentation
+dist/               Vite build output (frontend)
+dist-server/        tsc build output (server)
 ```
 
 ## Architecture
@@ -109,4 +138,67 @@ Filename convention:
 **`client/roomtodo/mock/vite-mock-plugin.js`** — handles all other `/api/` and `/api2/` endpoints (language, translations, favorites, planner config, planner save/load) via static JSON files in `client/roomtodo/mock/`.
 
 ### Backend — `server/`
-Express app on port 3001. Add routes under the `/server-api` prefix (avoids conflicts with the R2D mock plugins which own `/api/` and `/api2/`). In production, also serves the Vite build from `dist/`.
+
+Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api` prefix to avoid conflicts with Vite mock plugins that own `/api/` and `/api2/`. In production, also serves the Vite build from `dist/` and uploaded files from `data/uploads/`.
+
+**Database:** better-sqlite3, WAL mode. UUID TEXT primary keys throughout. Schema is in `server/schema.sql` — all tables use `CREATE TABLE IF NOT EXISTS` so the file is re-run on every startup safely.
+
+**Auth:** No auth implemented. All requests use `DEV_USER_ID` hardcoded in `server/schema.ts`.
+
+#### Route map
+
+| Method | Path | Handler | Notes |
+|---|---|---|---|
+| GET | `/server-api/catalog/products/nav` | catalog/index.ts | product nav tree from `nav-tree.json` |
+| GET | `/server-api/catalog/materials/nav` | catalog/index.ts | materials nav tree from `materials-tree.json` |
+| GET | `/server-api/catalog/products` | catalog/index.ts | supports `?my=1`, `?query=`, `?category_tag=`, `?ids=` |
+| GET | `/server-api/catalog/collections/:id` | catalog/index.ts | products in a category |
+| GET | `/server-api/catalog/favorites` | catalog/index.ts | merged catalog + user model favorites |
+| POST | `/server-api/catalog/favorites/:id` | catalog/index.ts | add favorite (UUID) |
+| DELETE | `/server-api/catalog/favorites/:id` | catalog/index.ts | remove favorite |
+| POST | `/server-api/catalog/private/products/upload` | catalog/private.ts | multer upload (preview, source, svg, metaZip) |
+| POST | `/server-api/catalog/private/products` | catalog/private.ts | create user model record |
+| PUT | `/server-api/catalog/private/products/:id` | catalog/private.ts | update user model |
+| DELETE | `/server-api/catalog/private/products/:id` | catalog/private.ts | delete user model (slots cascade) |
+| GET | `/server-api/catalog/private/products` | catalog/private.ts | list user models |
+| GET | `/server-api/catalog/private/products/:id` | catalog/private.ts | get single user model |
+| POST | `/server-api/catalog/private/materials/upload` | catalog/private.ts | upload custom material textures |
+| DELETE | `/server-api/catalog/private/materials/:id` | catalog/private.ts | delete custom material |
+| GET | `/server-api/projects` | projects.ts | list user projects |
+| POST | `/server-api/projects` | projects.ts | create project |
+| GET | `/server-api/projects/:id` | projects.ts | load project |
+| PUT | `/server-api/projects/:id` | projects.ts | save project |
+| DELETE | `/server-api/projects/:id` | projects.ts | delete project |
+| GET | `/server-api/user` | user.ts | get user profile |
+| PATCH | `/server-api/user` | user.ts | update user profile (name, email) |
+| GET/PUT | `/server-api/user/tips` | user.ts | tips state |
+| GET | `/uploads/*` | static | user-uploaded files from `data/uploads/` |
+
+#### Catalog item shape
+
+`buildItem` (catalog.ts) and `buildUploadedItem` (catalog-private.ts) both return the same shape. Key fields:
+
+- `id` — UUID string (NOT the integer external_id — changed to enable UUID-based favorites)
+- `externalId` — integer (legacy; used for R2D pool dual-indexing; see note below)
+- `source.body.materials[]` — material slots: `{ id, default, name, source, hash }`
+- `plan` — `'free'` string or comma-separated string split to array
+
+#### R2D pool dual-indexing (plannercore.js patch)
+
+`R2D.Pool.addProductData` is patched to index products under **both** UUID and integer externalId:
+
+```js
+R2D.Pool._products_data[productData.productId] = productData;
+if (productData.externalId != null) {
+    R2D.Pool._products_data[productData.externalId] = productData;
+}
+```
+
+This allows legacy saved projects (which stored integer productIds) to still resolve after the `id` field was changed from externalId to UUID.
+
+#### Not yet implemented
+
+- **`GET /server-api/catalog/set-tree?set_id=<id>`** — material sets (curated per-slot material collections). See `docs/set-tree.md` for full spec. Trigger requires `product_material_slots.set_id` column (not in schema yet) and set data which must be sourced externally or hand-curated.
+- **Language/translations** — still mocked in `vite-mock-plugin`. TODO: move to bundled FE i18n (react-i18next).
+- **`/api/planner/connect`** — mocked with TODO: DELETE (no purpose).
+- **`URL_DELETE_PRIVATE`** (`/api/planner/delete_private_entity`) — `user.deleteMaterial()` is never called from React UI yet; route exists at `DELETE /server-api/catalog/private/materials/:id` but URL in `index.html` not updated. See TODO comment in `index.html:70`.
