@@ -4,263 +4,260 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from "simplebar-react";
 
 import { planner } from '../../../../../../../initR2D';
-import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
-import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
-import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { controlPanelHistoryAdd, controlPanelUpdateBreadCrumbs, selectActiveControlPanelModeData } from '../../../../../../../redux/features/control/controlPanelSlice';
-
-import Checkbox from '../../../components/Checkbox';
-import MaterialComponent from '../../../components/MaterialComponent';
+import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
+import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
+import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import BlueButton from '../../../components/BlueButton';
 import ChangeSize from '../../../components/ChangeSize';
+import Checkbox from '../../../components/Checkbox';
 import EditPlinthItem from '../../../components/EditPlinthItem';
+import MaterialComponent from '../../../components/MaterialComponent';
 
 
 const useStyle = createUseStyles({
-    '@font-face': [
-        {
-            fontFamily: "RobotoCondensed-Regular",
-            fontWeight: 300,
-            fontDisplay: 'swap',
-            src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")'
-        },
-    ],
-    planerWallsCont: {
-        borderRight: '1px solid #cdcdcd',
-        background: '#fff',
-        height: '100%',
-        display: "grid",
-        alignContent: "baseline",
-        gridTemplateRows: "auto 1fr",
-        transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-        width: 309,
-        position: 'absolute',
-        left: 0,
-        top: 0,
-        '@media screen and (max-width: 950px)':{
-            width: 189,
-        }
+  '@font-face': [
+    {
+      fontFamily: 'RobotoCondensed-Regular',
+      fontWeight: 300,
+      fontDisplay: 'swap',
+      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
     },
-    catalog_wr:{
-        overflow: 'hidden',
-        height: '100%',
-        position: 'relative',
-        background: '#fff',
-        borderTop: '1px solid #C6C4C4',
+  ],
+  planerWallsCont: {
+    borderRight: '1px solid #cdcdcd',
+    background: '#fff',
+    height: '100%',
+    display: 'grid',
+    alignContent: 'baseline',
+    gridTemplateRows: 'auto 1fr',
+    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
+    width: 309,
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    '@media screen and (max-width: 950px)': {
+      width: 189,
     },
-    planerWallsWrap: {
-
+  },
+  catalog_wr: {
+    overflow: 'hidden',
+    height: '100%',
+    position: 'relative',
+    background: '#fff',
+    borderTop: '1px solid #C6C4C4',
+  },
+  planerWallsWrap: {},
+  catalog_top_wr: {
+    padding: '10px 10px 10px 10px',
+    '@media screen and (max-width: 950px)': {
+      padding: 5,
     },
-    catalog_top_wr:{
-        padding: "10px 10px 10px 10px",
-        '@media screen and (max-width: 950px)':{
-            padding: 5,
-        }
+  },
+  planerPlintusTitleWr: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  planerPlintusTitle: {
+    fontSize: 17,
+    color: '#2F2F2F',
+    fontFamily: 'RobotoCondensed-Regular',
+    marginLeft: 10,
+    '@media screen and (max-width: 950px)': {
+      fontSize: 11,
+      marginLeft: 5,
     },
-    planerPlintusTitleWr:{
-        display: 'flex',
-        alignItems: 'center'
+  },
+  catalog_top_selected_preview: {
+    width: '21px',
+    height: '16px',
+    position: 'relative',
+    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
+    flexShrink: 0,
+    '& img': {
+      top: '50%',
+      left: '0',
+      position: 'absolute',
+      maxWidth: '100%',
+      transform: 'translateY(-50%)',
     },
-    planerPlintusTitle:{
-        fontSize: 17,
-        color: "#2F2F2F",
-        fontFamily: "RobotoCondensed-Regular",
-        marginLeft: 10,
-        '@media screen and (max-width: 950px)':{
-            fontSize: 11,
-            marginLeft: 5,
-        }
+    '@media screen and (max-width: 950px)': {
+      height: 14,
+      width: 11,
     },
-    catalog_top_selected_preview:{
-        width: "21px",
-        height: "16px",
-        position: "relative",
-        transition: "all .9s cubic-bezier(.19,1,.22,1)",
-        flexShrink: 0,
-        '& img':{
-            top: "50%",
-            left: "0",
-            position: "absolute",
-            maxWidth: "100%",
-            transform: "translateY(-50%)"
-        },
-        '@media screen and (max-width: 950px)':{
-            height: 14,
-            width: 11,
-        }
-    },
-    planerWallsTitle:{
-        fontSize: 13,
-        textAlign: 'center',
-        marginBottom: 15,
-        color: '#505050',
-    },
-    planerWallsCurentMatWr:{
-        display: 'flex',
-        justifyContent: 'center',
-        marginBottom: 20,
-        position: 'relative'
-    },
-    planerWallsWrap_favorites:{
-        left: "5px",
-        width: "15px",
-        height: "15px",
-        display: "flex",
-        zIndex: 1,
-        position: "absolute",
-        alignItems: "center",
-        borderRadius: "50%",
-        justifyContent: "center",
-        '& svg':{
-            cursor: 'pointer',
-            marginBottom: 1,
-            '& path': {
-                transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-            },
-            '&:hover':{
-                '& path': {
-                    fill: '#64BCF0',
-                    stroke: '#64BCF0',
-                    fillOpacity: '0.5'
-                }
-            }
-        },
-    },
-    planerWallsWrap_top_favorites:{
-        
-        
-    },
-    planerWallsWrap_top_favorites_active:{
-        '& path': {
-            fill: '#64BCF0',
-            stroke: '#64BCF0',
-            fillOpacity: 1
-        }
-    },
-    divideWall:{
-        height: 100,
-        border: '1px solid #d9d9d9',
+  },
+  planerWallsTitle: {
+    fontSize: 13,
+    textAlign: 'center',
+    marginBottom: 15,
+    color: '#505050',
+  },
+  planerWallsCurentMatWr: {
+    display: 'flex',
+    justifyContent: 'center',
+    marginBottom: 20,
+    position: 'relative',
+  },
+  planerWallsWrap_favorites: {
+    left: '5px',
+    width: '15px',
+    height: '15px',
+    display: 'flex',
+    zIndex: 1,
+    position: 'absolute',
+    alignItems: 'center',
+    borderRadius: '50%',
+    justifyContent: 'center',
+    '& svg': {
+      cursor: 'pointer',
+      marginBottom: 1,
+      '& path': {
         transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-        cursor: 'pointer',
-        display: 'grid',
-        gridTemplateColumns: 'auto auto',
-        gridGap: 31,
-        padding: '10px 25px',
-        alignItems: 'center',
-        justifyContent: 'center',
-        position: 'relative',
-        marginBottom: 20,
-        '&:hover':{
-            border: '1px solid #9DD900',
+      },
+      '&:hover': {
+        '& path': {
+          fill: '#64BCF0',
+          stroke: '#64BCF0',
+          fillOpacity: '0.5',
         },
-        '@media screen and (max-width: 950px)':{
-            padding: '10px',
-            gridGap: 10,
-        }
+      },
     },
-    lockOn: {
-        border: '1px solid #969696'
+  },
+  planerWallsWrap_top_favorites: {},
+  planerWallsWrap_top_favorites_active: {
+    '& path': {
+      fill: '#64BCF0',
+      stroke: '#64BCF0',
+      fillOpacity: 1,
     },
-    divideWallImg:{
-
+  },
+  divideWall: {
+    height: 100,
+    border: '1px solid #d9d9d9',
+    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
+    cursor: 'pointer',
+    display: 'grid',
+    gridTemplateColumns: 'auto auto',
+    gridGap: 31,
+    padding: '10px 25px',
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+    marginBottom: 20,
+    '&:hover': {
+      border: '1px solid #9DD900',
     },
-    divideWallText:{
-        color: '#444444',
-        fontSize: 14,
-        '@media screen and (max-width: 950px)':{
-            fontSize: 12
-        }
-        
+    '@media screen and (max-width: 950px)': {
+      padding: '10px',
+      gridGap: 10,
     },
-    divideWallGrid:{
-        display: 'grid',
-        gridTemplateColumns: '50% 50%',
-        marginBottom: 14,
-        borderBottom: '1px solid #BEBCBC',
-        overflow: 'hidden',
-        position: 'relative',
-        '@media screen and (max-width: 950px)':{
-            marginBottom: 10,
-        }
+  },
+  lockOn: {
+    border: '1px solid #969696',
+  },
+  divideWallImg: {},
+  divideWallText: {
+    color: '#444444',
+    fontSize: 14,
+    '@media screen and (max-width: 950px)': {
+      fontSize: 12,
     },
-    divideWallGridMany:{
-        '&:before':{
-            content: '""',
-            position: 'absolute',
-            top: 0,
-            left: '50%',
-            height: '100%',
-            width: 1,
-            background: '#E9E9E9',
-            zIndex: 1
-        }
+  },
+  divideWallGrid: {
+    display: 'grid',
+    gridTemplateColumns: '50% 50%',
+    marginBottom: 14,
+    borderBottom: '1px solid #BEBCBC',
+    overflow: 'hidden',
+    position: 'relative',
+    '@media screen and (max-width: 950px)': {
+      marginBottom: 10,
     },
-    planerChangeSizes:{
-        margin: '0 14px 30px',
-        '@media screen and (max-width: 950px)':{
-            margin: '0 5px 20px',
-        }
+  },
+  divideWallGridMany: {
+    '&:before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: '50%',
+      height: '100%',
+      width: 1,
+      background: '#E9E9E9',
+      zIndex: 1,
     },
-    divide_checkbox_wr:{
-        margin: '0 14px 15px',
-        '@media screen and (max-width: 950px)':{
-            margin: '0 5px 15px',
-        }
+  },
+  planerChangeSizes: {
+    margin: '0 14px 30px',
+    '@media screen and (max-width: 950px)': {
+      margin: '0 5px 20px',
     },
-    lockImg:{
-        position: 'absolute',
-        top: -8,
-        left: -6
+  },
+  divide_checkbox_wr: {
+    margin: '0 14px 15px',
+    '@media screen and (max-width: 950px)': {
+      margin: '0 5px 15px',
     },
-    planerPlintusAreaTitle:{
-        color: '#2F2F2F',
-        fontSize: 14,
-        margin: '0 14px 8px',
-        '@media screen and (max-width: 950px)':{
-            fontSize: 11,
-            margin: '0 5px 8px',
-        }
+  },
+  lockImg: {
+    position: 'absolute',
+    top: -8,
+    left: -6,
+  },
+  planerPlintusAreaTitle: {
+    color: '#2F2F2F',
+    fontSize: 14,
+    margin: '0 14px 8px',
+    '@media screen and (max-width: 950px)': {
+      fontSize: 11,
+      margin: '0 5px 8px',
     },
-    divideWallBtnWrap:{
-        padding:'0 14px',
-        '@media screen and (max-width: 950px)':{
-            padding:'0 5px',
-        }
-    }
+  },
+  divideWallBtnWrap: {
+    padding: '0 14px',
+    '@media screen and (max-width: 950px)': {
+      padding: '0 5px',
+    },
+  },
 });
 
-const Main = props => {
-    const classes = useStyle();
-    let constructionData = props.constructionData;
+const Main = (props) => {
+  const classes = useStyle();
+  const constructionData = props.constructionData;
 
-    let activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-    let controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
-    let lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-    let isAdded = lastHistoryElem?.isAdded;
+  const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
+  let controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
+  let lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
+  let isAdded = lastHistoryElem?.isAdded;
 
-    let translation = useSelector(selectTranslation);
+  const translation = useSelector(selectTranslation);
 
-    let dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    const imgSrc = WC.plinthCreator.getImgSrc(
-        constructionData?.shapeNum,
-        constructionData?.type
-    );
+  const imgSrc = WC.plinthCreator.getImgSrc(constructionData?.shapeNum, constructionData?.type);
 
-    let [plinthHeight, setPlinthHeight] = useState(constructionData?.h);
-    let [plinthDepth, setPlinthDepth] = useState(constructionData?.d);
+  let [plinthHeight, setPlinthHeight] = useState(constructionData?.h);
+  let [plinthDepth, setPlinthDepth] = useState(constructionData?.d);
 
-    let [mouseDown, setMouseDown] = useState({status: false, action: null, type: null});
-    let [styleAnimation, setStyleAnimation] = useState(isAdded ? {transform: "translateX(100%)"} : { transform: "translateX(-100%)" });
+  let [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
+  let [styleAnimation, setStyleAnimation] = useState(
+    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
+  );
 
-    let [previewMaterialId, setPreviewMaterialId] = useState(constructionData?.getMaterial());
-    let [previewAddMaterialId, setPreviewAddMaterialId] = useState(constructionData?.getAddMaterial());
+  let [previewMaterialId, setPreviewMaterialId] = useState(constructionData?.getMaterial());
+  let [previewAddMaterialId, setPreviewAddMaterialId] = useState(
+    constructionData?.getAddMaterial()
+  );
 
-    let [checkBoxStatus, setCheckBoxStatus] = useState(constructionData?.exists);
+  const [checkBoxStatus, setCheckBoxStatus] = useState(constructionData?.exists);
 
-    let onCopyMaterial = (id, addMaterial) => R2D.CopyPaste.copyMaterial({id, addMaterial, materialRotation: constructionData.getMaterialRotation()});
+  let onCopyMaterial = (id, addMaterial) =>
+    R2D.CopyPaste.copyMaterial({
+      id,
+      addMaterial,
+      materialRotation: constructionData.getMaterialRotation(),
+    });
 
-    let onPasteMaterial = () => {
+  const onPasteMaterial = () => {
         let mat = R2D.CopyPaste.pasteMaterial();
         if (mat?.id) {
             setPreviewMaterialId(mat.id);
@@ -277,16 +274,18 @@ const Main = props => {
             dispatch(setActivePopup({name: "alert", data: translation["TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR"]}))
         }
     }
-
-    let changeMoldingVisible = checked => {
-        constructionData.exists = checked;
-        constructionData.dispatchUpdate();
-        R2D.scene.history.saveState();
-        dispatch(changeUndoRedo());
-        setCheckBoxStatus(checked);
     }
-    
-    let onChangeSize = (mouseDown, value, type) => {
+  };
+
+  let changeMoldingVisible = (checked) => {
+    constructionData.exists = checked;
+    constructionData.dispatchUpdate();
+    R2D.scene.history.saveState();
+    dispatch(changeUndoRedo());
+    setCheckBoxStatus(checked);
+  };
+
+  const onChangeSize = (mouseDown, value, type) => {
         setMouseDown({...mouseDown, type});
         constructionData[type] = value;
         constructionData.dispatchUpdate();
@@ -301,13 +300,13 @@ const Main = props => {
         !mouseDown.status && planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
     }
 
-    let onClickPlinthChange = () => {
+  const onClickPlinthChange = () => {
         dispatch(controlPanelHistoryAdd({added: true, type: "changePlinth"}));
         dispatch(controlPanelUpdateBreadCrumbs({data: {added: true, type: "changePlinth"}, updateType: "add"}));
         props.onChangeSelectedType(constructionData.type);
     };
 
-    let onApplyToAllRoom = () => {
+  const onApplyToAllRoom = () => {
         planner.scene.setPlinthToRoom(constructionData);
         constructionData?.dispatchUpdate();
         R2D.scene.history.saveState();
@@ -316,66 +315,96 @@ const Main = props => {
     }
 
 
-    let updateMaterialsEvent = e => {
-        setPreviewMaterialId(constructionData.getMaterial());
-        setPreviewAddMaterialId(constructionData.getAddMaterial());
+  let updateMaterialsEvent = (e) => {
+    setPreviewMaterialId(constructionData.getMaterial());
+    setPreviewAddMaterialId(constructionData.getAddMaterial());
+  };
+
+  useEffect(() => {
+    let keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
+    planner.scene.addEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
+    return () => {
+      planner.scene.removeEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
+      clearTimeout(keyTimeout);
     };
+  }, []);
 
-    useEffect(() => {
-        let keyTimeout = setTimeout(() => setStyleAnimation({ transform: "translateX(0%)"}), 50);
-        planner.scene.addEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
-        return () => {
-            planner.scene.removeEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
-            clearTimeout(keyTimeout);
-        }
-    }, [])
-    
-    return (
-        <div style={styleAnimation} className={classes.planerWallsCont}>
-            <div className={classes.catalog_top_wr}>
-                <div className={classes.planerPlintusTitleWr}>
-                    <div className={classes.catalog_top_selected_preview}>
-                        <img src={`${imgSrc}`}/>
-                    </div>
-                    <div className={classes.planerPlintusTitle}>{constructionData?.type == 'topPlinth' ? translation["TEXT_MOLDING"] : translation["PANEL_TITLE_PLINTUS"]  }</div>
-                </div>
-            </div>
-
-            <div style={styleAnimation} className={classes.catalog_wr}>
-                <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
-                    <div className={classes.planerWallsWrap}>
-
-                        <div className={classes.divideWallGrid +' ' + classes.divideWallGridMany}>
-                            {
-                                R2D.config.data.enable_pro ?
-                                    <EditPlinthItem customStyles={{border: 'none'}} onClick={onClickPlinthChange} src={`${imgSrc}`}/>
-                                    : null
-                            }
-
-                            <MaterialComponent customStyles={{border: 'none'}} addMaterial={previewAddMaterialId} materialsSource={{type: "bank", data: null}} matId={previewMaterialId} onCopyPaste={{copy: onCopyMaterial, paste: onPasteMaterial}}/>
-                        </div>
-
-                            <div className={classes.planerPlintusAreaTitle}>{`${translation["LENGTH"]} ${planner.units.valueToString(constructionData?.length)} ${R2D.DimensionSystem.getName()}`}</div>
-
-                            <div className={classes.planerChangeSizes}>
-                                <ChangeSize mouseDown={mouseDown} valueChangeType={"h"} zeroNotAllowed={true} changeValue={onChangeSize} value={plinthHeight} label={translation["HEIGHT"]}/>
-                                <ChangeSize mouseDown={mouseDown} valueChangeType={"d"} zeroNotAllowed={true} changeValue={onChangeSize} value={plinthDepth} label={translation["DEPTH"]}/>
-                            </div>
-
-
-
-                            <div className={classes.divide_checkbox_wr}>
-                                <Checkbox name={"plinthVisible"} onChange={changeMoldingVisible} checked={checkBoxStatus} label={translation["TEXT_SHOW"]}/>
-                            </div>
-
-                            <div className={classes.divideWallBtnWrap}>
-                                <BlueButton label={translation["TEXT_APPLY_TO_ROOM"]} onClick={onApplyToAllRoom}/>
-                            </div>
-                    </div>
-                </SimpleBar>
-            </div>
+  return (
+    <div style={styleAnimation} className={classes.planerWallsCont}>
+      <div className={classes.catalog_top_wr}>
+        <div className={classes.planerPlintusTitleWr}>
+          <div className={classes.catalog_top_selected_preview}>
+            <img src={`${imgSrc}`} />
+          </div>
+          <div className={classes.planerPlintusTitle}>
+            {constructionData?.type == 'topPlinth'
+              ? translation['TEXT_MOLDING']
+              : translation['PANEL_TITLE_PLINTUS']}
+          </div>
         </div>
-    );
+      </div>
+
+      <div style={styleAnimation} className={classes.catalog_wr}>
+        <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
+          <div className={classes.planerWallsWrap}>
+            <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
+              {R2D.config.data.enable_pro ? (
+                <EditPlinthItem
+                  customStyles={{ border: 'none' }}
+                  onClick={onClickPlinthChange}
+                  src={`${imgSrc}`}
+                />
+              ) : null}
+
+              <MaterialComponent
+                customStyles={{ border: 'none' }}
+                addMaterial={previewAddMaterialId}
+                materialsSource={{ type: 'bank', data: null }}
+                matId={previewMaterialId}
+                onCopyPaste={{ copy: onCopyMaterial, paste: onPasteMaterial }}
+              />
+            </div>
+
+            <div
+              className={classes.planerPlintusAreaTitle}
+            >{`${translation['LENGTH']} ${planner.units.valueToString(constructionData?.length)} ${R2D.DimensionSystem.getName()}`}</div>
+
+            <div className={classes.planerChangeSizes}>
+              <ChangeSize
+                mouseDown={mouseDown}
+                valueChangeType={'h'}
+                zeroNotAllowed={true}
+                changeValue={onChangeSize}
+                value={plinthHeight}
+                label={translation['HEIGHT']}
+              />
+              <ChangeSize
+                mouseDown={mouseDown}
+                valueChangeType={'d'}
+                zeroNotAllowed={true}
+                changeValue={onChangeSize}
+                value={plinthDepth}
+                label={translation['DEPTH']}
+              />
+            </div>
+
+            <div className={classes.divide_checkbox_wr}>
+              <Checkbox
+                name={'plinthVisible'}
+                onChange={changeMoldingVisible}
+                checked={checkBoxStatus}
+                label={translation['TEXT_SHOW']}
+              />
+            </div>
+
+            <div className={classes.divideWallBtnWrap}>
+              <BlueButton label={translation['TEXT_APPLY_TO_ROOM']} onClick={onApplyToAllRoom} />
+            </div>
+          </div>
+        </SimpleBar>
+      </div>
+    </div>
+  );
 };
 
 export default Main;

@@ -1,40 +1,41 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
 
 export const quickPanelsSlice = createSlice({
   name: 'quickPanels',
   initialState: {
-    active: "",
-    prevActive: "",
+    active: '',
+    prevActive: '',
     panels: {
-      helper: {status: false, visible: true, position: {}, type: ''},
-      delete: {status: false, visible: true, position: {}, type: ''},
-      helper_model: {status: false, visible: true, position: {}, type: ''},
-      helper_group: {status: false, visible: true, position: {}, type: ''},
-      helper_plinth: {status: false, visible: true, position: {}, type: ''},
-      helper_carpet: {status: false, visible: true, position: {}, type: ''},
-      helper_portrets: {status: false, visible: true, position: {}, type: ''},
-      helper_logo_mesh: {status: false, visible: true, position: {}, type: ''}
-    }
+      helper: { status: false, visible: true, position: {}, type: '' },
+      delete: { status: false, visible: true, position: {}, type: '' },
+      helper_model: { status: false, visible: true, position: {}, type: '' },
+      helper_group: { status: false, visible: true, position: {}, type: '' },
+      helper_plinth: { status: false, visible: true, position: {}, type: '' },
+      helper_carpet: { status: false, visible: true, position: {}, type: '' },
+      helper_portrets: { status: false, visible: true, position: {}, type: '' },
+      helper_logo_mesh: { status: false, visible: true, position: {}, type: '' },
+    },
   },
   reducers: {
     showQuickPanel: (state, action) => {
-        state.panels[action.payload.name].status = true;
-        state.panels[action.payload.name].position = action.payload.position;
-        if("visible" in action.payload) state.panels[action.payload.name].visible = action.payload.visible;
-        if("type" in action.payload) state.panels[action.payload.name].type = action.payload.type;
-        state.prevActive = state.active || state.prevActive;
-        state.active = action.payload;
+      state.panels[action.payload.name].status = true;
+      state.panels[action.payload.name].position = action.payload.position;
+      if ('visible' in action.payload)
+        state.panels[action.payload.name].visible = action.payload.visible;
+      if ('type' in action.payload) state.panels[action.payload.name].type = action.payload.type;
+      state.prevActive = state.active || state.prevActive;
+      state.active = action.payload;
     },
     removeQuickPanel: (state, action) => {
       state.prevActive = state.active || state.prevActive;
-      state.active = "";
+      state.active = '';
       state.panels[action.payload.name].status = false;
       state.panels[action.payload.name].type = '';
     },
     removeQuickPanelAll: (state, action) => {
       state.prevActive = state.active || state.prevActive;
-      state.active = "";
-      for(let panel in state.panels) {
+      state.active = '';
+      for (const panel in state.panels) {
         state.panels[panel].status = false;
         state.panels[panel].visible = true;
         state.panels[panel].type = '';
@@ -55,11 +56,19 @@ export const quickPanelsSlice = createSlice({
       state.active = action.payload;
     },
   },
-})
+});
 
-export const selectQuickPanels = state => state.quickPanels.panels;
-export const selectPrevActivePanel = state => state.quickPanels.prevActive;
+export const selectQuickPanels = (state) => state.quickPanels.panels;
+export const selectPrevActivePanel = (state) => state.quickPanels.prevActive;
 
-export const { showQuickPanel, removeQuickPanel, removeQuickPanelAll, toggleQuickPanelVisible, hideQuickPanelVisible, updateQuickPanelPosition, showQuickPanelVisible } = quickPanelsSlice.actions; 
+export const {
+  showQuickPanel,
+  removeQuickPanel,
+  removeQuickPanelAll,
+  toggleQuickPanelVisible,
+  hideQuickPanelVisible,
+  updateQuickPanelPosition,
+  showQuickPanelVisible,
+} = quickPanelsSlice.actions;
 
 export default quickPanelsSlice.reducer;

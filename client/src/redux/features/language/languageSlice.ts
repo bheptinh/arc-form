@@ -1,63 +1,88 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { planner, user } from '../../../initR2D'
-import { controlPanelHistoryClear, controlPanelHistoryDataUpdate, controlPanelUpdateBreadCrumbs } from '../control/controlPanelSlice';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-export const languagesInit = createAsyncThunk(
-  'language/languagesInit',
-  async thunkAPI => {
-    return await user.loadLanguages();
-  }
-)
+import { planner, user } from '../../../initR2D';
+import {
+  controlPanelHistoryClear,
+  controlPanelHistoryDataUpdate,
+  controlPanelUpdateBreadCrumbs,
+} from '../control/controlPanelSlice';
 
-export const translationInit = createAsyncThunk(
-  'language/translationInit',
-  async thunkAPI => {
-    let translation = await user.loadTranslation();
-    let updatedTranslation = {};
-    for (let i in translation) {
-      updatedTranslation[i.toUpperCase()] =  translation[i];
-    }
-    return updatedTranslation;
+export const languagesInit = createAsyncThunk('language/languagesInit', async (thunkAPI) => {
+  return await user.loadLanguages();
+});
+
+export const translationInit = createAsyncThunk('language/translationInit', async (thunkAPI) => {
+  const translation = await user.loadTranslation();
+  const updatedTranslation = {};
+  for (const i in translation) {
+    updatedTranslation[i.toUpperCase()] = translation[i];
   }
-);
+  return updatedTranslation;
+});
 
 export const languageChange = createAsyncThunk(
   'language/languageChange',
   async (code, thunkAPI) => {
-    let languages = await user.setLanguageCode(thunkAPI.getState().language.languages, code);
-    let translation = await user.loadTranslation();
+    const languages = await user.setLanguageCode(thunkAPI.getState().language.languages, code);
+    const translation = await user.loadTranslation();
 
-    let updatedTranslation = {};
-    for (let i in translation) {
-      updatedTranslation[i.toUpperCase()] =  translation[i];
+    const updatedTranslation = {};
+    for (const i in translation) {
+      updatedTranslation[i.toUpperCase()] = translation[i];
     }
 
-    let catalogMaterialsArray = await user.loadRightPanelData(R2D.URL.CATALOG_MATERIALS_TREE_FOR_MODELS);
+    const catalogMaterialsArray = await user.loadRightPanelData(
+      R2D.URL.CATALOG_MATERIALS_TREE_FOR_MODELS
+    );
     planner.setCatalogMaterials(catalogMaterialsArray);
 
-    let start2D3DData = await user.loadRightPanelData(R2D.URL.CATALOG_TREE);
+    const start2D3DData = await user.loadRightPanelData(R2D.URL.CATALOG_TREE);
     planner.setCatalogProducts(start2D3DData.tree);
 
-    let panorams = await user.loadPano();
+    const panorams = await user.loadPano();
     planner.setPanorams(panorams);
 
-    thunkAPI.dispatch(controlPanelUpdateBreadCrumbs({updateType: "clear", forMode: 'furniture'}));
-    thunkAPI.dispatch(controlPanelUpdateBreadCrumbs({updateType: "clear", forMode: 'decor'}));
+    thunkAPI.dispatch(controlPanelUpdateBreadCrumbs({ updateType: 'clear', forMode: 'furniture' }));
+    thunkAPI.dispatch(controlPanelUpdateBreadCrumbs({ updateType: 'clear', forMode: 'decor' }));
 
-    thunkAPI.dispatch(controlPanelHistoryClear({forMode: 'furniture'}));
-    thunkAPI.dispatch(controlPanelHistoryClear({forMode: 'decor'}));
-    
-    let furnitureData = planner.getCatalogProducts();
-    thunkAPI.dispatch(controlPanelHistoryDataUpdate({forMode: 'furniture', data: {type: "catalog", addType: "main", lastSavedScroll: 0, id: null, data: furnitureData, isAdded: false}}));
-    thunkAPI.dispatch(controlPanelHistoryDataUpdate({forMode: 'decor', data: {type: "catalog", addType: "main", lastSavedScroll: 0, id: null, data: planner.getCatalogMaterials().materials, isAdded: false}}));
-    return {languages, translation: updatedTranslation};
+    thunkAPI.dispatch(controlPanelHistoryClear({ forMode: 'furniture' }));
+    thunkAPI.dispatch(controlPanelHistoryClear({ forMode: 'decor' }));
+
+    const furnitureData = planner.getCatalogProducts();
+    thunkAPI.dispatch(
+      controlPanelHistoryDataUpdate({
+        forMode: 'furniture',
+        data: {
+          type: 'catalog',
+          addType: 'main',
+          lastSavedScroll: 0,
+          id: null,
+          data: furnitureData,
+          isAdded: false,
+        },
+      })
+    );
+    thunkAPI.dispatch(
+      controlPanelHistoryDataUpdate({
+        forMode: 'decor',
+        data: {
+          type: 'catalog',
+          addType: 'main',
+          lastSavedScroll: 0,
+          id: null,
+          data: planner.getCatalogMaterials().materials,
+          isAdded: false,
+        },
+      })
+    );
+    return { languages, translation: updatedTranslation };
   }
 );
 
 export const languageSlice = createSlice({
   name: 'language',
-  initialState: {translation: {}, languages: []},
-  extraReducers: builder => {
+  initialState: { translation: {}, languages: [] },
+  extraReducers: (builder) => {
     builder.addCase(languagesInit.fulfilled, (state, action) => {
       state.languages = action.payload;
     });
@@ -68,9 +93,9 @@ export const languageSlice = createSlice({
       return action.payload;
     });
   },
-})
+});
 
-export const selectLanguages = state => state.language.languages;
-export const selectTranslation = state => state.language.translation;
+export const selectLanguages = (state) => state.language.languages;
+export const selectTranslation = (state) => state.language.translation;
 
 export default languageSlice.reducer;

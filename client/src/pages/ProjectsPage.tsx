@@ -277,7 +277,7 @@ export default function ProjectsPage() {
       const res = await fetch(`/server-api/projects?limit=${LIMIT}&offset=${off}`);
       const data = await res.json();
       if (data.status === 'ok') {
-        setProjects(off === 0 ? data.data.items : prev => [...prev, ...data.data.items]);
+        setProjects(off === 0 ? data.data.items : (prev) => [...prev, ...data.data.items]);
         setTotal(data.data.total);
         setOffset(off + data.data.items.length);
       }
@@ -307,8 +307,8 @@ export default function ProjectsPage() {
   const handleDelete = async (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
     await fetch(`/server-api/projects/${id}`, { method: 'DELETE' });
-    setProjects(prev => prev.filter(p => p.id !== id));
-    setTotal(t => t - 1);
+    setProjects((prev) => prev.filter((p) => p.id !== id));
+    setTotal((t) => t - 1);
   };
 
   const startRename = (e: React.MouseEvent, item: Project) => {
@@ -325,7 +325,7 @@ export default function ProjectsPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name }),
       });
-      setProjects(prev => prev.map(p => p.id === id ? { ...p, name } : p));
+      setProjects((prev) => prev.map((p) => (p.id === id ? { ...p, name } : p)));
     }
     setRenamingId(null);
   };
@@ -343,21 +343,56 @@ export default function ProjectsPage() {
             <div className={classes.dropdownActive}>
               {sortLabel}
               <svg width="11" height="7" fill="none" viewBox="0 0 11 7">
-                <path fill="#555" fillRule="evenodd" d="m9.514 1.18.408.414-4.526 4.57-.408-.413.003-.003L.92 1.575l.412-.41L5.4 5.335l4.114-4.154Z" clipRule="evenodd"/>
+                <path
+                  fill="#555"
+                  fillRule="evenodd"
+                  d="m9.514 1.18.408.414-4.526 4.57-.408-.413.003-.003L.92 1.575l.412-.41L5.4 5.335l4.114-4.154Z"
+                  clipRule="evenodd"
+                />
               </svg>
             </div>
             <div className={classes.dropdownOptionsWrap}>
               <div className={classes.dropdownOptions}>
-                <div className={classes.dropdownOption} onClick={() => { setSortField('opened'); setSortLabel('Created'); }}>Created</div>
-                <div className={classes.dropdownOption} onClick={() => { setSortField('modified'); setSortLabel('Last updated'); }}>Last updated</div>
+                <div
+                  className={classes.dropdownOption}
+                  onClick={() => {
+                    setSortField('opened');
+                    setSortLabel('Created');
+                  }}
+                >
+                  Created
+                </div>
+                <div
+                  className={classes.dropdownOption}
+                  onClick={() => {
+                    setSortField('modified');
+                    setSortLabel('Last updated');
+                  }}
+                >
+                  Last updated
+                </div>
               </div>
             </div>
           </div>
-          <div className={classes.sortBtn} onClick={() => setSortDir(d => d === 'asc' ? 'desc' : 'asc')}>
-            {sortDir === 'desc'
-              ? <svg width="15" height="11" fill="none" viewBox="0 0 15 11"><path fill="#555" d="M1.01 7.737a.48.48 0 0 0-.011.68l2.004 2.012c-.06-.026.044.046 0 0 .059.025.128.115.192.115.065 0 .123-.09.182-.115-.044.046.06-.026 0 0l2.005-2.013a.48.48 0 1 0-.69-.668L3.67 8.802V1.126a.48.48 0 1 0-.96 0v7.675L1.629 7.708c-.089-.091-.15-.104-.278-.106a.48.48 0 0 0-.342.135Zm11.8-3.658a.48.48 0 0 0-.48-.48H7.12a.48.48 0 0 0 0 .96h5.21a.48.48 0 0 0 .48-.48Zm-1.498 2.954a.48.48 0 0 0-.48-.48H7.119a.48.48 0 0 0 0 .96h3.713a.48.48 0 0 0 .48-.48ZM7.12 9.507a.48.48 0 1 0 0 .96h2.215a.48.48 0 0 0 0-.96H7.119ZM13.83.646H7.12a.48.48 0 0 0 0 .96h6.71a.48.48 0 1 0 0-.96Z"/></svg>
-              : <svg width="15" height="11" viewBox="0 0 15 11" fill="none"><path fill="#555" d="M1.009 3.764a.48.48 0 0 1 .341-.136c.128.002.19.015.278.107l1.081 1.093V1.126a.48.48 0 1 1 .96 0v7.676l1.022-1.064a.48.48 0 1 1 .69.668L3.376 10.42c-.059.026-.118.115-.182.115-.065 0-.134-.09-.193-.115-.044.046.06-.026 0 0L.998 8.406a.48.48 0 0 1 .011-.68v.038Zm11.8 3.658a.48.48 0 0 1-.48.48H7.12a.48.48 0 0 1 0-.96h5.21a.48.48 0 0 1 .48.48Zm-1.498-2.954a.48.48 0 0 1-.48.48H7.119a.48.48 0 0 1 0-.96h3.713a.48.48 0 0 1 .48.48ZM7.12 1.606a.48.48 0 1 1 0-.96h2.215a.48.48 0 0 1 0 .96H7.119ZM13.83 4.56H7.12a.48.48 0 0 1 0-.96h6.71a.48.48 0 1 1 0 .96Z"/></svg>
-            }
+          <div
+            className={classes.sortBtn}
+            onClick={() => setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'))}
+          >
+            {sortDir === 'desc' ? (
+              <svg width="15" height="11" fill="none" viewBox="0 0 15 11">
+                <path
+                  fill="#555"
+                  d="M1.01 7.737a.48.48 0 0 0-.011.68l2.004 2.012c-.06-.026.044.046 0 0 .059.025.128.115.192.115.065 0 .123-.09.182-.115-.044.046.06-.026 0 0l2.005-2.013a.48.48 0 1 0-.69-.668L3.67 8.802V1.126a.48.48 0 1 0-.96 0v7.675L1.629 7.708c-.089-.091-.15-.104-.278-.106a.48.48 0 0 0-.342.135Zm11.8-3.658a.48.48 0 0 0-.48-.48H7.12a.48.48 0 0 0 0 .96h5.21a.48.48 0 0 0 .48-.48Zm-1.498 2.954a.48.48 0 0 0-.48-.48H7.119a.48.48 0 0 0 0 .96h3.713a.48.48 0 0 0 .48-.48ZM7.12 9.507a.48.48 0 1 0 0 .96h2.215a.48.48 0 0 0 0-.96H7.119ZM13.83.646H7.12a.48.48 0 0 0 0 .96h6.71a.48.48 0 1 0 0-.96Z"
+                />
+              </svg>
+            ) : (
+              <svg width="15" height="11" viewBox="0 0 15 11" fill="none">
+                <path
+                  fill="#555"
+                  d="M1.009 3.764a.48.48 0 0 1 .341-.136c.128.002.19.015.278.107l1.081 1.093V1.126a.48.48 0 1 1 .96 0v7.676l1.022-1.064a.48.48 0 1 1 .69.668L3.376 10.42c-.059.026-.118.115-.182.115-.065 0-.134-.09-.193-.115-.044.046.06-.026 0 0L.998 8.406a.48.48 0 0 1 .011-.68v.038Zm11.8 3.658a.48.48 0 0 1-.48.48H7.12a.48.48 0 0 1 0-.96h5.21a.48.48 0 0 1 .48.48Zm-1.498-2.954a.48.48 0 0 1-.48.48H7.119a.48.48 0 0 1 0-.96h3.713a.48.48 0 0 1 .48.48ZM7.12 1.606a.48.48 0 1 1 0-.96h2.215a.48.48 0 0 1 0 .96H7.119ZM13.83 4.56H7.12a.48.48 0 0 1 0-.96h6.71a.48.48 0 1 1 0 .96Z"
+                />
+              </svg>
+            )}
           </div>
         </div>
       </div>
@@ -371,26 +406,73 @@ export default function ProjectsPage() {
         <div className={classes.grid}>
           <div className={classes.addCard} onClick={handleCreateNew}>
             <svg width="26" height="26" fill="none" viewBox="0 0 26 26">
-              <rect width="2.977" height="25" x="11.506" y=".209" fill="#2E3839" rx="1.488"/>
-              <rect width="2.977" height="25" x="25.494" y="11.221" fill="#2E3839" rx="1.488" transform="rotate(90 25.494 11.221)"/>
+              <rect width="2.977" height="25" x="11.506" y=".209" fill="#2E3839" rx="1.488" />
+              <rect
+                width="2.977"
+                height="25"
+                x="25.494"
+                y="11.221"
+                fill="#2E3839"
+                rx="1.488"
+                transform="rotate(90 25.494 11.221)"
+              />
             </svg>
             New project
           </div>
 
-          {sorted.map(item => (
+          {sorted.map((item) => (
             <div key={item.id} className={classes.card} onClick={() => handleOpen(item.id)}>
               <div className={classes.cardImg}>
                 <div className={classes.cardActions}>
-                  <div className={classes.actionBtn} onClick={e => { e.stopPropagation(); handleOpen(item.id); }}>
-                    <svg width="27" height="27" fill="none" viewBox="0 0 27 27"><path fill="#fff" d="M13.5 1a12.5 12.5 0 1 0 0 25A12.5 12.5 0 0 0 13.5 1Zm0 22.727A10.227 10.227 0 1 1 13.5 3.273a10.227 10.227 0 0 1 0 20.454Z"/><path fill="#fff" d="M17.682 12.41 11.5 8.637a1.136 1.136 0 0 0-1.136 1.966v7.546a1.136 1.136 0 0 0 1.136 0l6.182-3.773a1.136 1.136 0 0 0 0-1.966Z"/></svg>
+                  <div
+                    className={classes.actionBtn}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleOpen(item.id);
+                    }}
+                  >
+                    <svg width="27" height="27" fill="none" viewBox="0 0 27 27">
+                      <path
+                        fill="#fff"
+                        d="M13.5 1a12.5 12.5 0 1 0 0 25A12.5 12.5 0 0 0 13.5 1Zm0 22.727A10.227 10.227 0 1 1 13.5 3.273a10.227 10.227 0 0 1 0 20.454Z"
+                      />
+                      <path
+                        fill="#fff"
+                        d="M17.682 12.41 11.5 8.637a1.136 1.136 0 0 0-1.136 1.966v7.546a1.136 1.136 0 0 0 1.136 0l6.182-3.773a1.136 1.136 0 0 0 0-1.966Z"
+                      />
+                    </svg>
                     <div className={classes.actionLabel}>Open</div>
                   </div>
-                  <div className={classes.actionBtn} onClick={e => startRename(e, item)}>
-                    <svg width="27" height="27" fill="none" viewBox="0 0 27 27"><path fill="#fff" fillRule="evenodd" d="M22.733 26.164V.45h2.005v25.712h-2.005Zm-1.629-25.758h5.271V2.41h-5.271V.406Zm-.035 24.274h5.27v2.006h-5.27v-2.005Zm-.01-20.93H.859v19.114h20.2v-1.607H2.466v-15.9H21.06V3.748Zm2.26 19.114h.001V3.75h-.002v19.115Z" clipRule="evenodd"/></svg>
+                  <div className={classes.actionBtn} onClick={(e) => startRename(e, item)}>
+                    <svg width="27" height="27" fill="none" viewBox="0 0 27 27">
+                      <path
+                        fill="#fff"
+                        fillRule="evenodd"
+                        d="M22.733 26.164V.45h2.005v25.712h-2.005Zm-1.629-25.758h5.271V2.41h-5.271V.406Zm-.035 24.274h5.27v2.006h-5.27v-2.005Zm-.01-20.93H.859v19.114h20.2v-1.607H2.466v-15.9H21.06V3.748Zm2.26 19.114h.001V3.75h-.002v19.115Z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
                     <div className={classes.actionLabel}>Rename</div>
                   </div>
-                  <div className={classes.actionBtn} onClick={e => handleDelete(e, item.id)}>
-                    <svg width="24" height="31" viewBox="0 0 13 17" fill="none"><path fillRule="evenodd" clipRule="evenodd" d="M5.105.164h2.4v1.44h-2.4V.164Z" fill="#fff"/><path d="M0.305 2.084c3.944-.947 8.056-.947 12 0v.96H.305v-.96Z" fill="#fff"/><path fillRule="evenodd" clipRule="evenodd" d="M10.866 3.523H1.266V15.725c0 .418.338.758.754.758h8.571c.416 0 .754-.34.754-.758V3.523h-.48ZM9.907 5.204a.72.72 0 1 0-1.44 0v8.16a.72.72 0 1 0 1.44 0V5.204Zm-3.12-1.44a.72.72 0 0 1 .72.72v8.16a.72.72 0 0 1-1.44 0V4.484a.72.72 0 0 1 .72-.72Zm-2.64 1.44a.72.72 0 1 0-1.44 0v8.16a.72.72 0 1 0 1.44 0V5.204Z" fill="#fff"/></svg>
+                  <div className={classes.actionBtn} onClick={(e) => handleDelete(e, item.id)}>
+                    <svg width="24" height="31" viewBox="0 0 13 17" fill="none">
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M5.105.164h2.4v1.44h-2.4V.164Z"
+                        fill="#fff"
+                      />
+                      <path
+                        d="M0.305 2.084c3.944-.947 8.056-.947 12 0v.96H.305v-.96Z"
+                        fill="#fff"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M10.866 3.523H1.266V15.725c0 .418.338.758.754.758h8.571c.416 0 .754-.34.754-.758V3.523h-.48ZM9.907 5.204a.72.72 0 1 0-1.44 0v8.16a.72.72 0 1 0 1.44 0V5.204Zm-3.12-1.44a.72.72 0 0 1 .72.72v8.16a.72.72 0 0 1-1.44 0V4.484a.72.72 0 0 1 .72-.72Zm-2.64 1.44a.72.72 0 1 0-1.44 0v8.16a.72.72 0 1 0 1.44 0V5.204Z"
+                        fill="#fff"
+                      />
+                    </svg>
                     <div className={classes.actionLabel}>Delete</div>
                   </div>
                 </div>
@@ -401,18 +483,25 @@ export default function ProjectsPage() {
                     ref={renameInputRef}
                     className={classes.renameInput}
                     value={renameValue}
-                    onChange={e => setRenameValue(e.target.value)}
-                    onClick={e => e.stopPropagation()}
+                    onChange={(e) => setRenameValue(e.target.value)}
+                    onClick={(e) => e.stopPropagation()}
                     onBlur={() => commitRename(item.id)}
-                    onKeyDown={e => { if (e.key === 'Enter') commitRename(item.id); if (e.key === 'Escape') setRenamingId(null); }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') commitRename(item.id);
+                      if (e.key === 'Escape') setRenamingId(null);
+                    }}
                   />
                 ) : (
                   <div className={classes.cardName}>{item.name || 'Unnamed'}</div>
                 )}
                 <div className={classes.cardMeta}>
-                  <div className={classes.metaRow}><span>Modified:</span> {item.modified?.substring(0, 10)}</div>
+                  <div className={classes.metaRow}>
+                    <span>Modified:</span> {item.modified?.substring(0, 10)}
+                  </div>
                   {item.opened?.substring(0, 10) !== '0000-00-00' && (
-                    <div className={classes.metaRow}><span>Created:</span> {item.opened?.substring(0, 10)}</div>
+                    <div className={classes.metaRow}>
+                      <span>Created:</span> {item.opened?.substring(0, 10)}
+                    </div>
                   )}
                 </div>
               </div>
@@ -420,7 +509,9 @@ export default function ProjectsPage() {
           ))}
 
           {projects.length < total && (
-            <div className={classes.loadMore} onClick={() => load(offset)}>Load more</div>
+            <div className={classes.loadMore} onClick={() => load(offset)}>
+              Load more
+            </div>
           )}
         </div>
       </div>
