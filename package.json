@@ -14,9 +14,7 @@
     "start": "NODE_ENV=production node --env-file=.env dist-server/index.js",
     "preview": "vite preview",
     "lint": "eslint client/src",
-    "lint:fix": "eslint client/src --fix",
-    "format": "prettier --write \"client/src/**/*.{ts,tsx}\"",
-    "format:check": "prettier --check \"client/src/**/*.{ts,tsx}\""
+    "lint:fix": "eslint client/src --fix"
   },
   "keywords": [],
   "author": "",
@@ -57,6 +55,7 @@
     "concurrently": "^9.2.1",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-simple-import-sort": "^13.0.0",

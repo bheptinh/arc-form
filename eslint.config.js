@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
-import prettier from 'eslint-config-prettier';
+import prettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default tseslint.config({
   files: ['client/src/**/*.{ts,tsx}'],
@@ -11,7 +11,7 @@ export default tseslint.config({
     js.configs.recommended,
     ...tseslint.configs.recommended,
     reactPlugin.configs.flat['jsx-runtime'],
-    prettier,
+    prettierRecommended,
   ],
   plugins: {
     'react-hooks': reactHooks,
