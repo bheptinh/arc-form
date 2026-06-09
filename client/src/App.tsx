@@ -980,6 +980,11 @@ const App = props => {
 
             let needToCleanSearch = false;
 
+            // TODO: localStorage override bug — checkProjectForLoad skips the server if a localStorage copy exists
+            //       (r2d_project_<hash>), then tryLoadProjectFromStorage loads that stale copy instead.
+            //       Intent is crash recovery, but it means external DB edits or saves from another browser are ignored.
+            //       Fix would be clearing localStorage for the current project hash before checkProjectForLoad,
+            //       but that breaks crash recovery. Low priority for single-user local setup.
             let checkProjectForLoadResult = await R2D.controller.checkProjectForLoad();
             let tryLoadProjectFromStorageResult = await R2D.controller.tryLoadProjectFromStorage();
             await R2D.controller.applyAndSaveDataFromStorage();

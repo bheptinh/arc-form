@@ -41,6 +41,8 @@
       URL_GET_PRODUCT: '/server-api/catalog/products?',
       // URL_GET_CATEGORY_PRODUCTS: '/api/category/products?key=4500282e6846fe6650de81bd35d27540',
       URL_GET_CATEGORY_PRODUCTS: '/api/category/products?key=4500282e6846fe6650de81bd35d27540',
+      // TODO: set-tree route not implemented — needs external data source (vendor-curated material sets).
+      //       See docs/set-tree.md for full API contract and what would be needed to implement it.
       URL_GET_SET_TREE: '/server-api/catalog/set-tree?',
       URL_LOAD_SHARED_PLAN: '/server-api/projects/',
       URL_LOAD_PLAN: '/server-api/projects/',
@@ -85,6 +87,9 @@
       URL_SAVE_CUSTOM_REGISTRATION: '/api/auth/custom_registration?key=4500282e6846fe6650de81bd35d27540',
       URL_GET_CUSTOM_REGISTRATION: '/api/auth/get_registration_form?key=4500282e6846fe6650de81bd35d27540',
       URL_SEND_PROJECT_CALC: '/api/auth/send_project_calc?key=4500282e6846fe6650de81bd35d27540',
+      // TODO: remove entirely — this endpoint is redundant (likely a license-key ping for roomtodo.com).
+      //       user.plannerConnect() is called in App.tsx init but its response is only console.log'd, never used.
+      //       To remove: delete this URL, the mock handler in vite-mock-plugin.js, and the plannerConnect() call in App.tsx.
       URL_PLANNER_CONNECT: '/api/planner/connect?key=4500282e6846fe6650de81bd35d27540',
       URL_FAVORITES_GET: '/server-api/catalog/favorites',
       URL_FAVORITES_ADD: '/server-api/catalog/favorites/{id}',

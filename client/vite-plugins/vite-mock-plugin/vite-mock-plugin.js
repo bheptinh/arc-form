@@ -46,7 +46,8 @@ export default {
         res.end(JSON.stringify({ status: 'ok', data: { items: [], total: 0, limit: 20, offset: 0 } }));
         return;
       } else if (url.startsWith('/planner/connect')) {
-        // TODO: DELETE — this endpoint has no purpose. Remove handler and URL_CONNECT (if any) from R2D.URL.
+        // TODO: remove entirely — redundant license-key ping for roomtodo.com, response is never used.
+        //       Remove this handler, the URL_PLANNER_CONNECT entry in index.html, and the plannerConnect() call in App.tsx.
         res.statusCode = 200;
         res.end();
         return;
