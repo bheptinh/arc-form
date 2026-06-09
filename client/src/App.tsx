@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {createUseStyles} from "react-jss";
 import { useSelector, useDispatch } from 'react-redux';
 import { AnimatePresence, motion } from "framer-motion";
@@ -12,7 +12,7 @@ import { changeUndoRedo } from './redux/features/topPanel/topPanelSlice';
 import { removeQuickPanel, removeQuickPanelAll, showQuickPanel } from './redux/features/quickPanels/quickPanelsSlice';
 import { changeImagePlanUploadType, changeWallsHeight } from './redux/features/constructor/constructorSlice';
 import { selectActiveViewMode, setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
-import { selectTips, showTip } from './redux/features/tips/tipsSlice';
+import { showTip } from './redux/features/tips/tipsSlice';
 import { saveLoggedStatus, selectIsLogged, selectUserProfileData, selectUserProjectActive, setActiveProjectName, setProfileData, setProjectPlan, userLogout } from './redux/features/user/userSlice';
 import {
     changeActiveControlPanelMode,
@@ -23,7 +23,6 @@ import {
     selectControlPanelData,
     selectPrevControlPanelMode,
     updateDynamicPanelStatus,
-    selectDynamicPanelStatus,
     updateDynamicToggleButtonStatus,
     selectActiveControlPanelModeData
 } from './redux/features/control/controlPanelSlice';
@@ -34,10 +33,11 @@ import RightPanel from './components/right_new/RightPanel';
 import BottomPanel from './components/bottom/BottomPanel';
 import Popups from './components/popups/Popups';
 import QuickPanels from './components/quick/QuickPanels';
-import Tip from './components/tips/Tip';
 import LeftMain from './components/left_new/LeftMain';
 
 import { createProjectUrl } from "./utils/UrlHelper";
+import GlobalPreload from './shared-components/loaders/global-preload';
+import Tips from './smart-components/tips';
 
 const useStyle = createUseStyles({
     main:{
@@ -186,7 +186,6 @@ const App = props => {
     let userProfileData = useSelector(selectUserProfileData);
     let controlPanelData = useSelector(selectControlPanelData);
     let prevControlPanelMode = useSelector(selectPrevControlPanelMode);
-    let tips = useSelector(selectTips);
     let isLogged = useSelector(selectIsLogged);
     let controPanelActiveMode = useSelector(selectActiveControlPanelMode);
     let preloaderStatus = useSelector(selectPreloaderStatus);
@@ -197,15 +196,10 @@ const App = props => {
     let languages = useSelector(selectLanguages);
     let currLanguage = languages.find(i => i.current == 1);
 
-    let [showTipSelectGroup, setTipSelectGroup] = useState(false);
-    let [showTipChangeWallHeight, setTipChangeWallHeight] = useState(false);
-    let [showTipUploadCustomMat, setTipUploadCustomMat] = useState(false);
     let [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(R2D.config.data.enable_merchant_login);
-    let [showTipUseTab, setTipUseTab] = useState({status: false, position: {x: 0, y: 0}});
+    let [showTipUseTab, setTipUseTab] = useState({status: false, position: {x: 0, y: 0}, isEnterTipActive: false});
     let [showTipUseEnter, setTipUseEnter] = useState({status: false, position: {x: 0, y: 0}});
-    let [showTipMergeGroupButton, setShowTipMergeGroupButton] = useState(false);
-    let [showTipPanorams, setShowTipPanorams] = useState(false);
-    let [showTipRenderMake, setShowTipRenderMake] = useState(false);
+
     let [isProOptionEnabled, setIsProOptionEnabled] = useState(R2D.OPTIONS.PRO_PLAN);
     
     let currOS = R2D.controller.getCurrentOS();
@@ -218,78 +212,6 @@ const App = props => {
     let isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
 
     let popups = useSelector(selectPopups);
-    let dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
-
-    function changeMIHStateListener(e) {
-        if(userProfileData?.tips && userProfileData.tips != 0) {
-            let mih = planner.mih();
-            setTimeout(function() {
-                if (!tips.selectGroup.showed && e.newState == mih.stateMain && e.oldState == mih.stateDraggingProdFromCatalog)
-                {
-                    let sceneObjs = R2D.scene.getSceneObjects();
-                    let num = 0;
-                    for (let i = 0; i < sceneObjs.length; i++)
-                    {
-                        if (R2D.ObjectViewer3DGroup.validSceneObject(sceneObjs[i])) num++;
-                        if (num >= 3) break;
-                    }
-
-                    if (num >= 3) setTipSelectGroup(true);
-                }
-
-            }, 100);
-
-            if (e.newState == mih.stateMain) planner.apiScene.dispatchEvent(new Event(planner.apiScene.TIPS_SAVE_PROJECT, {}));
-        }
-    }
-
-    function changeConstructorStateListener() {
-        if(userProfileData?.tips && userProfileData.tips != 0) {
-            setTimeout(function() {
-                if (WC.core.roomPoints.length > 0 && (R2D.viewConstructor.state == R2D.viewConstructor.stateEditing) &&
-                    (R2D.viewConstructor.prevState == R2D.viewConstructor.stateMakingRoom ||
-                    R2D.viewConstructor.prevState == R2D.viewConstructor.stateMakingWalls ||
-                    R2D.viewConstructor.prevState == R2D.viewConstructor.stateMakingRect))
-                {
-                    setTipChangeWallHeight(true);
-                }
-            }, 200);
-        }
-
-        if (R2D.viewConstructor.state == R2D.viewConstructor.stateEditing) planner.apiScene.dispatchEvent(new Event(planner.apiScene.TIPS_SAVE_PROJECT, {}));
-    }
-
-    function customUploadListener(e) {
-        if(userProfileData?.tips && userProfileData.tips != 0) {
-            setTimeout(function() {
-                if (!tips.uploadCustomMat.showed) setTipUploadCustomMat(true);
-            }, 100);
-        }
-    }
-
-
-    let tipMergeGroupButtonListener = e => {
-        if(userProfileData?.tips && userProfileData.tips != 0) {
-            setTimeout(function() {
-                if (!tips.mergeGroupButton.showed) setShowTipMergeGroupButton(true);
-            }, 100);
-        }
-    }
-    let tipPanoramsListener = e => {
-        if(userProfileData?.tips && userProfileData.tips != 0) {
-            setTimeout(function() {
-                if (!tips.panorams.showed) setShowTipPanorams(true);
-            }, 100);
-        }
-    }
-
-    let tipRenderMakeListener = e => {
-        if(userProfileData?.tips && userProfileData.tips != 0) {
-            setTimeout(function() {
-                if (!tips.tipRenderMake.showed) setShowTipRenderMake(true);
-            }, 100);
-        }
-    }
 
     let onRendersUpdate = data => {
         dispatch(setActivePopup({name: "completeMessage", positionX: "left", type: data.data.status == "stored" ? 'complete' : 'error', data: data.data.status == "stored" ? "NOTIFY_RENDER_READY" : "NOTIFY_RENDER_ERROR"}));
@@ -841,14 +763,7 @@ const App = props => {
         }
     }
 
-    let preloaderStyles = {
-        position: 'absolute', 
-        left: 0, 
-        top: 0, 
-        zIndex: 999, 
-        background: 'rgba(0, 0, 0, 0.3)',
-        display: preloaderStatus ? 'block' : 'none'
-    };
+    
 
     let quickPanelShow = e => dispatch(showQuickPanel({name: e.data.type, position: e.data.quickPanel, type: e.data.addType}));
     let quickPanelHide = e => dispatch(removeQuickPanel({name: e.data.type}));
@@ -1271,26 +1186,6 @@ const App = props => {
         return () => planner.apiScene.removeEventListener(planner.apiScene.PROJECT_LOADED, onProjectLoaded);
     }, [userProfileData?.autoSave]);
     
-    useEffect(() => {
-        planner.mih().addEventListener(R2D.MouseInteractionHelper.STATE_CHANGED, changeMIHStateListener);
-        planner.scene.addEventListener(planner.scene.TIPS_UPLOAD_CUSTOM_MAT, customUploadListener);
-        planner.scene.addEventListener(planner.scene.TIPS_MERGE_GROUP_BUTTON, tipMergeGroupButtonListener);
-        planner.scene.addEventListener(planner.scene.TIPS_PANORAMS, tipPanoramsListener);
-        planner.scene.addEventListener(planner.scene.TIPS_RENDER_MAKE, tipRenderMakeListener);
-
-        return () => {
-            planner.mih().removeEventListener(R2D.MouseInteractionHelper.STATE_CHANGED, changeMIHStateListener);
-            planner.scene.removeEventListener(planner.scene.TIPS_UPLOAD_CUSTOM_MAT, customUploadListener);
-            planner.scene.removeEventListener(planner.scene.TIPS_MERGE_GROUP_BUTTON, tipMergeGroupButtonListener);
-            planner.scene.removeEventListener(planner.scene.TIPS_PANORAMS, tipPanoramsListener);
-            planner.scene.removeEventListener(planner.scene.TIPS_RENDER_MAKE, tipRenderMakeListener);
-        }
-    }, [userProfileData, tips]);
-
-    useEffect(() => {
-        R2D.viewConstructor.addEventListener(WC.EDITOR_CHANGE_STATE, changeConstructorStateListener);
-        return () => R2D.viewConstructor.removeEventListener(WC.EDITOR_CHANGE_STATE, changeConstructorStateListener);
-    }, [userProfileData]);
 
     useEffect(() => {
         !isOrientationPortrait && isProgramReady && setTimeout(() => document.querySelector(".preloader_main") && document.querySelector(".preloader_main").remove(), 300)
@@ -1348,7 +1243,8 @@ const App = props => {
 
     return (
         <div className={classes.main}>
-            <div className='preloader' style={ {...preloaderStyles} }><div className="preloader-cube"></div></div>
+            <GlobalPreload loading={preloaderStatus} />
+            
             {
                 isOrientationPortrait ?
                 <div className={classes.content_portret}>
@@ -1412,52 +1308,11 @@ const App = props => {
                 <Popups />
                 <QuickPanels/>
 
-                {
-                    dynamicPanelStatus && userProfileData?.tips && userProfileData.tips != 0 && !tips.constructorButtons.showed && !isCurrDeviceAPhone && tips.constructorButtons.status ?
-                        <div>
-                            <Tip name={"constructorButtons"} showTime={500} arrow={{position: "top", direction: "left"}} text={"TUT_FROM_SCRATCH"} position={{x: 370, y: 135, from: "left"}}/>
-                            <Tip name={"constructorButtons"} showTime={1000} arrow={{position: "bottom", direction: "left"}} text={"TUT_UPLOAD_FLOORPLAN"} position={{x:370, y: 438, from: "left"}}/>
-                        </div>
-                        :
-                        null
-                }
 
-                {
-                    showTipSelectGroup && !tips.selectGroup.showed && !isCurrDeviceAPhone ? <Tip name={"selectGroup"} showTime={1000} arrow={{}} text={"TUT_CREATE_GROUP"} position={{x: "50%", y: "50%", from: "left"}}/>
-                    : null
-                }
-
-                {
-                    showTipChangeWallHeight && !tips.changeWallHeight.showed && !isCurrDeviceAPhone ? <Tip name={"changeWallHeight"} showTime={1000} arrow={{position: "top", direction: "left"}} text={"TUT_CHANGE_WALLS_HEIGHT"} position={{x: 370, y: 68, from: "left"}}/>
-                    : null
-                }
-                {
-                    showTipUploadCustomMat && !tips.uploadCustomMat.showed && !isCurrDeviceAPhone ? <Tip name={"uploadCustomMat"} showTime={1000} arrow={{position: "top", direction: "left"}} text={"TUT_UPLOAD_MATERIAL"} position={{x: 370, y: 135, from: "left"}}/>
-                    : null
-                }
-                {
-                    showTipUseTab.status && !tips.tipUseTab.showed && !isCurrDeviceAPhone ? <Tip name={"tipUseTab"} showTime={100} arrow={showTipUseTab.isEnterTipActive ? {position: "right", direction: "top", size: "small"} : {position: "left", direction: "bottom", size: "small"}} text={"TUT_USE_TAB"} isEnterTipActive={showTipUseTab.isEnterTipActive} position={{x: showTipUseTab.position.x, y: showTipUseTab.position.y, from: "left"}}/>
-                    : null
-                }
-                {
-                    showTipUseEnter.status && !tips.tipUseEnter.showed && !isCurrDeviceAPhone ? <Tip name={"tipUseEnter"} showTime={100} arrow={{position: "left", direction: "bottom", size: "small"}} text={"TUT_USE_ENTER"} position={{x: showTipUseEnter.position.x, y: showTipUseEnter.position.y, from: "left"}}/>
-                    : null
-                }
-
-               {
-                   showTipMergeGroupButton && !tips.mergeGroupButton.showed && !isCurrDeviceAPhone ? <Tip name={"mergeGroupButton"} showTime={1000} arrow={{position: "top", direction: "left"}} text={"TUT_MERGE_GROUP"} position={{x: 370, y: 147, from: "left"}}/>
-                    : null
-                }
-
-                {
-                    showTipPanorams && !tips.panorams.showed && !isCurrDeviceAPhone ? <Tip name={"panorams"} showTime={1000} arrow={{position: "top", direction: "left"}} text={"TUT_CHANGE_PANORAMA"} position={{x: 370, y: 116, from: "left"}}/>
-                    : null
-                }
-                {
-                    showTipRenderMake && !tips.tipRenderMake.showed  && !isCurrDeviceAPhone ? <Tip name={"tipRenderMake"} showTime={1000} arrow={{position: "top", direction: "left"}} text={"TUT_RENDER_MAKE"} position={{x: 330, y: 133, from: "left"}}/>
-                    : null
-                }
-
+                <Tips
+                    showTipUseTab={showTipUseTab}
+                    showTipUseEnter={showTipUseEnter}
+                />
             </div>
         </div>
     )
