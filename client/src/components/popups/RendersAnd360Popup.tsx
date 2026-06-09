@@ -488,7 +488,6 @@ const RendersAnd360Popup = (props) => {
             }
         }
         else dispatch(setActivePopup({name: "confirm", type: "render_open", data: {id, type, actions}}))
-    };
   };
 
   let loadRender = async (id) => {

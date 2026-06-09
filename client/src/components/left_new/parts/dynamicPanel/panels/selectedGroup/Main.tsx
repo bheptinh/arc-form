@@ -250,7 +250,6 @@ const Main = (props) => {
         } else if(mat?.type == "logoMesh") {
             dispatch(setActivePopup({name: "alert", data: translation["TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR"]}))
         }
-    }
   };
 
   const onChangeSize = (mouseDown, value, type) => {

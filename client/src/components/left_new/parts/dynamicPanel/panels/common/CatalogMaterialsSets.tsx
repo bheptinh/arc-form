@@ -578,8 +578,6 @@ const CatalogMaterialsSets = (props) => {
             hoverWindow.style.left = (product.getBoundingClientRect().left + product.offsetWidth) + "px";
             hoverWindow.style.top = (product.getBoundingClientRect().top + ((product.offsetHeight - hoverWindow.offsetHeight) / 2)) + "px";
         }
-    }
-
   };
 
   let mouseLeave = () =>

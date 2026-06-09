@@ -1,4 +1,3 @@
-import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
@@ -61,7 +60,7 @@ const useStyle = createUseStyles({
   },
 });
 
-const Popups = (props) => {
+const Popups = () => {
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
   const activePopup = useSelector(selectPopups);

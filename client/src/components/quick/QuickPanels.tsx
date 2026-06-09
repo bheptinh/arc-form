@@ -1,5 +1,4 @@
 import { AnimatePresence } from 'framer-motion';
-import React from 'react';
 import { useSelector } from 'react-redux';
 
 import { selectQuickPanels } from '../../redux/features/quickPanels/quickPanelsSlice';
@@ -12,7 +11,7 @@ import HelperModel from './HelperModel';
 import HelperPlinth from './HelperPlinth';
 import HelperPortrets from './HelperPortrets';
 
-const QuickPanels = (props) => {
+const QuickPanels = () => {
   const quickPanels = useSelector(selectQuickPanels);
 
   return (
