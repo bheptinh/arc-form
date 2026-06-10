@@ -1804,6 +1804,7 @@ const App = () => {
               </AnimatePresence>
             </div>
           )}
+
           <CenterPanel />
         </div>
 
