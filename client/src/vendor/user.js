@@ -1,4 +1,6 @@
-if (! R2D) R2D = {};
+var R2D = window.R2D;
+var extend = window.extend;
+var Event = window.Event;
 
 R2D.UserCore = function()
 {

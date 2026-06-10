@@ -1,4 +1,8 @@
-if (! R2D) R2D = {};
+window.R2D = window.R2D || {};
+var R2D = window.R2D;
+var i, j, k, p, count, index, sIndex, sx, sy;
+var Bp, Bpc, Cp, Cpc, Dp, a, b, bufferAttribute, c, clip, cropBottom, cropLeft, cropRight, d, f, g, h, iosPlatforms, isLookUp, jMin, l, m, macosPlatforms, n, onmessage, platform, r, t, tr, v, w, windowsPlatforms, x, y, z;
+var F, H, anyToken, anyway, asFunction, as_seg, cameraCube, centerY, centerZ, checkDblclickTime, controls, correctLineDistance, currentValue, distanceH, dyn, easing, elementWidth, elevation, fBoundContours, fInnerContours, fSubtrContours, findInner, gl_FragColor, htmlElement, iy, lineRed, logoHeight, logoWidth, logoY, maxAngle, moveFrom, moveTo, nearEdge, nearPower, newData, normalData, normalFile, nwx, nwy, onlyFixedEdges, rendererCube, sB, sG, scaleRoundY, scaleRoundZ, scaleSquareY, scaleSquareZ, secondChar, selectedAligner, selectedInputRuler, separateContacting, shY, showAll, snapDist, specularData, specularFile, tIndex, tY, time, tmpImg, tmpRuler, trs, tz, unit, wx, wy, yIndex;
 
 R2D.PlannerCore = function(user) {
 
@@ -6923,7 +6927,7 @@ R2D.STYLE = {
 } )();
 
 // stats.js - http://github.com/mrdoob/stats.js
-(function(f,e){"object"===typeof exports&&"undefined"!==typeof module?module.exports=e():"function"===typeof define&&define.amd?define(e):f.Stats=e()})(this,function(){var f=function(){function e(a){c.appendChild(a.dom);return a}function u(a){for(var d=0;d<c.children.length;d++)c.children[d].style.display=d===a?"block":"none";l=a}var l=0,c=document.createElement("div");c.style.cssText="position:fixed;top:0;left:0;cursor:pointer;opacity:0.9;z-index:10000";c.addEventListener("click",function(a){a.preventDefault();
+(function(f,e){"object"===typeof exports&&"undefined"!==typeof module?module.exports=e():"function"===typeof define&&define.amd?define(e):f.Stats=e()})(globalThis,function(){var f=function(){function e(a){c.appendChild(a.dom);return a}function u(a){for(var d=0;d<c.children.length;d++)c.children[d].style.display=d===a?"block":"none";l=a}var l=0,c=document.createElement("div");c.style.cssText="position:fixed;top:0;left:0;cursor:pointer;opacity:0.9;z-index:10000";c.addEventListener("click",function(a){a.preventDefault();
     u(++l%c.children.length)},!1);var k=(performance||Date).now(),g=k,a=0,r=e(new f.Panel("FPS","#0ff","#002")),h=e(new f.Panel("MS","#0f0","#020"));if(self.performance&&self.performance.memory)var t=e(new f.Panel("MB","#f08","#201"));u(0);return{REVISION:16,dom:c,addPanel:e,showPanel:u,begin:function(){k=(performance||Date).now()},end:function(){a++;var c=(performance||Date).now();h.update(c-k,200);if(c>=g+1E3&&(r.update(1E3*a/(c-g),100),g=c,a=0,t)){var d=performance.memory;t.update(d.usedJSHeapSize/
     1048576,d.jsHeapSizeLimit/1048576)}return c},update:function(){k=this.end()},domElement:c,setMode:u}};f.Panel=function(e,f,l){var c=Infinity,k=0,g=Math.round,a=g(window.devicePixelRatio||1),r=80*a,h=48*a,t=3*a,v=2*a,d=3*a,m=15*a,n=74*a,p=30*a,q=document.createElement("canvas");q.width=r;q.height=h;q.style.cssText="width:80px;height:48px";var b=q.getContext("2d");b.font="bold "+9*a+"px Helvetica,Arial,sans-serif";b.textBaseline="top";b.fillStyle=l;b.fillRect(0,0,r,h);b.fillStyle=f;b.fillText(e,t,v);
     b.fillRect(d,m,n,p);b.fillStyle=l;b.globalAlpha=.9;b.fillRect(d,m,n,p);return{dom:q,update:function(h,w){c=Math.min(c,h);k=Math.max(k,h);b.fillStyle=l;b.globalAlpha=1;b.fillRect(0,0,r,m);b.fillStyle=f;b.fillText(g(h)+" "+e+" ("+g(c)+"-"+g(k)+")",t,v);b.drawImage(q,d+a,m,n-a,p,d,m,n-a,p);b.fillRect(d+n-a,m,a,p);b.fillStyle=l;b.globalAlpha=.9;b.fillRect(d+n-a,m,a,g((1-h/w)*p))}}};return f});
@@ -7628,7 +7632,7 @@ Number.isInteger = Number.isInteger || function(value) {
   } else {
     $.md5 = md5
   }
-}(this))
+}(globalThis))
 
 // utils
 
@@ -8399,6 +8403,8 @@ var EventDispatcher = function() {
 };
 
 EventDispatcher._maxEventsNullCount = 1000;
+window.EventDispatcher = EventDispatcher;
+window.Event = Event;
 
 EventDispatcher.prototype.dispatchComplete = function(data) {
     this.dispatchEvent(new Event(Event.COMPLETE, data));
@@ -8444,7 +8450,7 @@ EventDispatcher.prototype.removeOnError = function(listener) {
 };
 
 //interface
-EventDispatcherConstantInterface = {
+var EventDispatcherConstantInterface = {
     hasEventListener(type) {
         return this.__eventDispatcher.hasEventListener(type);
     },
@@ -32325,7 +32331,6 @@ R2D.ObjectViewer3DModel = function (sceneObject) {
     var flipX = false;
     var flipZ = false;
 
-    scope.sceneObject = sceneObject;
     scope.errorOnLoad = false;
 
     function needsUpdateHandler(e) {
@@ -32792,7 +32797,6 @@ R2D.ObjectViewer3DPoster = function (sceneObject) {
     var productId = sceneObject.getProductId();
     var object3d = scope.getObject3d(); //scope.getMeshes()[0];
 
-    scope.sceneObject = sceneObject;
     scope.errorOnLoad = false;
 
     function updateMaterial() {
@@ -33004,8 +33008,6 @@ R2D.ObjectViewer3DCarpet = function (sceneObject) {
     var object3d = scope.getObject3d(); //scope.getMeshes()[0];
 
     scope.errorOnLoad = false;
-
-    scope.sceneObject = sceneObject;
 
     function updateMaterial() {
         if(sceneObject.visible && sceneObject.partialVisible) scope.setTranspMaterial && scope.setTranspMaterial('#FFFF00', 0.5);
@@ -39243,13 +39245,13 @@ R2D.CustomRulers = function(scene3d, wallsData, api)
             }
         
             elPos = r.A.clone().project(currentCamera3d);
-            bound = r.elemA.getBoundingClientRect();
+            let bound = r.elemA.getBoundingClientRect();
             r.elemA.style.left = Math.round(((width / 2 *  elPos.x) + width / 2) - bound.width / 2) + "px";
             r.elemA.style.top = Math.round(((height / 2 * -elPos.y) + height / 2) - elemHeight / 2) + "px";
 
             elPos = r.B.clone().project(currentCamera3d);
-            bound = r.elemB.getBoundingClientRect();
-            r.elemB.style.left = Math.round(((width / 2 *  elPos.x) + width / 2) - bound.width / 2) + "px";
+            let bound2 = r.elemB.getBoundingClientRect();
+            r.elemB.style.left = Math.round(((width / 2 *  elPos.x) + width / 2) - bound2.width / 2) + "px";
             r.elemB.style.top = Math.round(((height / 2 * -elPos.y) + height / 2) - elemHeight / 2) + "px";
         }
 
@@ -46128,7 +46130,7 @@ R2D.ViewerScene3D = function (
         },
         canvasHTML
     );
-    canvas.id = "canvasViewer3d";
+    canvas.domElement.id = "canvasViewer3d";
 
     scope.cameraState = {
         anchor: {
@@ -49348,7 +49350,8 @@ class LightViewer3D {
 
 R2D.LightViewer3D = LightViewer3D;
 
-var WC = {};
+window.WC = {};
+const WC = window.WC;
 
 function TR() { }
 
@@ -61383,7 +61386,7 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
         for (let i = 0; i < obj.coverPoints.length; i++)
         {
-            cpoint = new WC.CPoint(obj.coverPoints[i].x, obj.coverPoints[i].y, WC.COVER_POINT);
+            let cpoint = new WC.CPoint(obj.coverPoints[i].x, obj.coverPoints[i].y, WC.COVER_POINT);
             dictPoints[obj.coverPoints[i].id] = cpoint;
             WC.core.coverPoints.push(cpoint);
         }
@@ -61404,11 +61407,11 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
         for (let i = 0; i < obj.roomsInner.length; i++)
         {
-            croom = new WC.CRoom(false, obj.roomsInner[i]);
+            let croom = new WC.CRoom(false, obj.roomsInner[i]);
 
             for (let j = 0; j < obj.roomsInner[i].points.length; j++)
             {
-                pt = dictPoints[obj.roomsInner[i].points[j].id];
+                let pt = dictPoints[obj.roomsInner[i].points[j].id];
 
                 croom.points.push(pt);
                 pt.contour = croom;
@@ -61422,7 +61425,7 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
             for (let j = 0; j < obj.covers[i].points.length; j++)
             {
-                pt = dictPoints[obj.covers[i].points[j].id];
+                let pt = dictPoints[obj.covers[i].points[j].id];
 
                 ccover.points.push(pt);
                 pt.contour = ccover;
@@ -61432,12 +61435,12 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
         for (let i = 0; i < obj.coverHoles.length; i++)
         {
-            ccover = new WC.CCover(false);
+            let ccover = new WC.CCover(false);
             ccover.data.ceiling.height = WC.core.wallsHeight;
 
             for (let j = 0; j < obj.coverHoles[i].points.length; j++)
             {
-                pt = dictPoints[obj.coverHoles[i].points[j].id];
+                let pt = dictPoints[obj.coverHoles[i].points[j].id];
 
                 ccover.points.push(pt);
                 pt.contour = ccover;
@@ -61600,7 +61603,7 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
             for (let j = 0; j < dataRoom.walls.length; j++)
             {
-                DW = dataRoom.walls[j];
+                let DW = dataRoom.walls[j];
 
                 let ptind1 = dataRoom.points.indexOf(DW.point1);
                 let ptind2 = dataRoom.points.indexOf(DW.point2);
@@ -61639,7 +61642,7 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
         {
             
             let ccover = WC.core.arrCovers[i];
-            dataPoints = [];
+            let dataPoints = [];
 
             for (let j = 0; j < ccover.points.length; j++)
             {
@@ -77438,7 +77441,7 @@ R2D.ProductTransform2D.ACTION_START = 'actionStart';
 R2D.ProductTransform2D.ACTION_PROGRESS = 'actionProgress';
 R2D.ProductTransform2D.ACTION_FINISH = 'actionFinish';
 
-TConf = {};
+var TConf = {};
 
 TConf.DONE = 'TConfDone';
 TConf.CLEAR = 'TConfClear';
@@ -81232,3 +81235,6 @@ TConf.RightPage = function () {
 };
 
 // R2D.extend(TConf.RightPage, R2D.RightPanel.Page);
+
+window.extend = extend;
+export { R2D, WC };

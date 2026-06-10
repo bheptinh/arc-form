@@ -29,17 +29,22 @@ const app_version = __APP_VERSION__;
 window.app_version = app_version;
 
 async function init() {
+  console.log('[init] start');
   await store.dispatch(languagesInit());
+  console.log('[init] languages done');
 
   R2D.languages = user.languages;
 
   await store.dispatch(translationInit());
+  console.log('[init] translation done');
   const responseIsLogged = await user.checkIsLogged();
+  console.log('[init] checkIsLogged done', responseIsLogged);
   if (responseIsLogged.type == 'error')
     store.dispatch(setActivePopup({ name: 'alert', data: responseIsLogged.data }));
   else store.dispatch(saveLoggedStatus(responseIsLogged));
 
   await planner.init();
+  console.log('[init] planner.init done');
 
   R2D.SceneParser.projectMissingDataCorrector.addEventListener('sendToSentry', (error) => {
     console.error('[ErrorBoundary]', error);
