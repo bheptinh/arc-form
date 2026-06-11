@@ -12,13 +12,13 @@ import {
   selectPrevControlPanelMode,
   updateControlPanelStatus,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
 import {
   selectPopupsLastClosedPopup,
   setActivePopup,
 } from '../../../../../../../redux/features/popups/popupsSlice';
 import { showTip } from '../../../../../../../redux/features/tips/tipsSlice';
 import { setActiveViewMode } from '../../../../../../../redux/features/viewMode/viewModeSlice';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planerWallsCont: {
@@ -92,7 +92,7 @@ const useStyle = createUseStyles({
 
 const Main = (props) => {
   const classes = useStyle();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dispatch = useDispatch();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);

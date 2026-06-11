@@ -13,7 +13,6 @@ import {
   updateAnimateFavoritesHideStatus,
   updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
 import {
@@ -27,6 +26,7 @@ import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import ChangeSize from '../../components/ChangeSize';
 import Lock from '../../components/Lock';
 import Navigation from '../../navigation/Navigation';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -546,7 +546,7 @@ const useStyle = createUseStyles({
 
 const ChangePlinth = (props) => {
   const classes = useStyle();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dispatch = useDispatch();
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);

@@ -8,7 +8,7 @@ npm run dev        # Vite (port 5115) + Express (port 3015) together
 npm run dev:fe     # Vite only
 npm run dev:be     # Express only, with tsx hot-reload
 npm run build      # vite build → dist/  +  tsc server → dist-server/
-npm run start      # production: node dist-server/index.js (serves dist/ + /server-api)
+npm run start      # production: node dist-server/server/index.js (serves dist/ + /server-api)
 npm run preview    # preview vite build only
 npm run seed       # seed SQLite DB from source data (reads DB_DIR from .env)
 ```
@@ -23,12 +23,20 @@ DB_DIR=data    # path to SQLite DB dir, relative to project root
 ```
 client/             frontend — Vite + React source, index.html, tsconfig.json
   src/              React source
+    api/            React Query fetch helpers + hooks (queryClient, i18n, user)
+    vendor/         R2D engine as ES modules (plannercore.js, user.js, r2d.ts)
   public/           static assets (R2D engine scripts, images)
   vite-plugins/     custom Vite dev-server plugins
     local-first-assets/       serves local assets, falls back to roomtodo.com + caches
     catalog-search-fallback/  intercepts /api/catalog/search, serves mocks + caches
     vite-mock-plugin/         handles remaining /api/ and /api2/ endpoints
-server/             Express backend (TypeScript, compiled to dist-server/)
+shared/             TypeScript types + Zod schemas shared between server and client
+  types/            Plain interfaces (User, Language, TranslationMap)
+  schemas/          Zod schemas (UserPatchSchema) — server validates, FE uses z.infer<>
+server/             Express backend (TypeScript, compiled to dist-server/server/)
+  fixtures/         Static data files served by i18n routes (committed to source control)
+    languages.json            list of supported languages
+    translations/             per-language translation maps (en.json, ua.json, …)
   routes/
     catalog/
       index.ts      public catalog routes (/server-api/catalog/...)
@@ -88,7 +96,7 @@ A plain `<div id="planner">` where R2D mounts its WebGL canvas. Mouse/touch even
 | `popups` | Which popup is open + its data |
 | `quickPanels` | Floating action panels (delete, helper, helper_model, etc.) |
 | `user` | Login state, profile, active project |
-| `language` | Active language, translations |
+| `language` | `languageChange` thunk only — languages/translation data moved to React Query (see `client/src/api/`) |
 | `common` | Preloader status, hidden elements, project ownership |
 | `topPanel` | Undo/redo availability |
 | `constructor` | Wall height, image plan state |
@@ -112,13 +120,24 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 ### Left Panel — `client/src/components/left_new/`
 `ControlPanel` holds named modes (furniture, decor, constructor, selectedModel, etc.). Each mode has a `history` array for back-navigation and `breadCrumbs` for display. `DynamicPanel` renders the active mode's content from `parts/dynamicPanel/panels/`.
 
+### React Query — `client/src/api/`
+**@tanstack/react-query** manages all server state. Key files:
+- `queryClient.ts` — singleton `QueryClient` (also used imperatively in Redux thunks)
+- `i18n.ts` — `languagesQueryOptions`, `translationQueryOptions`, `setLanguage()`
+- `user.ts` — `patchUser()` returning updated `User`
+- `hooks/useLanguages.ts`, `hooks/useTranslation.ts` — component hooks (data always present after init)
+- `hooks/useLanguageChange.ts` — mutation: PATCHes user, invalidates languages + translation queries
+
+Components use `useTranslation()` / `useLanguages()` instead of Redux selectors. Data is pre-fetched via `queryClient.ensureQueryData()` in `main.tsx` before React renders, so hooks never see a loading state.
+
 ### Initialization — `client/src/main.tsx`
 Sequential async init before React renders:
-1. Load language list + translations
-2. Check user login status
-3. `planner.init()` — initializes R2D engine
-4. Load catalog materials, product tree, panoramas
-5. `createRoot(...).render(...)` — mount React app
+1. `queryClient.ensureQueryData(languagesQueryOptions)` — fetches language list, sets `R2D.languages`
+2. `queryClient.ensureQueryData(translationQueryOptions)` — fetches translations
+3. Check user login status
+4. `planner.init()` — initializes R2D engine
+5. Load catalog materials, product tree, panoramas
+6. `createRoot(...).render(...)` — mount React app wrapped in `QueryClientProvider`
 
 ### Vite Plugins — `client/vite-plugins/` and `client/roomtodo/mock/`
 
@@ -170,8 +189,10 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | PUT | `/server-api/projects/:id` | projects.ts | save project |
 | DELETE | `/server-api/projects/:id` | projects.ts | delete project |
 | GET | `/server-api/user` | user.ts | get user profile |
-| PATCH | `/server-api/user` | user.ts | update user profile (name, email) |
+| PATCH | `/server-api/user` | user.ts | update user profile (name, email, language_code) — validated via Zod UserPatchSchema, returns updated User |
 | GET/PUT | `/server-api/user/tips` | user.ts | tips state |
+| GET | `/server-api/i18n/languages` | i18n.ts | language list with `current` flag from user's saved preference |
+| GET | `/server-api/i18n/translation` | i18n.ts | flat `Record<string,string>` for user's current language, falls back to `en` |
 | GET | `/uploads/*` | static | user-uploaded files from `data/uploads/` |
 
 #### Catalog item shape

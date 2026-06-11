@@ -5,7 +5,6 @@ import SimpleBar from "simplebar-react";
 
 import {planner, user} from '../../../../../../initR2D';
 import { changeActiveControlPanelMode, selectActiveControlPanelModeData, selectPrevControlPanelMode } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
@@ -13,6 +12,7 @@ import ChangeSize from '../../../../../common/ChangeSize';
 import RemoteComponentMain from '../../../../../common/RemoteComponentMain';
 import LockSize from '../../components/LockSize';
 import MaterialComponent from '../../components/MaterialComponent';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -185,7 +185,7 @@ const useStyle = createUseStyles({
 const Main = (props) => {
   const classes = useStyle();
   let dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   let controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);

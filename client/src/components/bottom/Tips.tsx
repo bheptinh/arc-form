@@ -5,9 +5,9 @@ import { useSelector } from 'react-redux';
 
 import { planner } from '../../initR2D';
 import { selectActiveControlPanelMode } from '../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { selectMetrics } from '../../redux/features/metrics/metricsSLice';
 import { selectActiveViewMode } from '../../redux/features/viewMode/viewModeSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const help_bot_item = {
   display: 'flex',
@@ -71,7 +71,7 @@ const useStyle = createUseStyles({
 
 const Tips = (props) => {
   const classes = useStyle();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeViewMode = useSelector(selectActiveViewMode);
   const activeControlPanelMode = useSelector(selectActiveControlPanelMode);
 

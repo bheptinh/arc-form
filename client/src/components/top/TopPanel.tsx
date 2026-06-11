@@ -8,7 +8,6 @@ import {
   selectIsProjectBelongToLoggedUser,
   selectIsProjectOnlyView,
 } from '../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../redux/features/popups/popupsSlice';
 import { selectUserProfileData } from '../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../redux/features/viewMode/viewModeSlice';
@@ -20,6 +19,7 @@ import {
   SendARequestButton,
   UndoRedoButtons,
 } from './buttons/Buttons';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyles = createUseStyles({
   top: {
@@ -70,7 +70,7 @@ export const TopPanel = (props) => {
   const dispatch = useDispatch();
   const activeViewMode = useSelector(selectActiveViewMode);
   const userData = useSelector(selectUserProfileData);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const configTopLanguage = R2D.config.data.ui.top_language;
   const configTopProject = R2D.config.data.ui.top_project;

@@ -12,10 +12,6 @@ import {
   selectPrevControlPanelMode,
   updateControlPanelStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import {
-  selectLanguages,
-  selectTranslation,
-} from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { showQuickPanelVisible } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
 import {
@@ -25,6 +21,8 @@ import {
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
 import Lock from '../../components/Lock';
 import MaterialComponent from '../../components/MaterialComponent';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import { useLanguages } from '../../../../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -453,7 +451,7 @@ const useStyle = createUseStyles({
 
 const Main = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
@@ -475,7 +473,7 @@ const Main = (props) => {
 
   const userData = useSelector(selectUserProfileData);
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1);
 
   const [modelName, setModelName] = useState(R2D.modelUploader?.getModelName());

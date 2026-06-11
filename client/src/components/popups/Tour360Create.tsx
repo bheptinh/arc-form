@@ -3,8 +3,8 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../initR2D';
-import { selectLanguages } from '../../redux/features/language/languageSlice';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
+import { useLanguages } from '../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -119,7 +119,7 @@ const Tour360CreatePopup = (props) => {
   const dispatch = useDispatch();
   const popups = useSelector(selectPopups);
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1).code;
 
   const popupData = popups.tour360Create.data;

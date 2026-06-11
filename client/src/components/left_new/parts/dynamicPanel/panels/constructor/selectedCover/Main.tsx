@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 import { planner } from '../../../../../../../initR2D';
 import { selectActiveControlPanelModeData } from '../../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planerEditFloorWr: {
@@ -81,7 +81,7 @@ const Main = () => {
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const isAdded = lastHistoryElem?.isAdded;
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const currCover = planner.constr.selectedCovers()[0];
 
   const roomName = useRef();

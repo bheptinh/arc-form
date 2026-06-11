@@ -7,9 +7,9 @@ import {
   controlPanelHistoryAdd,
   controlPanelUpdateBreadCrumbs,
 } from '../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../redux/features/language/languageSlice';
 import Lock from '../../../../common/Lock';
 import HoverComponent from '../../controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const editMatEditIcon = {
   width: 16,
@@ -135,7 +135,7 @@ const LogoComponent = (props) => {
 
   const classes = useStyle();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [isLoaded, setIsLoaded] = useState({ status: false, materialSrc: '', needUpdate: 0 });
   const [matName, setMatName] = useState(null);

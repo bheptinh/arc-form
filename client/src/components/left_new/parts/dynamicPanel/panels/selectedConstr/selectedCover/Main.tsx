@@ -8,13 +8,13 @@ import {
     selectActiveControlPanelModeData,
     updateAnimateFavoritesHideStatus, updateAnimateFavoritesShowStatus
 } from '../../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import { selectIsLogged } from '../../../../../../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../../../../../../redux/features/viewMode/viewModeSlice';
 import FavoriteStarIcon from "../../../../../../common/FavoriteStarIcon";
 import MaterialComponent from '../../../components/MaterialComponent';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -215,7 +215,7 @@ const useStyle = createUseStyles({
 const Main = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  let translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   let activeViewMode = useSelector(selectActiveViewMode);
   let activeControlPanelData = useSelector(selectActiveControlPanelModeData);

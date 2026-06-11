@@ -5,7 +5,6 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { user } from '../../initR2D';
-import { selectLanguages, selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -18,6 +17,8 @@ import {
   setProfileData,
 } from '../../redux/features/user/userSlice';
 import Checkbox from '../common/Checkbox';
+import { useTranslation } from '../../api/hooks/useTranslation';
+import { useLanguages } from '../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   done_popup_wrap: {
@@ -348,11 +349,11 @@ const BuyCredits = (props) => {
 
   const popups = useSelector(selectPopups);
   const userData = useSelector(selectUserProfileData);
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
 
   const isLogged = useSelector(selectIsLogged);
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const currLanguage = languages.find((i) => i.current == 1);
 

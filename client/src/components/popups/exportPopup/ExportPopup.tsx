@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { user } from '../../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -15,6 +14,7 @@ import {
   selectUserProjectActive,
 } from '../../../redux/features/user/userSlice';
 import { setActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -533,7 +533,7 @@ const useStyle = createUseStyles({
 
 const ExportPopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const userData = useSelector(selectUserProfileData);
   const popups = useSelector(selectPopups);
   const [currentFormat, setCurrentFormat] = useState(null);

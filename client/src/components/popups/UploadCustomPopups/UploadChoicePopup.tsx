@@ -3,12 +3,12 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -210,7 +210,7 @@ const useStyle = createUseStyles({
 const UploadChoicePopup = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
 
   const currOS = R2D.controller.getCurrentOS();

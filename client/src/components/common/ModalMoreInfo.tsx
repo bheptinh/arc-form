@@ -6,8 +6,8 @@ import { useSelector } from 'react-redux';
 
 import { planner } from '../../initR2D';
 import { selectDynamicPanelStatus } from '../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { useEffectAsync } from '../../utils/useEffectAsync';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   item_more_info_content_wrap: {
@@ -138,7 +138,7 @@ const useStyle = createUseStyles({
 const ModalMoreInfo = (props) => {
   const classes = useStyle();
   const dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [leftOffset, setLeftOffset] = useState(0);
   const [elemInfo, setElemInfo] = useState(null);

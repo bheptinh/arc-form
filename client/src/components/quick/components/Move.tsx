@@ -3,9 +3,9 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { changeUndoRedo } from '../../../redux/features/topPanel/topPanelSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -55,7 +55,7 @@ const Move = (props) => {
   let restBtX = null;
 
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
   const { btnMove, mainDiv } = props.reference.current;

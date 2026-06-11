@@ -6,13 +6,13 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
 import { selectActiveControlPanelModeData } from '../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
 import MaterialSize from './components/MaterialSize';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -422,7 +422,7 @@ const useStyle = createUseStyles({
 
 const UploadCustomMaterialPopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const popups = useSelector(selectPopups);
 

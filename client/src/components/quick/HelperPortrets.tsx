@@ -11,7 +11,6 @@ import {
   selectControlPanelData,
   selectPrevControlPanelMode,
 } from '../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   removeQuickPanelAll,
   selectQuickPanels,
@@ -26,6 +25,7 @@ import { LockRef } from './components/Lock';
 import More from './components/More';
 import Replace from './components/Replace';
 import { RotateRef } from './components/Rotate';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_pop_wrap: {
@@ -105,7 +105,7 @@ const HelperPortrets = (props) => {
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const is3DModeRotationActive = useSelector(selectIs3DRotationModeActive);
 

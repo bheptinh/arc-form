@@ -3,8 +3,8 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -48,7 +48,7 @@ export const HiddenRef = forwardRef(({ onClick, addStyles, isPartialVisible }, r
 ));
 
 const Hidden = (props) => {
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dispatch = useDispatch();
   const classes = useStyle();
   const btnPartVis = useRef(null);

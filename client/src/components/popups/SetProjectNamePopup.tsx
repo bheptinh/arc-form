@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { planner, user } from '../../initR2D';
 import { updateIsProjectBelongToLoggedUser } from '../../redux/features/common/commonSlice';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -20,6 +19,7 @@ import {
   setProjectPlan,
 } from '../../redux/features/user/userSlice';
 import { createProjectUrl } from '../../utils/UrlHelper';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -177,7 +177,7 @@ const useStyle = createUseStyles({
 
 const SetProjectNamePopup = (props) => {
   const popups = useSelector(selectPopups);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dispatch = useDispatch();
   const userProfileData = useSelector(selectUserProfileData);
   let projectActiveName = useSelector(selectUserProjectActive);

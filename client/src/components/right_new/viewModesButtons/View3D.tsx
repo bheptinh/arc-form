@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyles = createUseStyles({
   right_bar_btn: {
@@ -73,7 +73,7 @@ const useStyles = createUseStyles({
 const View3D = (props) => {
   const dispatch = useDispatch();
   const activeViewMode = useSelector(selectActiveViewMode);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const classes = useStyles();
   const mainDiv = useRef(null);
 

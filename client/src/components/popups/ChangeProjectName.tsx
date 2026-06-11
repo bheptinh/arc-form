@@ -5,12 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../initR2D';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -165,7 +165,7 @@ const useStyle = createUseStyles({
 const ChangeProjectNamePopup = (props) => {
   const classes = useStyle();
   const popups = useSelector(selectPopups);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dispatch = useDispatch();
   const changeProjectForm = useRef(null);
   const popupData = popups.changeProjectName;

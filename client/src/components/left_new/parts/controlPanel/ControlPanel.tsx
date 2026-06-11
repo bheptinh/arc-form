@@ -17,10 +17,6 @@ import {
   selectDynamicPanelStatus,
   updateDynamicPanelStatus,
 } from '../../../../redux/features/control/controlPanelSlice';
-import {
-  selectLanguages,
-  selectTranslation,
-} from '../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../../redux/features/quickPanels/quickPanelsSlice';
 import { showTip } from '../../../../redux/features/tips/tipsSlice';
@@ -31,6 +27,8 @@ import {
 } from '../../../../redux/features/viewMode/viewModeSlice';
 import UserButton from './buttons/UserButton';
 import HoverComponent from './components/HoverComponent';
+import { useTranslation } from '../../../../api/hooks/useTranslation';
+import { useLanguages } from '../../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   controlPanel: {
@@ -421,7 +419,7 @@ const ControlPanel = (props) => {
   const activeControlPanelMode = useSelector(selectActiveControlPanelMode);
   const isLogged = useSelector(selectIsLogged);
   const activeViewMode = useSelector(selectActiveViewMode);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
   const isProjectOnlyView = useSelector(selectIsProjectOnlyView);
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
@@ -543,7 +541,7 @@ const ControlPanel = (props) => {
   const hoverButtonFav = useRef(null);
   const hoverButtonUpload = useRef(null);
   const mainDiv = useRef(null);
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const currentLanguage = languages?.find((i) => i?.current == 1)?.code;
   const youTubeLinks = {
     en: 'https://www.youtube.com/playlist?list=PLpksFTMOBAbtlpPja4fqttp-Qu2rE8hz9',

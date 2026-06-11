@@ -2,8 +2,8 @@ import React, { forwardRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -45,7 +45,7 @@ const Delete = (props) => {
 
   const positionBtn = props.positionBtn;
   const addStyles = props.addStyles;
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   let mouseDown = false;
 
   const onDelete = (e) => {

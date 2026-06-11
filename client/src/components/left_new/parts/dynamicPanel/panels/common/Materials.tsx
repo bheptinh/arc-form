@@ -13,7 +13,6 @@ import {
     selectDynamicPanelStatus,
 updateAnimateFavoritesHideStatus,
     updateAnimateFavoritesShowStatus} from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import {selectIsLogged, selectUserProfileData, selectUserProjectActive} from '../../../../../../redux/features/user/userSlice';
 import FavoriteStarIcon from "../../../../../common/FavoriteStarIcon";
@@ -21,6 +20,7 @@ import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
 import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
 import Lock from '../../components/Lock';
 import Navigation from '../../navigation/Navigation';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -643,7 +643,7 @@ const Materials = (props) => {
   let isAdded = lastHistoryElem?.isAdded;
 
   const userData = useSelector(selectUserProfileData);
-  let translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const isLogged = useSelector(selectIsLogged);
 
   let userProjectActive = useSelector(selectUserProjectActive);

@@ -10,7 +10,7 @@ import {
   selectActiveControlPanelMode,
   selectActiveControlPanelModeData,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -272,7 +272,7 @@ const Breadcrumbs = (props) => {
   const activeControlPanelMode = useSelector(selectActiveControlPanelMode);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const currentStateBreadCrumbs = useMemo(() => activeControlPanelData?.breadCrumbs, []);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [breadCrumbsArrayReact, setBreadCrumbsArrayReact] = useState(null);
 

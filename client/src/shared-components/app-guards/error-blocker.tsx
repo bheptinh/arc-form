@@ -1,9 +1,4 @@
-import React, { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
-// import Face from './images/face.svg';
-import { useSelector } from 'react-redux';
-
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 
 const useStyle = createUseStyles({
   container: {
@@ -66,37 +61,13 @@ const useStyle = createUseStyles({
   },
 });
 
-const ErrorFallback = ({ error, resetErrorBoundary }) => {
+interface ErrorBlockerProps {
+  translation: { [key: string]: string };
+  onRetry?: () => void;
+}
+
+export default function ErrorBlocker({ translation, onRetry }: ErrorBlockerProps) {
   const classes = useStyle();
-
-  const translation = useSelector(selectTranslation);
-
-  useEffect(() => {
-    R2D.Storage.save('r2d_is_error_occured', true);
-
-    try {
-      fetch('/api/planner/bug_report', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'x-token': R2D.token,
-        },
-        body: JSON.stringify({
-          error: error.message,
-          stack: error.stack,
-          project: R2D.controller.getProjectId(),
-          url: window.location.href,
-        }),
-      });
-      console.error('[ErrorBoundary]', error);
-    } catch (e) {
-      console.log(e);
-    }
-  }, []);
-
-  const restart = () => {
-    window.location.reload();
-  };
 
   return (
     <div role="alert" className={classes.container}>
@@ -110,11 +81,9 @@ const ErrorFallback = ({ error, resetErrorBoundary }) => {
         <br />
         {translation['ERROR_PLEASE_SAVE_IT']}
       </div>
-      <button className={classes.button} onClick={restart}>
+      <button className={classes.button} onClick={onRetry}>
         {translation['ERROR_RESTORE_MY_PROJECT']}
       </button>
     </div>
   );
-};
-
-export default ErrorFallback;
+}

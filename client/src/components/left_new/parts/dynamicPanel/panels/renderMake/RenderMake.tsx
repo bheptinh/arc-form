@@ -18,10 +18,6 @@ import {
   selectPrevControlPanelMode,
   updateControlPanelStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import {
-  selectLanguages,
-  selectTranslation,
-} from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { selectActiveViewMode } from '../../../../../../redux/features/viewMode/viewModeSlice';
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
@@ -29,6 +25,8 @@ import CameraViews from '../common/CameraViews';
 import ColorPicker from '../common/ColorPicker';
 import Panorams from '../walk/components/Panorams';
 import Main from './Main';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import { useLanguages } from '../../../../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   '@global .dynamicPanelHideBtn': {
@@ -154,7 +152,7 @@ const RenderMake = () => {
   const classes = useStyle();
   const dispatch = useDispatch();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeViewMode = useSelector(selectActiveViewMode);
   const renderMakeState = useSelector(selectRenderMakeState);
   const activePano = useSelector(selectActivePano);
@@ -341,7 +339,7 @@ const RenderMake = () => {
     dispatch(updateRenderMakeState({ ...renderMakeState, screen, fromApply: false }));
   };
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const currentLanguage = languages?.find((i) => i?.current == 1)?.code;
 
   const youTubeLinks = {

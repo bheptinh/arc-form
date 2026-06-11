@@ -4,8 +4,8 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../initR2D';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -150,7 +150,7 @@ const useStyle = createUseStyles({
 
 const SetValueInput = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
   const popupType = popups.setValueInput.type;
   const [animPopupClass, setAnimPopupClass] = useState(false);

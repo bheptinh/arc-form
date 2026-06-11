@@ -14,12 +14,12 @@ import {
   selectDynamicPanelCatalogPreviewViewType,
   updateDynamicPanelCatalogPreviewViewType,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import {
   selectUserProfileData,
   selectUserProjectActive,
 } from '../../../../../../redux/features/user/userSlice';
 import Navigation from '../../navigation/Navigation';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -292,7 +292,7 @@ const useStyle = createUseStyles({
 });
 
 const Catalog = (props) => {
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const userData = useSelector(selectUserProfileData);
   const userProjectActive = useSelector(selectUserProjectActive);
   const [isProOptionEnabled, setIsProOptionEnabled] = useState(R2D.OPTIONS.PRO_PLAN);

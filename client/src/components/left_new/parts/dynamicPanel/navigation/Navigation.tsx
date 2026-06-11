@@ -7,10 +7,10 @@ import {
   controlPanelUpdateBreadCrumbs,
   selectActiveControlPanelModeData,
 } from '../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../redux/features/language/languageSlice';
 import AdditionalSettings from './components/AdditionalSettings';
 import Breadcrumbs from './components/Breadcrumbs';
 import Prev from './components/Prev';
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -108,7 +108,7 @@ const Navigation = (props) => {
   const firstElemHistory = controlPanelModeHistory[0];
   const lastHistoryElemType = lastHistoryElem?.type;
   const title = lastHistoryElem?.name;
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const currentStateBreadCrumbs = activeControlPanelData?.breadCrumbs;
 

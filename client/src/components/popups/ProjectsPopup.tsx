@@ -8,7 +8,6 @@ import SimpleBar from 'simplebar-react';
 
 import { planner, user } from '../../initR2D';
 import { selectControlPanelData } from '../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -17,6 +16,7 @@ import {
 import { showTip } from '../../redux/features/tips/tipsSlice';
 import { selectUserProfileData } from '../../redux/features/user/userSlice';
 import { createProjectUrl } from '../../utils/UrlHelper';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -516,7 +516,7 @@ const useStyle = createUseStyles({
 const ProjectsPopup = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
   const userData = useSelector(selectUserProfileData);
   const scrollRef = useRef();

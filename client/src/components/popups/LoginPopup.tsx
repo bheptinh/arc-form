@@ -9,7 +9,6 @@ import {
   updatePreloaderStatus,
 } from '../../redux/features/common/commonSlice';
 import { changeActiveControlPanelMode } from '../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -18,6 +17,7 @@ import {
 } from '../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../redux/features/quickPanels/quickPanelsSlice';
 import { saveLoggedStatus } from '../../redux/features/user/userSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -227,7 +227,7 @@ const useStyle = createUseStyles({
 
 const LoginPopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
   const popupData = popups.login.data;
   const popupType = popups.login.type;

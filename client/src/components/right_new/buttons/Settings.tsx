@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
 import { user } from '../../../initR2D';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const bar_settings_dropdown_title = {
   background: '#DADADA',
@@ -150,7 +150,7 @@ const useStyles = createUseStyles({
 });
 
 const Settings = (props) => {
-  const translations = useSelector(selectTranslation);
+  const translations = useTranslation();
 
   const classes = useStyles();
 

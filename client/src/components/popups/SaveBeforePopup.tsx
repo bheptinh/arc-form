@@ -3,13 +3,13 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner, user } from '../../initR2D';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
 import { createProjectUrl } from '../../utils/UrlHelper';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -138,7 +138,7 @@ const useStyle = createUseStyles({
 
 const SaveBeforePopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
 
   const projectToSave = popups.saveBefore.data;

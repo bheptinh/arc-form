@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectLanguages, selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
+import { useLanguages } from '../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -166,7 +167,7 @@ const useStyle = createUseStyles({
 
 const UpgradePlan = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
 
   const popupType = popups.upgradePlan.type;
@@ -180,7 +181,7 @@ const UpgradePlan = (props) => {
   const [buttonsArray, setButtonsArray] = useState([]);
   const [animPopupClass, setAnimPopupClass] = useState(false);
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1);
 
   const classes = useStyle();

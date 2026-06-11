@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { changeUndoRedo } from '../../../redux/features/topPanel/topPanelSlice';
 import {
   selectActiveViewModeData,
@@ -13,6 +12,7 @@ import {
   updateMaterialId,
 } from '../../../redux/features/viewMode/viewModeSlice_legacy';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -56,7 +56,7 @@ const Clear = (props) => {
   const positionBtn = props.positionBtn;
   const currObj = planner.mih()._scene.currentView3DObject;
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const onClear = (e) => {
     planner.scene.clearCurrentConstruction();

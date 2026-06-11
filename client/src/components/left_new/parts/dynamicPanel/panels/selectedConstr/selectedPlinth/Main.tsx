@@ -5,7 +5,6 @@ import SimpleBar from "simplebar-react";
 
 import { planner } from '../../../../../../../initR2D';
 import { controlPanelHistoryAdd, controlPanelUpdateBreadCrumbs, selectActiveControlPanelModeData } from '../../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import BlueButton from '../../../components/BlueButton';
@@ -13,6 +12,7 @@ import ChangeSize from '../../../components/ChangeSize';
 import Checkbox from '../../../components/Checkbox';
 import EditPlinthItem from '../../../components/EditPlinthItem';
 import MaterialComponent from '../../../components/MaterialComponent';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 
 const useStyle = createUseStyles({
@@ -229,7 +229,7 @@ const Main = (props) => {
   let lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   let isAdded = lastHistoryElem?.isAdded;
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const dispatch = useDispatch();
 

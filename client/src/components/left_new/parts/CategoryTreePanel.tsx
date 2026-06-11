@@ -15,9 +15,9 @@ import {
   selectPrevControlPanelMode,
   updateCategoryTreePanelStatus,
 } from '../../../redux/features/control/controlPanelSlice';
-import { selectLanguages } from '../../../redux/features/language/languageSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import { Accordion } from '../../common/Accordion';
+import { useLanguages } from '../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -186,7 +186,7 @@ const CategoryTreePanel = (props) => {
   const lastHistoryElem =
     controlPanelModeHistory && controlPanelModeHistory[controlPanelModeHistory.length - 1];
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
 
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
   const activeControlPanelCatagoryTreeShowStatus = useSelector(

@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { planner, user } from '../../../initR2D';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { closeActivePopup } from '../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import {
@@ -14,6 +13,7 @@ import {
 } from '../../../redux/features/viewMode/viewModeSlice';
 import { Accordion } from '../../common/Accordion';
 import Checkbox from '../../common/Checkbox';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -431,7 +431,7 @@ const Export2DProjectPopup = (props) => {
   const indexFit = scaleTypes.findIndex((item) => item.type == 'fit');
 
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const activeViewMode = useSelector(selectActiveViewMode);
 

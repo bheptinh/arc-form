@@ -10,7 +10,6 @@ import {
   selectActiveControlPanelModeData,
   updateControlPanelStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import {
   removeQuickPanel,
@@ -23,6 +22,7 @@ import {
 } from '../../../../../../redux/features/user/userSlice';
 import Lock from '../../../../../common/Lock';
 import CloseModeBtn from '../common/CloseModeBtn';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   plannerWallsCont: {
@@ -184,7 +184,7 @@ const Main = (props) => {
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
   const userProjectActive = useSelector(selectUserProjectActive);
   const userData = useSelector(selectUserProfileData);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];

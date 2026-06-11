@@ -11,8 +11,8 @@ import {
   updateDynamicPanelCatalogPreviewViewType,
   updateDynamicPanelPreviewViewType,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import ProductPreviewControls from './ProductPreviewControls';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   catalog_top_btn_filter: {
@@ -59,7 +59,7 @@ const AdditionalSettings = ({ hideCategoryTree }) => {
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
   const dynamicPanelCatalogPreviewViewType = useSelector(selectDynamicPanelCatalogPreviewViewType);
   const categoryTreePanelStatus = useSelector(selectCategoryTreePanelStatus);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = activeControlPanelData?.history;
   const lastHistoryElem =

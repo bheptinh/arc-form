@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
-import { selectTranslation } from '../../../../../redux/features/language/languageSlice';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -58,7 +58,7 @@ const useStyle = createUseStyles({
 const Lock = (props) => {
   const classes = useStyle();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   let timeoutId = null;
   let mouseDown = false;
 

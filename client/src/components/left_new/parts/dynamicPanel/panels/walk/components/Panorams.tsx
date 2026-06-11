@@ -17,12 +17,10 @@ import {
   selectActiveControlPanelMode,
   selectActiveControlPanelModeData,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
-import {
-  selectLanguages,
-  selectTranslation,
-} from '../../../../../../../redux/features/language/languageSlice';
 import { selectUserProfileData } from '../../../../../../../redux/features/user/userSlice';
 import Navigation from '../../../navigation/Navigation';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
+import { useLanguages } from '../../../../../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -201,7 +199,7 @@ const useStyle = createUseStyles({
 
 const Panorams = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const activeControlPanelMode = useSelector(selectActiveControlPanelMode);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
@@ -210,7 +208,7 @@ const Panorams = (props) => {
   const lastHistoryElemScroll = lastHistoryElem.lastSavedScroll;
   const activePano = useSelector(selectActivePano);
   const userData = useSelector(selectUserProfileData);
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
 
   const [activePanoId, setActivePanoId] = useState(R2D.scene.skyboxId);
   const [rotation, setRotaion] = useState(activePano.rotation);

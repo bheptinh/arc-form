@@ -3,8 +3,8 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   fullScreen_main: {
@@ -34,7 +34,7 @@ const FullScreen = (props) => {
     isFullScreen ? planner.fullscreenOff() : planner.fullscreen(false);
     setIsFullScreen(!isFullScreen);
   };
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const hoverButton = useRef(null);
   return (
     <div className={classes.fullScreen_main} onClick={onClickFullScreen} ref={hoverButton}>

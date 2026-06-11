@@ -3,9 +3,9 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { selectActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   zoomInOut_main: {
@@ -47,7 +47,7 @@ const ZoomInOut = (props) => {
   const activeViewMode = useSelector(selectActiveViewMode);
   let tileConfigurator = null;
   let tileEditor = null;
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const hoverButton = useRef(null);
   const hoverButton2 = useRef(null);
 

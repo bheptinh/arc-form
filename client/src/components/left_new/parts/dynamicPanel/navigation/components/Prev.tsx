@@ -7,8 +7,8 @@ import {
   controlPanelUpdateBreadCrumbs,
   selectActiveControlPanelModeData,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_catalog_btn: {
@@ -42,7 +42,7 @@ const useStyle = createUseStyles({
 });
 
 const Prev = (props) => {
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const currentStateBreadCrumbs = activeControlPanelData?.breadCrumbs;
 

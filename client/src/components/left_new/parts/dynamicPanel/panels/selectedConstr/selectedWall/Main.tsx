@@ -13,7 +13,6 @@ import {
   updateAnimateFavoritesShowStatus,
   updateControlPanelStatus,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
 import { selectMetrics } from '../../../../../../../redux/features/metrics/metricsSLice';
 import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { hideQuickPanelVisible } from '../../../../../../../redux/features/quickPanels/quickPanelsSlice';
@@ -23,6 +22,7 @@ import BlueButton from '../../../components/BlueButton';
 import Checkbox from '../../../components/Checkbox';
 import MaterialComponent from '../../../components/MaterialComponent';
 import PlinthComponent from '../../../components/PlinthComponent';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -287,7 +287,7 @@ const Main = (props) => {
 
   const dispatch = useDispatch();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const metrics = useSelector(selectMetrics);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);

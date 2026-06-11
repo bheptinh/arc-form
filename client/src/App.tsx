@@ -39,8 +39,6 @@ import {
 } from './redux/features/control/controlPanelSlice';
 import {
   languageChange,
-  selectLanguages,
-  selectTranslation,
 } from './redux/features/language/languageSlice';
 import {
   closeActivePopup,
@@ -70,6 +68,8 @@ import PortraitBlocker from './shared-components/app-guards/portrait-blocker';
 import GlobalPreload from './shared-components/loaders/global-preload';
 import Tips from './smart-components/tips';
 import { createProjectUrl } from './utils/UrlHelper';
+import { useLanguages } from './api/hooks/useLanguages';
+import { useTranslation } from './api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   main: {
@@ -178,7 +178,7 @@ const App = () => {
   const classes = useStyle();
 
   const activeViewMode = useSelector(selectActiveViewMode);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const dispatch = useDispatch();
 
@@ -193,7 +193,7 @@ const App = () => {
   const isProjectOnlyView = useSelector(selectIsProjectOnlyView);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1);
 
   const [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(

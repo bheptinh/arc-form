@@ -6,12 +6,12 @@ import {
   changeActiveControlPanelMode,
   selectActiveControlPanelMode,
 } from '../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -337,7 +337,7 @@ const useStyle = createUseStyles({
 
 const UploadCustomModelPopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const controPanelActiveMode = useSelector(selectActiveControlPanelMode);
 
   const popups = useSelector(selectPopups);

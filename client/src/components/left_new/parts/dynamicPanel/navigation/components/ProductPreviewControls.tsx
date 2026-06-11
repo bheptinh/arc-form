@@ -7,7 +7,7 @@ import {
   selectActiveControlPanelModeData,
   selectDynamicPanelStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   icon_filter: {
@@ -187,7 +187,7 @@ const ProductPreviewControls = ({
   const lastHistoryElem =
     controlPanelModeHistory && controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const lastHistoryElemType = lastHistoryElem?.type;
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [leftOffset, setLeftOffset] = useState(() =>
     R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels()

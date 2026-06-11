@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
 import { changeLockState } from '../../../../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../../../../redux/features/language/languageSlice';
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   lock_main: {
@@ -39,7 +39,7 @@ const useStyle = createUseStyles({
 const LockSize = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   let timeoutId = null;
 

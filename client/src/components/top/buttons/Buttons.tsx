@@ -22,8 +22,6 @@ import {
 } from '../../../redux/features/control/controlPanelSlice';
 import {
   languageChange,
-  selectLanguages,
-  selectTranslation,
 } from '../../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
@@ -46,6 +44,8 @@ import { selectActiveViewMode } from '../../../redux/features/viewMode/viewModeS
 import { createProjectUrl } from '../../../utils/UrlHelper';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
 import Tip from '../../tips/Tip';
+import { useTranslation } from '../../../api/hooks/useTranslation';
+import { useLanguages } from '../../../api/hooks/useLanguages';
 
 const useStyles = createUseStyles({
   bar_btn_close: {
@@ -360,7 +360,7 @@ const useStyles = createUseStyles({
 const LangButton = (props) => {
   const classes = useStyles();
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const dispatch = useDispatch();
 
   const activeViewMode = useSelector(selectActiveViewMode);
@@ -444,7 +444,7 @@ const LangButton = (props) => {
 
 const LoginButton = (props) => {
   const classes = useStyles();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dispatch = useDispatch();
   const [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(
     R2D.config.data.enable_merchant_login
@@ -470,7 +470,7 @@ const LoginButton = (props) => {
 };
 
 const Projects = (props) => {
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const classes = useStyles();
   const dispatch = useDispatch();
   const projectActive = useSelector(selectUserProjectActive);
@@ -923,7 +923,7 @@ const SaveButton = (props) => {
   const tips = useSelector(selectTips);
   const timeStart = useMemo(() => Date.now(), []);
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const hoverButtonSave = useRef(null);
 
   const onClickSave = async () => {
@@ -1119,7 +1119,7 @@ const UndoRedoButtons = (props) => {
     canRedo ? classes.bar_btn : classes.bar_btn_not_active
   );
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const hoverButtonUndo = useRef(null);
   const hoverButtonRedo = useRef(null);
 
@@ -1292,7 +1292,7 @@ const RealisticImageButton = (props) => {
   const wallsHeight = useSelector(selectWallsHeight);
 
   const activePano = useSelector(selectActivePano);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
 
   const hoverButtonRender = useRef(null);
@@ -1377,7 +1377,7 @@ const SendARequestButton = (props) => {
 
   const dispatch = useDispatch();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const onClickSendRequest = () =>
     R2D.config.data.ui.custom_registration

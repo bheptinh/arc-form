@@ -10,8 +10,8 @@
     "seed": "node --env-file=.env scripts/seed-db.mjs",
     "verify-seed": "node --env-file=.env scripts/verify-seed.mjs",
     "build": "vite build --config client/vite.config.ts && npm run build:server",
-    "build:server": "tsc -p server/tsconfig.json",
-    "start": "NODE_ENV=production node --env-file=.env dist-server/index.js",
+    "build:server": "tsc -p server/tsconfig.json && cp -r server/fixtures dist-server/server/",
+    "start": "NODE_ENV=production node --env-file=.env dist-server/server/index.js",
     "preview": "vite preview",
     "lint": "eslint client/src",
     "lint:fix": "eslint client/src --fix"
@@ -22,6 +22,7 @@
   "type": "module",
   "dependencies": {
     "@reduxjs/toolkit": "^2.12.0",
+    "@tanstack/react-query": "^5.101.0",
     "@types/multer": "^2.1.0",
     "better-sqlite3": "^12.10.0",
     "classnames": "^2.5.1",

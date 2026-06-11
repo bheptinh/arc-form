@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
 import { selectActiveControlPanelMode } from '../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -12,6 +11,7 @@ import {
 } from '../../../redux/features/popups/popupsSlice';
 import Checkbox from '../../left_new/parts/dynamicPanel/components/Checkbox';
 import RendersSliderAi from '../rendersExample/slider/RendersSliderAi';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -202,7 +202,7 @@ const useStyle = createUseStyles({
 const UploadModelAiInfoPopup = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
   const controPanelActiveMode = useSelector(selectActiveControlPanelMode);
 

@@ -4,13 +4,13 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { user } from '../../initR2D';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
 import Checkbox from '../common/Checkbox';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -195,7 +195,7 @@ const useStyle = createUseStyles({
 
 const RegistrationPopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const popups = useSelector(selectPopups);
 

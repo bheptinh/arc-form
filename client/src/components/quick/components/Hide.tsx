@@ -8,9 +8,9 @@ import {
   selectControlPanelData,
   selectPrevControlPanelMode,
 } from '../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -53,7 +53,7 @@ const Hide = (props) => {
   const dispatch = useDispatch();
 
   const addStyles = props.addStyles;
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const controlPanelData = useSelector(selectControlPanelData);
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);

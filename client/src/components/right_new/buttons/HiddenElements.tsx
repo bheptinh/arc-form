@@ -8,8 +8,8 @@ import {
   selectHiddenButtonWasShowed,
   updateHiddenButtonWasShowedStatus,
 } from '../../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const bar_settings_dropdown_title = {
   background: '#DADADA',
@@ -153,7 +153,7 @@ const useStyles = createUseStyles({
 });
 
 const HiddenElements = (props) => {
-  const translations = useSelector(selectTranslation);
+  const translations = useTranslation();
 
   const dispatch = useDispatch();
 

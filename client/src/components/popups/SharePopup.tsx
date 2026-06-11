@@ -8,7 +8,6 @@ import {
   selectIsProjectBelongToLoggedUser,
   updateIsProjectOnlyView,
 } from '../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -21,6 +20,7 @@ import {
 import { useEffectAsync } from '../../utils/useEffectAsync';
 import Checkbox from '../common/Checkbox';
 import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -335,7 +335,7 @@ const useStyle = createUseStyles({
 
 const SharePopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
 
   const [width, setWidth] = useState(800);

@@ -12,7 +12,6 @@ import {
   updateAnimateFavoritesHideStatus,
   updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
@@ -20,6 +19,7 @@ import ChangeSize from '../../../../../common/ChangeSize';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
 import Navigation from '../../navigation/Navigation';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -402,7 +402,7 @@ const ColorPicker = (props) => {
   const isAdded = lastHistoryElem?.isAdded;
   const lastHistoryElemData = lastHistoryElem?.data;
   const isLogged = useSelector(selectIsLogged);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [isInFavorites, setIsInFavorites] = useState(null);
   const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);

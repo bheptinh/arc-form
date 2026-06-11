@@ -21,7 +21,6 @@ import {
   selectPrevControlPanelMode,
   updateControlPanelStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import {
   saveLoggedStatus,
@@ -30,6 +29,7 @@ import {
 } from '../../../../../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../../../../../redux/features/viewMode/viewModeSlice';
 import ChangeSize from '../../components/ChangeSize';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   renderMakeCont: {
@@ -404,7 +404,7 @@ const Main = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];

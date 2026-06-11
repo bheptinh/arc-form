@@ -4,11 +4,11 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
 import { user } from '../../initR2D';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { closeActivePopup, setActivePopup } from '../../redux/features/popups/popupsSlice';
 import { hideTip } from '../../redux/features/tips/tipsSlice';
 import { selectUserProfileData, setProfileData } from '../../redux/features/user/userSlice';
 import Checkbox from '../common/Checkbox';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   tip: {
@@ -157,7 +157,7 @@ const Tip = (props) => {
 const TipBody = (props) => {
   const dispatch = useDispatch();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const userProfileData = useSelector(selectUserProfileData);
 
   const classes = useStyle();

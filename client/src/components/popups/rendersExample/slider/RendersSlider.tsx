@@ -10,8 +10,8 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslation } from '../../../../api/hooks/useTranslation';
 
-import { selectTranslation } from '../../../../redux/features/language/languageSlice';
 
 const useStyle = createUseStyles({
   swiper_slider: {
@@ -160,7 +160,7 @@ const RendersSlider = (props) => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const useSwiperRef = () => {
     const [wrapper, setWrapper] = useState(null);

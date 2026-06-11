@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -54,7 +54,7 @@ const useStyle = createUseStyles({
 });
 
 const LoadingMessagePopup = (props) => {
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
   const [animPopupClass, setAnimPopupClass] = useState(false);
 

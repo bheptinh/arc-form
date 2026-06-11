@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_pop_item_wr: {
@@ -81,7 +81,7 @@ const useStyle = createUseStyles({
 const More = (props) => {
   const classes = useStyle();
   const moreBtn = props.reference || useRef(null);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   return (
     <div className={classes.info_model_pop_item_wr}>

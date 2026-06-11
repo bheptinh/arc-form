@@ -11,9 +11,9 @@ import {
   updateRenderMakeState,
 } from '../../../../../../redux/features/common/commonSlice';
 import { selectActiveControlPanelModeData } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import Navigation from '../../navigation/Navigation';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   plannerRenderCont: {
@@ -175,7 +175,7 @@ const useStyle = createUseStyles({
 const CameraViews = () => {
   const classes = useStyle();
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activePano = useSelector(selectActivePano);
   const renderMakeState = useSelector(selectRenderMakeState);
 

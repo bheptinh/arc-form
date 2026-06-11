@@ -4,8 +4,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   alert_status_wr: {
@@ -38,7 +38,7 @@ const useStyle = createUseStyles({
 
 const CompleteMessage = (props) => {
   const popups = useSelector(selectPopups);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const doneText = translation[popups.completeMessage.data];
   const positionX = popups.completeMessage.positionX;
   const type = popups.completeMessage.type;

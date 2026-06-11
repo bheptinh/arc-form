@@ -18,7 +18,6 @@ import {
   updateAnimateFavoritesHideStatus,
   updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { hideQuickPanelVisible } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
@@ -35,6 +34,7 @@ import RemoteComponentMain from '../../../../../common/RemoteComponentMain';
 import BlueButton from '../../components/BlueButton';
 import LogoComponent from '../../components/LogoComponent';
 import MaterialComponent from '../../components/MaterialComponent';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const plannerChangeRotation_axis = {
   width: 10,
@@ -601,7 +601,7 @@ const useStyle = createUseStyles({
 const Main = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);

@@ -4,9 +4,9 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../initR2D';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { selectMetrics } from '../../redux/features/metrics/metricsSLice';
 import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -169,7 +169,7 @@ const useStyle = createUseStyles({
 
 const AlignerWidthSetPopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const metrics = useSelector(selectMetrics);
   const [textErrorStatus, setTextErrorStatus] = useState(false);
   const [animPopupClass, setAnimPopupClass] = useState(false);

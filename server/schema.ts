@@ -6,6 +6,9 @@ import path from 'path';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 db.exec(readFileSync(path.join(__dirname, 'schema.sql'), 'utf-8'));
 
+// Column migrations for existing DBs (CREATE TABLE IF NOT EXISTS won't add new columns)
+try { db.exec(`ALTER TABLE users ADD COLUMN language_code TEXT NOT NULL DEFAULT 'en'`); } catch { /* already exists */ }
+
 // Single dev user. Auth is not validated server-side for now — all requests
 // use this user. Replace with real auth when multi-user support is needed.
 export const DEV_USER_ID = '57022071-c204-6e51-1e36-78691b317b3f';

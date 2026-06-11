@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
 import { planner } from '../../initR2D';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../redux/features/popups/popupsSlice';
 import {
   removeQuickPanel,
@@ -14,6 +13,7 @@ import {
 import { changeUndoRedo } from '../../redux/features/topPanel/topPanelSlice';
 import { selectActiveViewMode } from '../../redux/features/viewMode/viewModeSlice';
 import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_pop_wrap: {
@@ -71,7 +71,7 @@ const Delete = (props) => {
   const quickPanels = useSelector(selectQuickPanels);
   const position = quickPanels.delete.position;
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   let mouseDown = false;
   const quickType = quickPanels.delete.type;
   const activeViewMode = useSelector(selectActiveViewMode);

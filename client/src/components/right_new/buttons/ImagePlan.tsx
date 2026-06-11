@@ -11,12 +11,12 @@ import {
   changeActiveControlPanelMode,
   updateControlPanelStatus,
 } from '../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const bar_settings_dropdown_title = {
   background: '#DADADA',
@@ -120,7 +120,7 @@ const useStyles = createUseStyles({
 });
 
 const ImagePlan = (props) => {
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const classes = useStyles();
 
   const isImagePlanUploaded = useSelector(selectImagePlanUploadedType);

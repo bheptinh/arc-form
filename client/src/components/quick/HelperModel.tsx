@@ -12,7 +12,6 @@ import {
   selectControlPanelData,
   selectPrevControlPanelMode,
 } from '../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   removeQuickPanelAll,
   selectQuickPanels,
@@ -29,6 +28,7 @@ import { LockRef } from './components/Lock';
 import More from './components/More';
 import Replace from './components/Replace';
 import { RotateRef } from './components/Rotate';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_pop_wrap: {
@@ -194,7 +194,7 @@ const HelperModel = () => {
 
   const info_bottom = useRef(null);
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const textFieldInfo = useRef(null);
   const mainDiv = useRef(null);
   const btnRotate = useRef(null);

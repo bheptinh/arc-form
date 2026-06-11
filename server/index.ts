@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import projectsRouter from './routes/projects.js';
 import userRouter from './routes/user.js';
+import i18nRouter from './routes/i18n.js';
 import catalogRouter from './routes/catalog/index.js';
 import privateCatalogRouter from './routes/catalog/private.js';
 
@@ -19,6 +20,7 @@ app.get('/server-api/health', (_req, res) => {
 
 app.use('/server-api/projects', projectsRouter);
 app.use('/server-api/user', userRouter);
+app.use('/server-api/i18n', i18nRouter);
 app.use('/server-api/catalog/private', privateCatalogRouter);
 app.use('/server-api/catalog', catalogRouter);
 app.use('/uploads', express.static(path.resolve(process.env.DB_DIR!, 'uploads')));

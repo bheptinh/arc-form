@@ -6,9 +6,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from "simplebar-react";
 
 import {planner, user} from "../../initR2D";
-import {selectLanguages, selectTranslation} from '../../redux/features/language/languageSlice';
 import { closeActivePopup, selectPopups, setActivePopup } from '../../redux/features/popups/popupsSlice';
 import {historyUpdate} from "../../redux/features/viewMode/viewModeSlice_legacy";
+import { useTranslation } from '../../api/hooks/useTranslation';
+import { useLanguages } from '../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -453,7 +454,7 @@ const useStyle = createUseStyles({
 const RendersAnd360Popup = (props) => {
   const classes = useStyle();
   let dispatch = useDispatch();
-  let translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   let popups = useSelector(selectPopups);
   let startType = popups.rendersAnd360Popup.data.type;
   const [animPopupClass, setAnimPopupClass] = useState(false);
@@ -462,7 +463,7 @@ const RendersAnd360Popup = (props) => {
   const [rendersData, setRendersData] = useState([]);
   let [activeRenderTypeShow, setActiveRenderTypeShow] = useState(startType || 'renders');
   let [currentOffsetForRenders, setCurrentOffsetForRenders] = useState(0);
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   let currLanguage = languages.find((i) => i.current == 1).code;
 
   const [tours360Show, setTours360Show] = useState([]);

@@ -6,12 +6,12 @@ import {
   selectActiveControlPanelMode,
   selectControlPanelData,
 } from '../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyles = createUseStyles({
   right_bar_btn: {
@@ -61,7 +61,7 @@ const useStyles = createUseStyles({
 const View2D = (props) => {
   const dispatch = useDispatch();
   const activeViewMode = useSelector(selectActiveViewMode);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const controlPanelData = useSelector(selectControlPanelData);
   const activeControlPanelMode = useSelector(selectActiveControlPanelMode);
   const classes = useStyles();

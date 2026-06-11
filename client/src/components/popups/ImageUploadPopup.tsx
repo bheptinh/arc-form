@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
 import Checkbox from '../common/Checkbox';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -99,7 +99,7 @@ const useStyle = createUseStyles({
 
 const ImageUploadPopup = (props) => {
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [imageUploadPopupShowCookie, setImageUploadPopupShowCookie] = useState(
     R2D.Storage.load('r2d_uploadImagePopup')

@@ -3,8 +3,8 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { changeLockState } from '../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   lock_main: {
@@ -28,7 +28,7 @@ const useStyle = createUseStyles({
 const LockSize = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const mainDiv = useRef(null);
 

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const done_popup_text = {
   color: '#2F2F2F',
@@ -128,7 +128,7 @@ const useStyle = createUseStyles({
 const RegistrationDonePopup = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [animPopupClass, setAnimPopupClass] = useState(false);
 

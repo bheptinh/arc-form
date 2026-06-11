@@ -12,7 +12,6 @@ import {
   updateDynamicPanelStatus,
   updateDynamicToggleButtonStatus,
 } from '../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -20,6 +19,7 @@ import {
 } from '../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../redux/features/quickPanels/quickPanelsSlice';
 import { userLogout } from '../../redux/features/user/userSlice';
+import { useTranslation } from '../../api/hooks/useTranslation';
 
 const delete_account_text = {
   color: '#2F2F2F',
@@ -176,7 +176,7 @@ const useStyle = createUseStyles({
 const DeleteAccountPopup = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const popups = useSelector(selectPopups);
   const data = popups.deleteAccountPopup.data;
 

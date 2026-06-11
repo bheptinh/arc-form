@@ -4,9 +4,9 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyles = createUseStyles({
   btn_ruler: {
@@ -34,7 +34,7 @@ const useStyles = createUseStyles({
 const Ruler = (props) => {
   const dispatch = useDispatch();
   const classes = useStyles();
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const [plannerConstrEvent, setPlannerConstrEvent] = useState(null);
   const [activeRuller, setActiveRuller] = useState(false);
 

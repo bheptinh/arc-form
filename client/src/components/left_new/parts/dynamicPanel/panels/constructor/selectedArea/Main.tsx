@@ -7,9 +7,9 @@ import {
   changeActiveControlPanelMode,
   selectActiveControlPanelModeData,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../../redux/features/language/languageSlice';
 import ChangeSize from '../../../components/ChangeSize';
 import Checkbox from '../../../components/Checkbox';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planerWallsCont: {
@@ -73,7 +73,7 @@ const Main = () => {
     planner.constr.stateSelectedArea()[0]?.getCeilingHeight()
   );
 
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];

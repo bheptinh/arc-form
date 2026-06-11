@@ -5,8 +5,8 @@ import { useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
 import { selectIs3DRotationModeActive } from '../../../redux/features/common/commonSlice';
-import { selectTranslation } from '../../../redux/features/language/languageSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -59,7 +59,7 @@ export const ElevateRef = forwardRef(
 );
 
 const Elevate = (props) => {
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const positionBtn = props.positionBtn;
   const addStyles = props.addStyles;

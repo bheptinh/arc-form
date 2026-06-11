@@ -16,7 +16,6 @@ import {
     selectDynamicPanelStatus,
     updateAnimateFavoritesHideStatus, updateAnimateFavoritesShowStatus
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { selectIsLogged, selectUserProfileData, selectUserProjectActive } from '../../../../../../redux/features/user/userSlice';
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
@@ -26,6 +25,7 @@ import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
 import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
 import HoverComponent from "../../../controlPanel/components/HoverComponent";
 import AdditionalSettings from "../../navigation/components/AdditionalSettings";
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -707,7 +707,7 @@ const useStyle = createUseStyles({
 
 const Main = (props) => {
   const dispatch = useDispatch();
-  let translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   let isLogged = useSelector(selectIsLogged);
   let userProjectActive = useSelector(selectUserProjectActive);

@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { planner, user } from '../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../redux/features/common/commonSlice';
-import { selectLanguages } from '../../redux/features/language/languageSlice';
 import {
   closeActivePopup,
   selectPopups,
@@ -18,6 +17,7 @@ import {
   setProjectPlan,
 } from '../../redux/features/user/userSlice';
 import { createProjectUrl } from '../../utils/UrlHelper';
+import { useLanguages } from '../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -104,7 +104,7 @@ const useStyle = createUseStyles({
 const PayProPopup = (props) => {
   const dispatch = useDispatch();
 
-  const languages = useSelector(selectLanguages);
+  const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1);
   const userProfileData = useSelector(selectUserProfileData);
 

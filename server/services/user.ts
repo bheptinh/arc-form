@@ -1,26 +1,24 @@
 import db from '../db.js';
 import { DEV_USER_ID } from '../schema.js';
+import type { UserPatch } from '../../shared/schemas/user.js';
+import type { User } from '../../shared/types/user.js';
 
 type UserRow = {
   id: string;
   email: string;
   name: string;
   plan: string;
+  language_code: string;
   tips: string;
 };
 
-export function updateUser(data: Record<string, unknown>) {
-  const allowed = ['name', 'email'] as const;
-  for (const field of allowed) {
-    if (typeof data[field] === 'string') {
-      db.prepare(`UPDATE users SET ${field} = ? WHERE id = ?`).run(data[field], DEV_USER_ID);
-    }
-  }
-}
-
-export function getUser() {
-  const row = db.prepare('SELECT id, email, name, plan, tips FROM users WHERE id = ?').get(DEV_USER_ID) as UserRow;
-  const { count: projectCount } = db.prepare('SELECT COUNT(*) as count FROM projects WHERE user_id = ?').get(DEV_USER_ID) as { count: number };
+export function getUser(): User {
+  const row = db
+    .prepare('SELECT id, email, name, plan, language_code, tips FROM users WHERE id = ?')
+    .get(DEV_USER_ID) as UserRow;
+  const { count: projectCount } = db
+    .prepare('SELECT COUNT(*) as count FROM projects WHERE user_id = ?')
+    .get(DEV_USER_ID) as { count: number };
 
   return {
     id: row.id,
@@ -28,6 +26,7 @@ export function getUser() {
     email: row.email,
     name: row.name,
     plan: row.plan,
+    language_code: row.language_code,
     tips: JSON.parse(row.tips),
     projectCount,
 
@@ -44,4 +43,12 @@ export function getUser() {
     userPlanPeriod: 0,
     subscriptionNews: false,
   };
+}
+
+export function updateUser(data: UserPatch): User {
+  const fields = Object.keys(data) as (keyof UserPatch)[];
+  for (const field of fields) {
+    db.prepare(`UPDATE users SET ${field} = ? WHERE id = ?`).run(data[field], DEV_USER_ID);
+  }
+  return getUser();
 }

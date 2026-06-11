@@ -17,7 +17,6 @@ import {
   updateAnimateFavoritesShowStatus,
   updateDynamicPanelPreviewViewType,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { selectTranslation } from '../../../../../../redux/features/language/languageSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
 import {
@@ -31,6 +30,7 @@ import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
 import Navigation from '../../navigation/Navigation';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -914,7 +914,7 @@ const Products = (props) => {
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
 
   const isLogged = useSelector(selectIsLogged);
-  const translation = useSelector(selectTranslation);
+  const translation = useTranslation();
 
   const [modelsListState, setModelsListState] = useState(null);
   const [customModelsListState, setCustomModelsListState] = useState(null);
