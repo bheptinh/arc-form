@@ -1,3 +1,5 @@
+import { queryClient } from '../api/queryClient.js';
+
 var R2D = window.R2D;
 var extend = window.extend;
 var Event = window.Event;
@@ -1541,82 +1543,12 @@ R2D.UserCore.UserTranslation = function(user)
     let loader = null;
 
     me.load = () => {
-        return new Promise(async (resolve, reject) => {
-            if ( loader ) return;
-            
-            var params = '';
-
-            let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_TRANSLATION);
-            
-            loader = R2D.XHRLoader.getPostLoader(url, params, null, null, true);
-
-            loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-            loader.addEventListener(Event.ERROR, loaderEventHandler);
-            
-            function loaderEventHandler(event) {
-                if ( event.type == Event.COMPLETE ) {
-                    user.dispatchEvent(new Event(Event.UPDATE, me));
-                    checkData(event.data.data)
-                } else {
-                    user.dispatchEvent(new Event(Event.ERROR, me));
-                }
-        
-                close();
-            }
-            function checkData(data) {
-                let object = null;
-                let dataList = {};
-        
-                try {
-                    object = JSON.parse(data);
-                } catch ( error ) {
-                    reject({message: 'Error parse JSON string!', data: data})
-                    return false;
-                }
-        
-                if ( !object.hasOwnProperty('status') || object['status'] != 'success' ) {
-                    reject({message: 'Status is not success!', data: data});
-                    return;
-                }
-        
-                if ( !object.hasOwnProperty('result') ) {
-                    reject({message: 'Received data has no property "result"!', data: data});
-                    return;
-                }
-        
-                for ( let i = 0, l = object['result'].length; i < l; i++ ) {
-                    let item = object['result'][i];
-                    let key = null;
-                    let value = null;
-        
-                    if ( !item.hasOwnProperty('code') ) {
-                        console.warn('Translation item has no property "code"!');
-                        console.log(item);
-                        continue;
-                    }
-                    if ( !item.hasOwnProperty('value') ) {
-                        console.warn('Translation item has no property "value"!');
-                        console.log(item);
-                        continue;
-                    }
-        
-                    key = item['code'];
-                    value = item['value'];
-        
-                    dataList[key] = value;
-                }
-                resolve(dataList);
-        
-            }
-            function close() {
-                if ( !loader ) return;
-        
-                loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-                loader.removeEventListener(Event.ERROR, loaderEventHandler);
-                loader.close();
-                loader = null;
-            }
-        })
+        return new Promise((resolve, reject) => {
+            const data = queryClient.getQueryData(['translation']);
+            if (!data) { reject({ message: 'Translation not in React Query cache' }); return; }
+            user.dispatchEvent(new Event(Event.UPDATE, me));
+            resolve(data);
+        });
     };
 
 };
@@ -1747,77 +1679,13 @@ R2D.UserCore.UserLanguage = function(user)
     let me = this;
 
     me.load = async () => {
-        return new Promise(async (resolve, reject) => {
-            let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_LANGUAGE_LIST);
-            let params = '';
-
-            let loader = R2D.XHRLoader.getPostLoader(url, params, null, null, true);
-
-            loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-            loader.addEventListener(Event.ERROR, loaderEventHandler);
-
-            function loaderEventHandler(event)
-            {
-                loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-                loader.removeEventListener(Event.ERROR, loaderEventHandler);
-                loader.close();
-
-                if ( event.type == Event.COMPLETE ) {
-                    parseData(event.data.data);
-                } else {
-                    reject({message: 'Request error', data: event});
-                }
-            }
-
-            function parseData(data) {
-                let object = null;
-                try {
-                    object = JSON.parse(data);
-                } catch ( error ) {
-                    reject({message: 'Error parse JSON string!', data: data});
-                    return;
-                }
-
-                if ( !object.hasOwnProperty('status') || object['status'] != 'success' ) {
-                    reject({message: 'Status is not success!', data: data});
-                    return;
-                }
-
-                if ( !object.hasOwnProperty('result') ) {
-                    reject({message: 'Received data has no property "result"!', data: data});
-                    return;
-                }
-
-                let languages = object['result'];
-
-                let langCode = loadLanguage();
-
-                if(langCode) {
-                    for (let i = 0; i < languages.length; i++) {
-                        if (languages[i].code == langCode)
-                        {
-                            languages[i].current = 1;
-                        }
-                        else
-                        {
-                            languages[i].current = 0;
-                        }
-                    }
-                }
-                else {
-                    let active = languages.find(i => i["current"] == 1);
-                    if(!active) {
-                        languages.forEach(i => {
-                            if(i["default"] == 1) i["current"] = 1;
-                        });
-                    }
-                }
-                user.dispatchEvent(new Event(user.LANGUAGE_UPDATE, {}));
-                user.languages = languages;
-                resolve(languages);
-            }
+        return new Promise((resolve, reject) => {
+            const languages = queryClient.getQueryData(['languages']);
+            if (!languages) { reject({ message: 'Languages not in React Query cache' }); return; }
+            user.dispatchEvent(new Event(user.LANGUAGE_UPDATE, {}));
+            user.languages = languages;
+            resolve(languages);
         });
-
     };
 
     me.setCurrentCode = (languages, code) =>

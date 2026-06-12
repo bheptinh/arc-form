@@ -20,9 +20,7 @@ import {
   updateControlPanelStatus,
   updateDynamicPanelStatus,
 } from '../../../redux/features/control/controlPanelSlice';
-import {
-  languageChange,
-} from '../../../redux/features/language/languageSlice';
+import { useLanguageChange } from '../../../api/hooks/useLanguageChange';
 import {
   closeActivePopup,
   selectPopupsLastClosedPopup,
@@ -365,11 +363,12 @@ const LangButton = (props) => {
 
   const activeViewMode = useSelector(selectActiveViewMode);
 
+  const { mutateAsync: changeLanguage } = useLanguageChange();
+
   const onLangChange = async (code) => {
     dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
-    await dispatch(languageChange(code));
+    await changeLanguage(code);
     dispatch(closeActivePopup({ name: 'loadingMessage' }));
-    R2D.languages = user.languages;
     if (activeViewMode == 'view2d') R2D.scene3D?.titlesTool.onLanguagesUpdate();
     else if (activeViewMode == 'constr') WC.wallsEditor?.titlesTool.onLanguagesUpdate();
   };

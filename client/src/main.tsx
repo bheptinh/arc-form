@@ -11,10 +11,12 @@ import sunEditor from 'suneditor';
 import lang from 'suneditor/src/lang';
 import plugins from 'suneditor/src/plugins';
 
+import { setupLanguageBridge } from './api/bridges/languageBridge';
 import { languagesQueryOptions, translationQueryOptions } from './api/i18n';
 import { queryClient } from './api/queryClient';
 import App from './App';
 import { planner, user } from './initR2D';
+import { MarkdownPage } from './pages/MarkdownPage';
 import ProjectsPage from './pages/ProjectsPage';
 import { setActivePopup } from './redux/features/popups/popupsSlice';
 import { saveLoggedStatus } from './redux/features/user/userSlice';
@@ -29,10 +31,9 @@ window.sunEditorLanguages = lang;
 console.info('App version:', __APP_VERSION__);
 
 async function init() {
-  const languages = await queryClient.ensureQueryData(languagesQueryOptions);
-  R2D.languages = languages;
-
+  await queryClient.ensureQueryData(languagesQueryOptions);
   await queryClient.ensureQueryData(translationQueryOptions);
+
   const responseIsLogged = await user.checkIsLogged();
   if (responseIsLogged.type == 'error')
     store.dispatch(setActivePopup({ name: 'alert', data: responseIsLogged.data }));
@@ -56,6 +57,8 @@ async function init() {
   planner.setPanorams(panorams);
   planner.scene.setDefaultPanoId(panorams.find((i) => i.tags.includes('skybox_default'))?.id);
 
+  setupLanguageBridge();
+
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
 
@@ -72,6 +75,7 @@ async function init() {
               <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/toc" element={<MarkdownPage slug="toc" />} />
                 <Route path="/project/*" element={<App />} />
                 <Route path="/password_recovery/*" element={<App />} />
               </Routes>

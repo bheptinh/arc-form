@@ -1,3 +1,5 @@
+import { queryClient } from '../api/queryClient.js';
+
 window.R2D = window.R2D || {};
 var R2D = window.R2D;
 var i, j, k, p, count, index, sIndex, sx, sy;
@@ -88,7 +90,11 @@ R2D.PlannerCore = function(user) {
     R2D.isLoggedStatus = "unlogged";
     R2D.tokensLoadedWithError = [];
 
-    R2D.languages;
+    Object.defineProperty(R2D, 'languages', {
+        get: () => queryClient.getQueryData(['languages']) ?? [],
+        set: (_v) => {},
+        configurable: true,
+    });
 
     R2D.isErrorHasOccurred = false;
 

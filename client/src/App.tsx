@@ -37,9 +37,7 @@ import {
   updateDynamicPanelStatus,
   updateDynamicToggleButtonStatus,
 } from './redux/features/control/controlPanelSlice';
-import {
-  languageChange,
-} from './redux/features/language/languageSlice';
+import { useLanguageChange } from './api/hooks/useLanguageChange';
 import {
   closeActivePopup,
   selectPopups,
@@ -195,6 +193,7 @@ const App = () => {
 
   const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1);
+  const { mutateAsync: changeLanguage } = useLanguageChange();
 
   const [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(
     R2D.config.data.enable_merchant_login
@@ -1051,8 +1050,7 @@ const App = () => {
   const onUpdateHiddenElements = (e) => dispatch(updateIsThereHiddenElements(e.data));
 
   const changeLang = async (code) => {
-    await dispatch(languageChange(code));
-    R2D.languages = user.languages;
+    await changeLanguage(code);
     if (activeViewMode == 'view2d') R2D.scene3D?.titlesTool.onLanguagesUpdate();
     else if (activeViewMode == 'constr') WC.wallsEditor?.titlesTool.onLanguagesUpdate();
   };
@@ -1314,8 +1312,7 @@ const App = () => {
         needToCleanSearch = true;
         if (currLanguage?.code != lang) {
           if (!languages.some((i) => i.code == lang)) lang = 'en';
-          await dispatch(languageChange(lang));
-          R2D.languages = user.languages;
+          await changeLanguage(lang);
         }
       }
 

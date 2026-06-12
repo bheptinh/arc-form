@@ -33,15 +33,7 @@ export default {
       let mockFilePath = '';
 
       const url = req.url || '';
-      if (url.startsWith('/language/list')) {
-        // TODO: MOVE TO FE — replace with bundled i18n (react-i18next or similar).
-        //       Remove this handler and URL_LANGUAGE_LIST from index.html R2D.URL once i18n is in place.
-        mockFilePath = './mock/language-list.json';
-      } else if (url.startsWith('/user/translations')) {
-        // TODO: MOVE TO FE — translation strings belong in the React i18n bundle, not the backend.
-        //       Remove this handler and URL_TRANSLATION from index.html R2D.URL once i18n is in place.
-        mockFilePath = './mock/user-translations.json';
-      } else if (url.startsWith('/render')) {
+      if (url.startsWith('/render')) {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ status: 'ok', data: { items: [], total: 0, limit: 20, offset: 0 } }));
         return;

@@ -43,4 +43,16 @@ router.get('/translation', (_req, res) => {
   res.json(getTranslation(row?.language_code ?? 'en'));
 });
 
+router.get('/pages/:slug', (req, res) => {
+  const row = db.prepare('SELECT language_code FROM users WHERE id = ?').get(DEV_USER_ID) as { language_code: string } | undefined;
+  const lang = (row?.language_code ?? 'en').replace(/[^a-z]/g, '');
+  const slug = req.params.slug.replace(/[^a-z0-9-]/g, '');
+  const dir = path.join(FIXTURES, 'pages', slug);
+  const candidates = [`${lang}.md`, 'en.md', 'index.md'];
+  const file = candidates.map((f) => path.join(dir, f)).find(existsSync);
+  if (!file) return res.status(404).end();
+  res.setHeader('Content-Type', 'text/markdown; charset=utf-8');
+  res.send(readFileSync(file, 'utf-8'));
+});
+
 export default router;

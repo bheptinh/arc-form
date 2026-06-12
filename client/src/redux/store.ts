@@ -4,7 +4,6 @@ import { logger } from 'redux-logger';
 import commonReducer from './features/common/commonSlice';
 import constructorReducer from './features/constructor/constructorSlice';
 import controlReducer from './features/control/controlPanelSlice';
-import languageReducer from './features/language/languageSlice';
 import metricsReducer from './features/metrics/metricsSLice';
 import popupsReducer from './features/popups/popupsSlice';
 import quickPanelsReducer from './features/quickPanels/quickPanelsSlice';
@@ -20,7 +19,6 @@ export const store = configureStore({
   reducer: combineReducers({
     popups: popupsReducer,
     viewMode: viewModeReducer,
-    language: languageReducer,
     viewMode_new: viewModeReducer_new,
     user: userReducer,
     topPanel: topPanelReducer,
