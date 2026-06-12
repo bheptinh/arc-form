@@ -23,6 +23,7 @@ const MIME = {
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
   '.glb': 'model/gltf-binary',
+  '.mrtd': 'application/octet-stream',
 };
 
 export default {
@@ -41,7 +42,7 @@ export default {
         const ext = path.extname(localFile).toLowerCase();
         const mime = MIME[ext];
         if (!mime) {
-          server.config.logger.error(`[local-first-assets] unknown MIME for extension "${ext}": ${url}`);
+          server.config.logger.warn(`[local-first-assets] unknown MIME for extension "${ext}": ${url}`);
         }
         res.setHeader('Content-Type', mime ?? 'application/octet-stream');
         fs.createReadStream(localFile).pipe(res);
