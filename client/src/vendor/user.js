@@ -1556,62 +1556,13 @@ R2D.UserCore.UserLanguage = function(user)
         });
     };
 
-    me.setCurrentCode = (languages, code) =>
-    {
-        return new Promise(async (resolve, reject) => {
-
-            let langData = null;
-            for (let d of languages)
-            {
-                if (d.code == code) langData = d;
-            }
-            if (! langData)
-            {
-                return;
-            }
-
-            saveLanguage(code);
-
-            let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_SET_LANGUAGE);
-            let params = 'json='+JSON.stringify({
-                    lang_id: langData['id'],
-                    lang: langData['code']
-                });
-
-            let loader = R2D.XHRLoader.getPostLoader(url, params, null, null, true);
-            loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-            loader.addEventListener(Event.ERROR, loaderEventHandler);
-
-            function loaderEventHandler(event) {
-                loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-                loader.removeEventListener(Event.ERROR, loaderEventHandler);
-                loader.close();
-
-                if ( event.type == Event.COMPLETE ) {
-                    checkReceivedData(event.data.data);
-                } else {
-                }
-            }
-
-            async function checkReceivedData(data) {
-                let object = null;
-
-                try {
-                    object = JSON.parse(data);
-                } catch ( error ) {
-                    return;
-                }
-
-                if ( !object.hasOwnProperty('status') || object['status'] != 'success') {
-                    return;
-                }
-
-                let languages = await me.load();
-                user.languages = languages;
-                resolve(languages);
-            }
-        })
-        
+    me.setCurrentCode = async (languages, code) => {
+        // Language changes go through React Query (useLanguageChange → PATCH /server-api/user).
+        // This path is no longer called from React; kept as a no-op to avoid crashes if invoked.
+        saveLanguage(code);
+        const updated = await me.load();
+        user.languages = updated;
+        return updated;
     };
 
     function saveLanguage(code)
