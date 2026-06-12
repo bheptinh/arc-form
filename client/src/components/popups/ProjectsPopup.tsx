@@ -2,7 +2,7 @@ import 'simplebar-react/dist/simplebar.min.css';
 
 import { useInfiniteQuery } from '@tanstack/react-query';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
@@ -526,7 +526,10 @@ const ProjectsPopup = (props) => {
 
   const { data: projectsQueryData, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
     useInfiniteQuery(projectsInfiniteQueryOptions);
-  const projectsData = projectsQueryData?.pages.flatMap((p) => p.items) ?? [];
+  const projectsData = useMemo(
+    () => projectsQueryData?.pages.flatMap((p) => p.items) ?? [],
+    [projectsQueryData]
+  );
 
   const [animPopupClass, setAnimPopupClass] = useState(false);
   const [sortType, setSortType] = useState('modified');
