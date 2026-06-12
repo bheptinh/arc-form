@@ -1,4 +1,6 @@
 import { queryClient } from '../api/queryClient.js';
+import { favoritesQueryOptions } from '../api/favorites.js';
+import { userQueryOptions } from '../api/user.js';
 
 var R2D = window.R2D;
 var extend = window.extend;
@@ -605,11 +607,15 @@ R2D.UserCore.UserFavorites = function(user)
                         resolve({type: "error", data: "TEXT_ERROR_LOAD_DATA"});
                     }
                     
-                    if(user.data.favorites) {    
+                    if(user.data.favorites) {
                         ++user.data.favorites.total;
                         user.data.favorites.items.push(object.data);
                     }
-                    
+                    queryClient.setQueryData(favoritesQueryOptions.queryKey, (old) => {
+                        if (!old) return old;
+                        return { ...old, total: String(Number(old.total) + 1), items: [...old.items, object.data] };
+                    });
+
                     resolve(object.data);
                 }
             }
@@ -658,6 +664,11 @@ R2D.UserCore.UserFavorites = function(user)
                         --user.data.favorites.total;
                         user.data.favorites.items = user.data.favorites.items.filter(i => i?.id != id || (i?.addData || "") != color);
                     }
+                    queryClient.setQueryData(favoritesQueryOptions.queryKey, (old) => {
+                        if (!old) return old;
+                        return { ...old, total: String(Number(old.total) - 1), items: old.items.filter(i => i?.id != id || (i?.addData || "") != color) };
+                    });
+
                     resolve(object.data);
                 }
             }
