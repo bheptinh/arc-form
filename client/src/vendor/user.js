@@ -158,8 +158,6 @@ R2D.UserCore = function()
 
     let uLanguage = new R2D.UserCore.UserLanguage(me);
     me.loadLanguages = async () => await uLanguage.load();
-    me.setLanguageCode = async (languages, code) => await uLanguage.setCurrentCode(languages, code)
-
     let uTranslation = new R2D.UserCore.UserTranslation(me);
     me.loadTranslation = async () => await uTranslation.load();
 
@@ -1554,15 +1552,6 @@ R2D.UserCore.UserLanguage = function(user)
             user.languages = languages;
             resolve(languages);
         });
-    };
-
-    me.setCurrentCode = async (languages, code) => {
-        // Language changes go through React Query (useLanguageChange → PATCH /server-api/user).
-        // This path is no longer called from React; kept as a no-op to avoid crashes if invoked.
-        saveLanguage(code);
-        const updated = await me.load();
-        user.languages = updated;
-        return updated;
     };
 
     function saveLanguage(code)
