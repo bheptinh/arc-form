@@ -23,7 +23,7 @@ DB_DIR=data    # path to SQLite DB dir, relative to project root
 ```
 client/             frontend — Vite + React source, index.html, tsconfig.json
   src/              React source
-    api/            React Query fetch helpers + hooks (queryClient, i18n, user)
+    api/            React Query fetch helpers + hooks (queryClient, i18n, user, favorites)
       bridges/      query-cache → side-effect subscribers (languageBridge.ts)
       hooks/        useLanguages, useTranslation, useLanguageChange, …
     pages/          standalone React pages (MarkdownPage, ProjectsPage)
@@ -34,7 +34,7 @@ client/             frontend — Vite + React source, index.html, tsconfig.json
     catalog-search-fallback/  intercepts /api/catalog/search, serves mocks + caches
     vite-mock-plugin/         handles remaining /api/ and /api2/ endpoints
 shared/             TypeScript types + Zod schemas shared between server and client
-  types/            Plain interfaces (User, Language, TranslationMap)
+  types/            Plain interfaces (User, Language, TranslationMap, PlanFeature)
   schemas/          Zod schemas (UserPatchSchema) — server validates, FE uses z.infer<>
 server/             Express backend (TypeScript, compiled to dist-server/server/)
   fixtures/         Static data files served by i18n routes (committed to source control)
@@ -127,7 +127,8 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 **@tanstack/react-query** manages all server state. Key files:
 - `queryClient.ts` — singleton `QueryClient`; imported directly by vendor JS and bridge modules
 - `i18n.ts` — `languagesQueryOptions`, `translationQueryOptions`, `setLanguage()`
-- `user.ts` — `patchUser()` returning updated `User`
+- `user.ts` — `fetchUser()`, `userQueryOptions`, `patchUser()`
+- `favorites.ts` — `favoritesQueryOptions` (`staleTime: Infinity` — invalidate on add/remove mutations)
 - `hooks/useLanguages.ts`, `hooks/useTranslation.ts` — component hooks (data always present after init)
 - `hooks/useLanguageChange.ts` — mutation: PATCHes user, invalidates languages + translation queries
 - `bridges/languageBridge.ts` — query cache subscriber (see pattern below)
@@ -186,13 +187,15 @@ The `prev` guard skips the initial cache population on startup. Add a new `*Brid
 
 ### Initialization — `client/src/main.tsx`
 Sequential async init before React renders:
-1. `queryClient.ensureQueryData(languagesQueryOptions)` — fetches language list into cache
-2. `queryClient.ensureQueryData(translationQueryOptions)` — fetches translations into cache
-3. Check user login status
-4. `planner.init()` — initializes R2D engine (vendor `load()` functions read from cache populated above)
-5. Load catalog materials, product tree, panoramas
-6. `setupLanguageBridge()` — mount query cache subscriber for language-change side effects
-7. `createRoot(...).render(...)` — mount React app wrapped in `QueryClientProvider`
+1. `queryClient.ensureQueryData(userQueryOptions)` — fetches user profile into cache
+2. `queryClient.ensureQueryData(favoritesQueryOptions)` — fetches favorites into cache
+3. `queryClient.ensureQueryData(languagesQueryOptions)` — fetches language list into cache
+4. `queryClient.ensureQueryData(translationQueryOptions)` — fetches translations into cache
+5. `user.checkIsLogged()` — reads user + favorites from cache, calls `user.setUserData()`, sets `R2D.isLoggedStatus`
+6. `planner.init()` — initializes R2D engine (vendor `load()` functions read from cache populated above)
+7. Load catalog materials, product tree, panoramas
+8. `setupLanguageBridge()` — mount query cache subscriber for language-change side effects
+9. `createRoot(...).render(...)` — mount React app wrapped in `QueryClientProvider`
 
 ### Vite Plugins — `client/vite-plugins/` and `client/roomtodo/mock/`
 

@@ -1,3 +1,5 @@
+import type { PlanFeature } from './plan-features.js';
+
 export interface User {
   id: string;
   key: string; // TODO: DELETE — alias for id, kept for legacy R2D engine compatibility
@@ -16,4 +18,5 @@ export interface User {
   userPlanRecurringId: string | null;
   userPlanPeriod: number;
   subscriptionNews: boolean;
+  userPlanFeatures: PlanFeature[];
 }

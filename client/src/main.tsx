@@ -12,8 +12,10 @@ import lang from 'suneditor/src/lang';
 import plugins from 'suneditor/src/plugins';
 
 import { setupLanguageBridge } from './api/bridges/languageBridge';
+import { favoritesQueryOptions } from './api/favorites';
 import { languagesQueryOptions, translationQueryOptions } from './api/i18n';
 import { queryClient } from './api/queryClient';
+import { userQueryOptions } from './api/user';
 import App from './App';
 import { planner, user } from './initR2D';
 import { MarkdownPage } from './pages/MarkdownPage';
@@ -31,6 +33,8 @@ window.sunEditorLanguages = lang;
 console.info('App version:', __APP_VERSION__);
 
 async function init() {
+  await queryClient.ensureQueryData(userQueryOptions);
+  await queryClient.ensureQueryData(favoritesQueryOptions);
   await queryClient.ensureQueryData(languagesQueryOptions);
   await queryClient.ensureQueryData(translationQueryOptions);
 

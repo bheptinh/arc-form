@@ -33,8 +33,8 @@ R2D.UserCore = function()
         me.data.email = data['email'];
         me.data.name = data['name'];
         me.data.key = data['key'];
-        me.data.render = data['render'] == "1";
-        me.data.tips = data['tips'] == "1";
+        me.data.render = data['render'] === "1" || data['render'] === true;
+        me.data.tips = data['tips'] === "1" || data['tips'] === true;
         me.data.plan = data['plan'];
         me.data.credits = data['credits'];
         me.data.favorites = data['favorites'];
@@ -45,8 +45,7 @@ R2D.UserCore = function()
         if (data['token']) me.saveToken(data['token']);
 
         let features = null;
-        if ('user_plan_features' in data) features = data['user_plan_features'];
-        if ('plan_features' in data) features = data['plan_features'];
+        if ('userPlanFeatures' in data) features = data['userPlanFeatures'];
         if (features)
         {
             me.data.walls = features.includes('wall_editor');
@@ -558,45 +557,14 @@ R2D.UserCore.UserFavorites = function(user)
     let me = this;
     let loader = null;
 
-    me.getList = function()
-    {
-        return new Promise((resolve, reject) => {
-
-            let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_FAVORITES_GET);
-            
-            loader = new R2D.XHRLoader();
-            
-            loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-            loader.addEventListener(Event.ERROR, loaderEventHandler);
-
-            loader.load(url, null, 'get', null, null, true);
-
-            async function loaderEventHandler(event)
-            {
-                loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-                loader.removeEventListener(Event.ERROR, loaderEventHandler);
-                loader.close();
-
-                if ( event.type == Event.COMPLETE ) {
-                    let data = event.data.data;
-                    let object = null;
-        
-                    try {
-                        object = JSON.parse(data);
-                    } catch ( error ) {
-                        console.error("Error parse JSON string!");
-                    }
-        
-                    if ( object && object['status'] != 'ok' ) {
-                        resolve({type: "error", data: "TEXT_ERROR_LOAD_DATA"});
-                    }
-                    
-                    object.data.items = object.data.items.filter(i => i);
-
-                    resolve(object);
-                }
-            }
-        });
+    me.getList = async function() {
+        try {
+            const data = await queryClient.fetchQuery(favoritesQueryOptions);
+            data.items = data.items.filter(i => i);
+            return { data };
+        } catch (e) {
+            return { type: 'error', data: 'TEXT_ERROR_LOAD_DATA' };
+        }
     };
 
     me.addToFavorites = function(id, color)
@@ -810,87 +778,17 @@ R2D.UserCore.UserLogin = function(user)
         
     };
 
-    me.checkIsLogged = function(token)
-    {
-        return new Promise((resolve, reject) => {
-            R2D.isLoggedStatus = "loggingIn";
-            let params = '';
-
-            let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_USER_INFO);
-            let loader = new R2D.XHRLoader();
-
-            loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-            loader.addEventListener(Event.ERROR, loaderEventHandler);
-            loader.load(url, params, 'GET', null, null, true, true, token);
-
-            async function loaderEventHandler(event)
-            {
-                loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-                loader.removeEventListener(Event.ERROR, loaderEventHandler);
-                loader.close();
-
-                if ( event.type == Event.COMPLETE ) {
-                    let data = event.data.data;
-                    let object = null;
-        
-                    try {
-                        object = JSON.parse(data);
-                    } catch ( error ) {
-                        console.error("Error parse JSON string!");
-                        token && R2D.tokensLoadedWithError.push(token);
-                    }
-        
-                    if ( !object || (object?.hasOwnProperty('error') && object['error'] != 'access_denied') ) {
-                        token && R2D.tokensLoadedWithError.push(token);
-                        resolve({type: "error", data: "TEXT_ERROR_LOAD_DATA"});
-                    }
-                    else if ( (object?.hasOwnProperty('error') && object['error'] == 'access_denied') || object?.hasOwnProperty('status') && object['status'] != 'ok' && object['status'] != 'success' ) {
-                        R2D.isLoggedStatus = "unlogged";
-                        token && R2D.tokensLoadedWithError.push(token);
-                        resolve({logged: false});
-                    }
-                    
-                    else if ( !checkUserData(object.data) ) {
-                        token && R2D.tokensLoadedWithError.push(token);
-                        resolve({type: "error", data: "TEXT_ERROR_LOAD_DATA"});
-                    }
-                    else {
-                        let favorites = await user.uGetFavorites();
-                        if(favorites.type == 'error') console.error(favorites.data);
-                        else object.data.favorites = favorites.data;
-                        R2D.isLoggedStatus = "logged";
-                        user.setUserData(object.data);
-                        if(token) R2D.token = token;
-                        resolve({logged: true});
-                    }   
-                }
-            }
-
-            function checkUserData(data) {
-                
-                if ( !data.hasOwnProperty('id') ) {
-                    console.error("Error! Received data has no property \"id\"!");
-                    console.log(data);
-                    return false;
-                }
-                if ( !data.hasOwnProperty('email') ) {
-                    console.error("Error! Received data has no property \"email\"!");
-                    console.log(data);
-                    return false;
-                }
-                if ( !data.hasOwnProperty('name') ) {
-                    console.error("Error! Received data has no property \"name\"!");
-                    console.log(data);
-                    return false;
-                }
-                if ( !data.hasOwnProperty('key') ) {
-                    console.error("Error! Received data has no property \"key\"!");
-                    console.log(data);
-                    return false;
-                }
-                return true;
-            };
-        });
+    me.checkIsLogged = async function(token) {
+        R2D.isLoggedStatus = "loggingIn";
+        const userData = queryClient.getQueryData(['user']);
+        const favoritesData = queryClient.getQueryData(['favorites']);
+        if (!userData) {
+            R2D.isLoggedStatus = "unlogged";
+            return { logged: false };
+        }
+        user.setUserData({ ...userData, favorites: favoritesData ?? null });
+        R2D.isLoggedStatus = "logged";
+        return { logged: true };
     };
 
     me.logout = function()
@@ -959,57 +857,16 @@ R2D.UserCore.UserLogin = function(user)
         });
     };
 
-    me.loadProfileData = () => {
-        return new Promise(async (resolve, reject) => {
-            
-            let params = '';
+    me.loadProfileData = async () => {
+        try {
+            const userData = await queryClient.fetchQuery(userQueryOptions);
+            user.setUserData({ ...user.data, ...userData });
+            return userData;
+        } catch (e) {
+            return { type: 'error', data: 'TEXT_ERROR_LOAD_DATA' };
+        }
+    };
 
-            let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_USER_INFO);
-            
-            let loader = new R2D.XHRLoader();
-
-            loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-            loader.addEventListener(Event.ERROR, loaderEventHandler);
-            loader.load(url, params, 'GET', null, null, true);
-            
-            function loaderEventHandler(event) {
-                if ( event.type == Event.COMPLETE ) {
-                    checkData(event.data.data)
-                } else {
-                    resolve({type: "error", data: "TEXT_ERROR_LOAD_DATA"});
-                }
-        
-                close();
-            }
-            function checkData(data) {
-                let object = null;
-        
-                try {
-                    object = JSON.parse(data);
-                } catch ( error ) {
-                    console.log('Error parse JSON string!');
-                }
-        
-                if ( !object || (object?.hasOwnProperty('error')) || (object?.hasOwnProperty('status') && object['status'] != 'success' && object['status'] != 'ok') ) {
-                    resolve({type: "error", data: "TEXT_ERROR_LOAD_DATA"});
-                    return;
-                }
-
-                user.setUserData({...user.data, ...object.data});
-        
-                resolve(object.data);
-        
-            }
-            function close() {
-                if ( !loader ) return;
-        
-                loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-                loader.removeEventListener(Event.ERROR, loaderEventHandler);
-                loader.close();
-                loader = null;
-            }
-        })
-    }
 };
 R2D.UserCore.UserAccount = function(user)
 {

@@ -1,6 +1,7 @@
 import db from '../db.js';
 import { DEV_USER_ID } from '../schema.js';
 import type { UserPatch } from '../../shared/schemas/user.js';
+import { PlanFeature } from '../../shared/types/plan-features.js';
 import type { User } from '../../shared/types/user.js';
 
 type UserRow = {
@@ -42,6 +43,7 @@ export function getUser(): User {
     userPlanRecurringId: null,
     userPlanPeriod: 0,
     subscriptionNews: false,
+    userPlanFeatures: [PlanFeature.WallEditor, PlanFeature.Plinth, PlanFeature.PrivateMaterial],
   };
 }
 
