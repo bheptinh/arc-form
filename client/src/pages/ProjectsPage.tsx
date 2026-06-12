@@ -1,15 +1,13 @@
+import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useNavigate } from 'react-router-dom';
 
-type Project = {
-  id: string;
-  hash: string;
-  name: string;
-  modified: string;
-  opened: string;
-  userPlan: string;
-};
+import {
+  deleteProject,
+  projectsInfiniteQueryOptions,
+  renameProject,
+} from '../api/projects';
 
 const LIMIT = 20;
 
@@ -259,11 +257,11 @@ const useStyles = createUseStyles({
 export default function ProjectsPage() {
   const classes = useStyles();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
 
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [total, setTotal] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [offset, setOffset] = useState(0);
+  const { data, fetchNextPage, hasNextPage, isLoading } = useInfiniteQuery(projectsInfiniteQueryOptions);
+  const projects = data?.pages.flatMap((p) => p.items) ?? [];
+
   const [sortField, setSortField] = useState<'modified' | 'opened'>('modified');
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('desc');
   const [sortLabel, setSortLabel] = useState('Last updated');
@@ -271,30 +269,24 @@ export default function ProjectsPage() {
   const [renameValue, setRenameValue] = useState('');
   const renameInputRef = useRef<HTMLInputElement>(null);
 
-  const load = async (off = 0) => {
-    setLoading(true);
-    try {
-      const res = await fetch(`/server-api/projects?limit=${LIMIT}&offset=${off}`);
-      const data = await res.json();
-      if (data.status === 'ok') {
-        setProjects(off === 0 ? data.data.items : (prev) => [...prev, ...data.data.items]);
-        setTotal(data.data.total);
-        setOffset(off + data.data.items.length);
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
-
   useEffect(() => {
     const el = document.querySelector('.preloader_main') as HTMLElement | null;
     if (el) el.remove();
-    load(0);
   }, []);
 
   useEffect(() => {
     if (renamingId && renameInputRef.current) renameInputRef.current.focus();
   }, [renamingId]);
+
+  const deleteMutation = useMutation({
+    mutationFn: deleteProject,
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
+  });
+
+  const renameMutation = useMutation({
+    mutationFn: ({ id, name }: { id: string; name: string }) => renameProject(id, name),
+    onSuccess: () => queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
+  });
 
   const sorted = [...projects].sort((a, b) => {
     const va = new Date(a[sortField]).getTime();
@@ -304,29 +296,20 @@ export default function ProjectsPage() {
 
   const handleOpen = (id: string) => navigate(`/project/${id}`);
 
-  const handleDelete = async (e: React.MouseEvent, id: string) => {
+  const handleDelete = (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
-    await fetch(`/server-api/projects/${id}`, { method: 'DELETE' });
-    setProjects((prev) => prev.filter((p) => p.id !== id));
-    setTotal((t) => t - 1);
+    deleteMutation.mutate(id);
   };
 
-  const startRename = (e: React.MouseEvent, item: Project) => {
+  const startRename = (e: React.MouseEvent, item: { id: string; name: string }) => {
     e.stopPropagation();
     setRenamingId(item.id);
     setRenameValue(item.name);
   };
 
-  const commitRename = async (id: string) => {
+  const commitRename = (id: string) => {
     const name = renameValue.trim();
-    if (name) {
-      await fetch(`/server-api/projects/${id}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name }),
-      });
-      setProjects((prev) => prev.map((p) => (p.id === id ? { ...p, name } : p)));
-    }
+    if (name) renameMutation.mutate({ id, name });
     setRenamingId(null);
   };
 
@@ -398,7 +381,7 @@ export default function ProjectsPage() {
       </div>
 
       <div className={classes.scroll}>
-        {loading && projects.length === 0 && (
+        {isLoading && (
           <div className={classes.preloader}>
             <div className="preloader-cube" />
           </div>
@@ -508,8 +491,8 @@ export default function ProjectsPage() {
             </div>
           ))}
 
-          {projects.length < total && (
-            <div className={classes.loadMore} onClick={() => load(offset)}>
+          {hasNextPage && (
+            <div className={classes.loadMore} onClick={() => fetchNextPage()}>
               Load more
             </div>
           )}

@@ -282,7 +282,8 @@ const PayProPopup = (props) => {
 
     async function checkUserProjects() {
       try {
-        const response = await user.loadProjects();
+        const res = await fetch('/server-api/projects');
+        const response = await res.json();
         if (response.type == 'ok') {
           checkNum += 1;
           if (checkNum > 5) {

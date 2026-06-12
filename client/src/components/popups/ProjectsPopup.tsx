@@ -1,5 +1,6 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
+import { useInfiniteQuery } from '@tanstack/react-query';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
@@ -7,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { planner, user } from '../../initR2D';
+import { projectsInfiniteQueryOptions } from '../../api/projects';
 import { selectControlPanelData } from '../../redux/features/control/controlPanelSlice';
 import {
   closeActivePopup,
@@ -522,13 +524,11 @@ const ProjectsPopup = (props) => {
   const scrollRef = useRef();
   const controlPanelData = useSelector(selectControlPanelData);
 
-  const [projectsData, setProjectsData] = useState([]);
+  const { data: projectsQueryData, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
+    useInfiniteQuery(projectsInfiniteQueryOptions);
+  const projectsData = projectsQueryData?.pages.flatMap((p) => p.items) ?? [];
+
   const [animPopupClass, setAnimPopupClass] = useState(false);
-  const [projectsShow, setProjectsShow] = useState([]);
-  const [projectsTotal, setProjectsTotal] = useState(0);
-  const [needToUploadMore, setNeedToUploadMore] = useState(false);
-  const [currentOffsetForRenders, setCurrentOffsetForRenders] = useState(0);
-  const [preloaderStatus, setPreloaderStatus] = useState(true);
   const [sortType, setSortType] = useState('modified');
   const [sortDirection, setSortDirection] = useState('desc');
   const [activeSortText, setActiveSortText] = useState(translation['TEXT_LAST_UPDATED']);
@@ -539,7 +539,7 @@ const ProjectsPopup = (props) => {
 
   const [sortedProjects, setSortedProjects] = useState([]);
   const [deletedId, setDeletedId] = useState(null);
-  const prevProjectsRef = useRef(projectsData);
+  const prevProjectsRef = useRef([]);
   const [newProjectIds, setNewProjectIds] = useState([]);
 
   const onClickClose = (e) => {
@@ -675,16 +675,6 @@ const ProjectsPopup = (props) => {
   const onClickRename = async (item) => {
     dispatch(setActivePopup({ name: 'changeProjectName', data: item }));
   };
-  const onProjectsUpdate = async (e) => {
-    const response = await user.loadProjects(20, currentOffsetForRenders);
-    if (response.type == 'error') {
-      dispatch(setActivePopup({ name: 'alert', data: response.data }));
-    } else {
-      setProjectsData(response.data.items);
-      setProjectsTotal(response.data.total);
-    }
-  };
-
   const createNewProject = async (e) => {
     if (
       planner.scene.wasChanged() &&
@@ -731,70 +721,36 @@ const ProjectsPopup = (props) => {
     const el = e.target;
     if (
       el.scrollTop + el.offsetHeight >= el.scrollHeight - 10 &&
-      projectsData.length !== projectsTotal
+      hasNextPage &&
+      !isFetchingNextPage
     ) {
       el.removeEventListener('scroll', onScrollItemsWrap);
-      setCurrentOffsetForRenders(projectsData.length);
-      setNeedToUploadMore(true);
+      fetchNextPage();
     }
   };
 
-  const getSortedProjects = (e) => {
+  const getSortedProjects = () => {
     const arr = [...projectsData];
     arr.sort((a, b) => {
-      const key = sortType;
-      const valA = new Date(a[key]);
-      const valB = new Date(b[key]);
-
+      const valA = new Date(a[sortType]);
+      const valB = new Date(b[sortType]);
       return sortDirection === 'asc' ? valA - valB : valB - valA;
     });
-    setProjectsShow(arr);
     return arr;
   };
 
   useEffect(() => {
     const timer = setTimeout(() => setAnimPopupClass(true), 0);
-    planner.scene.addEventListener(planner.scene.PROJECTS_UPDATE, onProjectsUpdate);
-
-    user
-      .loadProjects(20, 0)
-      .then((response) => {
-        if (response.type == 'error') {
-          dispatch(setActivePopup({ name: 'alert', data: response.data }));
-        } else {
-          setProjectsData(response.data.items);
-          setProjectsTotal(response.data.total);
-        }
-      })
-      .finally(() => setPreloaderStatus(false));
-
-    return () => {
-      planner.scene.removeEventListener(planner.scene.PROJECTS_UPDATE, onProjectsUpdate);
-      clearTimeout(timer);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
     const el = scrollRef.current?.getScrollElement?.();
-    if (el && projectsShow?.length > 0 && projectsTotal) {
-      const shouldAttachScroll = projectsShow.length < projectsTotal;
-      shouldAttachScroll && el.addEventListener('scroll', onScrollItemsWrap);
-      return () => shouldAttachScroll && el.removeEventListener('scroll', onScrollItemsWrap);
+    if (el && sortedProjects?.length > 0 && hasNextPage) {
+      el.addEventListener('scroll', onScrollItemsWrap);
+      return () => el.removeEventListener('scroll', onScrollItemsWrap);
     }
-  }, [projectsShow.length, projectsTotal]);
-
-  useEffect(() => {
-    if (needToUploadMore) {
-      user
-        .loadProjects(20, currentOffsetForRenders)
-        .then((response) => {
-          if (response.type == 'error')
-            return dispatch(setActivePopup({ name: 'alert', data: response.data }));
-          setProjectsData((state) => state.concat(response.data.items));
-        })
-        .finally(() => setNeedToUploadMore(false));
-    }
-  }, [needToUploadMore]);
+  }, [sortedProjects.length, hasNextPage]);
 
   useEffect(() => {
     const prevProjects = prevProjectsRef.current;
@@ -1010,7 +966,7 @@ const ProjectsPopup = (props) => {
             </div>
           </div>
           <div className={classes.planner_popup_scroll}>
-            {preloaderStatus ? (
+            {isLoading ? (
               <div className={classes.preloader_projects + ' preloader'}>
                 <div className="preloader-cube"></div>
               </div>

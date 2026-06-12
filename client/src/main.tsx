@@ -12,6 +12,7 @@ import lang from 'suneditor/src/lang';
 import plugins from 'suneditor/src/plugins';
 
 import { setupLanguageBridge } from './api/bridges/languageBridge';
+import { setupProjectsBridge } from './api/bridges/projectsBridge';
 import { favoritesQueryOptions } from './api/favorites';
 import { languagesQueryOptions, translationQueryOptions } from './api/i18n';
 import { queryClient } from './api/queryClient';
@@ -62,6 +63,7 @@ async function init() {
   planner.scene.setDefaultPanoId(panorams.find((i) => i.tags.includes('skybox_default'))?.id);
 
   setupLanguageBridge();
+  setupProjectsBridge();
 
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
