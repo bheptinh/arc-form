@@ -24,6 +24,9 @@ DB_DIR=data    # path to SQLite DB dir, relative to project root
 client/             frontend — Vite + React source, index.html, tsconfig.json
   src/              React source
     api/            React Query fetch helpers + hooks (queryClient, i18n, user)
+      bridges/      query-cache → side-effect subscribers (languageBridge.ts)
+      hooks/        useLanguages, useTranslation, useLanguageChange, …
+    pages/          standalone React pages (MarkdownPage, ProjectsPage)
     vendor/         R2D engine as ES modules (plannercore.js, user.js, r2d.ts)
   public/           static assets (R2D engine scripts, images)
   vite-plugins/     custom Vite dev-server plugins
@@ -37,6 +40,7 @@ server/             Express backend (TypeScript, compiled to dist-server/server/
   fixtures/         Static data files served by i18n routes (committed to source control)
     languages.json            list of supported languages
     translations/             per-language translation maps (en.json, ua.json, …)
+    pages/                    per-language markdown pages — {slug}/{lang}.md, fallback en.md → index.md
   routes/
     catalog/
       index.ts      public catalog routes (/server-api/catalog/...)
@@ -96,7 +100,6 @@ A plain `<div id="planner">` where R2D mounts its WebGL canvas. Mouse/touch even
 | `popups` | Which popup is open + its data |
 | `quickPanels` | Floating action panels (delete, helper, helper_model, etc.) |
 | `user` | Login state, profile, active project |
-| `language` | `languageChange` thunk only — languages/translation data moved to React Query (see `client/src/api/`) |
 | `common` | Preloader status, hidden elements, project ownership |
 | `topPanel` | Undo/redo availability |
 | `constructor` | Wall height, image plan state |
@@ -122,22 +125,74 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 
 ### React Query — `client/src/api/`
 **@tanstack/react-query** manages all server state. Key files:
-- `queryClient.ts` — singleton `QueryClient` (also used imperatively in Redux thunks)
+- `queryClient.ts` — singleton `QueryClient`; imported directly by vendor JS and bridge modules
 - `i18n.ts` — `languagesQueryOptions`, `translationQueryOptions`, `setLanguage()`
 - `user.ts` — `patchUser()` returning updated `User`
 - `hooks/useLanguages.ts`, `hooks/useTranslation.ts` — component hooks (data always present after init)
 - `hooks/useLanguageChange.ts` — mutation: PATCHes user, invalidates languages + translation queries
+- `bridges/languageBridge.ts` — query cache subscriber (see pattern below)
 
 Components use `useTranslation()` / `useLanguages()` instead of Redux selectors. Data is pre-fetched via `queryClient.ensureQueryData()` in `main.tsx` before React renders, so hooks never see a loading state.
 
+#### Pattern: replacing R2D XHR with React Query cache
+
+R2D vendor files (`user.js`, `plannercore.js`) are owned ES modules that can import from the app directly. Where R2D previously made XHR calls to fetch data (languages, translations), those `load()` functions now import `queryClient` and read from the cache synchronously:
+
+```js
+// client/src/vendor/user.js
+import { queryClient } from '../api/queryClient.js';
+
+me.load = () => new Promise((resolve, reject) => {
+    const data = queryClient.getQueryData(['translation']);
+    if (!data) { reject({ message: 'Translation not in React Query cache' }); return; }
+    resolve(data);
+});
+```
+
+`main.tsx` calls `queryClient.ensureQueryData(...)` before `planner.init()`, so the cache is always populated when `load()` runs. The same pattern applies to `R2D.languages`, defined as a getter in `plannercore.js`:
+
+```js
+// client/src/vendor/plannercore.js
+import { queryClient } from '../api/queryClient.js';
+
+Object.defineProperty(R2D, 'languages', {
+    get: () => queryClient.getQueryData(['languages']) ?? [],
+    set: (_v) => {},
+    configurable: true,
+});
+```
+
+#### Pattern: React Query → Redux bridge (query cache subscriber)
+
+For side effects that must fire when a query updates but live outside React (catalog reload, Redux state reset), use a module-level cache subscriber instead of a hook or thunk. Bridges live in `client/src/api/bridges/` and are mounted once in `main.tsx` after init.
+
+```ts
+// client/src/api/bridges/languageBridge.ts
+export function setupLanguageBridge() {
+  let prev = queryClient.getQueryData(translationQueryOptions.queryKey);
+  queryClient.getQueryCache().subscribe((event) => {
+    if (event.type === 'updated' && event.action.type === 'success'
+        && event.query.queryKey[0] === 'translation') {
+      const next = queryClient.getQueryData(translationQueryOptions.queryKey);
+      if (next === prev) return;
+      prev = next;
+      reloadCatalog(); // imperative R2D + Redux side effects
+    }
+  });
+}
+```
+
+The `prev` guard skips the initial cache population on startup. Add a new `*Bridge.ts` file per domain when new cross-cutting query → side-effect needs arise.
+
 ### Initialization — `client/src/main.tsx`
 Sequential async init before React renders:
-1. `queryClient.ensureQueryData(languagesQueryOptions)` — fetches language list, sets `R2D.languages`
-2. `queryClient.ensureQueryData(translationQueryOptions)` — fetches translations
+1. `queryClient.ensureQueryData(languagesQueryOptions)` — fetches language list into cache
+2. `queryClient.ensureQueryData(translationQueryOptions)` — fetches translations into cache
 3. Check user login status
-4. `planner.init()` — initializes R2D engine
+4. `planner.init()` — initializes R2D engine (vendor `load()` functions read from cache populated above)
 5. Load catalog materials, product tree, panoramas
-6. `createRoot(...).render(...)` — mount React app wrapped in `QueryClientProvider`
+6. `setupLanguageBridge()` — mount query cache subscriber for language-change side effects
+7. `createRoot(...).render(...)` — mount React app wrapped in `QueryClientProvider`
 
 ### Vite Plugins — `client/vite-plugins/` and `client/roomtodo/mock/`
 
@@ -154,7 +209,7 @@ Filename convention:
 - `?category_id=695&category_type=1` → `category-695-1.json`
 - `?category_tag=moldings` → `tag-moldings.json`
 
-**`client/roomtodo/mock/vite-mock-plugin.js`** — handles all other `/api/` and `/api2/` endpoints (language, translations, favorites, planner config, planner save/load) via static JSON files in `client/roomtodo/mock/`.
+**`client/vite-plugins/vite-mock-plugin/vite-mock-plugin.js`** — handles remaining `/api/` and `/api2/` endpoints (renders, planner connect) via static JSON/JS files in `mock/`. Language and translation endpoints were removed — R2D now reads those from React Query cache directly.
 
 ### Backend — `server/`
 
@@ -193,6 +248,7 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | GET/PUT | `/server-api/user/tips` | user.ts | tips state |
 | GET | `/server-api/i18n/languages` | i18n.ts | language list with `current` flag from user's saved preference |
 | GET | `/server-api/i18n/translation` | i18n.ts | flat `Record<string,string>` for user's current language, falls back to `en` |
+| GET | `/server-api/i18n/pages/:slug` | i18n.ts | markdown page content from `server/fixtures/pages/{slug}/{lang}.md`, fallback `en.md` → `index.md` |
 | GET | `/uploads/*` | static | user-uploaded files from `data/uploads/` |
 
 #### Catalog item shape
@@ -220,6 +276,5 @@ This allows legacy saved projects (which stored integer productIds) to still res
 #### Not yet implemented
 
 - **`GET /server-api/catalog/set-tree?set_id=<id>`** — material sets (curated per-slot material collections). See `docs/set-tree.md` for full spec. Trigger requires `product_material_slots.set_id` column (not in schema yet) and set data which must be sourced externally or hand-curated.
-- **Language/translations** — still mocked in `vite-mock-plugin`. TODO: move to bundled FE i18n (react-i18next).
 - **`/api/planner/connect`** — mocked with TODO: DELETE (no purpose).
 - **`URL_DELETE_PRIVATE`** (`/api/planner/delete_private_entity`) — `user.deleteMaterial()` is never called from React UI yet; route exists at `DELETE /server-api/catalog/private/materials/:id` but URL in `index.html` not updated. See TODO comment in `index.html:70`.
