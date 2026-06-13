@@ -23,8 +23,8 @@ DB_DIR=data    # path to SQLite DB dir, relative to project root
 ```
 client/             frontend — Vite + React source, index.html, tsconfig.json
   src/              React source
-    api/            React Query fetch helpers + hooks (queryClient, i18n, user, favorites)
-      bridges/      query-cache → side-effect subscribers (languageBridge.ts)
+    api/            React Query fetch helpers + hooks (queryClient, i18n, user, favorites, projects)
+      bridges/      query-cache → side-effect subscribers (languageBridge.ts, projectsBridge.ts)
       hooks/        useLanguages, useTranslation, useLanguageChange, …
     pages/          standalone React pages (MarkdownPage, ProjectsPage)
     vendor/         R2D engine as ES modules (plannercore.js, user.js, r2d.ts)
@@ -129,9 +129,11 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 - `i18n.ts` — `languagesQueryOptions`, `translationQueryOptions`, `setLanguage()`
 - `user.ts` — `fetchUser()`, `userQueryOptions`, `patchUser()`
 - `favorites.ts` — `favoritesQueryOptions` (`staleTime: Infinity` — invalidate on add/remove mutations)
+- `projects.ts` — `Project` type, `projectsInfiniteQueryOptions`, `deleteProject()`, `renameProject()`
 - `hooks/useLanguages.ts`, `hooks/useTranslation.ts` — component hooks (data always present after init)
 - `hooks/useLanguageChange.ts` — mutation: PATCHes user, invalidates languages + translation queries
 - `bridges/languageBridge.ts` — query cache subscriber (see pattern below)
+- `bridges/projectsBridge.ts` — listens to `planner.scene.PROJECTS_UPDATE` → invalidates `['projects']`
 
 Components use `useTranslation()` / `useLanguages()` instead of Redux selectors. Data is pre-fetched via `queryClient.ensureQueryData()` in `main.tsx` before React renders, so hooks never see a loading state.
 
@@ -185,6 +187,17 @@ export function setupLanguageBridge() {
 
 The `prev` guard skips the initial cache population on startup. Add a new `*Bridge.ts` file per domain when new cross-cutting query → side-effect needs arise.
 
+For R2D engine events (rather than query cache events), bridges subscribe directly to the engine's EventDispatcher. `projectsBridge.ts` uses this pattern — `planner.scene` fires `PROJECTS_UPDATE` after save/delete/copy, the bridge invalidates `['projects']`, and React Query re-fetches automatically:
+
+```ts
+// client/src/api/bridges/projectsBridge.ts
+export function setupProjectsBridge() {
+  planner.scene.addEventListener(planner.scene.PROJECTS_UPDATE, () => {
+    queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+  });
+}
+```
+
 ### Initialization — `client/src/main.tsx`
 Sequential async init before React renders:
 1. `queryClient.ensureQueryData(userQueryOptions)` — fetches user profile into cache
@@ -195,13 +208,14 @@ Sequential async init before React renders:
 6. `planner.init()` — initializes R2D engine (vendor `load()` functions read from cache populated above)
 7. Load catalog materials, product tree, panoramas
 8. `setupLanguageBridge()` — mount query cache subscriber for language-change side effects
-9. `createRoot(...).render(...)` — mount React app wrapped in `QueryClientProvider`
+9. `setupProjectsBridge()` — mount R2D event listener for project list invalidation
+10. `createRoot(...).render(...)` — mount React app wrapped in `QueryClientProvider`
 
 ### Vite Plugins — `client/vite-plugins/` and `client/roomtodo/mock/`
 
 Three dev-server plugins intercept network requests so the app works offline/locally:
 
-**`client/vite-plugins/local-first-assets/`** — intercepts static asset URLs (`/src_designer/images/`, `/Assets/css/`, `/files/products/`, `/files/categories/`). Serves from `client/public/roomtodo/{url}` if the file exists; otherwise fetches from `https://roomtodo.com` and caches it.
+**`client/vite-plugins/local-first-assets/`** — intercepts static asset URLs (`/src_designer/images/`, `/Assets/css/`, `/files/products/`, `/files/categories/`). Serves from `client/public/roomtodo/{url}` if the file exists; otherwise fetches from `https://roomtodo.com` and caches it. Known MIME types include `.mrtd` (R2D proprietary binary model format → `application/octet-stream`).
 
 **`client/vite-plugins/catalog-search-fallback/`** — intercepts `/api/catalog/search?...`. Derives a flat filename from query params and looks it up in `client/vite-plugins/catalog-search-fallback/mocks/`. Falls back to roomtodo.com and caches on miss.
 
@@ -241,10 +255,12 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | GET | `/server-api/catalog/private/products/:id` | catalog/private.ts | get single user model |
 | POST | `/server-api/catalog/private/materials/upload` | catalog/private.ts | upload custom material textures |
 | DELETE | `/server-api/catalog/private/materials/:id` | catalog/private.ts | delete custom material |
-| GET | `/server-api/projects` | projects.ts | list user projects |
+| GET | `/server-api/projects` | projects.ts | list user projects (`?limit=&offset=`) |
 | POST | `/server-api/projects` | projects.ts | create project |
 | GET | `/server-api/projects/:id` | projects.ts | load project |
-| PUT | `/server-api/projects/:id` | projects.ts | save project |
+| PUT | `/server-api/projects/:id` | projects.ts | save project (full scene payload) |
+| PATCH | `/server-api/projects/:id` | projects.ts | rename project (`{ name }`) |
+| POST | `/server-api/projects/:id/copy` | projects.ts | copy project (`{ name }`) |
 | DELETE | `/server-api/projects/:id` | projects.ts | delete project |
 | GET | `/server-api/user` | user.ts | get user profile |
 | PATCH | `/server-api/user` | user.ts | update user profile (name, email, language_code) — validated via Zod UserPatchSchema, returns updated User |
