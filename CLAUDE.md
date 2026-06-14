@@ -145,84 +145,15 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 
 Components use `useTranslation()` / `useLanguages()` instead of Redux selectors. Data is pre-fetched via `queryClient.ensureQueryData()` in `main.tsx` before React renders, so hooks never see a loading state.
 
-#### Pattern: replacing R2D XHR with React Query cache
+#### Patterns: XHR → React Query migration
 
-R2D vendor files (`user.js`, `plannercore.js`) are owned ES modules that can import from the app directly. Where R2D previously made XHR calls to fetch data (languages, translations), those `load()` functions now import `queryClient` and read from the cache synchronously:
+See agent **`xhr-to-react-query`** (`.claude/agents/xhr-to-react-query.md`) for full guidance on:
+- Replacing R2D XHR reads with React Query cache reads (vendor files, `getQueryData`)
+- Writing pure `useMutation` definitions and handling side effects in `useEffect([mutation.status])`
+- Bridge pattern for cross-cutting query → side-effect wiring (`client/src/api/bridges/`)
+- Which `URL_*` entries in `index.html` are safe to remove vs. still needed by R2D
 
-```js
-// client/src/vendor/user.js
-import { queryClient } from '../api/queryClient.js';
-
-me.load = () => new Promise((resolve, reject) => {
-    const data = queryClient.getQueryData(['translation']);
-    if (!data) { reject({ message: 'Translation not in React Query cache' }); return; }
-    resolve(data);
-});
-```
-
-`main.tsx` calls `queryClient.ensureQueryData(...)` before `planner.init()`, so the cache is always populated when `load()` runs. The same pattern applies to `R2D.languages`, defined as a getter in `plannercore.js`:
-
-```js
-// client/src/vendor/plannercore.js
-import { queryClient } from '../api/queryClient.js';
-
-Object.defineProperty(R2D, 'languages', {
-    get: () => queryClient.getQueryData(['languages']) ?? [],
-    set: (_v) => {},
-    configurable: true,
-});
-```
-
-#### Pattern: React Query → Redux bridge (query cache subscriber)
-
-For side effects that must fire when a query updates but live outside React (catalog reload, Redux state reset), use a module-level cache subscriber instead of a hook or thunk. Bridges live in `client/src/api/bridges/` and are mounted once in `main.tsx` after init.
-
-```ts
-// client/src/api/bridges/languageBridge.ts
-export function setupLanguageBridge() {
-  let prev = queryClient.getQueryData(translationQueryOptions.queryKey);
-  queryClient.getQueryCache().subscribe((event) => {
-    if (event.type === 'updated' && event.action.type === 'success'
-        && event.query.queryKey[0] === 'translation') {
-      const next = queryClient.getQueryData(translationQueryOptions.queryKey);
-      if (next === prev) return;
-      prev = next;
-      reloadCatalog(); // imperative R2D + Redux side effects
-    }
-  });
-}
-```
-
-The `prev` guard skips the initial cache population on startup. Add a new `*Bridge.ts` file per domain when new cross-cutting query → side-effect needs arise.
-
-For R2D engine events (rather than query cache events), bridges subscribe directly to the engine's EventDispatcher. `projectsBridge.ts` uses this pattern — `planner.scene` fires `PROJECTS_UPDATE` after R2D-driven saves, the bridge invalidates `['projects']`, and React Query re-fetches automatically:
-
-```ts
-// client/src/api/bridges/projectsBridge.ts
-export function setupProjectsBridge() {
-  planner.scene.addEventListener(planner.scene.PROJECTS_UPDATE, () => {
-    queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
-  });
-}
-```
-
-React Query mutations that bypass R2D (delete, rename via `ChangeProjectName` and `SetProjectNamePopup`, copy via `SetProjectNamePopup`) invalidate `['projects']` directly instead of relying on the bridge.
-
-**Mutation pattern:** keep `useMutation` definitions pure — only `mutationFn`, no `onSuccess`/`onError` callbacks. React side effects (cache invalidation, Redux dispatches, popup close, toast) go in a `useEffect` that watches `mutation.status`:
-
-```ts
-const myMutation = useMutation({
-  mutationFn: (args) => apiCall(args),
-});
-
-useEffect(() => {
-  if (myMutation.isSuccess) {
-    queryClient.invalidateQueries({ queryKey: ... });
-    dispatch(...);
-  }
-  if (myMutation.isError) { dispatch(...); }
-}, [myMutation.status]);
-```
+React Query mutations that bypass R2D (delete, rename, copy for projects) invalidate `['projects']` directly from `useEffect` instead of relying on the bridge. R2D-driven saves fire `PROJECTS_UPDATE` → `projectsBridge` invalidates the cache.
 
 ### Initialization — `client/src/main.tsx`
 Sequential async init before React renders:
