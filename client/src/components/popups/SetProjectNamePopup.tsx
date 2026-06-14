@@ -5,7 +5,7 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner, user } from '../../initR2D';
-import { copyProject, projectsInfiniteQueryOptions } from '../../api/projects';
+import { copyProject, projectsInfiniteQueryOptions, renameProject } from '../../api/projects';
 import { updateIsProjectBelongToLoggedUser } from '../../redux/features/common/commonSlice';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
 import {
@@ -190,6 +190,10 @@ const SetProjectNamePopup = (props) => {
   const changeProjectForm = useRef(null);
   const [animPopupClass, setAnimPopupClass] = useState(false);
 
+  const renameMutation = useMutation({
+    mutationFn: ({ id, name }: { id: string; name: string }) => renameProject(id, name),
+  });
+
   const copyMutation = useMutation({
     mutationFn: ({ id, name }: { id: string; name: string }) => copyProject(id, name),
     onSuccess: (newProject) => {
@@ -251,36 +255,8 @@ const SetProjectNamePopup = (props) => {
       else dispatch(setProfileData(response));
     }
     if (popupType == 'rename') {
-      const response = await planner.scene.renameProject(
-        R2D.scene.getProjectId(),
-        R2D.scene.getProjectName(),
-        projectName
-      );
-      if (response.status == 'error') {
-        dispatch(updatePreloaderStatus(false));
-        return dispatch(setActivePopup({ name: 'alert', data: response.data }));
-      }
-
-      dispatch(
-        setActivePopup({
-          name: 'completeMessage',
-          positionX: 'left',
-          data: 'NOTIFY_RENAME_PLAN_COMPLETE',
-        })
-      );
-      if (addType == 'configRename') {
-        R2D.postMessageToParent(
-          JSON.stringify({
-            action: 'project_renamed',
-            data: {
-              id: R2D.scene.getProjectId(),
-              name: R2D.scene.getProjectName(),
-              hash: R2D.scene.getProjectHash(),
-            },
-          })
-        );
-      }
-      dispatch(setActiveProjectName(projectName));
+      renameMutation.mutate({ id: R2D.scene.getProjectId(), name: projectName });
+      return;
     }
     if (popupType == 'copy') {
       copyMutation.mutate({ id: projectToOpen.id, name: projectName });
@@ -345,6 +321,30 @@ const SetProjectNamePopup = (props) => {
     setAnimPopupClass(false);
     setTimeout(() => dispatch(closeActivePopup({ name: 'setProjectName' })), 500);
   };
+
+  useEffect(() => {
+    if (renameMutation.isSuccess) {
+      const { name } = renameMutation.variables!;
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+      dispatch(updatePreloaderStatus(false));
+      dispatch(setActivePopup({ name: 'completeMessage', positionX: 'left', data: 'NOTIFY_RENAME_PLAN_COMPLETE' }));
+      if (addType == 'configRename') {
+        R2D.postMessageToParent(
+          JSON.stringify({
+            action: 'project_renamed',
+            data: { id: R2D.scene.getProjectId(), name, hash: R2D.scene.getProjectHash() },
+          })
+        );
+      }
+      dispatch(setActiveProjectName(name));
+      setAnimPopupClass(false);
+      setTimeout(() => dispatch(closeActivePopup({ name: 'setProjectName' })), 500);
+    }
+    if (renameMutation.isError) {
+      dispatch(updatePreloaderStatus(false));
+      dispatch(setActivePopup({ name: 'alert', data: 'NOTIFY_RENAME_PLAN_ERROR' }));
+    }
+  }, [renameMutation.status]);
 
   const classes = useStyle();
 

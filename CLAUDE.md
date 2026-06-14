@@ -206,7 +206,23 @@ export function setupProjectsBridge() {
 }
 ```
 
-React Query mutations that bypass R2D (delete, rename via `ChangeProjectName`, copy via `SetProjectNamePopup`) call `queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey })` directly in their `onSuccess` handler instead of relying on the bridge.
+React Query mutations that bypass R2D (delete, rename via `ChangeProjectName` and `SetProjectNamePopup`, copy via `SetProjectNamePopup`) invalidate `['projects']` directly instead of relying on the bridge.
+
+**Mutation pattern:** keep `useMutation` definitions pure — only `mutationFn`, no `onSuccess`/`onError` callbacks. React side effects (cache invalidation, Redux dispatches, popup close, toast) go in a `useEffect` that watches `mutation.status`:
+
+```ts
+const myMutation = useMutation({
+  mutationFn: (args) => apiCall(args),
+});
+
+useEffect(() => {
+  if (myMutation.isSuccess) {
+    queryClient.invalidateQueries({ queryKey: ... });
+    dispatch(...);
+  }
+  if (myMutation.isError) { dispatch(...); }
+}, [myMutation.status]);
+```
 
 ### Initialization — `client/src/main.tsx`
 Sequential async init before React renders:
