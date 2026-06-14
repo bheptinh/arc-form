@@ -27,6 +27,7 @@ client/             frontend — Vite + React source, index.html, tsconfig.json
       bridges/      query-cache → side-effect subscribers (languageBridge.ts, projectsBridge.ts)
       hooks/        useLanguages, useTranslation, useLanguageChange, …
     pages/          standalone React pages (MarkdownPage, ProjectsPage)
+    shared-components/  generic UI components — no domain imports, no entity-prefixed names (Card, SortBar, …)
     vendor/         R2D engine as ES modules (plannercore.js, user.js, r2d.ts)
   public/           static assets (R2D engine scripts, images)
   vite-plugins/     custom Vite dev-server plugins
@@ -106,6 +107,13 @@ A plain `<div id="planner">` where R2D mounts its WebGL canvas. Mouse/touch even
 | `metrics` | Units display |
 | `tips` | Contextual tips shown to user |
 
+### Shared components — `client/src/shared-components/`
+Pure presentational components with no domain imports. Naming follows MUI conventions: describe the shape, not the caller. **Never** prefix with an entity name (`Card` not `ProjectCard`, `SortBar` not `ProjectSortBar`) and never group into domain subdirectories (`shared-components/Card.tsx` not `shared-components/projects/Card.tsx`). The folder itself provides the namespace.
+
+Current components:
+- `Card.tsx` — image area + hover action overlay + meta rows + plan badge. Props: `name`, `preview?`, `modified?`, `created?`, `userPlan?`, `actions[]`, `onClick?`, `nameContent?` (rename input slot), `className?`.
+- `SortBar.tsx` — dropdown + direction toggle. Props: `options[]`, `activeLabel`, `direction`, `onOptionSelect`, `onDirectionToggle`.
+
 ### Styling
 **react-jss** (`createUseStyles`) throughout. Not CSS Modules. Class names are generated at runtime.
 
@@ -116,7 +124,7 @@ LeftMain      — left sidebar with ControlPanel + DynamicPanel (catalog, select
 CenterPanel   — canvas area (R2D engine)
 RightPanel    — view mode toggle (2D/3D/constr), settings
 BottomPanel   — zoom, ruler, center, fullscreen buttons
-Popups        — all modal dialogs rendered in a single component
+Popups        — all modal dialogs rendered in a single component (ConfirmPopup handles the `confirm` Redux slot as a real two-button dialog; handles `project_delete` and `project_copied_open` types; stubs all others)
 QuickPanels   — floating contextual action panels (positioned near selected object)
 ```
 
@@ -129,7 +137,7 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 - `i18n.ts` — `languagesQueryOptions`, `translationQueryOptions`, `setLanguage()`
 - `user.ts` — `fetchUser()`, `userQueryOptions`, `patchUser()`
 - `favorites.ts` — `favoritesQueryOptions` (`staleTime: Infinity` — invalidate on add/remove mutations)
-- `projects.ts` — `Project` type, `projectsInfiniteQueryOptions`, `deleteProject()`, `renameProject()`
+- `projects.ts` — `Project` type (includes `preview?: string`), `projectsInfiniteQueryOptions`, `deleteProject()`, `renameProject()`, `copyProject()`
 - `hooks/useLanguages.ts`, `hooks/useTranslation.ts` — component hooks (data always present after init)
 - `hooks/useLanguageChange.ts` — mutation: PATCHes user, invalidates languages + translation queries
 - `bridges/languageBridge.ts` — query cache subscriber (see pattern below)
@@ -187,7 +195,7 @@ export function setupLanguageBridge() {
 
 The `prev` guard skips the initial cache population on startup. Add a new `*Bridge.ts` file per domain when new cross-cutting query → side-effect needs arise.
 
-For R2D engine events (rather than query cache events), bridges subscribe directly to the engine's EventDispatcher. `projectsBridge.ts` uses this pattern — `planner.scene` fires `PROJECTS_UPDATE` after save/delete/copy, the bridge invalidates `['projects']`, and React Query re-fetches automatically:
+For R2D engine events (rather than query cache events), bridges subscribe directly to the engine's EventDispatcher. `projectsBridge.ts` uses this pattern — `planner.scene` fires `PROJECTS_UPDATE` after R2D-driven saves, the bridge invalidates `['projects']`, and React Query re-fetches automatically:
 
 ```ts
 // client/src/api/bridges/projectsBridge.ts
@@ -197,6 +205,8 @@ export function setupProjectsBridge() {
   });
 }
 ```
+
+React Query mutations that bypass R2D (delete, rename via `ChangeProjectName`, copy via `SetProjectNamePopup`) call `queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey })` directly in their `onSuccess` handler instead of relying on the bridge.
 
 ### Initialization — `client/src/main.tsx`
 Sequential async init before React renders:
