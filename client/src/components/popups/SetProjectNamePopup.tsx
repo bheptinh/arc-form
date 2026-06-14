@@ -1,9 +1,11 @@
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner, user } from '../../initR2D';
+import { copyProject, projectsInfiniteQueryOptions } from '../../api/projects';
 import { updateIsProjectBelongToLoggedUser } from '../../redux/features/common/commonSlice';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
 import {
@@ -179,6 +181,7 @@ const SetProjectNamePopup = (props) => {
   const popups = useSelector(selectPopups);
   const translation = useTranslation();
   const dispatch = useDispatch();
+  const queryClient = useQueryClient();
   const userProfileData = useSelector(selectUserProfileData);
   let projectActiveName = useSelector(selectUserProjectActive);
   const popupType = popups.setProjectName.type;
@@ -186,6 +189,26 @@ const SetProjectNamePopup = (props) => {
   const addType = popups.setProjectName.addType;
   const changeProjectForm = useRef(null);
   const [animPopupClass, setAnimPopupClass] = useState(false);
+
+  const copyMutation = useMutation({
+    mutationFn: ({ id, name }: { id: string; name: string }) => copyProject(id, name),
+    onSuccess: (newProject) => {
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+      dispatch(updatePreloaderStatus(false));
+      dispatch(
+        setActivePopup({
+          name: 'confirm',
+          type: 'project_copied_open',
+          data: { id: newProject.id, name: newProject.name, hash: newProject.hash },
+        })
+      );
+      dispatch(closeActivePopup({ name: 'setProjectName' }));
+    },
+    onError: () => {
+      dispatch(updatePreloaderStatus(false));
+      dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
+    },
+  });
 
   if (popupType == 'copy') projectActiveName = projectToOpen;
 
@@ -260,24 +283,8 @@ const SetProjectNamePopup = (props) => {
       dispatch(setActiveProjectName(projectName));
     }
     if (popupType == 'copy') {
-      const newProjectData = await user.copyProject({
-        id: projectToOpen.id,
-        name: projectToOpen.name,
-        newName: projectName,
-      });
-
-      const response = await user.loadProfileData();
-      if (response.type == 'error')
-        dispatch(setActivePopup({ name: 'alert', data: response.data }));
-      else dispatch(setProfileData(response));
-
-      dispatch(
-        setActivePopup({
-          name: 'confirm',
-          type: 'project_copied_open',
-          data: { id: newProjectData.id, name: projectName, hash: newProjectData.hash },
-        })
-      );
+      copyMutation.mutate({ id: projectToOpen.id, name: projectName });
+      return;
     }
     if (popupType == 'create' || popupType == 'saveAs') {
       dispatch(

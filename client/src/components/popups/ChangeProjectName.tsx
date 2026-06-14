@@ -1,10 +1,10 @@
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { planner } from '../../initR2D';
-import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
+import { projectsInfiniteQueryOptions, renameProject } from '../../api/projects';
 import {
   closeActivePopup,
   selectPopups,
@@ -167,10 +167,24 @@ const ChangeProjectNamePopup = (props) => {
   const popups = useSelector(selectPopups);
   const translation = useTranslation();
   const dispatch = useDispatch();
+  const queryClient = useQueryClient();
   const changeProjectForm = useRef(null);
   const popupData = popups.changeProjectName;
   const projectActiveName = popupData.data.name;
   const [animPopupClass, setAnimPopupClass] = useState(false);
+
+  const renameMutation = useMutation({
+    mutationFn: ({ id, name }: { id: string; name: string }) => renameProject(id, name),
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+      dispatch(setActivePopup({ name: 'completeMessage', positionX: 'left', data: 'NOTIFY_RENAME_PLAN_COMPLETE' }));
+      setAnimPopupClass(false);
+      setTimeout(() => dispatch(closeActivePopup({ name: 'changeProjectName' })), 500);
+    },
+    onError: () => {
+      dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
+    },
+  });
 
   const onClickClosePopUp = (e) => {
     e.preventDefault();
@@ -178,34 +192,10 @@ const ChangeProjectNamePopup = (props) => {
     setTimeout(() => dispatch(closeActivePopup({ name: 'changeProjectName' })), 500);
   };
 
-  const onSubmit = async (e) => {
+  const onSubmit = (e) => {
     e.preventDefault();
     const updatedName = e.target.elements.name.value;
-
-    dispatch(updatePreloaderStatus(true));
-
-    const response = await planner.scene.renameProject(
-      popupData.data.id,
-      popupData.data.name,
-      updatedName
-    );
-    if (response.status == 'error') {
-      dispatch(updatePreloaderStatus(false));
-      return dispatch(setActivePopup({ name: 'alert', data: response.data }));
-    }
-
-    dispatch(
-      setActivePopup({
-        name: 'completeMessage',
-        positionX: 'left',
-        data: 'NOTIFY_RENAME_PLAN_COMPLETE',
-      })
-    );
-
-    dispatch(updatePreloaderStatus(false));
-    planner.scene.dispatchEvent(new Event(planner.scene.PROJECTS_UPDATE, {}));
-    setAnimPopupClass(false);
-    setTimeout(() => dispatch(closeActivePopup({ name: 'changeProjectName' })), 500);
+    renameMutation.mutate({ id: popupData.data.id, name: updatedName });
   };
 
   useEffect(() => {
@@ -276,9 +266,8 @@ const ChangeProjectNamePopup = (props) => {
                 {' '}
                 {translation['BUTTON_CANCEL']}{' '}
               </button>
-              <button className={classes.planner_btn_done} type="submit">
-                {' '}
-                {translation['BUTTON_OK']}{' '}
+              <button className={classes.planner_btn_done} type="submit" disabled={renameMutation.isPending}>
+                {renameMutation.isPending ? '...' : translation['BUTTON_OK']}
               </button>
             </fieldset>
           </form>

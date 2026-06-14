@@ -7,6 +7,7 @@ export type Project = {
   modified: string;
   opened: string;
   userPlan: string;
+  preview?: string;
 };
 
 type ProjectsPage = { items: Project[]; total: number };
@@ -41,4 +42,14 @@ export async function renameProject(id: string, name: string): Promise<void> {
     body: JSON.stringify({ name }),
   });
   if (!res.ok) throw new Error(`renameProject ${res.status}`);
+}
+
+export async function copyProject(id: string, name: string): Promise<Project> {
+  const res = await fetch(`/server-api/projects/${id}/copy`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name }),
+  });
+  if (!res.ok) throw new Error(`copyProject ${res.status}`);
+  return ((await res.json()) as { data: Project }).data;
 }

@@ -4,7 +4,7 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
 // import { pdfjs } from 'react-pdf'; // ????? TODO: check if this import is needed
 // pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min`;
 import sunEditor from 'suneditor';
@@ -79,7 +79,7 @@ async function init() {
           <ErrorBoundary>
             <Router basename={R2D.URL.REACT_BASEPATH}>
               <Routes>
-                <Route path="/" element={<App />} />
+                <Route path="/" element={<Navigate to="/projects" replace />} />
                 <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="/toc" element={<MarkdownPage slug="toc" />} />
                 <Route path="/project/*" element={<App />} />
