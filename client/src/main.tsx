@@ -13,6 +13,7 @@ import plugins from 'suneditor/src/plugins';
 
 import { setupLanguageBridge } from './api/bridges/languageBridge';
 import { setupProjectsBridge } from './api/bridges/projectsBridge';
+import { materialsNavQueryOptions } from './api/catalog';
 import { favoritesQueryOptions } from './api/favorites';
 import { languagesQueryOptions, translationQueryOptions } from './api/i18n';
 import { queryClient } from './api/queryClient';
@@ -50,10 +51,8 @@ async function init() {
     console.error('[ErrorBoundary]', error);
   });
 
-  const catalogMaterialsArray = await user.loadRightPanelData(
-    R2D.URL.CATALOG_MATERIALS_TREE_FOR_MODELS
-  );
-  planner.setCatalogMaterials(catalogMaterialsArray);
+  // TODO: move ensureQueryData call to LeftMain/Sidebar — data is only needed there
+  await queryClient.ensureQueryData(materialsNavQueryOptions);
 
   const start2D3DData = await user.loadRightPanelData(R2D.URL.CATALOG_TREE);
   planner.setCatalogProducts(start2D3DData.tree);

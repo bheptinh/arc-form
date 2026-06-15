@@ -82,7 +82,6 @@ R2D.PlannerCore = function(user) {
     R2D.viewWalk = new R2D.ViewerSceneWalk(R2D.sharedRenderer, R2D.commonSceneHelper, R2D.mouseInteractionHelper, R2D.keyboardInteractionHelper);
     R2D.viewWalk.init();
 
-    R2D.catalogMaterials = null;
     R2D.catalogProducts = null;
     R2D.customRegistration = null;
     R2D.panorams = null;
@@ -97,9 +96,6 @@ R2D.PlannerCore = function(user) {
     });
 
     R2D.isErrorHasOccurred = false;
-
-    R2D.setCatalogMaterials = catalog => R2D.catalogMaterials = catalog;
-    R2D.getCatalogMaterials = () => R2D.catalogMaterials;
 
     R2D.setCatalogProducts = products => R2D.catalogProducts = products;
     R2D.getCatalogProducts = () => R2D.catalogProducts;
@@ -670,9 +666,6 @@ R2D.createPlannerAPI = function(planner)
     planner.renders.activeIntId = null;
 
     planner.renders.inProgressIds = [];
-
-    planner.setCatalogMaterials = catalog => R2D.setCatalogMaterials(catalog);
-    planner.getCatalogMaterials = () => R2D.getCatalogMaterials();
 
     planner.setCatalogProducts = products => R2D.setCatalogProducts(products);
     planner.getCatalogProducts = () => R2D.getCatalogProducts();

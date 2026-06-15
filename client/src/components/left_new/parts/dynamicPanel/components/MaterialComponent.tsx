@@ -10,6 +10,7 @@ import {
 import { setActivePopup } from '../../../../../redux/features/popups/popupsSlice';
 import Lock from '../../../../common/Lock';
 import HoverComponent from '../../controlPanel/components/HoverComponent';
+import { useCatalogMaterials } from '../../../../../api/catalog';
 import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const editMatEditIcon = {
@@ -135,7 +136,7 @@ const MaterialComponent = (props) => {
     props.onCopyPaste.hasOwnProperty('statusCopy') ? props.onCopyPaste.statusCopy : true
   );
 
-  const catalogMaterials = planner.getCatalogMaterials();
+  const catalogMaterials = useCatalogMaterials();
 
   const mouseEnter = (e) => {
     const product = e.currentTarget;
@@ -236,13 +237,13 @@ const MaterialComponent = (props) => {
       if (passedClickRes === false) return;
     }
     let historyObj;
-    if (catalogMaterials && catalogMaterials.materials && catalogMaterials.materials.length > 0) {
+    if (catalogMaterials && catalogMaterials.length > 0) {
       let dataArray = [];
       if (props.materialsSource.type == 'bank' || passedClickRes?.source == 'bank') {
         historyObj = {
           id: null,
           addType: 'main',
-          data: catalogMaterials.materials,
+          data: catalogMaterials,
           type: 'catalog',
         };
         dataArray.push(historyObj);
@@ -286,7 +287,7 @@ const MaterialComponent = (props) => {
                   dataArray.push(historyObj);
                 }
               } else array.splice(1);
-            }, catalogMaterials.materials);
+            }, catalogMaterials);
         } else if (props.matId?.indexOf && ~props.matId.indexOf('#')) {
           if (props.addMaterial && R2D.Pool.getProductData(props.addMaterial)) {
             Object.values(
@@ -328,7 +329,7 @@ const MaterialComponent = (props) => {
                     dataArray.push(historyObj);
                   }
                 } else array.splice(1);
-              }, catalogMaterials.materials);
+              }, catalogMaterials);
           }
         }
       }
@@ -490,7 +491,7 @@ const MaterialComponent = (props) => {
     )
       return;
 
-    if (catalogMaterials && catalogMaterials.materials && catalogMaterials.materials.length > 0) {
+    if (catalogMaterials && catalogMaterials.length > 0) {
       Object.values(
         typeof structuredClone !== 'undefined'
           ? structuredClone(R2D.Pool.getProductData(currIdMat).categoryMaterial)

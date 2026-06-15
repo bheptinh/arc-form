@@ -5,6 +5,7 @@ import {
 } from '../../redux/features/control/controlPanelSlice';
 import { planner, user } from '../../initR2D';
 import { store } from '../../redux/store';
+import { materialsNavQueryOptions } from '../catalog';
 import { translationQueryOptions } from '../i18n';
 import { queryClient } from '../queryClient';
 
@@ -29,9 +30,6 @@ export function setupLanguageBridge() {
 
 async function reloadCatalog() {
   const dispatch = store.dispatch;
-
-  const materials = await user.loadRightPanelData(R2D.URL.CATALOG_MATERIALS_TREE_FOR_MODELS);
-  planner.setCatalogMaterials(materials);
 
   const tree = await user.loadRightPanelData(R2D.URL.CATALOG_TREE);
   planner.setCatalogProducts(tree.tree);
@@ -65,7 +63,7 @@ async function reloadCatalog() {
         addType: 'main',
         lastSavedScroll: 0,
         id: null,
-        data: planner.getCatalogMaterials().materials,
+        data: queryClient.getQueryData(materialsNavQueryOptions.queryKey) ?? [],
         isAdded: false,
       },
     })

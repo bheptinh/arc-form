@@ -1,8 +1,12 @@
+import { IconArmchair2 } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useCatalogMaterials } from '../../../../api/catalog';
+import { useLanguages } from '../../../../api/hooks/useLanguages';
+import { useTranslation } from '../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../initR2D';
 import {
   selectIsProjectBelongToLoggedUser,
@@ -27,8 +31,6 @@ import {
 } from '../../../../redux/features/viewMode/viewModeSlice';
 import UserButton from './buttons/UserButton';
 import HoverComponent from './components/HoverComponent';
-import { useTranslation } from '../../../../api/hooks/useTranslation';
-import { useLanguages } from '../../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   controlPanel: {
@@ -420,6 +422,7 @@ const ControlPanel = (props) => {
   const isLogged = useSelector(selectIsLogged);
   const activeViewMode = useSelector(selectActiveViewMode);
   const translation = useTranslation();
+  const catalogMaterials = useCatalogMaterials();
   const dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
   const isProjectOnlyView = useSelector(selectIsProjectOnlyView);
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
@@ -465,7 +468,7 @@ const ControlPanel = (props) => {
                   type: 'catalog',
                   addType: 'main',
                   lastSavedScroll: 0,
-                  data: planner.getCatalogMaterials().materials,
+                  data: catalogMaterials,
                 }
               : null,
           })
@@ -717,6 +720,7 @@ const ControlPanel = (props) => {
               >
                 <HoverComponent hoverText={translation['HINT_PRODUCTS_CATALOG']}>
                   <div className={classes.menu_rozdil_btn_img_wr}>
+                    <IconArmchair2 size={24} className={classes.svg_hover_path} />
                     <svg width="24" height="22" viewBox="0 0 24 22" fill="none">
                       <path
                         className={classes.svg_hover_path}

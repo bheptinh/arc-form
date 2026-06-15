@@ -137,6 +137,7 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 - `i18n.ts` — `languagesQueryOptions`, `translationQueryOptions`, `setLanguage()`
 - `user.ts` — `fetchUser()`, `userQueryOptions`, `patchUser()`
 - `favorites.ts` — `favoritesQueryOptions` (`staleTime: Infinity` — invalidate on add/remove mutations)
+- `catalog.ts` — `materialsNavQueryOptions`, `useCatalogMaterials()` hook; fetches `/server-api/catalog/materials/nav`, unwraps to `materials[]` directly
 - `projects.ts` — `Project` type (includes `preview?: string`), `projectsInfiniteQueryOptions`, `deleteProject()`, `renameProject()`, `copyProject()`
 - `hooks/useLanguages.ts`, `hooks/useTranslation.ts` — component hooks (data always present after init)
 - `hooks/useLanguageChange.ts` — mutation: PATCHes user, invalidates languages + translation queries

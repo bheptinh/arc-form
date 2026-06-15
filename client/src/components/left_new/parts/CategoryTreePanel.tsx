@@ -1,8 +1,11 @@
+import { IconListTree } from '@tabler/icons-react';
 import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useCatalogMaterials } from '../../../api/catalog';
+import { useLanguages } from '../../../api/hooks/useLanguages';
 import { planner } from '../../../initR2D';
 import {
   changeActiveControlPanelMode,
@@ -17,7 +20,6 @@ import {
 } from '../../../redux/features/control/controlPanelSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import { Accordion } from '../../common/Accordion';
-import { useLanguages } from '../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   '@font-face': [
@@ -187,6 +189,7 @@ const CategoryTreePanel = (props) => {
     controlPanelModeHistory && controlPanelModeHistory[controlPanelModeHistory.length - 1];
 
   const languages = useLanguages();
+  const catalogMaterials = useCatalogMaterials();
 
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
   const activeControlPanelCatagoryTreeShowStatus = useSelector(
@@ -380,9 +383,9 @@ const CategoryTreePanel = (props) => {
       const furniture = planner.getCatalogProducts();
       setCataloProducts({ parentId: furniture.id, nodes: furniture });
     } else if (activeControlPanelMode == 'decor') {
-      setCataloProducts({ parentId: null, nodes: planner.getCatalogMaterials().materials });
+      setCataloProducts({ parentId: null, nodes: catalogMaterials });
     }
-  }, [activeControlPanelMode, languages]);
+  }, [activeControlPanelMode, languages, catalogMaterials]);
 
   return (
     <div className={classes.planner_catalog_cont}>
@@ -390,17 +393,7 @@ const CategoryTreePanel = (props) => {
         className={classes.category_tree_close}
         onClick={() => dispatch(updateCategoryTreePanelStatus(!categoryTreePanelStatus))}
       >
-        <svg
-          className={classes.category_tree_close_icon}
-          viewBox="0 0 16.03 16.02"
-          width="24px"
-          height="24px"
-        >
-          <path
-            fill="#444444"
-            d="M1,0a1,1,0,0,0-.7,1.72L6.6,8,.31,14.3a1,1,0,0,0,1.39,1.44l0,0L8,9.42l6.29,6.29a1,1,0,1,0,1.44-1.39l0,0L9.43,8l6.29-6.29A1,1,0,1,0,14.31.3L8,6.6,1.72.3A1,1,0,0,0,1,0Z"
-          />
-        </svg>
+        <IconListTree className={classes.category_tree_close_icon} size={24} color="#444" />
       </div>
 
       <div className={classes.catalog_wr}>
