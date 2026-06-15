@@ -107,6 +107,8 @@ A plain `<div id="planner">` where R2D mounts its WebGL canvas. Mouse/touch even
 | `metrics` | Units display |
 | `tips` | Contextual tips shown to user |
 
+> **Dead code audit (c8d56d48):** knip was run and removed unused Redux slice object exports, dead selectors, their backing reducers, and dead state fields from all slices. If an action or selector appears missing, check that commit before assuming it was never there.
+
 ### Shared components — `client/src/shared-components/`
 Pure presentational components with no domain imports. Naming follows MUI conventions: describe the shape, not the caller. **Never** prefix with an entity name (`Card` not `ProjectCard`, `SortBar` not `ProjectSortBar`) and never group into domain subdirectories (`shared-components/Card.tsx` not `shared-components/projects/Card.tsx`). The folder itself provides the namespace.
 
