@@ -108,4 +108,3 @@ const Hidden = (props) => {
   );
 };
 
-export default Hidden;

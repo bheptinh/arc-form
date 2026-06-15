@@ -28,7 +28,7 @@ export const changeUndoRedo = createAsyncThunk('top/changeUndoRedo', (data, thun
   };
 });
 
-export const topPanelSlice = createSlice({
+const topPanelSlice = createSlice({
   name: 'topPanel',
   initialState: {
     constr: { canUndo: false, canRedo: false },
@@ -42,9 +42,6 @@ export const topPanelSlice = createSlice({
     changeUndoRedoScene: (state, action) => {
       state.scene = action.payload;
     },
-    changeUndoRedoTileConfig: (state, action) => {
-      state.tileConfig = action.payload;
-    },
   },
   extraReducers: (builder) => {
     builder.addCase(changeUndoRedo.fulfilled, (state, action) => {
@@ -57,7 +54,6 @@ export const selectIsUndoRedoConstr = (state) => state.topPanel.constr;
 export const selectIsUndoRedoScene = (state) => state.topPanel.scene;
 export const selectIsUndoRedoTileConfig = (state) => state.topPanel.tileConfig;
 
-export const { changeUndoRedoConstr, changeUndoRedoScene, changeUndoRedoTileConfig } =
-  topPanelSlice.actions;
+export const { changeUndoRedoConstr, changeUndoRedoScene } = topPanelSlice.actions;
 
 export default topPanelSlice.reducer;

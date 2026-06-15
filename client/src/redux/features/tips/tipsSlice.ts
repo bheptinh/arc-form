@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const tipsSlice = createSlice({
+const tipsSlice = createSlice({
   name: 'tips',
   initialState: {
     lastTriggerTime: Date.now(),

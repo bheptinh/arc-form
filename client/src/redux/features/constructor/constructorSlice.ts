@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const constructorSlice = createSlice({
+const constructorSlice = createSlice({
   name: 'constr',
   initialState: {
     wallsHeight: 0,

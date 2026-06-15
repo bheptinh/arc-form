@@ -64,7 +64,7 @@ const useStyles = createUseStyles({
   },
 });
 
-export const TopPanel = (props) => {
+const TopPanel = (props) => {
   const classes = useStyles();
 
   const dispatch = useDispatch();

@@ -129,4 +129,3 @@ const Lock = (props) => {
   );
 };
 
-export default Lock;

@@ -1395,7 +1395,6 @@ const SendARequestButton = (props) => {
 
 export {
   LangButton,
-  LoginButton,
   Projects,
   RealisticImageButton,
   SaveButton,

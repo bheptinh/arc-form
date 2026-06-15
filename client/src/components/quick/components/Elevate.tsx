@@ -259,4 +259,3 @@ const Elevate = (props) => {
   );
 };
 
-export default Elevate;

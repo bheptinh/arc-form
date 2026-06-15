@@ -1,6 +1,6 @@
 import { queryOptions } from '@tanstack/react-query';
 
-export type FavoritesData = { total: string; items: unknown[] };
+type FavoritesData = { total: string; items: unknown[] };
 
 async function fetchFavorites(): Promise<FavoritesData> {
   const res = await fetch('/server-api/catalog/favorites');

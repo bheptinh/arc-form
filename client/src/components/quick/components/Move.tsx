@@ -163,4 +163,3 @@ const Move = (props) => {
   );
 };
 
-export default Move;

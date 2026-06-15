@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const metricsSlice = createSlice({
+const metricsSlice = createSlice({
   name: 'metrics',
   initialState: { active: 'cm', dimensionsAll: ['cm', 'mm', 'm', 'ft'] },
   reducers: {

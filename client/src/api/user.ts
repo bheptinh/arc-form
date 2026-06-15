@@ -4,7 +4,7 @@ import type { User } from '../../../shared/types/user';
 
 export type { UserPatch };
 
-export async function fetchUser(): Promise<User> {
+async function fetchUser(): Promise<User> {
   const res = await fetch('/server-api/user');
   if (!res.ok) throw new Error(`fetchUser ${res.status}`);
   return ((await res.json()) as { data: User }).data;

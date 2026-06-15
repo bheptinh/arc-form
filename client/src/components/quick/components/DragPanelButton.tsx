@@ -74,4 +74,3 @@ const DragPanelButton = (props) => {
   );
 };
 
-export default DragPanelButton;

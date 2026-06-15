@@ -274,4 +274,3 @@ const Rotate = (props) => {
   );
 };
 
-export default Rotate;

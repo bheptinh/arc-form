@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const popupsSlice = createSlice({
+const popupsSlice = createSlice({
   name: 'popups',
   initialState: {
     currentZindex: 5,
@@ -110,7 +110,6 @@ export const popupsSlice = createSlice({
 });
 
 export const selectPopups = (state) => state.popups;
-export const selectPopupsCurrentZindex = (state) => state.popups.currentZindex;
 export const selectPopupsLastClosedPopup = (state) => state.popups.lastClosedPopup;
 
 export const { setActivePopup, closeActivePopup, setPopupData } = popupsSlice.actions;

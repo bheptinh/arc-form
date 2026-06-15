@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { planner } from '../../../initR2D';
 
-export const viewModeSlice = createSlice({
+const viewModeSlice = createSlice({
   name: 'viewMode',
   initialState: {
     active: 'view3d',
@@ -368,23 +368,10 @@ export const viewModeSlice = createSlice({
   },
 });
 
-export const selectActiveViewMode = (state) => state.viewMode.active;
 export const selectActiveViewModeState = (state) =>
   state.viewMode[state.viewMode.active].activeState;
 export const selectActiveViewModeData = (state) => state.viewMode[state.viewMode.active];
 
-export const {
-  setActiveViewMode,
-  setActiveViewModeState,
-  historyAdd,
-  historyRemove,
-  historyClear,
-  updateMaterialId,
-  historyUpdate,
-  updateCurrentProductSize,
-  historyScrollSave,
-  updateBreadCrumbs,
-  historyStateUpdate,
-} = viewModeSlice.actions;
+export const { updateMaterialId, historyUpdate } = viewModeSlice.actions;
 
 export default viewModeSlice.reducer;

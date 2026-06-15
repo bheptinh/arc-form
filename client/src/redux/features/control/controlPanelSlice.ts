@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const controlPanelSlice = createSlice({
+const controlPanelSlice = createSlice({
   name: 'controlPanel',
   initialState: {
     activeName: 'constructor',
@@ -13,7 +13,6 @@ export const controlPanelSlice = createSlice({
     dynamicPanelProductsPreviewViewType: localStorage.getItem('productsViewType') || 'medium',
     dynamicPanelCatalogPreviewViewType: localStorage.getItem('catalogViewType') || 'big',
     categoryTreePanelStatus: false,
-    dynamicPanelPrevButtonKeyTimeout: 0,
     furniture: {
       history: [],
       isInControlPanel: true,
@@ -229,13 +228,6 @@ export const controlPanelSlice = createSlice({
         ].lastSavedScroll = action.payload;
       }
     },
-    controlPanelHistoryStateUpdate(state, action) {
-      const activeControlMode = state.activeName;
-      if (state[activeControlMode][state[activeControlMode].activeState])
-        state[activeControlMode][state[activeControlMode].activeState].history[
-          state[activeControlMode][state[activeControlMode].activeState].history.length - 1
-        ] = action.payload;
-    },
     updateAnimateFavoritesShowStatus(state, action) {
       state.animateFavoritesShowStatus = action.payload;
     },
@@ -281,7 +273,6 @@ export const {
   controlPanelHistoryAddArray,
   controlPanelHistoryClear,
   controlPanelHistoryScrollSave,
-  controlPanelHistoryStateUpdate,
   updateDynamicPanelStatus,
   updateDynamicPanelPreviewViewType,
   updateCategoryTreePanelStatus,
@@ -307,8 +298,6 @@ export const selectDynamicPanelPreviewViewType = (state) =>
 export const selectDynamicPanelCatalogPreviewViewType = (state) =>
   state.controlPanel.dynamicPanelCatalogPreviewViewType;
 export const selectCategoryTreePanelStatus = (state) => state.controlPanel.categoryTreePanelStatus;
-export const selectDynamicPanelPrevButtonKeyTimeout = (state) =>
-  state.controlPanel.dynamicPanelPrevButtonKeyTimeout;
 export const selectAnimateFavoritesShowStatus = (state) =>
   state.controlPanel.animateFavoritesShowStatus;
 export const selectAnimateFavoritesHideStatus = (state) =>

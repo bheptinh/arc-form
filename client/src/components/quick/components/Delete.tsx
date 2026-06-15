@@ -108,4 +108,3 @@ const Delete = (props) => {
   );
 };
 
-export default Delete;
