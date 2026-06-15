@@ -81236,4 +81236,4 @@ TConf.RightPage = function () {
 // R2D.extend(TConf.RightPage, R2D.RightPanel.Page);
 
 window.extend = extend;
-export { R2D, WC };
+export { R2D, WC, GEOM };

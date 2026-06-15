@@ -5,7 +5,7 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
-import { planner, user } from '../../../../../../initR2D';
+import { planner, user, GEOM } from '../../../../../../initR2D';
 import {
   selectIs3DRotationModeActive,
   selectLockState,

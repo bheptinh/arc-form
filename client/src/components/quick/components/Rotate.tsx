@@ -3,7 +3,7 @@ import React, { forwardRef, useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { planner } from '../../../initR2D';
+import { planner, GEOM } from '../../../initR2D';
 import { setActivePopup } from '../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../redux/features/topPanel/topPanelSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
