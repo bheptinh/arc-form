@@ -42636,7 +42636,8 @@ R2D.MouseInteractionHelper = function(commonSceneObject, commonSceneHelper, apiD
         
         let materialId = addMaterialId || id;
         let productsDataLoader;
-        
+        let productData;
+
         productData = R2D.Pool.getProductData(materialId);
         let sceneObject;
 

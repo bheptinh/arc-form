@@ -552,7 +552,9 @@ const UploadCustomMaterialPopup = (props) => {
     }
 
     const loader = new R2D.ImagesLoader();
-    FILE.loadFileAsImage(file, procImg);
+    const fileReader = new FileReader();
+    fileReader.addEventListener('load', (e) => procImg(e.currentTarget.result as string));
+    fileReader.readAsDataURL(file);
     function procImg(imgSrc) {
       loader.addEventListener(Event.COMPLETE, loaderListener);
       loader.load([imgSrc]);
