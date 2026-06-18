@@ -1,7 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { IconCopy } from '@tabler/icons-react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 import { updatePreloaderStatus } from '../../../../../redux/features/common/commonSlice';
 import {
   controlPanelHistoryAdd,
@@ -9,7 +11,6 @@ import {
 } from '../../../../../redux/features/control/controlPanelSlice';
 import Lock from '../../../../common/Lock';
 import HoverComponent from '../../controlPanel/components/HoverComponent';
-import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const editMatEditIcon = {
   width: 16,
@@ -93,13 +94,9 @@ const useStyle = createUseStyles({
   editMatEditIcon: {
     extend: editMatEditIcon,
     cursor: 'pointer',
-    '& rect': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
+    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      '& rect': {
-        fill: '#B8E11F',
-      },
+      stroke: '#B8E11F',
     },
   },
   editMatEditIcon_disabled: {
@@ -156,10 +153,7 @@ const LogoComponent = (props) => {
   const copyDiv = useRef(null);
   const pasteDiv = useRef(null);
 
-  const copyImage = useRef(null);
-  const pasteImage = useRef(null);
-
-  const timeoutId = null;
+  const timeoutId = undefined;
 
   const mouseEnter = (e) => {
     const product = e.currentTarget;
@@ -179,31 +173,32 @@ const LogoComponent = (props) => {
   };
 
   const mouseLeave = () => {
-    document.querySelector('.product_hover')
-      ? document.querySelector('.product_hover').remove()
-      : null;
-    if (props.mouseLeaveMaterial) props.mouseLeaveMaterial();
+    document.querySelector('.product_hover')?.remove();
+
+    if (props.mouseLeaveMaterial) {
+      props.mouseLeaveMaterial();
+    }
   };
 
-  const onPaste = (e) => props.onCopyPaste.paste(activeLogoHash);
+  const onPaste = () => props.onCopyPaste.paste(activeLogoHash);
 
-  const onClickPreview = async (e) => {
+  const onClickPreview = async () => {
     if (props.disableClick) return;
     if (props.onCustomClick) {
       props.onCustomClick();
     } else {
       if (props.previewSrc) {
         const historyObj = { index: props.onCopyPaste.index, type: 'logoEditor' };
-        document.querySelector('.product_hover') &&
-          document.querySelector('.product_hover').remove();
+
+        document.querySelector('.product_hover')?.remove();
+
         dispatch(controlPanelHistoryAdd(historyObj));
         dispatch(controlPanelUpdateBreadCrumbs({ data: historyObj, updateType: 'add' }));
       } else {
         R2D.LogoEditor.uploadLogoImg().then((curLogoIndex) => {
           currObj.logoEditor.updateAfterUploadLogo(activeLogoHash, curLogoIndex).then((res) => {
             const historyObj = { index: props.onCopyPaste.index, type: 'logoEditor' };
-            document.querySelector('.product_hover') &&
-              document.querySelector('.product_hover').remove();
+            document.querySelector('.product_hover')?.remove();
             setTimeout(() => {
               dispatch(controlPanelHistoryAdd(historyObj));
               dispatch(controlPanelUpdateBreadCrumbs({ data: historyObj, updateType: 'add' }));
@@ -215,18 +210,16 @@ const LogoComponent = (props) => {
     }
   };
 
-  const mouseLeaveCopyPaste = (e) => {
+  const mouseLeaveCopyPaste = () => {
     clearTimeout(timeoutId);
     const hoverDiv = document.querySelector('.' + classes.btn_hover);
-    hoverDiv && hoverDiv.remove();
+    hoverDiv?.remove();
   };
 
-  const mouseUpBtnCopy = (e) =>
+  const mouseUpBtnCopy = () =>
     R2D.CopyPaste.copyLogoMesh({ ...currObj.logoEditor.getLogoParams(activeLogoHash) });
 
-  const mouseUpBtnPaste = (e) => onPaste(e);
-
-  const onMouseUpCopyPaste = (e) => document.removeEventListener('mouseup', onMouseUpCopyPaste);
+  const onMouseUpCopyPaste = () => document.removeEventListener('mouseup', onMouseUpCopyPaste);
 
   const mouseDownBtnCopyPaste = (e) => {
     document.addEventListener('mouseup', onMouseUpCopyPaste);
@@ -292,81 +285,17 @@ const LogoComponent = (props) => {
                     hoverTextPositionX={'right'}
                     hoverTextPositionY={'top'}
                   >
-                    <svg
+                    <IconCopy
                       className={classes.editMatEditIcon}
-                      ref={copyImage}
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
+                      size={16}
                       onMouseDown={mouseDownBtnCopyPaste}
                       onMouseUp={mouseUpBtnCopy}
-                    >
-                      <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                      <rect
-                        className={classes.rectHover2}
-                        y="3"
-                        width="2"
-                        height="1"
-                        fill="white"
-                      />
-                      <rect
-                        className={classes.rectHover}
-                        y="15"
-                        width="13"
-                        height="1"
-                        fill="white"
-                      />
-                      <rect
-                        className={classes.rectHover}
-                        y="15"
-                        width="11"
-                        height="1"
-                        transform="rotate(-90 0 15)"
-                        fill="white"
-                      />
-                      <rect
-                        className={classes.rectHover}
-                        x="12"
-                        y="15"
-                        width="1"
-                        height="1"
-                        transform="rotate(-90 12 15)"
-                        fill="white"
-                      />
-                    </svg>
+                      color="#ffffff"
+                    />
                   </HoverComponent>
                 </div>
               ) : (
-                <svg
-                  className={classes.editMatEditIcon_disabled}
-                  ref={copyImage}
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <rect x="3.5" y="0.5" width="12" height="12" stroke="#828282" />
-                  <rect className={classes.rectHover2} y="3" width="2" height="1" fill="#828282" />
-                  <rect className={classes.rectHover} y="15" width="13" height="1" fill="#828282" />
-                  <rect
-                    className={classes.rectHover}
-                    y="15"
-                    width="11"
-                    height="1"
-                    transform="rotate(-90 0 15)"
-                    fill="#828282"
-                  />
-                  <rect
-                    className={classes.rectHover}
-                    x="12"
-                    y="15"
-                    width="1"
-                    height="1"
-                    transform="rotate(-90 12 15)"
-                    fill="#828282"
-                  />
-                </svg>
+                <IconCopy className={classes.editMatEditIcon_disabled} size={16} color="#828282" />
               )}
 
               <div className={classes.editMat_paste} ref={pasteDiv}>
@@ -376,45 +305,13 @@ const LogoComponent = (props) => {
                   hoverTextPositionX={'right'}
                   hoverTextPositionY={'top'}
                 >
-                  <svg
+                  <IconCopy
                     className={classes.editMatEditIcon}
-                    ref={pasteImage}
-                    width="15"
-                    height="16"
-                    viewBox="0 0 15 16"
-                    fill="none"
+                    size={16}
                     onMouseDown={mouseDownBtnCopyPaste}
-                    onMouseUp={mouseUpBtnPaste}
-                  >
-                    <rect
-                      x="0.5"
-                      y="-0.5"
-                      width="11.1875"
-                      height="12"
-                      transform="matrix(1 0 0 -1 2.8125 15)"
-                      fill="white"
-                      stroke="white"
-                    />
-                    <rect width="1.875" height="1" transform="matrix(1 0 0 -1 0 13)" fill="white" />
-                    <rect
-                      width="12.1875"
-                      height="1"
-                      transform="matrix(1 0 0 -1 0 1)"
-                      fill="white"
-                    />
-                    <rect
-                      width="11"
-                      height="0.9375"
-                      transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 1)"
-                      fill="white"
-                    />
-                    <rect
-                      width="1"
-                      height="0.9375"
-                      transform="matrix(-4.09794e-08 1 1 4.66255e-08 11.25 1)"
-                      fill="white"
-                    />
-                  </svg>
+                    onMouseUp={onPaste}
+                    color="#ffffff"
+                  />
                 </HoverComponent>
               </div>
             </div>

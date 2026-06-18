@@ -60971,7 +60971,7 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
         for (let i = 0; i < WC.core.coverPoints.length; i++)
         {
-            P = WC.core.coverPoints[i];
+            let P = WC.core.coverPoints[i];
             if (P.x < minX) minX = P.x;
             if (P.y < minY) minY = P.y;
             if (P.x > maxX) maxX = P.x;

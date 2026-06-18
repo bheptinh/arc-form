@@ -1,8 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { IconX } from '@tabler/icons-react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import {
   changeActiveControlPanelMode,
@@ -14,24 +16,9 @@ import {
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
 import { showTip } from '../../redux/features/tips/tipsSlice';
-import Checkbox from '../common/Checkbox';
-import { useTranslation } from '../../api/hooks/useTranslation';
+import Checkbox from '../../shared-components/inputs/checkbox';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -395,43 +382,12 @@ const StartPopup = (props) => {
         style={
           currOS == 'iOS' || currOS == 'Android'
             ? { width: '100%', height: '100%', maxHeight: '100%' }
-            : null
+            : undefined
         }
       >
         <div className={classes.planner_popup_cont}>
           <div className={classes.planner_popup_close} onClick={onCloseBlueScreenPopup}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
 
           <div className={classes.start_title}>
@@ -447,7 +403,7 @@ const StartPopup = (props) => {
           <div className={classes.compare_checkbox_wr} ref={checkBoxRef}>
             <Checkbox
               label={translation['TEXT_DONT_SHOW_AGAIN']}
-              onChange={(e) => setCheckBoxStatus(!checkBoxStatus)}
+              onChange={() => setCheckBoxStatus(!checkBoxStatus)}
               checked={checkBoxStatus}
               name={'blueScreenPopup'}
             />

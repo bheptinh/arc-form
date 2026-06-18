@@ -1,3 +1,4 @@
+import { IconX } from '@tabler/icons-react';
 import React, { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
@@ -79,7 +80,7 @@ const RenderExample4k = (props) => {
 
   useEffect(() => {
     // GTM
-    window.dataLayer.push({ event: 'click_gallery_render' });
+    window.dataLayer?.push({ event: 'click_gallery_render' });
   }, []);
 
   return (
@@ -88,19 +89,9 @@ const RenderExample4k = (props) => {
         <div className={classes.compare_popup_cont}>
           <div
             className={classes.compare_popup_close}
-            onClick={(e) => dispatch(closeActivePopup({ name: 'renderExample4k' }))}
+            onClick={() => dispatch(closeActivePopup({ name: 'renderExample4k' }))}
           >
-            <svg
-              className={classes.compare_popup_close_icon}
-              viewBox="0 0 16.03 16.02"
-              width="24px"
-              height="24px"
-            >
-              <path
-                fill="#070707"
-                d="M1,0a1,1,0,0,0-.7,1.72L6.6,8,.31,14.3a1,1,0,0,0,1.39,1.44l0,0L8,9.42l6.29,6.29a1,1,0,1,0,1.44-1.39l0,0L9.43,8l6.29-6.29A1,1,0,1,0,14.31.3L8,6.6,1.72.3A1,1,0,0,0,1,0Z"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.compare_popup_close_icon} />
           </div>
           <div className={classes.swiper_slider_wr}>
             <RendersSlider4k />

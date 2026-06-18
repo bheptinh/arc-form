@@ -1,7 +1,9 @@
+import { IconLockFilled, IconX } from '@tabler/icons-react';
 import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { user } from '../../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../../redux/features/common/commonSlice';
 import {
@@ -14,23 +16,8 @@ import {
   selectUserProjectActive,
 } from '../../../redux/features/user/userSlice';
 import { setActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -645,38 +632,7 @@ const ExportPopup = (props) => {
               id="js_close_popup"
               onClick={closeExportPopup}
             >
-              <svg
-                width="25"
-                height="25"
-                fill="none"
-                viewBox="0 0 25 25"
-                className={classes.planner_popup_close_icon}
-              >
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
             </div>
             <div className={classes.planner_popup_export_top}>
               <h2>{translation['EXPORT_PROJECT_TITLE']}</h2>
@@ -793,17 +749,7 @@ const ExportPopup = (props) => {
                 onClick={onContinue}
               >
                 {translation['BUTTON_OK']}
-                {needPlan != null ? (
-                  <svg width="11" height="15" fill="none" viewBox="0 0 11 15">
-                    <rect width="10.384" height="8.307" y="6.231" fill="#A7A7A7" rx="1" />
-                    <path
-                      fill="#A7A7A7"
-                      fillRule="evenodd"
-                      d="M2.738 3.79v2.44H1.384V3.74c-.003-.344-.009-1.205.404-1.998.233-.447.61-.9 1.206-1.235C3.592.171 4.327 0 5.19 0c.863 0 1.6.171 2.196.506a2.98 2.98 0 0 1 1.207 1.235c.413.793.407 1.653.404 1.998V6.23H7.642V3.79c0-.371.035-1.071-.17-1.464-.09-.175-.257-.533-.56-.777-.431-.35-.696-.511-1.722-.511-.507 0-1.095.068-1.661.511-.438.343-.57.602-.661.777-.205.393-.13 1.093-.13 1.464Z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                ) : null}
+                {needPlan != null ? <IconLockFilled size={14} color="#A7A7A7" /> : null}
               </button>
             </div>
           </div>

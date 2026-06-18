@@ -23,7 +23,7 @@ import {
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
-import ChangeSize from '../../components/ChangeSize';
+import ChangeSize from '../../../../../common/ChangeSize';
 import Lock from '../../components/Lock';
 import Navigation from '../../navigation/Navigation';
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';

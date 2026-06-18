@@ -1,36 +1,34 @@
+import { IconPlus, IconTrash } from '@tabler/icons-react';
 import cx from 'classnames';
-import {AnimatePresence} from "framer-motion";
+import { AnimatePresence } from 'framer-motion';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import {createUseStyles} from "react-jss";
+import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from "simplebar-react";
+import SimpleBar from 'simplebar-react';
 
-import {planner, user} from '../../../../../../initR2D';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import { planner, user } from '../../../../../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
-    selectActiveControlPanelModeData,
-    selectDynamicPanelPreviewViewType,
-    selectDynamicPanelStatus,
-updateAnimateFavoritesHideStatus,
-    updateAnimateFavoritesShowStatus} from '../../../../../../redux/features/control/controlPanelSlice';
+  selectActiveControlPanelModeData,
+  selectDynamicPanelPreviewViewType,
+  selectDynamicPanelStatus,
+  updateAnimateFavoritesHideStatus,
+  updateAnimateFavoritesShowStatus,
+} from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import {selectIsLogged, selectUserProfileData, selectUserProjectActive} from '../../../../../../redux/features/user/userSlice';
-import FavoriteStarIcon from "../../../../../common/FavoriteStarIcon";
-import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
-import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
+import {
+  selectIsLogged,
+  selectUserProfileData,
+  selectUserProjectActive,
+} from '../../../../../../redux/features/user/userSlice';
+import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
+import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
+import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import Lock from '../../components/Lock';
 import Navigation from '../../navigation/Navigation';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -127,8 +125,6 @@ const useStyle = createUseStyles({
     },
   },
   prod_item_upload_btn_img: {
-    width: 25,
-    height: 25,
     userSelect: 'none',
     userDrag: 'none',
     marginRight: 16,
@@ -432,16 +428,12 @@ const useStyle = createUseStyles({
     borderRadius: '50%',
     justifyContent: 'center',
     cursor: 'pointer',
-    '& path': {
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-    '&:hover path': {
-      fill: '#AF3131',
+    '&:hover svg': {
+      stroke: '#AF3131',
     },
   },
   prod_item_custom_delete: {
-    maxWidth: '80%',
-    maxHeight: '80%',
+    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
   },
   prod_item_more_info: {
     position: 'absolute',
@@ -636,57 +628,57 @@ const useStyle = createUseStyles({
 });
 
 const Materials = (props) => {
-  let dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
+  const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  let controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
+  const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  let isAdded = lastHistoryElem?.isAdded;
+  const isAdded = lastHistoryElem?.isAdded;
 
   const userData = useSelector(selectUserProfileData);
   const translation = useTranslation();
   const isLogged = useSelector(selectIsLogged);
 
-  let userProjectActive = useSelector(selectUserProjectActive);
+  const userProjectActive = useSelector(selectUserProjectActive);
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
 
-  let [materialsListState, setMaterialsListState] = useState(null);
-  let [customMaterialsListState, setCustomMaterialsListState] = useState(null);
+  const [materialsListState, setMaterialsListState] = useState(null);
+  const [customMaterialsListState, setCustomMaterialsListState] = useState(null);
 
-  let [activeMaterial, setActiveMaterial] = useState(props.matId);
+  const [activeMaterial, setActiveMaterial] = useState(props.matId);
 
-  let [styleAnimation, setStyleAnimation] = useState(
+  const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
-  let [lastHistoryElemData, setLastHistoryElemData] = useState(null);
+  const [lastHistoryElemData, setLastHistoryElemData] = useState(null);
 
   const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
-  let [preloaderStatus, setPreloaderStatus] = useState(true);
+  const [preloaderStatus, setPreloaderStatus] = useState(true);
 
-  let [modalMoreInfo, setModalMoreInfo] = useState(false);
+  const [modalMoreInfo, setModalMoreInfo] = useState(false);
   const [productElemHover, setProductElemHover] = useState(null);
 
-  let currOS = R2D.controller.getCurrentOS();
-  let isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
+  const currOS = R2D.controller.getCurrentOS();
+  const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
 
-  let arrayList = [];
+  const arrayList = [];
   const customMaterials = [];
 
-  let dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const classes = useStyle();
   const panelRef = useRef(null);
 
   let mouseDown;
 
-  let loaderCompleteListener = (id) => {
+  const loaderCompleteListener = (id) => {
     props.materialSelect(id, null, activeMaterial, null);
     setActiveMaterial(id);
   };
 
-  let loaderErrorListener = (e) => console.log('Error loading material ', e);
+  const loaderErrorListener = (e) => console.log('Error loading material ', e);
 
-  let onMaterialSelect = (elem, isObjectAccessible) => {
-    let id = elem.id;
+  const onMaterialSelect = (elem, isObjectAccessible) => {
+    const id = elem.id;
     if (!isObjectAccessible) {
       dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
     } else {
@@ -702,46 +694,51 @@ const Materials = (props) => {
   };
 
   const mouseEnter = (event, data) => {
-        if(dynamicPanelPreviewViewType == 'small') {
-            document.querySelector("." + classes.product_hover) ? document.querySelector("." + classes.product_hover).remove() : null;
-            let product = event.target;
-            let hoverWindow = document.createElement("div");
-            hoverWindow.classList.add(classes.product_hover);
-            hoverWindow.innerHTML = data.name;
-            document.querySelector("body").append(hoverWindow);
-            hoverWindow.style.left = (product.getBoundingClientRect().left + product.offsetWidth) + "px";
-            hoverWindow.style.top = (product.getBoundingClientRect().top + ((product.offsetHeight - hoverWindow.offsetHeight) / 2)) + "px";
-        }
+    if (dynamicPanelPreviewViewType == 'small') {
+      document.querySelector('.' + classes.product_hover)
+        ? document.querySelector('.' + classes.product_hover).remove()
+        : null;
+      const product = event.target;
+      const hoverWindow = document.createElement('div');
+      hoverWindow.classList.add(classes.product_hover);
+      hoverWindow.innerHTML = data.name;
+      document.querySelector('body').append(hoverWindow);
+      hoverWindow.style.left = product.getBoundingClientRect().left + product.offsetWidth + 'px';
+      hoverWindow.style.top =
+        product.getBoundingClientRect().top +
+        (product.offsetHeight - hoverWindow.offsetHeight) / 2 +
+        'px';
+    }
   };
 
-  let mouseLeave = () =>
+  const mouseLeave = () =>
     document.querySelector('.' + classes.product_hover)
       ? document.querySelector('.' + classes.product_hover).remove()
       : null;
 
-  let documentMouseUp = (e) => {
+  const documentMouseUp = () => {
     mouseDown = false;
     document.removeEventListener('mouseup', documentMouseUp);
   };
 
-  let onCustomMatAddMouseUp = (e) => {
+  const onCustomMatAddMouseUp = () => {
     mouseDown = false;
     dispatch(setActivePopup({ name: 'uploadCustomMaterialPopup' }));
   };
 
-  const onMouseEnterProductMoreInfo = (e, elem) => {
-        setModalMoreInfo(true);
-        setProductElemHover(elem);
-    };
+  const onMouseEnterProductMoreInfo = (_e, elem) => {
+    setModalMoreInfo(true);
+    setProductElemHover(elem);
+  };
 
-  let onMouseLeaveProductMoreInfo = (e) => {
+  const onMouseLeaveProductMoreInfo = () => {
     setModalMoreInfo(false);
   };
 
-  let updateMaterialsEvent = (e) =>
+  const updateMaterialsEvent = () =>
     setActiveMaterial(R2D.scene.currentConstructorElementData.getMaterial());
 
-  let updateFavorites = async (id, isInFavorites) => {
+  const updateFavorites = async (id, isInFavorites) => {
     if (!isLogged) return dispatch(setActivePopup({ name: 'login' }));
     if (isInFavorites) {
       await user.uRemoveFromFavorites(id);
@@ -760,9 +757,9 @@ const Materials = (props) => {
     }
     planner.apiScene.dispatchEvent(new Event(planner.apiScene.FAVORITES_BUTTON, {}));
   };
-  let onProductsUpdated = async (e) => {
+  const onProductsUpdated = async () => {
     setPreloaderStatus(true);
-    let loadedData = await planner.scene.categoryDataLoad(
+    const loadedData = await planner.scene.categoryDataLoad(
       lastHistoryElem.urlList,
       R2D.controller.getCountry()
     );
@@ -789,7 +786,7 @@ const Materials = (props) => {
   useEffect(() => {
     if (lastHistoryElemData && Array.isArray(lastHistoryElemData)) {
       lastHistoryElemData.forEach((i) => {
-        let isInFavorites = userFavorites?.find((с) => с?.id == i.id);
+        const isInFavorites = userFavorites?.find((с) => с?.id == i.id);
         let isObjectAccessible;
         if (i.isOwner && R2D.config.data.enable_pro) {
           isObjectAccessible = userData.plan != 'free' || userProjectActive.plan != 'free';
@@ -821,26 +818,7 @@ const Materials = (props) => {
                     )
                   }
                 >
-                  <svg
-                    className={classes.prod_item_custom_delete}
-                    width="12"
-                    height="15"
-                    fill="none"
-                    viewBox="0 0 12 15"
-                  >
-                    <path fill="#fff" d="M7.412.585v1.248h-.416v-.832h-2.08v.832H4.5V.585h2.912Z" />
-                    <path fill="#444" d="M7.412.585v1.248h-.416v-.832h-2.08v.832H4.5V.585h2.912Z" />
-                    <path fill="#fff" d="M.753 2.25a22.29 22.29 0 0 1 10.404 0v.832H.753V2.25Z" />
-                    <path fill="#444" d="M.753 2.25a22.29 22.29 0 0 1 10.404 0v.832H.753V2.25Z" />
-                    <path
-                      fill="#fff"
-                      d="M10.325 14.078a.655.655 0 0 1-.653.657H2.239a.656.656 0 0 1-.654-.657V3.498h8.74v10.58ZM3.46 4.331a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.625.625 0 0 0-.624-.624Zm2.497 0a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.624.624 0 0 0-.624-.624Zm2.498 0a.625.625 0 0 0-.624.624v7.075a.625.625 0 0 0 1.25 0V4.955a.625.625 0 0 0-.626-.624Z"
-                    />
-                    <path
-                      fill="#444"
-                      d="M10.325 14.078a.655.655 0 0 1-.653.657H2.239a.656.656 0 0 1-.654-.657V3.498h8.74v10.58ZM3.46 4.331a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.625.625 0 0 0-.624-.624Zm2.497 0a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.624.624 0 0 0-.624-.624Zm2.498 0a.625.625 0 0 0-.624.624v7.075a.625.625 0 0 0 1.25 0V4.955a.625.625 0 0 0-.626-.624Z"
-                    />
-                  </svg>
+                  <IconTrash size={14} color="#444" className={classes.prod_item_custom_delete} />
                 </div>
               </div>
               {dynamicPanelPreviewViewType != 'small' ? (
@@ -970,31 +948,11 @@ const Materials = (props) => {
                 <div className={classes.prod_item_upload_btn_wr}>
                   {lastHistoryElem.privateMaterialType && !isCurrDeviceAPhone ? (
                     <div className={classes.prod_item_upload_btn} onMouseUp={onCustomMatAddMouseUp}>
-                      <svg
-                        width="26"
-                        height="26"
-                        fill="none"
-                        viewBox="0 0 26 26"
+                      <IconPlus
+                        size={26}
+                        color="#2E3839"
                         className={classes.prod_item_upload_btn_img}
-                      >
-                        <rect
-                          width="2.977"
-                          height="25"
-                          x="11.506"
-                          y=".209"
-                          fill="#2E3839"
-                          rx="1.488"
-                        />
-                        <rect
-                          width="2.977"
-                          height="25"
-                          x="25.494"
-                          y="11.221"
-                          fill="#2E3839"
-                          rx="1.488"
-                          transform="rotate(90 25.494 11.221)"
-                        />
-                      </svg>
+                      />
                       {translation['TIPS_ADD_NEW_MODEL']}
                     </div>
                   ) : null}
@@ -1008,24 +966,11 @@ const Materials = (props) => {
                 </div>
               ) : lastHistoryElem.privateMaterialType && !isCurrDeviceAPhone ? (
                 <div className={classes.prod_item_upload_btn} onMouseUp={onCustomMatAddMouseUp}>
-                  <svg
-                    width="26"
-                    height="26"
-                    fill="none"
-                    viewBox="0 0 26 26"
+                  <IconPlus
+                    size={26}
+                    color="#2E3839"
                     className={classes.prod_item_upload_btn_img}
-                  >
-                    <rect width="2.977" height="25" x="11.506" y=".209" fill="#2E3839" rx="1.488" />
-                    <rect
-                      width="2.977"
-                      height="25"
-                      x="25.494"
-                      y="11.221"
-                      fill="#2E3839"
-                      rx="1.488"
-                      transform="rotate(90 25.494 11.221)"
-                    />
-                  </svg>
+                  />
                   {translation['TIPS_ADD_NEW_MODEL']}
                 </div>
               ) : null

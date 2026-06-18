@@ -1,29 +1,22 @@
-import React, { useEffect, useMemo,useState } from 'react';
-import {createUseStyles} from "react-jss";
+import React, { useEffect, useMemo, useState } from 'react';
+import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from "simplebar-react";
+import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../../initR2D';
 import {
-    selectActiveControlPanelModeData, updateAnimateFavoritesHideStatus,
-    updateAnimateFavoritesShowStatus
+  selectActiveControlPanelModeData,
+  updateAnimateFavoritesHideStatus,
+  updateAnimateFavoritesShowStatus,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import { selectIsLogged } from '../../../../../../../redux/features/user/userSlice';
-import FavoriteStarIcon from "../../../../../../common/FavoriteStarIcon";
+import FavoriteStarIcon from '../../../../../../common/FavoriteStarIcon';
 import MaterialComponent from '../../../components/MaterialComponent';
-import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planerWallsCont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -204,32 +197,32 @@ const Main = (props) => {
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
-  let lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
+  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const isAdded = lastHistoryElem?.isAdded;
 
-  let isLogged = useSelector(selectIsLogged);
+  const isLogged = useSelector(selectIsLogged);
 
-  let currObj = useMemo(
+  const currObj = useMemo(
     () =>
       planner.mih()._scene.currentView3DObject?.constructorElementData ||
       planner.mih()._scene.prevSelectedView3DObject?.constructorElementData,
     []
   );
 
-  let [previewMaterialId, setPreviewMaterialId] = useState(null);
+  const [previewMaterialId, setPreviewMaterialId] = useState(null);
   const [previewAddMaterialId, setPreviewAddMaterialId] = useState(null);
 
-  let [preloaderStatus, setPreloaderStatus] = useState(true);
-  let [isInFavorites, setIsInFavorites] = useState(false);
+  const [preloaderStatus, setPreloaderStatus] = useState(true);
+  const [isInFavorites, setIsInFavorites] = useState(false);
 
-  let [area, setArea] = useState('');
+  const [area, setArea] = useState('');
 
-  let [styleAnimation, setStyleAnimation] = useState(
+  const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
   const [lockMaterialStatus, setLockMaterialStatus] = useState(false);
 
-  let onCopyMaterial = (id, addMaterial) =>
+  const onCopyMaterial = (id, addMaterial) =>
     R2D.CopyPaste.copyMaterial({
       id,
       addMaterial,
@@ -237,49 +230,57 @@ const Main = (props) => {
     });
 
   const onPasteMaterial = () => {
-        let mat = R2D.CopyPaste.pasteMaterial();
-        if (mat?.id) {
-            setPreviewMaterialId(mat.id);
-            setPreviewAddMaterialId(mat.addMaterial);
-            currObj.setMaterial(mat.id);
-            currObj.setAddMaterial(mat.addMaterial);
-            currObj.setMaterialRotation(mat.materialRotation);
-            currObj.build3D();
-            currObj.dispatchUpdate();
-            R2D.scene.history.saveState();
-            dispatch(changeUndoRedo());
-            planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
-        } else if(mat?.type == "logoMesh") {
-            dispatch(setActivePopup({name: "alert", data: translation["TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR"]}))
-        }
+    const mat = R2D.CopyPaste.pasteMaterial();
+    if (mat?.id) {
+      setPreviewMaterialId(mat.id);
+      setPreviewAddMaterialId(mat.addMaterial);
+      currObj.setMaterial(mat.id);
+      currObj.setAddMaterial(mat.addMaterial);
+      currObj.setMaterialRotation(mat.materialRotation);
+      currObj.build3D();
+      currObj.dispatchUpdate();
+      R2D.scene.history.saveState();
+      dispatch(changeUndoRedo());
+      planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+    } else if (mat?.type == 'logoMesh') {
+      dispatch(
+        setActivePopup({
+          name: 'alert',
+          data: translation['TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR'],
+        })
+      );
+    }
   };
 
   const updateFavorites = async () => {
-        if(!isLogged) return dispatch(setActivePopup({name: "login"}));
-        let id = R2D.scene.currentConstructorElementData.addMaterialID || R2D.scene.currentConstructorElementData.materialID;
-        let color = R2D.scene.currentConstructorElementData.addMaterialID ? R2D.scene.currentConstructorElementData.materialID : "";
-        if(isInFavorites) {
-            await user.uRemoveFromFavorites(id, color);
-            dispatch(updateAnimateFavoritesHideStatus(true));
-            setTimeout(() =>  dispatch(updateAnimateFavoritesHideStatus(false)), 10);
-        }
-        else {
-            await user.uAddToFavorites(id, color);
-            dispatch(updateAnimateFavoritesShowStatus(true));
-            setTimeout(() =>  dispatch(updateAnimateFavoritesShowStatus(false)), 10);
-        }
-        setIsInFavorites(!isInFavorites);
-        planner.apiScene.dispatchEvent(new Event(planner.apiScene.FAVORITES_BUTTON, {}));
-    };
+    if (!isLogged) return dispatch(setActivePopup({ name: 'login' }));
+    const id =
+      R2D.scene.currentConstructorElementData.addMaterialID ||
+      R2D.scene.currentConstructorElementData.materialID;
+    const color = R2D.scene.currentConstructorElementData.addMaterialID
+      ? R2D.scene.currentConstructorElementData.materialID
+      : '';
+    if (isInFavorites) {
+      await user.uRemoveFromFavorites(id, color);
+      dispatch(updateAnimateFavoritesHideStatus(true));
+      setTimeout(() => dispatch(updateAnimateFavoritesHideStatus(false)), 10);
+    } else {
+      await user.uAddToFavorites(id, color);
+      dispatch(updateAnimateFavoritesShowStatus(true));
+      setTimeout(() => dispatch(updateAnimateFavoritesShowStatus(false)), 10);
+    }
+    setIsInFavorites(!isInFavorites);
+    planner.apiScene.dispatchEvent(new Event(planner.apiScene.FAVORITES_BUTTON, {}));
+  };
 
-  let updateMaterialsEvent = (e) => {
+  const updateMaterialsEvent = (e) => {
     setPreviewMaterialId(currObj?.getMaterial());
     setPreviewAddMaterialId(currObj?.getAddMaterial());
   };
 
   useEffect(() => {
-    let keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
-    let id =
+    const keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
+    const id =
       R2D.scene.currentConstructorElementData?.addMaterialID ||
       R2D.scene.currentConstructorElementData?.materialID;
     if (id && Array.isArray(user.data.favorites?.items)) {
@@ -303,8 +304,8 @@ const Main = (props) => {
   }, [currObj, controlPanelModeHistory]);
 
   useEffect(() => {
-    let pollMaterials = Object.entries(R2D.Pool._products_data);
-    let currentMaterial = pollMaterials.find((y) => y[0] == previewMaterialId);
+    const pollMaterials = Object.entries(R2D.Pool._products_data);
+    const currentMaterial = pollMaterials.find((y) => y[0] == previewMaterialId);
     const plan = currentMaterial?.[1]?.plan;
 
     if (user.data.plan == 'free') {

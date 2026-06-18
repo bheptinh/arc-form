@@ -1,3 +1,4 @@
+import { IconChevronDown, IconSortAscending, IconSortDescending } from '@tabler/icons-react';
 import { createUseStyles } from 'react-jss';
 
 type Option = { value: string; label: string };
@@ -25,7 +26,7 @@ const useStyles = createUseStyles({
     minWidth: 30,
     '&:hover $dropdownActive': { background: '#E9E9E9' },
     '&:hover $dropdownOptions': { transform: 'translateY(0)', pointerEvents: 'all' },
-    '&:hover $dropdownActive svg': { transform: 'rotate(180deg)' },
+    '&:hover $dropdownActive svg': { transform: 'rotateX(180deg)' },
   },
   dropdownActive: {
     boxShadow: '0px 0px 3px 0px rgba(0,0,0,0.12)',
@@ -96,21 +97,20 @@ const useStyles = createUseStyles({
   },
 });
 
-export function SortBar({ options, activeLabel, direction, onOptionSelect, onDirectionToggle }: Props) {
+export function SortBar({
+  options,
+  activeLabel,
+  direction,
+  onOptionSelect,
+  onDirectionToggle,
+}: Props) {
   const classes = useStyles();
   return (
     <div className={classes.wrap}>
       <div className={classes.dropdown}>
         <div className={classes.dropdownActive}>
           {activeLabel}
-          <svg width="11" height="7" fill="none" viewBox="0 0 11 7">
-            <path
-              fill="#555"
-              fillRule="evenodd"
-              d="m9.514 1.18.408.414-4.526 4.57-.408-.413.003-.003L.92 1.575l.412-.41L5.4 5.335l4.114-4.154Z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <IconChevronDown size={12} color="#555555" />
         </div>
         <div className={classes.dropdownOptionWrap}>
           <div className={classes.dropdownOptions}>
@@ -124,19 +124,9 @@ export function SortBar({ options, activeLabel, direction, onOptionSelect, onDir
       </div>
       <div className={classes.dirBtn} onClick={onDirectionToggle}>
         {direction === 'desc' ? (
-          <svg width="15" height="11" fill="none" viewBox="0 0 15 11">
-            <path
-              fill="#555"
-              d="M1.01 7.737a.48.48 0 0 0-.011.68l2.004 2.012c-.06-.026.044.046 0 0 .059.025.128.115.192.115.065 0 .123-.09.182-.115-.044.046.06-.026 0 0l2.005-2.013a.48.48 0 1 0-.69-.668L3.67 8.802V1.126a.48.48 0 1 0-.96 0v7.675L1.629 7.708c-.089-.091-.15-.104-.278-.106a.48.48 0 0 0-.342.135Zm11.8-3.658a.48.48 0 0 0-.48-.48H7.12a.48.48 0 0 0 0 .96h5.21a.48.48 0 0 0 .48-.48Zm-1.498 2.954a.48.48 0 0 0-.48-.48H7.119a.48.48 0 0 0 0 .96h3.713a.48.48 0 0 0 .48-.48ZM7.12 9.507a.48.48 0 1 0 0 .96h2.215a.48.48 0 0 0 0-.96H7.119ZM13.83.646H7.12a.48.48 0 0 0 0 .96h6.71a.48.48 0 1 1 0-.96Z"
-            />
-          </svg>
+          <IconSortDescending size={12} color="#555555" />
         ) : (
-          <svg width="15" height="11" fill="none" viewBox="0 0 15 11">
-            <path
-              fill="#555"
-              d="M1.009 3.764a.48.48 0 0 1 .341-.136c.128.002.19.015.278.107l1.081 1.093V1.126a.48.48 0 1 1 .96 0v7.676l1.022-1.064a.48.48 0 1 1 .69.668L3.376 10.42c-.059.026-.118.115-.182.115-.065 0-.134-.09-.193-.115-.044.046.06-.026 0 0L.998 8.406a.48.48 0 0 1 .011-.68v.038Zm11.8 3.658a.48.48 0 0 1-.48.48H7.12a.48.48 0 0 1 0-.96h5.21a.48.48 0 0 1 .48.48Zm-1.498-2.954a.48.48 0 0 1-.48.48H7.119a.48.48 0 0 1 0-.96h3.713a.48.48 0 0 1 .48.48ZM7.12 1.606a.48.48 0 1 1 0-.96h2.215a.48.48 0 0 1 0 .96H7.119ZM13.83 4.56H7.12a.48.48 0 0 1 0-.96h6.71a.48.48 0 1 1 0 .96Z"
-            />
-          </svg>
+          <IconSortAscending size={12} color="#555555" />
         )}
       </div>
     </div>

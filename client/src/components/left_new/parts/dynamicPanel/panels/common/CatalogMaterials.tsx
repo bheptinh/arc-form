@@ -13,14 +13,6 @@ import {
 import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',

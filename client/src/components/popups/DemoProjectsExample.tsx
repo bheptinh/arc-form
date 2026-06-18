@@ -1,32 +1,19 @@
+import { IconArrowLeft, IconX } from '@tabler/icons-react';
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
 import { createProjectUrl } from '../../utils/UrlHelper';
-import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -86,13 +73,9 @@ const useStyle = createUseStyles({
     top: 12,
     cursor: 'pointer',
     zIndex: 1,
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
+    transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
     '&:hover': {
-      '& path': {
-        fill: '#BAE51F',
-      },
+      stoke: '#BAE51F',
     },
   },
   planer_popup_close: {
@@ -103,17 +86,14 @@ const useStyle = createUseStyles({
     right: 8,
     cursor: 'pointer',
     zIndex: '2',
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
     '&:hover': {
-      '& path': {
-        fill: '#BAE51F',
+      '& svg': {
+        stroke: '#BAE51F',
       },
     },
   },
   planer_popup_close_icon: {
-    width: '100%',
+    transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
   },
   start_title: {
     color: '#282828',
@@ -291,36 +271,19 @@ const DemoProjectsExample = (props) => {
     >
       <div className={classes.planner_popup_wr}>
         <div className={classes.planner_popup_cont}>
-          <svg
+          <IconArrowLeft
             className={classes.planner_popup_back}
+            size={24}
+            color="#444444"
             onClick={backToStartPopup}
-            width="23"
-            height="26"
-            fill="none"
-            viewBox="0 0 23 26"
-          >
-            <path
-              fill="#232323"
-              d="M14.352 1.236 3.416 11.931h18.708v1.692H3.302l11.096 10.685-1.172 1.159L1.31 13.99l-.008.01-1.18-1.15L13.17.086l1.18 1.15Z"
-              opacity=".99"
-            />
-          </svg>
+          />
+
           <div
             className={classes.planer_popup_close}
             id="js_close_popup"
             onClick={onCloseBlueScreenPopupProjects}
           >
-            <svg
-              className={classes.planer_popup_close_icon}
-              viewBox="0 0 16.03 16.02"
-              width="24px"
-              height="24px"
-            >
-              <path
-                fill="#444444"
-                d="M1,0a1,1,0,0,0-.7,1.72L6.6,8,.31,14.3a1,1,0,0,0,1.39,1.44l0,0L8,9.42l6.29,6.29a1,1,0,1,0,1.44-1.39l0,0L9.43,8l6.29-6.29A1,1,0,1,0,14.31.3L8,6.6,1.72.3A1,1,0,0,0,1,0Z"
-              />
-            </svg>
+            <IconX size={24} color="#444444" className={classes.planer_popup_close_icon} />
           </div>
           <div className={classes.start_title}>
             {demoProjectsMainTitle || translation['PRECONF_PROJECTS_TITLE']}

@@ -1,7 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { IconCopy } from '@tabler/icons-react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
+import { useCatalogMaterials } from '../../../../../api/catalog';
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../initR2D';
 import {
   controlPanelHistoryAddArray,
@@ -10,8 +13,6 @@ import {
 import { setActivePopup } from '../../../../../redux/features/popups/popupsSlice';
 import Lock from '../../../../common/Lock';
 import HoverComponent from '../../controlPanel/components/HoverComponent';
-import { useCatalogMaterials } from '../../../../../api/catalog';
-import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const editMatEditIcon = {
   width: 16,
@@ -86,13 +87,9 @@ const useStyle = createUseStyles({
   editMatEditIcon: {
     extend: editMatEditIcon,
     cursor: 'pointer',
-    '& rect': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
+    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      '& rect': {
-        fill: '#B8E11F',
-      },
+      stroke: '#B8E11F',
     },
   },
   editMatEditIcon_disabled: {
@@ -115,8 +112,6 @@ const useStyle = createUseStyles({
     zIndex: 999,
     visibility: 'hidden',
   },
-  editMat_copy: {},
-  editMat_paste: {},
   editMatItem_main: {
     width: '100%',
     height: '100%',
@@ -142,7 +137,7 @@ const MaterialComponent = (props) => {
     const product = e.currentTarget;
     const hoverWindow = document.createElement('div');
     hoverWindow.classList.add('product_hover');
-    document.querySelector('body').append(hoverWindow);
+    document.querySelector('body')?.append(hoverWindow);
     const matColor = document.createElement('p');
     matColor.textContent =
       props.matId?.indexOf && ~props.matId.indexOf('#')
@@ -176,19 +171,21 @@ const MaterialComponent = (props) => {
   };
 
   const mouseLeave = () => {
-    document.querySelector('.product_hover')
-      ? document.querySelector('.product_hover').remove()
-      : null;
+    document.querySelector('.product_hover')?.remove();
     if (props.mouseLeaveMaterial) props.mouseLeaveMaterial();
-    props.selectMeshOnHover && R2D.modelUploader.unselectParts();
+    if (props.selectMeshOnHover) {
+      R2D.modelUploader.unselectParts();
+    }
   };
 
-  const onPaste = (e) => {
-    if (props.type == 'group') props.onCopyPaste.paste(props.matId, props.addMaterial);
-    else
-      props.onCopyPaste.index || !isNaN(props.onCopyPaste.index)
-        ? props.onCopyPaste.paste(props.onCopyPaste.index)
-        : props.onCopyPaste.paste();
+  const onPaste = () => {
+    if (props.type == 'group') {
+      props.onCopyPaste.paste(props.matId, props.addMaterial);
+    } else if (props.onCopyPaste.index || !isNaN(props.onCopyPaste.index)) {
+      props.onCopyPaste.paste(props.onCopyPaste.index);
+    } else {
+      props.onCopyPaste.paste();
+    }
   };
 
   const historyUpdateFunctions = (historyObj) => {
@@ -390,21 +387,12 @@ const MaterialComponent = (props) => {
     return historyObj;
   };
 
-  const mainDiv = useRef(null);
-
-  const copyPasteDiv = useRef(null);
-  const copyDiv = useRef(null);
-  const pasteDiv = useRef(null);
-
-  const copyImage = useRef(null);
-  const pasteImage = useRef(null);
-
-  const timeoutId = null;
+  const timeoutId = undefined;
 
   const mouseLeaveCopyPaste = (e) => {
     clearTimeout(timeoutId);
     const hoverDiv = document.querySelector('.' + classes.btn_hover);
-    hoverDiv && hoverDiv.remove();
+    hoverDiv?.remove();
   };
 
   const mouseUpBtnCopy = (e) =>
@@ -527,7 +515,7 @@ const MaterialComponent = (props) => {
 
   return (
     (props.matId != null || props.hash != null || props.mesh != null) && (
-      <div className={classes.editMatItemWr} ref={mainDiv} style={props.customStyles}>
+      <div className={classes.editMatItemWr} style={props.customStyles}>
         <div className={classes.editMatItem} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
           {isLoaded.status ? (
             <div className={classes.editMatItem_main}>
@@ -561,155 +549,44 @@ const MaterialComponent = (props) => {
                 />
               ) : null}
 
-              <div className={classes.editMat} ref={copyPasteDiv}>
+              <div className={classes.editMat}>
                 {showCopy ? (
-                  <div className={classes.editMat_copy} ref={copyDiv}>
+                  <div>
                     <HoverComponent
                       hoverText={translation['BUTTON_COPY_MATERIAL']}
-                      parentRef={copyDiv}
                       hoverTextPositionX={'right'}
                       hoverTextPositionY={'top'}
                     >
-                      <svg
+                      <IconCopy
+                        size={18}
+                        color="#ffffff"
                         className={classes.editMatEditIcon}
-                        ref={copyImage}
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
                         onMouseDown={mouseDownBtnCopyPaste}
                         onMouseUp={mouseUpBtnCopy}
-                      >
-                        <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                        <rect
-                          className={classes.rectHover2}
-                          y="3"
-                          width="2"
-                          height="1"
-                          fill="white"
-                        />
-                        <rect
-                          className={classes.rectHover}
-                          y="15"
-                          width="13"
-                          height="1"
-                          fill="white"
-                        />
-                        <rect
-                          className={classes.rectHover}
-                          y="15"
-                          width="11"
-                          height="1"
-                          transform="rotate(-90 0 15)"
-                          fill="white"
-                        />
-                        <rect
-                          className={classes.rectHover}
-                          x="12"
-                          y="15"
-                          width="1"
-                          height="1"
-                          transform="rotate(-90 12 15)"
-                          fill="white"
-                        />
-                      </svg>
+                      />
                     </HoverComponent>
                   </div>
                 ) : (
-                  <svg
+                  <IconCopy
+                    size={18}
+                    color="#828282"
                     className={classes.editMatEditIcon_disabled}
-                    ref={copyImage}
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                  >
-                    <rect x="3.5" y="0.5" width="12" height="12" stroke="#828282" />
-                    <rect
-                      className={classes.rectHover2}
-                      y="3"
-                      width="2"
-                      height="1"
-                      fill="#828282"
-                    />
-                    <rect
-                      className={classes.rectHover}
-                      y="15"
-                      width="13"
-                      height="1"
-                      fill="#828282"
-                    />
-                    <rect
-                      className={classes.rectHover}
-                      y="15"
-                      width="11"
-                      height="1"
-                      transform="rotate(-90 0 15)"
-                      fill="#828282"
-                    />
-                    <rect
-                      className={classes.rectHover}
-                      x="12"
-                      y="15"
-                      width="1"
-                      height="1"
-                      transform="rotate(-90 12 15)"
-                      fill="#828282"
-                    />
-                  </svg>
+                  />
                 )}
 
-                <div className={classes.editMat_paste} ref={pasteDiv}>
+                <div>
                   <HoverComponent
                     hoverText={translation['BUTTON_PASTE_MATERIAL']}
-                    parentRef={pasteDiv}
                     hoverTextPositionX={'right'}
                     hoverTextPositionY={'top'}
                   >
-                    <svg
+                    <IconCopy
+                      size={18}
+                      color="#ffffff"
                       className={classes.editMatEditIcon}
-                      ref={pasteImage}
-                      width="15"
-                      height="16"
-                      viewBox="0 0 15 16"
-                      fill="none"
                       onMouseDown={mouseDownBtnCopyPaste}
                       onMouseUp={mouseUpBtnPaste}
-                    >
-                      <rect
-                        x="0.5"
-                        y="-0.5"
-                        width="11.1875"
-                        height="12"
-                        transform="matrix(1 0 0 -1 2.8125 15)"
-                        fill="white"
-                        stroke="white"
-                      />
-                      <rect
-                        width="1.875"
-                        height="1"
-                        transform="matrix(1 0 0 -1 0 13)"
-                        fill="white"
-                      />
-                      <rect
-                        width="12.1875"
-                        height="1"
-                        transform="matrix(1 0 0 -1 0 1)"
-                        fill="white"
-                      />
-                      <rect
-                        width="11"
-                        height="0.9375"
-                        transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 1)"
-                        fill="white"
-                      />
-                      <rect
-                        width="1"
-                        height="0.9375"
-                        transform="matrix(-4.09794e-08 1 1 4.66255e-08 11.25 1)"
-                        fill="white"
-                      />
-                    </svg>
+                    />
                   </HoverComponent>
                 </div>
               </div>

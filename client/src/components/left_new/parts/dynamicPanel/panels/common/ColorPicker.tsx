@@ -1,8 +1,10 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { IconBulbFilled, IconCopy } from '@tabler/icons-react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../initR2D';
 import {
   controlPanelHistoryDataUpdate,
@@ -19,7 +21,6 @@ import ChangeSize from '../../../../../common/ChangeSize';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
 import Navigation from '../../navigation/Navigation';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -134,22 +135,18 @@ const useStyle = createUseStyles({
     padding: '0 6px',
   },
   prod_item_btn_copy: {
-    width: 16,
+    // width: 18,
     cursor: 'pointer',
-    height: 16,
+    // height: 18,
     pointerEvents: 'auto',
-    '& rect': {
+    '& svg': {
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {
-      '& rect': {
-        fill: '#B8E11F',
+      '& svg': {
+        stroke: '#B8E11F',
       },
     },
-  },
-  prod_item_btn_icon: {
-    width: '100%',
-    height: 'auto',
   },
   bottom: {
     display: 'flex',
@@ -1040,18 +1037,7 @@ const ColorPicker = (props) => {
                         height: (150 / 100) * lightPower + 'px',
                       }}
                     ></div>
-                    <svg
-                      width="31"
-                      height="31"
-                      viewBox="0 0 31 31"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M22.3649 23.8292L24.8609 26.3253C25.2057 26.67 25.7642 26.67 26.1089 26.3253C26.4537 25.9805 26.4537 25.422 26.1089 25.0772L23.6129 22.5812C23.2682 22.2365 22.7096 22.2365 22.3649 22.5812C22.0202 22.926 22.0202 23.4845 22.3649 23.8292ZM26.0908 16.5989L29.6799 16.5989C30.1678 16.5989 30.5625 16.2041 30.5625 15.7163C30.5625 15.2285 30.1678 14.8337 29.6799 14.8337L26.0908 14.8337C25.603 14.8337 25.2083 15.2285 25.2083 15.7163C25.2083 16.2041 25.603 16.5989 26.0908 16.5989ZM1.32007 16.5989L4.90918 16.5989C5.397 16.5989 5.79175 16.2041 5.79175 15.7163C5.79175 15.2285 5.397 14.8337 4.90918 14.8337L1.32007 14.8337C0.832242 14.8337 0.437499 15.2285 0.437499 15.7163C0.437499 16.2041 0.832242 16.5989 1.32007 16.5989ZM4.89106 26.3252C5.23579 26.67 5.79434 26.67 6.13907 26.3252L8.63509 23.8292C8.97982 23.4845 8.97982 22.926 8.63509 22.5812C8.29036 22.2365 7.73181 22.2365 7.38708 22.5812L4.89106 25.0772C4.54632 25.422 4.54632 25.9805 4.89106 26.3252ZM15.5 30.7788C15.9878 30.7788 16.3826 30.3841 16.3826 29.8962L16.3826 26.3071C16.3826 25.8193 15.9878 25.4246 15.5 25.4246C15.0122 25.4246 14.6174 25.8193 14.6174 26.3071L14.6174 29.8962C14.6174 30.3841 15.0122 30.7788 15.5 30.7788ZM10.5576 21.9473C12.4816 23.4653 14.9705 24.0125 17.4063 23.43C20.2306 22.7769 22.5075 20.5352 23.196 17.7286C23.8844 14.9044 23.0901 12.0449 21.0602 10.0503C20.3365 9.32651 19.9128 8.191 19.9128 7.02595L19.9128 6.83179C19.9128 6.33761 19.5246 5.94922 19.0303 5.94922L11.9697 5.94922C11.4754 5.94922 11.0872 6.33761 11.0872 6.83179L11.0872 7.02595C11.0872 8.17335 10.6459 9.34423 9.86921 10.1032C8.38644 11.6036 7.55688 13.5981 7.55688 15.7163C7.55688 18.1522 8.65127 20.4293 10.5576 21.9473ZM15.5 18.364C16.8315 18.364 17.8008 17.4808 18.0546 16.4584C18.1701 15.9934 18.638 15.6966 19.1242 15.8137C19.5965 15.9309 19.8853 16.4101 19.768 16.8824C19.3308 18.6476 17.6728 20.1292 15.5 20.1292C15.0122 20.1291 14.6174 19.7344 14.6174 19.2466C14.6174 18.7588 15.0122 18.364 15.5 18.364ZM19.0303 4.18408L19.0303 3.30152C19.0303 1.84151 17.8426 0.653811 16.3826 0.653811L14.6174 0.653811C13.1574 0.653811 11.9697 1.84151 11.9697 3.30152L11.9697 4.18408L19.0303 4.18408Z"
-                        fill="#2F2F2F"
-                      />
-                    </svg>
+                    <IconBulbFilled size={32} color="#2F2F2F" />
                   </div>
                 </div>
               </div>
@@ -1069,46 +1055,7 @@ const ColorPicker = (props) => {
                         hoverTextPositionX={'right'}
                         hoverTextPositionY={'top'}
                       >
-                        <svg
-                          className={classes.prod_item_btn_icon}
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="transparent"
-                        >
-                          <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                          <rect
-                            className={classes.rectHover2}
-                            y="3"
-                            width="2"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="13"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="11"
-                            height="1"
-                            transform="rotate(-90 0 15)"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            x="12"
-                            y="15"
-                            width="1"
-                            height="1"
-                            transform="rotate(-90 12 15)"
-                            fill="white"
-                          />
-                        </svg>
+                        <IconCopy size={18} color="#ffffff" />
                       </HoverComponent>
                     </div>
                   </div>

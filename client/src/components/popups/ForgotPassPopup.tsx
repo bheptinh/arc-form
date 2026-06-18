@@ -1,7 +1,9 @@
+import { IconArrowLeft, IconX } from '@tabler/icons-react';
 import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
 import {
@@ -9,7 +11,7 @@ import {
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
-import { useTranslation } from '../../api/hooks/useTranslation';
+import TextInput from '../../shared-components/inputs/text-input';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -81,7 +83,7 @@ const useStyle = createUseStyles({
     height: 24,
     zIndex: 2,
     position: 'absolute',
-    transform: 'rotate(180deg)',
+
     '& path': {
       transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
     },
@@ -210,13 +212,13 @@ const ForgotPassPopup = (props) => {
     dispatch(closeActivePopup({ name: 'forgotPassword' }));
   };
 
-  const onClickBack = (e) => {
+  const onClickBack = () => {
     dispatch(setActivePopup({ name: 'login' }));
     setAnimPopupClass(false);
     setTimeout(() => dispatch(closeActivePopup({ name: 'forgotPassword' })), 500);
   };
 
-  const onClickClosePopUp = (e) => {
+  const onClickClosePopUp = () => {
     setAnimPopupClass(false);
     setTimeout(() => dispatch(closeActivePopup({ name: 'forgotPassword' })), 500);
   };
@@ -239,78 +241,27 @@ const ForgotPassPopup = (props) => {
         <div className={classes.planner_popup_cont}>
           <div className={classes.planner_popup_login_wrap}>
             <div className={classes.planner_popup_back} onClick={onClickBack}>
-              <svg
+              <IconArrowLeft
                 className={classes.planner_popup_back_icon}
-                width="9"
-                height="15"
-                viewBox="0 0 9 15"
-                fill="none"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M0.0271826 0.679673L0.72504 0L8.4375 7.54323L7.73964 8.2229L7.73489 8.21825L0.692425 15L-2.86102e-06 14.3151L7.03849 7.53713L0.0271826 0.679673Z"
-                  fill="#444444"
-                ></path>
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M0.0271826 0.679673L0.72504 0L8.4375 7.54323L7.73964 8.2229L7.73489 8.21825L0.692425 15L-2.86102e-06 14.3151L7.03849 7.53713L0.0271826 0.679673Z"
-                  fill="#444444"
-                ></path>
-              </svg>
+                size={16}
+                color="#444444"
+              />
             </div>
 
             <div className={classes.planner_popup_close} onClick={onClickClosePopUp}>
-              <svg
-                width="25"
-                height="25"
-                fill="none"
-                viewBox="0 0 25 25"
-                className={classes.planner_popup_close_icon}
-              >
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
             </div>
             <h2 className={classes.planner_popup_title}>{translation['TEXT_FORGOT_PASSWORD']}</h2>
             <div className={classes.planner_popup_login_wr}>
               <form onSubmit={onSubmit}>
-                <fieldset className={classes.input_wrap}>
-                  <div className={classes.input_text}>{translation['INPUT_TEXT_LOGIN']}</div>
-                  <div className={classes.input_wr}>
-                    <input
-                      id="formEmail"
-                      className={classes.formInput}
-                      type="tel"
-                      name="email"
-                      required="required"
-                      placeholder=""
-                    />
-                  </div>
-                </fieldset>
+                <TextInput
+                  name="email"
+                  type="email"
+                  label={translation['INPUT_TEXT_LOGIN']}
+                  required
+                  className={classes.input_wrap}
+                />
+
                 <fieldset className={classes.planner_btn_done_wrap}>
                   <input
                     type="submit"

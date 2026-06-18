@@ -1,28 +1,24 @@
-import React, { useEffect, useMemo,useState } from 'react';
-import {createUseStyles} from "react-jss";
+import React, { useEffect, useMemo, useState } from 'react';
+import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from "simplebar-react";
+import SimpleBar from 'simplebar-react';
 
-import {planner, user} from '../../../../../../initR2D';
-import { changeActiveControlPanelMode, selectActiveControlPanelModeData, selectPrevControlPanelMode } from '../../../../../../redux/features/control/controlPanelSlice';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import { planner, user } from '../../../../../../initR2D';
+import {
+  changeActiveControlPanelMode,
+  selectActiveControlPanelModeData,
+  selectPrevControlPanelMode,
+} from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
 import ChangeSize from '../../../../../common/ChangeSize';
+import LockSize from '../../../../../common/LockSize';
 import RemoteComponentMain from '../../../../../common/RemoteComponentMain';
-import LockSize from '../../components/LockSize';
 import MaterialComponent from '../../components/MaterialComponent';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planerWallsCont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -184,111 +180,126 @@ const useStyle = createUseStyles({
 
 const Main = (props) => {
   const classes = useStyle();
-  let dispatch = useDispatch();
+  const dispatch = useDispatch();
   const translation = useTranslation();
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  let controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
+  const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  let isAdded = lastHistoryElem?.isAdded;
+  const isAdded = lastHistoryElem?.isAdded;
 
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
 
-  let [currentGroup, setCurrentGroup] = useState(null);
+  const [currentGroup, setCurrentGroup] = useState(null);
   const [currentObjects, setCurrentObjects] = useState(null);
 
   const [objectWidth, setObjectWidth] = useState(0);
-  let [objectHeight, setObjectHeight] = useState(0);
-  let [objectDepth, setObjectDepth] = useState(0);
-  let [objectElevation, setObjectElevation] = useState(0);
+  const [objectHeight, setObjectHeight] = useState(0);
+  const [objectDepth, setObjectDepth] = useState(0);
+  const [objectElevation, setObjectElevation] = useState(0);
 
-  let [isFixedSize, setIsFixedSize] = useState(false);
+  const [isFixedSize, setIsFixedSize] = useState(false);
 
-  let [styleAnimation, setStyleAnimation] = useState(
+  const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
 
   const [isMerged, setIsMerged] = useState(planner.scene.currentGroupIsMerged());
 
-  let [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
+  const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
 
-  let ratioWvH = objectWidth / objectHeight;
-  let ratioWvD = objectWidth / objectDepth;
+  const ratioWvH = objectWidth / objectHeight;
+  const ratioWvD = objectWidth / objectDepth;
 
-  let [currentObjectsMaterialsIds, setCurrentObjectsMaterialsIds] = useState(
+  const [currentObjectsMaterialsIds, setCurrentObjectsMaterialsIds] = useState(
     props.currentObjectsMaterialsIds
   );
 
   const [previewMaterials, setPreviewMaterials] = useState(null);
-  let [materislsCount, setMaterislsCount] = useState(0);
+  const [materislsCount, setMaterislsCount] = useState(0);
   const [productApplications, updateProductApplications] = useState(null);
 
-  let onClickPreview = (matId, addMatId) => props.onClickPreview(matId, addMatId);
+  const onClickPreview = (matId, addMatId) => props.onClickPreview(matId, addMatId);
 
-  let onCopyMaterial = (id, addMaterial) => R2D.CopyPaste.copyMaterial({ id, addMaterial });
+  const onCopyMaterial = (id, addMaterial) => R2D.CopyPaste.copyMaterial({ id, addMaterial });
 
   const onPasteMaterial = (prevMatId, prevAddMatId) => {
-        if(!currentObjectsMaterialsIds || currentObjectsMaterialsIds.length < 1) return;
-        let mat = R2D.CopyPaste.pasteMaterial();
-        if (mat?.id) {
-            currentObjects.forEach((i, index) => {
-                currentObjectsMaterialsIds[index]?.forEach(y => {
-                    if(prevMatId == y.id && prevAddMatId == y.addMaterial) {
-                        const materialIndex = i.getMaterialsObjects().findIndex(m => m.hash == y.hash)
-                        i.setAddMaterialAt(materialIndex, mat.addMaterial);
-                        i.setMaterialAt(materialIndex, mat.id);
-                        i.dispatchUpdate();
-                    }
-                });
-            });
-            planner.mih()._scene.history.saveState();
-            let newCurrentObjectsMaterialsIds = currentObjects.map(i => i?.getMaterials && i.getMaterials()).filter(i => i).map(i => i.filter(z => z.source == "bank").map(y => { return {id: y.current, addMaterial: y.addMaterial, hash: y.hash} }));
-            setCurrentObjectsMaterialsIds(newCurrentObjectsMaterialsIds.filter(i => i.length > 0));
+    if (!currentObjectsMaterialsIds || currentObjectsMaterialsIds.length < 1) return;
+    const mat = R2D.CopyPaste.pasteMaterial();
+    if (mat?.id) {
+      currentObjects.forEach((i, index) => {
+        currentObjectsMaterialsIds[index]?.forEach((y) => {
+          if (prevMatId == y.id && prevAddMatId == y.addMaterial) {
+            const materialIndex = i.getMaterialsObjects().findIndex((m) => m.hash == y.hash);
+            i.setAddMaterialAt(materialIndex, mat.addMaterial);
+            i.setMaterialAt(materialIndex, mat.id);
+            i.dispatchUpdate();
+          }
+        });
+      });
+      planner.mih()._scene.history.saveState();
+      const newCurrentObjectsMaterialsIds = currentObjects
+        .map((i) => i?.getMaterials && i.getMaterials())
+        .filter((i) => i)
+        .map((i) =>
+          i
+            .filter((z) => z.source == 'bank')
+            .map((y) => {
+              return { id: y.current, addMaterial: y.addMaterial, hash: y.hash };
+            })
+        );
+      setCurrentObjectsMaterialsIds(newCurrentObjectsMaterialsIds.filter((i) => i.length > 0));
 
-            dispatch(changeUndoRedo());
-            planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
-        } else if(mat?.type == "logoMesh") {
-            dispatch(setActivePopup({name: "alert", data: translation["TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR"]}))
-        }
+      dispatch(changeUndoRedo());
+      planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+    } else if (mat?.type == 'logoMesh') {
+      dispatch(
+        setActivePopup({
+          name: 'alert',
+          data: translation['TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR'],
+        })
+      );
+    }
   };
 
   const onChangeSize = (mouseDown, value, type) => {
-        setMouseDown({...mouseDown, type});
-        switch(type) {
-            case "width":
-                currentGroup.setWidth(value);
-                currentGroup.setHeight(value / ratioWvH);
-                currentGroup.setDepth(value / ratioWvD);
-                break;
-            case "height":
-                currentGroup.setHeight(value);
-                currentGroup.setWidth(value * ratioWvH);
-                currentGroup.setDepth(value * ratioWvH / ratioWvD);
-                break;
-            case "depth":
-                currentGroup.setDepth(value);
-                currentGroup.setWidth(value * ratioWvD);
-                currentGroup.setHeight(value * ratioWvD / ratioWvH);
-                break;
-            case "elevation":
-                currentGroup.y = value;
-                break;
-        }
-        planner.mih()._ruler3d.findRules(planner.mih()._scene.currentGroup);
-        currentGroup.update();
-        
-        if(mouseDown.status == false) {
-            planner.mih()._scene.history.saveState();
-            dispatch(changeUndoRedo());
-        }
-        setObjectWidth(Math.round(currentGroup.getWidth() * 10) / 10);
-        setObjectHeight(Math.round(currentGroup.getHeight() * 10) / 10);
-        setObjectDepth(Math.round(currentGroup.getDepth() * 10) / 10);
-        setObjectElevation(currentGroup.y);
-        !mouseDown.status && planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+    setMouseDown({ ...mouseDown, type });
+    switch (type) {
+      case 'width':
+        currentGroup.setWidth(value);
+        currentGroup.setHeight(value / ratioWvH);
+        currentGroup.setDepth(value / ratioWvD);
+        break;
+      case 'height':
+        currentGroup.setHeight(value);
+        currentGroup.setWidth(value * ratioWvH);
+        currentGroup.setDepth((value * ratioWvH) / ratioWvD);
+        break;
+      case 'depth':
+        currentGroup.setDepth(value);
+        currentGroup.setWidth(value * ratioWvD);
+        currentGroup.setHeight((value * ratioWvD) / ratioWvH);
+        break;
+      case 'elevation':
+        currentGroup.y = value;
+        break;
     }
+    planner.mih()._ruler3d.findRules(planner.mih()._scene.currentGroup);
+    currentGroup.update();
 
-  let onClickMergeButton = (e) => {
+    if (mouseDown.status == false) {
+      planner.mih()._scene.history.saveState();
+      dispatch(changeUndoRedo());
+    }
+    setObjectWidth(Math.round(currentGroup.getWidth() * 10) / 10);
+    setObjectHeight(Math.round(currentGroup.getHeight() * 10) / 10);
+    setObjectDepth(Math.round(currentGroup.getDepth() * 10) / 10);
+    setObjectElevation(currentGroup.y);
+    !mouseDown.status &&
+      planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+  };
+
+  const onClickMergeButton = (e) => {
     if (isMerged) {
       planner.scene.unmergeCurrentGroup();
       dispatch(changeActiveControlPanelMode({ mode: prevControlPanelMode }));
@@ -299,16 +310,16 @@ const Main = (props) => {
     setIsMerged(!isMerged);
   };
 
-  let elevationUpdate = (e) => setObjectElevation(e.data.elevation);
+  const elevationUpdate = (e) => setObjectElevation(e.data.elevation);
 
-  let rotationUpdate = (e) => {
+  const rotationUpdate = (e) => {
     setObjectElevation(e.data.elevation);
     setObjectWidth(Math.round(e.data.width * 10) / 10);
     setObjectDepth(Math.round(e.data.depth * 10) / 10);
     setObjectHeight(Math.round(e.data.height * 10) / 10);
   };
 
-  let groupUpdate = (e) => {
+  const groupUpdate = (e) => {
     setCurrentGroup(
       planner.mih()._scene.currentGroup || planner.mih()._scene.prevSelectedView3DObject
     );
@@ -346,7 +357,7 @@ const Main = (props) => {
       currentObjects.forEach((i) => {
         const metadata = i?.objectData?.metadata;
         if (i.objectData?.applications) {
-          let applicationsReactArray = [];
+          const applicationsReactArray = [];
           for (const key in i.objectData?.applications) {
             if (
               metadata[key.toLowerCase()]?.config?.useForGroup &&
@@ -369,11 +380,11 @@ const Main = (props) => {
             }
           }
         }
-        let disabledSizes =
+        const disabledSizes =
           metadata && Object.entries(metadata)?.find((i) => i[1]?.config?.disableSizes);
         (disabledSizes || i?.getIsFixedSizeEnabled()) && setIsFixedSize(true);
       });
-      let newCurrentObjectsMaterialsIds = currentObjects
+      const newCurrentObjectsMaterialsIds = currentObjects
         .map((i) => i.getMaterials && i.getMaterials())
         .filter((i) => i)
         .map((i) =>
@@ -410,10 +421,10 @@ const Main = (props) => {
 
   useEffect(() => {
     if (currentObjectsMaterialsIds && currentObjectsMaterialsIds.length > 0) {
-      let currentObjectsMaterialsIdsConcat = currentObjectsMaterialsIds.reduce(
+      const currentObjectsMaterialsIdsConcat = currentObjectsMaterialsIds.reduce(
         (previousValue, currentValue) => previousValue.concat(currentValue)
       );
-      let currentObjectsMatIdsRepeat = currentObjectsMaterialsIdsConcat.reduce(
+      const currentObjectsMatIdsRepeat = currentObjectsMaterialsIdsConcat.reduce(
         (prevVal, currVal) =>
           prevVal.find(
             (k) => k.id == currVal.id && k.id != '0' && k.addMaterial == currVal.addMaterial
@@ -425,11 +436,11 @@ const Main = (props) => {
 
       const matArray = [];
       currentObjectsMatIdsRepeat.forEach((i) => {
-        let pollMaterials = Object.entries(R2D.Pool._products_data);
+        const pollMaterials = Object.entries(R2D.Pool._products_data);
         let needToLock = false;
-        let id = i.addMaterial || i.id;
-        let currentMaterial = pollMaterials.find((y) => y[0] == id);
-        let plan = currentMaterial?.[1]?.plan;
+        const id = i.addMaterial || i.id;
+        const currentMaterial = pollMaterials.find((y) => y[0] == id);
+        const plan = currentMaterial?.[1]?.plan;
 
         if (user.data.plan == 'free') {
           if (Array.isArray(plan) || (plan !== 'free' && plan)) {
@@ -451,7 +462,7 @@ const Main = (props) => {
               paste: onPasteMaterial,
               statusCopy: needToLock ? false : true,
             }}
-            onClick={(e) => onClickPreview(i.id, i.addMaterial)}
+            onClick={() => onClickPreview(i.id, i.addMaterial)}
           />
         );
       });
@@ -472,6 +483,7 @@ const Main = (props) => {
             <div className={classes.title}>{translation['TEXT_A_GROUP']}</div>
             {isMerged ? (
               <div className={classes.groupWr} onClick={onClickMergeButton}>
+                {/* TODO: Replace icon */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="95"
@@ -502,6 +514,7 @@ const Main = (props) => {
               </div>
             ) : (
               <div className={classes.groupWr} onClick={onClickMergeButton}>
+                {/* TODO: Replace icon */}
                 <svg width="95" height="58" viewBox="0 0 95 58" fill="none">
                   <path d="M33 11L45 6V21L33 26V11Z" fill="#CBCBCB" />
                   <path d="M63 11L75 6V21L63 26V11Z" fill="#CBCBCB" />

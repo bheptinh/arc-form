@@ -1,29 +1,24 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import {createUseStyles} from "react-jss";
+import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from "simplebar-react";
+import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../../initR2D';
-import { controlPanelHistoryAdd, controlPanelUpdateBreadCrumbs, selectActiveControlPanelModeData } from '../../../../../../../redux/features/control/controlPanelSlice';
+import {
+  controlPanelHistoryAdd,
+  controlPanelUpdateBreadCrumbs,
+  selectActiveControlPanelModeData,
+} from '../../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
+import Checkbox from '../../../../../../../shared-components/inputs/checkbox';
+import ChangeSize from '../../../../../../common/ChangeSize';
 import BlueButton from '../../../components/BlueButton';
-import ChangeSize from '../../../components/ChangeSize';
-import Checkbox from '../../../components/Checkbox';
 import EditPlinthItem from '../../../components/EditPlinthItem';
 import MaterialComponent from '../../../components/MaterialComponent';
-import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
-
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planerWallsCont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -225,9 +220,9 @@ const Main = (props) => {
   const constructionData = props.constructionData;
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  let controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
-  let lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  let isAdded = lastHistoryElem?.isAdded;
+  const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
+  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
+  const isAdded = lastHistoryElem?.isAdded;
 
   const translation = useTranslation();
 
@@ -235,22 +230,22 @@ const Main = (props) => {
 
   const imgSrc = WC.plinthCreator.getImgSrc(constructionData?.shapeNum, constructionData?.type);
 
-  let [plinthHeight, setPlinthHeight] = useState(constructionData?.h);
-  let [plinthDepth, setPlinthDepth] = useState(constructionData?.d);
+  const [plinthHeight, setPlinthHeight] = useState(constructionData?.h);
+  const [plinthDepth, setPlinthDepth] = useState(constructionData?.d);
 
-  let [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
-  let [styleAnimation, setStyleAnimation] = useState(
+  const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
+  const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
 
-  let [previewMaterialId, setPreviewMaterialId] = useState(constructionData?.getMaterial());
-  let [previewAddMaterialId, setPreviewAddMaterialId] = useState(
+  const [previewMaterialId, setPreviewMaterialId] = useState(constructionData?.getMaterial());
+  const [previewAddMaterialId, setPreviewAddMaterialId] = useState(
     constructionData?.getAddMaterial()
   );
 
   const [checkBoxStatus, setCheckBoxStatus] = useState(constructionData?.exists);
 
-  let onCopyMaterial = (id, addMaterial) =>
+  const onCopyMaterial = (id, addMaterial) =>
     R2D.CopyPaste.copyMaterial({
       id,
       addMaterial,
@@ -258,24 +253,29 @@ const Main = (props) => {
     });
 
   const onPasteMaterial = () => {
-        let mat = R2D.CopyPaste.pasteMaterial();
-        if (mat?.id) {
-            setPreviewMaterialId(mat.id);
-            setPreviewAddMaterialId(mat.addMaterial);
-            constructionData.setMaterial(mat.id);
-            constructionData.setAddMaterial(mat.addMaterial);
-            constructionData.setMaterialRotation(mat.materialRotation);
-            constructionData.build3D();
-            constructionData.dispatchUpdate();
-            R2D.scene.history.saveState();
-            dispatch(changeUndoRedo());
-            planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
-        } else if(mat?.type == "logoMesh") {
-            dispatch(setActivePopup({name: "alert", data: translation["TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR"]}))
-        }
+    const mat = R2D.CopyPaste.pasteMaterial();
+    if (mat?.id) {
+      setPreviewMaterialId(mat.id);
+      setPreviewAddMaterialId(mat.addMaterial);
+      constructionData.setMaterial(mat.id);
+      constructionData.setAddMaterial(mat.addMaterial);
+      constructionData.setMaterialRotation(mat.materialRotation);
+      constructionData.build3D();
+      constructionData.dispatchUpdate();
+      R2D.scene.history.saveState();
+      dispatch(changeUndoRedo());
+      planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+    } else if (mat?.type == 'logoMesh') {
+      dispatch(
+        setActivePopup({
+          name: 'alert',
+          data: translation['TEXT_PASTE_LOGO_INTO_MATERIAL_MESH_ERROR'],
+        })
+      );
+    }
   };
 
-  let changeMoldingVisible = (checked) => {
+  const changeMoldingVisible = (checked) => {
     constructionData.exists = checked;
     constructionData.dispatchUpdate();
     R2D.scene.history.saveState();
@@ -284,42 +284,47 @@ const Main = (props) => {
   };
 
   const onChangeSize = (mouseDown, value, type) => {
-        setMouseDown({...mouseDown, type});
-        constructionData[type] = value;
-        constructionData.dispatchUpdate();
-        planner.scene.rebuildAllPlinths();
-        type == "h" ? setPlinthHeight(value) : setPlinthDepth(value);
+    setMouseDown({ ...mouseDown, type });
+    constructionData[type] = value;
+    constructionData.dispatchUpdate();
+    planner.scene.rebuildAllPlinths();
+    type == 'h' ? setPlinthHeight(value) : setPlinthDepth(value);
 
-        if(mouseDown.status == false) {
-            planner.mih()._scene.history.saveState();
-            dispatch(changeUndoRedo());
-        }
-
-        !mouseDown.status && planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+    if (mouseDown.status == false) {
+      planner.mih()._scene.history.saveState();
+      dispatch(changeUndoRedo());
     }
+
+    !mouseDown.status &&
+      planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+  };
 
   const onClickPlinthChange = () => {
-        dispatch(controlPanelHistoryAdd({added: true, type: "changePlinth"}));
-        dispatch(controlPanelUpdateBreadCrumbs({data: {added: true, type: "changePlinth"}, updateType: "add"}));
-        props.onChangeSelectedType(constructionData.type);
-    };
+    dispatch(controlPanelHistoryAdd({ added: true, type: 'changePlinth' }));
+    dispatch(
+      controlPanelUpdateBreadCrumbs({
+        data: { added: true, type: 'changePlinth' },
+        updateType: 'add',
+      })
+    );
+    props.onChangeSelectedType(constructionData.type);
+  };
 
   const onApplyToAllRoom = () => {
-        planner.scene.setPlinthToRoom(constructionData);
-        constructionData?.dispatchUpdate();
-        R2D.scene.history.saveState();
-        dispatch(changeUndoRedo());
-        planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
-    }
+    planner.scene.setPlinthToRoom(constructionData);
+    constructionData?.dispatchUpdate();
+    R2D.scene.history.saveState();
+    dispatch(changeUndoRedo());
+    planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+  };
 
-
-  let updateMaterialsEvent = (e) => {
+  const updateMaterialsEvent = (e) => {
     setPreviewMaterialId(constructionData.getMaterial());
     setPreviewAddMaterialId(constructionData.getAddMaterial());
   };
 
   useEffect(() => {
-    let keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
+    const keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
     planner.scene.addEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
     return () => {
       planner.scene.removeEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);

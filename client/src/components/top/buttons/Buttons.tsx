@@ -1,7 +1,21 @@
+import {
+  IconArrowBackUp,
+  IconArrowForwardUp,
+  IconCamera,
+  IconDeviceFloppy,
+  IconDownload,
+  IconEraser,
+  IconForms,
+  IconPlus,
+  IconShare,
+} from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguageChange } from '../../../api/hooks/useLanguageChange';
+import { useLanguages } from '../../../api/hooks/useLanguages';
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner, user } from '../../../initR2D';
 import {
   selectActivePano,
@@ -20,7 +34,6 @@ import {
   updateControlPanelStatus,
   updateDynamicPanelStatus,
 } from '../../../redux/features/control/controlPanelSlice';
-import { useLanguageChange } from '../../../api/hooks/useLanguageChange';
 import {
   closeActivePopup,
   selectPopupsLastClosedPopup,
@@ -42,8 +55,6 @@ import { selectActiveViewMode } from '../../../redux/features/viewMode/viewModeS
 import { createProjectUrl } from '../../../utils/UrlHelper';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
 import Tip from '../../tips/Tip';
-import { useTranslation } from '../../../api/hooks/useTranslation';
-import { useLanguages } from '../../../api/hooks/useLanguages';
 
 const useStyles = createUseStyles({
   bar_btn_close: {
@@ -135,7 +146,6 @@ const useStyles = createUseStyles({
     boxShadow: '0px 0px 7px 0px rgba(0, 0, 0, 0.15)',
   },
 
-  bar_dropdown_option_svg_path_hover_stroke: {},
   bar_dropdown_option: {
     background: '#fff',
     cursor: 'pointer',
@@ -208,7 +218,6 @@ const useStyles = createUseStyles({
       background: '#E9E9E9',
     },
   },
-  bar_btn_svg: {},
   bar_btn_not_active: {
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
     background: '#fff',
@@ -758,14 +767,7 @@ const Projects = (props) => {
             {configSaveAs ? (
               <div className={classes.bar_dropdown_option} onClick={onSaveAs}>
                 <div className={classes.bar_dropdown_option_image}>
-                  <svg width="14" height="13" viewBox="0 0 14 13" fill="none">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M11.2595 1.00036L10.7603 1.00036V4.00036H10.7594V5.00036L3.75437 5.00036V4.00036L3.75048 4.00036V1.00036H1.75237V0.000361947L11.7594 0.000362384L11.7596 0L13.761 2.00017L13.7607 2.00036H13.7608V13.0004H12.7597L1.75181 13.0004V12.0004L12.7597 12.0004V2.49968L11.2595 1.00036ZM9.75925 4.00036V1.00036H8.75216V3.00036H7.75112V1.00036H4.75152V4.00036H9.75925ZM0.75 0.000362384H1.75104V13.0004H0.75V0.000362384ZM10.7594 8.00036V7.00036L3.75437 7.00036V8.00036H10.7594ZM10.7594 9.00036V10.0004H3.75437V9.00036H10.7594Z"
-                      fill="#000"
-                    />
-                  </svg>
+                  <IconDeviceFloppy size={14} color="#000" />
                 </div>
                 {translation['TEXT_SAVE_AS']}
               </div>
@@ -773,14 +775,7 @@ const Projects = (props) => {
             {configProjectNew ? (
               <div className={classes.bar_dropdown_option} onClick={onCreateNewScene}>
                 <div className={classes.bar_dropdown_option_image}>
-                  <svg width="14" height="13" viewBox="0 0 14 13" fill="none">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M8.54241 7.68064V13H6.17878V7.68064H0.84375V5.31701H6.17878V0L8.54241 2.81852e-08V5.31701H13.8437V7.68064H8.54241Z"
-                      fill="#000"
-                    />
-                  </svg>
+                  <IconPlus size={14} color="#000" />
                 </div>
                 {translation['TEXT_NEW_PLAN']}
               </div>
@@ -788,14 +783,7 @@ const Projects = (props) => {
             {configSharing ? (
               <div className={classes.bar_dropdown_option} onClick={onClickShare}>
                 <div className={classes.bar_dropdown_option_image}>
-                  <svg width="12" height="15" viewBox="0 0 12 15" fill="none">
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M11.7751 2.8546C11.7751 3.95491 10.8824 4.84689 9.78119 4.84689C9.19711 4.84689 8.67168 4.59594 8.30701 4.19607L4.43146 6.83925C4.53803 7.08315 4.59715 7.3525 4.59715 7.63564C4.59715 7.83672 4.56733 8.03083 4.51189 8.21382L8.47239 10.9149C8.8226 10.6102 9.28033 10.4257 9.78119 10.4257C10.8824 10.4257 11.7751 11.3177 11.7751 12.418C11.7751 13.5183 10.8824 14.4103 9.78119 14.4103C8.68 14.4103 7.7873 13.5183 7.7873 12.418C7.7873 12.1062 7.85895 11.8113 7.98668 11.5485L4.12941 8.91782C3.76366 9.35203 3.21571 9.62793 2.60326 9.62793C1.50207 9.62793 0.609375 8.73596 0.609375 7.63564C0.609375 6.53533 1.50207 5.64335 2.60326 5.64335C3.13347 5.64335 3.61534 5.85014 3.97251 6.1874L7.89781 3.5103C7.82621 3.30496 7.7873 3.08432 7.7873 2.8546C7.7873 1.75428 8.68 0.862305 9.78119 0.862305C10.8824 0.862305 11.7751 1.75428 11.7751 2.8546Z"
-                      fill="#000"
-                    />
-                  </svg>
+                  <IconShare size={14} color="#000" />
                 </div>
                 {translation['HINT_BUTTON_SHARE']}
               </div>
@@ -803,21 +791,7 @@ const Projects = (props) => {
             {configProjectClear ? (
               <div className={classes.bar_dropdown_option} onClick={projectClear}>
                 <div className={classes.bar_dropdown_option_image}>
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path
-                      d="M9.5741 0.80059L14.5715 5.53077L8.04971 12.5184L3.97858 12.5184L1.06304 9.79246L9.5741 0.80059Z"
-                      stroke="#000"
-                    />
-                    <rect
-                      x="8.98438"
-                      y="0.648438"
-                      width="7.08723"
-                      height="5.31247"
-                      transform="rotate(43.0033 8.98438 0.648438)"
-                      fill="#000"
-                    />
-                    <line x1="1.25781" y1="13.6387" x2="13.0624" y2="13.6387" stroke="#000" />
-                  </svg>
+                  <IconEraser size={14} color="#000" />
                 </div>
                 {translation['BUTTON_CLEAR_SCENE']}
               </div>
@@ -825,37 +799,7 @@ const Projects = (props) => {
             {configProjectRename ? (
               <div className={classes.bar_dropdown_option} onClick={onClickRename}>
                 <div className={classes.bar_dropdown_option_image}>
-                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none">
-                    <path
-                      d="M16.5234 0.96875L16.5234 18.5187"
-                      stroke="#000"
-                      strokeWidth="1.36885"
-                    />
-                    <path
-                      d="M18.3203 1.62206L14.7226 1.62207"
-                      stroke="#000"
-                      strokeWidth="1.36885"
-                    />
-                    <path
-                      d="M18.2969 18.1914L14.6992 18.1914"
-                      stroke="#000"
-                      strokeWidth="1.36885"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M14.6923 3.21973H2.00312H0.90625V4.3166V15.1697V16.2665H2.00312H14.6923V15.1697H2.00312V4.3166H14.6923V3.21973ZM16.2348 16.2665H16.2368V15.1697V4.3166V3.21973H16.2348V16.2665Z"
-                      fill="#000"
-                    />
-                    <path
-                      d="M6.5431 12.2837V9.79412C6.5431 9.61506 6.51383 9.46183 6.4553 9.33442C6.39676 9.20357 6.30551 9.10199 6.18154 9.02968C6.06102 8.95736 5.90435 8.92121 5.71151 8.92121C5.54623 8.92121 5.40333 8.95048 5.28281 9.00902C5.16229 9.06411 5.06932 9.14503 5.00389 9.25178C4.93846 9.35508 4.90575 9.47732 4.90575 9.6185H3.41819C3.41819 9.38091 3.47329 9.15536 3.58348 8.94187C3.69367 8.72838 3.85378 8.54071 4.06383 8.37887C4.27388 8.21358 4.52353 8.08446 4.81278 7.99148C5.10547 7.89851 5.4326 7.85202 5.79416 7.85202C6.22803 7.85202 6.61369 7.92434 6.95115 8.06896C7.2886 8.21358 7.55375 8.43052 7.74658 8.71977C7.94286 9.00902 8.04099 9.37058 8.04099 9.80445V12.1959C8.04099 12.5024 8.05993 12.7537 8.09781 12.95C8.13569 13.1429 8.19078 13.3116 8.26309 13.4562V13.544H6.76004C6.68773 13.3925 6.63263 13.2031 6.59475 12.9758C6.56032 12.7451 6.5431 12.5144 6.5431 12.2837ZM6.73938 10.1402L6.74971 10.9821H5.91812C5.72184 10.9821 5.55139 11.0045 5.40677 11.0492C5.26215 11.094 5.14335 11.1577 5.05038 11.2404C4.9574 11.3196 4.88854 11.4125 4.84377 11.5193C4.80245 11.626 4.78179 11.7431 4.78179 11.8705C4.78179 11.9979 4.81106 12.1133 4.8696 12.2166C4.92813 12.3164 5.0125 12.3956 5.12269 12.4542C5.23288 12.5093 5.36201 12.5368 5.51007 12.5368C5.7339 12.5368 5.92845 12.492 6.09373 12.4025C6.25902 12.313 6.38643 12.2028 6.47596 12.0719C6.56893 11.9411 6.61714 11.8171 6.62058 11.7001L7.01313 12.3302C6.95804 12.4714 6.88228 12.6177 6.78586 12.7692C6.69289 12.9208 6.57409 13.0637 6.42947 13.1979C6.28485 13.3288 6.11095 13.4373 5.90779 13.5234C5.70463 13.606 5.46359 13.6473 5.18467 13.6473C4.83 13.6473 4.50804 13.5767 4.21879 13.4355C3.93298 13.2909 3.70572 13.0929 3.53699 12.8416C3.3717 12.5867 3.28906 12.2975 3.28906 11.9738C3.28906 11.6811 3.34416 11.4211 3.45435 11.1939C3.56454 10.9666 3.72638 10.7755 3.93987 10.6205C4.15681 10.4621 4.42712 10.3433 4.7508 10.2641C5.07448 10.1815 5.44981 10.1402 5.8768 10.1402H6.73938Z"
-                      fill="#000"
-                    />
-                    <path
-                      d="M9.18766 5.61035H10.6752V12.2631L10.5254 13.544H9.18766V5.61035ZM14.2133 10.6929V10.8013C14.2133 11.218 14.1686 11.6002 14.079 11.948C13.993 12.2958 13.8587 12.5971 13.6762 12.8519C13.4937 13.1033 13.2664 13.2995 12.9944 13.4407C12.7258 13.5784 12.409 13.6473 12.044 13.6473C11.7031 13.6473 11.4069 13.5784 11.1556 13.4407C10.9076 13.303 10.6993 13.1084 10.5306 12.857C10.3619 12.6057 10.2258 12.3113 10.1225 11.9738C10.0192 11.6364 9.94177 11.2679 9.89012 10.8685V10.6309C9.94177 10.2314 10.0192 9.86299 10.1225 9.52553C10.2258 9.18807 10.3619 8.89366 10.5306 8.64229C10.6993 8.39092 10.9076 8.19637 11.1556 8.05863C11.4035 7.92089 11.6962 7.85202 12.0336 7.85202C12.4021 7.85202 12.7223 7.92261 12.9944 8.06379C13.2698 8.20153 13.4971 8.39781 13.6762 8.65262C13.8587 8.90399 13.993 9.20357 14.079 9.55136C14.1686 9.8957 14.2133 10.2762 14.2133 10.6929ZM12.7258 10.8013V10.6929C12.7258 10.4656 12.7086 10.2521 12.6741 10.0524C12.6431 9.84921 12.588 9.67188 12.5088 9.52036C12.4296 9.36541 12.3212 9.24317 12.1834 9.15364C12.0491 9.06411 11.8753 9.01935 11.6618 9.01935C11.4586 9.01935 11.2864 9.05378 11.1452 9.12265C11.0041 9.19152 10.887 9.28793 10.794 9.4119C10.7045 9.53586 10.6373 9.68393 10.5926 9.8561C10.5478 10.0248 10.5203 10.2108 10.5099 10.4139V11.0906C10.5203 11.3626 10.565 11.6036 10.6442 11.8137C10.7269 12.0203 10.8508 12.1839 11.0161 12.3044C11.1848 12.4215 11.4035 12.48 11.6721 12.48C11.8821 12.48 12.056 12.4387 12.1938 12.356C12.3315 12.2734 12.4383 12.1563 12.514 12.0048C12.5932 11.8533 12.6483 11.676 12.6793 11.4728C12.7103 11.2662 12.7258 11.0424 12.7258 10.8013Z"
-                      fill="#000"
-                    />
-                  </svg>
+                  <IconForms size={14} color="#000" />
                 </div>
                 {translation['BUTTON_RENAME_SCENE']}
               </div>
@@ -873,24 +817,7 @@ const Projects = (props) => {
               ) : (
                 <div className={classes.bar_dropdown_option} onClick={onClickExport}>
                   <div className={classes.bar_dropdown_option_image}>
-                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none">
-                      <rect x="1.10938" y="13.4824" width="11.2354" height="1.12354" fill="#000" />
-                      <rect x="6.16406" width="1.12354" height="11.2354" fill="#000" />
-                      <rect
-                        x="12.1953"
-                        y="4.72705"
-                        width="1.12354"
-                        height="8.52229"
-                        transform="rotate(45 12.1953 4.72705)"
-                        fill="#000"
-                      />
-                      <rect
-                        width="1.12354"
-                        height="8.79458"
-                        transform="matrix(-0.707107 0.707107 0.707107 0.707107 1.34375 4.72705)"
-                        fill="#000"
-                      />
-                    </svg>
+                    <IconDownload size={14} color="#000" />
                   </div>
                   {translation['EXPORT_PROJECT_BUTTON']}
                 </div>
@@ -1048,20 +975,7 @@ const SaveButton = (props) => {
           parentRef={hoverButtonSave}
           hoverTextPositionX={'left'}
         >
-          <svg
-            width="13"
-            className={classes.bar_btn_svg}
-            height="13"
-            viewBox="0 0 13 13"
-            fill="none"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M10.5 1.00006L10 1.00006V4.00006V5.00006L3 5.00006V4.00006V1.00006H1L1 12.0001L12 12.0001L12 2.50006L10.5 1.00006ZM12.9999 2.00006H13V13.0001H12H1H0V5.67436e-05L1 5.63065e-05L11 5.67436e-05L11 0L13 2L12.9999 2.00006ZM9 4.00006V1.00006H8V3.00006H7V1.00006H4V4.00006H9ZM10 8.00006V7.00006L3 7.00006V8.00006H10ZM10 9.00006V10.0001H3V9.00006H10Z"
-              fill="#2A3435"
-            />
-          </svg>
+          <IconDeviceFloppy size={14} color="#2A3435" />
         </HoverComponent>
 
         {showTipSaveProject &&
@@ -1122,7 +1036,7 @@ const UndoRedoButtons = (props) => {
   const hoverButtonUndo = useRef(null);
   const hoverButtonRedo = useRef(null);
 
-  const onClickUndo = (e) => {
+  const onClickUndo = () => {
     if (!canUndo) return;
     if (planner.mih().state.name != 'stateMain') {
       if (!activeControlPanelData.isInControlPanel) {
@@ -1237,20 +1151,7 @@ const UndoRedoButtons = (props) => {
           parentRef={hoverButtonUndo}
           hoverTextPositionX={'left'}
         >
-          <svg
-            width="12"
-            height="15"
-            className={classes.bar_btn_svg}
-            viewBox="0 0 12 15"
-            fill="none"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M4.82163 0.827393L5.51949 1.50707L1.94819 5H12V6V14V15H4V14H11V6H1.87954L5.50886 9.49496L4.81643 10.1799L0.00680542 5.54833L0.0518246 5.5038L0.046056 5.49818L4.82163 0.827393Z"
-              fill="#2A3435"
-            />
-          </svg>
+          <IconArrowBackUp size={14} color="#2A3435" />
         </HoverComponent>
       </div>
       <div className={currentBtnClassRedo} ref={hoverButtonRedo} onClick={() => onClickRedo()}>
@@ -1259,27 +1160,14 @@ const UndoRedoButtons = (props) => {
           parentRef={hoverButtonRedo}
           hoverTextPositionX={'left'}
         >
-          <svg
-            width="12"
-            height="15"
-            className={classes.bar_btn_svg}
-            viewBox="0 0 12 15"
-            fill="none"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M7.17837 0.827393L6.48051 1.50707L10.0518 5H0V6V14V15H8V14H1V6H10.1205L6.49114 9.49496L7.18357 10.1799L11.9932 5.54833L11.9482 5.5038L11.9539 5.49818L7.17837 0.827393Z"
-              fill="#2A3435"
-            />
-          </svg>
+          <IconArrowForwardUp size={14} color="#2A3435" />
         </HoverComponent>
       </div>
     </div>
   );
 };
 
-const RealisticImageButton = (props) => {
+const RealisticImageButton = () => {
   const classes = useStyles();
 
   const dispatch = useDispatch();
@@ -1296,7 +1184,7 @@ const RealisticImageButton = (props) => {
 
   const hoverButtonRender = useRef(null);
 
-  const onClickRealImgBtn = (e) => {
+  const onClickRealImgBtn = () => {
     R2D.Viewers.saveCameraData();
     R2D.viewWalk.savePanoData({
       id: activePano.id,
@@ -1335,7 +1223,7 @@ const RealisticImageButton = (props) => {
     dispatch(removeQuickPanelAll());
 
     // GTM
-    window.dataLayer.push({ event: 'click_hd' });
+    window.dataLayer?.push({ event: 'click_hd' });
 
     dispatch(
       changeActiveControlPanelMode({
@@ -1352,26 +1240,13 @@ const RealisticImageButton = (props) => {
         parentRef={hoverButtonRender}
         hoverTextPositionX={'left'}
       >
-        <svg width="20" height="16" fill="none" viewBox="0 0 20 16">
-          <path
-            fill="#2A3435"
-            fillRule="evenodd"
-            d="M10.422 11.424a3.142 3.142 0 1 0 0-6.284 3.142 3.142 0 0 0 0 6.284Zm0 .99a4.132 4.132 0 1 0 0-8.265 4.132 4.132 0 0 0 0 8.265Z"
-            clipRule="evenodd"
-          />
-          <path
-            fill="#2A3435"
-            fillRule="evenodd"
-            d="M7.972.609h4.901l2.262 2h1.333a3.5 3.5 0 0 1 3.5 3.5v9.014H.878V6.109a3.5 3.5 0 0 1 3.5-3.5H5.71l2.261-2Zm.379 1-2.261 2H4.378a2.5 2.5 0 0 0-2.5 2.5v8.014h17.09V6.109a2.5 2.5 0 0 0-2.5-2.5h-1.712l-2.261-2H8.35Z"
-            clipRule="evenodd"
-          />
-        </svg>
+        <IconCamera size={14} color="#2A3435" />
       </HoverComponent>
     </div>
   );
 };
 
-const SendARequestButton = (props) => {
+const SendARequestButton = () => {
   const classes = useStyles();
 
   const dispatch = useDispatch();

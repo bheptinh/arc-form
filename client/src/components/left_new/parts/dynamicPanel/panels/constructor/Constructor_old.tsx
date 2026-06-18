@@ -3,6 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../initR2D';
 import {
   changeWallsHeight,
@@ -18,18 +19,9 @@ import {
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
-import ChangeSize from '../../components/ChangeSize';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import ChangeSize from '../../../../../common/ChangeSize';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planerConstructor: {
     position: 'absolute',
     height: '100%',

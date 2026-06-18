@@ -1,9 +1,12 @@
+import { IconX } from '@tabler/icons-react';
 import cx from 'classnames';
 import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguages } from '../../api/hooks/useLanguages';
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import {
   closeActivePopup,
@@ -16,9 +19,7 @@ import {
   selectUserProfileData,
   setProfileData,
 } from '../../redux/features/user/userSlice';
-import Checkbox from '../common/Checkbox';
-import { useTranslation } from '../../api/hooks/useTranslation';
-import { useLanguages } from '../../api/hooks/useLanguages';
+import Checkbox from '../../shared-components/inputs/checkbox';
 
 const useStyle = createUseStyles({
   done_popup_wrap: {
@@ -421,7 +422,7 @@ const BuyCredits = (props) => {
     setCurrentPage('order');
 
     // GTM
-    window.dataLayer.push({ event: 'order_credit' });
+    window.dataLayer?.push({ event: 'order_credit' });
   };
 
   function messageListener(event) {
@@ -471,7 +472,7 @@ const BuyCredits = (props) => {
         if (response.logged == true) {
           if (user.credits() != userData.credits) {
             // GTM
-            window.dataLayer.push({ event: 'buy_credit' });
+            window.dataLayer?.push({ event: 'buy_credit' });
 
             clearInterval(checkInterval);
             dispatch(
@@ -609,7 +610,7 @@ const BuyCredits = (props) => {
   const returnToMainBuyCreditsPopup = (e) => {
     if (currentPage == 'order') {
       // GTM
-      window.dataLayer.push({ event: 'cancel_order_credit' });
+      window.dataLayer?.push({ event: 'cancel_order_credit' });
     }
     setCurrentPage('');
     dispatch(setPopupData({ name: 'buyCredits', data: { iframe: '' } }));
@@ -688,7 +689,7 @@ const BuyCredits = (props) => {
     loader.load(url, null, 'POST', null, null, true);
 
     // GTM
-    window.dataLayer.push({ event: 'choice_credit' });
+    window.dataLayer?.push({ event: 'choice_credit' });
   }, []);
 
   const buyCreditsRef = useRef(null);
@@ -699,7 +700,7 @@ const BuyCredits = (props) => {
       setCurrentPage('order');
 
       // GTM
-      window.dataLayer.push({ event: 'order_credit' });
+      window.dataLayer?.push({ event: 'order_credit' });
     }
   }, [popupType]);
 
@@ -722,38 +723,7 @@ const BuyCredits = (props) => {
           {iframeSrc ? (
             <div className={classes.iframe_wrap}>
               <div className={classes.done_popup_close} onClick={returnToMainBuyCreditsPopup}>
-                <svg
-                  width="25"
-                  height="25"
-                  fill="none"
-                  viewBox="0 0 25 25"
-                  className={classes.done_popup_close_icon}
-                >
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <IconX size={24} color="#2F2F2F" className={classes.done_popup_close_icon} />
               </div>
 
               <iframe
@@ -768,38 +738,7 @@ const BuyCredits = (props) => {
           ) : (
             <div ref={buyCreditsRef} className={classes.done_popup_login_wrap}>
               <div className={classes.done_popup_close} onClick={onClickClosePopUp}>
-                <svg
-                  width="25"
-                  height="25"
-                  fill="none"
-                  viewBox="0 0 25 25"
-                  className={classes.done_popup_close_icon}
-                >
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <IconX size={24} color="#2F2F2F" className={classes.done_popup_close_icon} />
               </div>
               <div className={classes.done_popup_login_wr}>
                 <div className={classes.done_popup_top}>

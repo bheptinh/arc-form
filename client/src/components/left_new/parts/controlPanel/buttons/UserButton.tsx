@@ -1,7 +1,9 @@
+import { IconUser } from '@tabler/icons-react';
 import React, { useEffect, useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../initR2D';
 import { setActivePopup } from '../../../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../../../redux/features/quickPanels/quickPanelsSlice';
@@ -11,17 +13,8 @@ import {
   setProfileData,
 } from '../../../../../redux/features/user/userSlice';
 import HoverComponent from '../components/HoverComponent';
-import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   menu_dop_btn_wrap: {
     height: '28px',
     width: '30px',
@@ -370,24 +363,7 @@ const UserButton = (props) => {
                 : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }))
             }
           >
-            <svg
-              width="21"
-              height="15"
-              viewBox="0 0 21 15"
-              fill="none"
-              className={classes.menu_dop_btn_icon}
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M4.37699 3.54742L3.52441 4.37778L6.18025 6.97534L0.304688 6.97535L0.304688 8.28116L6.14801 8.28116L3.46065 10.869L4.30676 11.706L8.54004 7.62942L8.51178 7.60146L8.51689 7.59648L4.37699 3.54742Z"
-                fill="white"
-              />
-              <path
-                d="M20.1777 7.91529V13.9253C20.1777 14.3035 19.8978 14.6277 19.5162 14.6277C18.9915 14.6277 18.6973 14.3305 18.6973 13.9253L18.6971 9.77954C18.6971 9.50928 18.4936 9.26615 18.2136 9.26615C17.9591 9.26615 17.8875 9.48232 17.8875 9.77954V14.4186C17.8875 14.4996 17.8366 14.5537 17.7603 14.5537H12.595C12.5187 14.5537 12.4678 14.4996 12.4678 14.4186V9.77954C12.4678 9.50928 12.4216 9.26615 12.1416 9.26615C11.8871 9.26615 11.6582 9.48232 11.6582 9.77954V13.9253C11.6582 14.3035 11.5155 14.6277 10.8392 14.6277C10.483 14.6277 10.1777 14.3305 10.1777 13.9253V7.91529C10.1777 6.86158 10.9921 5.9969 11.9844 5.9969H18.3456C19.3633 5.9969 20.1776 6.86158 20.1776 7.91529H20.1777ZM15.1906 5.66581C16.6154 5.66581 17.786 4.45004 17.786 2.90991C17.786 1.39694 16.6154 0.181122 15.1906 0.181122C13.7657 0.181122 12.5952 1.39689 12.5952 2.93702C12.5952 4.44999 13.7657 5.66581 15.1906 5.66581Z"
-                fill="white"
-              />
-            </svg>
+            <IconUser size={16} className={classes.menu_dop_btn_icon} />
           </div>
         </HoverComponent>
       </div>

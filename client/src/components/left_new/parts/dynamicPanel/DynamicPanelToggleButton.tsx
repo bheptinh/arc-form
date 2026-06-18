@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { IconChevronCompactLeft, IconChevronCompactRight } from '@tabler/icons-react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -34,8 +34,6 @@ const useStyle = createUseStyles({
   },
   dynamicPanelHideBtnArrow: {
     position: 'absolute',
-    width: 7,
-    height: 12,
     top: 0,
     left: 0,
     right: 0,
@@ -75,11 +73,14 @@ const DynamicPanelToggleButton = (props) => {
     dispatch(updateDynamicPanelStatus(!dynamicPanelStatus));
   };
 
+  const ChevronIcon = dynamicPanelStatus ? IconChevronCompactLeft : IconChevronCompactRight;
+
   return (
     <div
       className={classes.dynamicPanelHideBtn + ' dynamicPanelHideBtn'}
       style={!dynamicPanelStatus ? { transform: 'translate(-3px, -50%)' } : {}}
     >
+      {/* TODO: Replace icon with css block */}
       <svg
         className={classes.dynamicPanelHideBtnBg}
         width="27"
@@ -95,17 +96,7 @@ const DynamicPanelToggleButton = (props) => {
         />
       </svg>
 
-      <svg
-        className={classes.dynamicPanelHideBtnArrow}
-        width="8"
-        height="13"
-        fill="none"
-        viewBox="0 0 8 13"
-        style={!dynamicPanelStatus ? { transform: 'rotate(180deg)' } : null}
-      >
-        <path fill="#2A3435" d="m7.969 12.023-.791.791-6-6 .79-.792z" />
-        <path fill="#2A3435" d="M7.969 1.218 7.177.427.985 6.619l.791.791z" />
-      </svg>
+      <ChevronIcon className={classes.dynamicPanelHideBtnArrow} size={18} color="#2A3435" />
     </div>
   );
 };

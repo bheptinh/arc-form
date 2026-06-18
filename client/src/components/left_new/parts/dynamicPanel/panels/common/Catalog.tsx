@@ -1,10 +1,12 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
+import { IconX } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
   controlPanelHistoryAdd,
@@ -19,17 +21,8 @@ import {
   selectUserProjectActive,
 } from '../../../../../../redux/features/user/userSlice';
 import Navigation from '../../navigation/Navigation';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -470,38 +463,11 @@ const Catalog = (props) => {
                     className={classes.planner_catalog_pro_plashka_close}
                     onClick={closeProPlashka}
                   >
-                    <svg
-                      width="12"
-                      height="12"
-                      fill="none"
-                      viewBox="0 0 25 25"
+                    <IconX
+                      size={24}
+                      color="#2F2F2F"
                       className={classes.planner_catalog_pro_plashka_close_icon}
-                    >
-                      <path
-                        fill="#2F2F2F"
-                        fillRule="evenodd"
-                        d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                        clipRule="evenodd"
-                      ></path>
-                      <path
-                        fill="#2F2F2F"
-                        fillRule="evenodd"
-                        d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                        clipRule="evenodd"
-                      ></path>
-                      <path
-                        fill="#2F2F2F"
-                        fillRule="evenodd"
-                        d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                        clipRule="evenodd"
-                      ></path>
-                      <path
-                        fill="#2F2F2F"
-                        fillRule="evenodd"
-                        d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
+                    />
                   </div>
                   {translation['TEXT_MODELS_FOR_THE_SECTION']} "{lastHistoryElem.name}"{' '}
                   {translation['TEXT_AVAILABLE_ONLE_WITH_SUBSCRIPTION']}

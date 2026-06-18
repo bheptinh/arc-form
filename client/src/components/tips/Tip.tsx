@@ -3,12 +3,12 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import { closeActivePopup, setActivePopup } from '../../redux/features/popups/popupsSlice';
 import { hideTip } from '../../redux/features/tips/tipsSlice';
 import { selectUserProfileData, setProfileData } from '../../redux/features/user/userSlice';
-import Checkbox from '../common/Checkbox';
-import { useTranslation } from '../../api/hooks/useTranslation';
+import Checkbox from '../../shared-components/inputs/checkbox';
 
 const useStyle = createUseStyles({
   tip: {
@@ -220,6 +220,7 @@ const TipBody = (props) => {
     <div>
       {props.arrow && props.arrow.position && props.arrow.direction ? (
         props.arrow.size && props.arrow.size == 'small' ? (
+          // TODO: Replace long arrow icon
           <svg
             width="40"
             height="59"
@@ -239,6 +240,7 @@ const TipBody = (props) => {
             />
           </svg>
         ) : (
+          // TODO: Replace long arrow icon
           <svg
             width="180"
             height="65"

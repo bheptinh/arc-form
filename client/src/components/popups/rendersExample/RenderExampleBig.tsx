@@ -1,9 +1,13 @@
-import React, { useEffect, useRef, useState } from 'react';
+// FIXME: This component contains a duplicated code - RenderExampleSmall.tsx, RenderExample360.tsx and RenderExampleBig.tsx
+
+import { IconFile, IconFileHorizontal, IconX } from '@tabler/icons-react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Document, Page } from 'react-pdf';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner, user } from '../../../initR2D';
 import { closeActivePopup } from '../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
@@ -11,25 +15,10 @@ import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
+import Checkbox from '../../../shared-components/inputs/checkbox';
 import { Accordion } from '../../common/Accordion';
-import Checkbox from '../../common/Checkbox';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -647,38 +636,7 @@ const Export2DProjectPopup = (props) => {
       <div className={classes.planner_popup_wr}>
         <div className={classes.planner_popup_cont}>
           <div className={classes.planner_popup_close} onClick={onClickClosePopUp}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
 
           <div className={classes.planner_popup_cont_left}>
@@ -701,14 +659,7 @@ const Export2DProjectPopup = (props) => {
                           }
                           onClick={(e) => changeOrientation(e, 'portrait')}
                         >
-                          <svg width="16" height="20" viewBox="0 0 16 20" fill="none">
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M15.4104 4.97317C15.383 4.92145 15.3493 4.87328 15.3102 4.82973L15.2982 4.81593L15.2856 4.80333L15.2796 4.79672L11.0785 0.595637L11.0647 0.582434L11.0503 0.56923L11.0455 0.565029C10.9087 0.442737 10.7315 0.375397 10.548 0.37598H0.945506C0.531399 0.37598 0.195312 0.712067 0.195312 1.12617V18.5307C0.195312 18.9448 0.531399 19.2809 0.945506 19.2809H14.7491C15.1632 19.2809 15.4993 18.9448 15.4993 18.5307V5.32726C15.4993 5.19943 15.4675 5.0788 15.4104 4.97317ZM9.7978 5.32726C9.7978 5.74137 10.1339 6.07746 10.548 6.07746H13.9989V17.7805H1.6957V1.87637H9.7978V5.32726Z"
-                              fill="#2A3435"
-                            />
-                          </svg>
+                          <IconFile size={20} color="#2A3435" />
                         </div>
                         <div
                           className={
@@ -720,14 +671,7 @@ const Export2DProjectPopup = (props) => {
                           }
                           onClick={(e) => changeOrientation(e, 'landscape')}
                         >
-                          <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
-                            <path
-                              fillRule="evenodd"
-                              clipRule="evenodd"
-                              d="M14.4184 0.265335C14.4701 0.292774 14.5183 0.326432 14.5619 0.365562L14.5757 0.377564L14.5883 0.390168L14.5949 0.396168L18.796 4.59725L18.8092 4.61106L18.8224 4.62546L18.8266 4.63026C18.9489 4.76707 19.0162 4.94429 19.0156 5.12779L19.0156 14.7303C19.0156 15.1444 18.6795 15.4805 18.2654 15.4805L0.860924 15.4805C0.446817 15.4805 0.110731 15.1444 0.110731 14.7303L0.11073 0.926706C0.11073 0.512599 0.446817 0.176513 0.860923 0.176513L14.0643 0.176512C14.1922 0.176512 14.3128 0.208321 14.4184 0.265335ZM14.0643 5.87799C13.6502 5.87799 13.3141 5.5419 13.3141 5.12779L13.3141 1.6769L1.61112 1.6769L1.61112 13.9801L17.5152 13.9801L17.5152 5.87799L14.0643 5.87799Z"
-                              fill="#2A3435"
-                            />
-                          </svg>
+                          <IconFileHorizontal size={20} color="#2A3435" />
                         </div>
                       </div>
                     </div>
@@ -743,8 +687,9 @@ const Export2DProjectPopup = (props) => {
                               ? classes.planner_popup_orientation_button_active
                               : '')
                           }
-                          onClick={(e) => changeViewMode('view2d')}
+                          onClick={() => changeViewMode('view2d')}
                         >
+                          {/* TODO: Replace icon color cube */}
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path
                               opacity="0.99"
@@ -777,8 +722,9 @@ const Export2DProjectPopup = (props) => {
                               ? classes.planner_popup_orientation_button_active
                               : '')
                           }
-                          onClick={(e) => changeViewMode('constr')}
+                          onClick={() => changeViewMode('constr')}
                         >
+                          {/* TODO: Replace icon cube */}
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path
                               fillRule="evenodd"
@@ -798,36 +744,8 @@ const Export2DProjectPopup = (props) => {
 
                       <div className={classes.planner_popup_acc_type_accordion}>
                         <Accordion
-                          customTitle={
-                            <div
-                              className={classes.planner_popup_acc_type_active}
-                              data-toggle="true"
-                            >
-                              <p className={classes.planner_popup_acc_type_active_left}>
-                                {sizeTypes[sizeTypeCurrent].type}
-                              </p>
-                              <div className={classes.planner_popup_acc_type_active_info}>
-                                <p className={classes.planner_popup_acc_type_active_right}>
-                                  {sizeTypes[sizeTypeCurrent].size}
-                                </p>
-                                <svg
-                                  width="15"
-                                  height="8"
-                                  viewBox="0 0 15 8"
-                                  fill="none"
-                                  className={classes.dropdown_arrow + ' ' + 'dropdown_arrow'}
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    d="M8.34954 6.68041L7.72708 7.30725L7.72269 7.30288L7.71927 7.30627L7.23596 6.81956L0.722721 0.351854L2.90449 0.351854L7.72269 5.18586L12.5419 0.350878L14.7236 0.350878L8.34954 6.68041Z"
-                                    fill="black"
-                                  ></path>
-                                </svg>
-                              </div>
-                            </div>
-                          }
-                          isOpened={false}
+                          title={sizeTypes[sizeTypeCurrent].type}
+                          subTitle={sizeTypes[sizeTypeCurrent].size}
                         >
                           <div className={classes.planner_popup_acc_type_option_wrap}>
                             {sizeTypesMain}
@@ -842,38 +760,12 @@ const Export2DProjectPopup = (props) => {
 
                       <div className={classes.planner_popup_acc_type_accordion}>
                         <Accordion
-                          customTitle={
-                            <div
-                              className={classes.planner_popup_acc_type_active}
-                              data-toggle="true"
-                            >
-                              <p className={classes.planner_popup_acc_type_active_left}>
-                                {scaleTypeCurrent == indexFit
-                                  ? translation['EXPORT_PROJECT_FIT_THE_PAGE']
-                                  : scaleTypes[scaleTypeCurrent].type}
-                              </p>
-                              <div className={classes.planner_popup_acc_type_active_info}>
-                                <p className={classes.planner_popup_acc_type_active_right}>
-                                  {scaleTypes[scaleTypeCurrent].scale}
-                                </p>
-                                <svg
-                                  width="15"
-                                  height="8"
-                                  viewBox="0 0 15 8"
-                                  fill="none"
-                                  className={classes.dropdown_arrow + ' ' + 'dropdown_arrow'}
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    d="M8.34954 6.68041L7.72708 7.30725L7.72269 7.30288L7.71927 7.30627L7.23596 6.81956L0.722721 0.351854L2.90449 0.351854L7.72269 5.18586L12.5419 0.350878L14.7236 0.350878L8.34954 6.68041Z"
-                                    fill="black"
-                                  ></path>
-                                </svg>
-                              </div>
-                            </div>
+                          title={
+                            scaleTypeCurrent == indexFit
+                              ? translation['EXPORT_PROJECT_FIT_THE_PAGE']
+                              : scaleTypes[scaleTypeCurrent].type
                           }
-                          isOpened={false}
+                          subTitle={scaleTypes[scaleTypeCurrent].scale}
                         >
                           <div className={classes.planner_popup_acc_type_option_wrap}>
                             {scaleTypesMain}
@@ -943,16 +835,6 @@ const Export2DProjectPopup = (props) => {
                 }
                 onClick={onClickClosePopUp}
               >
-                <svg width="21" height="22" viewBox="0 0 21 22" fill="none">
-                  <path
-                    d="M19.799 0.600586L20.5061 1.30769L0.707107 21.1067L0 20.3996L19.799 0.600586Z"
-                    fill="black"
-                  />
-                  <path
-                    d="M0.799112 0.600586L0.0920048 1.30769L19.891 21.1067L20.5981 20.3996L0.799112 0.600586Z"
-                    fill="black"
-                  />
-                </svg>
                 <p>{translation['UPLOAD_MODEL_TEXT_CANCEL']}</p>
               </div>
               <div
@@ -963,9 +845,6 @@ const Export2DProjectPopup = (props) => {
                 }
                 onClick={onSavePdf}
               >
-                <svg width="22" height="18" viewBox="0 0 22 18" fill="none">
-                  <path d="M0.5 9.5L7.5 16.5L21.5 0.5" stroke="#2A3435" />
-                </svg>
                 <p>{translation['UPLOAD_MODEL_TEXT_SAVE']}</p>
               </div>
             </div>

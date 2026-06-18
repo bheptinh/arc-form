@@ -1,14 +1,15 @@
-import React, { useRef } from 'react';
+import { IconArrowLeft } from '@tabler/icons-react';
+import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import {
   controlPanelHistoryRemove,
   controlPanelUpdateBreadCrumbs,
   selectActiveControlPanelModeData,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_catalog_btn: {
@@ -52,9 +53,10 @@ const Prev = (props) => {
 
   const onPrevClick = () => {
     dispatch(controlPanelHistoryRemove());
-    currentStateBreadCrumbs &&
-      currentStateBreadCrumbs.length > 0 &&
+
+    if (currentStateBreadCrumbs && currentStateBreadCrumbs.length > 0) {
       dispatch(controlPanelUpdateBreadCrumbs({ data: null, updateType: 'remove' }));
+    }
   };
 
   const hoverButton = useRef(null);
@@ -62,15 +64,7 @@ const Prev = (props) => {
   return (
     <div className={classes.planner_catalog_btn} ref={hoverButton} onMouseUp={onPrevClick}>
       <HoverComponent hoverText={translation['HINT_BUTTON_BACK']} parentRef={hoverButton}>
-        <svg width="13" height="15" viewBox="0 0 13 15" fill="none">
-          <path
-            opacity="0.99"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M7.71246 0L8.41032 0.679673L1.94819 7H13V8H1.87968L8.4375 14.3151L7.74508 15L0.702613 8.21825L0.697857 8.2229L0 7.54323L7.71246 0Z"
-            fill="#2f2f2f"
-          />
-        </svg>
+        <IconArrowLeft size={16} color="#2f2f2f" />
       </HoverComponent>
     </div>
   );

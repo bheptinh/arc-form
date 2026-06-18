@@ -1,3 +1,4 @@
+import { IconHeart } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -58,12 +59,11 @@ const useStyle = createUseStyles({
     alignItems: 'center',
     borderRadius: '50%',
     justifyContent: 'center',
-    '& path': {
+    '& svg': {
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {
-      '& path': {
-        fill: '#64BCF0',
+      '& svg': {
         stroke: '#64BCF0',
       },
     },
@@ -78,13 +78,6 @@ const useStyle = createUseStyles({
       '@media screen and (max-width: 950px)': {
         maxWidth: 150,
       },
-    },
-  },
-  wr_top_favorites: {},
-  wr_top_favorites_active: {
-    '& path': {
-      fill: '#64BCF0',
-      stroke: '#64BCF0',
     },
   },
   title: {
@@ -478,9 +471,7 @@ const Material = () => {
     clearTimeout(dragTimeout);
     document.removeEventListener('mousemove', onObjectMove);
     document.removeEventListener('mouseup', onObjectMouseUp);
-    document.querySelector('.product_hover')
-      ? document.querySelector('.product_hover').remove()
-      : null;
+    document.querySelector('.product_hover')?.remove();
 
     if (Date.now() - timer > 100) {
       if (e.clientX < R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels())
@@ -512,23 +503,11 @@ const Material = () => {
         <div className={classes.wr}>
           <div className={classes.wr_top}>
             <div className={classes.wr_top_favorites_main}>
-              <svg
-                width="17"
-                height="16"
-                viewBox="0 0 17 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className={
-                  isInFavorites ? classes.wr_top_favorites_active : classes.wr_top_favorites
-                }
+              <IconHeart
+                size={16}
                 onClick={updateFavorites}
-              >
-                <path
-                  d="M8.5 0.985748L10.9584 5.16272C11.0294 5.28333 11.1477 5.36868 11.2845 5.398L16.0487 6.41895L12.8039 10.0127C12.7091 10.1177 12.6632 10.258 12.6776 10.3987L13.1688 15.1996L8.69987 13.2508C8.57242 13.1952 8.42758 13.1952 8.30013 13.2508L3.83121 15.1996L4.3224 10.3987C4.3368 10.258 4.29091 10.1177 4.19611 10.0127L0.951289 6.41895L5.71546 5.398C5.85231 5.36868 5.97061 5.28333 6.0416 5.16272L8.5 0.985748Z"
-                  stroke="#C8C8C8"
-                  strokeLinejoin="round"
-                />
-              </svg>
+                color={isInFavorites ? '#64BCF0' : '#C8C8C8'}
+              />
             </div>
 
             <div className={classes.wr_top_image}>

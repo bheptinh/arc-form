@@ -1,7 +1,9 @@
+import { IconFileSymlink, IconTrash } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../initR2D';
 import {
   changeActivePano,
@@ -13,7 +15,6 @@ import {
 import { selectActiveControlPanelModeData } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import Navigation from '../../navigation/Navigation';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   plannerRenderCont: {
@@ -287,7 +288,7 @@ const CameraViews = () => {
     dispatch(changeActivePano(cameraView.config.pano));
   };
 
-  const updateCameraViews = async (e) => {
+  const updateCameraViews = async () => {
     const views = await user.cameraViews_load(R2D.controller.getProjectId());
     if (!views || views?.type == 'error') setCameraViews([]);
     else setCameraViews(views);
@@ -311,26 +312,10 @@ const CameraViews = () => {
               <div className={classes.plannerRenderWrap_views_buttons}>
                 <div
                   className={classes.plannerRenderWrap_views_btn}
-                  onClick={(e) => onApplyCamera(item.id)}
+                  onClick={() => onApplyCamera(item.id)}
                 >
-                  <svg
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M2.38497e-07 25L2.38498e-07 5L2 5L2 25L2.38497e-07 25Z" fill="white" />
-                    <path d="M21 25L21 14L23 14L23 25L21 25Z" fill="white" />
-                    <path d="M21 25L2 25L2 23L21 23L21 25Z" fill="white" />
-                    <path d="M6 7L2 7L2 5L6 5L6 7Z" fill="white" />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M16.963 1.8311L18.066 0.756836L23.4219 5.99521L23.4147 6.00226L23.4512 6.03835L17.9745 11.3123L16.8798 10.2295L20.2336 6.99994L13.004 6.99994L13.004 15.9999L11.004 15.9999L11.004 6.99994L11.004 5.99995L11.004 4.99994L20.203 4.99994L16.963 1.8311Z"
-                      fill="white"
-                    />
-                  </svg>
+                  <IconFileSymlink size={25} color="#fff" />
+
                   <div className={classes.plannerRenderWrap_views_btn_text}>
                     {translation['BUTTON_OPEN_PLAN']}
                   </div>
@@ -339,53 +324,7 @@ const CameraViews = () => {
                   className={classes.plannerRenderWrap_views_btn}
                   onClick={(e) => onDeleteCameraView(item.id)}
                 >
-                  <svg
-                    width="17"
-                    height="26"
-                    viewBox="0 0 17 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      opacity="0.99"
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M16.2308 7H1V26H16.2308V7ZM13.4608 10.1667H12.0762V22.8333H13.4608V10.1667ZM7.92188 10.1667H9.30649V22.8333H7.92188V10.1667ZM5.15415 10.1667H3.76953V22.8333H5.15415V10.1667Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M0 5C0 3.34315 1.34315 2 3 2H14C15.6569 2 17 3.34315 17 5H0Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M0 5C0 3.34315 1.34315 2 3 2H14C15.6569 2 17 3.34315 17 5H0Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M0 5C0 3.34315 1.34315 2 3 2H14C15.6569 2 17 3.34315 17 5H0Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M0 5C0 3.34315 1.34315 2 3 2H14C15.6569 2 17 3.34315 17 5H0Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M5 3C5 1.34315 6.34315 0 8 0H9C10.6569 0 12 1.34315 12 3H5Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M5 3C5 1.34315 6.34315 0 8 0H9C10.6569 0 12 1.34315 12 3H5Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M5 3C5 1.34315 6.34315 0 8 0H9C10.6569 0 12 1.34315 12 3H5Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M5 3C5 1.34315 6.34315 0 8 0H9C10.6569 0 12 1.34315 12 3H5Z"
-                      fill="white"
-                    />
-                  </svg>
+                  <IconTrash size={25} color="#fff" />
                   <div className={classes.plannerRenderWrap_views_btn_text}>
                     {translation['BUTTON_DELETE_PLAN']}
                   </div>

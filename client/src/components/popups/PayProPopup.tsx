@@ -1,7 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { IconX } from '@tabler/icons-react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguages } from '../../api/hooks/useLanguages';
 import { planner, user } from '../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../redux/features/common/commonSlice';
 import {
@@ -17,23 +19,8 @@ import {
   setProjectPlan,
 } from '../../redux/features/user/userSlice';
 import { createProjectUrl } from '../../utils/UrlHelper';
-import { useLanguages } from '../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -183,7 +170,7 @@ const PayProPopup = (props) => {
         const gtmEventType = `click_${dataObj.plan}_${dataObj.time}`;
 
         // GTM
-        window.dataLayer.push({ event: gtmEventType });
+        window.dataLayer?.push({ event: gtmEventType });
 
         let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_PAY_FORM);
         const selectedPlanId =
@@ -200,7 +187,7 @@ const PayProPopup = (props) => {
           dispatch(setPopupData({ name: 'payPro', data: url }));
 
           // GTM
-          window.dataLayer.push({ event: 'order' });
+          window.dataLayer?.push({ event: 'order' });
 
           setCurrentPage('order');
         } else {
@@ -299,7 +286,7 @@ const PayProPopup = (props) => {
           const neededProject = response.data.items.find((i) => i.hash == boughtProjectHash);
           if (neededProject && neededProject.userPlan == plan) {
             // GTM
-            window.dataLayer.push({ event: 'buy' });
+            window.dataLayer?.push({ event: 'buy' });
             clearInterval(checkInterval);
             if (needToSaveToStorage) {
               planner.scene.saveDataToStorageToApplyItInProject();
@@ -446,7 +433,7 @@ const PayProPopup = (props) => {
             else dispatch(setProfileData(response));
 
             // GTM
-            window.dataLayer.push({ event: 'buy' });
+            window.dataLayer?.push({ event: 'buy' });
           } else {
             checkNum += 1;
             if (checkNum > 5) {
@@ -511,7 +498,7 @@ const PayProPopup = (props) => {
   const closePayPro = (e) => {
     if (currentPage == 'order') {
       // GTM
-      window.dataLayer.push({ event: 'cancel_order' });
+      window.dataLayer?.push({ event: 'cancel_order' });
     }
     setAnimPopupClass(false);
     setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
@@ -555,17 +542,7 @@ const PayProPopup = (props) => {
 
           {closeButtonActive ? (
             <div className={classes.planner_popup_close} id="js_close_popup" onClick={closePayPro}>
-              <svg
-                className={classes.planner_popup_close_icon}
-                viewBox="0 0 16.03 16.02"
-                width="24px"
-                height="24px"
-              >
-                <path
-                  fill="#444444"
-                  d="M1,0a1,1,0,0,0-.7,1.72L6.6,8,.31,14.3a1,1,0,0,0,1.39,1.44l0,0L8,9.42l6.29,6.29a1,1,0,1,0,1.44-1.39l0,0L9.43,8l6.29-6.29A1,1,0,1,0,14.31.3L8,6.6,1.72.3A1,1,0,0,0,1,0Z"
-                />
-              </svg>
+              <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
             </div>
           ) : null}
         </div>

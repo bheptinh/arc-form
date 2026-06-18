@@ -1,31 +1,19 @@
+import { IconX } from '@tabler/icons-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
+import TextInput from '../../shared-components/inputs/text-input';
 import { createProjectUrl } from '../../utils/UrlHelper';
-import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -266,11 +254,6 @@ const UpdatePassword = (props) => {
 
   const classes = useStyle();
   const [animPopupClass, setAnimPopupClass] = useState(false);
-  const [iconPasswordStatus, setIconPasswordStatus] = useState({
-    old_password: false,
-    new_password: false,
-    verify_password: false,
-  });
 
   const inputSubmit = useRef(null);
 
@@ -330,14 +313,6 @@ const UpdatePassword = (props) => {
     }
   };
 
-  const onRadioPasswordShowStatus = (type) => {
-    setIconPasswordStatus((prev) => {
-      const newState = { ...prev };
-      newState[type] = !newState[type];
-      return newState;
-    });
-  };
-
   const onChangeInput = (e) => {
     if (e.target.value == 0) {
       inputSubmit.current.setAttribute('disabled', '');
@@ -348,7 +323,7 @@ const UpdatePassword = (props) => {
     }
   };
 
-  const onClickClosePopUp = (e) => {
+  const onClickClosePopUp = () => {
     setAnimPopupClass(false);
     setTimeout(() => dispatch(closeActivePopup({ name: 'updatePassword' })), 500);
   };
@@ -375,269 +350,39 @@ const UpdatePassword = (props) => {
               <h2 className={classes.planner_popup_title}>{translation['UPDATE_PASSWORD']}</h2>
 
               <div className={classes.planner_popup_close} onClick={onClickClosePopUp}>
-                <svg
-                  width="25"
-                  height="25"
-                  fill="none"
-                  viewBox="0 0 25 25"
-                  className={classes.planner_popup_close_icon}
-                >
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                    clipRule="evenodd"
-                  />
-                  <path
-                    fill="#2F2F2F"
-                    fillRule="evenodd"
-                    d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+                <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
               </div>
             </div>
             <div className={classes.planner_popup_profile_bottom}>
               <form onSubmit={onSubmit}>
                 {type == 'update' ? (
-                  <fieldset>
-                    <div className={classes.fieldset_left}>
-                      <div className={classes.input_text}>{translation['OLD_PASSWORD']}</div>
-                    </div>
-                    <div className={classes.fieldset_right}>
-                      <div className={classes.input_wr}>
-                        <input
-                          className={classes.formInput}
-                          onChange={onChangeInput}
-                          autoComplete="off"
-                          type={iconPasswordStatus['old_password'] ? 'text' : 'password'}
-                          name="old_password"
-                          placeholder=""
-                        />
-                      </div>
-                      <div
-                        className={classes.input_pass_btn}
-                        onClick={(e) => onRadioPasswordShowStatus('old_password')}
-                      >
-                        {iconPasswordStatus['old_password'] ? (
-                          <svg
-                            width="16"
-                            height="10"
-                            viewBox="0 0 16 10"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M7.60645 0.678711C10.8059 0.678711 13.4587 2.41594 14.4785 4.75391C13.4588 7.09204 10.8061 8.8291 7.60645 8.8291C4.40666 8.82906 1.75299 7.09223 0.733398 4.75391C1.7531 2.41575 4.40681 0.678755 7.60645 0.678711Z"
-                              stroke="#2F2F2F"
-                              strokeWidth="1.35832"
-                              strokeMiterlimit="10"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                            <path
-                              d="M7.63486 7.13112C8.94767 7.13112 10.0119 6.06688 10.0119 4.75407C10.0119 3.44126 8.94767 2.37701 7.63486 2.37701C6.32205 2.37701 5.25781 3.44126 5.25781 4.75407C5.25781 6.06688 6.32205 7.13112 7.63486 7.13112Z"
-                              fill="#2F2F2F"
-                            />
-                          </svg>
-                        ) : (
-                          <svg
-                            width="16"
-                            height="7"
-                            viewBox="0 0 16 7"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g opacity="0.5">
-                              <path
-                                d="M0.0367804 0C1.08883 2.75949 4.09401 4.7541 7.64335 4.7541C11.1927 4.7541 14.1979 2.75949 15.2499 0H13.7655C12.7824 1.92685 10.4792 3.39579 7.64335 3.39579C4.80745 3.39579 2.50426 1.92685 1.52121 0H0.0367804Z"
-                                fill="#2F2F2F"
-                              />
-                              <path
-                                d="M1.66726 1.35867L2.74853 2.18079L1.08127 4.07029L0 3.24817L1.66726 1.35867Z"
-                                fill="#2F2F2F"
-                              />
-                              <path
-                                d="M3.93526 3.4718L5.29908 3.86245L4.33965 6.51566L2.97583 6.12502L3.93526 3.4718Z"
-                                fill="#2F2F2F"
-                              />
-                              <path
-                                d="M10.4836 3.4778L9.10086 3.8245L9.97135 6.50405L11.3541 6.15735L10.4836 3.4778Z"
-                                fill="#2F2F2F"
-                              />
-                              <path
-                                d="M13.6144 1.35867L12.5331 2.18079L14.2598 4.1484L15.341 3.32628L13.6144 1.35867Z"
-                                fill="#2F2F2F"
-                              />
-                            </g>
-                          </svg>
-                        )}
-                      </div>
-                    </div>
-                  </fieldset>
+                  <>
+                    <TextInput
+                      name="old_password"
+                      type="password"
+                      label={translation['OLD_PASSWORD']}
+                      onChange={onChangeInput}
+                      required
+                    />
+                  </>
                 ) : null}
 
-                <fieldset>
-                  <div className={classes.fieldset_left}>
-                    <div className={classes.input_text}>{translation['TEXT_NEW_PASSWORD']}</div>
-                  </div>
-                  <div className={classes.fieldset_right}>
-                    <div className={classes.input_wr}>
-                      <input
-                        className={classes.formInput}
-                        onChange={onChangeInput}
-                        autoComplete="off"
-                        type={iconPasswordStatus['new_password'] ? 'text' : 'password'}
-                        name="new_password"
-                        placeholder=""
-                      />
-                    </div>
-                    <div
-                      className={classes.input_pass_btn}
-                      onClick={(e) => onRadioPasswordShowStatus('new_password')}
-                    >
-                      {iconPasswordStatus['new_password'] ? (
-                        <svg
-                          width="16"
-                          height="10"
-                          viewBox="0 0 16 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.60645 0.678711C10.8059 0.678711 13.4587 2.41594 14.4785 4.75391C13.4588 7.09204 10.8061 8.8291 7.60645 8.8291C4.40666 8.82906 1.75299 7.09223 0.733398 4.75391C1.7531 2.41575 4.40681 0.678755 7.60645 0.678711Z"
-                            stroke="#2F2F2F"
-                            strokeWidth="1.35832"
-                            strokeMiterlimit="10"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <path
-                            d="M7.63486 7.13112C8.94767 7.13112 10.0119 6.06688 10.0119 4.75407C10.0119 3.44126 8.94767 2.37701 7.63486 2.37701C6.32205 2.37701 5.25781 3.44126 5.25781 4.75407C5.25781 6.06688 6.32205 7.13112 7.63486 7.13112Z"
-                            fill="#2F2F2F"
-                          />
-                        </svg>
-                      ) : (
-                        <svg
-                          width="16"
-                          height="7"
-                          viewBox="0 0 16 7"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g opacity="0.5">
-                            <path
-                              d="M0.0367804 0C1.08883 2.75949 4.09401 4.7541 7.64335 4.7541C11.1927 4.7541 14.1979 2.75949 15.2499 0H13.7655C12.7824 1.92685 10.4792 3.39579 7.64335 3.39579C4.80745 3.39579 2.50426 1.92685 1.52121 0H0.0367804Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M1.66726 1.35867L2.74853 2.18079L1.08127 4.07029L0 3.24817L1.66726 1.35867Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M3.93526 3.4718L5.29908 3.86245L4.33965 6.51566L2.97583 6.12502L3.93526 3.4718Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M10.4836 3.4778L9.10086 3.8245L9.97135 6.50405L11.3541 6.15735L10.4836 3.4778Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M13.6144 1.35867L12.5331 2.18079L14.2598 4.1484L15.341 3.32628L13.6144 1.35867Z"
-                              fill="#2F2F2F"
-                            />
-                          </g>
-                        </svg>
-                      )}
-                    </div>
-                  </div>
-                </fieldset>
-                <fieldset>
-                  <div className={classes.fieldset_left}>
-                    <div className={classes.input_text}>{translation['TEXT_VERIFY_PASSWORD']}</div>
-                  </div>
-                  <div className={classes.fieldset_right}>
-                    <div className={classes.input_wr}>
-                      <input
-                        className={classes.formInput}
-                        onChange={onChangeInput}
-                        type={iconPasswordStatus['verify_password'] ? 'text' : 'password'}
-                        name="verify_password"
-                        placeholder=""
-                      />
-                    </div>
-                    <div
-                      className={classes.input_pass_btn}
-                      onClick={(e) => onRadioPasswordShowStatus('verify_password')}
-                    >
-                      {iconPasswordStatus['verify_password'] ? (
-                        <svg
-                          width="16"
-                          height="10"
-                          viewBox="0 0 16 10"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.60645 0.678711C10.8059 0.678711 13.4587 2.41594 14.4785 4.75391C13.4588 7.09204 10.8061 8.8291 7.60645 8.8291C4.40666 8.82906 1.75299 7.09223 0.733398 4.75391C1.7531 2.41575 4.40681 0.678755 7.60645 0.678711Z"
-                            stroke="#2F2F2F"
-                            strokeWidth="1.35832"
-                            strokeMiterlimit="10"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                          <path
-                            d="M7.63486 7.13112C8.94767 7.13112 10.0119 6.06688 10.0119 4.75407C10.0119 3.44126 8.94767 2.37701 7.63486 2.37701C6.32205 2.37701 5.25781 3.44126 5.25781 4.75407C5.25781 6.06688 6.32205 7.13112 7.63486 7.13112Z"
-                            fill="#2F2F2F"
-                          />
-                        </svg>
-                      ) : (
-                        <svg
-                          width="16"
-                          height="7"
-                          viewBox="0 0 16 7"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g opacity="0.5">
-                            <path
-                              d="M0.0367804 0C1.08883 2.75949 4.09401 4.7541 7.64335 4.7541C11.1927 4.7541 14.1979 2.75949 15.2499 0H13.7655C12.7824 1.92685 10.4792 3.39579 7.64335 3.39579C4.80745 3.39579 2.50426 1.92685 1.52121 0H0.0367804Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M1.66726 1.35867L2.74853 2.18079L1.08127 4.07029L0 3.24817L1.66726 1.35867Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M3.93526 3.4718L5.29908 3.86245L4.33965 6.51566L2.97583 6.12502L3.93526 3.4718Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M10.4836 3.4778L9.10086 3.8245L9.97135 6.50405L11.3541 6.15735L10.4836 3.4778Z"
-                              fill="#2F2F2F"
-                            />
-                            <path
-                              d="M13.6144 1.35867L12.5331 2.18079L14.2598 4.1484L15.341 3.32628L13.6144 1.35867Z"
-                              fill="#2F2F2F"
-                            />
-                          </g>
-                        </svg>
-                      )}
-                    </div>
-                  </div>
-                </fieldset>
+                <TextInput
+                  name="new_password"
+                  type="password"
+                  label={translation['TEXT_NEW_PASSWORD']}
+                  onChange={onChangeInput}
+                  required
+                />
+
+                <TextInput
+                  name="verify_password"
+                  type="password"
+                  label={translation['TEXT_VERIFY_PASSWORD']}
+                  onChange={onChangeInput}
+                  required
+                />
+
                 <div className={classes.planner_btn_done_wr}>
                   <input
                     ref={inputSubmit}

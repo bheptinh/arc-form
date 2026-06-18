@@ -1,3 +1,6 @@
+// FIXME: This component contains a duplicated code - RenderExampleSmall.tsx, RenderExample360.tsx and RenderExampleBig.tsx
+
+import { IconX } from '@tabler/icons-react';
 import React, { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
@@ -52,17 +55,14 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
     '&:hover': {
-      '& path': {
-        fill: '#BBE521',
+      '& svg': {
+        stroke: '#BBE521',
       },
     },
   },
   compare_popup_close_icon: {
-    width: '100%',
+    transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
   },
   swiper_slider_wr: {
     width: '100%',
@@ -72,14 +72,14 @@ const useStyle = createUseStyles({
   },
 });
 
-const RenderExample360 = (props) => {
+const RenderExample360 = () => {
   const classes = useStyle();
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     // GTM
-    window.dataLayer.push({ event: 'click_gallery_360' });
+    window.dataLayer?.push({ event: 'click_gallery_360' });
   }, []);
 
   return (
@@ -88,19 +88,9 @@ const RenderExample360 = (props) => {
         <div className={classes.compare_popup_cont}>
           <div
             className={classes.compare_popup_close}
-            onClick={(e) => dispatch(closeActivePopup({ name: 'renderExample_360' }))}
+            onClick={() => dispatch(closeActivePopup({ name: 'renderExample_360' }))}
           >
-            <svg
-              className={classes.compare_popup_close_icon}
-              viewBox="0 0 16.03 16.02"
-              width="24px"
-              height="24px"
-            >
-              <path
-                fill="#070707"
-                d="M1,0a1,1,0,0,0-.7,1.72L6.6,8,.31,14.3a1,1,0,0,0,1.39,1.44l0,0L8,9.42l6.29,6.29a1,1,0,1,0,1.44-1.39l0,0L9.43,8l6.29-6.29A1,1,0,1,0,14.31.3L8,6.6,1.72.3A1,1,0,0,0,1,0Z"
-              />
-            </svg>
+            <IconX size={24} color="#070707" className={classes.compare_popup_close_icon} />
           </div>
           <div className={classes.swiper_slider_wr}>
             <RendersSlider360 />

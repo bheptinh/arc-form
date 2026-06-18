@@ -22,6 +22,7 @@ import App from './App';
 import { planner, user } from './initR2D';
 import { MarkdownPage } from './pages/MarkdownPage';
 import ProjectsPage from './pages/ProjectsPage';
+import { changeActiveControlPanelMode } from './redux/features/control/controlPanelSlice';
 import { setActivePopup } from './redux/features/popups/popupsSlice';
 import { saveLoggedStatus } from './redux/features/user/userSlice';
 import { setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
@@ -70,6 +71,22 @@ async function init() {
   if (isCurrDeviceAPhone) {
     store.dispatch(setActiveViewMode('view3d'));
   }
+
+  setTimeout(() => {
+    // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
+    store.dispatch(
+      // changeActiveControlPanelMode({
+      //   mode: 'renderExample_small',
+      //   data: { type: 'main', lastSavedScroll: 0 },
+      // })
+      // setActivePopup({ name: 'renderExample_big' })
+      setActivePopup({
+        name: 'export3DProjectPopup',
+        type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
+        data: {},
+      })
+    );
+  }, 2000);
 
   createRoot(document.getElementById('root')!).render(
     <StrictMode>

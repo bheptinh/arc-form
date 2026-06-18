@@ -1,30 +1,17 @@
+import { IconX } from '@tabler/icons-react';
 import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguages } from '../../api/hooks/useLanguages';
+import { useTranslation } from '../../api/hooks/useTranslation';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
-import { useTranslation } from '../../api/hooks/useTranslation';
-import { useLanguages } from '../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -266,38 +253,7 @@ const UpgradePlan = (props) => {
       <div className={classes.planner_popup_wr}>
         <div className={classes.planner_popup_cont}>
           <div className={classes.planner_popup_close} onClick={onClickClosePopUp}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
           <h2 className={classes.planner_popup_title}>{titleText}</h2>
           <div className={classes.planner_popup_text}>{subTitleText}</div>

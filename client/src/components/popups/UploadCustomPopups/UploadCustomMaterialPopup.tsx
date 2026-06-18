@@ -1,9 +1,11 @@
+import { IconArrowLeft, IconPhotoScan, IconPlus, IconX } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useMemo, useRef, useState } from 'react';
 import { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import { selectActiveControlPanelModeData } from '../../../redux/features/control/controlPanelSlice';
 import {
@@ -12,29 +14,8 @@ import {
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
 import MaterialSize from './components/MaterialSize';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   '@keyframes shake': {
     '0%': { transform: 'translateX(0)' },
     '20%': { transform: 'translateX(-5px)' },
@@ -694,55 +675,16 @@ const UploadCustomMaterialPopup = (props) => {
       <div className={classes.planner_popup_wr}>
         <div className={classes.planner_popup_cont}>
           {popups.uploadCustomMaterialPopup.backBtn ? (
-            <svg
+            <IconArrowLeft
               className={classes.planner_popup_back}
-              width="23"
-              height="26"
-              fill="none"
-              viewBox="0 0 23 26"
               onClick={onUploadChoicePopup}
-            >
-              <path
-                fill="#232323"
-                d="M14.352 1.236 3.416 11.931h18.708v1.692H3.302l11.096 10.685-1.172 1.159L1.31 13.99l-.008.01-1.18-1.15L13.17.086l1.18 1.15Z"
-                opacity=".99"
-              />
-            </svg>
+              size={24}
+              color="#232323"
+            />
           ) : null}
 
           <div className={classes.planner_popup_close} onClick={onClickClosePopUp}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
 
           {!imageLoaded.status ? (
@@ -756,22 +698,8 @@ const UploadCustomMaterialPopup = (props) => {
                   onDragEnter={dragEnterListener}
                   onDragOver={dragOverListener}
                 >
-                  <svg
-                    width="49"
-                    height="37"
-                    viewBox="0 0 49 37"
-                    fill="none"
-                    className={classes.upload_popup_top_icon}
-                  >
-                    <path
-                      d="M46.3496 0.25H2.43945C1.09423 0.25 0 1.34423 0 2.68945V33.5892C0 34.9344 1.09423 36.0287 2.43945 36.0287H46.3496C47.6948 36.0287 48.7891 34.9344 48.7891 33.5892V2.68945C48.7891 1.34423 47.6948 0.25 46.3496 0.25ZM2.43945 34.4023C1.9912 34.4023 1.62633 34.0375 1.62633 33.5892V23.5014L9.18969 15.9377C9.49538 15.628 10.0163 15.624 10.33 15.9417L18.3672 23.9714L7.93308 34.4023H2.43945ZM47.1627 33.5891C47.1627 34.0374 46.7979 34.4022 46.3496 34.4022H10.2331L34.3973 10.2456C34.703 9.93587 35.2244 9.93186 35.5373 10.2496L47.1628 21.8673L47.1627 33.5891ZM47.1627 19.5677L36.6906 9.10293C35.7687 8.16984 34.1586 8.17384 33.2438 9.09893L19.5171 22.8217L11.4831 14.795C10.5611 13.862 8.95108 13.8656 8.03628 14.7915L1.62633 21.2018V2.68945C1.62633 2.2412 1.9912 1.87633 2.43945 1.87633H46.3496C46.7979 1.87633 47.1627 2.2412 47.1627 2.68945V19.5677Z"
-                      fill="white"
-                    />
-                    <path
-                      d="M20.3262 5.94238C17.6358 5.94238 15.4473 8.13093 15.4473 10.8213C15.4473 13.5116 17.6358 15.7002 20.3262 15.7002C23.0165 15.7002 25.2051 13.5116 25.2051 10.8213C25.2051 8.13093 23.0166 5.94238 20.3262 5.94238ZM20.3262 14.0739C18.5327 14.0739 17.0736 12.6147 17.0736 10.8213C17.0736 9.02791 18.5327 7.56872 20.3262 7.56872C22.1196 7.56872 23.5787 9.02791 23.5787 10.8213C23.5787 12.6147 22.1196 14.0739 20.3262 14.0739Z"
-                      fill="white"
-                    />
-                  </svg>
+                  {/* TODO: replace with image file */}
+                  <IconPhotoScan size={50} color="#fff" className={classes.upload_popup_top_icon} />
                   {!isCurrDeviceAPhone ? (
                     <div className={classes.upload_popup_top_text}>
                       {translation['DRAG_FILE']}
@@ -780,17 +708,7 @@ const UploadCustomMaterialPopup = (props) => {
                     </div>
                   ) : null}
                   <div className={classes.upload_popup_set_file_btn} onClick={onUploadFile}>
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none">
-                      <rect x="6" width="1" height="13" fill="black" />
-                      <rect
-                        x="13"
-                        y="6"
-                        width="1"
-                        height="13"
-                        transform="rotate(90 13 6)"
-                        fill="black"
-                      />
-                    </svg>
+                    <IconPlus size={13} color="#2B2B2B" />
                     {translation['SELECT_FILE']}
                   </div>
                 </div>

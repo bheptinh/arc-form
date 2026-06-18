@@ -1,73 +1,67 @@
 import cx from 'classnames';
-import {AnimatePresence} from "framer-motion";
+import { AnimatePresence } from 'framer-motion';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import {createUseStyles} from "react-jss";
-import {useDispatch, useSelector} from 'react-redux';
+import { createUseStyles } from 'react-jss';
+import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
-import {planner, user} from "../../../../../../initR2D";
+import { planner, user } from '../../../../../../initR2D';
 import {
-    selectActiveControlPanelModeData,
-    selectDynamicPanelPreviewViewType, updateAnimateFavoritesHideStatus, updateAnimateFavoritesShowStatus
+  selectActiveControlPanelModeData,
+  selectDynamicPanelPreviewViewType,
+  updateAnimateFavoritesHideStatus,
+  updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import {setActivePopup} from "../../../../../../redux/features/popups/popupsSlice";
-import {selectIsLogged} from "../../../../../../redux/features/user/userSlice";
-import FavoriteStarIcon from "../../../../../common/FavoriteStarIcon";
-import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
-import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
+import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
+import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
+import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
+import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
+import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import Navigation from '../../navigation/Navigation';
 
 const planer_catalog_elem = {
-    width: 46,
-    height: 46,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    position: 'relative',
-    userSelect: 'none',
+  width: 46,
+  height: 46,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  position: 'relative',
+  userSelect: 'none',
+  cursor: 'pointer',
+  boxShadow: '1px 1px 2px 1px rgba(0, 0, 0, 0.11)',
+  transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
+  '& img': {
+    width: '100%',
+    height: '100%',
+  },
+  '& $planer_catalog_prem_zamok': {
+    width: 'auto',
+    height: 'auto',
+    position: 'absolute',
+    top: -10,
+    right: -11,
     cursor: 'pointer',
-    boxShadow: '1px 1px 2px 1px rgba(0, 0, 0, 0.11)',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    '& img':{
-        width: '100%',
-        height: '100%',
+    '& rect': {
+      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
-    '& $planer_catalog_prem_zamok': {
-        width: "auto",
-        height: "auto",
-        position: 'absolute',
-        top: -10,
-        right: -11,
-        cursor: 'pointer',
-        '& rect':{
-            transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-        },
-        '&:hover':{
-            '& rect':{
-                fill: '#ffd119'
-            }
-        }
+    '&:hover': {
+      '& rect': {
+        fill: '#ffd119',
+      },
     },
-    '&:hover':{
-        border: '1px solid #9DD900',
-    },
-    '@media screen and (max-width: 950px)':{
-        width: 'calc(25% - 6px)',
-        marginBottom: 10
-    }
-}
+  },
+  '&:hover': {
+    border: '1px solid #9DD900',
+  },
+  '@media screen and (max-width: 950px)': {
+    width: 'calc(25% - 6px)',
+    marginBottom: 10,
+  },
+};
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -522,22 +516,22 @@ const useStyle = createUseStyles({
 
 const CatalogMaterialsSets = (props) => {
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
-  let activeControlPanelData = useSelector(selectActiveControlPanelModeData);
+  const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
-  let lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
+  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const isAdded = lastHistoryElem?.isAdded;
-  let lastHistoryElemData = lastHistoryElem?.data;
+  const lastHistoryElemData = lastHistoryElem?.data;
 
   const dispatch = useDispatch();
-  let isLogged = useSelector(selectIsLogged);
+  const isLogged = useSelector(selectIsLogged);
 
   const [materialsListState, setMaterialsListState] = useState(null);
-  let [modalMoreInfo, setModalMoreInfo] = useState(false);
+  const [modalMoreInfo, setModalMoreInfo] = useState(false);
   const [productElemHover, setProductElemHover] = useState(null);
-  let [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
+  const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
 
-  let [activeMaterial, setActiveMaterial] = useState(props.matId);
-  let [styleAnimation, setStyleAnimation] = useState(
+  const [activeMaterial, setActiveMaterial] = useState(props.matId);
+  const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
 
@@ -546,19 +540,19 @@ const CatalogMaterialsSets = (props) => {
   const classes = useStyle();
 
   const mainDiv = useRef(null);
-  let catalogMain = useRef(null);
+  const catalogMain = useRef(null);
 
-  let loaderCompleteListener = (id) => {
+  const loaderCompleteListener = (id) => {
     props.materialSelect(id, null, activeMaterial, null);
     setActiveMaterial(id);
   };
 
-  let loaderErrorListener = (e) => console.log('Error loading material ', e);
+  const loaderErrorListener = (e) => console.log('Error loading material ', e);
 
-  let onMaterialSelect = (elem) => {
+  const onMaterialSelect = (elem) => {
     const id = elem.id;
     if (!R2D.Pool.getProductData(id)) {
-      let loader = R2D.Pool.loadProductData(id);
+      const loader = R2D.Pool.loadProductData(id);
       loader.addEventListener(Event.COMPLETE, (e) => loaderCompleteListener(id));
       loader.addEventListener(Event.ERROR, (e) => loaderErrorListener(id));
     } else {
@@ -568,32 +562,37 @@ const CatalogMaterialsSets = (props) => {
   };
 
   const mouseEnter = (event, data) => {
-        if(dynamicPanelPreviewViewType == 'small') {
-            document.querySelector("." + classes.product_hover) ? document.querySelector("." + classes.product_hover).remove() : null;
-            let product = event.target;
-            let hoverWindow = document.createElement("div");
-            hoverWindow.classList.add(classes.product_hover);
-            hoverWindow.innerHTML = data.name;
-            document.querySelector("body").append(hoverWindow);
-            hoverWindow.style.left = (product.getBoundingClientRect().left + product.offsetWidth) + "px";
-            hoverWindow.style.top = (product.getBoundingClientRect().top + ((product.offsetHeight - hoverWindow.offsetHeight) / 2)) + "px";
-        }
+    if (dynamicPanelPreviewViewType == 'small') {
+      document.querySelector('.' + classes.product_hover)
+        ? document.querySelector('.' + classes.product_hover).remove()
+        : null;
+      const product = event.target;
+      const hoverWindow = document.createElement('div');
+      hoverWindow.classList.add(classes.product_hover);
+      hoverWindow.innerHTML = data.name;
+      document.querySelector('body').append(hoverWindow);
+      hoverWindow.style.left = product.getBoundingClientRect().left + product.offsetWidth + 'px';
+      hoverWindow.style.top =
+        product.getBoundingClientRect().top +
+        (product.offsetHeight - hoverWindow.offsetHeight) / 2 +
+        'px';
+    }
   };
 
-  let mouseLeave = () =>
+  const mouseLeave = () =>
     document.querySelector('.' + classes.product_hover)
       ? document.querySelector('.' + classes.product_hover).remove()
       : null;
 
   const onMouseEnterProductMoreInfo = (e, elem) => {
-        setModalMoreInfo(true);
-        setProductElemHover(elem);
-    };
-  let onMouseLeaveProductMoreInfo = (e) => {
+    setModalMoreInfo(true);
+    setProductElemHover(elem);
+  };
+  const onMouseLeaveProductMoreInfo = (e) => {
     setModalMoreInfo(false);
   };
 
-  let updateFavorites = async (id, isInFavorites) => {
+  const updateFavorites = async (id, isInFavorites) => {
     if (!isLogged) return dispatch(setActivePopup({ name: 'login' }));
     if (isInFavorites) {
       await user.uRemoveFromFavorites(id);
@@ -603,7 +602,7 @@ const CatalogMaterialsSets = (props) => {
     } else {
       const response = await user.uAddToFavorites(id);
       setUserFavorites((prev) => {
-        let newArray = prev;
+        const newArray = prev;
         return [...newArray, response];
       });
 
@@ -620,7 +619,7 @@ const CatalogMaterialsSets = (props) => {
   useEffect(() => {
     if (lastHistoryElemData) {
       lastHistoryElemData.forEach((i) => {
-        let isInFavorites = userFavorites?.find((с) => с?.id == i.id);
+        const isInFavorites = userFavorites?.find((с) => с?.id == i.id);
         arrayList.push(
           <div
             key={i.id}

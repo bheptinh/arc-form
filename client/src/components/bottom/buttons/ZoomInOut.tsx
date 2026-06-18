@@ -1,11 +1,12 @@
+import { IconZoomIn, IconZoomOut } from '@tabler/icons-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import { selectActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   zoomInOut_main: {
@@ -115,9 +116,7 @@ const ZoomInOut = (props) => {
           hoverTextPositionX={'left'}
           hoverTextPositionY={'top'}
         >
-          <svg width="17" height="1" viewBox="0 0 17 1" fill="none">
-            <rect x="17" width="1" height="17" transform="rotate(90 17 0)" fill="#2A3435" />
-          </svg>
+          <IconZoomOut size={17} color="#2A3435" />
         </HoverComponent>
       </div>
 
@@ -134,10 +133,7 @@ const ZoomInOut = (props) => {
           hoverTextPositionX={'left'}
           hoverTextPositionY={'top'}
         >
-          <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
-            <rect x="8" width="1" height="17" fill="#2A3435" />
-            <rect x="17" y="8" width="1" height="17" transform="rotate(90 17 8)" fill="#2A3435" />
-          </svg>
+          <IconZoomIn size={17} color="#2A3435" />
         </HoverComponent>
       </div>
     </div>

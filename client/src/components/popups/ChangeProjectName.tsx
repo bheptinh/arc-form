@@ -1,16 +1,17 @@
+import { IconX } from '@tabler/icons-react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { projectsInfiniteQueryOptions, renameProject } from '../../api/projects';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
-import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -177,7 +178,13 @@ const ChangeProjectNamePopup = (props) => {
     mutationFn: ({ id, name }: { id: string; name: string }) => renameProject(id, name),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
-      dispatch(setActivePopup({ name: 'completeMessage', positionX: 'left', data: 'NOTIFY_RENAME_PLAN_COMPLETE' }));
+      dispatch(
+        setActivePopup({
+          name: 'completeMessage',
+          positionX: 'left',
+          data: 'NOTIFY_RENAME_PLAN_COMPLETE',
+        })
+      );
       setAnimPopupClass(false);
       setTimeout(() => dispatch(closeActivePopup({ name: 'changeProjectName' })), 500);
     },
@@ -215,38 +222,7 @@ const ChangeProjectNamePopup = (props) => {
       <div className={classes.planner_popup_wr}>
         <div className={classes.planner_popup_cont}>
           <div className={classes.planner_popup_close} onClick={onClickClosePopUp}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
 
           <form ref={changeProjectForm} onSubmit={onSubmit}>
@@ -266,7 +242,11 @@ const ChangeProjectNamePopup = (props) => {
                 {' '}
                 {translation['BUTTON_CANCEL']}{' '}
               </button>
-              <button className={classes.planner_btn_done} type="submit" disabled={renameMutation.isPending}>
+              <button
+                className={classes.planner_btn_done}
+                type="submit"
+                disabled={renameMutation.isPending}
+              >
                 {renameMutation.isPending ? '...' : translation['BUTTON_OK']}
               </button>
             </fieldset>

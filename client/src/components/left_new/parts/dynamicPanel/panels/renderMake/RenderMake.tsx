@@ -1,8 +1,12 @@
+import { IconVideo, IconX } from '@tabler/icons-react';
+import cls from 'classnames';
 import { motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguages } from '../../../../../../api/hooks/useLanguages';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../initR2D';
 import {
   changeActivePano,
@@ -25,8 +29,6 @@ import CameraViews from '../common/CameraViews';
 import ColorPicker from '../common/ColorPicker';
 import Panorams from '../walk/components/Panorams';
 import Main from './Main';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
-import { useLanguages } from '../../../../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   '@global .dynamicPanelHideBtn': {
@@ -468,42 +470,11 @@ const RenderMake = () => {
 
   return (
     <div>
-      <div className={classes.renderMake}>{activePanelComponents}</div>
+      <div className={cls(classes.renderMake, 'renderMake')}>{activePanelComponents}</div>
       {controPanelActiveMode == 'renderMake' && (
         <div>
           <div className={classes.planner_popup_close} onClick={onRenderClose}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#fff"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              ></path>
-              <path
-                fill="#fff"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              ></path>
-              <path
-                fill="#fff"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              ></path>
-              <path
-                fill="#fff"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
           <motion.div
             initial={{ transform: 'translateY(-102%)' }}
@@ -587,18 +558,7 @@ const RenderMake = () => {
           </motion.div>
 
           <div className={classes.planner_render_btn_help} onClick={onClickVideos}>
-            <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M16.2891 1.93848H1.41406V12.5635H16.2891V1.93848ZM1.41406 0.875977H0.351562V1.93848V12.5635V13.626H1.41406H16.2891H17.3516V12.5635V1.93848V0.875977H16.2891H1.41406Z"
-                fill="#2A3435"
-              />
-              <path
-                d="M12.0391 7.25098L6.72656 10.4385L6.72656 4.06348L12.0391 7.25098Z"
-                fill="#2A3435"
-              />
-            </svg>
+            <IconVideo size={18} color="#2A3435" />
           </div>
         </div>
       )}

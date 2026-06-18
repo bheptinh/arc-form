@@ -1,10 +1,17 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
+import {
+  IconArrowsMoveVertical,
+  IconCameraFilled,
+  IconHelpHexagonFilled,
+  IconX,
+} from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../initR2D';
 import {
   changeActivePano,
@@ -28,8 +35,7 @@ import {
   setProfileData,
 } from '../../../../../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../../../../../redux/features/viewMode/viewModeSlice';
-import ChangeSize from '../../components/ChangeSize';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import ChangeSize from '../../../../../common/ChangeSize';
 
 const useStyle = createUseStyles({
   renderMakeCont: {
@@ -475,7 +481,7 @@ const Main = (props) => {
     if (preloadActive || activeFormat === null) return;
 
     // GTM
-    window.dataLayer.push({ event: 'click_start_render' });
+    window.dataLayer?.push({ event: 'click_start_render' });
 
     if (activeFormat === 0) {
       onScreenshotMake();
@@ -744,7 +750,6 @@ const Main = (props) => {
   };
 
   //ROTATE
-  const cameraIconRotate = useRef(null);
   let active = false;
   let [angle, setAngle] = useState(0);
   let center = { x: 0, y: 0 };
@@ -1074,6 +1079,7 @@ const Main = (props) => {
                         : 'translateX(12px)',
                     }}
                   >
+                    {/* TODO: Replace camera icon */}
                     <svg
                       className={classes.changeHeightIcon}
                       width="35"
@@ -1128,6 +1134,8 @@ const Main = (props) => {
                         fill="#2D8BDB"
                       />
                     </svg>
+
+                    {/* TODO: Replace icon */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className={classes.changeHeightIconArea}
@@ -1155,30 +1163,12 @@ const Main = (props) => {
                       </g>
                     </svg>
                     {renderMakeState.type != 'topView' ? (
-                      <svg
-                        width="8"
-                        height="18"
-                        viewBox="0 0 8 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <IconArrowsMoveVertical
+                        size={18}
+                        color="#2D8BDB"
                         className={classes.changeHeightIconRotate}
-                        ref={cameraIconRotate}
                         onMouseDown={startRotateCameraIcon}
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M4.45795 17.1663L3.96787 17.6978L3.9644 17.6941L3.96095 17.6977L3.47244 17.1679L-0.000866996 13.4536L1.23534 13.4536L3.9644 16.4022L6.69348 13.4536L7.92969 13.4536L4.45795 17.1663Z"
-                          fill="#2D8BDB"
-                        />
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M4.45795 0.770513L3.96787 0.239014L3.9644 0.242717L3.96095 0.239026L3.47244 0.768819L-0.000866996 4.48316L1.23534 4.48316L3.9644 1.53453L6.69348 4.48317L7.92969 4.48317L4.45795 0.770513Z"
-                          fill="#2D8BDB"
-                        />
-                        <circle cx="3.90679" cy="9.0974" r="3.22124" fill="#2D8BDB" />
-                      </svg>
+                      />
                     ) : null}
                   </div>
                 </div>
@@ -1194,7 +1184,7 @@ const Main = (props) => {
                     ' ' +
                     (activeFormat == 0 ? classes.choiseRenderBtn_active : '')
                   }
-                  onClick={(e) => changeFormatActive(0)}
+                  onClick={() => changeFormatActive(0)}
                 >
                   <div className={classes.choiseRenderRadio}>
                     {translation['RENDER_SCREENSHOT']}
@@ -1209,36 +1199,27 @@ const Main = (props) => {
                     ' ' +
                     (activeFormat == 3 ? classes.choiseRenderBtn_active : '')
                   }
-                  onClick={(e) => changeFormatActive(3)}
+                  onClick={() => changeFormatActive(3)}
                 >
                   <div className={classes.choiseRenderRadio}>
                     {translation['RENDER_FULL_HD']}
                     <span>1920x1080</span>
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <IconHelpHexagonFilled
+                      size={18}
+                      color="#2D8BDB"
                       className={classes.changerMain_info}
                       onMouseDown={onMouseDownIcon}
                       onMouseEnter={(e) => mouseEnterIcon(e, translation['RENDER_EXAMPLES_TEXT'])}
                       onMouseMove={mouseMoveIcon}
                       onMouseLeave={mouseLeaveIcon}
-                      onMouseUp={(e) =>
+                      onMouseUp={() =>
                         (typeof switch_image !== 'undefined' &&
                           switch_image &&
                           switch_image.length > 0 &&
                           dispatch(setActivePopup({ name: 'renderExample_big' }))) ||
                         dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }))
                       }
-                    >
-                      <circle cx="9" cy="9" r="9" fill="#2D8BDB" />
-                      <path
-                        d="M10.0621 10.1938H8.76172C8.76535 9.86368 8.79255 9.58076 8.84333 9.34499C8.89774 9.10922 8.98661 8.89702 9.10993 8.70841C9.23326 8.51617 9.40011 8.32029 9.61049 8.1208C9.77734 7.96483 9.92606 7.81792 10.0566 7.68009C10.1908 7.53863 10.296 7.39172 10.3722 7.23938C10.4484 7.08341 10.4865 6.90749 10.4865 6.71162C10.4865 6.49036 10.4502 6.30537 10.3777 6.15665C10.3087 6.00793 10.2054 5.89549 10.0675 5.81932C9.93331 5.73952 9.76465 5.69962 9.56152 5.69962C9.39467 5.69962 9.23689 5.73408 9.08817 5.803C8.93945 5.87191 8.81975 5.97892 8.72907 6.12401C8.63839 6.26547 8.58943 6.45046 8.58217 6.67897H7.14035C7.15123 6.2038 7.26367 5.80844 7.47768 5.49287C7.69169 5.17367 7.98005 4.93609 8.34277 4.78012C8.7055 4.62052 9.11175 4.54072 9.56152 4.54072C10.0585 4.54072 10.4828 4.62415 10.8347 4.791C11.1902 4.95422 11.4604 5.19362 11.6454 5.50919C11.834 5.82476 11.9283 6.20562 11.9283 6.65177C11.9283 6.97096 11.8666 7.25752 11.7433 7.51142C11.62 7.7617 11.4568 7.99566 11.2536 8.21329C11.0505 8.43093 10.8311 8.65037 10.5953 8.87163C10.3885 9.05662 10.2489 9.25431 10.1763 9.46469C10.1038 9.67507 10.0657 9.91809 10.0621 10.1938ZM8.6257 11.8859C8.6257 11.6682 8.69824 11.4869 8.84333 11.3418C8.99205 11.1967 9.19155 11.1241 9.44182 11.1241C9.6921 11.1241 9.88979 11.1967 10.0349 11.3418C10.1836 11.4869 10.258 11.6682 10.258 11.8859C10.258 12.0962 10.1836 12.274 10.0349 12.4191C9.88979 12.5642 9.6921 12.6367 9.44182 12.6367C9.19155 12.6367 8.99205 12.5642 8.84333 12.4191C8.69824 12.274 8.6257 12.0962 8.6257 11.8859Z"
-                        fill="#E5E5E5"
-                      />
-                    </svg>
+                    />
                   </div>
                   <div className={classes.choiseRenderPriceWr}>
                     <div className={classes.choiseRenderPrice}>
@@ -1253,36 +1234,27 @@ const Main = (props) => {
                     ' ' +
                     (activeFormat == 4 ? classes.choiseRenderBtn_active : '')
                   }
-                  onClick={(e) => changeFormatActive(4)}
+                  onClick={() => changeFormatActive(4)}
                 >
                   <div className={classes.choiseRenderRadio}>
                     {translation['RENDER_4K']}
                     <span>3840x2160</span>
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 18 18"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <IconHelpHexagonFilled
+                      size={18}
+                      color="#2D8BDB"
                       className={classes.changerMain_info}
                       onMouseDown={onMouseDownIcon}
                       onMouseEnter={(e) => mouseEnterIcon(e, translation['RENDER_EXAMPLES_TEXT'])}
                       onMouseMove={mouseMoveIcon}
                       onMouseLeave={mouseLeaveIcon}
-                      onMouseUp={(e) =>
+                      onMouseUp={() =>
                         (typeof renders_2k_4k !== 'undefined' &&
                           renders_2k_4k &&
                           renders_2k_4k.length > 0 &&
                           dispatch(setActivePopup({ name: 'renderExample4k' }))) ||
                         dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }))
                       }
-                    >
-                      <circle cx="9" cy="9" r="9" fill="#2D8BDB" />
-                      <path
-                        d="M10.0621 10.1938H8.76172C8.76535 9.86368 8.79255 9.58076 8.84333 9.34499C8.89774 9.10922 8.98661 8.89702 9.10993 8.70841C9.23326 8.51617 9.40011 8.32029 9.61049 8.1208C9.77734 7.96483 9.92606 7.81792 10.0566 7.68009C10.1908 7.53863 10.296 7.39172 10.3722 7.23938C10.4484 7.08341 10.4865 6.90749 10.4865 6.71162C10.4865 6.49036 10.4502 6.30537 10.3777 6.15665C10.3087 6.00793 10.2054 5.89549 10.0675 5.81932C9.93331 5.73952 9.76465 5.69962 9.56152 5.69962C9.39467 5.69962 9.23689 5.73408 9.08817 5.803C8.93945 5.87191 8.81975 5.97892 8.72907 6.12401C8.63839 6.26547 8.58943 6.45046 8.58217 6.67897H7.14035C7.15123 6.2038 7.26367 5.80844 7.47768 5.49287C7.69169 5.17367 7.98005 4.93609 8.34277 4.78012C8.7055 4.62052 9.11175 4.54072 9.56152 4.54072C10.0585 4.54072 10.4828 4.62415 10.8347 4.791C11.1902 4.95422 11.4604 5.19362 11.6454 5.50919C11.834 5.82476 11.9283 6.20562 11.9283 6.65177C11.9283 6.97096 11.8666 7.25752 11.7433 7.51142C11.62 7.7617 11.4568 7.99566 11.2536 8.21329C11.0505 8.43093 10.8311 8.65037 10.5953 8.87163C10.3885 9.05662 10.2489 9.25431 10.1763 9.46469C10.1038 9.67507 10.0657 9.91809 10.0621 10.1938ZM8.6257 11.8859C8.6257 11.6682 8.69824 11.4869 8.84333 11.3418C8.99205 11.1967 9.19155 11.1241 9.44182 11.1241C9.6921 11.1241 9.88979 11.1967 10.0349 11.3418C10.1836 11.4869 10.258 11.6682 10.258 11.8859C10.258 12.0962 10.1836 12.274 10.0349 12.4191C9.88979 12.5642 9.6921 12.6367 9.44182 12.6367C9.19155 12.6367 8.99205 12.5642 8.84333 12.4191C8.69824 12.274 8.6257 12.0962 8.6257 11.8859Z"
-                        fill="#E5E5E5"
-                      />
-                    </svg>
+                    />
                   </div>
                   <div className={classes.choiseRenderPriceWr}>
                     <div className={classes.choiseRenderPrice}>
@@ -1298,36 +1270,33 @@ const Main = (props) => {
                       ' ' +
                       (activeFormat == 5 ? classes.choiseRenderBtn_active : '')
                     }
-                    onClick={(e) => changeFormatActive(5)}
+                    onClick={() => changeFormatActive(5)}
                   >
                     <div className={classes.choiseRenderRadio}>
                       {translation['RENDER_360']}
                       <span>360</span>
-                      <svg
-                        width="18"
-                        height="18"
-                        viewBox="0 0 18 18"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <IconHelpHexagonFilled
+                        size={18}
+                        color="#2D8BDB"
                         className={classes.changerMain_info}
                         onMouseDown={onMouseDownIcon}
                         onMouseEnter={(e) => mouseEnterIcon(e, translation['RENDER_EXAMPLES_TEXT'])}
                         onMouseMove={mouseMoveIcon}
                         onMouseLeave={mouseLeaveIcon}
-                        onMouseUp={(e) =>
-                          (typeof images_360 !== 'undefined' &&
+                        onMouseUp={() => {
+                          if (
+                            typeof images_360 !== 'undefined' &&
                             images_360 &&
-                            images_360.length > 0 &&
-                            dispatch(setActivePopup({ name: 'renderExample_360' }))) ||
-                          dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }))
-                        }
-                      >
-                        <circle cx="9" cy="9" r="9" fill="#2D8BDB" />
-                        <path
-                          d="M10.0621 10.1938H8.76172C8.76535 9.86368 8.79255 9.58076 8.84333 9.34499C8.89774 9.10922 8.98661 8.89702 9.10993 8.70841C9.23326 8.51617 9.40011 8.32029 9.61049 8.1208C9.77734 7.96483 9.92606 7.81792 10.0566 7.68009C10.1908 7.53863 10.296 7.39172 10.3722 7.23938C10.4484 7.08341 10.4865 6.90749 10.4865 6.71162C10.4865 6.49036 10.4502 6.30537 10.3777 6.15665C10.3087 6.00793 10.2054 5.89549 10.0675 5.81932C9.93331 5.73952 9.76465 5.69962 9.56152 5.69962C9.39467 5.69962 9.23689 5.73408 9.08817 5.803C8.93945 5.87191 8.81975 5.97892 8.72907 6.12401C8.63839 6.26547 8.58943 6.45046 8.58217 6.67897H7.14035C7.15123 6.2038 7.26367 5.80844 7.47768 5.49287C7.69169 5.17367 7.98005 4.93609 8.34277 4.78012C8.7055 4.62052 9.11175 4.54072 9.56152 4.54072C10.0585 4.54072 10.4828 4.62415 10.8347 4.791C11.1902 4.95422 11.4604 5.19362 11.6454 5.50919C11.834 5.82476 11.9283 6.20562 11.9283 6.65177C11.9283 6.97096 11.8666 7.25752 11.7433 7.51142C11.62 7.7617 11.4568 7.99566 11.2536 8.21329C11.0505 8.43093 10.8311 8.65037 10.5953 8.87163C10.3885 9.05662 10.2489 9.25431 10.1763 9.46469C10.1038 9.67507 10.0657 9.91809 10.0621 10.1938ZM8.6257 11.8859C8.6257 11.6682 8.69824 11.4869 8.84333 11.3418C8.99205 11.1967 9.19155 11.1241 9.44182 11.1241C9.6921 11.1241 9.88979 11.1967 10.0349 11.3418C10.1836 11.4869 10.258 11.6682 10.258 11.8859C10.258 12.0962 10.1836 12.274 10.0349 12.4191C9.88979 12.5642 9.6921 12.6367 9.44182 12.6367C9.19155 12.6367 8.99205 12.5642 8.84333 12.4191C8.69824 12.274 8.6257 12.0962 8.6257 11.8859Z"
-                          fill="#E5E5E5"
-                        />
-                      </svg>
+                            images_360.length > 0
+                          ) {
+                            dispatch(setActivePopup({ name: 'renderExample_360' }));
+                          } else {
+                            dispatch(
+                              setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' })
+                            );
+                          }
+                        }}
+                      />
                     </div>
                     <div className={classes.choiseRenderPriceWr}>
                       <div className={classes.choiseRenderPrice}>
@@ -1345,7 +1314,7 @@ const Main = (props) => {
                 </div>
                 <div
                   className={classes.getMoreCredits}
-                  onClick={(e) => dispatch(setActivePopup({ name: 'buyCredits' }))}
+                  onClick={() => dispatch(setActivePopup({ name: 'buyCredits' }))}
                 >
                   {translation['RENDER_GET_MORE']}
                 </div>
@@ -1355,7 +1324,7 @@ const Main = (props) => {
         </SimpleBar>
       </div>
 
-      <div className={classes.renderMake_buttons} style={preloadActive ? { zIndex: 4 } : null}>
+      <div className={classes.renderMake_buttons} style={preloadActive ? { zIndex: 4 } : undefined}>
         <div
           className={
             classes.renderMake_button +
@@ -1366,22 +1335,7 @@ const Main = (props) => {
           }
           onClick={onRenderClose}
         >
-          <svg
-            width="21"
-            height="22"
-            viewBox="0 0 21 22"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M19.799 0.600586L20.5061 1.30769L0.707107 21.1067L0 20.3996L19.799 0.600586Z"
-              fill="black"
-            />
-            <path
-              d="M0.799112 0.600586L0.0920048 1.30769L19.891 21.1067L20.5981 20.3996L0.799112 0.600586Z"
-              fill="black"
-            />
-          </svg>
+          <IconX size={22} color="#2A3435" />
           <p>{translation['UPLOAD_MODEL_TEXT_CANCEL']}</p>
         </div>
 
@@ -1394,27 +1348,14 @@ const Main = (props) => {
             classes.renderMake_button_save_ready +
             (preloadActive ? ' ' + classes.renderMake_button_save_disabled : '')
           }
-          style={preloadActive ? { justifyContent: 'center' } : null}
+          style={preloadActive ? { justifyContent: 'center' } : undefined}
           onClick={onClickRenderBtn}
         >
           {preloadActive ? (
             <div className="preloader-cube_relative"></div>
           ) : (
             <div className={classes.renderMake_button_main}>
-              <svg
-                className={classes.startRenderIcon}
-                width="22"
-                height="16.33"
-                viewBox="0 0 35 26"
-                fill="none"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M25.0601 3.5255H30.1606C31.5673 3.5255 32.3595 4.08467 33.3544 5.07988C34.3491 6.07509 34.908 7.42505 34.908 8.83271V20.4384V25.7455H29.6035H5.30441H0V20.4384V8.83271C0 7.42505 0.744521 6.07509 1.73921 5.07988C2.73416 4.08466 3.3407 3.52554 4.74737 3.52554H9.85879C9.89313 3.4259 9.95157 3.33624 10.0285 3.26413V3.26437L13.0019 0.480437C13.2753 0.223898 13.8064 0.0131617 14.1814 0.0131617L20.7416 1.8875e-06C21.1166 -0.000724082 21.6484 0.20806 21.9211 0.4646L24.8802 3.23413C24.9651 3.31331 25.0275 3.41392 25.0601 3.5255ZM28.4001 9.77932C29.1716 9.77932 29.7971 9.15384 29.7971 8.38227C29.7971 7.61071 29.1716 6.98523 28.4001 6.98523C27.6285 6.98523 27.003 7.61071 27.003 8.38227C27.003 9.15384 27.6285 9.77932 28.4001 9.77932ZM25.6059 13.9704C25.6059 18.5998 21.8531 22.3527 17.2237 22.3527C12.5943 22.3527 8.84141 18.5998 8.84141 13.9704C8.84141 9.34104 12.5943 5.58817 17.2237 5.58817C21.8531 5.58817 25.6059 9.34104 25.6059 13.9704ZM17.2236 19.5586C20.3098 19.5586 22.8117 17.0567 22.8117 13.9705C22.8117 10.8842 20.3098 8.38228 17.2236 8.38228C14.1373 8.38228 11.6354 10.8842 11.6354 13.9705C11.6354 17.0567 14.1373 19.5586 17.2236 19.5586Z"
-                  fill="#2A3435"
-                />
-              </svg>
+              <IconCameraFilled size={18} color="#2A3435" className={classes.startRenderIcon} />
               <p>{translation['RENDER_POPUP_BUTTON_START']}</p>
             </div>
           )}

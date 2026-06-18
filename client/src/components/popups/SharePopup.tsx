@@ -1,8 +1,10 @@
-import { FacebookShareButton } from 'next-share';
-import React, { useEffect, useRef, useState } from 'react';
+// import { FacebookShareButton } from 'next-share';
+import { IconCopy, IconHelpHexagon, IconX } from '@tabler/icons-react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { planner } from '../../initR2D';
 import {
   selectIsProjectBelongToLoggedUser,
@@ -18,9 +20,8 @@ import {
   selectUserProjectActive,
 } from '../../redux/features/user/userSlice';
 import { useEffectAsync } from '../../utils/useEffectAsync';
-import Checkbox from '../common/Checkbox';
+import Checkbox from '../../shared-components/inputs/checkbox';
 import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
-import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -352,7 +353,7 @@ const SharePopup = (props) => {
         ? popups.share.data
         : R2D.scene.getProjectHash();
 
-  const createdLink = popupType == 'tour' ? popupData : projectShareDomain + popupData;
+  const createdLink = popupType == 'tour' ? popupData : R2D.URL.DOMAIN + popupData;
 
   const [configFacebookSharing, setFacebookSharing] = useState(R2D.config.data.ui.facebook_sharing);
 
@@ -449,38 +450,7 @@ const SharePopup = (props) => {
             id="js_close_popup"
             onClick={onClickClosePopUp}
           >
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
           <div className={classes.planner_popup_login_wrap}>
             <div className={classes.planner_popup_title}>
@@ -492,7 +462,8 @@ const SharePopup = (props) => {
               <div>
                 <div className={classes.planner_popup_facebook}>
                   <div className={classes.planner_popup_text}>{translation['TEXT_SHARE_BY']}</div>
-                  FACEBOOK BUTTON HERE
+                  {/* TODO: fix share button */}
+                  [debug:FACEBOOK BUTTON HERE]
                   {/* <FacebookShareButton
                                         url={createdLink}
                                         children={<img src={`${R2D.URL.DOMAIN}/files/render/69682/105640/013048a81eb659fe3f17fafaba8c8c70.png`}/>}
@@ -525,31 +496,12 @@ const SharePopup = (props) => {
                         readOnly
                         value={createdLink}
                       />
-                      <svg
+                      <IconCopy
                         onClick={handleCopy}
                         className={classes.formShareIcon}
-                        width="22"
-                        height="22"
-                        viewBox="0 0 22 22"
-                        fill="none"
-                      >
-                        <path
-                          d="M10.1322 7.9809L7.83223 10.2808C7.82779 10.2853 7.82503 10.2906 7.82061 10.2951C8.38721 10.2126 8.96927 10.2692 9.50884 10.4796L11.0698 8.91857C11.587 8.40144 12.428 8.40144 12.9451 8.91857C13.4623 9.43566 13.4623 10.2768 12.9451 10.7938C12.857 10.8821 10.5122 13.2268 10.6452 13.0938C10.124 13.6151 9.26885 13.5928 8.76988 13.0938C8.51146 12.8354 8.0907 12.8354 7.83223 13.0938L7.42969 13.4963C7.54134 13.686 7.66935 13.8686 7.83223 14.0315C8.81439 15.0136 10.505 15.0921 11.5686 14.0431C11.5731 14.0387 11.5784 14.0359 11.5829 14.0315L13.8828 11.7315C14.9185 10.6958 14.9185 9.01663 13.8828 7.9809C12.8471 6.94517 11.1679 6.94517 10.1322 7.9809Z"
-                          fill="#323232"
-                        />
-                        <path
-                          d="M8.49952 15.2393L6.9335 16.8053C6.41641 17.3224 5.57532 17.3224 5.05823 16.8053C4.54109 16.2881 4.54109 15.4471 5.05823 14.9299L7.36319 12.625C7.88441 12.1038 8.73954 12.126 9.23851 12.625C9.49693 12.8835 9.91771 12.8835 10.1762 12.625L10.5787 12.2224C10.467 12.0327 10.339 11.8502 10.1762 11.6873C9.19587 10.707 7.50653 10.6236 6.43977 11.6757C6.43533 11.6801 6.42998 11.6829 6.42552 11.6873L4.12053 13.9923C3.08484 15.028 3.0848 16.7072 4.12053 17.743C5.15627 18.7787 6.83549 18.7787 7.87117 17.743L10.1761 15.438C10.1806 15.4335 10.1833 15.4282 10.1878 15.4237C9.62116 15.5062 9.03911 15.4497 8.49952 15.2393Z"
-                          fill="#323232"
-                        />
-                        <path
-                          d="M15.7455 3.92627H2.51457C1.22505 3.92627 0.179688 4.97163 0.179688 6.26115V19.4921C0.179688 20.7816 1.22505 21.827 2.51457 21.827H15.7455C17.0351 21.827 18.0804 20.7816 18.0804 19.4921V6.26115C18.0804 4.97163 17.0351 3.92627 15.7455 3.92627ZM16.5238 19.4922C16.5238 19.922 16.1754 20.2705 15.7455 20.2705H2.51457C2.08471 20.2705 1.73626 19.922 1.73626 19.4922V6.26115C1.73626 5.83129 2.08471 5.48284 2.51457 5.48284H15.7455C16.1754 5.48284 16.5238 5.83129 16.5238 6.26115V19.4922Z"
-                          fill="#323232"
-                        />
-                        <path
-                          d="M19.641 0.034668H5.63176C4.34224 0.034668 3.29688 1.08003 3.29688 2.36955C3.29688 2.7994 3.64533 3.14786 4.07518 3.14786C4.50504 3.14786 4.85345 2.7994 4.85345 2.36955C4.85345 1.93969 5.2019 1.59124 5.63176 1.59124H19.641C20.0709 1.59124 20.4193 1.93969 20.4193 2.36955V16.3788C20.4193 16.8087 20.0709 17.1571 19.641 17.1571C19.2112 17.1571 18.8627 17.5056 18.8627 17.9354C18.8627 18.3653 19.2112 18.7138 19.641 18.7138C20.9306 18.7138 21.9759 17.6684 21.9759 16.3789V2.36955C21.9759 1.08003 20.9306 0.034668 19.641 0.034668Z"
-                          fill="#323232"
-                        />
-                      </svg>
+                        size={22}
+                        color="#323232"
+                      />
                     </div>
                   </div>
 
@@ -567,19 +519,11 @@ const SharePopup = (props) => {
                           hoverTextPositionX={'left'}
                           showOnMobile={true}
                         >
-                          <svg
-                            width="18"
-                            height="18"
-                            viewBox="0 0 18 18"
-                            fill="none"
+                          <IconHelpHexagon
+                            size={18}
+                            color="#2D8BDB"
                             className={classes.additional_info}
-                          >
-                            <circle cx="9" cy="9" r="9" fill="#2D8BDB" />
-                            <path
-                              d="M10.0621 10.1938H8.76172C8.76535 9.86368 8.79255 9.58076 8.84333 9.34499C8.89774 9.10922 8.98661 8.89702 9.10993 8.70841C9.23326 8.51617 9.40011 8.32029 9.61049 8.1208C9.77734 7.96483 9.92606 7.81792 10.0566 7.68009C10.1908 7.53863 10.296 7.39172 10.3722 7.23938C10.4484 7.08341 10.4865 6.90749 10.4865 6.71162C10.4865 6.49036 10.4502 6.30537 10.3777 6.15665C10.3087 6.00793 10.2054 5.89549 10.0675 5.81932C9.93331 5.73952 9.76465 5.69962 9.56152 5.69962C9.39467 5.69962 9.23689 5.73408 9.08817 5.803C8.93945 5.87191 8.81975 5.97892 8.72907 6.12401C8.63839 6.26547 8.58943 6.45046 8.58217 6.67897H7.14035C7.15123 6.2038 7.26367 5.80844 7.47768 5.49287C7.69169 5.17367 7.98005 4.93609 8.34277 4.78012C8.7055 4.62052 9.11175 4.54072 9.56152 4.54072C10.0585 4.54072 10.4828 4.62415 10.8347 4.791C11.1902 4.95422 11.4604 5.19362 11.6454 5.50919C11.834 5.82476 11.9283 6.20562 11.9283 6.65177C11.9283 6.97096 11.8666 7.25752 11.7433 7.51142C11.62 7.7617 11.4568 7.99566 11.2536 8.21329C11.0505 8.43093 10.8311 8.65037 10.5953 8.87163C10.3885 9.05662 10.2489 9.25431 10.1763 9.46469C10.1038 9.67507 10.0657 9.91809 10.0621 10.1938ZM8.6257 11.8859C8.6257 11.6682 8.69824 11.4869 8.84333 11.3418C8.99205 11.1967 9.19155 11.1241 9.44182 11.1241C9.6921 11.1241 9.88979 11.1967 10.0349 11.3418C10.1836 11.4869 10.258 11.6682 10.258 11.8859C10.258 12.0962 10.1836 12.274 10.0349 12.4191C9.88979 12.5642 9.6921 12.6367 9.44182 12.6367C9.19155 12.6367 8.99205 12.5642 8.84333 12.4191C8.69824 12.274 8.6257 12.0962 8.6257 11.8859Z"
-                              fill="#E5E5E5"
-                            />
-                          </svg>
+                          />
                         </HoverComponent>
                       </div>
                     </div>

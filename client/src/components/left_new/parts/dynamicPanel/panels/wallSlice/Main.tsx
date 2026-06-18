@@ -1,8 +1,10 @@
+import { IconCheck, IconX } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
@@ -22,7 +24,6 @@ import {
 } from '../../../../../../redux/features/user/userSlice';
 import Lock from '../../../../../common/Lock';
 import CloseModeBtn from '../common/CloseModeBtn';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   plannerWallsCont: {
@@ -327,16 +328,7 @@ const Main = (props) => {
             }
             onClick={onCancel}
           >
-            <svg width="21" height="22" viewBox="0 0 21 22" fill="none">
-              <path
-                d="M19.799 0.600586L20.5061 1.30769L0.707107 21.1067L0 20.3996L19.799 0.600586Z"
-                fill="#2A3435"
-              />
-              <path
-                d="M0.799112 0.600586L0.0920048 1.30769L19.891 21.1067L20.5981 20.3996L0.799112 0.600586Z"
-                fill="#2A3435"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" />
             <p>{translation['UPLOAD_MODEL_TEXT_CANCEL']}</p>
           </div>
           <div
@@ -358,9 +350,7 @@ const Main = (props) => {
             userData.plan == 'basic' ||
             (isProjectBelongToLoggedUser &&
               (userProjectActive.plan == 'pro' || userProjectActive.plan == 'basic')) ? (
-              <svg width="22" height="18" viewBox="0 0 22 18" fill="none">
-                <path d="M0.5 9.5L7.5 16.5L21.5 0.5" stroke="#2A3435" />
-              </svg>
+              <IconCheck size={18} color="#2A3435" />
             ) : null}
             <p>{translation['UPLOAD_MODEL_TEXT_SAVE']}</p>
             {userData.plan == 'pro' ||

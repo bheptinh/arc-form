@@ -4,23 +4,15 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import {
   controlPanelHistoryReplaceArray,
   controlPanelUpdateBreadCrumbs,
   selectActiveControlPanelMode,
   selectActiveControlPanelModeData,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   breadCrumbs: {
     width: '100%',
     backgroundColor: 'rgba(129, 129, 129, 0.9)',

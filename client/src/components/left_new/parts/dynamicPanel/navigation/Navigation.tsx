@@ -1,7 +1,9 @@
+import { IconX } from '@tabler/icons-react';
 import React, { useMemo } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../../../api/hooks/useTranslation';
 import {
   controlPanelHistoryReplaceArray,
   controlPanelUpdateBreadCrumbs,
@@ -10,23 +12,8 @@ import {
 import AdditionalSettings from './components/AdditionalSettings';
 import Breadcrumbs from './components/Breadcrumbs';
 import Prev from './components/Prev';
-import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-  ],
   catalog_top_wr: {
     padding: '10px 10px 10px 10px',
     display: 'grid',
@@ -155,17 +142,7 @@ const Navigation = (props) => {
           ) : null}
           {props.closeButtonStatus && (
             <div className={classes.navigation_close} onClick={onClickCloseButton}>
-              <svg
-                className={classes.navigation_close_icon}
-                viewBox="0 0 16.03 16.02"
-                width="24px"
-                height="24px"
-              >
-                <path
-                  fill="#2A3435"
-                  d="M1,0a1,1,0,0,0-.7,1.72L6.6,8,.31,14.3a1,1,0,0,0,1.39,1.44l0,0L8,9.42l6.29,6.29a1,1,0,1,0,1.44-1.39l0,0L9.43,8l6.29-6.29A1,1,0,1,0,14.31.3L8,6.6,1.72.3A1,1,0,0,0,1,0Z"
-                />
-              </svg>
+              <IconX size={24} color="#2F2F2F" className={classes.navigation_close_icon} />
             </div>
           )}
         </div>

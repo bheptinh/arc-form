@@ -1,10 +1,13 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
+import { IconView360Arrow } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useLanguages } from '../../../../../../../api/hooks/useLanguages';
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../../initR2D';
 import {
   changeActivePano,
@@ -19,8 +22,6 @@ import {
 } from '../../../../../../../redux/features/control/controlPanelSlice';
 import { selectUserProfileData } from '../../../../../../../redux/features/user/userSlice';
 import Navigation from '../../../navigation/Navigation';
-import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
-import { useLanguages } from '../../../../../../../api/hooks/useLanguages';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -345,25 +346,12 @@ const Panorams = (props) => {
           {activePanoId == elem.id ? (
             <div className={classes.activePano} onMouseDown={startRotatePano}>
               <p className={classes.rotateText}> {rotation}° </p>
-              <svg
-                width="67"
-                height="42"
-                viewBox="0 0 67 42"
-                fill="none"
-                className={classes.viewItemIcon}
-              >
-                <path
-                  d="M0 21.0735C0 16.5687 5.09113 12.5608 13 10V14.2263C12.4303 14.4314 11.8813 14.6444 11.3543 14.8647C8.6132 16.0102 6.65554 17.2723 5.44397 18.4694C4.24683 19.6523 4 20.5296 4 21.0735C4 21.6174 4.24683 22.4947 5.44397 23.6776C6.65554 24.8746 8.6132 26.1368 11.3543 27.2823C15.873 29.1707 22.0067 30.5282 29 30.9417V34.9483C12.6264 34.0296 0 28.1678 0 21.0735Z"
-                  fill="#FCFFFF"
-                />
-                <path
-                  d="M46 34.0664C58.3101 31.996 67 26.9589 67 21.0735C67 16.5687 61.9089 12.5608 54 10V14.2263C54.5697 14.4314 55.1187 14.6444 55.6457 14.8647C58.3868 16.0102 60.3445 17.2723 61.556 18.4694C62.7532 19.6523 63 20.5296 63 21.0735C63 21.6174 62.7532 22.4947 61.556 23.6776C60.3445 24.8746 58.3868 26.1368 55.6457 27.2823C52.9513 28.4083 49.6827 29.3456 46 30.0065V34.0664Z"
-                  fill="#FCFFFF"
-                />
-                <path d="M29 23L39.5 32.5L29 42V23Z" fill="#FCFFFF" />
-              </svg>
+              <IconView360Arrow size={65} color="#FCFFFF" className={classes.viewItemIcon} />
+
               <div className={classes.help_bot_item}>
                 <div>{translation['TEXT_ROTATE_PANORAMA']}</div>
+
+                {/* TODO: Replace mouse icon */}
                 <svg width="19" height="26" viewBox="0 0 19 26" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#fff"

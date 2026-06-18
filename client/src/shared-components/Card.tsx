@@ -1,3 +1,4 @@
+import { IconCalendarMonth, IconClock } from '@tabler/icons-react';
 import { MouseEvent, ReactNode } from 'react';
 import { createUseStyles } from 'react-jss';
 
@@ -140,7 +141,17 @@ const useStyles = createUseStyles({
   },
 });
 
-export function Card({ name, preview, modified, created, userPlan, actions, onClick, nameContent, className }: Props) {
+export function Card({
+  name,
+  preview,
+  modified,
+  created,
+  userPlan,
+  actions,
+  onClick,
+  nameContent,
+  className,
+}: Props) {
   const classes = useStyles();
   const rootClass = [classes.card, className].filter(Boolean).join(' ');
 
@@ -157,7 +168,10 @@ export function Card({ name, preview, modified, created, userPlan, actions, onCl
             <div
               key={label}
               className={classes.actionBtn}
-              onClick={(e) => { e.stopPropagation(); onAction(e); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                onAction(e);
+              }}
             >
               {icon}
               <div className={classes.actionLabel}>{label}</div>
@@ -170,47 +184,22 @@ export function Card({ name, preview, modified, created, userPlan, actions, onCl
         <div className={classes.meta}>
           {modified && (
             <div className={classes.metaRow}>
-              <svg width="17" height="16" fill="none" viewBox="0 0 17 16">
-                <path
-                  fill="#7B7B7B"
-                  fillRule="evenodd"
-                  d="m3.306 15.27-.879-.012-.047-4.275h.006v-.03l4.338.082.005.88-3.461-.066.038 3.42Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#7B7B7B"
-                  fillRule="evenodd"
-                  d="M7.502 1.078a7.382 7.382 0 0 0-2.191.981L6 2.973a6.246 6.246 0 0 1 1.773-.785l-.27-1.11Zm1.243.931A6.278 6.278 0 1 1 3.8 11.102l-1.263-.015a7.422 7.422 0 0 0 14.279-2.833A7.42 7.42 0 0 0 8.754.862l-.009 1.147Zm-4.73 1.137.966.645a6.287 6.287 0 0 0-1.405 2.105l-1.04-.473a7.4 7.4 0 0 1 1.479-2.277ZM2.104 6.877l1.117.239a6.315 6.315 0 0 0 .06 2.565H2.114a7.457 7.457 0 0 1-.01-2.804Z"
-                  clipRule="evenodd"
-                />
-                <path fill="#7B7B7B" d="M8.816 3.229h1.427v5.137H8.816z" />
-                <path fill="#7B7B7B" d="m13.45 10.876-1.008 1.01-3.633-3.633 1.01-1.01z" />
-              </svg>
+              <IconClock size={16} color="#7B7B7B" />
+
               <span>Modified:</span>
               {modified.substring(0, 10)}
             </div>
           )}
           {created && created.substring(0, 10) !== '0000-00-00' && (
             <div className={classes.metaRow}>
-              <svg width="16" height="17" fill="none" viewBox="0 0 16 17">
-                <path
-                  fill="#7B7B7B"
-                  d="M.385 4.706a3.018 3.018 0 0 1 3.014-2.828h.777v-.603a.604.604 0 0 1 1.207 0v.603h4.827v-.603a.603.603 0 0 1 1.207 0v.603h.777a3.018 3.018 0 0 1 3.014 2.828 74.009 74.009 0 0 1-.01 8.992 3.021 3.021 0 0 1-2.823 2.824 73.783 73.783 0 0 1-9.156 0 3.021 3.021 0 0 1-2.823-2.824 74.006 74.006 0 0 1-.011-8.992ZM1.6 13.623a1.812 1.812 0 0 0 1.694 1.694c2.987.186 6.018.186 9.006 0a1.812 1.812 0 0 0 1.693-1.694c.142-2.303.174-4.61.096-6.917H1.504a72.905 72.905 0 0 0 .096 6.917Zm9.214-9.33a.604.604 0 0 1-.604-.604v-.604H5.383v.604a.603.603 0 1 1-1.207 0v-.604h-.777a1.81 1.81 0 0 0-1.81 1.693c-.013.24-.02.481-.031.721h12.477c-.012-.24-.018-.48-.032-.72a1.81 1.81 0 0 0-1.81-1.694h-.775v.604a.604.604 0 0 1-.604.603Z"
-                />
-                <path
-                  fill="#7B7B7B"
-                  d="M10.813 10.327a.905.905 0 1 1 0-1.81.905.905 0 0 1 0 1.81Zm-3.015 0a.905.905 0 1 1 0-1.81.905.905 0 0 1 0 1.81Zm3.015 3.018a.905.905 0 1 1 0-1.81.905.905 0 0 1 0 1.81Zm-6.035-3.018a.905.905 0 1 1 0-1.81.905.905 0 0 1 0 1.81Zm0 3.018a.905.905 0 1 1 0-1.81.905.905 0 0 1 0 1.81Zm3.02 0a.905.905 0 1 1 0-1.81.905.905 0 0 1 0 1.81Z"
-                />
-              </svg>
+              <IconCalendarMonth size={16} color="#7B7B7B" />
               <span>Created:</span>
               {created.substring(0, 10)}
             </div>
           )}
         </div>
       </div>
-      {userPlan && userPlan !== 'free' && (
-        <div className={classes.planBadge}>{userPlan}</div>
-      )}
+      {userPlan && userPlan !== 'free' && <div className={classes.planBadge}>{userPlan}</div>}
     </div>
   );
 }

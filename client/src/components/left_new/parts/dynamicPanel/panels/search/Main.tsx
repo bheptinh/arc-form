@@ -1,41 +1,39 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
-import {AnimatePresence} from "framer-motion";
-import React, { useEffect, useMemo,useRef, useState } from 'react';
-import {createUseStyles} from "react-jss";
+import { IconCopy, IconRosetteDiscountFilled, IconSearch, IconTrash } from '@tabler/icons-react';
+import { AnimatePresence } from 'framer-motion';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../initR2D';
 import {
-    controlPanelHistoryDataUpdate,
-    selectActiveControlPanelModeData,
-    selectCategoryTreePanelStatus,
-    selectControlPanelStatus,
-    selectDynamicPanelPreviewViewType,
-    selectDynamicPanelStatus,
-    updateAnimateFavoritesHideStatus, updateAnimateFavoritesShowStatus
+  controlPanelHistoryDataUpdate,
+  selectActiveControlPanelModeData,
+  selectCategoryTreePanelStatus,
+  selectControlPanelStatus,
+  selectDynamicPanelPreviewViewType,
+  selectDynamicPanelStatus,
+  updateAnimateFavoritesHideStatus,
+  updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import { selectIsLogged, selectUserProfileData, selectUserProjectActive } from '../../../../../../redux/features/user/userSlice';
+import {
+  selectIsLogged,
+  selectUserProfileData,
+  selectUserProjectActive,
+} from '../../../../../../redux/features/user/userSlice';
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
-import FavoriteStarIcon from "../../../../../common/FavoriteStarIcon";
+import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import Lock from '../../../../../common/Lock';
-import ModalMoreInfo from "../../../../../common/ModalMoreInfo";
-import MoreInfoIcon from "../../../../../common/MoreInfoIcon";
-import HoverComponent from "../../../controlPanel/components/HoverComponent";
-import AdditionalSettings from "../../navigation/components/AdditionalSettings";
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
+import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
+import HoverComponent from '../../../controlPanel/components/HoverComponent';
+import AdditionalSettings from '../../navigation/components/AdditionalSettings';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -89,15 +87,13 @@ const useStyle = createUseStyles({
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
       background: '#2E3839',
-      '& path': {
-        fill: '#fff',
+      '& svg': {
+        stroke: '#fff',
       },
     },
   },
   searchBtn: {
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
+    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   seach_title_wr: {
     display: 'flex',
@@ -396,18 +392,14 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
     height: 16,
     pointerEvents: 'auto',
-    '& rect': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
     '&:hover': {
-      '& rect': {
-        fill: '#B8E11F',
+      '& svg': {
+        stroke: '#B8E11F',
       },
     },
   },
   prod_item_btn_icon: {
-    width: '100%',
-    height: 'auto',
+    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   prod_item_fav_btn: {
     width: '24px',
@@ -486,16 +478,12 @@ const useStyle = createUseStyles({
     borderRadius: '50%',
     justifyContent: 'center',
     cursor: 'pointer',
-    '& path': {
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-    '&:hover path': {
-      fill: '#AF3131',
+    '&:hover svg': {
+      stroke: '#AF3131',
     },
   },
   prod_item_custom_delete: {
-    maxWidth: '80%',
-    maxHeight: '80%',
+    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
   },
   prod_item_promocode_btn: {
     width: '24px',
@@ -709,38 +697,38 @@ const Main = (props) => {
   const dispatch = useDispatch();
   const translation = useTranslation();
 
-  let isLogged = useSelector(selectIsLogged);
-  let userProjectActive = useSelector(selectUserProjectActive);
-  let userData = useSelector(selectUserProfileData);
+  const isLogged = useSelector(selectIsLogged);
+  const userProjectActive = useSelector(selectUserProjectActive);
+  const userData = useSelector(selectUserProfileData);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  let controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
+  const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  let isAdded = lastHistoryElem?.isAdded;
+  const isAdded = lastHistoryElem?.isAdded;
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
-  let categoryTreePanelStatus = useSelector(selectCategoryTreePanelStatus);
-  let controlPanelStatus = useSelector(selectControlPanelStatus);
-  let dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
+  const categoryTreePanelStatus = useSelector(selectCategoryTreePanelStatus);
+  const controlPanelStatus = useSelector(selectControlPanelStatus);
+  const dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
 
-  let [lastHistoryElemData, setLastHistoryElemData] = useState(
+  const [lastHistoryElemData, setLastHistoryElemData] = useState(
     () => controlPanelModeHistory[controlPanelModeHistory.length - 1]?.data
   );
-  let [styleAnimation, setStyleAnimation] = useState(
+  const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
   const [searchedList, setSearchedList] = useState(lastHistoryElemData?.searchResult);
-  let [searchedReactArray, setSearchedReactArray] = useState(null);
-  let [searchedQuery, setSearchedQuery] = useState(lastHistoryElemData?.searchQuery);
+  const [searchedReactArray, setSearchedReactArray] = useState(null);
+  const [searchedQuery, setSearchedQuery] = useState(lastHistoryElemData?.searchQuery);
   const [searchedResultTotal, setSearchedResultTotal] = useState(lastHistoryElemData?.searchTotal);
-  let [favoritesList, setFavoritesList] = useState(user.data.favorites?.items || []);
-  let [hoverImages, setHoverImages] = useState([]);
+  const [favoritesList, setFavoritesList] = useState(user.data.favorites?.items || []);
+  const [hoverImages, setHoverImages] = useState([]);
   const [loadedPreviews, setLoadedPreviews] = useState([]);
-  let [preloaderStatus, setPreloaderStatus] = useState(true);
+  const [preloaderStatus, setPreloaderStatus] = useState(true);
 
   const classes = useStyle();
 
-  let mainDiv = useRef(null);
+  const mainDiv = useRef(null);
   const searchInput = useRef(null);
-  let searchBtn = useRef(null);
+  const searchBtn = useRef(null);
 
   let isObjLoaded = false;
   let selectedObjId = null;
@@ -765,12 +753,12 @@ const Main = (props) => {
   const panelRef = useRef(null);
 
   const currOS = R2D.controller.getCurrentOS();
-  let isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
+  const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
 
   const [modalMoreInfo, setModalMoreInfo] = useState(false);
   const [productElemHover, setProductElemHover] = useState(null);
 
-  let updateFavorites = async (id, isInFavorites, color = '') => {
+  const updateFavorites = async (id, isInFavorites, color = '') => {
     document.querySelector('.product_hover') && document.querySelector('.product_hover').remove();
     if (!isLogged) return dispatch(setActivePopup({ name: 'login' }));
     if (isInFavorites) {
@@ -779,10 +767,10 @@ const Main = (props) => {
       dispatch(updateAnimateFavoritesHideStatus(true));
       setTimeout(() => dispatch(updateAnimateFavoritesHideStatus(false)), 10);
     } else {
-      let response = await user.uAddToFavorites(id, color);
+      const response = await user.uAddToFavorites(id, color);
 
       setFavoritesList((prev) => {
-        let newArray = prev;
+        const newArray = prev;
         return [...newArray, response];
       });
 
@@ -795,22 +783,30 @@ const Main = (props) => {
   // Material
 
   const onMouseDownMaterial = (e, elem, isObjectAccessible) => {
-        document.addEventListener("mouseup", onMouseUpMaterial);
-        plannerCatalogElem = e.currentTarget.closest(`.${classes.prod_item}`);
-        currentProductAccessibilityStatus = isObjectAccessible;
-        document.addEventListener("mousemove", onMoveMaterial);
-        timer = Date.now();
-        currentDraggedElem = elem;
-        dragTimeout = setTimeout(() => {
-            plannerCatalogElem.classList.add(classes.selectedTouched)
-            e.nativeEvent.button == 0 ? elem.addData ? planner.scene.dragProductFromCatalog(elem.addData, elem.id) : planner.scene.dragProductFromCatalog(elem.id) : null
-            if((elem.isOwner && userData.plan == 'free' && userProjectActive.plan == 'free') || !currentProductAccessibilityStatus) R2D.mouseInteractionHelper.stateDraggingMaterial.isPlaceMaterialAllowed = false;
-        }, 100);
-    }
+    document.addEventListener('mouseup', onMouseUpMaterial);
+    plannerCatalogElem = e.currentTarget.closest(`.${classes.prod_item}`);
+    currentProductAccessibilityStatus = isObjectAccessible;
+    document.addEventListener('mousemove', onMoveMaterial);
+    timer = Date.now();
+    currentDraggedElem = elem;
+    dragTimeout = setTimeout(() => {
+      plannerCatalogElem.classList.add(classes.selectedTouched);
+      e.nativeEvent.button == 0
+        ? elem.addData
+          ? planner.scene.dragProductFromCatalog(elem.addData, elem.id)
+          : planner.scene.dragProductFromCatalog(elem.id)
+        : null;
+      if (
+        (elem.isOwner && userData.plan == 'free' && userProjectActive.plan == 'free') ||
+        !currentProductAccessibilityStatus
+      )
+        R2D.mouseInteractionHelper.stateDraggingMaterial.isPlaceMaterialAllowed = false;
+    }, 100);
+  };
 
-  let onMoveMaterial = (e) => planner.mih().state && planner.mih().state.mouseMove(e);
+  const onMoveMaterial = (e) => planner.mih().state && planner.mih().state.mouseMove(e);
 
-  let onMouseUpMaterial = (e) => {
+  const onMouseUpMaterial = (e) => {
     clearTimeout(dragTimeout);
     document.removeEventListener('mousemove', onMoveMaterial);
     document.removeEventListener('mouseup', onMouseUpMaterial);
@@ -831,35 +827,38 @@ const Main = (props) => {
   };
 
   const mouseEnterMaterial = (event, data, isObjectAccessible) => {
-        if(dynamicPanelPreviewViewType == 'small') {
-            if(!isObjectAccessible) return;
-            document.querySelector(".product_hover") && document.querySelector(".product_hover").remove();
-            let product = event.target;
-            let hoverWindow = document.createElement("div");
-            hoverWindow.classList.add("product_hover");
-            hoverWindow.innerHTML = data.name;
-            if(data.isColorPicker) {
-                let materialsName = document.createElement("p");
-                materialsName.textContent = "#aaaaaa";
-                materialsName.classList.add(classes.product_hover_color);
-                hoverWindow.append(materialsName);
-            }
-            document.querySelector("body").append(hoverWindow);
-            hoverWindow.style.left = (product.getBoundingClientRect().left + product.offsetWidth) + "px";
-            hoverWindow.style.top = (product.getBoundingClientRect().top + ((product.offsetHeight - hoverWindow.offsetHeight) / 2)) + "px";
-        }
+    if (dynamicPanelPreviewViewType == 'small') {
+      if (!isObjectAccessible) return;
+      document.querySelector('.product_hover') && document.querySelector('.product_hover').remove();
+      const product = event.target;
+      const hoverWindow = document.createElement('div');
+      hoverWindow.classList.add('product_hover');
+      hoverWindow.innerHTML = data.name;
+      if (data.isColorPicker) {
+        const materialsName = document.createElement('p');
+        materialsName.textContent = '#aaaaaa';
+        materialsName.classList.add(classes.product_hover_color);
+        hoverWindow.append(materialsName);
+      }
+      document.querySelector('body').append(hoverWindow);
+      hoverWindow.style.left = product.getBoundingClientRect().left + product.offsetWidth + 'px';
+      hoverWindow.style.top =
+        product.getBoundingClientRect().top +
+        (product.offsetHeight - hoverWindow.offsetHeight) / 2 +
+        'px';
+    }
   };
 
-  let mouseLeaveMaterial = () =>
+  const mouseLeaveMaterial = () =>
     document.querySelector('.product_hover') && document.querySelector('.product_hover').remove();
 
   // Model
-  let onMouseDownModel = (e, elem, isObjectAccessible) => {
+  const onMouseDownModel = (e, elem, isObjectAccessible) => {
     if (document.querySelector('.' + classes.prod_elem_wrap))
       document.querySelector('.' + classes.prod_elem_wrap).style.touchAction = 'auto';
     if (document.querySelector('.' + classes.catalog_wr))
       document.querySelector('.' + classes.catalog_wr).style.touchAction = 'auto';
-    let id = elem.id;
+    const id = elem.id;
     currentDraggedElem = elem;
     const previewUrl = elem.source.images.preview;
     if (mouseDownOnObj) return;
@@ -871,7 +870,7 @@ const Main = (props) => {
     document.querySelector('.' + classes.product_hover_discount) &&
       document.querySelector('.' + classes.product_hover_discount).remove();
     mouseDownOnObj = true;
-    let selectedObjImg = plannerCatalogElem.querySelector('img');
+    const selectedObjImg = plannerCatalogElem.querySelector('img');
     selectedObjImgWidth = selectedObjImg?.offsetWidth;
     selectedObjImgHeight = selectedObjImg?.offsetHeight;
     selectedObjPreviewRatio =
@@ -880,8 +879,8 @@ const Main = (props) => {
         (currentOverlayCoords.x + currentOverlayCoords.width));
     selectedObjId = id;
     selectedObjPreviewUrl = previewUrl;
-    let newXPos = e.clientX || e.touches[0].clientX;
-    let newYPos = e.clientY || e.touches[0].clientY;
+    const newXPos = e.clientX || e.touches[0].clientX;
+    const newYPos = e.clientY || e.touches[0].clientY;
     startingPointX = newXPos - selectedObjImg?.getBoundingClientRect().left;
     startingPointY = newYPos - selectedObjImg?.getBoundingClientRect().top;
     document.addEventListener('mousemove', onObjectMove);
@@ -895,10 +894,10 @@ const Main = (props) => {
     );
   };
 
-  let onObjectMove = (e) => {
+  const onObjectMove = (e) => {
     if (Date.now() - timer > 100) {
       if (!isObjLoaded) {
-        let imgElem = document.createElement('img');
+        const imgElem = document.createElement('img');
         previewObj = document.createElement('div');
         imgElem.src = R2D.URL.DOMAIN + selectedObjPreviewUrl;
         previewObj.classList.add(classes.previewSelectedObject);
@@ -909,10 +908,10 @@ const Main = (props) => {
         planner.scene.dragProductFromCatalog(selectedObjId);
         isObjLoaded = true;
       }
-      let outFromPanelVal = currentOverlayCoords.left + currentOverlayCoords.width - e.clientX;
+      const outFromPanelVal = currentOverlayCoords.left + currentOverlayCoords.width - e.clientX;
       previewObjOpacity = outFromPanelVal > 0 ? 1 : 1 + outFromPanelVal * selectedObjPreviewRatio;
-      let newXPos = e.clientX || (e.touches && e.touches[0].clientX);
-      let newYPos = e.clientY || (e.touches && e.touches[0].clientY);
+      const newXPos = e.clientX || (e.touches && e.touches[0].clientX);
+      const newYPos = e.clientY || (e.touches && e.touches[0].clientY);
       previewObj.style.opacity = previewObjOpacity;
       previewObj.style.left = newXPos - startingPointX + 'px';
       previewObj.style.top = newYPos - startingPointY + 'px';
@@ -920,7 +919,7 @@ const Main = (props) => {
     }
   };
 
-  let onObjectMouseUp = async (e) => {
+  const onObjectMouseUp = async (e) => {
     mouseDownOnObj = false;
     selectedObjId = null;
     selectedObjImgWidth = 0;
@@ -936,7 +935,7 @@ const Main = (props) => {
     isObjLoaded = false;
     previewObjOpacity = 1;
     if (Date.now() - timer > 100) {
-      let sceneObjectToDelete =
+      const sceneObjectToDelete =
         R2D.mouseInteractionHelper.stateDraggingProdFromCatalog.view3DObject?.sceneObject;
       if (e.clientX < R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels()) {
         planner.mih().state && planner.mih().state.mouseUp(e);
@@ -960,7 +959,7 @@ const Main = (props) => {
     currentDraggedElem = null;
   };
 
-  let createModelImage = (productContour) => {
+  const createModelImage = (productContour) => {
     return new Promise((resolve, reject) => {
       imageSizeCreator = new R2D.ProductHint.ImageSizeCreator();
 
@@ -971,7 +970,7 @@ const Main = (props) => {
       function imageSizeCreatorEventHandler(e) {
         if (imageSizeCreator == null) return;
 
-        let src = imageSizeCreator.getResultImageSrc();
+        const src = imageSizeCreator.getResultImageSrc();
         imageSizeCreator.removeEventListener(Event.COMPLETE, imageSizeCreatorEventHandler);
         imageSizeCreator.removeEventListener(Event.ERROR, imageSizeCreatorEventHandler);
         imageSizeCreator.dispose();
@@ -983,71 +982,80 @@ const Main = (props) => {
   };
 
   const mouseEnterModel = async (event, data, isObjectAccessible) => {
-        if(dynamicPanelPreviewViewType == 'small') {
-            if(mouseDownOnObj || !isObjectAccessible) return;
-            document.querySelector("." + classes.product_hover) && document.querySelector("." + classes.product_hover).remove();
-            let product = event.currentTarget || event.target.closest('.' + classes.prod_item);
-            let hoverWindow = document.createElement("div");
-            hoverWindow.classList.add(classes.product_hover);
+    if (dynamicPanelPreviewViewType == 'small') {
+      if (mouseDownOnObj || !isObjectAccessible) return;
+      document.querySelector('.' + classes.product_hover) &&
+        document.querySelector('.' + classes.product_hover).remove();
+      const product = event.currentTarget || event.target.closest('.' + classes.prod_item);
+      const hoverWindow = document.createElement('div');
+      hoverWindow.classList.add(classes.product_hover);
 
-            document.querySelector("body").append(hoverWindow);
+      document.querySelector('body').append(hoverWindow);
 
-            let textHover = document.createElement("p");
-            textHover.innerHTML = data.name;
-            hoverWindow.append(textHover);
-            setTimeout(() => {
-                hoverWindow.style.left = (product.getBoundingClientRect().left + product.offsetWidth) + "px";
-                hoverWindow.style.top = (product.getBoundingClientRect().top + ((product.offsetHeight - hoverWindow.offsetHeight) / 2)) + "px";
-            }, 50)
-        }
+      const textHover = document.createElement('p');
+      textHover.innerHTML = data.name;
+      hoverWindow.append(textHover);
+      setTimeout(() => {
+        hoverWindow.style.left = product.getBoundingClientRect().left + product.offsetWidth + 'px';
+        hoverWindow.style.top =
+          product.getBoundingClientRect().top +
+          (product.offsetHeight - hoverWindow.offsetHeight) / 2 +
+          'px';
+      }, 50);
     }
+  };
 
-  let mouseLeaveModel = (e) =>
+  const mouseLeaveModel = (e) =>
     document.querySelector('.' + classes.product_hover) &&
     document.querySelector('.' + classes.product_hover).remove();
 
   const mouseDiscountEnter = async (event, discount, promocode) => {
-        if(mouseDownOnObj || isCurrDeviceAPhone) return;
-        document.querySelector("." + classes.product_hover) && document.querySelector("." + classes.product_hover).classList.add(classes.hidden);
+    if (mouseDownOnObj || isCurrDeviceAPhone) return;
+    document.querySelector('.' + classes.product_hover) &&
+      document.querySelector('.' + classes.product_hover).classList.add(classes.hidden);
 
-        let product = event.currentTarget;
-        let closesetCatalogElem = event.target.closest('.' + classes.prod_item);
-        let hoverWindow = document.createElement("div");
-        hoverWindow.classList.add(classes.product_hover_discount);
+    const product = event.currentTarget;
+    const closesetCatalogElem = event.target.closest('.' + classes.prod_item);
+    const hoverWindow = document.createElement('div');
+    hoverWindow.classList.add(classes.product_hover_discount);
 
-        document.querySelector("body").append(hoverWindow);
+    document.querySelector('body').append(hoverWindow);
 
-        let discountDiv = document.createElement("div");
-        let discountDivText = document.createElement("p");
-        let discountDivValue = document.createElement("p");
-        discountDivText.innerHTML = translation['PRODUCT_DISCOUNT'] + ': ';
-        discountDivValue.innerHTML = discount + '%';
-        discountDivValue.classList.add(classes.discountValueText);
-        discountDiv.append(discountDivText);
-        discountDiv.append(discountDivValue);
+    const discountDiv = document.createElement('div');
+    const discountDivText = document.createElement('p');
+    const discountDivValue = document.createElement('p');
+    discountDivText.innerHTML = translation['PRODUCT_DISCOUNT'] + ': ';
+    discountDivValue.innerHTML = discount + '%';
+    discountDivValue.classList.add(classes.discountValueText);
+    discountDiv.append(discountDivText);
+    discountDiv.append(discountDivValue);
 
-        let promocodeDiv = document.createElement("div");
-        let promocodeDivText = document.createElement("p");
-        let promocodeDivValue = document.createElement("p");
-        promocodeDivValue.classList.add(classes.discountValueText);
-        promocodeDivText.innerHTML = translation['PRODUCT_PROMOCODE'] + ': ';
-        promocodeDivValue.innerHTML = promocode;
-        promocodeDiv.append(promocodeDivText);
-        promocodeDiv.append(promocodeDivValue);
+    const promocodeDiv = document.createElement('div');
+    const promocodeDivText = document.createElement('p');
+    const promocodeDivValue = document.createElement('p');
+    promocodeDivValue.classList.add(classes.discountValueText);
+    promocodeDivText.innerHTML = translation['PRODUCT_PROMOCODE'] + ': ';
+    promocodeDivValue.innerHTML = promocode;
+    promocodeDiv.append(promocodeDivText);
+    promocodeDiv.append(promocodeDivValue);
 
-        hoverWindow.append(discountDiv);
-        hoverWindow.append(promocodeDiv);
-        setTimeout(() => {
-            hoverWindow.style.left = (closesetCatalogElem.getBoundingClientRect().left + closesetCatalogElem.offsetWidth) + "px";
-            hoverWindow.style.top = (product.getBoundingClientRect().top + ((product.getBBox().height - hoverWindow.offsetHeight) / 2)) + "px";
-        }, 50);
-    }
+    hoverWindow.append(discountDiv);
+    hoverWindow.append(promocodeDiv);
+    setTimeout(() => {
+      hoverWindow.style.left =
+        closesetCatalogElem.getBoundingClientRect().left + closesetCatalogElem.offsetWidth + 'px';
+      hoverWindow.style.top =
+        product.getBoundingClientRect().top +
+        (product.getBBox().height - hoverWindow.offsetHeight) / 2 +
+        'px';
+    }, 50);
+  };
 
-  let mouseDiscountLeave = (e) =>
+  const mouseDiscountLeave = (e) =>
     document.querySelector('.' + classes.product_hover_discount) &&
     document.querySelector('.' + classes.product_hover_discount).remove();
 
-  let onClickSearchBtn = async (e) => {
+  const onClickSearchBtn = async (e) => {
     setPreloaderStatus(true);
     if (!searchInput.current.value) return setPreloaderStatus(false);
 
@@ -1071,25 +1079,25 @@ const Main = (props) => {
     setPreloaderStatus(false);
   };
 
-  let onEnterClick = (e) =>
+  const onEnterClick = (e) =>
     e.code == 'Enter' && searchInput.current == document.activeElement && onClickSearchBtn();
 
-  let onMouseEnterProductMoreInfo = (e, elem) => {
+  const onMouseEnterProductMoreInfo = (e, elem) => {
     setModalMoreInfo(true);
     setProductElemHover(elem);
   };
-  let onMouseLeaveProductMoreInfo = (e) => {
+  const onMouseLeaveProductMoreInfo = (e) => {
     setModalMoreInfo(false);
   };
 
-  let onSearchQueryUpdate = (e) => onClickSearchBtn();
+  const onSearchQueryUpdate = (e) => onClickSearchBtn();
 
-  let copyMaterial = (e, elem) => {
+  const copyMaterial = (e, elem) => {
     R2D.CopyPaste.copyMaterial({ id: elem.id });
   };
 
   useEffect(() => {
-    let keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
+    const keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
     document.addEventListener('keyup', onEnterClick);
     planner.scene.addEventListener(planner.scene.PRODUCTS_UPDATED, onSearchQueryUpdate);
     return () => {
@@ -1105,12 +1113,12 @@ const Main = (props) => {
       return setSearchedReactArray([]);
     }
 
-    let arrayReact = [];
+    const arrayReact = [];
     let htmlElem;
     const loadedPrevs = [];
 
     for (const elem of searchedList) {
-      let isInFavorites = elem.isColorPicker
+      const isInFavorites = elem.isColorPicker
         ? favoritesList.find((i) => i?.id == elem.id && i.addData == '#aaaaaa')
           ? true
           : false
@@ -1148,7 +1156,7 @@ const Main = (props) => {
       elemDepth = elem.property?.sizes?.depth;
       elemHeight = elem.property?.sizes?.height;
 
-      let isObjectAccessible = elem.isOwner
+      const isObjectAccessible = elem.isOwner
         ? elem.type == R2D.ProductType.MATERIAL
           ? userData.plan != 'free' || userProjectActive.plan != 'free'
           : userData.plan == 'pro' ||
@@ -1165,7 +1173,7 @@ const Main = (props) => {
       if (elem?.isColorPicker) {
         const isLoaded = R2D.PoolMaterials.getMaterial(elem.id);
         if (isLoaded.getMaterialLoadState()) {
-          let matPrev = await R2D.Tool.getMatPrevFromMatIdAndColor(elem.id, '#aaaaaa');
+          const matPrev = await R2D.Tool.getMatPrevFromMatIdAndColor(elem.id, '#aaaaaa');
           htmlElem = (
             <div
               className={
@@ -1183,7 +1191,7 @@ const Main = (props) => {
                     ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
                     : classes.prod_item_fav_btn
                 }
-                onClick={(e) => updateFavorites(elem.id, isInFavorites, '#aaaaaa')}
+                onClick={() => updateFavorites(elem.id, isInFavorites, '#aaaaaa')}
               >
                 <FavoriteStarIcon />
               </div>
@@ -1201,46 +1209,7 @@ const Main = (props) => {
                         hoverTextPositionX={'right'}
                         hoverTextPositionY={'top'}
                       >
-                        <svg
-                          className={classes.prod_item_btn_icon}
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="transparent"
-                        >
-                          <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                          <rect
-                            className={classes.rectHover2}
-                            y="3"
-                            width="2"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="13"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="11"
-                            height="1"
-                            transform="rotate(-90 0 15)"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            x="12"
-                            y="15"
-                            width="1"
-                            height="1"
-                            transform="rotate(-90 12 15)"
-                            fill="white"
-                          />
-                        </svg>
+                        <IconCopy size={16} color="#fff" className={classes.prod_item_btn_icon} />
                       </HoverComponent>
                     </div>
                   </div>
@@ -1321,12 +1290,12 @@ const Main = (props) => {
                     ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
                     : classes.prod_item_fav_btn
                 }
-                onClick={(e) => updateFavorites(elem.id, isInFavorites, '#aaaaaa')}
+                onClick={() => updateFavorites(elem.id, isInFavorites, '#aaaaaa')}
               >
                 <FavoriteStarIcon />
               </div>
               <div className={classes.prod_item_img_wr}>
-                <img src={null} />
+                <img src={undefined} />
 
                 {elemType == R2D.ProductType.MATERIAL && isObjectAccessible ? (
                   <div className={classes.prod_item_dop_btns_wr}>
@@ -1339,46 +1308,7 @@ const Main = (props) => {
                         hoverTextPositionX={'right'}
                         hoverTextPositionY={'top'}
                       >
-                        <svg
-                          className={classes.prod_item_btn_icon}
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="transparent"
-                        >
-                          <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                          <rect
-                            className={classes.rectHover2}
-                            y="3"
-                            width="2"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="13"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="11"
-                            height="1"
-                            transform="rotate(-90 0 15)"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            x="12"
-                            y="15"
-                            width="1"
-                            height="1"
-                            transform="rotate(-90 12 15)"
-                            fill="white"
-                          />
-                        </svg>
+                        <IconCopy size={16} color="#fff" className={classes.prod_item_btn_icon} />
                       </HoverComponent>
                     </div>
                   </div>
@@ -1443,8 +1373,8 @@ const Main = (props) => {
           loadedPrevs.push({ id: elem.id, color: '#aaaaaa' });
         }
       } else {
-        let metadata = elem.metadata;
-        let matchedLinkObject =
+        const metadata = elem.metadata;
+        const matchedLinkObject =
           metadata?.multilinkwithip?.data &&
           (Object.values(metadata?.multilinkwithip?.data)?.find(
             (i) => i.country == R2D.config.location
@@ -1489,46 +1419,7 @@ const Main = (props) => {
                       hoverTextPositionX={'right'}
                       hoverTextPositionY={'top'}
                     >
-                      <svg
-                        className={classes.prod_item_btn_icon}
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="transparent"
-                      >
-                        <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                        <rect
-                          className={classes.rectHover2}
-                          y="3"
-                          width="2"
-                          height="1"
-                          fill="white"
-                        />
-                        <rect
-                          className={classes.rectHover}
-                          y="15"
-                          width="13"
-                          height="1"
-                          fill="white"
-                        />
-                        <rect
-                          className={classes.rectHover}
-                          y="15"
-                          width="11"
-                          height="1"
-                          transform="rotate(-90 0 15)"
-                          fill="white"
-                        />
-                        <rect
-                          className={classes.rectHover}
-                          x="12"
-                          y="15"
-                          width="1"
-                          height="1"
-                          transform="rotate(-90 12 15)"
-                          fill="white"
-                        />
-                      </svg>
+                      <IconCopy size={16} color="#fff" className={classes.prod_item_btn_icon} />
                     </HoverComponent>
                   </div>
                 </div>
@@ -1537,7 +1428,7 @@ const Main = (props) => {
               {elem.isOwner && isObjectAccessible ? (
                 <div
                   className={classes.prod_item_custom_delete_btn}
-                  onClick={(e) =>
+                  onClick={() =>
                     dispatch(
                       setActivePopup({
                         name: 'confirm',
@@ -1547,36 +1438,14 @@ const Main = (props) => {
                     )
                   }
                 >
-                  <svg
-                    className={classes.prod_item_custom_delete}
-                    width="12"
-                    height="15"
-                    fill="none"
-                    viewBox="0 0 12 15"
-                  >
-                    <path fill="#fff" d="M7.412.585v1.248h-.416v-.832h-2.08v.832H4.5V.585h2.912Z" />
-                    <path fill="#444" d="M7.412.585v1.248h-.416v-.832h-2.08v.832H4.5V.585h2.912Z" />
-                    <path fill="#fff" d="M.753 2.25a22.29 22.29 0 0 1 10.404 0v.832H.753V2.25Z" />
-                    <path fill="#444" d="M.753 2.25a22.29 22.29 0 0 1 10.404 0v.832H.753V2.25Z" />
-                    <path
-                      fill="#fff"
-                      d="M10.325 14.078a.655.655 0 0 1-.653.657H2.239a.656.656 0 0 1-.654-.657V3.498h8.74v10.58ZM3.46 4.331a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.625.625 0 0 0-.624-.624Zm2.497 0a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.624.624 0 0 0-.624-.624Zm2.498 0a.625.625 0 0 0-.624.624v7.075a.625.625 0 0 0 1.25 0V4.955a.625.625 0 0 0-.626-.624Z"
-                    />
-                    <path
-                      fill="#444"
-                      d="M10.325 14.078a.655.655 0 0 1-.653.657H2.239a.656.656 0 0 1-.654-.657V3.498h8.74v10.58ZM3.46 4.331a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.625.625 0 0 0-.624-.624Zm2.497 0a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.624.624 0 0 0-.624-.624Zm2.498 0a.625.625 0 0 0-.624.624v7.075a.625.625 0 0 0 1.25 0V4.955a.625.625 0 0 0-.626-.624Z"
-                    />
-                  </svg>
+                  <IconTrash size={15} color="#444" className={classes.prod_item_custom_delete} />
                 </div>
               ) : null}
               {matchedLinkObject?.discount ? (
                 <div className={classes.prod_item_promocode_btn}>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    className={classes.prod_item_promocode}
+                  <IconRosetteDiscountFilled
+                    size={20}
+                    color="#FFB400"
                     onMouseLeave={mouseDiscountLeave}
                     onMouseEnter={(event) =>
                       mouseDiscountEnter(
@@ -1585,12 +1454,7 @@ const Main = (props) => {
                         matchedLinkObject?.promocode
                       )
                     }
-                  >
-                    <path
-                      d="M19.0737 7.7565L18.4632 7.14582C18.1684 6.85104 18 6.45093 18 6.02982V5.16648C18 3.41889 16.5789 1.99764 14.8316 1.99764H13.9684C13.5474 1.99764 13.1474 1.83979 12.8526 1.53449L12.2421 0.923802C11.0105 -0.307934 9 -0.307934 7.75789 0.923802L7.14735 1.53449C6.85261 1.83979 6.45261 1.99764 6.03156 1.99764H5.16839C3.42102 1.99764 2.00002 3.41889 2.00002 5.16648V6.02982C2.00002 6.45093 1.84213 6.85104 1.53686 7.14582L0.926316 7.7565C0.326316 8.35662 0 9.15652 0 9.99873C0 10.8409 0.326316 11.6409 0.926316 12.241L1.53686 12.8517C1.84213 13.1465 2.00002 13.5467 2.00002 13.9678V14.831C2.00002 16.5786 3.42102 17.9999 5.16839 17.9999H6.03156C6.45261 17.9999 6.85261 18.1578 7.14735 18.4631L7.75789 19.0738C8.37895 19.6949 9.18947 20 10 20C10.8105 20 11.6211 19.6949 12.2421 19.0738L12.8526 18.4631C13.1474 18.1578 13.5474 17.9999 13.9684 17.9999H14.8316C16.5789 17.9999 18 16.5786 18 14.831V13.9678C18 13.5467 18.1684 13.1465 18.4632 12.8517L19.0737 12.241C19.6737 11.6409 20 10.8409 20 9.99873C20 9.15652 19.6737 8.35662 19.0737 7.7565ZM7.36842 6.0509C8.09474 6.0509 8.68421 6.64045 8.68421 7.36685C8.68421 8.09322 8.09474 8.68277 7.36842 8.68277C6.64211 8.68277 6.05263 8.09322 6.05263 7.36685C6.05263 6.64045 6.64211 6.0509 7.36842 6.0509ZM12.6316 13.9466C11.9053 13.9466 11.3158 13.357 11.3158 12.6306C11.3158 11.9042 11.9053 11.3147 12.6316 11.3147C13.3579 11.3147 13.9474 11.9042 13.9474 12.6306C13.9474 13.357 13.3579 13.9466 12.6316 13.9466ZM13.9053 7.58789L7.5895 13.9045C7.37897 14.1045 7.11579 14.2098 6.84211 14.2098C6.57895 14.2098 6.30524 14.1045 6.09472 13.9045C5.68419 13.4939 5.68419 12.8202 6.09472 12.4097L12.4105 6.09305C12.8316 5.68247 13.4947 5.68247 13.9053 6.09305C14.3158 6.50363 14.3158 7.17731 13.9053 7.58789Z"
-                      fill="#FFB400"
-                    />
-                  </svg>
+                  />
                 </div>
               ) : null}
               {dynamicPanelPreviewViewType != 'big' ? (
@@ -1771,17 +1635,17 @@ const Main = (props) => {
 
   useEffect(() => {
     if (!loadedPreviews || loadedPreviews.length < 1) return;
-    let key = setInterval(async () => {
+    const key = setInterval(async () => {
       if (!loadedPreviews || loadedPreviews.length < 1) return clearInterval(key);
       else {
-        for (let i of loadedPreviews) {
+        for (const i of loadedPreviews) {
           if (
             R2D.PoolMaterials.isMaterial(i.id) &&
             R2D.PoolMaterials.isMaterial(i.id).getMaterialLoadState()
           ) {
             clearInterval(key);
             const matPrev = await R2D.Tool.getMatPrevFromMatIdAndColor(i.id, i.color);
-            let loadedElem = document
+            const loadedElem = document
               .getElementById(i.id + '_' + i.color.replace('#', ''))
               .closest('.' + classes.prod_item);
             loadedElem?.querySelector('.preloader-cube')?.remove();
@@ -1790,7 +1654,7 @@ const Main = (props) => {
                 .querySelector('.' + classes.prod_item_img_wr)
                 .getElementsByTagName('img')[0].src = matPrev.toDataURL();
             return setLoadedPreviews((prev) => {
-              let newArray = prev.filter(
+              const newArray = prev.filter(
                 (prevItem) => prevItem.id != i.id || prevItem.color != i.color
               );
               return newArray;
@@ -1825,18 +1689,7 @@ const Main = (props) => {
           />
 
           <div className={classes.search_btn_wr} ref={searchBtn} onClick={onClickSearchBtn}>
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-              className={classes.searchBtn}
-            >
-              <path
-                d="M5.6389 0C8.7532 0 11.2778 2.52462 11.2778 5.63889C11.2778 6.98593 10.8054 8.22259 10.0174 9.19241L13.8291 13.0042C14.057 13.232 14.057 13.6013 13.8291 13.8291C13.6221 14.0363 13.298 14.0551 13.0696 13.8856L13.0042 13.8291L9.19241 10.0174C8.2226 10.8054 6.98593 11.2778 5.6389 11.2778C2.52462 11.2778 0 8.75319 0 5.63889C0 2.52462 2.52462 0 5.6389 0ZM5.6389 1.16667C3.16895 1.16667 1.16667 3.16895 1.16667 5.63889C1.16667 8.10881 3.16895 10.1111 5.6389 10.1111C8.10881 10.1111 10.1111 8.10881 10.1111 5.63889C10.1111 3.16895 8.10881 1.16667 5.6389 1.16667Z"
-                fill="#2E3839"
-              ></path>
-            </svg>
+            <IconSearch size={14} color="#2E3839" className={classes.searchBtn} />
           </div>
         </div>
         {searchedResultTotal ? (

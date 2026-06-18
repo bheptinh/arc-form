@@ -1,4 +1,5 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { IconAdjustmentsHorizontal } from '@tabler/icons-react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -12,7 +13,6 @@ import {
   updateDynamicPanelPreviewViewType,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import ProductPreviewControls from './ProductPreviewControls';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   catalog_top_btn_filter: {
@@ -31,12 +31,7 @@ const useStyle = createUseStyles({
     },
   },
   catalog_top_btn_filter_hover: {
-    '& line': {
-      fill: '#a0a0a0',
-      stroke: '#a0a0a0',
-    },
-    '& circle': {
-      fill: '#a0a0a0',
+    '& svg': {
       stroke: '#a0a0a0',
     },
   },
@@ -44,12 +39,7 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
     position: 'relative',
     zIndex: 2,
-    '& line': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
-    '& circle': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
+    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
 });
 
@@ -59,7 +49,6 @@ const AdditionalSettings = ({ hideCategoryTree }) => {
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
   const dynamicPanelCatalogPreviewViewType = useSelector(selectDynamicPanelCatalogPreviewViewType);
   const categoryTreePanelStatus = useSelector(selectCategoryTreePanelStatus);
-  const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = activeControlPanelData?.history;
   const lastHistoryElem =
@@ -147,45 +136,12 @@ const AdditionalSettings = ({ hideCategoryTree }) => {
         (isFilterOpen ? classes.catalog_top_btn_filter_hover : '')
       }
     >
-      <svg
+      <IconAdjustmentsHorizontal
+        size={16}
+        color="#2A3435"
         className={classes.icon_filter}
-        width="16"
-        height="14"
-        viewBox="0 0 16 14"
-        fill="none"
         onClick={handleMouseEnter}
-      >
-        <line
-          x1="0.75"
-          y1="2.25"
-          x2="15.25"
-          y2="2.25"
-          stroke="#2A3435"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        ></line>
-        <line
-          x1="0.75"
-          y1="7.25"
-          x2="15.25"
-          y2="7.25"
-          stroke="#2A3435"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        ></line>
-        <line
-          x1="0.75"
-          y1="12.25"
-          x2="15.25"
-          y2="12.25"
-          stroke="#2A3435"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-        ></line>
-        <circle cx="5" cy="2" r="2" fill="#2A3435"></circle>
-        <circle cx="12" cy="7" r="2" fill="#2A3435"></circle>
-        <circle cx="7" cy="12" r="2" fill="#2A3435"></circle>
-      </svg>
+      />
 
       <ProductPreviewControls
         hideCategoryTree={hideCategoryTree}

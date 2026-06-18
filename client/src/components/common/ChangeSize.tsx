@@ -1,3 +1,5 @@
+// TODO: move to shared-components/ once props are typed and domain imports (planner, Redux) are extracted
+import { IconChevronDown, IconChevronUp, IconHelpHexagonFilled } from '@tabler/icons-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
@@ -394,23 +396,12 @@ const ChangeSize = (props) => {
       <div className={classes.text}>
         {props.label ? <div className={classes.text}>{props.label}</div> : null}
         {props.infoHover && (
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 18 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          <IconHelpHexagonFilled
             className={classes.changerMain_info}
-            onMouseEnter={mouseEnter}
-            onMouseMove={mouseMove}
-            onMouseLeave={mouseLeave}
-          >
-            <circle cx="9" cy="9" r="9" fill="#2D8BDB" />
-            <path
-              d="M10.0621 10.1938H8.76172C8.76535 9.86368 8.79255 9.58076 8.84333 9.34499C8.89774 9.10922 8.98661 8.89702 9.10993 8.70841C9.23326 8.51617 9.40011 8.32029 9.61049 8.1208C9.77734 7.96483 9.92606 7.81792 10.0566 7.68009C10.1908 7.53863 10.296 7.39172 10.3722 7.23938C10.4484 7.08341 10.4865 6.90749 10.4865 6.71162C10.4865 6.49036 10.4502 6.30537 10.3777 6.15665C10.3087 6.00793 10.2054 5.89549 10.0675 5.81932C9.93331 5.73952 9.76465 5.69962 9.56152 5.69962C9.39467 5.69962 9.23689 5.73408 9.08817 5.803C8.93945 5.87191 8.81975 5.97892 8.72907 6.12401C8.63839 6.26547 8.58943 6.45046 8.58217 6.67897H7.14035C7.15123 6.2038 7.26367 5.80844 7.47768 5.49287C7.69169 5.17367 7.98005 4.93609 8.34277 4.78012C8.7055 4.62052 9.11175 4.54072 9.56152 4.54072C10.0585 4.54072 10.4828 4.62415 10.8347 4.791C11.1902 4.95422 11.4604 5.19362 11.6454 5.50919C11.834 5.82476 11.9283 6.20562 11.9283 6.65177C11.9283 6.97096 11.8666 7.25752 11.7433 7.51142C11.62 7.7617 11.4568 7.99566 11.2536 8.21329C11.0505 8.43093 10.8311 8.65037 10.5953 8.87163C10.3885 9.05662 10.2489 9.25431 10.1763 9.46469C10.1038 9.67507 10.0657 9.91809 10.0621 10.1938ZM8.6257 11.8859C8.6257 11.6682 8.69824 11.4869 8.84333 11.3418C8.99205 11.1967 9.19155 11.1241 9.44182 11.1241C9.6921 11.1241 9.88979 11.1967 10.0349 11.3418C10.1836 11.4869 10.258 11.6682 10.258 11.8859C10.258 12.0962 10.1836 12.274 10.0349 12.4191C9.88979 12.5642 9.6921 12.6367 9.44182 12.6367C9.19155 12.6367 8.99205 12.5642 8.84333 12.4191C8.69824 12.274 8.6257 12.0962 8.6257 11.8859Z"
-              fill="#E5E5E5"
-            />
-          </svg>
+            size={18}
+            color="#2D8BDB"
+            style={{ marginLeft: 5 }}
+          />
         )}
       </div>
       <div className={classes.changerInputs}>
@@ -457,44 +448,24 @@ const ChangeSize = (props) => {
                   (props.type ? classes['addStyles_' + props.type + '_arrows'] : '')
                 }
               >
-                <svg
-                  width="15"
-                  height="8"
-                  viewBox="0 0 15 8"
-                  fill="none"
+                <IconChevronUp
                   className={
-                    classes.arrowUp +
-                    (props.type ? ' ' + classes['addStyles_' + props.type + '_arrowUp'] : '')
+                    classes.arrowUp + ' ' + classes['addStyles_' + props.type + '_arrowUp']
                   }
-                  onMouseUp={(e) => mouseUpArrows('incr')}
-                  onMouseDown={(e) => mouseDownArrows('incr')}
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M8.28092 1.18536L7.728 0.62854L7.72409 0.632419L7.72018 0.62854L7.16726 1.18535L0.723633 7.58394H2.9054L7.72409 2.74945L12.5428 7.58394H14.7245L8.28092 1.18536Z"
-                    fill="black"
-                  />
-                </svg>
-                <svg
-                  width="15"
-                  height="8"
-                  viewBox="0 0 15 8"
-                  fill="none"
+                  onMouseUp={() => mouseUpArrows('incr')}
+                  onMouseDown={() => mouseDownArrows('incr')}
+                  color="#2F2F2F"
+                  size={15}
+                />
+                <IconChevronDown
                   className={
-                    classes.arrowDown +
-                    (props.type ? ' ' + classes['addStyles_' + props.type + '_arrowDown'] : '')
+                    classes.arrowDown + ' ' + classes['addStyles_' + props.type + '_arrowDown']
                   }
                   onMouseUp={(e) => mouseUpArrows('decr')}
                   onMouseDown={(e) => mouseDownArrows('decr')}
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M8.34954 6.68041L7.72708 7.30725L7.72269 7.30288L7.71927 7.30627L7.23596 6.81956L0.722721 0.351854L2.90449 0.351854L7.72269 5.18586L12.5419 0.350878L14.7236 0.350878L8.34954 6.68041Z"
-                    fill="black"
-                  />
-                </svg>
+                  color="#2F2F2F"
+                  size={15}
+                />
               </div>
             </div>
           </div>

@@ -1,18 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useSelector } from 'react-redux';
+
 import { useTranslation } from '../../../../../api/hooks/useTranslation';
 
-
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   lock: {
     width: 'auto',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',

@@ -1,3 +1,4 @@
+import { IconPlus } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useMemo, useRef } from 'react';
 import { useState } from 'react';
@@ -125,6 +126,7 @@ const HelperLogoMesh = (props) => {
                 <DragPanelButtonRef ref={refs} changePosition={setPanelPosition} />
                 <div className={classes.info_logoMesh_bottom_buttons} ref={incrDecrButtons}>
                   <div className={classes.info_logoMesh_bottom_button} onClick={onDecreaseLogo}>
+                    {/* TODO: Replace with underscore icon */}
                     <svg width="17" height="1" viewBox="0 0 17 1" fill="none">
                       <rect
                         x="17"
@@ -136,17 +138,7 @@ const HelperLogoMesh = (props) => {
                     </svg>
                   </div>
                   <div className={classes.info_logoMesh_bottom_button} onClick={onIncreaseLogo}>
-                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
-                      <rect x="8" width="1" height="17" fill="#2A3435" />
-                      <rect
-                        x="17"
-                        y="8"
-                        width="1"
-                        height="17"
-                        transform="rotate(90 17 8)"
-                        fill="#2A3435"
-                      />
-                    </svg>
+                    <IconPlus size={16} color="#2A3435" />
                   </div>
                 </div>
               </div>

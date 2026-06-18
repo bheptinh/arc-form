@@ -1,30 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import { IconX } from '@tabler/icons-react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -255,43 +242,12 @@ const UploadChoicePopup = (props) => {
         style={
           currOS == 'iOS' || currOS == 'Android'
             ? { width: '100%', height: '100%', maxHeight: '100%' }
-            : null
+            : undefined
         }
       >
         <div className={classes.planner_popup_cont}>
           <div className={classes.planner_popup_close} onClick={onClosePopup}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
           <div className={classes.start_title}>{translation['UPLOAD_CHOICE_TITLE']}</div>
           <div className={classes.start_items}>
@@ -307,7 +263,7 @@ const UploadChoicePopup = (props) => {
             </div>
             <div
               className={classes.start_item}
-              onClick={(e) => startUpload(R2D.ProductType.MATERIAL)}
+              onClick={() => startUpload(R2D.ProductType.MATERIAL)}
             >
               <div className={classes.start_item_img_wr}>
                 <img
@@ -317,10 +273,7 @@ const UploadChoicePopup = (props) => {
               </div>
               <div className={classes.start_item_title}>{translation['TEXT_MATERIAL']}</div>
             </div>
-            <div
-              className={classes.start_item}
-              onClick={(e) => startUpload(R2D.ProductType.POSTER)}
-            >
+            <div className={classes.start_item} onClick={() => startUpload(R2D.ProductType.POSTER)}>
               <div className={classes.start_item_img_wr}>
                 <img
                   className={classes.start_item_img}
@@ -329,10 +282,7 @@ const UploadChoicePopup = (props) => {
               </div>
               <div className={classes.start_item_title}>{translation['TEXT_PORTRET']}</div>
             </div>
-            <div
-              className={classes.start_item}
-              onClick={(e) => startUpload(R2D.ProductType.CARPET)}
-            >
+            <div className={classes.start_item} onClick={() => startUpload(R2D.ProductType.CARPET)}>
               <div className={classes.start_item_img_wr}>
                 <img
                   className={classes.start_item_img}

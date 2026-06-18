@@ -1,5 +1,6 @@
 import 'swiper/css';
 
+import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Navigation, Pagination } from 'swiper';
@@ -67,9 +68,7 @@ const useStyle = createUseStyles({
   },
   prevBtnArrow: {
     transform: 'scale(-1)',
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
+    transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
   },
   nextBtn: {
     cursor: 'pointer',
@@ -94,9 +93,7 @@ const useStyle = createUseStyles({
     },
   },
   nextBtnArrow: {
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
+    transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
   },
   shadowBot: {
     position: 'absolute',
@@ -203,39 +200,11 @@ const RendersSlider360 = (props) => {
       {slider_items}
 
       <div className={classes.prevBtn} ref={navigationPrevRef}>
-        <svg
-          className={classes.prevBtnArrow}
-          width="27"
-          height="22"
-          viewBox="0 0 27 22"
-          fill="none"
-        >
-          <path
-            opacity="0.99"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M15.0919 0L14.1045 0.966647L23.2476 9.95569H0.534842V11.3779H23.3426L14.0645 20.3591L15.0442 21.3333L25.009 11.6874L25.0165 11.6948L26.0039 10.7282L15.0919 0Z"
-            fill="#070707"
-          />
-        </svg>
+        <IconArrowLeft className={classes.prevBtnArrow} size={22} color="#070707" />
       </div>
 
       <div className={classes.nextBtn} ref={navigationNextRef}>
-        <svg
-          className={classes.nextBtnArrow}
-          width="27"
-          height="22"
-          viewBox="0 0 27 22"
-          fill="none"
-        >
-          <path
-            opacity="0.99"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M15.0919 0L14.1045 0.966647L23.2476 9.95569H0.534842V11.3779H23.3426L14.0645 20.3591L15.0442 21.3333L25.009 11.6874L25.0165 11.6948L26.0039 10.7282L15.0919 0Z"
-            fill="#070707"
-          />
-        </svg>
+        <IconArrowRight className={classes.nextBtnArrow} size={22} color="#070707" />
       </div>
 
       <div className={classes.paginationWrap}>

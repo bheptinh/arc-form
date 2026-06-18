@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyles = createUseStyles({
   right_bar_btn: {
@@ -92,6 +92,7 @@ const View3D = (props) => {
           }
           onClick={changeViewMode}
         >
+          {/* TODO: Replace with "2D" icon */}
           <svg width="23" height="10" viewBox="0 0 23 10" fill="none">
             <path
               fillRule="evenodd"

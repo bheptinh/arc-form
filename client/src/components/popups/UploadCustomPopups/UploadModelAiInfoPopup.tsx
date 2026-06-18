@@ -1,33 +1,20 @@
+import { IconArrowLeft, IconX } from '@tabler/icons-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { selectActiveControlPanelMode } from '../../../redux/features/control/controlPanelSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
-import Checkbox from '../../left_new/parts/dynamicPanel/components/Checkbox';
+import Checkbox from '../../../shared-components/inputs/checkbox';
 import RendersSliderAi from '../rendersExample/slider/RendersSliderAi';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -91,12 +78,12 @@ const useStyle = createUseStyles({
     left: 8,
     cursor: 'pointer',
     zIndex: '2',
-    '& path': {
+    '& svg': {
       transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
     },
     '&:hover': {
-      '& path': {
-        fill: '#BAE51F',
+      '& svg': {
+        stroke: '#BAE51F',
       },
     },
   },
@@ -262,58 +249,19 @@ const UploadModelAiInfoPopup = (props) => {
         style={
           currOS == 'iOS' || currOS == 'Android'
             ? { width: '100%', height: '100%', maxHeight: '100%' }
-            : null
+            : undefined
         }
       >
         <div className={classes.planner_popup_cont}>
-          <svg
+          <IconArrowLeft
             className={classes.planner_popup_back}
-            width="23"
-            height="26"
-            fill="none"
-            viewBox="0 0 23 26"
             onClick={onUploadChoiceModelPopup}
-          >
-            <path
-              fill="#232323"
-              d="M14.352 1.236 3.416 11.931h18.708v1.692H3.302l11.096 10.685-1.172 1.159L1.31 13.99l-.008.01-1.18-1.15L13.17.086l1.18 1.15Z"
-              opacity=".99"
-            />
-          </svg>
+            size={25}
+            color="#232323"
+          />
 
           <div className={classes.planner_popup_close} onClick={onClosePopup}>
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
           <div className={classes.upload_model_slider_wrap}>
             <div className={classes.upload_model_title}>

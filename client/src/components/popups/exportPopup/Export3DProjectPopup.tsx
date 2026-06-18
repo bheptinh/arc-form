@@ -1,32 +1,19 @@
+import { IconArrowLeft, IconCheck, IconX } from '@tabler/icons-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { user } from '../../../initR2D';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
+import Checkbox from '../../../shared-components/inputs/checkbox';
 import { useEffectAsync } from '../../../utils/useEffectAsync';
-import Checkbox from '../../common/Checkbox';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   planner_popup_wrap: {
     height: '100%',
     width: '100%',
@@ -524,7 +511,7 @@ const useStyle = createUseStyles({
   },
 });
 
-const ExportPopup = (props) => {
+const Export3DProjectPopup = (props) => {
   const dispatch = useDispatch();
   const translation = useTranslation();
   const popups = useSelector(selectPopups);
@@ -696,103 +683,14 @@ const ExportPopup = (props) => {
               id="js_close_popup"
               onClick={closeExportPopup}
             >
-              <svg
-                width="25"
-                height="25"
-                fill="none"
-                viewBox="0 0 25 25"
-                className={classes.planner_popup_close_icon}
-              >
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                  clipRule="evenodd"
-                />
-                <path
-                  fill="#2F2F2F"
-                  fillRule="evenodd"
-                  d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
             </div>
             {popupStage == 1 ? (
               <div>
                 <div className={classes.planner_popup_export_top}>
                   <h2>{translation['EXPORT_PROJECT_INSIDE_TITLE']}</h2>
-                  <svg
-                    width="17"
-                    height="23"
-                    viewBox="0 0 17 23"
-                    fill="none"
-                    className={classes.planner_popup_back}
-                    onClick={backToStart}
-                  >
-                    <g filter="url(#filter0_d_6490_1969)">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12.4103 0.679673L11.7125 0L4 7.54323L4.69786 8.2229L4.70261 8.21825L11.7451 15L12.4375 14.3151L5.39901 7.53713L12.4103 0.679673Z"
-                        fill="black"
-                      />
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12.4103 0.679673L11.7125 0L4 7.54323L4.69786 8.2229L4.70261 8.21825L11.7451 15L12.4375 14.3151L5.39901 7.53713L12.4103 0.679673Z"
-                        fill="black"
-                      />
-                    </g>
-                    <defs>
-                      <filter
-                        id="filter0_d_6490_1969"
-                        x="0"
-                        y="0"
-                        width="16.4375"
-                        height="23"
-                        filterUnits="userSpaceOnUse"
-                        colorInterpolationFilters="sRGB"
-                      >
-                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                        <feColorMatrix
-                          in="SourceAlpha"
-                          type="matrix"
-                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                          result="hardAlpha"
-                        />
-                        <feOffset dy="4" />
-                        <feGaussianBlur stdDeviation="2" />
-                        <feComposite in2="hardAlpha" operator="out" />
-                        <feColorMatrix
-                          type="matrix"
-                          values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in2="BackgroundImageFix"
-                          result="effect1_dropShadow_6490_1969"
-                        />
-                        <feBlend
-                          mode="normal"
-                          in="SourceGraphic"
-                          in2="effect1_dropShadow_6490_1969"
-                          result="shape"
-                        />
-                      </filter>
-                    </defs>
-                  </svg>
+
+                  <IconArrowLeft className={classes.planner_popup_back} size={24} color="#444444" />
                 </div>
                 <div className={classes.planner_popup_export_inside}>
                   <div className={classes.planner_popup_export_inside_block}>
@@ -802,6 +700,7 @@ const ExportPopup = (props) => {
                     </div>
                     <div className={classes.planner_popup_export_inside_block_right}>
                       <img src="/src_designer/images/export_inside_img_1.png" />
+                      {/* TODO: Replace arrow icon */}
                       <svg width="79" height="66" viewBox="0 0 79 66" fill="none">
                         <path
                           d="M75.9499 35.9841C70.191 41.2942 66.9809 46.1191 59.2609 48.8677C58.9907 48.9781 58.6881 48.9883 58.4157 48.8961C58.1434 48.804 57.9223 48.6166 57.7983 48.3728C57.6742 48.1289 57.6568 47.8474 57.7495 47.5866C57.8422 47.3258 58.038 47.1057 58.2963 46.9719C64.4092 42.84 66.7537 40.1054 71.719 35.1258C67.6146 33.1184 63.0403 31.6895 59.3555 29.119C59.0245 28.8905 58.7941 28.5576 58.7055 28.1795C58.6169 27.8014 58.6758 27.4028 58.8716 27.0544C59.0675 26.7061 59.3876 26.4307 59.7751 26.2773C60.1625 26.1239 60.5921 26.1024 60.9874 26.2166C66.268 27.8743 71.2554 30.2184 75.8052 33.1808C76.0361 33.3357 76.2261 33.5372 76.3614 33.7711C76.4967 34.0049 76.5741 34.2652 76.5879 34.5332C76.6017 34.8012 76.5517 35.0703 76.4414 35.3212C76.3311 35.572 76.1632 35.7984 75.9499 35.9841Z"
@@ -822,6 +721,7 @@ const ExportPopup = (props) => {
                     </div>
                     <div className={classes.planner_popup_export_inside_block_right}>
                       <img src="/src_designer/images/export_inside_img_3.png" />
+                      {/* TODO: Replace arrow icon */}
                       <svg width="79" height="66" viewBox="0 0 79 66" fill="none">
                         <path
                           d="M75.9499 35.9841C70.191 41.2942 66.9809 46.1191 59.2609 48.8677C58.9907 48.9781 58.6881 48.9883 58.4157 48.8961C58.1434 48.804 57.9223 48.6166 57.7983 48.3728C57.6742 48.1289 57.6568 47.8474 57.7495 47.5866C57.8422 47.3258 58.038 47.1057 58.2963 46.9719C64.4092 42.84 66.7537 40.1054 71.719 35.1258C67.6146 33.1184 63.0403 31.6895 59.3555 29.119C59.0245 28.8905 58.7941 28.5576 58.7055 28.1795C58.6169 27.8014 58.6758 27.4028 58.8716 27.0544C59.0675 26.7061 59.3876 26.4307 59.7751 26.2773C60.1625 26.1239 60.5921 26.1024 60.9874 26.2166C66.268 27.8743 71.2554 30.2184 75.8052 33.1808C76.0361 33.3357 76.2261 33.5372 76.3614 33.7711C76.4967 34.0049 76.5741 34.2652 76.5879 34.5332C76.6017 34.8012 76.5517 35.0703 76.4414 35.3212C76.3311 35.572 76.1632 35.7984 75.9499 35.9841Z"
@@ -851,10 +751,10 @@ const ExportPopup = (props) => {
                       {translation['BUTTON_OK_DOWNLOAD']}
                     </button>
                   </div>
-                  <div className={classes.compare_checkbox_wr} ref={checkBoxRef}>
+                  <div ref={checkBoxRef}>
                     <Checkbox
                       label={translation['TEXT_DONT_SHOW_AGAIN']}
-                      onChange={(e) => setCheckBoxStatus(!checkBoxStatus)}
+                      onChange={setCheckBoxStatus}
                       checked={checkBoxStatus}
                       name={'exportDownloadDetails'}
                     />
@@ -885,32 +785,7 @@ const ExportPopup = (props) => {
             ) : popupStage == 3 ? (
               <div>
                 <div className={classes.planner_popup_export_downloaded_top}>
-                  <svg
-                    className={classes.done_popup_top_icon}
-                    width="167"
-                    height="127"
-                    viewBox="0 0 167 127"
-                    fill="none"
-                  >
-                    <mask id="path-1-inside-1_1056_971" fill="white">
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M166.309 17.6125L148.566 0L58.4549 90.7773L17.6777 50.0001L0 67.6777L58.4111 126.089L58.511 125.989L58.62 126.097L166.309 17.6125Z"
-                      />
-                    </mask>
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M166.309 17.6125L148.566 0L58.4549 90.7773L17.6777 50.0001L0 67.6777L58.4111 126.089L58.511 125.989L58.62 126.097L166.309 17.6125Z"
-                      fill="#9DD900"
-                    />
-                    <path
-                      d="M148.566 0L149.271 -0.709705L148.561 -1.4142L147.857 -0.704499L148.566 0ZM166.309 17.6125L167.019 18.317L167.723 17.6073L167.014 16.9028L166.309 17.6125ZM58.4549 90.7773L57.7478 91.4844L58.4575 92.1941L59.1646 91.4818L58.4549 90.7773ZM17.6777 50.0001L18.3848 49.293L17.6777 48.5859L16.9706 49.293L17.6777 50.0001ZM0 67.6777L-0.707107 66.9706L-1.41421 67.6777L-0.707107 68.3848L0 67.6777ZM58.4111 126.089L57.704 126.796L58.4111 127.503L59.1182 126.796L58.4111 126.089ZM58.511 125.989L59.2155 125.279L58.5084 124.577L57.8039 125.282L58.511 125.989ZM58.62 126.097L57.9155 126.807L58.6253 127.511L59.3297 126.802L58.62 126.097ZM147.862 0.709705L165.605 18.3222L167.014 16.9028L149.271 -0.709705L147.862 0.709705ZM59.1646 91.4818L149.276 0.704499L147.857 -0.704499L57.7452 90.0728L59.1646 91.4818ZM16.9706 50.7072L57.7478 91.4844L59.162 90.0702L18.3848 49.293L16.9706 50.7072ZM0.707107 68.3848L18.3848 50.7072L16.9706 49.293L-0.707107 66.9706L0.707107 68.3848ZM59.1182 125.382L0.707107 66.9706L-0.707107 68.3848L57.704 126.796L59.1182 125.382ZM57.8039 125.282L57.704 125.382L59.1182 126.796L59.2181 126.696L57.8039 125.282ZM59.3245 125.387L59.2155 125.279L57.8065 126.699L57.9155 126.807L59.3245 125.387ZM165.599 16.908L57.9103 125.393L59.3297 126.802L167.019 18.317L165.599 16.908Z"
-                      fill="#CCEB8E"
-                      mask="url(#path-1-inside-1_1056_971)"
-                    />
-                  </svg>
+                  <IconCheck size={130} color="#9DD900" />
                 </div>
                 <div className={classes.planner_popup_export_downloaded_content}>
                   <h2>{translation['EXPORT_PROJECT_CREATED_TITLE']}</h2>
@@ -927,4 +802,4 @@ const ExportPopup = (props) => {
   );
 };
 
-export default ExportPopup;
+export default Export3DProjectPopup;

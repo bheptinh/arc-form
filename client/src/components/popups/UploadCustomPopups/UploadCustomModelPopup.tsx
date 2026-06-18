@@ -1,7 +1,9 @@
+import { IconArrowLeft, IconCloudUpload, IconPlus, IconX } from '@tabler/icons-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import {
   changeActiveControlPanelMode,
   selectActiveControlPanelMode,
@@ -11,23 +13,8 @@ import {
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Light.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-  ],
   lock_main: {
     position: 'absolute',
     top: 25,
@@ -335,10 +322,9 @@ const useStyle = createUseStyles({
   },
 });
 
-const UploadCustomModelPopup = (props) => {
+const UploadCustomModelPopup = () => {
   const dispatch = useDispatch();
   const translation = useTranslation();
-  const controPanelActiveMode = useSelector(selectActiveControlPanelMode);
 
   const popups = useSelector(selectPopups);
   const categoryId = popups.uploadCustomModelPopup.data;
@@ -379,7 +365,7 @@ const UploadCustomModelPopup = (props) => {
     }
   }
 
-  const onUploadFile = (e) => {
+  const onUploadFile = () => {
     let inputFile = document.createElement('input');
     // inputFile.accept='image/*';
 
@@ -414,7 +400,7 @@ const UploadCustomModelPopup = (props) => {
     }
   };
 
-  const modelOpenedListener = (e) => {
+  const modelOpenedListener = () => {
     setPreloaderStatus(false);
     if (R2D.modelUploader.getTotalTriangles() > 60000) {
       R2D.modelUploader.clear();
@@ -438,7 +424,7 @@ const UploadCustomModelPopup = (props) => {
     );
   };
 
-  const onClickClosePopUp = (e) => {
+  const onClickClosePopUp = () => {
     R2D.modelUploader.dispose();
     R2D.modelUploader = null;
 
@@ -457,8 +443,7 @@ const UploadCustomModelPopup = (props) => {
 
   const onErrorOpenModel = (e) => dispatch(setActivePopup({ name: 'alert', data: e.data.info }));
 
-  const onUploadChoiceModelPopup = (e) => {
-    //dispatch(setActivePopup({name: 'uploadChoiceModelPopup', backBtn: controPanelActiveMode == 'userUpload' ? true : false })) ;
+  const onUploadChoiceModelPopup = () => {
     dispatch(setActivePopup({ name: 'uploadChoicePopup' }));
     onClickClosePopUp();
   };
@@ -494,20 +479,12 @@ const UploadCustomModelPopup = (props) => {
       >
         <div className={classes.planner_popup_cont}>
           {popups.uploadCustomModelPopup.backBtn ? (
-            <svg
+            <IconArrowLeft
               className={classes.planner_popup_back}
-              width="23"
-              height="26"
-              fill="none"
-              viewBox="0 0 23 26"
+              size={25}
+              color="#232323"
               onClick={onUploadChoiceModelPopup}
-            >
-              <path
-                fill="#232323"
-                d="M14.352 1.236 3.416 11.931h18.708v1.692H3.302l11.096 10.685-1.172 1.159L1.31 13.99l-.008.01-1.18-1.15L13.17.086l1.18 1.15Z"
-                opacity=".99"
-              />
-            </svg>
+            />
           ) : null}
 
           <div className={classes.planner_popup_top}>
@@ -520,45 +497,19 @@ const UploadCustomModelPopup = (props) => {
                 onDragEnter={dragEnterListener}
                 onDragOver={dragOverListener}
               >
-                <svg
-                  width="38"
-                  height="36"
-                  viewBox="0 0 38 36"
-                  fill="none"
+                <IconCloudUpload
+                  size={36}
+                  color="#ffffff"
                   className={classes.upload_popup_top_icon}
-                >
-                  <path
-                    d="M29.7239 8.1344C28.7709 5.59282 26.907 3.4527 24.4603 2.09054C22.0137 0.728385 19.1409 0.231457 16.3474 0.687184C13.5539 1.14291 11.0186 2.5221 9.18766 4.5821C7.35671 6.64211 6.34735 9.25096 6.33714 11.9497V12.8893C4.50725 13.4179 2.90389 14.4919 1.76307 15.9532C0.622249 17.4145 0.0042367 19.1859 0 21.0067C0.0031457 23.2457 0.938631 25.3922 2.60133 26.9754C4.26402 28.5587 6.51822 29.4494 8.86962 29.4524H11.414V27.041H8.86962C8.03642 27.041 7.21139 26.8845 6.44175 26.5806C5.67212 26.2766 4.97299 25.8311 4.38438 25.2696C3.79576 24.7081 3.32922 24.0415 3.01145 23.3081C2.69368 22.5747 2.53092 21.7888 2.53248 20.9954C2.53898 19.5465 3.09075 18.1478 4.08767 17.0531C5.08459 15.9584 6.4606 15.2403 7.96601 15.0291C8.13449 15.0044 8.29612 14.9479 8.44146 14.8631C8.5868 14.7783 8.71295 14.6668 8.81256 14.5351C8.91216 14.4033 8.98322 14.254 9.0216 14.0959C9.05997 13.9377 9.0649 13.7739 9.03608 13.6139C8.93141 13.0648 8.87968 12.5077 8.88151 11.9497C8.87581 9.76051 9.70302 7.64346 11.2101 5.99022C12.7171 4.33699 14.8021 3.25947 17.0791 2.95703C19.3561 2.65459 21.6711 3.14769 23.5958 4.34511C25.5204 5.54253 26.9245 7.36322 27.5481 9.47031C27.6115 9.68038 27.7334 9.87022 27.9008 10.0197C28.0683 10.1692 28.2751 10.2727 28.4993 10.3194C30.6395 10.7617 32.5326 11.9414 33.815 13.6318C35.0974 15.3223 35.6786 17.4042 35.4471 19.4779C35.2157 21.5516 34.1877 23.4707 32.5608 24.8666C30.9339 26.2626 28.8226 27.0369 26.6326 27.041V29.4524C29.3813 29.4417 32.0336 28.4869 34.1022 26.7634C36.1708 25.0398 37.5167 22.6634 37.8927 20.0706C38.2687 17.4779 37.6494 14.8431 36.1487 12.6503C34.648 10.4575 32.3667 8.85396 29.7239 8.1344Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M18.2643 18.8334L13.1875 22.4562L14.7094 24.3922L17.7531 22.2185V35.4984H20.2856V22.2071L23.3293 24.3808L24.8512 22.4449L19.7743 18.8221C19.5544 18.6702 19.2891 18.5893 19.0174 18.5913C18.7457 18.5934 18.4818 18.6782 18.2643 18.8334Z"
-                    fill="white"
-                  />
-                </svg>
+                />
+
                 <div className={classes.upload_popup_top_text}>
                   {translation['DRAG_FILE']}
                   <br />
                   {translation['TEXT_SIGN_IN_OR']}
                 </div>
                 <div className={classes.upload_popup_set_file_btn} onClick={onUploadFile}>
-                  <svg
-                    width="13"
-                    height="13"
-                    viewBox="0 0 13 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect x="6" width="1" height="13" fill="black" />
-                    <rect
-                      x="13"
-                      y="6"
-                      width="1"
-                      height="13"
-                      transform="rotate(90 13 6)"
-                      fill="black"
-                    />
-                  </svg>
+                  <IconPlus size={13} color="#000000" />
                   {translation['SELECT_FILE']}
                 </div>
               </div>
@@ -571,38 +522,7 @@ const UploadCustomModelPopup = (props) => {
             id="js_close_popup"
             onClick={onClickClosePopUp}
           >
-            <svg
-              width="25"
-              height="25"
-              fill="none"
-              viewBox="0 0 25 25"
-              className={classes.planner_popup_close_icon}
-            >
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-              <path
-                fill="#2F2F2F"
-                fillRule="evenodd"
-                d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-                clipRule="evenodd"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
           <div className={classes.planner_popup_bottom}>
             <h2>{translation['UPLOAD_MODEL_REQ_TITLE']}</h2>

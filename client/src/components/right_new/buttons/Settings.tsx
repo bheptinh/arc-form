@@ -1,9 +1,10 @@
+import { IconAdjustmentsHorizontal } from '@tabler/icons-react';
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
-import { user } from '../../../initR2D';
 import { useTranslation } from '../../../api/hooks/useTranslation';
+import { user } from '../../../initR2D';
 
 const bar_settings_dropdown_title = {
   background: '#DADADA',
@@ -149,7 +150,7 @@ const useStyles = createUseStyles({
   bar_dropdown_option_settings_active: {},
 });
 
-const Settings = (props) => {
+const Settings = () => {
   const translations = useTranslation();
 
   const classes = useStyles();
@@ -188,7 +189,7 @@ const Settings = (props) => {
       e.currentTarget.classList.toggle(classes.bar_settings_dropdown_wrap_hover);
   };
 
-  const onTouchStartHideDropdown = (e) => {
+  const onTouchStartHideDropdown = () => {
     document.removeEventListener('touchstart', onTouchStartHideDropdown);
     document
       .querySelector('.' + classes.bar_settings_dropdown_wrap_hover)
@@ -196,8 +197,8 @@ const Settings = (props) => {
   };
 
   useLayoutEffect(() => {
-    settingsMenu.current.setAttribute('style', 'width: auto');
-    return () => settingsMenu.current.removeAttribute('style');
+    settingsMenu.current?.setAttribute('style', 'width: auto');
+    return () => settingsMenu.current?.removeAttribute('style');
   });
 
   useEffect(() => {
@@ -229,38 +230,7 @@ const Settings = (props) => {
       onMouseLeave={onSettingsDropdownLeave}
     >
       <div className={classes.bar_settings_dropdown_active}>
-        <svg width="16" height="14" viewBox="0 0 16 14" fill="none">
-          <line
-            x1="0.75"
-            y1="2.25"
-            x2="15.25"
-            y2="2.25"
-            stroke="#2A3435"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          ></line>
-          <line
-            x1="0.75"
-            y1="7.25"
-            x2="15.25"
-            y2="7.25"
-            stroke="#2A3435"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          ></line>
-          <line
-            x1="0.75"
-            y1="12.25"
-            x2="15.25"
-            y2="12.25"
-            stroke="#2A3435"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-          ></line>
-          <circle cx="5" cy="2" r="2" fill="#2A3435"></circle>
-          <circle cx="12" cy="7" r="2" fill="#2A3435"></circle>
-          <circle cx="7" cy="12" r="2" fill="#2A3435"></circle>
-        </svg>
+        <IconAdjustmentsHorizontal size={16} color="#2A3435" />
 
         <span className={classes.arrow_right_down}></span>
       </div>

@@ -1,8 +1,10 @@
+import { IconHeart } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../../initR2D';
 import {
   changeActiveControlPanelMode,
@@ -18,21 +20,12 @@ import { setActivePopup } from '../../../../../../../redux/features/popups/popup
 import { hideQuickPanelVisible } from '../../../../../../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import { selectIsLogged } from '../../../../../../../redux/features/user/userSlice';
+import Checkbox from '../../../../../../../shared-components/inputs/checkbox';
 import BlueButton from '../../../components/BlueButton';
-import Checkbox from '../../../components/Checkbox';
 import MaterialComponent from '../../../components/MaterialComponent';
 import PlinthComponent from '../../../components/PlinthComponent';
-import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -129,14 +122,10 @@ const useStyle = createUseStyles({
       maxHeight: '100%',
       width: 'auto',
       height: 'auto',
-      '& path': {
-        transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-      },
+      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
       '&:hover': {
-        '& path': {
-          stroke: '#64BCF0',
-          fillOpacity: 0,
-        },
+        stroke: '#64BCF0',
+        fillOpacity: 0,
       },
     },
     '@media screen and (max-width: 950px)': {
@@ -144,8 +133,7 @@ const useStyle = createUseStyles({
     },
   },
   prod_item_fav_btn_active: {
-    '& path': {
-      fill: '#64BCF0',
+    '& svg': {
       stroke: '#64BCF0',
       fillOpacity: 1,
     },
@@ -560,14 +548,7 @@ const Main = (props) => {
                   }
                   onClick={updateFavorites}
                 >
-                  <svg width="20" height="18" fill="none" viewBox="0 0 20 18">
-                    <path
-                      stroke="#464646"
-                      strokeLinejoin="round"
-                      d="M12.947 5.874a.5.5 0 0 0 .326.234l5.354 1.137-3.644 4.003a.502.502 0 0 0-.128.388l.552 5.35-5.027-2.173a.5.5 0 0 0-.299-.031l-.098.031-5.028 2.173.553-5.35a.502.502 0 0 0-.128-.388L1.735 7.245 7.09 6.108a.5.5 0 0 0 .325-.234l2.766-4.662 2.766 4.662Z"
-                      opacity=".99"
-                    ></path>
-                  </svg>
+                  <IconHeart size={18} color="#464646" />
                 </div>
 
                 <div className={classes.planerWallsWrap_material}>

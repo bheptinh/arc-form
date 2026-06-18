@@ -1,14 +1,15 @@
+import { IconTopologyRing3 } from '@tabler/icons-react';
 import React, { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyles = createUseStyles({
   right_bar_btn: {
@@ -47,17 +48,21 @@ const useStyles = createUseStyles({
   },
 });
 
-const ViewConstr = (props) => {
+type ViewConstrProps = {
+  onClick?: () => void;
+};
+
+const ViewConstr = (props: ViewConstrProps) => {
   const dispatch = useDispatch();
   const activeViewMode = useSelector(selectActiveViewMode);
   const translation = useTranslation();
   const classes = useStyles();
   const mainDiv = useRef(null);
 
-  const changeViewMode = (e) => {
+  const changeViewMode = () => {
     dispatch(removeQuickPanelAll());
     dispatch(setActiveViewMode('constr'));
-    props.onClick && props.onClick();
+    props?.onClick?.();
   };
 
   return (
@@ -73,16 +78,7 @@ const ViewConstr = (props) => {
           }
           onClick={changeViewMode}
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-            <circle cx="2.5" cy="2.5" r="2.5" fill="white" />
-            <circle cx="2.5" cy="17.5" r="2.5" fill="white" />
-            <circle cx="17.5" cy="2.5" r="2.5" fill="white" />
-            <circle cx="17.5" cy="17.5" r="2.5" fill="white" />
-            <rect x="4" y="2" width="12" height="1" fill="white" />
-            <rect x="2" y="16" width="12" height="1" transform="rotate(-90 2 16)" fill="white" />
-            <rect x="17" y="16" width="12" height="1" transform="rotate(-90 17 16)" fill="white" />
-            <rect x="4" y="17" width="12" height="1" fill="white" />
-          </svg>
+          <IconTopologyRing3 size={20} color="#ffffff" />
         </div>
       </HoverComponent>
     </div>

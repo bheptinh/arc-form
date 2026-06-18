@@ -22,21 +22,6 @@ import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPa
 import { Accordion } from '../../common/Accordion';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'Roboto-Bold',
-      fontWeight: 700,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/Roboto-Bold.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 400,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-  ],
-
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',

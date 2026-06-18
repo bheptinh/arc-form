@@ -1,3 +1,4 @@
+import { IconX } from '@tabler/icons-react';
 import parse from 'html-react-parser';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
@@ -73,7 +74,7 @@ const useStyles = createUseStyles({
     height: 22,
     zIndex: 2,
     position: 'absolute',
-    transform: 'rotate(180deg)',
+
     '& path': {
       transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
     },
@@ -275,17 +276,7 @@ const CustomRegistrationPopup = (props) => {
             className={classes.planner_popup_close}
             onClick={() => dispatch(closeActivePopup({ name: 'customRegistrationPopup' }))}
           >
-            <svg
-              className={classes.planner_popup_close_icon}
-              viewBox="0 0 16.03 16.02"
-              width="24px"
-              height="24px"
-            >
-              <path
-                fill="#444444"
-                d="M1,0a1,1,0,0,0-.7,1.72L6.6,8,.31,14.3a1,1,0,0,0,1.39,1.44l0,0L8,9.42l6.29,6.29a1,1,0,1,0,1.44-1.39l0,0L9.43,8l6.29-6.29A1,1,0,1,0,14.31.3L8,6.6,1.72.3A1,1,0,0,0,1,0Z"
-              />
-            </svg>
+            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
           </div>
           {customRegistration}
         </div>

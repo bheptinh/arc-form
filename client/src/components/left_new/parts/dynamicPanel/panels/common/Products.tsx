@@ -1,11 +1,13 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
+import { IconCopy, IconPlus, IconRosetteDiscountFilled, IconTrash } from '@tabler/icons-react';
 import { AnimatePresence } from 'framer-motion';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
@@ -30,23 +32,8 @@ import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
 import Navigation from '../../navigation/Navigation';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
-  '@font-face': [
-    {
-      fontFamily: 'RobotoCondensed-Regular',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Regular.ttf") format("truetype")',
-    },
-    {
-      fontFamily: 'RobotoCondensed-Light',
-      fontWeight: 300,
-      fontDisplay: 'swap',
-      src: 'url("/src_designer/fonts/RobotoCondensed-Light.ttf") format("truetype")',
-    },
-  ],
   planner_catalog_cont: {
     borderRight: '1px solid #cdcdcd',
     background: '#fff',
@@ -437,18 +424,14 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
     height: 16,
     pointerEvents: 'auto',
-    '& rect': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
     '&:hover': {
-      '& rect': {
-        fill: '#B8E11F',
+      '& svg': {
+        stroke: '#B8E11F',
       },
     },
   },
   prod_item_btn_icon: {
-    width: '100%',
-    height: 'auto',
+    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   prod_item_fav_btn: {
     width: '24px',
@@ -526,16 +509,12 @@ const useStyle = createUseStyles({
     borderRadius: '50%',
     justifyContent: 'center',
     cursor: 'pointer',
-    '& path': {
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-    '&:hover path': {
-      fill: '#AF3131',
+    '&:hover svg': {
+      stroke: '#AF3131',
     },
   },
   prod_item_custom_delete: {
-    maxWidth: '80%',
-    maxHeight: '80%',
+    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
   },
   prod_item_promocode_btn: {
     width: '24px',
@@ -1377,46 +1356,7 @@ const Products = (props) => {
                         hoverTextPositionX={'right'}
                         hoverTextPositionY={'top'}
                       >
-                        <svg
-                          className={classes.prod_item_btn_icon}
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="transparent"
-                        >
-                          <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                          <rect
-                            className={classes.rectHover2}
-                            y="3"
-                            width="2"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="13"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="11"
-                            height="1"
-                            transform="rotate(-90 0 15)"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            x="12"
-                            y="15"
-                            width="1"
-                            height="1"
-                            transform="rotate(-90 12 15)"
-                            fill="white"
-                          />
-                        </svg>
+                        <IconCopy size={16} color="#fff" className={classes.prod_item_btn_icon} />
                       </HoverComponent>
                     </div>
                   </div>
@@ -1445,32 +1385,7 @@ const Products = (props) => {
                       )
                     }
                   >
-                    <svg
-                      className={classes.prod_item_custom_delete}
-                      width="12"
-                      height="15"
-                      fill="none"
-                      viewBox="0 0 12 15"
-                    >
-                      <path
-                        fill="#fff"
-                        d="M7.412.585v1.248h-.416v-.832h-2.08v.832H4.5V.585h2.912Z"
-                      />
-                      <path
-                        fill="#444"
-                        d="M7.412.585v1.248h-.416v-.832h-2.08v.832H4.5V.585h2.912Z"
-                      />
-                      <path fill="#fff" d="M.753 2.25a22.29 22.29 0 0 1 10.404 0v.832H.753V2.25Z" />
-                      <path fill="#444" d="M.753 2.25a22.29 22.29 0 0 1 10.404 0v.832H.753V2.25Z" />
-                      <path
-                        fill="#fff"
-                        d="M10.325 14.078a.655.655 0 0 1-.653.657H2.239a.656.656 0 0 1-.654-.657V3.498h8.74v10.58ZM3.46 4.331a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.625.625 0 0 0-.624-.624Zm2.497 0a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.624.624 0 0 0-.624-.624Zm2.498 0a.625.625 0 0 0-.624.624v7.075a.625.625 0 0 0 1.25 0V4.955a.625.625 0 0 0-.626-.624Z"
-                      />
-                      <path
-                        fill="#444"
-                        d="M10.325 14.078a.655.655 0 0 1-.653.657H2.239a.656.656 0 0 1-.654-.657V3.498h8.74v10.58ZM3.46 4.331a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.625.625 0 0 0-.624-.624Zm2.497 0a.624.624 0 0 0-.624.624v7.075a.624.624 0 0 0 1.248 0V4.955a.624.624 0 0 0-.624-.624Zm2.498 0a.625.625 0 0 0-.624.624v7.075a.625.625 0 0 0 1.25 0V4.955a.625.625 0 0 0-.626-.624Z"
-                      />
-                    </svg>
+                    <IconTrash size={16} color="#444" className={classes.prod_item_custom_delete} />
                   </div>
                 ) : (
                   <Lock
@@ -1601,46 +1516,7 @@ const Products = (props) => {
                         hoverTextPositionX={'right'}
                         hoverTextPositionY={'top'}
                       >
-                        <svg
-                          className={classes.prod_item_btn_icon}
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="transparent"
-                        >
-                          <rect x="3.5" y="0.5" width="12" height="12" stroke="white" />
-                          <rect
-                            className={classes.rectHover2}
-                            y="3"
-                            width="2"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="13"
-                            height="1"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            y="15"
-                            width="11"
-                            height="1"
-                            transform="rotate(-90 0 15)"
-                            fill="white"
-                          />
-                          <rect
-                            className={classes.rectHover}
-                            x="12"
-                            y="15"
-                            width="1"
-                            height="1"
-                            transform="rotate(-90 12 15)"
-                            fill="white"
-                          />
-                        </svg>
+                        <IconCopy size={18} color="#fff" className={classes.prod_item_btn_icon} />
                       </HoverComponent>
                     </div>
                   </div>
@@ -1652,18 +1528,15 @@ const Products = (props) => {
                       ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
                       : classes.prod_item_fav_btn
                   }
-                  onClick={(e) => updateFavorites(elem.id, isInFavorites)}
+                  onClick={() => updateFavorites(elem.id, isInFavorites)}
                 >
                   <FavoriteStarIcon />
                 </div>
                 {matchedLinkObject?.discount ? (
                   <div className={classes.prod_item_promocode_btn}>
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      className={classes.prod_item_promocode}
+                    <IconRosetteDiscountFilled
+                      size={20}
+                      color="#FFB400"
                       onMouseLeave={mouseDiscountLeave}
                       onMouseEnter={(event) =>
                         mouseDiscountEnter(
@@ -1672,12 +1545,7 @@ const Products = (props) => {
                           matchedLinkObject?.promocode
                         )
                       }
-                    >
-                      <path
-                        d="M19.0737 7.7565L18.4632 7.14582C18.1684 6.85104 18 6.45093 18 6.02982V5.16648C18 3.41889 16.5789 1.99764 14.8316 1.99764H13.9684C13.5474 1.99764 13.1474 1.83979 12.8526 1.53449L12.2421 0.923802C11.0105 -0.307934 9 -0.307934 7.75789 0.923802L7.14735 1.53449C6.85261 1.83979 6.45261 1.99764 6.03156 1.99764H5.16839C3.42102 1.99764 2.00002 3.41889 2.00002 5.16648V6.02982C2.00002 6.45093 1.84213 6.85104 1.53686 7.14582L0.926316 7.7565C0.326316 8.35662 0 9.15652 0 9.99873C0 10.8409 0.326316 11.6409 0.926316 12.241L1.53686 12.8517C1.84213 13.1465 2.00002 13.5467 2.00002 13.9678V14.831C2.00002 16.5786 3.42102 17.9999 5.16839 17.9999H6.03156C6.45261 17.9999 6.85261 18.1578 7.14735 18.4631L7.75789 19.0738C8.37895 19.6949 9.18947 20 10 20C10.8105 20 11.6211 19.6949 12.2421 19.0738L12.8526 18.4631C13.1474 18.1578 13.5474 17.9999 13.9684 17.9999H14.8316C16.5789 17.9999 18 16.5786 18 14.831V13.9678C18 13.5467 18.1684 13.1465 18.4632 12.8517L19.0737 12.241C19.6737 11.6409 20 10.8409 20 9.99873C20 9.15652 19.6737 8.35662 19.0737 7.7565ZM7.36842 6.0509C8.09474 6.0509 8.68421 6.64045 8.68421 7.36685C8.68421 8.09322 8.09474 8.68277 7.36842 8.68277C6.64211 8.68277 6.05263 8.09322 6.05263 7.36685C6.05263 6.64045 6.64211 6.0509 7.36842 6.0509ZM12.6316 13.9466C11.9053 13.9466 11.3158 13.357 11.3158 12.6306C11.3158 11.9042 11.9053 11.3147 12.6316 11.3147C13.3579 11.3147 13.9474 11.9042 13.9474 12.6306C13.9474 13.357 13.3579 13.9466 12.6316 13.9466ZM13.9053 7.58789L7.5895 13.9045C7.37897 14.1045 7.11579 14.2098 6.84211 14.2098C6.57895 14.2098 6.30524 14.1045 6.09472 13.9045C5.68419 13.4939 5.68419 12.8202 6.09472 12.4097L12.4105 6.09305C12.8316 5.68247 13.4947 5.68247 13.9053 6.09305C14.3158 6.50363 14.3158 7.17731 13.9053 7.58789Z"
-                        fill="#FFB400"
-                      />
-                    </svg>
+                    />
                   </div>
                 ) : null}
                 {dynamicPanelPreviewViewType != 'big' ? (
@@ -1981,31 +1849,12 @@ const Products = (props) => {
                       className={classes.prod_item_upload_btn}
                       onMouseUp={onCustomModelAddMouseUp}
                     >
-                      <svg
-                        width="26"
-                        height="26"
-                        fill="none"
-                        viewBox="0 0 26 26"
+                      <IconPlus
+                        size={25}
+                        color="#2E3839"
                         className={classes.prod_item_upload_btn_img}
-                      >
-                        <rect
-                          width="2.977"
-                          height="25"
-                          x="11.506"
-                          y=".209"
-                          fill="#2E3839"
-                          rx="1.488"
-                        />
-                        <rect
-                          width="2.977"
-                          height="25"
-                          x="25.494"
-                          y="11.221"
-                          fill="#2E3839"
-                          rx="1.488"
-                          transform="rotate(90 25.494 11.221)"
-                        />
-                      </svg>
+                      />
+
                       {translation['TIPS_ADD_NEW_MODEL']}
                     </div>
                   ) : null}
@@ -2019,24 +1868,11 @@ const Products = (props) => {
                 </div>
               ) : lastHistoryElem?.privateMaterialType ? (
                 <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
-                  <svg
-                    width="26"
-                    height="26"
-                    fill="none"
-                    viewBox="0 0 26 26"
+                  <IconPlus
+                    size={25}
+                    color="#2E3839"
                     className={classes.prod_item_upload_btn_img}
-                  >
-                    <rect width="2.977" height="25" x="11.506" y=".209" fill="#2E3839" rx="1.488" />
-                    <rect
-                      width="2.977"
-                      height="25"
-                      x="25.494"
-                      y="11.221"
-                      fill="#2E3839"
-                      rx="1.488"
-                      transform="rotate(90 25.494 11.221)"
-                    />
-                  </svg>
+                  />
                   {translation['TIPS_ADD_NEW_MODEL']}
                 </div>
               ) : null

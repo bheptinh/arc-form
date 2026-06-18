@@ -29,6 +29,12 @@ export default {
       res.end(response)
     });
     
+    server.middlewares.use('/api2/', (req, res) => {
+      res.setHeader('Content-Type', 'application/json');
+      res.statusCode = 404;
+      res.end(JSON.stringify({ status: 'error', message: 'not_found' }));
+    });
+
     server.middlewares.use('/api/', (req, res) => {
       let mockFilePath = '';
 

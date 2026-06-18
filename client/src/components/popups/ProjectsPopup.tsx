@@ -1,16 +1,24 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
+import {
+  IconCopyFilled,
+  IconEdit,
+  IconFileSymlink,
+  IconPlus,
+  IconShare,
+  IconTrash,
+  IconX,
+} from '@tabler/icons-react';
 import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
-import { planner, user } from '../../initR2D';
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { deleteProject, projectsInfiniteQueryOptions } from '../../api/projects';
-import { Card } from '../../shared-components/Card';
-import { SortBar } from '../../shared-components/SortBar';
+import { planner, user } from '../../initR2D';
 import { selectControlPanelData } from '../../redux/features/control/controlPanelSlice';
 import {
   closeActivePopup,
@@ -19,8 +27,9 @@ import {
 } from '../../redux/features/popups/popupsSlice';
 import { showTip } from '../../redux/features/tips/tipsSlice';
 import { selectUserProfileData } from '../../redux/features/user/userSlice';
+import { Card } from '../../shared-components/Card';
+import { SortBar } from '../../shared-components/SortBar';
 import { createProjectUrl } from '../../utils/UrlHelper';
-import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -527,12 +536,18 @@ const ProjectsPopup = (props) => {
   const controlPanelData = useSelector(selectControlPanelData);
   const queryClient = useQueryClient();
 
-  const { data: projectsQueryData, fetchNextPage, hasNextPage, isFetchingNextPage, isLoading } =
-    useInfiniteQuery(projectsInfiniteQueryOptions);
+  const {
+    data: projectsQueryData,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage,
+    isLoading,
+  } = useInfiniteQuery(projectsInfiniteQueryOptions);
 
   const deleteMutation = useMutation({
     mutationFn: (id: string) => deleteProject(id),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
+    onSuccess: () =>
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
   });
   const projectsData = useMemo(
     () => projectsQueryData?.pages.flatMap((p) => p.items) ?? [],
@@ -708,7 +723,6 @@ const ProjectsPopup = (props) => {
     }
   };
 
-
   const onScrollItemsWrap = (e) => {
     const el = e.target;
     if (
@@ -818,38 +832,7 @@ const ProjectsPopup = (props) => {
     >
       <div className={classes.planner_popup_wr}>
         <div className={classes.planner_popup_close} onClick={onClickClose}>
-          <svg
-            width="25"
-            height="25"
-            fill="none"
-            viewBox="0 0 25 25"
-            className={classes.planner_popup_close_icon}
-          >
-            <path
-              fill="#2F2F2F"
-              fillRule="evenodd"
-              d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-              clipRule="evenodd"
-            />
-            <path
-              fill="#2F2F2F"
-              fillRule="evenodd"
-              d="M.102 1.417 1.22.329l12.34 12.07-.007.006v.002l-.23.221-.88.858-.005-.005L1.172 24.329.064 23.233l11.259-10.842L.103 1.417Z"
-              clipRule="evenodd"
-            />
-            <path
-              fill="#2F2F2F"
-              fillRule="evenodd"
-              d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-              clipRule="evenodd"
-            />
-            <path
-              fill="#2F2F2F"
-              fillRule="evenodd"
-              d="M24.73 1.417 23.613.329 11.273 12.4l.008.006-.002.002.23.221.881.858.005-.005L23.66 24.329l1.108-1.096L13.51 12.391 24.73 1.417Z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
         </div>
 
         <div className={classes.planner_popup_cont}>
@@ -889,8 +872,13 @@ const ProjectsPopup = (props) => {
                 ]}
                 activeLabel={activeSortText}
                 direction={sortDirection as 'asc' | 'desc'}
-                onOptionSelect={(opt) => { setSortType(opt.value); setActiveSortText(opt.label); }}
-                onDirectionToggle={() => setSortDirection((prev) => (prev === 'asc' ? 'desc' : 'asc'))}
+                onOptionSelect={(opt) => {
+                  setSortType(opt.value);
+                  setActiveSortText(opt.label);
+                }}
+                onDirectionToggle={() =>
+                  setSortDirection((prev) => (prev === 'asc' ? 'desc' : 'asc'))
+                }
               />
             </div>
           </div>
@@ -904,31 +892,11 @@ const ProjectsPopup = (props) => {
               <div className={classes.planner_popup_projects}>
                 {!isCurrDeviceAPhone ? (
                   <div className={classes.planner_popup_proj_add} onClick={createNewProject}>
-                    <svg
-                      width="26"
-                      height="26"
-                      fill="none"
-                      viewBox="0 0 26 26"
+                    <IconPlus
                       className={classes.planner_popup_item_add_img}
-                    >
-                      <rect
-                        width="2.977"
-                        height="25"
-                        x="11.506"
-                        y=".209"
-                        fill="#2E3839"
-                        rx="1.488"
-                      ></rect>
-                      <rect
-                        width="2.977"
-                        height="25"
-                        x="25.494"
-                        y="11.221"
-                        fill="#2E3839"
-                        rx="1.488"
-                        transform="rotate(90 25.494 11.221)"
-                      ></rect>
-                    </svg>
+                      size={24}
+                      color="#2F2F2F"
+                    />
                     {translation['TEXT_NEW_PLAN']}
                   </div>
                 ) : null}
@@ -956,53 +924,27 @@ const ProjectsPopup = (props) => {
                                 onClick={() => onProjectOpen(item)}
                                 actions={[
                                   {
-                                    icon: (
-                                      <svg width="25" height="25" fill="none" viewBox="0 0 25 25">
-                                        <path fill="#fff" d="M.879 24.429v-20h2v20h-2Zm21 0v-11h2v11h-2Zm0 0h-19v-2h19v2Z" />
-                                        <path fill="#fff" d="M6.879 6.429h-4v-2h4v2Z" />
-                                        <path fill="#fff" fillRule="evenodd" d="M17.842 1.26 18.945.186l5.356 5.238-.006.006.037.037-5.477 5.274-1.094-1.083 3.353-3.229h-7.227v9h-2v-11h9.195l-3.24-3.169Z" clipRule="evenodd" />
-                                      </svg>
-                                    ),
+                                    icon: <IconFileSymlink size={25} color="#fff" />,
                                     label: translation['BUTTON_OPEN_PLAN'],
                                     onClick: () => onProjectOpen(item),
                                   },
                                   {
-                                    icon: (
-                                      <svg width="22" height="27" fill="none" viewBox="0 0 22 27">
-                                        <path fill="#fff" d="M6.125 5.307h15v21h-15zm-6-5h15v2h-15v-2Zm0 19h6v2h-6v-2Z" />
-                                        <path fill="#fff" d="M.125 19.307v-17h2v17h-2Zm13-14v-3h2v3h-2Z" />
-                                      </svg>
-                                    ),
+                                    icon: <IconCopyFilled size={25} color="#fff" />,
                                     label: translation['BUTTON_COPY_PLAN'],
                                     onClick: () => onProjectCopy(item),
                                   },
                                   {
-                                    icon: (
-                                      <svg width="27" height="27" fill="none" viewBox="0 0 27 27">
-                                        <path fill="#fff" fillRule="evenodd" d="M22.733 26.164V.45h2.005v25.712h-2.005Z" clipRule="evenodd" />
-                                        <path fill="#fff" fillRule="evenodd" d="M21.104.406h5.271V2.41h-5.271V.406Zm-.035 24.274h5.27v2.006h-5.27v-2.005Zm-.01-20.93H.859v19.114h20.2v-1.607H2.466v-15.9H21.06V3.748Zm2.26 19.114h.001V3.75h-.002v19.115Z" clipRule="evenodd" />
-                                      </svg>
-                                    ),
+                                    icon: <IconEdit size={25} color="#fff" />,
                                     label: translation['BUTTON_RENAME_SCENE'],
                                     onClick: () => onClickRename(item),
                                   },
                                   {
-                                    icon: (
-                                      <svg width="24" height="29" fill="none" viewBox="0 0 24 29">
-                                        <path fill="#fff" fillRule="evenodd" d="M23.167 4.45a4.107 4.107 0 0 1-7.145 2.764L8.039 12.66c.22.504.343 1.061.343 1.646 0 .415-.061.815-.175 1.192l8.157 5.567a4.107 4.107 0 1 1-1 1.306L7.419 16.95a4.107 4.107 0 1 1-.327-5.632L15.18 5.8a4.107 4.107 0 1 1 7.988-1.35Z" clipRule="evenodd" />
-                                      </svg>
-                                    ),
+                                    icon: <IconShare size={25} color="#fff" />,
                                     label: translation['BUTTON_SHARE_PLAN'],
                                     onClick: () => onProjectShare(item),
                                   },
                                   {
-                                    icon: (
-                                      <svg width="24" height="31.38" viewBox="0 0 13 17" fill="none">
-                                        <path fillRule="evenodd" clipRule="evenodd" d="M5.10547 0.164063V0.164083H7.50437V0.164062L7.98438 0.164063V0.164083H7.985V0.644083H7.98438V1.60406H7.50437V0.644083H5.10547L5.10547 1.60406H4.62547L4.62547 0.644083H4.625V0.164083H4.62547V0.164062L5.10547 0.164063Z" fill="#AF3131" />
-                                        <path d="M0.304688 2.08355C4.24869 1.13699 8.36069 1.13699 12.3047 2.08355V3.04355H0.304688V2.08355Z" fill="#AF3131" />
-                                        <path fillRule="evenodd" clipRule="evenodd" d="M10.8656 3.52344H1.26562V15.725C1.26562 16.1436 1.60355 16.4834 2.0197 16.4834H10.5915C11.0077 16.4834 11.3456 16.1436 11.3456 15.725V3.52344H10.8656ZM9.9068 5.20383C9.9068 4.80639 9.58424 4.48383 9.1868 4.48383C8.78936 4.48383 8.4668 4.80639 8.4668 5.20383V13.3638C8.4668 13.7613 8.78936 14.0838 9.1868 14.0838C9.58424 14.0838 9.9068 13.7613 9.9068 13.3638V5.20383ZM6.30594 4.48384C6.70338 4.48384 7.02594 4.8064 7.02594 5.20384V13.3638C7.02594 13.7613 6.70338 14.0838 6.30594 14.0838C5.9085 14.0838 5.58594 13.7613 5.58594 13.3638V5.20384C5.58594 4.8064 5.9085 4.48384 6.30594 4.48384ZM4.14508 5.20383C4.14508 4.80639 3.82252 4.48383 3.42508 4.48383C3.02764 4.48383 2.70508 4.80639 2.70508 5.20383V13.3638C2.70508 13.7613 3.02764 14.0838 3.42508 14.0838C3.82252 14.0838 4.14508 13.7613 4.14508 13.3638V5.20383Z" fill="#AF3131" />
-                                      </svg>
-                                    ),
+                                    icon: <IconTrash size={25} color="#AF3131" />,
                                     label: translation['BUTTON_DELETE_PLAN'],
                                     onClick: () => deleteMutation.mutate(item.id),
                                   },

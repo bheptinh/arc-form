@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
-import Checkbox from '../common/Checkbox';
+import Checkbox from '../../shared-components/inputs/checkbox';
 import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({

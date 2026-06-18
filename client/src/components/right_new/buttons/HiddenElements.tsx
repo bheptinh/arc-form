@@ -1,15 +1,16 @@
+import { IconEye } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import {
   selectHiddenButtonWasShowed,
   updateHiddenButtonWasShowedStatus,
 } from '../../../redux/features/common/commonSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const bar_settings_dropdown_title = {
   background: '#DADADA',
@@ -152,7 +153,7 @@ const useStyles = createUseStyles({
   },
 });
 
-const HiddenElements = (props) => {
+const HiddenElements = () => {
   const translations = useTranslation();
 
   const dispatch = useDispatch();
@@ -177,17 +178,20 @@ const HiddenElements = (props) => {
       e.currentTarget.classList.toggle(classes.bar_settings_dropdown_wrap_hover);
   };
 
-  const onTouchStartHideDropdown = (e) => {
+  const onTouchStartHideDropdown = () => {
     document.removeEventListener('touchstart', onTouchStartHideDropdown);
     document
       .querySelector('.' + classes.bar_settings_dropdown_wrap_hover)
       ?.classList.remove(classes.bar_settings_dropdown_wrap_hover);
   };
 
-  const onToggleHiddenElements = (e) => {
-    showHiddenObjectsStatus
-      ? planner.scene.hideAllPartialVisibleElements()
-      : planner.scene.makeAllHiddenElementsPartialVisible();
+  const onToggleHiddenElements = () => {
+    if (showHiddenObjectsStatus) {
+      planner.scene.hideAllPartialVisibleElements();
+    } else {
+      planner.scene.makeAllHiddenElementsPartialVisible();
+    }
+
     R2D.scene.showPartialVisibleElements = !R2D.scene.showPartialVisibleElements;
     setShowHiddenObjectsStatus(!showHiddenObjectsStatus);
     dispatch(removeQuickPanelAll());
@@ -210,27 +214,14 @@ const HiddenElements = (props) => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        variants={isHiddenButtonWasShowedMemo ? null : variants}
+        variants={isHiddenButtonWasShowedMemo ? undefined : variants}
         className={classes.bar_settings_dropdown_wrap}
         onTouchStart={onTouchStartDropdown}
         onMouseEnter={onSettingsDropdownEnter}
         onMouseLeave={onSettingsDropdownLeave}
       >
         <div className={classes.bar_settings_dropdown_active}>
-          <svg width="18" height="12" viewBox="0 0 18 12" fill="none">
-            <path
-              d="M9.05 10.5192C5.50049 10.5192 2.54433 8.57773 1.43042 5.94946C2.54433 3.32119 5.50049 1.37969 9.05 1.37969C12.5995 1.37969 15.5557 3.32119 16.6696 5.94946C15.5557 8.57773 12.5995 10.5192 9.05 10.5192Z"
-              stroke="#2A3435"
-              strokeWidth="1.1793"
-              strokeMiterlimit="10"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M9.05073 9.04531C10.7604 9.04531 12.1464 7.65934 12.1464 5.94966C12.1464 4.23998 10.7604 2.854 9.05073 2.854C7.34105 2.854 5.95508 4.23998 5.95508 5.94966C5.95508 7.65934 7.34105 9.04531 9.05073 9.04531Z"
-              fill="#2A3435"
-            />
-          </svg>
+          <IconEye size={16} color="#2A3435" />
         </div>
         <div className={classes.bar_dropdown_option_wrap}>
           <div className={classes.bar_dropdown_option_wr}>

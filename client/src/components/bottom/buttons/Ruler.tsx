@@ -1,12 +1,13 @@
+import { IconRuler2 } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
+import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
-import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyles = createUseStyles({
   btn_ruler: {
@@ -74,14 +75,7 @@ const Ruler = (props) => {
         hoverTextPositionX={'left'}
         hoverTextPositionY={'top'}
       >
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-          <path
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M19.756 4.56161L15.1134 0L14.1391 0.991668L16.8219 3.62773L16.28 4.17921L13.5972 1.54316L11.9314 3.23852L13.7615 5.03676L13.2196 5.58825L11.3895 3.79001L10.0117 5.19221L11.8247 6.97358L11.2828 7.52507L9.46985 5.7437L7.89163 7.34991L10.6072 10.0182L10.0654 10.5697L7.34975 7.9014L5.78844 9.49041L7.56362 11.2346L7.02174 11.7861L5.24656 10.0419L3.86871 11.4442L5.62674 13.1716L5.08486 13.7231L3.32683 11.9957L1.74863 13.6019L4.46461 16.2705L3.92274 16.822L1.20675 14.1534L0 15.3815L4.64253 19.9431L19.756 4.56161Z"
-            fill="#2A3435"
-          />
-        </svg>
+        <IconRuler2 size={20} color="#2A3435" />
       </HoverComponent>
     </motion.div>
   );

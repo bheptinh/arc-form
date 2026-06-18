@@ -1,0 +1,15 @@
+export { IconKeyBackspace } from './key-backspace';
+export { IconKeyCmd } from './key-cmd';
+export { IconKeyCtrl } from './key-ctrl';
+export { IconKeyDelete } from './key-delete';
+export { IconKeyEsc } from './key-esc';
+export { IconKeyShift } from './key-shift';
+export { IconKeySpace } from './key-space';
+export { IconKeyTab } from './key-tab';
+export { IconKeysArrow } from './keys-arrow';
+export { IconKeysWASD } from './keys-wasd';
+export { MouseLeft } from './mouse-left';
+export { MouseLeftMove } from './mouse-left-move';
+export { MouseRight } from './mouse-right';
+export { MouseRightMove } from './mouse-right-move';
+export { MouseScroll } from './mouse-scroll';

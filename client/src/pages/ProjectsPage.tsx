@@ -1,13 +1,10 @@
+import { IconForms, IconLogin2, IconPlus, IconTrash } from '@tabler/icons-react';
 import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useNavigate } from 'react-router-dom';
 
-import {
-  deleteProject,
-  projectsInfiniteQueryOptions,
-  renameProject,
-} from '../api/projects';
+import { deleteProject, projectsInfiniteQueryOptions, renameProject } from '../api/projects';
 import { Card } from '../shared-components/Card';
 import { SortBar } from '../shared-components/SortBar';
 
@@ -111,7 +108,9 @@ export default function ProjectsPage() {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
 
-  const { data, fetchNextPage, hasNextPage, isLoading } = useInfiniteQuery(projectsInfiniteQueryOptions);
+  const { data, fetchNextPage, hasNextPage, isLoading } = useInfiniteQuery(
+    projectsInfiniteQueryOptions
+  );
   const projects = data?.pages.flatMap((p) => p.items) ?? [];
 
   const [sortField, setSortField] = useState<'modified' | 'opened'>('modified');
@@ -132,12 +131,14 @@ export default function ProjectsPage() {
 
   const deleteMutation = useMutation({
     mutationFn: deleteProject,
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
+    onSuccess: () =>
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
   });
 
   const renameMutation = useMutation({
     mutationFn: ({ id, name }: { id: string; name: string }) => renameProject(id, name),
-    onSuccess: () => queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
+    onSuccess: () =>
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
   });
 
   const sorted = [...projects].sort((a, b) => {
@@ -180,7 +181,10 @@ export default function ProjectsPage() {
           ]}
           activeLabel={sortLabel}
           direction={sortDir}
-          onOptionSelect={(opt) => { setSortField(opt.value as 'modified' | 'opened'); setSortLabel(opt.label); }}
+          onOptionSelect={(opt) => {
+            setSortField(opt.value as 'modified' | 'opened');
+            setSortLabel(opt.label);
+          }}
           onDirectionToggle={() => setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'))}
         />
       </div>
@@ -193,18 +197,7 @@ export default function ProjectsPage() {
         )}
         <div className={classes.grid}>
           <div className={classes.addCard} onClick={handleCreateNew}>
-            <svg width="26" height="26" fill="none" viewBox="0 0 26 26">
-              <rect width="2.977" height="25" x="11.506" y=".209" fill="#2E3839" rx="1.488" />
-              <rect
-                width="2.977"
-                height="25"
-                x="25.494"
-                y="11.221"
-                fill="#2E3839"
-                rx="1.488"
-                transform="rotate(90 25.494 11.221)"
-              />
-            </svg>
+            <IconPlus size={26} color="#2E3839" />
             New project
           </div>
 
@@ -234,32 +227,17 @@ export default function ProjectsPage() {
               }
               actions={[
                 {
-                  icon: (
-                    <svg width="27" height="27" fill="none" viewBox="0 0 27 27">
-                      <path fill="#fff" d="M13.5 1a12.5 12.5 0 1 0 0 25A12.5 12.5 0 0 0 13.5 1Zm0 22.727A10.227 10.227 0 1 1 13.5 3.273a10.227 10.227 0 0 1 0 20.454Z" />
-                      <path fill="#fff" d="M17.682 12.41 11.5 8.637a1.136 1.136 0 0 0-1.136 1.966v7.546a1.136 1.136 0 0 0 1.136 0l6.182-3.773a1.136 1.136 0 0 0 0-1.966Z" />
-                    </svg>
-                  ),
+                  icon: <IconLogin2 size={26} color="#ffffff" />,
                   label: 'Open',
                   onClick: () => handleOpen(item.id),
                 },
                 {
-                  icon: (
-                    <svg width="27" height="27" fill="none" viewBox="0 0 27 27">
-                      <path fill="#fff" fillRule="evenodd" d="M22.733 26.164V.45h2.005v25.712h-2.005Zm-1.629-25.758h5.271V2.41h-5.271V.406Zm-.035 24.274h5.27v2.006h-5.27v-2.005Zm-.01-20.93H.859v19.114h20.2v-1.607H2.466v-15.9H21.06V3.748Zm2.26 19.114h.001V3.75h-.002v19.115Z" clipRule="evenodd" />
-                    </svg>
-                  ),
+                  icon: <IconForms size={26} color="#fff" />,
                   label: 'Rename',
                   onClick: (e) => startRename(e, item),
                 },
                 {
-                  icon: (
-                    <svg width="24" height="31" viewBox="0 0 13 17" fill="none">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M5.105.164h2.4v1.44h-2.4V.164Z" fill="#fff" />
-                      <path d="M0.305 2.084c3.944-.947 8.056-.947 12 0v.96H.305v-.96Z" fill="#fff" />
-                      <path fillRule="evenodd" clipRule="evenodd" d="M10.866 3.523H1.266V15.725c0 .418.338.758.754.758h8.571c.416 0 .754-.34.754-.758V3.523h-.48ZM9.907 5.204a.72.72 0 1 0-1.44 0v8.16a.72.72 0 1 0 1.44 0V5.204Zm-3.12-1.44a.72.72 0 0 1 .72.72v8.16a.72.72 0 0 1-1.44 0V4.484a.72.72 0 0 1 .72-.72Zm-2.64 1.44a.72.72 0 1 0-1.44 0v8.16a.72.72 0 1 0 1.44 0V5.204Z" fill="#fff" />
-                    </svg>
-                  ),
+                  icon: <IconTrash size={26} color="#fff" />,
                   label: 'Delete',
                   onClick: (e) => handleDelete(e, item.id),
                 },

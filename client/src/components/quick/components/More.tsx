@@ -2,8 +2,8 @@ import React, { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
 import { useTranslation } from '../../../api/hooks/useTranslation';
+import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
 
 const useStyle = createUseStyles({
   info_model_pop_item_wr: {
@@ -91,6 +91,7 @@ const More = (props) => {
           ref={moreBtn}
           style={props.addStyles ? { ...props.addStyles } : null}
         >
+          {/* TODO: Replace with three dots icon */}
           <svg width="16" height="4" viewBox="0 0 16 4" fill="none">
             <circle opacity="0.99" cx="2.40195" cy="1.73398" r="1.60898" fill="#323232" />
             <circle opacity="0.99" cx="8.01914" cy="1.73398" r="1.60898" fill="#323232" />
