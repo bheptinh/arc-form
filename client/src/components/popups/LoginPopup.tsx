@@ -275,12 +275,6 @@ const LoginPopup = (props) => {
 
       popupType == 'startPopup' && dispatch(setActivePopup({ name: 'projectsPopup' }));
 
-      if (popupType == 'promoCredits') {
-        const result = await user.promoLoad(popupData);
-        if (result.type == 'error') dispatch(setActivePopup({ name: 'alert', data: result.data }));
-        else dispatch(setActivePopup({ name: 'alert', data: result.message }));
-      }
-
       const isCurrentProjectBelongToUser = R2D.scene.getProjectUserKey() == user.getKey();
       planner.scene.setIsProjectBelongToLoggedUserStatus(isCurrentProjectBelongToUser);
 
@@ -307,8 +301,6 @@ const LoginPopup = (props) => {
       dispatch(updateIsProjectBelongToLoggedUser(isCurrentProjectBelongToUser));
       dispatch(updatePreloaderStatus(false));
 
-      if (popupType == 'promoUpgradeLogin')
-        dispatch(setActivePopup({ name: 'alert', data: 'PLAN_UPGRADE_SUCCESS_TEXT' }));
     }
   };
 

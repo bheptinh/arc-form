@@ -43,6 +43,12 @@ export default {
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({ status: 'ok', data: { items: [], total: 0, limit: 20, offset: 0 } }));
         return;
+      } else if (url.startsWith('/user/promo')) {
+        // TODO: implement POST /server-api/user/promo — validate code, apply benefit (plan upgrade, credits, etc.),
+        //       return { status: 'ok', message: '<translation_key>' } or { status: 'error', error: '<translation_key>' }
+        res.setHeader('Content-Type', 'application/json');
+        res.end(JSON.stringify({ status: 'ok', message: 'Promo code applied' }));
+        return;
       } else if (url.startsWith('/planner/connect')) {
         // TODO: remove entirely — redundant license-key ping for roomtodo.com, response is never used.
         //       Remove this handler, the URL_PLANNER_CONNECT entry in index.html, and the plannerConnect() call in App.tsx.

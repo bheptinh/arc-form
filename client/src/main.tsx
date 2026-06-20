@@ -21,8 +21,9 @@ import { userQueryOptions } from './api/user';
 import App from './App';
 import { planner, user } from './initR2D';
 import { MarkdownPage } from './pages/MarkdownPage';
+import PasswordRecoveryPage from './pages/PasswordRecoveryPage';
 import ProjectsPage from './pages/ProjectsPage';
-import { changeActiveControlPanelMode } from './redux/features/control/controlPanelSlice';
+import RedeemPage from './pages/RedeemPage';
 import { setActivePopup } from './redux/features/popups/popupsSlice';
 import { saveLoggedStatus } from './redux/features/user/userSlice';
 import { setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
@@ -42,9 +43,11 @@ async function init() {
   await queryClient.ensureQueryData(translationQueryOptions);
 
   const responseIsLogged = await user.checkIsLogged();
-  if (responseIsLogged.type == 'error')
+  if (responseIsLogged.type == 'error') {
     store.dispatch(setActivePopup({ name: 'alert', data: responseIsLogged.data }));
-  else store.dispatch(saveLoggedStatus(responseIsLogged));
+  } else {
+    store.dispatch(saveLoggedStatus(responseIsLogged));
+  }
 
   await planner.init();
 
@@ -72,21 +75,22 @@ async function init() {
     store.dispatch(setActiveViewMode('view3d'));
   }
 
-  setTimeout(() => {
-    // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
-    store.dispatch(
-      // changeActiveControlPanelMode({
-      //   mode: 'renderExample_small',
-      //   data: { type: 'main', lastSavedScroll: 0 },
-      // })
-      // setActivePopup({ name: 'renderExample_big' })
-      setActivePopup({
-        name: 'export3DProjectPopup',
-        type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
-        data: {},
-      })
-    );
-  }, 2000);
+  // setTimeout(() => {
+  //   // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
+  //   store.dispatch(
+  //     // changeActiveControlPanelMode({
+  //     //   mode: 'renderExample_small',
+  //     //   data: { type: 'main', lastSavedScroll: 0 },
+  //     // })
+  //     // setActivePopup({ name: 'renderExample_big' })
+  //     // setActivePopup({
+  //     //   name: 'export3DProjectPopup',
+  //     //   type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
+  //     //   data: {},
+  //     // })
+  //     setActivePopup({ name: 'payPro', data: '/' })
+  //   );
+  // }, 2000);
 
   createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -98,8 +102,9 @@ async function init() {
                 <Route path="/" element={<Navigate to="/projects" replace />} />
                 <Route path="/projects" element={<ProjectsPage />} />
                 <Route path="/toc" element={<MarkdownPage slug="toc" />} />
+                <Route path="/auth/reset-password" element={<PasswordRecoveryPage />} />
+                <Route path="/redeem" element={<RedeemPage />} />
                 <Route path="/project/*" element={<App />} />
-                <Route path="/password_recovery/*" element={<App />} />
               </Routes>
             </Router>
           </ErrorBoundary>

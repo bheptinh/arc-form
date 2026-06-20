@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguageChange } from './api/hooks/useLanguageChange';
+import { useLanguages } from './api/hooks/useLanguages';
+import { useTranslation } from './api/hooks/useTranslation';
 import BottomPanel from './components/bottom/BottomPanel';
 import CenterPanel from './components/center/CenterPanel';
 import LeftMain from './components/left_new/LeftMain';
@@ -37,7 +40,6 @@ import {
   updateDynamicPanelStatus,
   updateDynamicToggleButtonStatus,
 } from './redux/features/control/controlPanelSlice';
-import { useLanguageChange } from './api/hooks/useLanguageChange';
 import {
   closeActivePopup,
   selectPopups,
@@ -66,8 +68,6 @@ import PortraitBlocker from './shared-components/app-guards/portrait-blocker';
 import GlobalPreload from './shared-components/loaders/global-preload';
 import Tips from './smart-components/tips';
 import { createProjectUrl } from './utils/UrlHelper';
-import { useLanguages } from './api/hooks/useLanguages';
-import { useTranslation } from './api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   main: {
@@ -84,69 +84,6 @@ const useStyle = createUseStyles({
     '-ms-user-select': 'none' /* Internet Explorer/Edge */,
     '-webkit-tap-highlight-color': 'transparent',
     display: 'flex',
-  },
-  plannerRenderViewTypes_types: {
-    display: 'flex',
-    marginRight: 40,
-  },
-  plannerRenderViewTypes: {
-    position: 'absolute',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    top: 20,
-    zIndex: 2,
-    display: 'flex',
-  },
-  plannerRenderViewTypes_type: {
-    fontSize: 12,
-    fontWeight: 400,
-    color: '#B6B6B6',
-    padding: '5px 20px',
-    textTransform: 'uppercase',
-    display: 'flex',
-    alignItems: 'center',
-    border: '1px solid transparent',
-    borderRadius: 3,
-    cursor: 'pointer',
-  },
-  plannerRenderViewTypes_type_active: {
-    border: '1px solid #9DD900',
-    color: '#ffffff',
-    cursor: 'default',
-  },
-  plannerRenderViewTypes_screens: {
-    display: 'flex',
-  },
-  plannerRenderViewTypes_screen: {
-    padding: '5px 10px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    border: '1px solid transparent',
-    borderRadius: 3,
-    cursor: 'pointer',
-    '& span': {
-      background: '#B6B6B6',
-    },
-  },
-  plannerRenderViewTypes_screen_land: {
-    '& span': {
-      width: 20,
-      height: 12,
-    },
-  },
-  plannerRenderViewTypes_screen_port: {
-    '& span': {
-      width: 12,
-      height: 20,
-    },
-  },
-  plannerRenderViewTypes_screen_active: {
-    border: '1px solid #9DD900',
-    cursor: 'default',
-    '& span': {
-      background: '#ffffff',
-    },
   },
   right_bar_wrap: {
     position: 'absolute',
@@ -185,7 +122,7 @@ const App = () => {
   const controlPanelData = useSelector(selectControlPanelData);
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
   const isLogged = useSelector(selectIsLogged);
-  const controPanelActiveMode = useSelector(selectActiveControlPanelMode);
+  const controlPanelActiveMode = useSelector(selectActiveControlPanelMode);
   const preloaderStatus = useSelector(selectPreloaderStatus);
   const userProjectActive = useSelector(selectUserProjectActive);
   const isProjectOnlyView = useSelector(selectIsProjectOnlyView);
@@ -195,9 +132,7 @@ const App = () => {
   const currLanguage = languages.find((i) => i.current == 1);
   const { mutateAsync: changeLanguage } = useLanguageChange();
 
-  const [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(
-    R2D.config.data.enable_merchant_login
-  );
+  const configEnableMerchantLogin = R2D.config.data.enable_merchant_login;
   const [showTipUseTab, setTipUseTab] = useState({
     status: false,
     position: { x: 0, y: 0 },
@@ -205,7 +140,7 @@ const App = () => {
   });
   const [showTipUseEnter, setTipUseEnter] = useState({ status: false, position: { x: 0, y: 0 } });
 
-  const [isProOptionEnabled, setIsProOptionEnabled] = useState(R2D.OPTIONS.PRO_PLAN);
+  const isProOptionEnabled = R2D.OPTIONS.PRO_PLAN;
 
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
@@ -417,7 +352,7 @@ const App = () => {
 
   const onWheelZoom = (event) => {
     const delta = event.data.delta > 0 ? -1 : 1;
-    if (controPanelActiveMode == 'renderMake') {
+    if (controlPanelActiveMode == 'renderMake') {
       R2D.Viewers.cameraZoom(-delta);
     } else {
       if (activeViewMode == 'constr') {
@@ -433,7 +368,7 @@ const App = () => {
   };
 
   const onCameraMove = (e) => {
-    if (activeViewMode == 'constr' && controPanelActiveMode != 'renderMake') {
+    if (activeViewMode == 'constr' && controlPanelActiveMode != 'renderMake') {
       R2D.ViewerScene2D._instance.cameraMove(e.data.x, e.data.y);
     } else {
       R2D.Viewers.cameraMove(e.data.x, e.data.y);
@@ -1316,66 +1251,6 @@ const App = () => {
         }
       }
 
-      if (window.location.search.match('promo=')) {
-        if (window.location.search.match('promo=base_to_pro')) {
-          showStartPopup = false;
-          const codeToCheck = window.location.search?.split('&')[1]?.split('=')[1];
-
-          dispatch(updatePreloaderStatus(true));
-
-          const result = await fetch(
-            R2D.URL.DOMAIN + `/api2/user/basic_to_pro_upgrade?code=${codeToCheck}`
-          );
-          const resultJSON = await resulton();
-
-          if (resultJSON.status == 'ok') {
-            if (!user.isLogged()) {
-              dispatch(updatePreloaderStatus(false));
-              !configEnableMerchantLogin
-                ? dispatch(setActivePopup({ name: 'login', type: 'promoUpgradeLogin' }))
-                : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
-            } else {
-              const response = await user.loadProfileData();
-              dispatch(updatePreloaderStatus(false));
-              if (response.type == 'error')
-                dispatch(setActivePopup({ name: 'alert', data: response.data }));
-              else dispatch(setProfileData(response));
-              dispatch(setActivePopup({ name: 'alert', data: 'PLAN_UPGRADE_SUCCESS_TEXT' }));
-            }
-          } else {
-            dispatch(updatePreloaderStatus(false));
-            dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
-          }
-
-          needToCleanSearch = true;
-        } else if (window.location.search.match('promo=drop_confirmed')) {
-          showStartPopup = false;
-          window.history.replaceState(null, null, createProjectUrl(''));
-          dispatch(setActivePopup({ name: 'deleteAccountPopup', data: 'deleted' }));
-        } else {
-          const params = new URLSearchParams(window.location.search);
-          const value = params.get('promo');
-
-          if (!user.isLogged()) {
-            dispatch(setActivePopup({ name: 'login', type: 'promoCredits', data: value }));
-            window.history.replaceState(null, null, createProjectUrl(''));
-          } else {
-            const result = await user.promoLoad(value);
-            if (result.type == 'error')
-              dispatch(setActivePopup({ name: 'alert', data: result.data }));
-            else dispatch(setActivePopup({ name: 'alert', data: result.message }));
-            window.history.replaceState(null, null, createProjectUrl(''));
-          }
-        }
-      }
-
-      if (window.location.pathname.match('password_recovery')) {
-        showStartPopup = false;
-        const tokenKey =
-          window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
-        dispatch(setActivePopup({ name: 'updatePassword', type: 'recovery', data: tokenKey }));
-      }
-
       if (window.location.search.match('action=buy&')) {
         const type = window.location.search
           .replace('?', '')
@@ -1602,13 +1477,13 @@ const App = () => {
         planner.apiConstr.USE_ENTER_TIP_START,
         useEnterTipStart
       );
-      planner.apiConstr.removeEventListener(planner.apiConstr.USE_ENTER_TIP_START, useEnterTipMove);
+      planner.apiConstr.removeEventListener(planner.apiConstr.USE_ENTER_TIP_MOVE, useEnterTipMove);
       planner.apiConstr.removeEventListener(
         planner.apiConstr.USE_ENTER_TAB_TIP_START,
         useEnterTabTipStart
       );
       planner.apiConstr.removeEventListener(
-        planner.apiConstr.USE_ENTER_TAB_TIP_START,
+        planner.apiConstr.USE_ENTER_TAB_TIP_MOVE,
         useEnterTabTipMove
       );
       planner.apiConstr.removeEventListener(planner.apiConstr.SHOW_ALERT_POPUP, onShowAlertPopup);
@@ -1630,7 +1505,7 @@ const App = () => {
     if (isProjectBelongToLoggedUser && isProjectOnlyView) {
       dispatch(updateDynamicPanelStatus(true));
       dispatch(updateDynamicToggleButtonStatus(true));
-      if (controPanelActiveMode != 'walk') {
+      if (controlPanelActiveMode != 'walk') {
         const furnitureData = planner.getCatalogProducts();
         dispatch(
           changeActiveControlPanelMode({
@@ -1669,10 +1544,6 @@ const App = () => {
   }, [prevControlPanelMode, activeControlPanelData]);
 
   useEffect(() => {
-    setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login);
-  }, [R2D.config.data.enable_merchant_login]);
-
-  useEffect(() => {
     planner.scene.clearSceneAutoSaveServer();
     userProfileData?.autoSave &&
       R2D.controller.projectOpeningStatus == 'ready' &&
@@ -1691,7 +1562,7 @@ const App = () => {
           document.querySelector('.preloader_main').remove(),
         300
       );
-  }, [[isOrientationPortrait]]);
+  }, [isOrientationPortrait]);
 
   useEffect(() => {
     planner.apiScene.addEventListener(planner.apiScene.WHEEL_ZOOM, onWheelZoom);
@@ -1714,7 +1585,7 @@ const App = () => {
       planner.scene.removeEventListener(planner.scene.RENDERS_UPDATE, onRendersUpdate);
       window.removeEventListener('message', messageListener, false);
     };
-  }, [activeViewMode, controPanelActiveMode, userProfileData, popups]);
+  }, [activeViewMode, controlPanelActiveMode, userProfileData, popups]);
 
   useEffect(() => {
     async function load() {
@@ -1742,10 +1613,6 @@ const App = () => {
   }, [isLogged]);
 
   useEffect(() => {
-    setIsProOptionEnabled(R2D.OPTIONS.PRO_PLAN);
-  }, [R2D.OPTIONS.PRO_PLAN]);
-
-  useEffect(() => {
     planner.scene.addEventListener(planner.scene.UPDATE_LOAD_STATUS, onProjectElementsLoadProgress);
     return () =>
       planner.scene.removeEventListener(
@@ -1766,10 +1633,10 @@ const App = () => {
         <LeftMain />
 
         <div className={classes.plannerMain} id={'plannerMain'}>
-          {controPanelActiveMode == 'renderMake' ? null : (
+          {controlPanelActiveMode == 'renderMake' ? null : (
             <div>
               <AnimatePresence mode="wait">
-                {controPanelActiveMode != 'alignDrawing' && (
+                {controlPanelActiveMode != 'alignDrawing' && (
                   <motion.div
                     initial={{ transform: 'translateY(-110%)' }}
                     animate={{ transform: 'translateY(0%)' }}
@@ -1784,7 +1651,7 @@ const App = () => {
               </AnimatePresence>
 
               <AnimatePresence mode="wait">
-                {activeViewMode != 'viewWalk' && controPanelActiveMode != 'alignDrawing' && (
+                {activeViewMode != 'viewWalk' && controlPanelActiveMode != 'alignDrawing' && (
                   <motion.div
                     initial={{ transform: 'translateX(110%)' }}
                     animate={{ transform: 'translateX(0%)' }}
