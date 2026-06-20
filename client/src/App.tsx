@@ -1287,26 +1287,6 @@ const App = () => {
         }
       }
 
-      if (window.location.search.match('open_projects=1')) {
-        if (!user.isLogged()) {
-          !configEnableMerchantLogin
-            ? dispatch(setActivePopup({ name: 'login' }))
-            : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
-        } else {
-          showStartPopup = false;
-          const langCode =
-            ~window.location.search.indexOf('#') &&
-            window.location.search.split('&') &&
-            window.location.search.split('&')[1].split('=')[1];
-          langCode && currLanguage.code != langCode && (await changeLang(langCode));
-          dispatch(setActivePopup({ name: 'projectsPopup' }));
-          dispatch(removeQuickPanelAll());
-          planner.mih().unsetActiveObjectProduct();
-          planner.mih().changeState(planner.mih().stateMain);
-        }
-        window.history.replaceState(null, null, createProjectUrl(''));
-      }
-
       if (window.location.search.match('open_renders=1')) {
         if (!user.isLogged()) {
           !configEnableMerchantLogin

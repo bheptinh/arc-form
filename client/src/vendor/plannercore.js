@@ -14839,7 +14839,7 @@ R2D.Scene.makeConstructionData = function (construction, forRender = false) {
         axes.forEach((axis) => {
             const frames = axis.frames;
             frames.forEach((frame) => {
-                fr = {};
+                const fr = {};
                 fr.type = frame.type;
                 fr.verts = frame.vertices;
                 fr.uvs = frame.uvs;
