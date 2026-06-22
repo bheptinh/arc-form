@@ -7,12 +7,13 @@ import userRouter from './routes/user.js';
 import i18nRouter from './routes/i18n.js';
 import catalogRouter from './routes/catalog/index.js';
 import privateCatalogRouter from './routes/catalog/private.js';
+import rendersRouter from './routes/renders.js';
 
 const app = express();
 const PORT = process.env.PORT ?? 3001;
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-app.use(express.json({ limit: '10mb' }));
+app.use(express.json({ limit: '50mb' })); // renders send base64-zipped scene data
 
 app.get('/server-api/health', (_req, res) => {
   res.json({ ok: true });
@@ -23,6 +24,7 @@ app.use('/server-api/user', userRouter);
 app.use('/server-api/i18n', i18nRouter);
 app.use('/server-api/catalog/private', privateCatalogRouter);
 app.use('/server-api/catalog', catalogRouter);
+app.use('/server-api/render', rendersRouter);
 app.use('/uploads', express.static(path.resolve(process.env.DB_DIR!, 'uploads')));
 
 // In production, serve the Vite build and handle SPA routing

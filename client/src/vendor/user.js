@@ -1142,7 +1142,7 @@ R2D.UserCore.UserRenders = function (user) {
     return new Promise(async (resolve, reject) => {
       let url = R2D.makeURL(
         R2D.URL.DOMAIN,
-        R2D.URL.URL_RENDER_ALL + `&limit=${limit}&offset=${offset}`
+        R2D.URL.URL_RENDER_ALL + `?limit=${limit}&offset=${offset}`
       );
       loader = new R2D.XHRLoader();
       loader.load(url, null, 'GET', null, null, true);
@@ -1405,7 +1405,7 @@ R2D.UserCore.UserTours360 = function (user) {
       let params = JSON.stringify({
         t: R2D.token,
         a: 'get_tours_list',
-        lang: user.languages.find((i) => i['current'] == 1).code,
+        lang: (user.languages ?? queryClient.getQueryData(['languages']) ?? []).find((i) => i['current'] == 1)?.code ?? 'en',
       });
 
       loader = R2D.XHRLoader.getPostLoader(

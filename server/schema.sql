@@ -134,3 +134,15 @@ CREATE TABLE IF NOT EXISTS user_materials (
   depth        REAL,
   created_at   TEXT    NOT NULL DEFAULT (datetime('now'))
 );
+
+CREATE TABLE IF NOT EXISTS renders (
+  id                 TEXT    PRIMARY KEY,
+  user_id            TEXT    NOT NULL REFERENCES users(id),
+  render_type        INTEGER NOT NULL,
+  render_view        TEXT    NOT NULL DEFAULT '',
+  render_orientation TEXT    NOT NULL DEFAULT 'landscape',
+  status             TEXT    NOT NULL DEFAULT 'stored',
+  preview            TEXT,
+  image_url          TEXT,
+  created_at         INTEGER NOT NULL DEFAULT (unixepoch())
+);

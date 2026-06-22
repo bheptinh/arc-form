@@ -39,11 +39,7 @@ export default {
       let mockFilePath = '';
 
       const url = req.url || '';
-      if (url.startsWith('/render')) {
-        res.setHeader('Content-Type', 'application/json');
-        res.end(JSON.stringify({ status: 'ok', data: { items: [], total: 0, limit: 20, offset: 0 } }));
-        return;
-      } else if (url.startsWith('/user/promo')) {
+      if (url.startsWith('/user/promo')) {
         // TODO: implement POST /server-api/user/promo — validate code, apply benefit (plan upgrade, credits, etc.),
         //       return { status: 'ok', message: '<translation_key>' } or { status: 'error', error: '<translation_key>' }
         res.setHeader('Content-Type', 'application/json');
