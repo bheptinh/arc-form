@@ -1402,55 +1402,35 @@ R2D.UserCore.UserTours360 = function (user) {
 
   me.getTours = function () {
     return new Promise((resolve, reject) => {
-      let params = JSON.stringify({
-        t: R2D.token,
-        a: 'get_tours_list',
-        lang: (user.languages ?? queryClient.getQueryData(['languages']) ?? []).find((i) => i['current'] == 1)?.code ?? 'en',
-      });
+      let loader = new R2D.XHRLoader();
 
-      loader = R2D.XHRLoader.getPostLoader(
-        R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_360_TOURS_GET),
-        params,
-        null,
-        null,
-        true
-      );
+      loader.addEventListener(Event.COMPLETE, eventHandler);
+      loader.addEventListener(Event.ERROR, eventHandler);
 
-      loader.addEventListener(Event.COMPLETE, loginEventHandler);
-      loader.addEventListener(Event.ERROR, loginEventHandler);
+      loader.load(R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_360_TOURS_GET), null, 'GET', null, null, true);
 
-      async function loginEventHandler(event) {
-        let loader = event.currentTarget;
-
-        loader.removeEventListener(Event.COMPLETE, loginEventHandler);
-        loader.removeEventListener(Event.ERROR, loginEventHandler);
+      function eventHandler(event) {
+        loader.removeEventListener(Event.COMPLETE, eventHandler);
+        loader.removeEventListener(Event.ERROR, eventHandler);
         loader.close();
 
-        if (event.type == Event.COMPLETE) {
-          let parsedData = parseData(event.data.data);
-          resolve(parsedData || []);
-        } else {
+        if (event.type == Event.ERROR) {
           resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
+          return;
         }
-      }
 
-      function parseData(data) {
         let object = null;
-
         try {
-          object = JSON.parse(data);
+          object = JSON.parse(event.data.data);
         } catch (error) {
           resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
           return;
         }
 
-        if (!object.hasOwnProperty('status')) {
-          resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
-        } else if (object['status'] == 'error') {
-          console.error(object);
+        if (!object || object['status'] == 'error') {
           resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
         } else {
-          return object['data'] || [];
+          resolve(object['data'] || []);
         }
       }
     });
@@ -1464,7 +1444,7 @@ R2D.UserCore.UserTours360 = function (user) {
       loader.addEventListener(Event.COMPLETE, loginEventHandler);
       loader.addEventListener(Event.ERROR, loginEventHandler);
 
-      let fullUrl = R2D.makeURL(R2D.URL.DOMAIN, '/api2' + url);
+      let fullUrl = R2D.makeURL(R2D.URL.DOMAIN, url);
 
       loader.load(fullUrl, params, 'DELETE', null, null, true);
 

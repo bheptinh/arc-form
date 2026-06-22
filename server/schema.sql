@@ -135,6 +135,19 @@ CREATE TABLE IF NOT EXISTS user_materials (
   created_at   TEXT    NOT NULL DEFAULT (datetime('now'))
 );
 
+-- 360° virtual tours (assembled from 360° renders via the external tour builder at /tours/add).
+-- Tour creation is handled by an iframe to roomtodo.com's tour builder (see Tour360Create.tsx).
+-- Until we implement a local tour builder, this table is populated only by the external flow.
+CREATE TABLE IF NOT EXISTS tours (
+  id         TEXT    PRIMARY KEY,
+  user_id    TEXT    NOT NULL REFERENCES users(id),
+  name       TEXT    NOT NULL DEFAULT '',
+  status     TEXT    NOT NULL DEFAULT 'active',
+  preview    TEXT,
+  created_at TEXT    NOT NULL DEFAULT (datetime('now')),
+  updated_at TEXT    NOT NULL DEFAULT (datetime('now'))
+);
+
 CREATE TABLE IF NOT EXISTS renders (
   id                 TEXT    PRIMARY KEY,
   user_id            TEXT    NOT NULL REFERENCES users(id),

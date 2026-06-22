@@ -8,6 +8,7 @@ import i18nRouter from './routes/i18n.js';
 import catalogRouter from './routes/catalog/index.js';
 import privateCatalogRouter from './routes/catalog/private.js';
 import rendersRouter from './routes/renders.js';
+import toursRouter from './routes/tours.js';
 
 const app = express();
 const PORT = process.env.PORT ?? 3001;
@@ -25,6 +26,7 @@ app.use('/server-api/i18n', i18nRouter);
 app.use('/server-api/catalog/private', privateCatalogRouter);
 app.use('/server-api/catalog', catalogRouter);
 app.use('/server-api/render', rendersRouter);
+app.use('/server-api/tours', toursRouter);
 app.use('/uploads', express.static(path.resolve(process.env.DB_DIR!, 'uploads')));
 
 // In production, serve the Vite build and handle SPA routing

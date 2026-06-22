@@ -674,7 +674,7 @@ const RendersAnd360Popup = (props) => {
     });
 
     user.uTours360_load().then((tours360) => {
-      setTours360Data(tours360.reverse());
+      if (Array.isArray(tours360)) setTours360Data(tours360.reverse());
     });
 
     planner.apiScene.addEventListener(planner.apiScene.UPDATE_TOURS, update360Data);
