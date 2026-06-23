@@ -3,9 +3,11 @@ import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-q
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'sonner';
 
 import { deleteProject, projectsInfiniteQueryOptions, renameProject } from '../api/projects';
 import { Card } from '../shared-components/Card';
+import { confirm } from '../shared-components/ConfirmDialog';
 import { SortBar } from '../shared-components/SortBar';
 
 const useStyles = createUseStyles({
@@ -129,17 +131,24 @@ export default function ProjectsPage() {
     if (renamingId && renameInputRef.current) renameInputRef.current.focus();
   }, [renamingId]);
 
-  const deleteMutation = useMutation({
-    mutationFn: deleteProject,
-    onSuccess: () =>
-      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
-  });
+  const deleteMutation = useMutation({ mutationFn: deleteProject });
 
   const renameMutation = useMutation({
     mutationFn: ({ id, name }: { id: string; name: string }) => renameProject(id, name),
-    onSuccess: () =>
-      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey }),
   });
+
+  useEffect(() => {
+    if (deleteMutation.isSuccess) {
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+      toast.success('Project deleted');
+    }
+  }, [deleteMutation.status]);
+
+  useEffect(() => {
+    if (renameMutation.isSuccess) {
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+    }
+  }, [renameMutation.status]);
 
   const sorted = [...projects].sort((a, b) => {
     const va = new Date(a[sortField]).getTime();
@@ -149,9 +158,10 @@ export default function ProjectsPage() {
 
   const handleOpen = (id: string) => navigate(`/project/${id}`);
 
-  const handleDelete = (e: React.MouseEvent, id: string) => {
+  const handleDelete = async (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
-    deleteMutation.mutate(id);
+    const ok = await confirm('Delete this project? This cannot be undone.');
+    if (ok) deleteMutation.mutate(id);
   };
 
   const startRename = (e: React.MouseEvent, item: { id: string; name: string }) => {

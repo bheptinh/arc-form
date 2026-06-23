@@ -2,6 +2,7 @@ import { IconEye, IconPassword, IconX } from '@tabler/icons-react';
 import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { planner, user } from '../../initR2D';
@@ -229,6 +230,7 @@ const useStyle = createUseStyles({
 
 const LoginPopup = (props) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const translation = useTranslation();
   const popups = useSelector(selectPopups);
   const popupData = popups.login.data;
@@ -273,7 +275,7 @@ const LoginPopup = (props) => {
       popupType == 'buy_credits' &&
         dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
 
-      popupType == 'startPopup' && dispatch(setActivePopup({ name: 'projectsPopup' }));
+      popupType == 'startPopup' && navigate('/projects');
 
       const isCurrentProjectBelongToUser = R2D.scene.getProjectUserKey() == user.getKey();
       planner.scene.setIsProjectBelongToLoggedUserStatus(isCurrentProjectBelongToUser);
@@ -338,7 +340,7 @@ const LoginPopup = (props) => {
       popupType == 'buy_credits' &&
         dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
 
-      popupType == 'startPopup' && dispatch(setActivePopup({ name: 'projectsPopup' }));
+      popupType == 'startPopup' && navigate('/projects');
 
       popupType == 'upgrade_plan' &&
         user.data.plan != 'pro' &&
@@ -363,7 +365,7 @@ const LoginPopup = (props) => {
       popupType == 'buy_credits' &&
         dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
 
-      popupType == 'startPopup' && dispatch(setActivePopup({ name: 'projectsPopup' }));
+      popupType == 'startPopup' && navigate('/projects');
 
       popupType == 'upgrade_plan' &&
         user.data.plan != 'pro' &&

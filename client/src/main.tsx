@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client';
 import { pdfjs } from 'react-pdf';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';
+import { Toaster } from 'sonner';
 import sunEditor from 'suneditor';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
@@ -28,11 +29,14 @@ import { MarkdownPage } from './pages/MarkdownPage';
 import PasswordRecoveryPage from './pages/PasswordRecoveryPage';
 import ProjectsPage from './pages/ProjectsPage';
 import RedeemPage from './pages/RedeemPage';
+import RendersPage from './pages/RendersPage';
+import ToursPage from './pages/ToursPage';
 import { setActivePopup } from './redux/features/popups/popupsSlice';
 import { saveLoggedStatus } from './redux/features/user/userSlice';
 import { setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
 import { store } from './redux/store';
 import ErrorBoundary from './smart-components/common/error-boundary';
+import { ConfirmDialogProvider } from './shared-components/ConfirmDialog';
 
 window.sunEditor = sunEditor;
 window.sunEditorPlugins = plugins;
@@ -102,9 +106,13 @@ async function init() {
         <Provider store={store}>
           <ErrorBoundary>
             <Router basename={R2D.URL.REACT_BASEPATH}>
+              <ConfirmDialogProvider />
+              <Toaster position="bottom-right" richColors />
               <Routes>
                 <Route path="/" element={<Navigate to="/projects" replace />} />
                 <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/renders" element={<RendersPage />} />
+                <Route path="/tours" element={<ToursPage />} />
                 <Route path="/toc" element={<MarkdownPage slug="toc" />} />
                 <Route path="/auth/reset-password" element={<PasswordRecoveryPage />} />
                 <Route path="/redeem" element={<RedeemPage />} />

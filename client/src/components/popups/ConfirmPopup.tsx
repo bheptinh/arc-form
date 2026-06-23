@@ -1,13 +1,9 @@
-import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
-import { deleteProject, projectsInfiniteQueryOptions } from '../../api/projects';
-import { planner, user } from '../../initR2D';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
-import { createProjectUrl } from '../../utils/UrlHelper';
 
 const useStyle = createUseStyles({
   wrap: {
@@ -102,73 +98,25 @@ const useStyle = createUseStyles({
 });
 
 function getMessage(type: string | null, translation: Record<string, string>): string {
-  switch (type) {
-    case 'project_delete':
-      return (
-        translation['TEXT_DELETE_PLAN_CONFIRM'] || 'Delete this project? This cannot be undone.'
-      );
-    case 'project_copied_open':
-      return translation['TEXT_OPEN_COPIED_PLAN'] || 'Open the copied project?';
-    case 'logout':
-      return translation['TEXT_LOGOUT_CONFIRM'] || 'Are you sure you want to log out?';
-    case 'render_delete':
-      return (
-        translation['TEXT_DELETE_RENDER_CONFIRM'] || 'Delete this render? This cannot be undone.'
-      );
-    case 'tour_delete':
-      return (
-        translation['TEXT_DELETE_TOUR_CONFIRM'] || 'Delete this 360° tour? This cannot be undone.'
-      );
-    default:
-      return translation['TEXT_ARE_YOU_SURE'] || 'Are you sure?';
-  }
+  return translation['TEXT_ARE_YOU_SURE'] || 'Are you sure?';
 }
 
 const ConfirmPopup = () => {
   const classes = useStyle();
   const dispatch = useDispatch();
   const translation = useTranslation();
-  const queryClient = useQueryClient();
   const popups = useSelector(selectPopups);
-  const { type, data } = popups.confirm;
+  const { type } = popups.confirm;
   const [animPopupClass, setAnimPopupClass] = useState(false);
-
-  const deleteMutation = useMutation({
-    mutationFn: (id: string) => deleteProject(id),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
-      close();
-    },
-  });
-
-  const close = () => {
-    setAnimPopupClass(false);
-    setTimeout(() => dispatch(closeActivePopup({ name: 'confirm' })), 500);
-  };
 
   useEffect(() => {
     const timer = setTimeout(() => setAnimPopupClass(true), 0);
     return () => clearTimeout(timer);
   }, []);
 
-  const onConfirm = async () => {
-    const d = data as Record<string, string>;
-    if (type === 'project_delete') {
-      deleteMutation.mutate(d.id);
-    } else if (type === 'project_copied_open') {
-      window.history.replaceState(null, '', createProjectUrl(d.hash));
-      window.location.reload();
-    } else if (type === 'render_delete') {
-      await user.deleteRender(data as string);
-      planner.apiScene.dispatchEvent(new Event(planner.apiScene.RENDERS_DATA_UPDATED, {}));
-      close();
-    } else if (type === 'tour_delete') {
-      await user.uTours360_delete(data as string);
-      planner.apiScene.dispatchEvent(new Event(planner.apiScene.UPDATE_TOURS, {}));
-      close();
-    } else {
-      close();
-    }
+  const close = () => {
+    setAnimPopupClass(false);
+    setTimeout(() => dispatch(closeActivePopup({ name: 'confirm' })), 500);
   };
 
   return (
@@ -180,12 +128,8 @@ const ConfirmPopup = () => {
             <button className={classes.cancelBtn} onClick={close}>
               {translation['BUTTON_CANCEL'] || 'Cancel'}
             </button>
-            <button
-              className={classes.confirmBtn}
-              onClick={onConfirm}
-              disabled={deleteMutation.isPending}
-            >
-              {deleteMutation.isPending ? '...' : translation['BUTTON_OK'] || 'OK'}
+            <button className={classes.confirmBtn} onClick={close}>
+              {translation['BUTTON_OK'] || 'OK'}
             </button>
           </div>
         </div>

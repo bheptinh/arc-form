@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { copyProject, projectsInfiniteQueryOptions, renameProject } from '../../api/projects';
 import { planner, user } from '../../initR2D';
+import { confirm } from '../../shared-components/ConfirmDialog';
 import { updateIsProjectBelongToLoggedUser } from '../../redux/features/common/commonSlice';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
 import {
@@ -197,22 +198,6 @@ const SetProjectNamePopup = (props) => {
 
   const copyMutation = useMutation({
     mutationFn: ({ id, name }: { id: string; name: string }) => copyProject(id, name),
-    onSuccess: (newProject) => {
-      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
-      dispatch(updatePreloaderStatus(false));
-      dispatch(
-        setActivePopup({
-          name: 'confirm',
-          type: 'project_copied_open',
-          data: { id: newProject.id, name: newProject.name, hash: newProject.hash },
-        })
-      );
-      dispatch(closeActivePopup({ name: 'setProjectName' }));
-    },
-    onError: () => {
-      dispatch(updatePreloaderStatus(false));
-      dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
-    },
   });
 
   if (popupType == 'copy') projectActiveName = projectToOpen;
@@ -311,8 +296,7 @@ const SetProjectNamePopup = (props) => {
       window.location.reload();
     }
 
-    popups.projectsPopup.status &&
-      planner.apiScene.dispatchEvent(new Event(planner.apiScene.PROJECTS_UPDATE, {}));
+    planner.apiScene.dispatchEvent(new Event(planner.apiScene.PROJECTS_UPDATE, {}));
 
     dispatch(updatePreloaderStatus(false));
     dispatch(closeActivePopup({ name: 'setProjectName' }));
@@ -352,6 +336,27 @@ const SetProjectNamePopup = (props) => {
       dispatch(setActivePopup({ name: 'alert', data: 'NOTIFY_RENAME_PLAN_ERROR' }));
     }
   }, [renameMutation.status]);
+
+  useEffect(() => {
+    if (copyMutation.isSuccess) {
+      const newProject = copyMutation.data!;
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+      dispatch(updatePreloaderStatus(false));
+      setAnimPopupClass(false);
+      setTimeout(() => dispatch(closeActivePopup({ name: 'setProjectName' })), 500);
+      (async () => {
+        const ok = await confirm('Open the copied project?');
+        if (ok) {
+          window.history.replaceState(null, '', createProjectUrl(newProject.hash));
+          window.location.reload();
+        }
+      })();
+    }
+    if (copyMutation.isError) {
+      dispatch(updatePreloaderStatus(false));
+      dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
+    }
+  }, [copyMutation.status]);
 
   const classes = useStyle();
 

@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import { useLanguageChange } from './api/hooks/useLanguageChange';
 import { useLanguages } from './api/hooks/useLanguages';
@@ -116,6 +117,7 @@ const App = () => {
   const translation = useTranslation();
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const controlPanelStatus = useSelector(selectControlPanelStatus);
   const userProfileData = useSelector(selectUserProfileData);
@@ -164,8 +166,7 @@ const App = () => {
         data: data.data.status == 'stored' ? 'NOTIFY_RENDER_READY' : 'NOTIFY_RENDER_ERROR',
       })
     );
-    if (popups.rendersAnd360Popup.status)
-      planner.apiScene.dispatchEvent(new Event(planner.apiScene.RENDERS_DATA_UPDATED, {}));
+    planner.apiScene.dispatchEvent(new Event(planner.apiScene.RENDERS_DATA_UPDATED, {}));
   };
 
   const onProjectLoaded = async (e) => {
@@ -811,10 +812,7 @@ const App = () => {
           : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
         return;
       } else {
-        dispatch(setActivePopup({ name: 'rendersAnd360Popup', data: { type: 'renders' } }));
-        dispatch(removeQuickPanelAll());
-        planner.mih().unsetActiveObject();
-        planner.mih().changeState(planner.mih().stateMain);
+        navigate('/renders');
       }
     } else if (dataObj.action == 'share_project') {
       if (user.getId() == 0) {
@@ -834,7 +832,9 @@ const App = () => {
           ? dispatch(setActivePopup({ name: 'login' }))
           : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
         return;
-      } else dispatch(setActivePopup({ name: 'rendersAnd360Popup', data: { type: '360' } }));
+      } else {
+        navigate('/tours');
+      }
     } else if (dataObj.action == 'create_tour') {
       if (!user.isLogged()) {
         !configEnableMerchantLogin
@@ -1299,10 +1299,7 @@ const App = () => {
             window.location.search.split('&') &&
             window.location.search.split('&')[1].split('=')[1];
           langCode && currLanguage.code != langCode && (await changeLang(langCode));
-          dispatch(setActivePopup({ name: 'rendersAnd360Popup', data: { type: 'renders' } }));
-          dispatch(removeQuickPanelAll());
-          planner.mih().unsetActiveObjectProduct();
-          planner.mih().changeState(planner.mih().stateMain);
+          navigate('/renders');
         }
         window.history.replaceState(null, null, createProjectUrl(''));
       }
@@ -1366,7 +1363,7 @@ const App = () => {
           return;
         } else {
           showStartPopup = false;
-          dispatch(setActivePopup({ name: 'rendersAnd360Popup', data: { type: '360' } }));
+          navigate('/tours');
         }
         window.history.replaceState(null, null, createProjectUrl(''));
       }

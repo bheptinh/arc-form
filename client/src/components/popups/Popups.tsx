@@ -23,11 +23,9 @@ import LoginPopup from './LoginPopup';
 import PayProPopup from './PayProPopup';
 import ProfilePopup from './ProfilePopup';
 import ProjectDataLoadPopup from './ProjectDataLoadPopup';
-import ProjectsPopup from './ProjectsPopup';
 import RegistrationDonePopup from './RegistrationDonePopup';
 import RegistrationPopup from './RegistrationPopup';
 import RenderDone from './RenderDone';
-import RendersAnd360Popup from './RendersAnd360Popup';
 import RenderExample4k from './rendersExample/RenderExample4k';
 import RenderExample360 from './rendersExample/RenderExample360';
 import RenderExampleBig from './rendersExample/RenderExampleBig';
@@ -104,9 +102,7 @@ const Popups = () => {
       {activePopup.tour360Create.status === true ? <Tour360CreatePopup /> : null}
       {activePopup.autoSaveEnable.status === true ? <AutoSaveEnable /> : null}
       {activePopup.projectDataLoadPopup.status === true ? <ProjectDataLoadPopup /> : null}
-      {activePopup.projectsPopup.status === true ? <ProjectsPopup /> : null}
       {activePopup.changeProjectName.status === true ? <ChangeProjectName /> : null}
-      {activePopup.rendersAnd360Popup.status === true ? <RendersAnd360Popup /> : null}
       {activePopup.uploadChoicePopup.status === true ? <UploadChoicePopup /> : null}
       {activePopup.uploadPlanPopup.status === true ? <UploadPlanPopup /> : null}
       {activePopup.uploadChoiceModelPopup.status === true ? (

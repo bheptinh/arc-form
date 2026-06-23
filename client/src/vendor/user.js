@@ -1288,13 +1288,16 @@ R2D.UserCore.UserRenders = function (user) {
         resolve(event.currentTarget.data.data.renderId);
       }
       function uploadRenderData(data) {
+        if (me.renderPostFn) {
+          me.renderPostFn(data)
+            .then((result) => uploadActionHandler({ type: Event.COMPLETE, currentTarget: { data: result } }))
+            .catch(() => uploadActionHandler({ type: Event.ERROR }));
+          return;
+        }
         let loader = new R2D.XHRLoader();
         let headers = [{ header: 'Content-Type', value: 'application/json' }];
-
         let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_RENDER_NEW);
-
         loader.load(url, data, 'POST', headers, 'json', true);
-
         loader.addEventListener(Event.COMPLETE, uploadActionHandler);
         loader.addEventListener(Event.ERROR, uploadActionHandler);
       }

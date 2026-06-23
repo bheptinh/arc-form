@@ -6,12 +6,14 @@ import {
   IconHelpHexagonFilled,
   IconX,
 } from '@tabler/icons-react';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import { createRender, rendersInfiniteQueryOptions } from '../../../../../../api/renders';
 import { planner, user } from '../../../../../../initR2D';
 import {
   changeActivePano,
@@ -409,6 +411,15 @@ const useStyle = createUseStyles({
 const Main = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
+  const queryClient = useQueryClient();
+
+  const renderMutation = useMutation({ mutationFn: createRender });
+
+  user.renderPostFn = async (body: string) => {
+    const result = await renderMutation.mutateAsync(body);
+    queryClient.invalidateQueries({ queryKey: rendersInfiniteQueryOptions.queryKey });
+    return result;
+  };
 
   const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
@@ -533,27 +544,27 @@ const Main = (props) => {
     planner.renders.inProgressIds.push(newRenderId);
 
     const key = setInterval(async () => {
-      const renders = await user.loadRenders();
       const inProgressIds = planner.renders.inProgressIds;
-      if (renders) {
-        renders.data.items.forEach((item) => {
-          if (inProgressIds.length < 1) {
-            clearInterval(key);
-            planner.renders.activeIntId = null;
-          }
-          inProgressIds.forEach((renderId) => {
-            if (item.renderId == renderId && (item.status == 'stored' || item.status == 'error')) {
-              planner.apiScene.dispatchEvent(
-                new Event(planner.apiScene.RENDERS_UPDATE, {
-                  renders: renders.data.items,
-                  status: item.status,
-                })
-              );
-              planner.renders.inProgressIds = inProgressIds.filter((i) => i != renderId);
-            }
-          });
-        });
+      if (inProgressIds.length < 1) {
+        clearInterval(key);
+        planner.renders.activeIntId = null;
+        return;
       }
+      const result = await queryClient.fetchQuery(rendersInfiniteQueryOptions);
+      const items = result.pages[0]?.items ?? [];
+      items.forEach((item) => {
+        inProgressIds.forEach((renderId) => {
+          if (item.renderId == renderId && (item.status == 'stored' || item.status == 'error')) {
+            planner.apiScene.dispatchEvent(
+              new Event(planner.apiScene.RENDERS_UPDATE, {
+                renders: items,
+                status: item.status,
+              })
+            );
+            planner.renders.inProgressIds = inProgressIds.filter((i) => i != renderId);
+          }
+        });
+      });
     }, 15000);
 
     planner.renders.activeIntId = key;

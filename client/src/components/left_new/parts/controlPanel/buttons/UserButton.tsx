@@ -2,15 +2,19 @@ import { IconUser } from '@tabler/icons-react';
 import React, { useEffect, useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import { useTranslation } from '../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../initR2D';
+import { updateIsProjectBelongToLoggedUser } from '../../../../../redux/features/common/commonSlice';
+import { confirm } from '../../../../../shared-components/ConfirmDialog';
 import { setActivePopup } from '../../../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../../../redux/features/quickPanels/quickPanelsSlice';
 import {
   selectIsLogged,
   selectUserProfileData,
   setProfileData,
+  userLogout,
 } from '../../../../../redux/features/user/userSlice';
 import HoverComponent from '../components/HoverComponent';
 
@@ -179,6 +183,7 @@ const useStyle = createUseStyles({
 
 const UserButton = (props) => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const classes = useStyle();
   const userData = useSelector(selectUserProfileData);
   const translation = useTranslation();
@@ -220,16 +225,21 @@ const UserButton = (props) => {
     }
     R2D.config.data.my_projects_merchant_logic
       ? R2D.postMessageToParent(JSON.stringify({ action: 'my_projects' }))
-      : dispatch(setActivePopup({ name: 'projectsPopup' }));
+      : navigate('/projects');
     dispatch(removeQuickPanelAll());
     planner.mih().unsetActiveObjectProduct();
     planner.mih().changeState(planner.mih().stateMain);
     onTouchStartHideDropdown(e);
   };
 
-  const onLogout = (e) => {
-    dispatch(setActivePopup({ name: 'confirm', type: 'logout' }));
+  const onLogout = async (e) => {
     onTouchStartHideDropdown(e);
+    const ok = await confirm('Are you sure you want to log out?');
+    if (ok) {
+      dispatch(userLogout());
+      planner.scene.setIsProjectBelongToLoggedUserStatus(false);
+      dispatch(updateIsProjectBelongToLoggedUser(false));
+    }
   };
 
   const onProfileButtonClick = async (e) => {
@@ -247,14 +257,14 @@ const UserButton = (props) => {
     dispatch(removeQuickPanelAll());
     planner.mih().unsetActiveObject();
     onTouchStartHideDropdown(e);
-    dispatch(setActivePopup({ name: 'rendersAnd360Popup', data: { type: 'renders' } }));
+    navigate('/renders');
   };
 
   const onToursButtonClick = (e) => {
     dispatch(removeQuickPanelAll());
     planner.mih().unsetActiveObject();
     onTouchStartHideDropdown(e);
-    dispatch(setActivePopup({ name: 'rendersAnd360Popup', data: { type: '360' } }));
+    navigate('/tours');
   };
 
   return isLogged && R2D.config.data.ui.top_user ? (

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
@@ -200,6 +201,7 @@ const useStyle = createUseStyles({
 const StartPopup = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const translation = useTranslation();
 
   const currOS = R2D.controller.getCurrentOS();
@@ -262,7 +264,7 @@ const StartPopup = (props) => {
     }
     R2D.config.data.my_projects_merchant_logic
       ? R2D.postMessageToParent(JSON.stringify({ action: 'my_projects' }))
-      : dispatch(setActivePopup({ name: 'projectsPopup' }));
+      : navigate('/projects');
     dispatch(
       changeActiveControlPanelMode({
         mode: 'constructor',
