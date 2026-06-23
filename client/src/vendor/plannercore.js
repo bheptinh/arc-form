@@ -46131,6 +46131,21 @@ R2D.ViewerScene3D = function (
         canvasHTML
     );
     canvas.domElement.id = "canvasViewer3d";
+    canvas.domElement.addEventListener("wheel", (e) => {
+        if (e.ctrlKey || e.metaKey) return;
+        if (!WC.wallsEditor || !WC.wallsEditor.wheelEnabled) return;
+        e.preventDefault();
+        e.stopPropagation();
+        const dx = e.deltaX;
+        const dy = e.deltaY;
+        R2D.Viewers.cameraMove(-dx, -dy);
+        WC.wallsEditor.shiftX += dx;
+        WC.wallsEditor.shiftY += dy;
+        WC.wallsEditor.drawObjLayer();
+        WC.wallsEditor.state.draw();
+        WC.SFK.state.updateInputsAfterDraggingCanvasOrZoom();
+        WC.wallsEditor.titlesTool.viewUpdate();
+    }, true);
 
     scope.cameraState = {
         anchor: {
@@ -60983,16 +60998,12 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
     function onCanvasWheel(e)
     {
-        
         if (me.wheelEnabled)
         {
-            
             let x = e.offsetX == undefined ? e.layerX : e.offsetX;
             let y = e.offsetY == undefined ? e.layerY : e.offsetY;
 
-            //event.deltaY || event.detail || event.wheelDelta
             apiDispatcher.dispatchEvent(new Event(apiDispatcher.WHEEL_ZOOM, {x, y, delta: -e.deltaY || -e.detail || e.wheelDelta}));
-            //me.zoom(x, y, -e.deltaY || -e.detail || e.wheelDelta);
         }
 
         me.state.mouseWheel();
@@ -69336,16 +69347,30 @@ class ArrowAnimation {
             e.preventDefault();
         });
 
+        let _pinchAccum = 0;
         this.canvas.addEventListener("wheel", (e) => {
             if (WC.wallsEditor.wheelEnabled) {
-                let x = e.offsetX == undefined ? e.layerX : e.offsetX;
-                let y = e.offsetY == undefined ? e.layerY : e.offsetY;
+                if (e.ctrlKey || e.metaKey) {
+                    _pinchAccum += e.deltaY;
+                    if (Math.abs(_pinchAccum) < 1.5) return;
+                    const accumulatedDelta = -_pinchAccum;
+                    _pinchAccum = 0;
+                    let x = e.offsetX == undefined ? e.layerX : e.offsetX;
+                    let y = e.offsetY == undefined ? e.layerY : e.offsetY;
 
-                WC.wallsEditor.api.dispatchEvent(
-                    new Event(WC.wallsEditor.api.WHEEL_ZOOM, {
-                        x, y, delta: -e.deltaY || -e.detail || e.wheelDelta,
-                    })
-                );
+                    WC.wallsEditor.api.dispatchEvent(
+                        new Event(WC.wallsEditor.api.WHEEL_ZOOM, {
+                            x, y, delta: accumulatedDelta,
+                        })
+                    );
+                } else {
+                    WC.wallsEditor.shiftX += e.deltaX;
+                    WC.wallsEditor.shiftY += e.deltaY;
+                    WC.wallsEditor.drawObjLayer();
+                    WC.wallsEditor.state.draw();
+                    WC.SFK.state.updateInputsAfterDraggingCanvasOrZoom();
+                    WC.wallsEditor.titlesTool.viewUpdate();
+                }
             }
 
             WC.wallsEditor.state.mouseWheel();
@@ -79227,10 +79252,18 @@ TConf.Editor = function(field)
 
     function onCanvasWheel(e)
     {
-        var x = e.offsetX == undefined ? e.layerX : e.offsetX;
-        var y = e.offsetY == undefined ? e.layerY : e.offsetY;
-
-        me.zoom(x, y, -e.deltaY || -e.detail || e.wheelDelta);
+        if (e.ctrlKey || e.metaKey)
+        {
+            var x = e.offsetX == undefined ? e.layerX : e.offsetX;
+            var y = e.offsetY == undefined ? e.layerY : e.offsetY;
+            me.zoom(x, y, -e.deltaY || -e.detail || e.wheelDelta);
+        }
+        else if (e.buttons === 0)
+        {
+            me.shiftX += e.deltaX;
+            me.shiftY += e.deltaY;
+            me.draw();
+        }
 
         me.state.mouseWheel();
     }
