@@ -91,6 +91,11 @@ Active mode is stored in the `viewMode_new` Redux slice. Switching calls `planne
 ### Canvas — `client/src/components/center/CenterPanel.tsx`
 A plain `<div id="planner">` where R2D mounts its WebGL canvas. Mouse/touch events are caught on this div and forwarded to `planner.scene[eventType]()` or `planner.constr[eventType]()` depending on active mode. Results from R2D calls drive Redux dispatches (showing quick panels, changing control panel mode, etc.).
 
+#### macOS trackpad gestures (constr/2D mode)
+- **Pinch** (`WheelEvent` with `ctrlKey: true`) → zoom. Handled by `ArrowAnimation` canvas wheel listener (`plannercore.js:~69350`), which dispatches `WC.wallsEditor.api.WHEEL_ZOOM` → `onWheelZoom` in `App.tsx`. Delta is accumulated (threshold 1.5) to slow down sensitivity.
+- **Two-finger swipe** (`WheelEvent` with `ctrlKey: false`) → pan. Intercepted by a capture-phase listener on `canvasViewer3d` (`plannercore.js:~46134`) that calls `R2D.Viewers.cameraMove(-dx, -dy)` + updates `WC.wallsEditor.shiftX/Y`. `stopPropagation()` prevents the event from reaching the zoom handler.
+- **Two-finger press+drag** (mouse events, no wheel) → pan via R2D's built-in drag handling.
+
 ### State — `client/src/redux/`
 **Redux Toolkit** (not Zustand). The store at `client/src/redux/store.ts` combines these slices:
 
