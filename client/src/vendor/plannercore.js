@@ -38509,6 +38509,29 @@ R2D.CustomRulers = function(scene3d, wallsData, api)
         tmpPointer.className = 'viewer-custom-ruler-flag';
 
         tmpImg.style['pointer-events'] = 'none';
+        // Same issue as permanent ruler elements — the pointer flag intercepts wheel events
+        // while the user is actively drawing a ruler, breaking pan/zoom mid-draw.
+        tmpPointer.addEventListener('wheel', (e) => {
+            const canvas = document.getElementById('canvasViewer3d');
+            if (canvas) {
+                canvas.dispatchEvent(new WheelEvent('wheel', {
+                    deltaX: e.deltaX,
+                    deltaY: e.deltaY,
+                    deltaZ: e.deltaZ,
+                    deltaMode: e.deltaMode,
+                    ctrlKey: e.ctrlKey,
+                    metaKey: e.metaKey,
+                    altKey: e.altKey,
+                    shiftKey: e.shiftKey,
+                    clientX: e.clientX,
+                    clientY: e.clientY,
+                    bubbles: true,
+                    cancelable: true,
+                    composed: true,
+                }));
+            }
+            e.preventDefault();
+        }, { passive: false });
     }
 
     me.setSize = function(w, h) {
@@ -39651,6 +39674,36 @@ R2D.RulerAB = function(vA, vB, parent)
     imgA.style['pointer-events'] = 'none';
     imgB.style['pointer-events'] = 'none';
 
+    // Ruler HTML elements (flags, value label, input) sit in the tools container alongside
+    // the canvas, not inside it. Wheel events on them never reach the canvas pan/zoom listeners.
+    // Re-dispatch to canvasViewer3d so scrolling/pinch-zoom works when the cursor is over a ruler.
+    function forwardWheelToCanvas(e) {
+        const canvas = document.getElementById('canvasViewer3d');
+        if (canvas) {
+            canvas.dispatchEvent(new WheelEvent('wheel', {
+                deltaX: e.deltaX,
+                deltaY: e.deltaY,
+                deltaZ: e.deltaZ,
+                deltaMode: e.deltaMode,
+                ctrlKey: e.ctrlKey,
+                metaKey: e.metaKey,
+                altKey: e.altKey,
+                shiftKey: e.shiftKey,
+                clientX: e.clientX,
+                clientY: e.clientY,
+                bubbles: true,
+                cancelable: true,
+                composed: true,
+            }));
+        }
+        e.preventDefault();
+    }
+
+    me.elemA.addEventListener('wheel', forwardWheelToCanvas, { passive: false });
+    me.elemB.addEventListener('wheel', forwardWheelToCanvas, { passive: false });
+    me.elemVal.domElement.addEventListener('wheel', forwardWheelToCanvas, { passive: false });
+    me.elemInput.domElement.addEventListener('wheel', forwardWheelToCanvas, { passive: false });
+
     me.elemA.vector = me.A;
     me.elemB.vector = me.B;
     me.elemA.ruler = me;
@@ -39856,6 +39909,31 @@ R2D.TitlesTool = function(scene3d, wallsData, api)
 
             elem.getDomElement().addEventListener('mousedown', elemDownListener);
             elem.getDomElement().addEventListener('mouseup', elemUpListener);
+            // Room name labels are absolutely-positioned divs inside the tools container,
+            // which is a sibling of the canvas — not a descendant. Wheel events that fire
+            // on a label never reach the canvas wheel listeners (pan at ~46134, zoom at ~69351).
+            // Re-dispatch to canvasViewer3d so pan/zoom works even when the cursor is over a label.
+            elem.getDomElement().addEventListener('wheel', (e) => {
+                const canvas = document.getElementById('canvasViewer3d');
+                if (canvas) {
+                    canvas.dispatchEvent(new WheelEvent('wheel', {
+                        deltaX: e.deltaX,
+                        deltaY: e.deltaY,
+                        deltaZ: e.deltaZ,
+                        deltaMode: e.deltaMode,
+                        ctrlKey: e.ctrlKey,
+                        metaKey: e.metaKey,
+                        altKey: e.altKey,
+                        shiftKey: e.shiftKey,
+                        clientX: e.clientX,
+                        clientY: e.clientY,
+                        bubbles: true,
+                        cancelable: true,
+                        composed: true,
+                    }));
+                }
+                e.preventDefault();
+            }, { passive: false });
 
             elem.updatePosition(currentCamera3d, width, height);
 
