@@ -83,22 +83,22 @@ async function init() {
   }
 
   // FIXME: debug timer, opens a popup 2s after every load. Comment out before release.
-  setTimeout(() => {
-    // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
-    store.dispatch(
-      // changeActiveControlPanelMode({
-      //   mode: 'renderExample_small',
-      //   data: { type: 'main', lastSavedScroll: 0 },
-      // })
-      // setActivePopup({ name: 'renderExample_big' })
-      // setActivePopup({
-      //   name: 'export3DProjectPopup',
-      //   type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
-      //   data: {},
-      // })
-      setActivePopup({ name: 'imageUpload' })
-    );
-  }, 2000);
+  // setTimeout(() => {
+  //   // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
+  //   store.dispatch(
+  //     // changeActiveControlPanelMode({
+  //     //   mode: 'renderExample_small',
+  //     //   data: { type: 'main', lastSavedScroll: 0 },
+  //     // })
+  //     // setActivePopup({ name: 'renderExample_big' })
+  //     // setActivePopup({
+  //     //   name: 'export3DProjectPopup',
+  //     //   type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
+  //     //   data: {},
+  //     // })
+  //     setActivePopup({ name: 'imageUpload' })
+  //   );
+  // }, 2000);
 
   createRoot(document.getElementById('root')!).render(
     <StrictMode>

@@ -67842,7 +67842,7 @@ WC.StateAlignDrawing = function()
 
             recalcDragPts();
 
-            me.draw(dashed = true);
+            me.draw(true);
         } else if (dragLine) {
             let newX = WC.realPos.x - dragShiftX;
             let newY = WC.realPos.y - dragShiftY;
@@ -67855,7 +67855,7 @@ WC.StateAlignDrawing = function()
             alignerH2.center.y += dy;
 
             recalcDragPts();
-            me.draw(dashed = false);
+            me.draw(false);
 
             if (TR.euclDistP(startDragPos, WC.realPos) > 5) {
                 isDragging = true;
@@ -67869,7 +67869,7 @@ WC.StateAlignDrawing = function()
                 WC.wallsEditor.showCursor();
             }
 
-            me.draw(dashed = false, false);
+            me.draw(false, false);
         }
     };
 
@@ -68748,7 +68748,7 @@ WC.StateMakingRuler = function()
             }
             
             me.tmpRuler.setCoordsToRulerPoints(startPoint, endPoint);
-            me.drawRuler(me.tmpRuler, dashed = true);
+            me.drawRuler(me.tmpRuler, true);
 
             if (!WC.SFK.activeInput?.parentNode) WC.SFK.state.showInputs();
 
