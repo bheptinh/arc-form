@@ -24,10 +24,10 @@ import {
   setProjectPlan,
 } from '../../redux/features/user/userSlice';
 import { confirm } from '../../shared-components/ConfirmDialog';
+import Button from '../../shared-components/inputs/button';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
 import { createProjectUrl } from '../../utils/UrlHelper';
-import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   formContent: {

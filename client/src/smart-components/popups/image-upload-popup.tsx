@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
-import Checkbox from '../../shared-components/inputs/checkbox';
 import { useTranslation } from '../../api/hooks/useTranslation';
-import DefaultModal from '../../shared-components/modals/default';
+import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
 import Button from '../../shared-components/inputs/button';
+import Checkbox from '../../shared-components/inputs/checkbox';
+import DefaultModal from '../../shared-components/modals/default';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {},

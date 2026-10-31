@@ -10,10 +10,10 @@ import {
   selectUserProfileData,
   setProfileData,
 } from '../../redux/features/user/userSlice';
-import Checkbox from '../../shared-components/inputs/checkbox';
-import DefaultModal from '../../shared-components/modals/default';
-import TextInput from '../../shared-components/inputs/text-input';
 import Button from '../../shared-components/inputs/button';
+import Checkbox from '../../shared-components/inputs/checkbox';
+import TextInput from '../../shared-components/inputs/text-input';
+import DefaultModal from '../../shared-components/modals/default';
 
 const useStyle = createUseStyles({
   planner_popup_line: {

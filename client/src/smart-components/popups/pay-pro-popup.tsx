@@ -18,9 +18,9 @@ import {
   setProfileData,
   setProjectPlan,
 } from '../../redux/features/user/userSlice';
+import DefaultModal from '../../shared-components/modals/default';
 import { createProjectUrl } from '../../utils/UrlHelper';
 import { useMerchantLogin } from '../../utils/useMerchantLogin';
-import DefaultModal from '../../shared-components/modals/default';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {

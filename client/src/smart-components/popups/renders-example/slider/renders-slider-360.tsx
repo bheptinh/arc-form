@@ -1,7 +1,7 @@
 import 'swiper/css';
 
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';

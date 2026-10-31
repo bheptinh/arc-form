@@ -20,10 +20,10 @@ import {
   selectUserProjectActive,
 } from '../../redux/features/user/userSlice';
 import Checkbox from '../../shared-components/inputs/checkbox';
-import DefaultModal from '../../shared-components/modals/default';
-import { useEffectAsync } from '../../utils/useEffectAsync';
 import TextArea from '../../shared-components/inputs/text-area';
 import TextInput from '../../shared-components/inputs/text-input';
+import DefaultModal from '../../shared-components/modals/default';
+import { useEffectAsync } from '../../utils/useEffectAsync';
 // import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
 
 const useStyle = createUseStyles({

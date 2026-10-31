@@ -138,6 +138,8 @@ Popups        — all modal dialogs rendered by `smart-components/popups/index.t
 QuickPanels   — floating contextual action panels (positioned near selected object)
 ```
 
+> **TODO: delete `client/src/components/popups/`.** All popups moved to `smart-components/popups/`. The folder only holds the old `_*.tsx` versions, kept for reference, and nothing imports them. Before deleting, decide whether the rewritten login and registration popups need the phone-only `onTapToClose` listener from `_LoginPopup.tsx` and `_RegistrationPopup.tsx`.
+
 ### Left Panel — `client/src/components/left_new/`
 `ControlPanel` holds named modes (furniture, decor, constructor, selectedModel, etc.). Each mode has a `history` array for back-navigation and `breadCrumbs` for display. `DynamicPanel` renders the active mode's content from `parts/dynamicPanel/panels/`.
 

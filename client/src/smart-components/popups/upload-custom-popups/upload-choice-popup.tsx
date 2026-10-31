@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import {

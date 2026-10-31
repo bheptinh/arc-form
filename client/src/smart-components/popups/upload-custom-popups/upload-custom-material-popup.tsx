@@ -1,6 +1,6 @@
 import { IconArrowLeft, IconPhotoScan, IconPlus } from '@tabler/icons-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useMemo, useRef, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,8 +13,8 @@ import {
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
-import MaterialSize from './components/material-size';
 import DefaultModal from '../../../shared-components/modals/default';
+import MaterialSize from './components/material-size';
 
 const useStyle = createUseStyles({
   '@keyframes shake': {

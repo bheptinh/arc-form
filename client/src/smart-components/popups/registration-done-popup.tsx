@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
 import { useTranslation } from '../../api/hooks/useTranslation';
+import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
 import DefaultModal from '../../shared-components/modals/default';
 
 const done_popup_text = {
@@ -100,7 +100,7 @@ const RegistrationDonePopup = (props) => {
       contentClassName={classes.done_popup_cont}
     >
       <div className={classes.done_popup_login_wrap}>
-        <div className={classes.done_popup_login_wr}>
+        <div>
           <div className={classes.done_popup_top}>
             <img src="/src_designer/images/registrationDoneImg.png" />
           </div>

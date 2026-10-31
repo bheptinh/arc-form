@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { selectActiveControlPanelMode } from '../../../redux/features/control/controlPanelSlice';
@@ -11,8 +10,8 @@ import {
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
 import Checkbox from '../../../shared-components/inputs/checkbox';
-import RendersSliderAi from '../renders-example/slider/renders-slider-ai';
 import DefaultModal from '../../../shared-components/modals/default';
+import RendersSliderAi from '../renders-example/slider/renders-slider-ai';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {

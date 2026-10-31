@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -20,8 +20,8 @@ import {
 } from '../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../redux/features/quickPanels/quickPanelsSlice';
 import { userLogout } from '../../redux/features/user/userSlice';
-import DefaultModal from '../../shared-components/modals/default';
 import TextInput from '../../shared-components/inputs/text-input';
+import DefaultModal from '../../shared-components/modals/default';
 
 const delete_account_text = {
   color: '#2F2F2F',

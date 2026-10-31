@@ -17,8 +17,8 @@ import {
 } from '../../redux/features/popups/popupsSlice';
 import { showTip } from '../../redux/features/tips/tipsSlice';
 import Checkbox from '../../shared-components/inputs/checkbox';
-import { useMerchantLogin } from '../../utils/useMerchantLogin';
 import DefaultModal from '../../shared-components/modals/default';
+import { useMerchantLogin } from '../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {

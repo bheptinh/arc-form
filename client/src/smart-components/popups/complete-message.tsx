@@ -1,11 +1,11 @@
 import cx from 'classnames';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
 import { useTranslation } from '../../api/hooks/useTranslation';
+import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
 
 const useStyle = createUseStyles({
   alert_status_wr: {

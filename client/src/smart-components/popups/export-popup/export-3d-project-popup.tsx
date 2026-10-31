@@ -1,5 +1,5 @@
 import { IconArrowLeft, IconCheck } from '@tabler/icons-react';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -11,8 +11,8 @@ import {
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
 import Checkbox from '../../../shared-components/inputs/checkbox';
-import { useEffectAsync } from '../../../utils/useEffectAsync';
 import DefaultModal from '../../../shared-components/modals/default';
+import { useEffectAsync } from '../../../utils/useEffectAsync';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {

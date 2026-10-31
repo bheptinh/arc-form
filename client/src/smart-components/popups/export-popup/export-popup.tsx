@@ -1,10 +1,9 @@
 import { IconLockFilled } from '@tabler/icons-react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import { user } from '../../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../../redux/features/common/commonSlice';
 import {
   closeActivePopup,
@@ -16,8 +15,8 @@ import {
   selectUserProjectActive,
 } from '../../../redux/features/user/userSlice';
 import { setActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
-import DefaultModal from '../../../shared-components/modals/default';
 import Radio from '../../../shared-components/inputs/radio';
+import DefaultModal from '../../../shared-components/modals/default';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {

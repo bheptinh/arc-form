@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
-import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
 import { useTranslation } from '../../api/hooks/useTranslation';
+import { selectPopups } from '../../redux/features/popups/popupsSlice';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {

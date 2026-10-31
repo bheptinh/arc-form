@@ -1,13 +1,10 @@
 import { IconArrowLeft, IconCloudUpload, IconPlus } from '@tabler/icons-react';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import {
-  changeActiveControlPanelMode,
-  selectActiveControlPanelMode,
-} from '../../../redux/features/control/controlPanelSlice';
+import { changeActiveControlPanelMode } from '../../../redux/features/control/controlPanelSlice';
 import {
   closeActivePopup,
   selectPopups,

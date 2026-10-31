@@ -1,15 +1,15 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { planner } from '../../initR2D';
 import { selectMetrics } from '../../redux/features/metrics/metricsSLice';
 import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
-import { useTranslation } from '../../api/hooks/useTranslation';
-import DefaultModal from '../../shared-components/modals/default';
 import Button from '../../shared-components/inputs/button';
 import TextInput from '../../shared-components/inputs/text-input';
+import DefaultModal from '../../shared-components/modals/default';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {

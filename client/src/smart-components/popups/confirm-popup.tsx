@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
-import DefaultModal from '../../shared-components/modals/default';
 import Button from '../../shared-components/inputs/button';
+import DefaultModal from '../../shared-components/modals/default';
 
 const useStyle = createUseStyles({
   inner: {},

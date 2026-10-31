@@ -6,10 +6,10 @@ import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
 import { closeActivePopup, setActivePopup } from '../../redux/features/popups/popupsSlice';
+import Button from '../../shared-components/inputs/button';
 import Checkbox from '../../shared-components/inputs/checkbox';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
-import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   formContent: {

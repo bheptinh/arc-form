@@ -1,11 +1,12 @@
-import { IconChevronDown, IconFile, IconFileHorizontal } from '@tabler/icons-react';
-import React, { useEffect, useRef, useState } from 'react';
+import { IconFile, IconFileHorizontal } from '@tabler/icons-react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Document, Page } from 'react-pdf';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
+import { Accordion } from '../../../components/common/Accordion';
 import { planner, user } from '../../../initR2D';
 import { closeActivePopup } from '../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
@@ -14,7 +15,6 @@ import {
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
 import Checkbox from '../../../shared-components/inputs/checkbox';
-import { Accordion } from '../../../components/common/Accordion';
 import DefaultModal from '../../../shared-components/modals/default';
 
 const useStyle = createUseStyles({

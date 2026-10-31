@@ -1,6 +1,6 @@
 import { IconX } from '@tabler/icons-react';
 import cx from 'classnames';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -20,8 +20,8 @@ import {
   setProfileData,
 } from '../../redux/features/user/userSlice';
 import Checkbox from '../../shared-components/inputs/checkbox';
-import { useMerchantLogin } from '../../utils/useMerchantLogin';
 import DefaultModal from '../../shared-components/modals/default';
+import { useMerchantLogin } from '../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   done_popup_wrap: {

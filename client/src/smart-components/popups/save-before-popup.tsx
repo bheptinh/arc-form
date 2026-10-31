@@ -1,19 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { planner, user } from '../../initR2D';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
-import { createProjectUrl } from '../../utils/UrlHelper';
-import { useTranslation } from '../../api/hooks/useTranslation';
-import { useMerchantLogin } from '../../utils/useMerchantLogin';
-import { getScenePlanRequirements } from '../../utils/getScenePlanRequirements';
-import DefaultModal from '../../shared-components/modals/default';
 import Button from '../../shared-components/inputs/button';
+import DefaultModal from '../../shared-components/modals/default';
+import { getScenePlanRequirements } from '../../utils/getScenePlanRequirements';
+import { createProjectUrl } from '../../utils/UrlHelper';
+import { useMerchantLogin } from '../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {},

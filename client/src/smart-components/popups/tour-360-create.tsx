@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguages } from '../../api/hooks/useLanguages';
 import { planner } from '../../initR2D';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
-import { useLanguages } from '../../api/hooks/useLanguages';
 import DefaultModal from '../../shared-components/modals/default';
 
 const useStyle = createUseStyles({

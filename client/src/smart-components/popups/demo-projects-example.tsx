@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import {
@@ -10,8 +8,8 @@ import {
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
-import { createProjectUrl } from '../../utils/UrlHelper';
 import DefaultModal from '../../shared-components/modals/default';
+import { createProjectUrl } from '../../utils/UrlHelper';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
