@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
-import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {

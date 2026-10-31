@@ -24,7 +24,10 @@ function getLanguagesForUser(): Language[] {
 const translationCache = new Map<string, TranslationMap>();
 
 function getTranslation(langCode: string): TranslationMap {
-  if (translationCache.has(langCode)) return translationCache.get(langCode)!;
+  if (translationCache.has(langCode)) {
+    return translationCache.get(langCode)!;
+  }
+  
   const filePath = path.join(FIXTURES, 'translations', `${langCode}.json`);
   const fallbackPath = path.join(FIXTURES, 'translations', 'en.json');
   const map: TranslationMap = JSON.parse(

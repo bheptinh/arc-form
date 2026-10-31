@@ -4,40 +4,26 @@ import { useState } from 'react';
 import { createUseStyles } from 'react-jss';
 
 const useStyle = createUseStyles({
-  input_wrap: {
+  fieldset: {
     padding: '0 65px',
     display: 'flex',
-    border: 'none',
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    position: 'relative',
-    marginBottom: 20,
+    flexDirection: 'column',
+    justifyContent: 'start',
+
     '@media screen and (max-width: 950px)': {
       padding: '0 15px',
       gridGap: 14,
     },
   },
-  input_text: {
-    fontFamily: 'Roboto, sans-serif',
+  label: {
     fontSize: 14,
     color: '#2f2f2f',
     whiteSpace: 'nowrap',
-    textAlign: 'right',
-    marginRight: 20,
+    padding: '0 10px',
   },
-  input_wr: {
+  formInputWrapper: {
     position: 'relative',
     color: '#fff',
-
-    '&:last-child': {
-      marginBottom: '0',
-    },
-  },
-  input_pass_btn: {
-    position: 'absolute',
-    top: 6,
-    right: -20,
-    cursor: 'pointer',
   },
   formInput: {
     borderRadius: 3,
@@ -52,14 +38,22 @@ const useStyle = createUseStyles({
     resize: 'none',
     transition: 'all 0.4s ease-out',
   },
+  formInputPasswordButton: {
+    position: 'absolute',
+    top: 6,
+    right: -20,
+    cursor: 'pointer',
+  },
 });
 
 type TextInputProps = {
-  type: 'password' | 'text' | 'email';
+  type?: 'password' | 'text' | 'email';
   label: string;
 
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   value?: string;
+  defaultValue?: string;
+  placeholder?: string;
   name?: string;
   required?: boolean;
   className?: string;
@@ -67,7 +61,7 @@ type TextInputProps = {
 
 export default function TextInput(props: TextInputProps) {
   const classes = useStyle();
-  const [inputType, setInputType] = useState(props.type);
+  const [inputType, setInputType] = useState(props.type ?? 'text');
 
   const togglePasswordInputType = () => {
     if (props.type !== 'password') {
@@ -77,22 +71,29 @@ export default function TextInput(props: TextInputProps) {
     setInputType((prevType) => (prevType === 'password' ? 'text' : 'password'));
   };
 
+  // FIXME: id changes on every render and randomUUID fails on non-HTTPS origins. Use useId().
+  const id = crypto.randomUUID();
+
   return (
-    <fieldset className={cls(classes.input_wrap, props.className)}>
-      <div className={classes.input_text}>{props.label}</div>
-      <div className={classes.input_wr}>
+    <fieldset className={cls(classes.fieldset, props.className)}>
+      <label htmlFor={id} className={classes.label}>
+        {props.label}
+      </label>
+      <div className={classes.formInputWrapper}>
         <input
+          id={id}
           className={classes.formInput}
           type={inputType}
           name={props.name}
-          placeholder=""
+          placeholder={props.placeholder}
           required={props.required}
           onChange={props.onChange}
           value={props.value}
+          defaultValue={props.defaultValue}
         />
 
         {props.type === 'password' && (
-          <div className={classes.input_pass_btn} onClick={togglePasswordInputType}>
+          <div className={classes.formInputPasswordButton} onClick={togglePasswordInputType}>
             {inputType === 'password' ? (
               <IconEye size={16} color="#2F2F2F" />
             ) : (

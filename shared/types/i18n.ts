@@ -8,4 +8,5 @@ export interface Language {
   lang_public: string;
 }
 
+// FIXME: en.json and ua.json now have a nested "response" object, so this type is too narrow.
 export type TranslationMap = Record<string, string>;

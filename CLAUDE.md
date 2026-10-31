@@ -28,6 +28,7 @@ client/             frontend — Vite + React source, index.html, tsconfig.json
       hooks/        useLanguages, useTranslation, useLanguageChange, …
     pages/          standalone React pages (MarkdownPage, ProjectsPage)
     shared-components/  generic UI components — no domain imports, no entity-prefixed names (Card, SortBar, …)
+    smart-components/   domain-aware components (Redux, R2D); popups/ renders on shared-components/modals, input-forms/ holds extracted forms
     vendor/         R2D engine as ES modules (plannercore.js, user.js, r2d.ts)
   public/           static assets (R2D engine scripts, images)
   vite-plugins/     custom Vite dev-server plugins

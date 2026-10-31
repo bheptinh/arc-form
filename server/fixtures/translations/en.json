@@ -1,4 +1,10 @@
 {
+  "response": {
+    "errorLoadData": {
+      "error": "Error loading required data",
+      "description": "Please try again later"
+    }
+  },
   "FR_SUBSCRIPTION_RECURRING_UPGRADE_12_TITLE": "Yearly subscription upgrade",
   "3D_ROTATION": "3D Rotation",
   "3D_ROTATION_OFF": "OFF",

@@ -11,8 +11,8 @@ import {
   selectPopups,
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
-import TextInput from '../../shared-components/inputs/text-input';
 import Checkbox from '../../shared-components/inputs/checkbox';
+import TextInput from '../../shared-components/inputs/text-input';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {

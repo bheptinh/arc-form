@@ -2,7 +2,13 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
 import { selectPopups } from '../../redux/features/popups/popupsSlice';
-import AlertPopup from './AlertPopup';
+// import SetProjectNamePopup from './_SetProjectNamePopup';
+// import ForgotPassPopup from './_ForgotPassPopup';
+// import RegistrationPopup from './_RegistrationPopup';
+// import LoginPopup from './_LoginPopup';
+// import ProfilePopup from './_ProfilePopup';
+// FIXME: unused import, the alert popup renders from smart-components/popups
+import AlertPopup from './_AlertPopup';
 import AlignerWidthSetMetricsPopup from './AlignerWidthSetMetricsPopup';
 import AlignerWidthSetPopup from './AlignerWidthSetPopup';
 import AutoSaveEnable from './AutoSaveEnablePopup';
@@ -16,15 +22,11 @@ import DemoProjectsExample from './DemoProjectsExample';
 import Export2DProjectPopup from './exportPopup/Export2DProjectPopup';
 import Export3DProjectPopup from './exportPopup/Export3DProjectPopup';
 import ExportPopup from './exportPopup/ExportPopup';
-import ForgotPassPopup from './ForgotPassPopup';
 import ImageUploadPopup from './ImageUploadPopup';
 import LoadingMessagePopup from './LoadingMessage';
-import LoginPopup from './LoginPopup';
 import PayProPopup from './PayProPopup';
-import ProfilePopup from './ProfilePopup';
 import ProjectDataLoadPopup from './ProjectDataLoadPopup';
 import RegistrationDonePopup from './RegistrationDonePopup';
-import RegistrationPopup from './RegistrationPopup';
 import RenderDone from './RenderDone';
 import RenderExample4k from './rendersExample/RenderExample4k';
 import RenderExample360 from './rendersExample/RenderExample360';
@@ -32,9 +34,8 @@ import RenderExampleBig from './rendersExample/RenderExampleBig';
 import RenderExampleSmall from './rendersExample/RenderExampleSmall';
 import Revert3DRotation from './Revert3DRotation';
 import SaveBeforePopup from './SaveBeforePopup';
-import SetProjectNamePopup from './SetProjectNamePopup';
 import SetValueInput from './SetValueInput';
-import SharePopup from './SharePopup';
+// import SharePopup from './_SharePopup';
 import StartPopup from './StartPopup';
 import TipsPopup from './TipsPopup';
 import Tour360CreatePopup from './Tour360Create';
@@ -65,15 +66,15 @@ const Popups = () => {
   const classes = useStyle();
   return (
     <div className={classes.popups}>
-      {activePopup.login.status === true ? <LoginPopup /> : null}
-      {activePopup.registration.status === true ? <RegistrationPopup /> : null}
-      {activePopup.forgotPassword.status === true ? <ForgotPassPopup /> : null}
-      {activePopup.profile.status === true ? <ProfilePopup /> : null}
+      {/* {activePopup.login.status === true ? <LoginPopup /> : null} */}
+      {/* {activePopup.registration.status === true ? <RegistrationPopup /> : null} */}
+      {/* {activePopup.forgotPassword.status === true ? <ForgotPassPopup /> : null} */}
+      {/* {activePopup.profile.status === true ? <ProfilePopup /> : null} */}
       {activePopup.payPro.status === true ? <PayProPopup /> : null}
-      {activePopup.setProjectName.status === true ? <SetProjectNamePopup /> : null}
+      {/* {activePopup.setProjectName.status === true ? <SetProjectNamePopup /> : null} */}
       {activePopup.confirm.status === true ? <ConfirmPopup /> : null}
-      {activePopup.alert.status === true ? <AlertPopup /> : null}
-      {activePopup.share.status === true ? <SharePopup /> : null}
+      {/* {activePopup.alert.status === true ? <AlertPopup /> : null} */}
+      {/* {activePopup.share.status === true ? <SharePopup /> : null} */}
       {activePopup.saveBefore.status === true ? <SaveBeforePopup /> : null}
       {activePopup.setValueInput.status === true ? <SetValueInput /> : null}
       {activePopup.completeMessage.status === true ? <CompleteMessage /> : null}

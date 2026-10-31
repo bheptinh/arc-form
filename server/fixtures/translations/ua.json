@@ -1,4 +1,10 @@
 {
+  "response": {
+    "errorLoadData": {
+      "error": "Помилка завантаження необхідних даних",
+      "description": "Будь ласка, спробуйте пізніше"
+    }
+  },
   "FR_SUBSCRIPTION_RECURRING_UPGRADE_12_TITLE": "Оновлення річної підписки",
   "3D_ROTATION": "3D обертання",
   "3D_ROTATION_OFF": "ВИМК",

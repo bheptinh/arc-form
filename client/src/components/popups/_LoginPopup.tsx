@@ -302,7 +302,6 @@ const LoginPopup = (props) => {
         );
       dispatch(updateIsProjectBelongToLoggedUser(isCurrentProjectBelongToUser));
       dispatch(updatePreloaderStatus(false));
-
     }
   };
 

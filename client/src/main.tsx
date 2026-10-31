@@ -11,7 +11,7 @@ import sunEditor from 'suneditor';
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
+  import.meta.url
 ).toString();
 import lang from 'suneditor/src/lang';
 import plugins from 'suneditor/src/plugins';
@@ -35,8 +35,8 @@ import { setActivePopup } from './redux/features/popups/popupsSlice';
 import { saveLoggedStatus } from './redux/features/user/userSlice';
 import { setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
 import { store } from './redux/store';
-import ErrorBoundary from './smart-components/common/error-boundary';
 import { ConfirmDialogProvider } from './shared-components/ConfirmDialog';
+import ErrorBoundary from './smart-components/common/error-boundary';
 
 window.sunEditor = sunEditor;
 window.sunEditorPlugins = plugins;
@@ -83,22 +83,23 @@ async function init() {
     store.dispatch(setActiveViewMode('view3d'));
   }
 
-  // setTimeout(() => {
-  //   // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
-  //   store.dispatch(
-  //     // changeActiveControlPanelMode({
-  //     //   mode: 'renderExample_small',
-  //     //   data: { type: 'main', lastSavedScroll: 0 },
-  //     // })
-  //     // setActivePopup({ name: 'renderExample_big' })
-  //     // setActivePopup({
-  //     //   name: 'export3DProjectPopup',
-  //     //   type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
-  //     //   data: {},
-  //     // })
-  //     setActivePopup({ name: 'payPro', data: '/' })
-  //   );
-  // }, 2000);
+  // FIXME: debug timer, opens the share popup 2s after every load. Comment out before release.
+  setTimeout(() => {
+    // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
+    store.dispatch(
+      // changeActiveControlPanelMode({
+      //   mode: 'renderExample_small',
+      //   data: { type: 'main', lastSavedScroll: 0 },
+      // })
+      // setActivePopup({ name: 'renderExample_big' })
+      // setActivePopup({
+      //   name: 'export3DProjectPopup',
+      //   type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
+      //   data: {},
+      // })
+      setActivePopup({ name: 'share' })
+    );
+  }, 2000);
 
   createRoot(document.getElementById('root')!).render(
     <StrictMode>

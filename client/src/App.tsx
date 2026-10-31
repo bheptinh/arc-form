@@ -67,8 +67,10 @@ import {
 import { selectActiveViewMode, setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
 import PortraitBlocker from './shared-components/app-guards/portrait-blocker';
 import GlobalPreload from './shared-components/loaders/global-preload';
+import PopupActions from './smart-components/popups';
 import Tips from './smart-components/tips';
 import { createProjectUrl } from './utils/UrlHelper';
+import { useAlertToast } from './utils/useAlertToast';
 
 const useStyle = createUseStyles({
   main: {
@@ -118,6 +120,7 @@ const App = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const showErrorToast = useAlertToast();
 
   const controlPanelStatus = useSelector(selectControlPanelStatus);
   const userProfileData = useSelector(selectUserProfileData);
@@ -133,8 +136,6 @@ const App = () => {
   const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1);
   const { mutateAsync: changeLanguage } = useLanguageChange();
-
-  const configEnableMerchantLogin = R2D.config.data.enable_merchant_login;
   const [showTipUseTab, setTipUseTab] = useState({
     status: false,
     position: { x: 0, y: 0 },
@@ -157,6 +158,14 @@ const App = () => {
 
   const popups = useSelector(selectPopups);
 
+  const verifyEnabledMerchantLogin = () => {
+    if (!R2D.config.data.enable_merchant_login) {
+      dispatch(setActivePopup({ name: 'login' }));
+    } else {
+      R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+    }
+  };
+
   const onRendersUpdate = (data) => {
     dispatch(
       setActivePopup({
@@ -170,14 +179,19 @@ const App = () => {
   };
 
   const onProjectLoaded = async (e) => {
-    (!R2D.scene.viewOnly ||
+    if (
+      !R2D.scene.viewOnly ||
       R2D.scene.getProjectUserKey() == user.getKey() ||
-      (R2D.scene.getProjectUserKey() == null && user.getKey() == null)) &&
+      (R2D.scene.getProjectUserKey() == null && user.getKey() == null)
+    ) {
       dispatch(updateDynamicPanelStatus(true));
+    }
+
     if (e.data?.status == 'error') {
-      dispatch(setActivePopup({ name: 'alert', data: e.data.data || 'TEXT_ERROR_LOAD_DATA' }));
+      showErrorToast(e?.data?.data);
       return;
     }
+
     if (!e.data.id) {
       dispatch(changeActivePano({ id: 0, previewImgSrc: '', rotation: 0 }));
     } else {
@@ -394,15 +408,16 @@ const App = () => {
       const result = await planner.scene.saveProject(project);
       if (result?.type == 'error') {
         dispatch(updatePreloaderStatus(false));
-        return dispatch(
-          setActivePopup({ name: 'alert', data: result?.data || 'TEXT_ERROR_LOAD_DATA' })
-        );
+        showErrorToast(result?.data);
+        return;
       }
 
       const response = await user.loadProfileData();
-      if (response.type == 'error')
-        dispatch(setActivePopup({ name: 'alert', data: response.data }));
-      else dispatch(setProfileData(response));
+      if (response.type == 'error') {
+        showErrorToast(response?.data);
+      } else {
+        dispatch(setProfileData(response));
+      }
 
       dispatch(
         setActivePopup({ name: 'completeMessage', positionX: 'left', data: 'NOTIFY_SAVE_COMPLETE' })
@@ -439,9 +454,12 @@ const App = () => {
 
         const response = await user.checkIsLogged();
         if (response.type == 'error') {
-          dispatch(setActivePopup({ name: 'alert', data: response.data }));
-          return dispatch(saveLoggedStatus({ logged: false }));
-        } else dispatch(saveLoggedStatus(response));
+          showErrorToast(response?.data);
+          dispatch(saveLoggedStatus({ logged: false }));
+          return;
+        } else {
+          dispatch(saveLoggedStatus(response));
+        }
 
         if (user.data.autoSave) {
           planner.scene.clearSceneAutoSaveServer();
@@ -490,9 +508,7 @@ const App = () => {
       }
     } else if (dataObj.action == 'save_project') {
       if (!user.isLogged()) {
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+        verifyEnabledMerchantLogin();
         return;
       } else if (!planner.scene.wasSaved()) {
         if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
@@ -575,10 +591,11 @@ const App = () => {
       } else {
         dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
         const result = await planner.scene.saveProject();
-        if (result?.type == 'error')
-          return dispatch(
-            setActivePopup({ name: 'alert', data: result?.data || 'TEXT_ERROR_LOAD_DATA' })
-          );
+        if (result?.type == 'error') {
+          showErrorToast(result?.data);
+          return;
+        }
+
         dispatch(closeActivePopup({ name: 'loadingMessage' }));
         dispatch(
           setActivePopup({
@@ -587,7 +604,11 @@ const App = () => {
             data: 'NOTIFY_SAVE_COMPLETE',
           })
         );
-        user.data.autoSave == null && dispatch(setActivePopup({ name: 'autoSaveEnable' }));
+
+        if (user.data.autoSave == null) {
+          dispatch(setActivePopup({ name: 'autoSaveEnable' }));
+        }
+
         R2D.postMessageToParent(
           JSON.stringify({
             action: 'project_saved',
@@ -636,24 +657,29 @@ const App = () => {
           window.location.reload();
         }
       }
-    } else if (dataObj.action == 'clear_project')
-      planner.scene.wasChanged
-        ? dispatch(setActivePopup({ name: 'confirm', type: 'project_clear' }))
-        : null;
-    else if (dataObj.action == 'save_as') {
-      if (!user.isLogged())
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
-      else {
+    } else if (dataObj.action == 'clear_project') {
+      if (planner.scene.wasChanged) {
+        dispatch(setActivePopup({ name: 'confirm', type: 'project_clear' }));
+      }
+    } else if (dataObj.action == 'save_as') {
+      if (!user.isLogged()) {
+        verifyEnabledMerchantLogin();
+      } else {
         let allPremiumPlanOfSceneObjects = new Set();
         let allElemsWithOwner = new Set();
+
         Object.values(R2D.Pool._products_data).forEach((i) => {
-          Array.isArray(i.plan) && allPremiumPlanOfSceneObjects.add(i.plan[0]);
-          i.isOwner && allElemsWithOwner.add(i.type);
+          if (Array.isArray(i.plan)) {
+            allPremiumPlanOfSceneObjects.add(i.plan[0]);
+          }
+          if (i.isOwner) {
+            allElemsWithOwner.add(i.type);
+          }
         });
+
         allPremiumPlanOfSceneObjects = Array.from(allPremiumPlanOfSceneObjects);
         allElemsWithOwner = Array.from(allElemsWithOwner);
+
         const isThereObjectsWithOwnerThatDontMatchUserPremiumPlan =
           allElemsWithOwner.length > 0 &&
           (user.data.plan == 'free' ||
@@ -703,24 +729,24 @@ const App = () => {
                 const result = await planner.scene.saveProject(project);
                 if (result?.type == 'error') {
                   dispatch(updatePreloaderStatus(false));
-                  return dispatch(
-                    setActivePopup({ name: 'alert', data: result?.data || 'TEXT_ERROR_LOAD_DATA' })
-                  );
+                  showErrorToast(result?.data);
+                  return;
                 }
               } else {
                 const project = { name: dataObj.projectName, createNew: true };
                 const result = await planner.scene.saveProject(project);
                 if (result?.type == 'error') {
                   dispatch(updatePreloaderStatus(false));
-                  return dispatch(
-                    setActivePopup({ name: 'alert', data: result?.data || 'TEXT_ERROR_LOAD_DATA' })
-                  );
+                  showErrorToast(result?.data);
+                  return;
                 }
 
                 const response = await user.loadProfileData();
-                if (response.type == 'error')
-                  dispatch(setActivePopup({ name: 'alert', data: response.data }));
-                else dispatch(setProfileData(response));
+                if (response.type == 'error') {
+                  showErrorToast(response?.data);
+                } else {
+                  dispatch(setProfileData(response));
+                }
               }
 
               dispatch(
@@ -755,15 +781,13 @@ const App = () => {
       }
     } else if (dataObj.action == 'export_project') {
       if (!user.isLogged()) {
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+        verifyEnabledMerchantLogin();
         return;
       } else if (
         R2D.controller.getProjectId() == 0 ||
         R2D.controller.getProjectUserKey() != user.getKey()
       ) {
-        dispatch(setActivePopup({ name: 'alert', data: 'TEXT_EXPORT_SAVE_BEFORE' }));
+        showErrorToast('TEXT_EXPORT_SAVE_BEFORE');
         return;
       } else if (dataObj.exportType) {
         if (
@@ -789,11 +813,11 @@ const App = () => {
             )
               dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
             else {
-              isProOptionEnabled
-                ? !configEnableMerchantLogin
-                  ? dispatch(setActivePopup({ name: 'login' }))
-                  : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }))
-                : dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
+              if (isProOptionEnabled) {
+                verifyEnabledMerchantLogin();
+              } else {
+                dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
+              }
             }
           } else
             dispatch(
@@ -807,77 +831,78 @@ const App = () => {
       } else dispatch(setActivePopup({ name: 'exportPopup' }));
     } else if (dataObj.action == 'open_renders') {
       if (!user.isLogged()) {
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+        verifyEnabledMerchantLogin();
         return;
       } else {
         navigate('/renders');
       }
     } else if (dataObj.action == 'share_project') {
       if (user.getId() == 0) {
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+        verifyEnabledMerchantLogin();
         return;
       }
-      if (R2D.controller.getProjectUserKey() && R2D.controller.getProjectUserKey() != user.getKey())
+      if (
+        R2D.controller.getProjectUserKey() &&
+        R2D.controller.getProjectUserKey() != user.getKey()
+      ) {
         return dispatch(setActivePopup({ name: 'alert', data: 'TEXT_SHARE_PLAN_DIFF_USERS' }));
-      if (!R2D.scene.getProjectId())
+      }
+
+      if (!R2D.scene.getProjectId()) {
         return dispatch(setActivePopup({ name: 'alert', data: 'TEXT_SAVE_BEFORE_SHARE_PLAN' }));
+      }
+
       dispatch(setActivePopup({ name: 'share' }));
     } else if (dataObj.action == 'open_tours') {
       if (!user.isLogged()) {
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+        verifyEnabledMerchantLogin();
         return;
       } else {
         navigate('/tours');
       }
     } else if (dataObj.action == 'create_tour') {
       if (!user.isLogged()) {
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+        verifyEnabledMerchantLogin();
         return;
       }
       dispatch(setActivePopup({ name: 'tour360Create' }));
     } else if (dataObj.action == 'open_tour') {
       if (!user.isLogged()) {
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+        verifyEnabledMerchantLogin();
         return;
       }
       dispatch(setActivePopup({ name: 'tour360Create', data: dataObj.url }));
     }
   }
 
-  const onProjectSaveComplete = (e) => R2D.scene.updateProjectUserKey(user.getKey());
-
-  const onDragObjOutOfWall = (e) => {
-    const furnitureData = planner.getCatalogProducts();
-    prevControlPanelMode
-      ? dispatch(changeActiveControlPanelMode({ mode: prevControlPanelMode }))
-      : dispatch(
-          changeActiveControlPanelMode({
-            mode: 'furniture',
-            data:
-              controlPanelData['furniture'].history.length < 1
-                ? {
-                    type: 'catalog',
-                    addType: 'main',
-                    id: null,
-                    lastSavedScroll: 0,
-                    data: furnitureData,
-                  }
-                : null,
-          })
-        );
+  const onProjectSaveComplete = () => {
+    R2D.scene.updateProjectUserKey(user.getKey());
   };
 
-  const onEstimationSend = (e) => {
+  const onDragObjOutOfWall = () => {
+    const furnitureData = planner.getCatalogProducts();
+    if (prevControlPanelMode) {
+      dispatch(changeActiveControlPanelMode({ mode: prevControlPanelMode }));
+    } else {
+      dispatch(
+        changeActiveControlPanelMode({
+          mode: 'furniture',
+          data:
+            controlPanelData['furniture'].history.length < 1
+              ? {
+                  type: 'catalog',
+                  addType: 'main',
+                  id: null,
+                  lastSavedScroll: 0,
+                  data: furnitureData,
+                }
+              : null,
+        })
+      );
+    }
+  };
+
+  const onEstimationSend = () => {
     if (R2D.config.data.enable_estimation) {
       const data = R2D.controller.getEstimation();
       R2D.postMessageToParent(
@@ -889,7 +914,7 @@ const App = () => {
     }
   };
 
-  const quickPanelsHide = (e) => dispatch(removeQuickPanelAll());
+  const quickPanelsHide = () => dispatch(removeQuickPanelAll());
 
   const useTabTipStart = (e) => setTipUseTab({ position: { ...e.data.position }, status: true });
 
@@ -982,7 +1007,9 @@ const App = () => {
     }
   };
 
-  const onUpdateHiddenElements = (e) => dispatch(updateIsThereHiddenElements(e.data));
+  const onUpdateHiddenElements = (e) => {
+    dispatch(updateIsThereHiddenElements(e.data));
+  };
 
   const changeLang = async (code) => {
     await changeLanguage(code);
@@ -1000,18 +1027,20 @@ const App = () => {
     }
 
     if (e.data.userKey != user.getKey() && e.data.viewOnly) {
-      R2D.mouseInteractionHelper.state.setIsSelectingModel &&
-        R2D.mouseInteractionHelper.state.setIsSelectingModel(false);
+      R2D?.mouseInteractionHelper?.state?.setIsSelectingModel?.(false);
       WC.wallsEditor.state.setIsSelectElementsActive(false);
       dispatch(updateDynamicPanelStatus(false));
       dispatch(updateDynamicToggleButtonStatus(false));
     }
   };
 
-  const updateProjectName = (e) => dispatch(setActiveProjectName(e.data.name));
+  const updateProjectName = (e) => {
+    dispatch(setActiveProjectName(e.data.name));
+  };
 
-  const pastePremiumProductError = (e) =>
-    dispatch(setActivePopup({ name: 'alert', data: e.data.text }));
+  const pastePremiumProductError = (e) => {
+    showErrorToast(e?.data?.text);
+  };
 
   const beforeUnloadFunc = async (e) => {
     if (!R2D.Storage.load('r2d_is_error_occured')) {
@@ -1031,13 +1060,17 @@ const App = () => {
     }
   };
 
-  const quickPanelShow = (e) =>
+  const quickPanelShow = (e) => {
     dispatch(
       showQuickPanel({ name: e.data.type, position: e.data.quickPanel, type: e.data.addType })
     );
-  const quickPanelHide = (e) => dispatch(removeQuickPanel({ name: e.data.type }));
+  };
 
-  const onRulerSelect = (e) =>
+  const quickPanelHide = (e) => {
+    dispatch(removeQuickPanel({ name: e.data.type }));
+  };
+
+  const onRulerSelect = (e) => {
     dispatch(
       showQuickPanel({
         name: 'delete',
@@ -1045,34 +1078,44 @@ const App = () => {
         type: 'deleteRuller',
       })
     );
+  };
 
-  const onShowAlertPopup = (e) => dispatch(setActivePopup({ name: 'alert', data: e.data }));
+  const onShowAlertPopup = (e) => {
+    // FIXME: the alert popup also accepted data.id; an object payload here shows the generic error.
+    showErrorToast(e?.data);
+  };
 
-  const checkIsLogged = async (e) => {
+  const checkIsLogged = async () => {
     const token = R2D.Storage.load('r2d_token');
     const response = await user.checkIsLogged(token);
+
     if (response.type == 'error') {
-      dispatch(setActivePopup({ name: 'alert', data: response.data }));
-      return dispatch(saveLoggedStatus({ logged: false }));
+      showErrorToast(response?.data);
+      dispatch(saveLoggedStatus({ logged: false }));
+      return;
     } else {
       dispatch(saveLoggedStatus(response));
 
       const isCurrentProjectBelongToUser = R2D.scene.getProjectUserKey() == user.getKey();
       planner.scene.setIsProjectBelongToLoggedUserStatus(isCurrentProjectBelongToUser);
 
-      R2D.mouseInteractionHelper.state?.setIsSelectingModel &&
+      if (R2D.mouseInteractionHelper.state?.setIsSelectingModel) {
         R2D.mouseInteractionHelper.state.setIsSelectingModel(
           !isProjectOnlyView || (isProjectOnlyView && isCurrentProjectBelongToUser)
         );
-      WC.wallsEditor.state.setIsSelectElementsActive &&
+      }
+
+      if (WC.wallsEditor.state.setIsSelectElementsActive) {
         WC.wallsEditor.state.setIsSelectElementsActive(
           !isProjectOnlyView || (isProjectOnlyView && isCurrentProjectBelongToUser)
         );
+      }
+
       dispatch(updateIsProjectBelongToLoggedUser(isCurrentProjectBelongToUser));
     }
   };
 
-  const tryLogOut = (e) => {
+  const tryLogOut = () => {
     dispatch(userLogout());
 
     planner.scene.setIsProjectBelongToLoggedUserStatus(false);
@@ -1083,10 +1126,9 @@ const App = () => {
       planner.mih().changeState(planner.mih().stateMain);
       dispatch(removeQuickPanelAll());
 
-      R2D.mouseInteractionHelper.state.setIsSelectingModel &&
-        R2D.mouseInteractionHelper.state.setIsSelectingModel(false);
-      WC.wallsEditor.state.setIsSelectElementsActive &&
-        WC.wallsEditor.state.setIsSelectElementsActive(false);
+      R2D?.mouseInteractionHelper?.state?.setIsSelectingModel?.(false);
+      WC?.wallsEditor?.state?.setIsSelectElementsActive?.(false);
+
       dispatch(updateDynamicToggleButtonStatus(false));
       dispatch(updateDynamicPanelStatus(false));
       dispatch(changeActiveControlPanelMode({ mode: 'to2d3d' }));
@@ -1099,22 +1141,22 @@ const App = () => {
       if (token && !user.isLogged()) {
         const response = await user.checkIsLogged(token);
         if (response.type == 'error') {
-          dispatch(setActivePopup({ name: 'alert', data: response.data }));
-          return dispatch(saveLoggedStatus({ logged: false }));
+          showErrorToast(response?.data);
+          dispatch(saveLoggedStatus({ logged: false }));
+          return;
         } else {
           dispatch(saveLoggedStatus(response));
 
           const isCurrentProjectBelongToUser = R2D.scene.getProjectUserKey() == user.getKey();
           planner.scene.setIsProjectBelongToLoggedUserStatus(isCurrentProjectBelongToUser);
 
-          R2D.mouseInteractionHelper.state?.setIsSelectingModel &&
-            R2D.mouseInteractionHelper.state.setIsSelectingModel(
-              !isProjectOnlyView || (isProjectOnlyView && isCurrentProjectBelongToUser)
-            );
-          WC.wallsEditor.state.setIsSelectElementsActive &&
-            WC.wallsEditor.state.setIsSelectElementsActive(
-              !isProjectOnlyView || (isProjectOnlyView && isCurrentProjectBelongToUser)
-            );
+          R2D?.mouseInteractionHelper?.state?.setIsSelectingModel?.(
+            !isProjectOnlyView || (isProjectOnlyView && isCurrentProjectBelongToUser)
+          );
+          WC?.wallsEditor?.state?.setIsSelectElementsActive?.(
+            !isProjectOnlyView || (isProjectOnlyView && isCurrentProjectBelongToUser)
+          );
+
           dispatch(updateIsProjectBelongToLoggedUser(isCurrentProjectBelongToUser));
         }
       } else if (!token && user.isLogged()) {
@@ -1128,10 +1170,9 @@ const App = () => {
           planner.mih().changeState(planner.mih().stateMain);
           dispatch(removeQuickPanelAll());
 
-          R2D.mouseInteractionHelper.state.setIsSelectingModel &&
-            R2D.mouseInteractionHelper.state.setIsSelectingModel(false);
-          WC.wallsEditor.state.setIsSelectElementsActive &&
-            WC.wallsEditor.state.setIsSelectElementsActive(false);
+          R2D?.mouseInteractionHelper?.state?.setIsSelectingModel?.(false);
+          WC?.wallsEditor?.state?.setIsSelectElementsActive?.(false);
+
           dispatch(updateDynamicToggleButtonStatus(false));
           dispatch(updateDynamicPanelStatus(false));
           dispatch(changeActiveControlPanelMode({ mode: 'to2d3d' }));
@@ -1140,11 +1181,13 @@ const App = () => {
     }
   };
 
-  const onPreloaderToggle = (e) => dispatch(updatePreloaderStatus(!preloaderStatus));
+  const onPreloaderToggle = () => dispatch(updatePreloaderStatus(!preloaderStatus));
 
   useEffect(() => {
     async function init() {
-      !R2D.Storage.load('r2d_is_error_occured') && planner.scene.clearSceneAutoSaveStorage();
+      if (!R2D.Storage.load('r2d_is_error_occured')) {
+        planner.scene.clearSceneAutoSaveStorage();
+      }
 
       R2D.Storage.clear('r2d_is_error_occured');
 
@@ -1223,7 +1266,7 @@ const App = () => {
       }
 
       const furnitureData = planner.getCatalogProducts();
-      isCurrDeviceAPhone &&
+      if (isCurrDeviceAPhone) {
         dispatch(
           changeActiveControlPanelMode({
             mode: 'furniture',
@@ -1236,6 +1279,7 @@ const App = () => {
             },
           })
         );
+      }
 
       if (!R2D.scene.viewOnly) {
         dispatch(updateDynamicToggleButtonStatus(true));
@@ -1289,16 +1333,17 @@ const App = () => {
 
       if (window.location.search.match('open_renders=1')) {
         if (!user.isLogged()) {
-          !configEnableMerchantLogin
-            ? dispatch(setActivePopup({ name: 'login' }))
-            : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+          verifyEnabledMerchantLogin();
         } else {
           showStartPopup = false;
           const langCode =
             ~window.location.search.indexOf('#') &&
             window.location.search.split('&') &&
             window.location.search.split('&')[1].split('=')[1];
-          langCode && currLanguage.code != langCode && (await changeLang(langCode));
+
+          if (langCode && currLanguage.code != langCode) {
+            await changeLang(langCode);
+          }
           navigate('/renders');
         }
         window.history.replaceState(null, null, createProjectUrl(''));
@@ -1306,20 +1351,23 @@ const App = () => {
 
       if (window.location.search.match('open_profile=1')) {
         if (!user.isLogged()) {
-          !configEnableMerchantLogin
-            ? dispatch(setActivePopup({ name: 'login' }))
-            : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+          verifyEnabledMerchantLogin();
         } else {
           showStartPopup = false;
           const langCode =
             ~window.location.search.indexOf('#') &&
             window.location.search.split('&') &&
             window.location.search.split('&')[1].split('=')[1];
-          langCode && currLanguage.code != langCode && (await changeLang(langCode));
+
+          if (langCode && currLanguage?.code != langCode) {
+            await changeLang(langCode);
+          }
+
           const response = await user.loadProfileData();
-          if (response.type == 'error')
-            dispatch(setActivePopup({ name: 'alert', data: response.data }));
-          else {
+
+          if (response.type == 'error') {
+            showErrorToast(response?.data);
+          } else {
             dispatch(setProfileData(response));
             dispatch(setActivePopup({ name: 'profile' }));
           }
@@ -1328,38 +1376,40 @@ const App = () => {
       }
 
       if (window.location.search.match('action=buyCredits')) {
-        const creditsNum = window.location.search
+        const creditsNum = (window?.location?.search || '')
           .replace('?', '')
           .split('&')
           .find((i) => ~i.indexOf('count'))
           .split('=')[1];
+
         if (!user.isLogged()) {
-          !configEnableMerchantLogin
-            ? dispatch(setActivePopup({ name: 'login', type: 'buy_credits', data: creditsNum }))
-            : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+          // FIXME: regression, must pass type: 'buy_credits' and data: creditsNum to the login popup.
+          // login.tsx still handles that type, so the purchase is lost after logging in.
+          verifyEnabledMerchantLogin();
           return;
         } else {
           showStartPopup = false;
-          if (!R2D.token) dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
-          else
+          if (!R2D.token) {
+            showErrorToast('TEXT_ERROR_LOAD_DATA');
+          } else {
             dispatch(
               setActivePopup({
                 name: 'buyCredits',
                 type: 'fromUrl',
                 data: {
-                  iframe: `${R2D.URL.DOMAIN}/api/credits/get_form?credits=${creditsNum}&lang=${currLanguage.code}&token=${R2D.token}`,
+                  // FIXME: iframe to check and change it
+                  iframe: `${R2D.URL.DOMAIN}/api/credits/get_form?credits=${creditsNum}&lang=${currLanguage?.code || ''}&token=${R2D.token}`,
                 },
               })
             );
+          }
         }
         window.history.replaceState(null, null, createProjectUrl(''));
       }
 
       if (window.location.search.match('open_tours=1')) {
         if (!user.isLogged()) {
-          !configEnableMerchantLogin
-            ? dispatch(setActivePopup({ name: 'login' }))
-            : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+          verifyEnabledMerchantLogin();
           return;
         } else {
           showStartPopup = false;
@@ -1570,9 +1620,11 @@ const App = () => {
       if (isLogged) {
         if (!userProfileData?.name) {
           const response = await user.loadProfileData();
-          if (response.type == 'error')
-            dispatch(setActivePopup({ name: 'alert', data: response.data }));
-          else dispatch(setProfileData(response));
+          if (response.type == 'error') {
+            showErrorToast(response?.data);
+          } else {
+            dispatch(setProfileData(response));
+          }
         }
 
         userUpload = await planner.scene.categoryDataLoad(
@@ -1651,6 +1703,8 @@ const App = () => {
 
         <Popups />
         <QuickPanels />
+
+        <PopupActions />
 
         <Tips showTipUseTab={showTipUseTab} showTipUseEnter={showTipUseEnter} />
       </div>
