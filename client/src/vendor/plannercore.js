@@ -76323,7 +76323,7 @@ R2D.ImageUrlLoader = function() {
 
     function makeImageData() {
         bytes8 = new Uint8Array(arrayBuffer);
-        blob = new Blob([bytes8]);
+        blob = new Blob([bytes8], { type: xhr.getResponseHeader('Content-Type') || '' });
         fileReader = new FileReader();
 
         fileReader.addEventListener('load', fileReaderEventHandler);
