@@ -1,24 +1,13 @@
 // import { FacebookShareButton } from 'next-share';
 import { IconCopy, IconHelpHexagon } from '@tabler/icons-react';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { planner } from '../../initR2D';
-import {
-  selectIsProjectBelongToLoggedUser,
-  updateIsProjectOnlyView,
-} from '../../redux/features/common/commonSlice';
-import {
-  closeActivePopup,
-  selectPopups,
-  setActivePopup,
-} from '../../redux/features/popups/popupsSlice';
-import {
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../redux/features/user/userSlice';
+import { updateIsProjectOnlyView } from '../../redux/features/common/commonSlice';
+import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
 import Checkbox from '../../shared-components/inputs/checkbox';
 import TextArea from '../../shared-components/inputs/text-area';
 import TextInput from '../../shared-components/inputs/text-input';
@@ -148,43 +137,6 @@ const useStyle = createUseStyles({
   additional_info: {
     marginLeft: 5,
   },
-  planner_popup_checkbox_error: {
-    paddingLeft: 22,
-    marginTop: 2,
-    display: 'flex',
-    alignItems: 'center',
-    '& > p': {
-      fontSize: 13,
-      color: '#2F2F2F',
-    },
-  },
-  planner_popup_checkbox_error_red: {
-    '& > p': {
-      color: '#AF3131',
-    },
-  },
-  planner_popup_checkbox_error_pro: {
-    color: '#000',
-    fontSize: '13px',
-    marginLeft: '6px',
-    borderRadius: '3px',
-    padding: '5px 6px',
-    position: 'relative',
-    background: '#FFB400',
-    textTransform: 'uppercase',
-    zIndex: 1,
-    marginRight: 9,
-  },
-  planner_popup_checkbox_error_text: {
-    fontSize: 13,
-    color: '#66ACF4',
-    fontWeight: 400,
-    textDecoration: 'underline',
-    cursor: 'pointer',
-    '&:hover': {
-      textDecoration: 'none',
-    },
-  },
 });
 
 export default function SharePopup() {
@@ -194,8 +146,6 @@ export default function SharePopup() {
 
   const [width, setWidth] = useState(800);
   const [height, setHeight] = useState(600);
-
-  const [needToUpgrade, setNeedToUpgrade] = useState(false);
 
   const popupType = popups.share.type;
 
@@ -210,10 +160,6 @@ export default function SharePopup() {
 
   const [configFacebookSharing, setFacebookSharing] = useState(R2D.config.data.ui.facebook_sharing);
 
-  const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
-
-  const userProjectActive = useSelector(selectUserProjectActive);
-
   const classes = useStyle();
 
   const [checkboxProjectOnlyView, setCheckboxProjectOnlyView] = useState(
@@ -224,8 +170,6 @@ export default function SharePopup() {
 
   const inputRef = useRef(null);
 
-  const userData = useSelector(selectUserProfileData);
-
   const handleCopy = () => {
     if (inputRef.current) {
       inputRef.current.select();
@@ -235,28 +179,16 @@ export default function SharePopup() {
   };
 
   const onChangeOnlyView = async (status) => {
-    if (
-      userData.plan == 'pro' ||
-      (isProjectBelongToLoggedUser && userProjectActive.plan == 'pro')
-    ) {
-      setNeedToUpgrade(false);
-      setPreloaderStatus(true);
-      setCheckboxProjectOnlyView(status);
-      await planner.scene.setOnlyViewParam(status, popupData);
-      if (R2D.scene.getProjectHash() == popupData) {
-        planner.scene.updateProjectOnlyViewState(status);
-        dispatch(updateIsProjectOnlyView(status));
-      }
-      setCheckboxProjectOnlyView(status);
-      setPreloaderStatus(false);
-    } else setNeedToUpgrade(true);
-  };
-
-  useEffect(() => {
-    if (userData.plan == 'pro') {
-      setNeedToUpgrade(false);
+    setPreloaderStatus(true);
+    setCheckboxProjectOnlyView(status);
+    await planner.scene.setOnlyViewParam(status, popupData);
+    if (R2D.scene.getProjectHash() == popupData) {
+      planner.scene.updateProjectOnlyViewState(status);
+      dispatch(updateIsProjectOnlyView(status));
     }
-  }, [userData.plan]);
+    setCheckboxProjectOnlyView(status);
+    setPreloaderStatus(false);
+  };
 
   useEffectAsync(async () => {
     if (popupType == 'listProject') {
@@ -350,26 +282,6 @@ export default function SharePopup() {
                   <IconHelpHexagon size={18} color="#2D8BDB" className={classes.additional_info} />
                 </div>
               </div>
-              {userData?.plan != 'pro' ? (
-                <div
-                  className={
-                    needToUpgrade
-                      ? classes.planner_popup_checkbox_error +
-                        ' ' +
-                        classes.planner_popup_checkbox_error_red
-                      : classes.planner_popup_checkbox_error
-                  }
-                >
-                  <p>{translation['EXPORT_ERROR_AVAIL_PRO']}</p>
-                  <div className={classes.planner_popup_checkbox_error_pro}>pro</div>
-                  <a
-                    className={classes.planner_popup_checkbox_error_text}
-                    onClick={() => dispatch(setActivePopup({ name: 'payPro', type: 'user' }))}
-                  >
-                    {translation['TEXT_UPDATE']}
-                  </a>
-                </div>
-              ) : null}
             </fieldset>
 
             {popupType != 'tour' ? (

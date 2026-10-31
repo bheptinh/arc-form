@@ -57,10 +57,8 @@ import {
   saveLoggedStatus,
   selectIsLogged,
   selectUserProfileData,
-  selectUserProjectActive,
   setActiveProjectName,
   setProfileData,
-  setProjectPlan,
   userLogout,
 } from './redux/features/user/userSlice';
 import { selectActiveViewMode, setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
@@ -71,7 +69,6 @@ import Tips from './smart-components/tips';
 import { createProjectUrl } from './utils/UrlHelper';
 import { useAlertToast } from './utils/useAlertToast';
 import { useMerchantLogin } from './utils/useMerchantLogin';
-import { getScenePlanRequirements } from './utils/getScenePlanRequirements';
 
 const useStyle = createUseStyles({
   main: {
@@ -131,7 +128,6 @@ const App = () => {
   const isLogged = useSelector(selectIsLogged);
   const controlPanelActiveMode = useSelector(selectActiveControlPanelMode);
   const preloaderStatus = useSelector(selectPreloaderStatus);
-  const userProjectActive = useSelector(selectUserProjectActive);
   const isProjectOnlyView = useSelector(selectIsProjectOnlyView);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
 
@@ -144,8 +140,6 @@ const App = () => {
     isEnterTipActive: false,
   });
   const [showTipUseEnter, setTipUseEnter] = useState({ status: false, position: { x: 0, y: 0 } });
-
-  const isProOptionEnabled = R2D.OPTIONS.PRO_PLAN;
 
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
@@ -243,9 +237,6 @@ const App = () => {
     }
     if (e.data.name) {
       dispatch(setActiveProjectName(e.data.name));
-    }
-    if (e.data.plan) {
-      dispatch(setProjectPlan(e.data.plan));
     }
     dispatch(changeWallsHeight(R2D.scene.constructor.cap.wallsHeight));
     dispatch(
@@ -416,8 +407,6 @@ const App = () => {
       dispatch(
         setActivePopup({ name: 'completeMessage', positionX: 'left', data: 'NOTIFY_SAVE_COMPLETE' })
       );
-      R2D.scene.updateProjectUserPlan('free');
-      dispatch(setProjectPlan('free'));
       planner.scene.setIsProjectBelongToLoggedUserStatus(
         R2D.scene.getProjectUserKey() == user.getKey()
       );
@@ -504,64 +493,16 @@ const App = () => {
       if (!user.isLogged()) {
         verifyEnabledMerchantLogin();
         return;
-      } else if (!planner.scene.wasSaved()) {
-        if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-          dispatch(
-            setActivePopup({
-              name: 'upgradePlan',
-              addType: 'configCreate',
-              type: 'upgradeOverLimit',
-            })
-          );
-        else {
-          if (!dataObj.projectName) {
-            dispatch(
-              setActivePopup({ name: 'setProjectName', type: 'create', addType: 'configCreate' })
-            );
-          } else {
-            saveProject(dataObj.projectName);
-          }
-        }
       } else if (
-        R2D.controller.getProjectUserKey() &&
-        R2D.controller.getProjectUserKey() != user.getKey()
+        !planner.scene.wasSaved() ||
+        (R2D.controller.getProjectUserKey() && R2D.controller.getProjectUserKey() != user.getKey())
       ) {
-        const {
-          isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
-          isTherePremiumObjectThatDontMatchUserPremiumPlan,
-          neededPlan,
-        } = getScenePlanRequirements();
-        if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
+        if (!dataObj.projectName) {
           dispatch(
-            setActivePopup({
-              name: 'upgradePlan',
-              type: 'upgradeOverLimit',
-              addType: 'configCreate',
-              addData: { plan: neededPlan },
-            })
+            setActivePopup({ name: 'setProjectName', type: 'create', addType: 'configCreate' })
           );
-        else {
-          if (
-            isTherePremiumObjectThatDontMatchUserPremiumPlan ||
-            isThereObjectsWithOwnerThatDontMatchUserPremiumPlan
-          )
-            dispatch(
-              setActivePopup({
-                name: 'upgradePlan',
-                type: 'createNewPremiumProject',
-                addType: 'configCreate',
-                addData: { plan: neededPlan },
-              })
-            );
-          else {
-            if (!dataObj.projectName) {
-              dispatch(
-                setActivePopup({ name: 'setProjectName', type: 'create', addType: 'configCreate' })
-              );
-            } else {
-              saveProject(dataObj.projectName);
-            }
-          }
+        } else {
+          saveProject(dataObj.projectName);
         }
       } else {
         dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
@@ -597,40 +538,25 @@ const App = () => {
       }
     } else if (dataObj.action == 'rename_project') {
       if (!planner.scene.wasSaved() || R2D.controller.getProjectUserKey() != user.getKey()) {
-        if (
-          user.data.maxProjects > 0 &&
-          user.data.projectCount >= user.data.maxProjects &&
-          !isProOptionEnabled
-        )
-          dispatch(setActivePopup({ name: 'upgradePlan' }));
-        else
-          dispatch(
-            setActivePopup({
-              name: 'confirm',
-              type: 'project_save_before_rename',
-              addType: 'configRename',
-            })
-          );
+        dispatch(
+          setActivePopup({
+            name: 'confirm',
+            type: 'project_save_before_rename',
+            addType: 'configRename',
+          })
+        );
       } else {
         dispatch(
           setActivePopup({ name: 'setProjectName', type: 'rename', addType: 'configRename' })
         );
       }
     } else if (dataObj.action == 'new_project') {
-      if (
-        user.data.maxProjects > 0 &&
-        user.data.projectCount >= user.data.maxProjects &&
-        !isProOptionEnabled
-      )
-        dispatch(setActivePopup({ name: 'upgradePlan' }));
-      else {
-        if (planner.scene.wasChanged()) {
-          dispatch(setActivePopup({ name: 'saveBefore', type: 'createNew' }));
-        } else {
-          planner.scene.clearSceneAutoSaveStorage();
-          window.history.replaceState(null, null, createProjectUrl(''));
-          window.location.reload();
-        }
+      if (planner.scene.wasChanged()) {
+        dispatch(setActivePopup({ name: 'saveBefore', type: 'createNew' }));
+      } else {
+        planner.scene.clearSceneAutoSaveStorage();
+        window.history.replaceState(null, null, createProjectUrl(''));
+        window.location.reload();
       }
     } else if (dataObj.action == 'clear_project') {
       if (planner.scene.wasChanged) {
@@ -640,92 +566,60 @@ const App = () => {
       if (!user.isLogged()) {
         verifyEnabledMerchantLogin();
       } else {
-        const {
-          isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
-          isTherePremiumObjectThatDontMatchUserPremiumPlan,
-          neededPlan,
-        } = getScenePlanRequirements();
-        if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
+        if (!dataObj.projectName) {
           dispatch(
-            setActivePopup({
-              name: 'upgradePlan',
-              type: 'upgradeOverLimit',
-              addType: 'configCreate',
-              addData: { plan: neededPlan },
-            })
+            setActivePopup({ name: 'setProjectName', type: 'saveAs', addType: 'configCreate' })
           );
-        else {
-          if (
-            isTherePremiumObjectThatDontMatchUserPremiumPlan ||
-            isThereObjectsWithOwnerThatDontMatchUserPremiumPlan
-          )
-            dispatch(
-              setActivePopup({
-                name: 'upgradePlan',
-                type: 'createNewPremiumProject',
-                addType: 'configCreate',
-                addData: { plan: neededPlan },
-              })
-            );
-          else {
-            if (!dataObj.projectName) {
-              dispatch(
-                setActivePopup({ name: 'setProjectName', type: 'saveAs', addType: 'configCreate' })
-              );
+        } else {
+          if (dataObj.projectName == planner.scene.getProjectName()) {
+            const project = { name: dataObj.projectName, createNew: false };
+            const result = await planner.scene.saveProject(project);
+            if (result?.type == 'error') {
+              dispatch(updatePreloaderStatus(false));
+              showErrorToast(result?.data);
+              return;
+            }
+          } else {
+            const project = { name: dataObj.projectName, createNew: true };
+            const result = await planner.scene.saveProject(project);
+            if (result?.type == 'error') {
+              dispatch(updatePreloaderStatus(false));
+              showErrorToast(result?.data);
+              return;
+            }
+
+            const response = await user.loadProfileData();
+            if (response.type == 'error') {
+              showErrorToast(response?.data);
             } else {
-              if (dataObj.projectName == planner.scene.getProjectName()) {
-                const project = { name: dataObj.projectName, createNew: false };
-                const result = await planner.scene.saveProject(project);
-                if (result?.type == 'error') {
-                  dispatch(updatePreloaderStatus(false));
-                  showErrorToast(result?.data);
-                  return;
-                }
-              } else {
-                const project = { name: dataObj.projectName, createNew: true };
-                const result = await planner.scene.saveProject(project);
-                if (result?.type == 'error') {
-                  dispatch(updatePreloaderStatus(false));
-                  showErrorToast(result?.data);
-                  return;
-                }
-
-                const response = await user.loadProfileData();
-                if (response.type == 'error') {
-                  showErrorToast(response?.data);
-                } else {
-                  dispatch(setProfileData(response));
-                }
-              }
-
-              dispatch(
-                setActivePopup({
-                  name: 'completeMessage',
-                  positionX: 'left',
-                  data: 'NOTIFY_SAVE_COMPLETE',
-                })
-              );
-              R2D.scene.updateProjectUserPlan('free');
-              dispatch(setProjectPlan('free'));
-              planner.scene.setIsProjectBelongToLoggedUserStatus(
-                R2D.scene.getProjectUserKey() == user.getKey()
-              );
-              dispatch(
-                updateIsProjectBelongToLoggedUser(R2D.scene.getProjectUserKey() == user.getKey())
-              );
-
-              R2D.postMessageToParent(
-                JSON.stringify({
-                  action: 'project_saved',
-                  data: {
-                    id: R2D.scene.getProjectId(),
-                    name: planner.scene.getProjectName(),
-                    hash: R2D.scene.getProjectHash(),
-                  },
-                })
-              );
+              dispatch(setProfileData(response));
             }
           }
+
+          dispatch(
+            setActivePopup({
+              name: 'completeMessage',
+              positionX: 'left',
+              data: 'NOTIFY_SAVE_COMPLETE',
+            })
+          );
+          planner.scene.setIsProjectBelongToLoggedUserStatus(
+            R2D.scene.getProjectUserKey() == user.getKey()
+          );
+          dispatch(
+            updateIsProjectBelongToLoggedUser(R2D.scene.getProjectUserKey() == user.getKey())
+          );
+
+          R2D.postMessageToParent(
+            JSON.stringify({
+              action: 'project_saved',
+              data: {
+                id: R2D.scene.getProjectId(),
+                name: planner.scene.getProjectName(),
+                hash: R2D.scene.getProjectHash(),
+              },
+            })
+          );
         }
       }
     } else if (dataObj.action == 'export_project') {
@@ -739,44 +633,15 @@ const App = () => {
         showErrorToast('TEXT_EXPORT_SAVE_BEFORE');
         return;
       } else if (dataObj.exportType) {
-        if (
-          user.data.plan == 'pro' ||
-          isProOptionEnabled ||
-          (isProjectBelongToLoggedUser && userProjectActive.plan == 'pro')
-        ) {
-          if (dataObj.exportType == 'pdf')
-            dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
-          else
-            dispatch(
-              setActivePopup({
-                name: 'export3DProjectPopup',
-                type: 'download',
-                data: dataObj.exportType,
-              })
-            );
-        } else {
-          if (dataObj.exportType == 'pdf') {
-            if (
-              user.data.plan == 'basic' ||
-              (isProjectBelongToLoggedUser && userProjectActive.plan == 'basic')
-            )
-              dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
-            else {
-              if (isProOptionEnabled) {
-                verifyEnabledMerchantLogin();
-              } else {
-                dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-              }
-            }
-          } else
-            dispatch(
-              setActivePopup({
-                name: 'export3DProjectPopup',
-                type: 'download',
-                data: dataObj.exportType,
-              })
-            );
-        }
+        if (dataObj.exportType == 'pdf') dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
+        else
+          dispatch(
+            setActivePopup({
+              name: 'export3DProjectPopup',
+              type: 'download',
+              data: dataObj.exportType,
+            })
+          );
       } else dispatch(setActivePopup({ name: 'exportPopup' }));
     } else if (dataObj.action == 'open_renders') {
       if (!user.isLogged()) {
@@ -987,7 +852,7 @@ const App = () => {
     dispatch(setActiveProjectName(e.data.name));
   };
 
-  const pastePremiumProductError = (e) => {
+  const pasteProductError = (e) => {
     showErrorToast(e?.data?.text);
   };
 
@@ -1159,10 +1024,7 @@ const App = () => {
         onlyViewProjectStatusUpdate
       );
       planner.apiScene.addEventListener(planner.apiScene.UPDATE_PROJECT_NAME, updateProjectName);
-      planner.apiScene.addEventListener(
-        planner.apiScene.PASTE_PREMIUM_PRODUCT_ERROR,
-        pastePremiumProductError
-      );
+      planner.apiScene.addEventListener(planner.apiScene.PASTE_PRODUCT_ERROR, pasteProductError);
       planner.apiScene.addEventListener(planner.apiScene.QUICK_PANEL_SHOW, quickPanelShow);
       planner.apiScene.addEventListener(planner.apiScene.QUICK_PANEL_HIDE, quickPanelHide);
       planner.apiScene.addEventListener(planner.apiScene.SHOW_ALERT_POPUP, onShowAlertPopup);
@@ -1241,42 +1103,6 @@ const App = () => {
         if (currLanguage?.code != lang) {
           if (!languages.some((i) => i.code == lang)) lang = 'en';
           await changeLanguage(lang);
-        }
-      }
-
-      if (window.location.search.match('action=buy&')) {
-        const type = window.location.search
-          .replace('?', '')
-          .split('&')
-          .find((i) => ~i.indexOf('type'))
-          .split('=')[1];
-        const plan = window.location.search
-          .replace('?', '')
-          .split('&')
-          .find((i) => ~i.indexOf('plan'))
-          .split('=')[1];
-        showStartPopup = false;
-        if (type == 'user') {
-          const time = window.location.search
-            .replace('?', '')
-            .split('&')
-            .find((i) => ~i.indexOf('time'))
-            .split('=')[1];
-
-          if (user.data.plan == 'pro' || (user.data.plan == 'basic' && plan == 'basic')) {
-            window.history.replaceState(null, null, createProjectUrl(''));
-          } else {
-            let url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_PAY_FORM);
-            const selectedPlanId =
-              R2D.RECURRING_PLANS[plan][time == 'month' ? 1 : time == 'year' ? 12 : 1];
-            url = url.includes('?')
-              ? url + '&plan_recurring_id=' + selectedPlanId
-              : url + '?plan_recurring_id=' + selectedPlanId;
-            url += '&lang=' + currLanguage.code;
-            url += '&token=' + R2D.token;
-            dispatch(setActivePopup({ name: 'payPro', data: url }));
-            window.history.replaceState(null, null, createProjectUrl(''));
-          }
         }
       }
 
@@ -1408,10 +1234,7 @@ const App = () => {
         onlyViewProjectStatusUpdate
       );
       planner.apiScene.removeEventListener(planner.apiScene.UPDATE_PROJECT_NAME, updateProjectName);
-      planner.apiScene.removeEventListener(
-        planner.apiScene.PASTE_PREMIUM_PRODUCT_ERROR,
-        pastePremiumProductError
-      );
+      planner.apiScene.removeEventListener(planner.apiScene.PASTE_PRODUCT_ERROR, pasteProductError);
       planner.apiScene.removeEventListener(planner.apiScene.SHOW_ALERT_POPUP, onShowAlertPopup);
 
       planner.apiConstr.removeEventListener(planner.apiConstr.USE_TAB_TIP_START, useTabTipStart);

@@ -6,7 +6,6 @@ import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../initR2D';
-import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
   changeActiveControlPanelMode,
   selectActiveControlPanelModeData,
@@ -18,13 +17,7 @@ import {
   showQuickPanelVisible,
 } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
-import {
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
-import Lock from '../../../../../common/Lock';
 import CloseModeBtn from '../common/CloseModeBtn';
-import { useMerchantLogin } from '../../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   plannerWallsCont: {
@@ -173,20 +166,11 @@ const useStyle = createUseStyles({
       background: '#8fc32d',
     },
   },
-  planner_lock_img: {
-    '& > rect:first-child': {
-      fill: 'transparent',
-    },
-  },
 });
 
 const Main = (props) => {
   const dispatch = useDispatch();
-  const verifyEnabledMerchantLogin = useMerchantLogin();
 
-  const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
-  const userProjectActive = useSelector(selectUserProjectActive);
-  const userData = useSelector(selectUserProfileData);
   const translation = useTranslation();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
@@ -228,40 +212,28 @@ const Main = (props) => {
   };
 
   const onSave = () => {
-    if (
-      userData.plan == 'pro' ||
-      userData.plan == 'basic' ||
-      (isProjectBelongToLoggedUser &&
-        (userProjectActive.plan == 'pro' || userProjectActive.plan == 'basic'))
-    ) {
-      if (!planner.mih()._scene.currentView3DObject) return;
-      const dw = planner.mih()._scene.currentView3DObject.getConstructorElementData();
-      const configData = tileConfigurator.getData();
-      if (configData.areas.length == 1) {
-        dw.configData = null;
-      } else {
-        dw.configData = configData;
-      }
-
-      dw.changed = true;
-      dw.build3D();
-      dw.dispatchUpdate();
-      R2D.scene.currentPartNum = wasChanged ? 1 : -1;
-      R2D.scene.history.saveState();
-
-      tileConfigurator.destroy();
-      tileConfigurator = null;
-
-      planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
-      dispatch(updateControlPanelStatus(true));
-      dispatch(showQuickPanelVisible({ name: 'helper' }));
-      dispatch(changeActiveControlPanelMode({ mode: 'selectedWall', data: { type: 'main' } }));
+    if (!planner.mih()._scene.currentView3DObject) return;
+    const dw = planner.mih()._scene.currentView3DObject.getConstructorElementData();
+    const configData = tileConfigurator.getData();
+    if (configData.areas.length == 1) {
+      dw.configData = null;
     } else {
-      R2D.OPTIONS.PRO_PLAN
-        ? verifyEnabledMerchantLogin()
-        : dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-      return;
+      dw.configData = configData;
     }
+
+    dw.changed = true;
+    dw.build3D();
+    dw.dispatchUpdate();
+    R2D.scene.currentPartNum = wasChanged ? 1 : -1;
+    R2D.scene.history.saveState();
+
+    tileConfigurator.destroy();
+    tileConfigurator = null;
+
+    planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+    dispatch(updateControlPanelStatus(true));
+    dispatch(showQuickPanelVisible({ name: 'helper' }));
+    dispatch(changeActiveControlPanelMode({ mode: 'selectedWall', data: { type: 'main' } }));
   };
 
   const onCancel = (e) => {
@@ -337,37 +309,12 @@ const Main = (props) => {
               ' ' +
               classes.plannerWallsWrap_button_save +
               ' ' +
-              (userData.plan == 'pro' ||
-              userData.plan == 'basic' ||
-              (isProjectBelongToLoggedUser &&
-                (userProjectActive.plan == 'pro' || userProjectActive.plan == 'basic'))
-                ? classes.plannerWallsWrap_button_save_ready
-                : '')
+              classes.plannerWallsWrap_button_save_ready
             }
             onClick={onSave}
           >
-            {userData?.plan == 'pro' ||
-            userData.plan == 'basic' ||
-            (isProjectBelongToLoggedUser &&
-              (userProjectActive.plan == 'pro' || userProjectActive.plan == 'basic')) ? (
-              <IconCheck size={18} color="#2A3435" />
-            ) : null}
+            <IconCheck size={18} color="#2A3435" />
             <p>{translation['UPLOAD_MODEL_TEXT_SAVE']}</p>
-            {userData.plan == 'pro' ||
-            userData.plan == 'basic' ||
-            (isProjectBelongToLoggedUser &&
-              (userProjectActive.plan == 'pro' || userProjectActive.plan == 'basic')) ? null : (
-              <Lock
-                additionalClass={classes.planner_lock}
-                additionalImgClass={classes.planner_lock_img}
-                tipPositionX={'right'}
-                tipPositionY={'top'}
-                upgradeBasic={true}
-                upgradePro={true}
-                textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                parentClass={classes.plannerWallsWrap_button}
-              />
-            )}
           </div>
         </div>
       </div>

@@ -1,13 +1,10 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
-import { IconX } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
-import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
   controlPanelHistoryAdd,
   controlPanelHistoryScrollSave,
@@ -16,10 +13,6 @@ import {
   selectDynamicPanelCatalogPreviewViewType,
   updateDynamicPanelCatalogPreviewViewType,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import {
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
 import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
@@ -46,59 +39,6 @@ const useStyle = createUseStyles({
     background: '#fff',
     borderTop: '1px solid #C6C4C4',
     // width: 'calc(100% + 8px)',
-  },
-  planner_catalog_pro_plashka: {
-    background: '#EBEBEB',
-    padding: '12px 20px 15px 13px',
-    color: '#000',
-    fontSize: 14,
-    lineHeight: '20px',
-    position: 'relative',
-    '& strong': {
-      fontWeight: 700,
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 9,
-      padding: '5px 20px 5px 8px',
-      lineHeight: '11px',
-    },
-  },
-  planner_catalog_pro_plashka_close: {
-    position: 'absolute',
-    top: 7,
-    right: 5,
-    cursor: 'pointer',
-    '&:hover': {
-      '& path': {
-        fill: '#000',
-      },
-    },
-    '@media screen and (max-width: 950px)': {
-      top: 5,
-    },
-  },
-  planner_catalog_pro_plashka_close_icon: {
-    width: '100%',
-    height: 'auto',
-    '& path': {
-      transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
-  },
-  planner_catalog_pro_plashka_pro: {
-    background: '#FFB400',
-    borderRadius: 3,
-    fontFamily: 'RobotoCondensed-Regular',
-    fontSize: 13,
-    color: '#292A27',
-    padding: '2px 3px',
-    marginLeft: 5,
-    textTransform: 'uppercase',
-    display: 'inline-block',
-    lineHeight: '1.4',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 10,
-      lineHeight: '1',
-    },
   },
   planner_catalog_items: {
     height: '100%',
@@ -285,11 +225,6 @@ const useStyle = createUseStyles({
 });
 
 const Catalog = (props) => {
-  const translation = useTranslation();
-  const userData = useSelector(selectUserProfileData);
-  const userProjectActive = useSelector(selectUserProjectActive);
-  const [isProOptionEnabled, setIsProOptionEnabled] = useState(R2D.OPTIONS.PRO_PLAN);
-  const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
   const dispatch = useDispatch();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const dynamicPanelCatalogPreviewViewType = useSelector(selectDynamicPanelCatalogPreviewViewType);
@@ -303,7 +238,6 @@ const Catalog = (props) => {
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
   const [catalogArray, setCatalogArray] = useState([]);
-  const [proPlashka, setProPlashka] = useState(false);
   const [savedScroll, setSavedScroll] = useState(lastHistoryElem?.lastSavedScroll);
 
   const classes = useStyle();
@@ -378,11 +312,6 @@ const Catalog = (props) => {
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
 
-  const closeProPlashka = () => {
-    setProPlashka(false);
-    R2D.Storage.save('r2d_pro_plashka_in_catalog', true);
-  };
-
   useEffect(() => {
     setStyleAnimation({ transform: 'translateX(0%)' });
     if (isCurrDeviceAPhone) {
@@ -430,18 +359,6 @@ const Catalog = (props) => {
     setCatalogArray(arrayList);
   }, [lastHistoryElemData, dynamicPanelCatalogPreviewViewType]);
 
-  useEffect(() => {
-    if (!lastHistoryElem || !lastHistoryElem.tags) {
-      return;
-    }
-    const hasProTag = lastHistoryElem.tags.map((i) => i.trim()).includes('r2d_subscription_pro');
-    const isPlashkaNotStored = !R2D.Storage.load('r2d_pro_plashka_in_catalog');
-
-    if (hasProTag && isPlashkaNotStored) {
-      setProPlashka(true);
-    }
-  }, [lastHistoryElem, R2D.Storage.load]);
-
   return (
     <div style={styleAnimation} ref={mainDiv} className={classes.planner_catalog_cont}>
       <Navigation
@@ -451,32 +368,7 @@ const Catalog = (props) => {
 
       <div className={classes.catalog_wr}>
         <SimpleBar style={{ height: '100%' }} ref={catalogMain} autoHide={false} forceVisible="y">
-          <div className={classes.planner_catalog_items}>
-            {proPlashka &&
-              !(
-                userData?.plan === 'pro' ||
-                (isProjectBelongToLoggedUser && userProjectActive.plan === 'pro') ||
-                isProOptionEnabled
-              ) && (
-                <div className={classes.planner_catalog_pro_plashka}>
-                  <div
-                    className={classes.planner_catalog_pro_plashka_close}
-                    onClick={closeProPlashka}
-                  >
-                    <IconX
-                      size={24}
-                      color="#2F2F2F"
-                      className={classes.planner_catalog_pro_plashka_close_icon}
-                    />
-                  </div>
-                  {translation['TEXT_MODELS_FOR_THE_SECTION']} "{lastHistoryElem.name}"{' '}
-                  {translation['TEXT_AVAILABLE_ONLE_WITH_SUBSCRIPTION']}
-                  <div className={classes.planner_catalog_pro_plashka_pro}>pro</div>
-                </div>
-              )}
-
-            {catalogArray}
-          </div>
+          <div className={classes.planner_catalog_items}>{catalogArray}</div>
         </SimpleBar>
       </div>
     </div>

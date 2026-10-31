@@ -1,19 +1,13 @@
-import { IconLockFilled } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import { selectIsProjectBelongToLoggedUser } from '../../../redux/features/common/commonSlice';
 import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
-import {
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../redux/features/user/userSlice';
 import { setActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
 import Radio from '../../../shared-components/inputs/radio';
 import DefaultModal from '../../../shared-components/modals/default';
@@ -186,62 +180,11 @@ const useStyle = createUseStyles({
       minWidth: 88,
     },
   },
-  planner_popup_export_button_update: {
-    background: '#fff',
-    color: '#A7A7A7',
-    border: '1px solid #C8C8C8',
-    pointerEvents: 'none',
-  },
-  planner_popup_export_bottom_error_text: {
-    fontSize: 14,
-    lineHeight: '16.41px',
-    color: '#292A27',
-    marginBottom: 5,
-    display: 'flex',
-    alignItems: 'center',
-
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-    },
-  },
-  planner_popup_export_bottom_error_basic: {
-    background: '#BADCFF',
-    borderRadius: 3,
-    fontFamily: 'RobotoCondensed-Regular',
-    fontSize: 13,
-    color: '#292A27',
-    padding: '2px 3px',
-    marginLeft: 5,
-    marginRight: 5,
-    textTransform: 'uppercase',
-  },
-  planner_popup_export_bottom_error_pro: {
-    background: '#FFB400',
-    borderRadius: 3,
-    fontFamily: 'RobotoCondensed-Regular',
-    fontSize: 13,
-    color: '#292A27',
-    padding: '2px 3px',
-    marginLeft: 5,
-    textTransform: 'uppercase',
-  },
-  planner_popup_export_bottom_error_upgrate: {
-    color: '#66ACF4',
-    textDecoration: 'underline',
-    fontSize: 13,
-    cursor: 'pointer',
-    marginLeft: 6,
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:hover': {
-      textDecoration: 'none',
-    },
-  },
 });
 
 const ExportPopup = (props) => {
   const dispatch = useDispatch();
   const translation = useTranslation();
-  const userData = useSelector(selectUserProfileData);
   const popups = useSelector(selectPopups);
   const [currentFormat, setCurrentFormat] = useState(null);
   const formats = [
@@ -258,12 +201,6 @@ const ExportPopup = (props) => {
     // { format: 'jpg'}
   ];
   const [currentFormat2D, setCurrentFormat2D] = useState(null);
-
-  const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
-
-  const [needPlan, setNeedPlan] = useState(null);
-
-  const userProjectActive = useSelector(selectUserProjectActive);
 
   const classes = useStyle();
   const [animPopupClass, setAnimPopupClass] = useState(false);
@@ -297,38 +234,6 @@ const ExportPopup = (props) => {
     setAnimPopupClass(false);
     setTimeout(() => dispatch(closeActivePopup({ name: 'exportPopup' })), 500);
   };
-
-  useEffect(() => {
-    if (
-      userData.plan == 'pro' ||
-      (isProjectBelongToLoggedUser && userProjectActive.plan == 'pro')
-    ) {
-      setNeedPlan(null);
-    } else {
-      if (currentFormat !== null) {
-        setNeedPlan('pro');
-      }
-      if (currentFormat2D !== null) {
-        if (
-          userData.plan == 'basic' ||
-          (isProjectBelongToLoggedUser && userProjectActive.plan == 'basic')
-        ) {
-          setNeedPlan(null);
-        } else {
-          setNeedPlan('pro basic');
-        }
-      }
-    }
-  }, [currentFormat, currentFormat2D]);
-
-  useEffect(() => {
-    if (currentFormat2D === null && currentFormat === null) return;
-    if (userData.plan == 'pro' || (userData.plan == 'basic' && currentFormat2D !== null)) {
-      setNeedPlan(null);
-    } else {
-      setNeedPlan(translation[currentFormat !== null ? 'pro' : 'pro basic']);
-    }
-  }, [userData]);
 
   useEffect(() => {
     const timer = setTimeout(() => setAnimPopupClass(true), 0);
@@ -415,43 +320,12 @@ const ExportPopup = (props) => {
           </div>
         </div>
         <div className={classes.planner_popup_export_bottom}>
-          {needPlan == 'pro' ? (
-            <div className={classes.planner_popup_export_bottom_error_text}>
-              {translation['EXPORT_ERROR_AVAIL_PRO']}
-              <div className={classes.planner_popup_export_bottom_error_pro}>pro</div>
-              <div
-                className={classes.planner_popup_export_bottom_error_upgrate}
-                onClick={(e) => dispatch(setActivePopup({ name: 'payPro', type: 'user' }))}
-              >
-                {translation['TEXT_UPDATE']}
-              </div>
-            </div>
-          ) : needPlan == 'pro basic' ? (
-            <div className={classes.planner_popup_export_bottom_error_text}>
-              {translation['EXPORT_ERROR_AVAIL_PRO']}
-              <div className={classes.planner_popup_export_bottom_error_basic}>basic</div>
-              {translation['TEXT_OR']}
-              <div className={classes.planner_popup_export_bottom_error_pro}>pro</div>
-              <div
-                className={classes.planner_popup_export_bottom_error_upgrate}
-                onClick={(e) => dispatch(setActivePopup({ name: 'payPro', type: 'user' }))}
-              >
-                {translation['TEXT_UPDATE']}
-              </div>
-            </div>
-          ) : null}
-
           <button
-            className={
-              classes.planner_popup_export_button +
-              ' ' +
-              (needPlan != null ? classes.planner_popup_export_button_update : '')
-            }
+            className={classes.planner_popup_export_button}
             style={currentFormat == null && currentFormat2D == null ? { visibility: 'hidden' } : {}}
             onClick={onContinue}
           >
             {translation['BUTTON_OK']}
-            {needPlan != null ? <IconLockFilled size={14} color="#A7A7A7" /> : null}
           </button>
         </div>
       </div>

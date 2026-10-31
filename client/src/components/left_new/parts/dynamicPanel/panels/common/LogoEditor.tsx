@@ -338,7 +338,6 @@ const LogoEditor = (props) => {
             <div className={classes.planner_logoMesh_prod_item_img_wr}>
               <LogoComponent
                 onCustomClick={onUploadLogoMesh}
-                lockMaterialStatus={false}
                 previewSrc={activeMeshLogo?.src}
                 onCopyPaste={{ paste: onPasteLogoMesh, index: activeLogoIndex, statusCopy: true }}
               />

@@ -27,7 +27,6 @@ import {
   selectUserProjectActive,
 } from '../../../../../../redux/features/user/userSlice';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
-import Lock from '../../../../../common/Lock';
 import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
@@ -718,83 +717,6 @@ const useStyle = createUseStyles({
     width: '100%',
     transition: 'all 1s cubic-bezier(0.19, 1, 0.22, 1)',
   },
-  upgrate_catalog_btn: {
-    background: '#DDEEFF',
-    padding: '6px 15px 8px',
-    borderRadius: 7,
-    display: 'grid',
-    gridTemplateColumns: '32px auto',
-    gridGap: 11,
-    position: 'absolute',
-    bottom: 7,
-    left: 7,
-    right: 15,
-    cursor: 'pointer',
-    alignItems: 'center',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-
-    '&:hover': {
-      background: '#95c3f3',
-      '& $upgrate_catalog_icon': {
-        animation: '$shake 0.5s',
-      },
-    },
-    '@media screen and (max-width: 950px)': {
-      gridTemplateColumns: '30px auto',
-      gridGap: 8,
-      padding: 5,
-    },
-  },
-  upgrate_catalog_btn_pro: {
-    background: '#FFD162',
-    '& $upgrate_catalog_btn_gradient': {
-      '&:before': {
-        background: '#FFB400',
-      },
-    },
-    '&:hover': {
-      background: '#fdcb54',
-    },
-  },
-  upgrate_catalog_btn_gradient: {
-    position: 'absolute',
-    height: '100%',
-    width: '100%',
-    borderRadius: 7,
-    top: 0,
-    left: 0,
-    overflow: 'hidden',
-    '&:before': {
-      content: '""',
-      position: 'absolute',
-      height: '100%',
-      width: '54px',
-      background: '#BADCFF',
-      top: 0,
-      left: '-21px',
-      transform: 'skewX(31deg)',
-    },
-  },
-  upgrate_catalog_icon_wr: {
-    width: '100%',
-    height: 32,
-    background: '#fff',
-    borderRadius: '50%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    position: 'relative',
-    '@media screen and (max-width: 950px)': {
-      height: 30,
-    },
-  },
-  upgrate_catalog_icon: {
-    width: 14,
-    height: 'auto',
-    '@media screen and (max-width: 950px)': {
-      width: 13,
-    },
-  },
   '@keyframes shake': {
     '0%': { transform: 'rotate(0deg)' },
     '25%': { transform: 'rotate(-5deg)' },
@@ -802,66 +724,7 @@ const useStyle = createUseStyles({
     '75%': { transform: 'rotate(-5deg)' },
     '100%': { transform: 'rotate(0deg)' },
   },
-  upgrate_catalog_text: {
-    color: '#292A27',
-    fontSize: 15,
-    lineHeight: '1.2',
-    fontFamily: 'RobotoCondensed-Regular',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-    },
-  },
-  upgrate_catalog_text_basic: {
-    background: '#BADCFF',
-    borderRadius: 3,
-    fontFamily: 'RobotoCondensed-Regular',
-    fontSize: 13,
-    color: '#292A27',
-    padding: '2px 3px',
-    marginLeft: 5,
-    marginRight: 5,
-    textTransform: 'uppercase',
-    display: 'inline-block',
-  },
-  upgrate_catalog_text_pro: {
-    background: '#FFB400',
-    borderRadius: 3,
-    fontFamily: 'RobotoCondensed-Regular',
-    fontSize: 13,
-    color: '#292A27',
-    padding: '2px 3px',
-    marginLeft: 5,
-    textTransform: 'uppercase',
-    display: 'inline-block',
-  },
-  heart_container: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    width: '100%',
-    height: '100%',
-    pointerEvents: 'none',
-    zIndex: 2,
-  },
 
-  heart: {
-    position: 'absolute',
-    bottom: 0,
-    animationName: '$floatUp',
-    animationFillMode: 'forwards',
-    opacity: 0,
-    userSelect: 'none',
-    pointerEvents: 'none',
-    background: '#fff',
-    borderRadius: '50%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    overflow: 'hidden',
-    '& img': {
-      width: '80%',
-    },
-  },
   '@keyframes floatUp': {
     '0%': {
       transform: 'translateY(0) scale(0.8)',
@@ -900,8 +763,6 @@ const Products = (props) => {
 
   const [lastHistoryElemData, setLastHistoryElemData] = useState(null);
   const [preloaderStatus, setPreloaderStatus] = useState(true);
-  const [proPlashka, setProPlashka] = useState(false);
-  const [showBottomUpgradeTip, setShowBottomUpgradeTip] = useState(false);
 
   const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
   const [styleAnimation, setStyleAnimation] = useState(
@@ -911,7 +772,6 @@ const Products = (props) => {
   const userProjectActive = useSelector(selectUserProjectActive);
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
-  const isProEnabled = R2D.config.data.enable_pro;
   let borderTimeoutKey;
 
   let isObjLoaded = false;
@@ -935,15 +795,9 @@ const Products = (props) => {
 
   const classes = useStyle();
 
-  const [hearts, setHearts] = useState([]);
-  const [heartImages, setHeartImages] = useState([]);
-  const heartsRef = useRef(null);
-  const heartIntervalRef = useRef(null);
-  const imageIndexRef = useRef(0);
-
-  const mouseEnter = async (event, data, isObjectAccessible) => {
+  const mouseEnter = async (event, data) => {
     if (dynamicPanelPreviewViewType == 'small') {
-      if (mouseDownOnObj || isCurrDeviceAPhone || !isObjectAccessible) return;
+      if (mouseDownOnObj || isCurrDeviceAPhone) return;
       document.querySelector('.' + classes.product_hover) &&
         document.querySelector('.' + classes.product_hover).remove();
 
@@ -1024,14 +878,13 @@ const Products = (props) => {
   let timer = null;
   let previewObj = null;
   let currentMouseDownElem = null;
-  let plannerCatalogElem, currentProductAccessibilityStatus, currentOverlayCoords, dragTimeout;
+  let plannerCatalogElem, currentOverlayCoords, dragTimeout;
 
   // Drag from catalog for models
-  const onMouseDownProduct = (e, elem, isObjectAccessible) => {
+  const onMouseDownProduct = (e, elem) => {
     currentMouseDownElem = elem;
     document.addEventListener('mouseup', onObjectMouseUp);
     document.addEventListener('touchend', onObjectMouseUp);
-    currentProductAccessibilityStatus = isObjectAccessible;
     if (props.type == 'replace') return;
     if (document.querySelector('.' + classes.prod_elem_wrap))
       document.querySelector('.' + classes.prod_elem_wrap).style.touchAction = 'auto';
@@ -1104,9 +957,6 @@ const Products = (props) => {
         R2D.scene.currentView3DObject.getProductId()
       )
         return;
-      if (!currentProductAccessibilityStatus) {
-        return dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-      }
       const result = await R2D.scene.replaceCurrentObject(
         currentMouseDownElem.id,
         {},
@@ -1145,14 +995,6 @@ const Products = (props) => {
             R2D.scene.remove(sceneObjectToDelete);
             R2D.scene.history.removeUndoState();
           }
-        } else {
-          if (!currentProductAccessibilityStatus) {
-            dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-            if (sceneObjectToDelete) {
-              R2D.scene.remove(sceneObjectToDelete);
-              R2D.scene.history.removeUndoState();
-            }
-          }
         }
         R2D.mouseInteractionHelper.stateDraggingProdFromCatalog.view3DObject = null;
       }
@@ -1166,21 +1008,15 @@ const Products = (props) => {
   };
 
   // Drag from catalog for materials
-  const onMouseDownMaterial = (e, elem, isObjectAccessible) => {
+  const onMouseDownMaterial = (e, elem) => {
     const id = elem.id;
     document.addEventListener('mousemove', onMaterialMove);
     document.addEventListener('mouseup', onMaterialMouseUp);
-    currentProductAccessibilityStatus = isObjectAccessible;
     timer = Date.now();
     plannerCatalogElem = e.currentTarget.closest(`.${classes.prod_item}`);
     currentMouseDownElem = elem;
     dragTimeout = setTimeout(() => {
       e.nativeEvent.button == 0 ? planner.scene.dragProductFromCatalog(id) : null;
-      if (
-        (elem.isOwner && userData.plan == 'free' && userProjectActive.plan == 'free') ||
-        !currentProductAccessibilityStatus
-      )
-        R2D.mouseInteractionHelper.stateDraggingMaterial.isPlaceMaterialAllowed = false;
     }, 100);
   };
 
@@ -1199,9 +1035,7 @@ const Products = (props) => {
       if (e.clientX < R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels()) {
         R2D.mouseInteractionHelper.stateDraggingMaterial.isPlaceMaterialAllowed = false;
         planner.mih().state && planner.mih().state.mouseUp(e);
-      } else
-        !currentProductAccessibilityStatus &&
-          dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
+      }
     }
   };
 
@@ -1311,16 +1145,7 @@ const Products = (props) => {
       const customModelsList = [];
       lastHistoryElemData.forEach((elem) => {
         const isInFavorites = userFavorites?.find((i) => i?.id == elem.id);
-        let isObjectAccessible;
-        if ((elem.isOwner || elem.material_owner) && isProEnabled) {
-          isObjectAccessible =
-            elem.type == R2D.ProductType.MATERIAL
-              ? userData.plan != 'free' || userProjectActive.plan != 'free'
-              : userData.plan == 'pro' ||
-                userProjectActive.plan == 'pro' ||
-                ((userData.plan == 'basic' || userProjectActive.plan == 'basic') &&
-                  (elem.type == R2D.ProductType.POSTER || elem.type == R2D.ProductType.CARPET)) ||
-                R2D.OPTIONS.PRO_PLAN;
+        if (elem.isOwner || elem.material_owner) {
           customModelsList.push(
             <div
               className={
@@ -1345,7 +1170,7 @@ const Products = (props) => {
                   className={'lazyload'}
                 />
 
-                {elem.type == R2D.ProductType.MATERIAL && isObjectAccessible ? (
+                {elem.type == R2D.ProductType.MATERIAL ? (
                   <div className={classes.prod_item_dop_btns_wr}>
                     <div
                       className={classes.prod_item_btn_copy}
@@ -1372,31 +1197,20 @@ const Products = (props) => {
                 >
                   <FavoriteStarIcon />
                 </div>
-                {isObjectAccessible ? (
-                  <div
-                    className={classes.prod_item_custom_delete_btn}
-                    onClick={(e) =>
-                      dispatch(
-                        setActivePopup({
-                          name: 'confirm',
-                          type: 'delete_custom_element',
-                          data: elem.id,
-                        })
-                      )
-                    }
-                  >
-                    <IconTrash size={16} color="#444" className={classes.prod_item_custom_delete} />
-                  </div>
-                ) : (
-                  <Lock
-                    additionalClass={classes.prod_item_zamok_btn}
-                    tipPositionY={'top'}
-                    tipPositionX={'right'}
-                    textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                    upgradePro={true}
-                    parentClass={classes.prod_item}
-                  />
-                )}
+                <div
+                  className={classes.prod_item_custom_delete_btn}
+                  onClick={(e) =>
+                    dispatch(
+                      setActivePopup({
+                        name: 'confirm',
+                        type: 'delete_custom_element',
+                        data: elem.id,
+                      })
+                    )
+                  }
+                >
+                  <IconTrash size={16} color="#444" className={classes.prod_item_custom_delete} />
+                </div>
                 {dynamicPanelPreviewViewType != 'big' ? (
                   <div
                     className={classes.prod_item_more_info}
@@ -1412,16 +1226,16 @@ const Products = (props) => {
                 className={classes.prod_item_overlay}
                 onMouseDown={(e) =>
                   elem.type == R2D.ProductType.MATERIAL
-                    ? onMouseDownMaterial(e, elem, isObjectAccessible)
-                    : onMouseDownProduct(e, elem, isObjectAccessible)
+                    ? onMouseDownMaterial(e, elem)
+                    : onMouseDownProduct(e, elem)
                 }
                 onTouchStart={(e) =>
                   elem.type == R2D.ProductType.MATERIAL
-                    ? onMouseDownMaterial(e, elem, isObjectAccessible)
-                    : onMouseDownProduct(e, elem, isObjectAccessible)
+                    ? onMouseDownMaterial(e, elem)
+                    : onMouseDownProduct(e, elem)
                 }
                 onMouseLeave={mouseLeave}
-                onMouseEnter={(event) => mouseEnter(event, elem, isObjectAccessible)}
+                onMouseEnter={(event) => mouseEnter(event, elem)}
               ></div>
 
               {dynamicPanelPreviewViewType != 'small' ? (
@@ -1432,22 +1246,6 @@ const Products = (props) => {
             </div>
           );
         } else {
-          isObjectAccessible =
-            elem.plan == 'free' ||
-            (elem.plan?.find &&
-              (elem.plan.find((i) => i == user.data.plan)?.length > 0 ||
-                (isProjectBelongToLoggedUser &&
-                  elem.plan.find((i) => i == userProjectActive.plan)))) ||
-            R2D.OPTIONS.PRO_PLAN;
-
-          if (
-            !R2D.OPTIONS.PRO_PLAN &&
-            elem.plan != 'free' &&
-            !elem.plan.find((i) => i == user.data.plan) &&
-            !(isProjectBelongToLoggedUser && elem.plan.find((i) => i == userProjectActive.plan))
-          )
-            setShowBottomUpgradeTip(true);
-
           const metadata = elem.metadata;
           const matchedLinkObject =
             metadata?.multilinkwithip?.data &&
@@ -1505,7 +1303,7 @@ const Products = (props) => {
                   className={'lazyload'}
                 />
 
-                {elemType == R2D.ProductType.MATERIAL && isObjectAccessible ? (
+                {elemType == R2D.ProductType.MATERIAL ? (
                   <div className={classes.prod_item_dop_btns_wr}>
                     <div
                       className={classes.prod_item_btn_copy}
@@ -1683,40 +1481,20 @@ const Products = (props) => {
                 </div>
               ) : null}
 
-              {isObjectAccessible ? null : elem.plan.includes('basic') ? (
-                <Lock
-                  additionalClass={classes.prod_item_zamok_btn}
-                  tipPositionY={'top'}
-                  tipPositionX={'right'}
-                  upgradePro={true}
-                  upgradeBasic={true}
-                  textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                  parentClass={classes.prod_item}
-                />
-              ) : elem.plan.includes('pro') ? (
-                <Lock
-                  additionalClass={classes.prod_item_zamok_btn}
-                  tipPositionY={'top'}
-                  tipPositionX={'right'}
-                  upgradePro={true}
-                  textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                  parentClass={classes.prod_item}
-                />
-              ) : null}
               <div
                 className={classes.prod_item_overlay}
                 onMouseDown={(e) =>
                   elemType == R2D.ProductType.MATERIAL
-                    ? onMouseDownMaterial(e, elem, isObjectAccessible)
-                    : onMouseDownProduct(e, elem, isObjectAccessible)
+                    ? onMouseDownMaterial(e, elem)
+                    : onMouseDownProduct(e, elem)
                 }
                 onTouchStart={(e) =>
                   elemType == R2D.ProductType.MATERIAL
-                    ? onMouseDownMaterial(e, elem, isObjectAccessible)
-                    : onMouseDownProduct(e, elem, isObjectAccessible)
+                    ? onMouseDownMaterial(e, elem)
+                    : onMouseDownProduct(e, elem)
                 }
                 onMouseLeave={mouseLeave}
-                onMouseEnter={(event) => mouseEnter(event, elem, isObjectAccessible)}
+                onMouseEnter={(event) => mouseEnter(event, elem)}
               ></div>
             </div>
           );
@@ -1746,7 +1524,6 @@ const Products = (props) => {
       planner.scene
         .categoryDataLoad(lastHistoryElem.urlList, R2D.controller.getCountry())
         .then((loadedData) => {
-          setShowBottomUpgradeTip(false);
           setLastHistoryElemData(loadedData);
         })
         .finally(() => setPreloaderStatus(false));
@@ -1757,79 +1534,7 @@ const Products = (props) => {
     if (isCurrDeviceAPhone) {
       dispatch(updateDynamicPanelPreviewViewType('medium'));
     }
-    const hasProTag = lastHistoryElem.tags?.map((i) => i.trim()).includes('r2d_subscription_pro');
-    if (hasProTag) {
-      setProPlashka(true);
-      setHeartImages([
-        '/files/products/210/21051/f2e295e2ebac1f9ede1ca0621d1c82f7.png',
-        '/files/products/649/64934/b17274c01b9b360f4d908f931b71c27b.png',
-        '/files/products/677/67745/0a71c07b4ba8e586ce6487b65312e416.png',
-        '/files/products/677/67762/bd7d51a62cea02dc196925f5a42ec997.png',
-        '/files/products/680/68035/1d74268a9f8cfc0d7cf23d87f637cf7a.png',
-        '/files/products/680/68045/42b1da863e3110476b52131077de02d3.png',
-        '/files/products/203/20354/8091e34eb88078879ec1adb87f70050e.png',
-        '/files/products/203/20347/45efe56bf139cf6562110090b93766d8.png',
-        '/files/products/208/20876/8334d0a3f5c3e660cdeb5c10e2fbdbe8.png',
-        '/files/products/677/67729/06d645a2678d231746d7121f63e14b1d.png',
-        '/files/products/680/68041/8a59dfdba684b0350daecdf976cea01d.png',
-        '/files/products/680/68050/1ad0e9ec51eaf53efa98c8e99ec3506a.png',
-      ]);
-    } else {
-      setHeartImages([
-        '/files/products/32/3270/f3c72cd17e1ebfd56c581ea24da41a90.png',
-        '/files/products/32/3270/f3c72cd17e1ebfd56c581ea24da41a90.png',
-        '/files/products/32/3273/c512a2160457f935d60152d582ab148f.png',
-        '/files/products/31/3111/0906b276b56d852a3016bc586bea54e3.png',
-        '/files/products/646/64640/2572dec9848e516bb84b501a8de7c9e1.png',
-        '/files/products/455/45552/c7df8de475e11d61403dea3e16ca7b81.png',
-        '/files/products/646/64673/91b377eb890da5e053f551ee4fc53bb2.png',
-        '/files/products/6/637/f0f2f3dadb6df219110d42402ecd15df.png',
-        '/files/products/646/64689/6849d568c054ac79d6f2b5a12717c398.png',
-        '/files/products/33/3328/1708766ced8e61d42557052cf8516459.png',
-        '/files/products/526/52685/a325e33b78abbe83a8f48e100b3cdf94.png',
-        '/files/products/22/2201/e43a2ec838a8d938d021d3afb72cacde.png',
-        '/files/products/25/2531/b8081b7afba37153bf1ff6d735446b54.png',
-        '/files/products/24/2437/5d9e0bf9a4e24f060fe11ca17bf04380.png',
-        '/files/products/45/4534/b381dad308db8df35a9612f577ae055b.png',
-        '/files/products/9/986/3f7d52ae928cbb97f2174a11cec5d010.png',
-        '/files/products/6/601/3b8b3e74173a78fdb10edf32db7c7ac1.png',
-        '/files/products/7/711/ba2fb96d86de2930f87e29f105c24bc9.png',
-        '/files/products/645/64523/4b8fed5461e722671b688742f308b21e.png',
-        '/files/products/646/64619/299ed778b5ae60b43fe1e56ab8a431d3.png',
-      ]);
-    }
   }, []);
-
-  const startHearts = () => {
-    if (heartIntervalRef.current || !heartsRef.current) return;
-
-    const btnWidth = heartsRef.current.offsetWidth;
-
-    heartIntervalRef.current = setInterval(() => {
-      const id = Date.now() + Math.random();
-
-      const padding = 50;
-      const leftInPx = padding + Math.random() * (btnWidth - padding * 2);
-      const size = 40 + Math.random() * 40;
-      const duration = 1.5 + Math.random();
-      const randomImage = heartImages[Math.floor(Math.random() * heartImages.length)];
-
-      const currentImage = heartImages[imageIndexRef.current];
-
-      imageIndexRef.current = (imageIndexRef.current + 1) % heartImages.length;
-
-      setHearts((prev) => [...prev, { id, leftPx: leftInPx, size, duration, image: currentImage }]);
-
-      setTimeout(() => {
-        setHearts((prev) => prev.filter((h) => h.id !== id));
-      }, 3000);
-    }, 200);
-  };
-
-  const stopHearts = () => {
-    clearInterval(heartIntervalRef.current);
-    heartIntervalRef.current = null;
-  };
 
   return (
     <div className={classes.planner_catalog_cont} style={styleAnimation} ref={panelRef}>
@@ -1841,95 +1546,36 @@ const Products = (props) => {
       <div className={classes.catalog_wr} ref={mainDiv}>
         <SimpleBar style={{ height: '100%' }} ref={catalogMain} autoHide={false} forceVisible="y">
           <div className={classes.prod_elem_wrap}>
-            {isProEnabled ? (
-              customModelsListState && customModelsListState.length > 0 ? (
-                <div className={classes.prod_item_upload_btn_wr}>
-                  {lastHistoryElem?.privateMaterialType ? (
-                    <div
-                      className={classes.prod_item_upload_btn}
-                      onMouseUp={onCustomModelAddMouseUp}
-                    >
-                      <IconPlus
-                        size={25}
-                        color="#2E3839"
-                        className={classes.prod_item_upload_btn_img}
-                      />
+            {customModelsListState && customModelsListState.length > 0 ? (
+              <div className={classes.prod_item_upload_btn_wr}>
+                {lastHistoryElem?.privateMaterialType ? (
+                  <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
+                    <IconPlus
+                      size={25}
+                      color="#2E3839"
+                      className={classes.prod_item_upload_btn_img}
+                    />
 
-                      {translation['TIPS_ADD_NEW_MODEL']}
-                    </div>
-                  ) : null}
+                    {translation['TIPS_ADD_NEW_MODEL']}
+                  </div>
+                ) : null}
 
-                  {customModelsListState}
-                  {customModelsListState ? (
-                    <div className={classes.prod_item_upload_btn_line}></div>
-                  ) : (
-                    ''
-                  )}
-                </div>
-              ) : lastHistoryElem?.privateMaterialType ? (
-                <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
-                  <IconPlus
-                    size={25}
-                    color="#2E3839"
-                    className={classes.prod_item_upload_btn_img}
-                  />
-                  {translation['TIPS_ADD_NEW_MODEL']}
-                </div>
-              ) : null
+                {customModelsListState}
+                {customModelsListState ? (
+                  <div className={classes.prod_item_upload_btn_line}></div>
+                ) : (
+                  ''
+                )}
+              </div>
+            ) : lastHistoryElem?.privateMaterialType ? (
+              <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
+                <IconPlus size={25} color="#2E3839" className={classes.prod_item_upload_btn_img} />
+                {translation['TIPS_ADD_NEW_MODEL']}
+              </div>
             ) : null}
             {modelsListState}
           </div>
         </SimpleBar>
-
-        {!showBottomUpgradeTip ? null : (
-          <div
-            className={
-              proPlashka
-                ? classes.upgrate_catalog_btn + ' ' + classes.upgrate_catalog_btn_pro
-                : classes.upgrate_catalog_btn
-            }
-            onMouseEnter={startHearts}
-            onMouseLeave={stopHearts}
-            ref={heartsRef}
-            onClick={(e) => dispatch(setActivePopup({ name: 'payPro', type: 'user' }))}
-          >
-            <div className={classes.upgrate_catalog_btn_gradient}></div>
-            <div className={classes.upgrate_catalog_icon_wr}>
-              <img
-                src="/src_designer/images/upgrate_catalog_icon.svg"
-                className={classes.upgrate_catalog_icon}
-              />
-            </div>
-            <div className={classes.upgrate_catalog_text}>
-              {translation['UPGRATE_CATALOG_TEXT']}
-              {!proPlashka ? (
-                <>
-                  <div className={classes.upgrate_catalog_text_basic}>basic</div>
-                  {translation['TEXT_OR']}
-                </>
-              ) : null}
-
-              <div className={classes.upgrate_catalog_text_pro}>pro</div>
-            </div>
-
-            <div className={classes.heart_container}>
-              {hearts.map((heart) => (
-                <div
-                  key={heart.id}
-                  className={classes.heart}
-                  style={{
-                    left: `${heart.leftPx}px`,
-                    width: `${heart.size}px`,
-                    height: `${heart.size}px`,
-                    animationDuration: `${heart.duration}s`,
-                  }}
-                >
-                  <img src={heart.image} />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         <div
           className={classes.preloaderBlock}

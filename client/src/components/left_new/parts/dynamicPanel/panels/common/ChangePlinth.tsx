@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { planner, user } from '../../../../../../initR2D';
-import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
   selectActiveControlPanelModeData,
   selectDynamicPanelPreviewViewType,
@@ -15,19 +14,13 @@ import {
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
-import {
-  selectIsLogged,
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
+import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import ChangeSize from '../../../../../common/ChangeSize';
-import Lock from '../../components/Lock';
 import Navigation from '../../navigation/Navigation';
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
-import { useMerchantLogin } from '../../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -549,11 +542,7 @@ const ChangePlinth = (props) => {
   const classes = useStyle();
   const translation = useTranslation();
   const dispatch = useDispatch();
-  const verifyEnabledMerchantLogin = useMerchantLogin();
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
-  const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
-  const userProjectActive = useSelector(selectUserProjectActive);
-  const userData = useSelector(selectUserProfileData);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
@@ -604,46 +593,34 @@ const ChangePlinth = (props) => {
 
   const onChangePlinthType = (id, e) => {
     if (id == constructionData.shapeNum) return;
-    if (
-      userData.plan == 'pro' ||
-      userData.plan == 'basic' ||
-      (isProjectBelongToLoggedUser &&
-        (userProjectActive.plan == 'pro' || userProjectActive.plan == 'basic'))
-    ) {
-      if (document.querySelector('.' + classes.prod_item)) {
-        Array.from(document.querySelectorAll('.' + classes.prod_item)).forEach((item) =>
-          item.classList.remove(classes.prod_item_active)
-        );
-      }
-      e.currentTarget.classList.add(classes.prod_item_active);
-
-      WC.plinthCreator.loadSVG(id).then(() => {
-        constructionData.shapeNum = id;
-        constructionData.h = WC.plinthCreator.PoolPlinthShape[id].defHeight;
-        constructionData.d = WC.plinthCreator.PoolPlinthShape[id].defDepth;
-        constructionData.dispatchUpdate();
-        planner.scene.rebuildAllPlinths();
-        setPlinthHeight(constructionData.h);
-        setPlinthDepth(constructionData.d);
-        R2D.scene.history.saveState();
-
-        currObj = planner.mih()._scene.currentView3DObject;
-        constructionData = currObj.getConstructorElementData();
-        constructionData = currentPlinthType
-          ? currentPlinthType == 'molding'
-            ? constructionData.topPlinth
-            : constructionData.bottomPlinth
-          : constructionData;
-        setPlinthDepth(constructionData.d);
-        setPlinthHeight(constructionData.h);
-        planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
-      });
-    } else {
-      R2D.OPTIONS.PRO_PLAN
-        ? verifyEnabledMerchantLogin()
-        : dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-      return;
+    if (document.querySelector('.' + classes.prod_item)) {
+      Array.from(document.querySelectorAll('.' + classes.prod_item)).forEach((item) =>
+        item.classList.remove(classes.prod_item_active)
+      );
     }
+    e.currentTarget.classList.add(classes.prod_item_active);
+
+    WC.plinthCreator.loadSVG(id).then(() => {
+      constructionData.shapeNum = id;
+      constructionData.h = WC.plinthCreator.PoolPlinthShape[id].defHeight;
+      constructionData.d = WC.plinthCreator.PoolPlinthShape[id].defDepth;
+      constructionData.dispatchUpdate();
+      planner.scene.rebuildAllPlinths();
+      setPlinthHeight(constructionData.h);
+      setPlinthDepth(constructionData.d);
+      R2D.scene.history.saveState();
+
+      currObj = planner.mih()._scene.currentView3DObject;
+      constructionData = currObj.getConstructorElementData();
+      constructionData = currentPlinthType
+        ? currentPlinthType == 'molding'
+          ? constructionData.topPlinth
+          : constructionData.bottomPlinth
+        : constructionData;
+      setPlinthDepth(constructionData.d);
+      setPlinthHeight(constructionData.h);
+      planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
+    });
   };
 
   const mouseDownOnObj = false;
@@ -759,20 +736,6 @@ const ChangePlinth = (props) => {
                 <MoreInfoIcon />
               </div>
             ) : null}
-            {userData.plan == 'pro' ||
-            userData.plan == 'basic' ||
-            (isProjectBelongToLoggedUser &&
-              (userProjectActive.plan == 'pro' || userProjectActive.plan == 'basic')) ? null : id ==
-              constructionData.shapeNum ? null : (
-              <Lock
-                additionalClass={classes.prod_item_zamok_btn}
-                tipPositionX={'right'}
-                upgradeBasic={true}
-                upgradePro={true}
-                textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                parentClass={classes.prod_item}
-              />
-            )}
           </div>
 
           {dynamicPanelPreviewViewType != 'small' ? (

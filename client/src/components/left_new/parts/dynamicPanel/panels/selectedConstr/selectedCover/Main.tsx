@@ -252,7 +252,6 @@ const Main = (props) => {
   const [isCeilingVisible, setCeilingVisible] = useState(
     !!(currObj?.ceiling?.exists && !currObj?.ceiling?.partialVisible)
   );
-  const [lockMaterialStatus, setLockMaterialStatus] = useState(false);
 
   const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
@@ -361,20 +360,6 @@ const Main = (props) => {
     };
   }, []);
 
-  useEffect(() => {
-    const pollMaterials = Object.entries(R2D.Pool._products_data);
-    const currentMaterial = pollMaterials.find((y) => y[0] == previewMaterialId);
-    const plan = currentMaterial?.[1]?.plan;
-
-    if (user.data.plan == 'free') {
-      if (Array.isArray(plan) || (plan !== 'free' && plan)) {
-        setLockMaterialStatus(true);
-      } else {
-        setLockMaterialStatus(false);
-      }
-    }
-  }, [lockMaterialStatus, isLogged, previewMaterialId]);
-
   return (
     previewMaterialId && (
       <div className={classes.planerWallsCont} style={styleAnimation}>
@@ -402,14 +387,13 @@ const Main = (props) => {
                 </div>
                 <MaterialComponent
                   customStyles={{ border: 0 }}
-                  lockMaterialStatus={lockMaterialStatus}
                   matId={previewMaterialId}
                   materialsSource={{ type: 'bank', data: null }}
                   addMaterial={previewAddMaterialId}
                   onCopyPaste={{
                     copy: onCopyMaterial,
                     paste: onPasteMaterial,
-                    statusCopy: lockMaterialStatus ? false : true,
+                    statusCopy: true,
                   }}
                   lock={false}
                 />

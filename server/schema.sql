@@ -2,7 +2,6 @@ CREATE TABLE IF NOT EXISTS users (
   id              TEXT    PRIMARY KEY,
   email           TEXT    NOT NULL,
   name            TEXT    NOT NULL DEFAULT '',
-  plan            TEXT    NOT NULL DEFAULT 'free',
   tips            TEXT    NOT NULL DEFAULT '{}',
   language_code   TEXT    NOT NULL DEFAULT 'en',
   created_at      TEXT    NOT NULL DEFAULT (datetime('now'))
@@ -23,7 +22,6 @@ CREATE TABLE IF NOT EXISTS products (
   type                TEXT,
   name                TEXT    NOT NULL DEFAULT '',
   description         TEXT,
-  plan                TEXT,
   appointment         TEXT,
   width               REAL,
   height              REAL,

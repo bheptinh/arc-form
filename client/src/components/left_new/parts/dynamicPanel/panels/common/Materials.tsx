@@ -8,7 +8,6 @@ import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../initR2D';
-import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
   selectActiveControlPanelModeData,
   selectDynamicPanelPreviewViewType,
@@ -25,7 +24,6 @@ import {
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
-import Lock from '../../components/Lock';
 import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
@@ -639,7 +637,6 @@ const Materials = (props) => {
   const isLogged = useSelector(selectIsLogged);
 
   const userProjectActive = useSelector(selectUserProjectActive);
-  const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
 
   const [materialsListState, setMaterialsListState] = useState(null);
   const [customMaterialsListState, setCustomMaterialsListState] = useState(null);
@@ -677,20 +674,16 @@ const Materials = (props) => {
 
   const loaderErrorListener = (e) => console.log('Error loading material ', e);
 
-  const onMaterialSelect = (elem, isObjectAccessible) => {
+  const onMaterialSelect = (elem) => {
     const id = elem.id;
-    if (!isObjectAccessible) {
-      dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
+    if (!R2D.Pool.getProductData(id)) {
+      const loader = R2D.Pool.loadProductData(id);
+      loader.addEventListener(Event.COMPLETE, (e) => loaderCompleteListener(id));
+      loader.addEventListener(Event.ERROR, (e) => loaderErrorListener(id));
     } else {
-      if (!R2D.Pool.getProductData(id)) {
-        const loader = R2D.Pool.loadProductData(id);
-        loader.addEventListener(Event.COMPLETE, (e) => loaderCompleteListener(id));
-        loader.addEventListener(Event.ERROR, (e) => loaderErrorListener(id));
-      } else {
-        props.materialSelect(id, null, activeMaterial, null);
-      }
-      setActiveMaterial(id);
+      props.materialSelect(id, null, activeMaterial, null);
     }
+    setActiveMaterial(id);
   };
 
   const mouseEnter = (event, data) => {
@@ -787,9 +780,7 @@ const Materials = (props) => {
     if (lastHistoryElemData && Array.isArray(lastHistoryElemData)) {
       lastHistoryElemData.forEach((i) => {
         const isInFavorites = userFavorites?.find((с) => с?.id == i.id);
-        let isObjectAccessible;
-        if (i.isOwner && R2D.config.data.enable_pro) {
-          isObjectAccessible = userData.plan != 'free' || userProjectActive.plan != 'free';
+        if (i.isOwner) {
           customMaterials.push(
             <div
               className={cx(
@@ -826,18 +817,10 @@ const Materials = (props) => {
                   <div>{i.name}</div>
                 </div>
               ) : null}
-              <div
-                className={classes.prod_item_overlay}
-                onClick={(e) => onMaterialSelect(i, isObjectAccessible)}
-              ></div>
+              <div className={classes.prod_item_overlay} onClick={(e) => onMaterialSelect(i)}></div>
             </div>
           );
         } else {
-          isObjectAccessible =
-            i.plan == 'free' ||
-            (i.plan?.find &&
-              (i.plan.find((i) => i == user.data.plan) ||
-                (isProjectBelongToLoggedUser && i.plan.find((i) => i == userProjectActive.plan))));
           arrayList.push(
             <div
               key={i.id}
@@ -886,32 +869,11 @@ const Materials = (props) => {
                 </div>
               ) : null}
 
-              {isObjectAccessible ? null : i.plan.includes('basic') ? (
-                <Lock
-                  additionalClass={classes.prod_item_zamok_btn}
-                  tipPositionY={'top'}
-                  tipPositionX={'right'}
-                  upgradePro={true}
-                  upgradeBasic={true}
-                  textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                  parentClass={classes.prod_item}
-                />
-              ) : i.plan.includes('pro') ? (
-                <Lock
-                  additionalClass={classes.prod_item_zamok_btn}
-                  tipPositionY={'top'}
-                  tipPositionX={'right'}
-                  upgradePro={true}
-                  textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                  parentClass={classes.prod_item}
-                />
-              ) : null}
-
               <div
                 className={classes.prod_item_overlay}
                 onMouseLeave={mouseLeave}
                 onMouseEnter={(e) => mouseEnter(e, i)}
-                onClick={(e) => onMaterialSelect(i, isObjectAccessible)}
+                onClick={(e) => onMaterialSelect(i)}
               ></div>
             </div>
           );
@@ -943,37 +905,31 @@ const Materials = (props) => {
       <div className={classes.catalog_wr}>
         <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
           <div className={classes.prod_elem_wrap}>
-            {R2D.config.data.enable_pro ? (
-              customMaterialsListState && customMaterialsListState.length > 0 ? (
-                <div className={classes.prod_item_upload_btn_wr}>
-                  {lastHistoryElem.privateMaterialType && !isCurrDeviceAPhone ? (
-                    <div className={classes.prod_item_upload_btn} onMouseUp={onCustomMatAddMouseUp}>
-                      <IconPlus
-                        size={26}
-                        color="#2E3839"
-                        className={classes.prod_item_upload_btn_img}
-                      />
-                      {translation['TIPS_ADD_NEW_MODEL']}
-                    </div>
-                  ) : null}
+            {customMaterialsListState && customMaterialsListState.length > 0 ? (
+              <div className={classes.prod_item_upload_btn_wr}>
+                {lastHistoryElem.privateMaterialType && !isCurrDeviceAPhone ? (
+                  <div className={classes.prod_item_upload_btn} onMouseUp={onCustomMatAddMouseUp}>
+                    <IconPlus
+                      size={26}
+                      color="#2E3839"
+                      className={classes.prod_item_upload_btn_img}
+                    />
+                    {translation['TIPS_ADD_NEW_MODEL']}
+                  </div>
+                ) : null}
 
-                  {customMaterialsListState}
-                  {customMaterialsListState ? (
-                    <div className={classes.prod_item_upload_btn_line}></div>
-                  ) : (
-                    ''
-                  )}
-                </div>
-              ) : lastHistoryElem.privateMaterialType && !isCurrDeviceAPhone ? (
-                <div className={classes.prod_item_upload_btn} onMouseUp={onCustomMatAddMouseUp}>
-                  <IconPlus
-                    size={26}
-                    color="#2E3839"
-                    className={classes.prod_item_upload_btn_img}
-                  />
-                  {translation['TIPS_ADD_NEW_MODEL']}
-                </div>
-              ) : null
+                {customMaterialsListState}
+                {customMaterialsListState ? (
+                  <div className={classes.prod_item_upload_btn_line}></div>
+                ) : (
+                  ''
+                )}
+              </div>
+            ) : lastHistoryElem.privateMaterialType && !isCurrDeviceAPhone ? (
+              <div className={classes.prod_item_upload_btn} onMouseUp={onCustomMatAddMouseUp}>
+                <IconPlus size={26} color="#2E3839" className={classes.prod_item_upload_btn_img} />
+                {translation['TIPS_ADD_NEW_MODEL']}
+              </div>
             ) : null}
             {materialsListState}
           </div>

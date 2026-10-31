@@ -15,7 +15,6 @@ import {
   closeActivePopup,
   selectPopups,
   setActivePopup,
-  setPopupData,
 } from '../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../redux/features/quickPanels/quickPanelsSlice';
 import { saveLoggedStatus } from '../../redux/features/user/userSlice';
@@ -98,7 +97,6 @@ export default function LoginForm() {
   const navigate = useNavigate();
   const translation = useTranslation();
   const popups = useSelector(selectPopups);
-  const popupData = popups.login.data;
   const popupType = popups.login.type;
 
   const isProjectOnlyView = useSelector(selectIsProjectOnlyView);
@@ -124,16 +122,6 @@ export default function LoginForm() {
       setAnimPopupClass(false);
 
       setTimeout(() => dispatch(closeActivePopup({ name: 'login' })), 500);
-
-      if (popupType == 'buy_plan') {
-        if (user.data.plan != 'pro') {
-          dispatch(setPopupData({ name: 'payPro', data: popupData }));
-        } else {
-          setAnimPopupClass(false);
-        }
-
-        setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
-      }
 
       if (popupType == 'startPopup') {
         navigate('/projects');
@@ -184,20 +172,6 @@ export default function LoginForm() {
       setAnimPopupClass(false);
       setTimeout(() => dispatch(closeActivePopup({ name: 'login' })), 500);
 
-      if (popupType == 'buy_plan') {
-        if (user.data.plan != 'pro') {
-          dispatch(setPopupData({ name: 'payPro', data: popupData }));
-        } else {
-          setAnimPopupClass(false);
-        }
-
-        setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
-      }
-
-      if (popupType == 'upgrade_plan' && user.data.plan != 'pro') {
-        dispatch(setActivePopup({ name: 'upgradePlan' }));
-      }
-
       if (popupType == 'startPopup') {
         navigate('/projects');
       }
@@ -211,20 +185,6 @@ export default function LoginForm() {
     } else {
       dispatch(saveLoggedStatus(response));
       dispatch(closeActivePopup({ name: 'login' }));
-
-      if (popupType == 'buy_plan') {
-        if (user.data.plan != 'pro') {
-          dispatch(setPopupData({ name: 'payPro', data: popupData }));
-        } else {
-          setAnimPopupClass(false);
-        }
-
-        setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
-      }
-
-      if (popupType == 'upgrade_plan' && user.data.plan != 'pro') {
-        dispatch(setActivePopup({ name: 'upgradePlan' }));
-      }
 
       if (popupType == 'startPopup') {
         navigate('/projects');

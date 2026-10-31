@@ -22,7 +22,6 @@
 
   <script>
     var R2D = {};
-    R2D.RECURRING_PLANS = { "": { "1": "11" }, "basic": { "1": "5", "6": "6", "12": "7" }, "pro": { "1": "8", "6": "9", "12": "10" } };
     R2D.URL = {
       MERCHANT_SITE_KEY: '',
       REACT_BASEPATH: '',
@@ -49,8 +48,6 @@
       URL_UPLOAD_PRIVATE: '/server-api/catalog/private/materials/upload',
       // TODO: migrate to DELETE /server-api/catalog/private/materials/:id — user.deleteMaterial() is never called from the React UI yet
       URL_DELETE_PRIVATE: '/api/planner/delete_private_entity?key=4500282e6846fe6650de81bd35d27540',
-      URL_PAY_FORM: '/api/subscription/get_form?key=4500282e6846fe6650de81bd35d27540',
-      URL_CANCEL_SUBSCRIPTION: '/api/subscription/cancel_subscription?key=4500282e6846fe6650de81bd35d27540',
       //URL_REGISTRATION:'/api/auth/registration?key=//',
       URL_FORGOT_PASSWORD: '/api/auth/recover_password?key=4500282e6846fe6650de81bd35d27540',
       URL_RECOVERY_PASSWORD_REQUEST: '/api2/user/reset-password?key=4500282e6846fe6650de81bd35d27540',//POST
@@ -90,7 +87,6 @@
     };
 
     R2D.OPTIONS = {
-      PRO_PLAN: false,
       CLIENT_KEY: 'd7322ed717dedf1eb4e6e52a37ea7bcd',
       NEED_DOWNSCALE_TEXTURES: 1,
       TEXTURE_MULTIPLIER: 1,

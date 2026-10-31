@@ -53,7 +53,6 @@ function buildUploadedItem(row: ModelRow, slots: SlotRow[]) {
     type: row.type,
     name: row.name ?? '',
     description: null,
-    plan: 'free' as const,
     isOwner: true,
     source: {
       images: { preview: row.preview_path ?? null },

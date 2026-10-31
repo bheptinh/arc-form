@@ -914,50 +914,6 @@
             "code": "ADMIN_ORDERS_TITLE"
         },
         {
-            "value": "ADMIN_PLAN_FEATURES_ADD_PLAN_TITLE",
-            "code": "ADMIN_PLAN_FEATURES_ADD_PLAN_TITLE"
-        },
-        {
-            "value": "ADMIN_PLAN_FEATURES_LIST",
-            "code": "ADMIN_PLAN_FEATURES_LIST"
-        },
-        {
-            "value": "ADMIN_PLAN_FEATURES_TITLE",
-            "code": "ADMIN_PLAN_FEATURES_TITLE"
-        },
-        {
-            "value": "ADMIN_PLAN_RECURRING_ADD_PLAN_TITLE",
-            "code": "ADMIN_PLAN_RECURRING_ADD_PLAN_TITLE"
-        },
-        {
-            "value": "ADMIN_PLAN_RECURRING_EDIT_PLAN_TITLE",
-            "code": "ADMIN_PLAN_RECURRING_EDIT_PLAN_TITLE"
-        },
-        {
-            "value": "ADMIN_PLAN_RECURRING_LIST",
-            "code": "ADMIN_PLAN_RECURRING_LIST"
-        },
-        {
-            "value": "ADMIN_PLAN_RECURRING_TITLE",
-            "code": "ADMIN_PLAN_RECURRING_TITLE"
-        },
-        {
-            "value": "ADMIN_PLANS_ADD_PLAN_TITLE",
-            "code": "ADMIN_PLANS_ADD_PLAN_TITLE"
-        },
-        {
-            "value": "ADMIN_PLANS_EDIT_PLAN_TITLE",
-            "code": "ADMIN_PLANS_EDIT_PLAN_TITLE"
-        },
-        {
-            "value": "ADMIN_PLANS_LIST",
-            "code": "ADMIN_PLANS_LIST"
-        },
-        {
-            "value": "ADMIN_PLANS_TITLE",
-            "code": "ADMIN_PLANS_TITLE"
-        },
-        {
             "value": "Add to catalog",
             "code": "ADMIN_PLUGIN_EDIT_ADD_TO_CATALOG"
         },
@@ -1226,22 +1182,6 @@
             "code": "ADMIN_SITES_EDIT_CONFIG"
         },
         {
-            "value": "Expiration Date",
-            "code": "ADMIN_SITES_EDIT_EXPIRE"
-        },
-        {
-            "value": "Expiration date of the tariff plan",
-            "code": "ADMIN_SITES_EDIT_EXPIRE_HELP"
-        },
-        {
-            "value": "Never",
-            "code": "ADMIN_SITES_EDIT_EXPIRE_NEVER"
-        },
-        {
-            "value": "Expired",
-            "code": "ADMIN_SITES_EDIT_EXPIRED"
-        },
-        {
             "value": "Features",
             "code": "ADMIN_SITES_EDIT_FEATURES"
         },
@@ -1292,10 +1232,6 @@
         {
             "value": "URL for embedding Roomtodo",
             "code": "ADMIN_SITES_EDIT_SITE_URL"
-        },
-        {
-            "value": "Subscription plan",
-            "code": "ADMIN_SITES_EDIT_TARIFF_PLAN"
         },
         {
             "value": "Merchant's configurators",
@@ -1350,16 +1286,8 @@
             "code": "ADMIN_SITES_TABLE_EXPIRE"
         },
         {
-            "value": "Plan",
-            "code": "ADMIN_SITES_TABLE_TARIFF_PLAN"
-        },
-        {
             "value": "Owner",
             "code": "ADMIN_SITES_TABLE_USER_LOGIN"
-        },
-        {
-            "value": "Plan",
-            "code": "ADMIN_SITES_TABLE_USER_PLAN"
         },
         {
             "value": "Site",
@@ -1456,10 +1384,6 @@
         {
             "value": "Translations Planner",
             "code": "ADMIN_TRANSLATIONS_PLANNER_TITLE"
-        },
-        {
-            "value": "ADMIN_USER_PLAN_CHANGE",
-            "code": "ADMIN_USER_PLAN_CHANGE"
         },
         {
             "value": "ADMIN_USER_SESSIONS_BUTTON_MESSAGE",
@@ -1738,18 +1662,6 @@
             "code": "COPY_FLOOR"
         },
         {
-            "value": "upgrade a copy",
-            "code": "COPY_NEW_PREMIUM_PROJECT_BUTTON_UPGRADE"
-        },
-        {
-            "value": "To save a project with paid features, you need to upgrade your subscription plan.",
-            "code": "COPY_NEW_PREMIUM_PROJECT_SUBTITLE"
-        },
-        {
-            "value": "You are copying a project with paid features",
-            "code": "COPY_NEW_PREMIUM_PROJECT_TITLE"
-        },
-        {
             "value": "2015 \u00a9 Roomtodo.com",
             "code": "COPYRIGHT"
         },
@@ -1872,14 +1784,6 @@
         {
             "value": "Please exit from construction mode<br>to perform next action",
             "code": "EXIT_CONSTRUCTOR_BEFORE_ACTION"
-        },
-        {
-            "value": "Available in plan: BASIC, PRO",
-            "code": "EXPORT_ERROR_AVAIL_BASIC_PRO"
-        },
-        {
-            "value": "Available in plan",
-            "code": "EXPORT_ERROR_AVAIL_PRO"
         },
         {
             "value": "Black & White mode",
@@ -2110,18 +2014,6 @@
             "code": "FR_BIG_OBJECTS_SNAP_TO_WALLS"
         },
         {
-            "value": "billed annually<br>or $99 monthly",
-            "code": "FR_BILLED_ANNUALLY_OR_MONTHLY_SLIDE2"
-        },
-        {
-            "value": "billed annually<br>or $399 monthly",
-            "code": "FR_BILLED_ANNUALLY_OR_MONTHLY_SLIDE3"
-        },
-        {
-            "value": "billed annually<br>or $699 monthly",
-            "code": "FR_BILLED_ANNUALLY_OR_MONTHLY_SLIDE4"
-        },
-        {
             "value": "This email is bound to another user",
             "code": "FR_BOUND_TO_ANOTHER_USER"
         },
@@ -2274,42 +2166,6 @@
             "code": "FR_EMAIL_WRONG_FORMAT"
         },
         {
-            "value": "Congratulations on your subscription to the PRO-Version of Roomtodo.",
-            "code": "FR_EMAILS_BUY_USER_PLAN_CONGRATULATIONS"
-        },
-        {
-            "value": "Date of purchase",
-            "code": "FR_EMAILS_BUY_USER_PLAN_DATE_LABEL"
-        },
-        {
-            "value": "1 month",
-            "code": "FR_EMAILS_BUY_USER_PLAN_PERIOD_1"
-        },
-        {
-            "value": "12 months",
-            "code": "FR_EMAILS_BUY_USER_PLAN_PERIOD_12"
-        },
-        {
-            "value": "6 months",
-            "code": "FR_EMAILS_BUY_USER_PLAN_PERIOD_6"
-        },
-        {
-            "value": "Subscription period:",
-            "code": "FR_EMAILS_BUY_USER_PLAN_PERIOD_LABEL"
-        },
-        {
-            "value": "Roomtodo PRO-version prolongation",
-            "code": "FR_EMAILS_BUY_USER_PLAN_RENEW_SUBJECT"
-        },
-        {
-            "value": "Roomtodo PRO-version",
-            "code": "FR_EMAILS_BUY_USER_PLAN_SUBJECT"
-        },
-        {
-            "value": "User:",
-            "code": "FR_EMAILS_BUY_USER_PLAN_USER_LABEL"
-        },
-        {
             "value": "This email was automatically generated. Please do not respond to it.",
             "code": "FR_EMAILS_COMMON_AUTO_TEXT"
         },
@@ -2320,34 +2176,6 @@
         {
             "value": "Your new password:",
             "code": "FR_EMAILS_RECOVER_PASSWORD_NEW_PASSWORD_LABEL"
-        },
-        {
-            "value": "Roomtodo PRO-version - cancelation of subscription",
-            "code": "FR_EMAILS_SUBSCRIPTION_CANCEL_BY_USER_SUBJECT"
-        },
-        {
-            "value": "Roomtodo PRO-version - termination of subscription",
-            "code": "FR_EMAILS_SUBSCRIPTION_CANCEL_SUBJECT"
-        },
-        {
-            "value": "unsubscribe here",
-            "code": "FR_EMAILS_SUBSCRIPTION_RECURRING_CANCEL_SUBSCRIPTION"
-        },
-        {
-            "value": "Your subscription to ROOMTODO PRO-version<br>will be automatically renewed:",
-            "code": "FR_EMAILS_SUBSCRIPTION_RECURRING_DATE_LABEL"
-        },
-        {
-            "value": "Hello",
-            "code": "FR_EMAILS_SUBSCRIPTION_RECURRING_HI"
-        },
-        {
-            "value": "Roomtodo PRO-version - renewal of subscription",
-            "code": "FR_EMAILS_SUBSCRIPTION_RECURRING_SUBJECT"
-        },
-        {
-            "value": "you can",
-            "code": "FR_EMAILS_SUBSCRIPTION_RECURRING_YOU_CAN"
         },
         {
             "value": "Follow this link to activate your account:",
@@ -2570,10 +2398,6 @@
             "code": "FR_IN_IS_ONLY_POSSIBLE_THROUGH"
         },
         {
-            "value": "In pricing plans Free, Basic, Business you could embed iFrame with Roomtodo code (the same way as it works with Youtube clips). You\u2019ll see detailed instructions in your Private Cabinet after registration. In pricing plan Pro there is the possibility of more advanced integration of Roomtodo into your website and business processes.",
-            "code": "FR_IN_PRICING_PLANS_FREE_BASIC_BUSINESS"
-        },
-        {
             "value": "<a href =\"mailto:info@roomtodo.com\">info@roomtodo.com<\/a>",
             "code": "FR_INFO_EMAIL"
         },
@@ -2734,14 +2558,6 @@
             "code": "FR_PREICE_DEPENDS_ON_THE"
         },
         {
-            "value": "ROOMTODO - project",
-            "code": "FR_PREMIUM_PROJECT_BUY_TITLE"
-        },
-        {
-            "value": "ROOMTODO - project upgrade",
-            "code": "FR_PREMIUM_PROJECT_UPGRADE_TITLE"
-        },
-        {
             "value": "Previous data",
             "code": "FR_PREV_DATA"
         },
@@ -2752,10 +2568,6 @@
         {
             "value": "Price for 3D-floorplan development",
             "code": "FR_PRICE_FOR_3D_FLOORPLAN_DEVELOPMENT"
-        },
-        {
-            "value": "PRO",
-            "code": "FR_PRO_UPPERCASE"
         },
         {
             "value": "Project sent to calculation",
@@ -2982,54 +2794,6 @@
             "code": "FR_SUBSCRIBE_TO_NEWS"
         },
         {
-            "value": "ROOMTODO BASIC version",
-            "code": "FR_SUBSCRIPTION_BASIC_TITLE"
-        },
-        {
-            "value": "PAY",
-            "code": "FR_SUBSCRIPTION_PLACE_ORDER"
-        },
-        {
-            "value": "ROOMTODO PRO version",
-            "code": "FR_SUBSCRIPTION_PRO_TITLE"
-        },
-        {
-            "value": "Promo Code",
-            "code": "FR_SUBSCRIPTION_PROMO_CODE"
-        },
-        {
-            "value": "Apply",
-            "code": "FR_SUBSCRIPTION_PROMO_CODE_APPLY"
-        },
-        {
-            "value": "Monthly subscription",
-            "code": "FR_SUBSCRIPTION_RECURRING_1_TITLE"
-        },
-        {
-            "value": "Yearly subscription",
-            "code": "FR_SUBSCRIPTION_RECURRING_12_TITLE"
-        },
-        {
-            "value": "Semi-annually subscription",
-            "code": "FR_SUBSCRIPTION_RECURRING_6_TITLE"
-        },
-        {
-            "value": "Monthly subscription upgrade",
-            "code": "FR_SUBSCRIPTION_RECURRING_UPGRADE_1_TITLE"
-        },
-        {
-            "value": "Yearly subscription upgrade",
-            "code": "FR_SUBSCRIPTION_RECURRING_UPGRADE_12_TITLE"
-        },
-        {
-            "value": "Semi-annually subscription upgrade",
-            "code": "FR_SUBSCRIPTION_RECURRING_UPGRADE_6_TITLE"
-        },
-        {
-            "value": "FR_SUBSCRIPTION_TEST_TITLE",
-            "code": "FR_SUBSCRIPTION_TEST_TITLE"
-        },
-        {
             "value": "Support",
             "code": "FR_SUPPORT"
         },
@@ -3108,14 +2872,6 @@
         {
             "value": "basic",
             "code": "FR_TOURS_TRANS_106"
-        },
-        {
-            "value": "pro",
-            "code": "FR_TOURS_TRANS_107"
-        },
-        {
-            "value": "Upgrade",
-            "code": "FR_TOURS_TRANS_108"
         },
         {
             "value": "Passwords do not match",
@@ -3362,10 +3118,6 @@
             "code": "FR_TOURS_TRANS_26"
         },
         {
-            "value": "You already have a pro version",
-            "code": "FR_TOURS_TRANS_27"
-        },
-        {
             "value": "RESET PASSWORD",
             "code": "FR_TOURS_TRANS_28"
         },
@@ -3408,10 +3160,6 @@
         {
             "value": "We\u2019re sad to see you go.",
             "code": "FR_TOURS_TRANS_37"
-        },
-        {
-            "value": "Your Roomtodo PRO subscription will end on",
-            "code": "FR_TOURS_TRANS_38"
         },
         {
             "value": "Thank You to stay with us!",
@@ -3720,10 +3468,6 @@
         {
             "value": "Year",
             "code": "FR_YEAR"
-        },
-        {
-            "value": "Yes, for all pricing plans except Free we can help with integrating Roomtodo onto your website. Send a request to <a href=\"mailto:sales@roomtodo.com\">sales@roomtodo.com<\/a> and we\u2019ll prepare an offer for you.",
-            "code": "FR_YES_FOR_ALL_PRICING_PLANS"
         },
         {
             "value": "Yes, we\u2019re creating floorplans on demand. <a href=\"\/floorplan_on_demand\">You can see our approximate pricing for floorplans on demand here.<\/a>",
@@ -4206,10 +3950,6 @@
             "code": "NOTIFY_STARTING_SAVING"
         },
         {
-            "value": "Automatic renewal of your subscription canceled",
-            "code": "NOTIFY_SUBSCRIPT_CANCELLED"
-        },
-        {
             "value": "You can enable tips in your profile",
             "code": "NOTIFY_TIPS_IN_PROFILE"
         },
@@ -4286,112 +4026,8 @@
             "code": "PASTE_OTHER_USER_PRODUCT_ERROR_TEXT"
         },
         {
-            "value": "Your subscription plan does not allow you to copy this product",
-            "code": "PASTE_PREMIUM_PRODUCT_ERROR_TEXT"
-        },
-        {
             "value": "You cannot paste product into other user's projects",
             "code": "PASTE_PRODUCT_IN_OTHER_USER_PROJECT_ERROR_TEXT"
-        },
-        {
-            "value": "Adding your pictures",
-            "code": "PAY_PRO_ADD_PICTURES"
-        },
-        {
-            "value": "Adding rugs",
-            "code": "PAY_PRO_ADD_RUGS"
-        },
-        {
-            "value": "Adding your own textures",
-            "code": "PAY_PRO_ADD_TEXTURES"
-        },
-        {
-            "value": "Baseboard editor",
-            "code": "PAY_PRO_BASEB_EDIT"
-        },
-        {
-            "value": "Combining materials <br> on the walls",
-            "code": "PAY_PRO_COMB_ON_WALLS"
-        },
-        {
-            "value": "Examples of renders",
-            "code": "PAY_PRO_EXAMPLES"
-        },
-        {
-            "value": "I agree with",
-            "code": "PAY_PRO_I_AGREE"
-        },
-        {
-            "value": "Environment",
-            "code": "PAY_PRO_PANORAMA"
-        },
-        {
-            "value": "Priority support",
-            "code": "PAY_PRO_PRIOR_SUPP"
-        },
-        {
-            "value": "For those who are eager to try",
-            "code": "PAY_PRO_SUB_1_DESC"
-        },
-        {
-            "value": "1 month",
-            "code": "PAY_PRO_SUB_1_HEAD"
-        },
-        {
-            "value": "monthly",
-            "code": "PAY_PRO_SUB_1_PER"
-        },
-        {
-            "value": "Best for a standard renovation or construction project",
-            "code": "PAY_PRO_SUB_2_DESC"
-        },
-        {
-            "value": "6 months",
-            "code": "PAY_PRO_SUB_2_HEAD"
-        },
-        {
-            "value": "every 6 months",
-            "code": "PAY_PRO_SUB_2_PER"
-        },
-        {
-            "value": "Best option for permanent use",
-            "code": "PAY_PRO_SUB_3_DESC"
-        },
-        {
-            "value": "12 months",
-            "code": "PAY_PRO_SUB_3_HEAD"
-        },
-        {
-            "value": "yearly",
-            "code": "PAY_PRO_SUB_3_PER"
-        },
-        {
-            "value": "GET NOW",
-            "code": "PAY_PRO_SUB_GET_NOW"
-        },
-        {
-            "value": "terms of use",
-            "code": "PAY_PRO_TERMS"
-        },
-        {
-            "value": "More features",
-            "code": "PAY_PRO_TITLE_LEFT"
-        },
-        {
-            "value": "with PRO version!",
-            "code": "PAY_PRO_TITLE_RIGHT"
-        },
-        {
-            "value": "View",
-            "code": "PAY_PRO_VIEW"
-        },
-        {
-            "value": "Basic",
-            "code": "PL_PLAN_BASIC_TEXT"
-        },
-        {
-            "value": "PRO",
-            "code": "PL_PLAN_PRO_TEXT"
         },
         {
             "value": "You can not use this name",
@@ -4410,16 +4046,8 @@
             "code": "PLAN_NAME_DEFAULT"
         },
         {
-            "value": "Your tariff plan has been upgraded",
-            "code": "PLAN_UPGRADE_SUCCESS_TEXT"
-        },
-        {
             "value": "Please wait...",
             "code": "PLEASE_WAIT"
-        },
-        {
-            "value": "To use advanced functions in the project, you need to save it to your account and upgrade it.",
-            "code": "POPUP_ALERT_SAVE_TOP_USE_PRO_TEXT"
         },
         {
             "value": "Copy the plan to someone",
@@ -4516,30 +4144,6 @@
         {
             "value": "More Details",
             "code": "PRODUCT_URL_DETAILS"
-        },
-        {
-            "value": "Billed",
-            "code": "PROFILE_BILLED"
-        },
-        {
-            "value": "half-yearly",
-            "code": "PROFILE_HALF_YEARLY"
-        },
-        {
-            "value": "monthly",
-            "code": "PROFILE_MONTHLY"
-        },
-        {
-            "value": "No prolongation",
-            "code": "PROFILE_NO_PROLONG"
-        },
-        {
-            "value": "Unsubscribe",
-            "code": "PROFILE_UNSUBSCRIBE"
-        },
-        {
-            "value": "yearly",
-            "code": "PROFILE_YEARLY"
         },
         {
             "value": "Editing project",
@@ -4798,22 +4402,6 @@
             "code": "RULER_SET_SIZE_HERE"
         },
         {
-            "value": "Purchase an additional project, or upgrade to a subscription plan to get unlimited projects.",
-            "code": "SAVE_PROJECT_POPUP_BUY_SUBTITLE"
-        },
-        {
-            "value": "You have reached the project creation limit.",
-            "code": "SAVE_PROJECT_POPUP_BUY_TITLE"
-        },
-        {
-            "value": "To save additional features in the copy, you need to upgrade it to the same version as in the original project.",
-            "code": "SAVE_PROJECT_POPUP_UPGRADE_SUBTITLE"
-        },
-        {
-            "value": "You are copying a project with additional features.",
-            "code": "SAVE_PROJECT_POPUP_UPGRADE_TITLE"
-        },
-        {
             "value": "Search",
             "code": "SEARCH_PLACEHOLDER"
         },
@@ -4978,10 +4566,6 @@
             "code": "TEXT_AUTH_ERROR_TOO_MANY_ATTEMPTS"
         },
         {
-            "value": "available only with subscription",
-            "code": "TEXT_AVAILABLE_ONLE_WITH_SUBSCRIPTION"
-        },
-        {
             "value": "Wall cutout",
             "code": "TEXT_BUTTON_CUT_FILL"
         },
@@ -5040,10 +4624,6 @@
         {
             "value": "You need to save project before save camera views data",
             "code": "TEXT_CAMERA_VIEWS_SAVE_BEFORE"
-        },
-        {
-            "value": "Are you sure?<br>Automatic renwal of your subscription will be cancelled",
-            "code": "TEXT_CANCEL_SUBSCRIPT"
         },
         {
             "value": "Carpet",
@@ -5358,10 +4938,6 @@
             "code": "TEXT_MATERIAL_COPIED"
         },
         {
-            "value": "Models for the section",
-            "code": "TEXT_MODELS_FOR_THE_SECTION"
-        },
-        {
             "value": "Modified",
             "code": "TEXT_MODIFIED"
         },
@@ -5442,10 +5018,6 @@
             "code": "TEXT_ON"
         },
         {
-            "value": "or",
-            "code": "TEXT_OR"
-        },
-        {
             "value": "The password must contain at least 6 characters and no more than 64 characters.",
             "code": "TEXT_PASSWORD_LENGTH_ERROR"
         },
@@ -5484,10 +5056,6 @@
         {
             "value": "Prohibit copying and editing of the project",
             "code": "TEXT_PROJECT_ONLY_VIEW"
-        },
-        {
-            "value": "Subscription plan",
-            "code": "TEXT_R2D_VERSION"
         },
         {
             "value": "Add to cart",
@@ -5618,10 +5186,6 @@
             "code": "TEXT_SAVE_BEFORE_SHARE_PLAN"
         },
         {
-            "value": "Please, save the project before upgrading it.",
-            "code": "TEXT_SAVE_BEFORE_UPGRADE_PLAN"
-        },
-        {
             "value": "You should be signed in to save project.<br>Sign in?",
             "code": "TEXT_SAVE_NOT_LOGGED"
         },
@@ -5750,10 +5314,6 @@
             "code": "TEXT_START_LOAD_FLOORPLAN"
         },
         {
-            "value": "Renews on",
-            "code": "TEXT_SUBSCRIPTION_RENEWS"
-        },
-        {
             "value": "Set width of chosen wall",
             "code": "TEXT_TITLE_SET_WIDTH_OF_WALL"
         },
@@ -5770,10 +5330,6 @@
             "code": "TEXT_UNGROUP"
         },
         {
-            "value": "Upgrade",
-            "code": "TEXT_UPDATE"
-        },
-        {
             "value": "Update to",
             "code": "TEXT_UPDATE_TO"
         },
@@ -5784,10 +5340,6 @@
         {
             "value": "The username must contain at least 3 characters and no more than 100 characters.",
             "code": "TEXT_USER_NAME_LENGTH_ERROR"
-        },
-        {
-            "value": "Valid until",
-            "code": "TEXT_VALID_UNTIL"
         },
         {
             "value": "Verify password",
@@ -6208,82 +5760,6 @@
         {
             "value": "Update password",
             "code": "UPDATE_PASSWORD"
-        },
-        {
-            "value": "Upgrade",
-            "code": "UPGRADE_BUTTON"
-        },
-        {
-            "value": "purchase an additional project",
-            "code": "UPGRADE_OVER_LIMIT_BUTTON_BUY_PROJECT"
-        },
-        {
-            "value": "upgrade subscription plan",
-            "code": "UPGRADE_OVER_LIMIT_BUTTON_UPGRADE_PLAN"
-        },
-        {
-            "value": "Upgrade your subscription plan to get unlimited projects.",
-            "code": "UPGRADE_OVER_LIMIT_SUBTITLE"
-        },
-        {
-            "value": "You have reached the limit of created projects",
-            "code": "UPGRADE_OVER_LIMIT_TITLE"
-        },
-        {
-            "value": "Upgrade",
-            "code": "UPGRADE_PROJECT_BUTTON"
-        },
-        {
-            "value": "You have reached the limit of projects available in your subscription plan.",
-            "code": "UPGRADE_SUBSCRIPTION_TEXT"
-        },
-        {
-            "value": "Upgrade your subscription plan",
-            "code": "UPGRADE_SUBSCRIPTION_TITLE"
-        },
-        {
-            "value": "Upgrade your plan to get more",
-            "code": "UPGRADE_TO_GET_MORE"
-        },
-        {
-            "value": "to get unlimited number of projects",
-            "code": "UPGRADE_TO_GET_MORE_END_TEXT"
-        },
-        {
-            "value": "\u0430\u0431\u043e",
-            "code": "UPGRADE_TO_GET_MORE_OR"
-        },
-        {
-            "value": "Upgrade to get more project",
-            "code": "UPGRADE_TO_GET_MORE_PROJECT"
-        },
-        {
-            "value": "Upgrade to get more user plan",
-            "code": "UPGRADE_TO_GET_MORE_USER_PLAN"
-        },
-        {
-            "value": "Upgrade your subscription plan",
-            "code": "UPGRADE_USER_PLAN"
-        },
-        {
-            "value": "Upgrade to",
-            "code": "UPGRADE_YOUR_PLAN_TEXT"
-        },
-        {
-            "value": "Upgrade your plan to BASIC",
-            "code": "UPGRADE_YOUR_PLAN_TEXT_TO_BASIC"
-        },
-        {
-            "value": "Upgrade your plan to PRO",
-            "code": "UPGRADE_YOUR_PLAN_TEXT_TO_PRO"
-        },
-        {
-            "value": "Upgrade your project",
-            "code": "UPGRADE_YOUR_PROJECT"
-        },
-        {
-            "value": "Get access to these products with a subscription",
-            "code": "UPGRATE_CATALOG_TEXT"
         },
         {
             "value": "Additional elements (cameras, lighting, etc.) are not allowed",

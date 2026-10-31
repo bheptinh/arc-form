@@ -11,7 +11,6 @@ import {
   controlPanelUpdateBreadCrumbs,
 } from '../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../redux/features/popups/popupsSlice';
-import Lock from '../../../../common/Lock';
 import HoverComponent from '../../controlPanel/components/HoverComponent';
 
 const editMatEditIcon = {
@@ -65,24 +64,6 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
     backgroundSize: 'cover',
     position: 'relative',
-  },
-  prod_item_zamok_btn: {
-    width: '18px',
-    height: '18px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: '#fff',
-    borderRadius: '50%',
-    position: 'absolute',
-    top: 5,
-    right: 5,
-    zIndex: 1,
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    '& svg': {
-      width: 18,
-      height: 'auto',
-    },
   },
   editMatEditIcon: {
     extend: editMatEditIcon,
@@ -528,26 +509,6 @@ const MaterialComponent = (props) => {
                 }
                 onClick={onClickPreview}
               ></div>
-              {props.lockMaterialStatus == 'basic' ? (
-                <Lock
-                  additionalClass={classes.prod_item_zamok_btn}
-                  tipPositionY={'top'}
-                  tipPositionX={'right'}
-                  upgradePro={true}
-                  upgradeBasic={true}
-                  textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                  parentClass={classes.editMatItem}
-                />
-              ) : props.lockMaterialStatus == 'pro' ? (
-                <Lock
-                  additionalClass={classes.prod_item_zamok_btn}
-                  tipPositionY={'top'}
-                  tipPositionX={'right'}
-                  upgradePro={true}
-                  textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                  parentClass={classes.editMatItem}
-                />
-              ) : null}
 
               <div className={classes.editMat}>
                 {showCopy ? (

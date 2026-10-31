@@ -23,7 +23,7 @@ function buildResponse(row: ProjectRow) {
   const filePath = projectFile(row.id);
   const plan = existsSync(filePath) ? JSON.parse(readFileSync(filePath, 'utf-8')) : {};
   plan.id = row.id;
-  return { status: 'success', viewOnly: row.view_only === 1, userPlan: 'pro', plan };
+  return { status: 'success', viewOnly: row.view_only === 1, plan };
 }
 
 export function getConfig() {
@@ -52,7 +52,7 @@ export function listProjects(userId: string, limit: number, offset: number) {
   return {
     status: 'ok',
     data: {
-      items: rows.map(r => ({ id: r.id, hash: r.id, name: r.name, modified: r.updated_at, opened: r.created_at, userPlan: 'pro' })),
+      items: rows.map(r => ({ id: r.id, hash: r.id, name: r.name, modified: r.updated_at, opened: r.created_at })),
       total: count,
     },
   };

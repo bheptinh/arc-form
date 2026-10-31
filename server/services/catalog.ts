@@ -90,9 +90,6 @@ function buildItem(row: Record<string, unknown>, files: FileMap, tags: TagMap, s
         materials: slots.get(row.uuid as string) ?? [],
       },
     },
-    // TODO: R2D API inconsistency — 'free' is a plain string, paid tiers are arrays.
-    // FE checks both (plan == 'free' || plan.find(...)). Consider normalising to always-array on the FE side.
-    plan: row.plan === null ? null : row.plan === 'free' ? 'free' : (row.plan as string).split(','),
     property: {
       sizes: { width: row.width, height: row.height, depth: row.depth },
       position: { x: row.position_x, y: row.position_y, z: row.position_z },
@@ -122,7 +119,7 @@ function buildItem(row: Record<string, unknown>, files: FileMap, tags: TagMap, s
 // --- product SELECT fragment reused across queries ---
 
 const PRODUCT_COLS = `
-  p.id as uuid, p.external_id, p.type, p.name, p.description, p.plan,
+  p.id as uuid, p.external_id, p.type, p.name, p.description,
   p.appointment, p.width, p.height, p.depth,
   p.position_x, p.position_y, p.position_z,
   p.contour_top, p.contour_cut,

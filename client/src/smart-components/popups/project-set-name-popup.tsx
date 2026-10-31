@@ -21,7 +21,6 @@ import {
   selectUserProjectActive,
   setActiveProjectName,
   setProfileData,
-  setProjectPlan,
 } from '../../redux/features/user/userSlice';
 import { confirm } from '../../shared-components/ConfirmDialog';
 import Button from '../../shared-components/inputs/button';
@@ -113,8 +112,6 @@ export default function ProjectSetNamePopup() {
       dispatch(
         setActivePopup({ name: 'completeMessage', positionX: 'left', data: 'NOTIFY_SAVE_COMPLETE' })
       );
-      R2D.scene.updateProjectUserPlan('free');
-      dispatch(setProjectPlan('free'));
       planner.scene.setIsProjectBelongToLoggedUserStatus(
         R2D.scene.getProjectUserKey() == user.getKey()
       );

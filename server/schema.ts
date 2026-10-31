@@ -14,6 +14,6 @@ try { db.exec(`ALTER TABLE users ADD COLUMN language_code TEXT NOT NULL DEFAULT 
 export const DEV_USER_ID = '57022071-c204-6e51-1e36-78691b317b3f';
 
 db.prepare(`
-  INSERT OR IGNORE INTO users (id, email, name, plan)
-  VALUES (?, 'varjatua@gmail.com', 'Bohdan Heptinh', 'pro')
+  INSERT OR IGNORE INTO users (id, email, name)
+  VALUES (?, 'varjatua@gmail.com', 'Bohdan Heptinh')
 `).run(DEV_USER_ID);

@@ -15,7 +15,6 @@ import SimpleBar from 'simplebar-react';
 import { useLanguages } from '../../../../../../api/hooks/useLanguages';
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../initR2D';
-import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
   changeActiveControlPanelMode,
   selectActiveControlPanelModeData,
@@ -25,14 +24,8 @@ import {
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { showQuickPanelVisible } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
-import {
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
-import Lock from '../../components/Lock';
 import MaterialComponent from '../../components/MaterialComponent';
-import { useMerchantLogin } from '../../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   planner_upload_catalog_cont: {
@@ -437,7 +430,6 @@ const useStyle = createUseStyles({
       background: '#8fc32d',
     },
   },
-  planner_catalog_prem_zamok: {},
   planner_lock_img: {
     '& > rect:first-child': {
       fill: 'transparent',
@@ -447,7 +439,6 @@ const useStyle = createUseStyles({
 
 const Main = (props) => {
   const dispatch = useDispatch();
-  const verifyEnabledMerchantLogin = useMerchantLogin();
   const translation = useTranslation();
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
@@ -464,11 +455,6 @@ const Main = (props) => {
   const [appointmentRadioStatus, setAppointmentRadioStatus] = useState(
     R2D.modelUploader?.getAppointment()
   );
-
-  const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
-  const userProjectActive = useSelector(selectUserProjectActive);
-
-  const userData = useSelector(selectUserProfileData);
 
   const languages = useLanguages();
   const currLanguage = languages.find((i) => i.current == 1);
@@ -569,21 +555,12 @@ const Main = (props) => {
   };
 
   const onSaveModel = (e) => {
-    if (
-      userData?.plan == 'pro' ||
-      (isProjectBelongToLoggedUser && userProjectActive.plan == 'pro')
-    ) {
-      dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
-      R2D.modelUploader.setAllPartsSourcesAsBank();
-      R2D.modelUploader.save(
-        R2D.URL.DOMAIN + R2D.URL.URL_UPLOAD_FILE,
-        R2D.URL.DOMAIN + R2D.URL.URL_UPLOAD_ENTITY
-      );
-    } else {
-      R2D.OPTIONS.PRO_PLAN
-        ? verifyEnabledMerchantLogin()
-        : dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-    }
+    dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
+    R2D.modelUploader.setAllPartsSourcesAsBank();
+    R2D.modelUploader.save(
+      R2D.URL.DOMAIN + R2D.URL.URL_UPLOAD_FILE,
+      R2D.URL.DOMAIN + R2D.URL.URL_UPLOAD_ENTITY
+    );
   };
 
   const onMouseDown = (e) => {
@@ -881,31 +858,13 @@ const Main = (props) => {
               ' ' +
               classes.planner_popup_cont_right_button_save +
               ' ' +
-              (userData.plan == 'pro' ||
-              (isProjectBelongToLoggedUser && userProjectActive.plan == 'pro')
-                ? classes.planner_popup_cont_right_button_save_ready
-                : '')
+              classes.planner_popup_cont_right_button_save_ready
             }
             onClick={onSaveModel}
           >
-            {userData?.plan == 'pro' ||
-            (isProjectBelongToLoggedUser && userProjectActive.plan == 'pro') ? (
-              <IconPlus size={22} color="#2A3435" />
-            ) : null}
+            <IconPlus size={22} color="#2A3435" />
 
             <p>{translation['UPLOAD_MODEL_TEXT_SAVE']}</p>
-            {userData?.plan == 'pro' ||
-            (isProjectBelongToLoggedUser && userProjectActive.plan == 'pro') ? null : (
-              <Lock
-                additionalClass={classes.planner_catalog_prem_zamok}
-                additionalImgClass={classes.planner_lock_img}
-                tipPositionY={'top'}
-                tipPositionX={'right'}
-                upgradePro={true}
-                textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                parentClass={classes.planner_popup_cont_right_button_save}
-              />
-            )}
           </div>
         </div>
       </div>

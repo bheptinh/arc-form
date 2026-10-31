@@ -351,13 +351,11 @@ const Main = (props) => {
         <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
           <div className={classes.planerWallsWrap}>
             <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
-              {R2D.config.data.enable_pro ? (
-                <EditPlinthItem
-                  customStyles={{ border: 'none' }}
-                  onClick={onClickPlinthChange}
-                  src={`${imgSrc}`}
-                />
-              ) : null}
+              <EditPlinthItem
+                customStyles={{ border: 'none' }}
+                onClick={onClickPlinthChange}
+                src={`${imgSrc}`}
+              />
 
               <MaterialComponent
                 customStyles={{ border: 'none' }}

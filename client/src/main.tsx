@@ -28,7 +28,6 @@ import { planner, user } from './initR2D';
 import { MarkdownPage } from './pages/MarkdownPage';
 import PasswordRecoveryPage from './pages/PasswordRecoveryPage';
 import ProjectsPage from './pages/ProjectsPage';
-import RedeemPage from './pages/RedeemPage';
 import RendersPage from './pages/RendersPage';
 import ToursPage from './pages/ToursPage';
 import { setActivePopup } from './redux/features/popups/popupsSlice';
@@ -116,7 +115,6 @@ async function init() {
                 <Route path="/tours" element={<ToursPage />} />
                 <Route path="/toc" element={<MarkdownPage slug="toc" />} />
                 <Route path="/auth/reset-password" element={<PasswordRecoveryPage />} />
-                <Route path="/redeem" element={<RedeemPage />} />
                 <Route path="/project" element={<Navigate to="/projects" replace />} />
                 <Route path="/project/*" element={<App />} />
               </Routes>

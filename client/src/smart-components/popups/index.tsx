@@ -20,7 +20,6 @@ import Export3DProjectPopup from './export-popup/export-3d-project-popup';
 import ExportPopup from './export-popup/export-popup';
 import ImageUploadPopup from './image-upload-popup';
 import LoadingMessagePopup from './loading-message';
-import PayProPopup from './pay-pro-popup';
 import ProfilePopup from './profile-popup';
 import ProjectDataLoadPopup from './project-data-load-popup';
 import ProjectSetNamePopup from './project-set-name-popup';
@@ -37,7 +36,6 @@ import StartPopup from './start-popup';
 import TipsPopup from './tips-popup';
 import Tour360CreatePopup from './tour-360-create';
 import UpdatePassword from './update-password';
-import UpgradePlan from './upgrade-plan';
 import UploadChoiceModelPopup from './upload-custom-popups/upload-choice-model-popup';
 import UploadChoicePopup from './upload-custom-popups/upload-choice-popup';
 import UploadCustomMaterialPopup from './upload-custom-popups/upload-custom-material-popup';
@@ -67,7 +65,6 @@ export default function PopupActions() {
       {activePopup.registration.status === true ? <AuthRegistrationPopup /> : null}
       {activePopup.forgotPassword.status === true ? <AuthForgotPasswordPopup /> : null}
       {activePopup.profile.status === true ? <ProfilePopup /> : null}
-      {activePopup.payPro.status === true ? <PayProPopup /> : null}
       {activePopup.setProjectName.status === true ? <ProjectSetNamePopup /> : null}
       {activePopup.confirm.status === true ? <ConfirmPopup /> : null}
       {activePopup.alert.status === true ? <AlertPopup /> : null}
@@ -100,7 +97,6 @@ export default function PopupActions() {
       {activePopup.customRegistrationPopup.status === true ? <CustomRegistrationPopup /> : null}
       {activePopup.registrationDonePopup.status === true ? <RegistrationDonePopup /> : null}
       {activePopup.updatePassword.status === true ? <UpdatePassword /> : null}
-      {activePopup.upgradePlan.status === true ? <UpgradePlan /> : null}
       {activePopup.exportPopup.status === true ? <ExportPopup /> : null}
       {activePopup.uploadCustomModelPopup.status === true ? <UploadCustomModelPopup /> : null}
       {activePopup.uploadCustomMaterialPopup.status === true ? <UploadCustomMaterialPopup /> : null}

@@ -115,48 +115,6 @@ const useStyle = createUseStyles({
       maxHeight: '100%',
     },
   },
-  menu_dop_info_info_link_pro: {
-    fontFamily: 'RobotoCondensed-Regular',
-    color: '#383C31',
-    fontSize: '13px',
-    marginLeft: '6px',
-    borderRadius: '3px',
-    padding: '2px 3px',
-    position: 'relative',
-    background: '#FFB400',
-    textTransform: 'uppercase',
-    zIndex: 1,
-  },
-  menu_dop_info_info_link_basic: {
-    fontFamily: 'RobotoCondensed-Regular',
-    color: '#383C31',
-    fontSize: '13px',
-    marginLeft: '6px',
-    borderRadius: '3px',
-    padding: '2px 3px',
-    position: 'relative',
-    background: '#BADCFF',
-    textTransform: 'uppercase',
-    zIndex: 1,
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:hover': {
-      background: '#95c3f3',
-    },
-  },
-  menu_dop_info_info_link_free: {
-    fontFamily: 'RobotoCondensed-Regular',
-    color: '#66ACF4',
-    fontSize: '13px',
-    marginLeft: '6px',
-    padding: '0px 3px',
-    textDecoration: 'underline',
-    position: 'relative',
-    zIndex: 1,
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:hover': {
-      textDecoration: 'none',
-    },
-  },
   menu_dop_btn_wr_hover: {
     width: 40,
     '& $menu_dop_btn_wr': {
@@ -298,25 +256,6 @@ const UserButton = (props) => {
               onClick={onProfileButtonClick}
               onTouchStart={onProfileButtonClick}
             ></div>
-            {userData?.plan == 'pro' ? (
-              <div className={classes.menu_dop_info_info_link_pro}>
-                {translation['PL_PLAN_PRO_TEXT']}
-              </div>
-            ) : userData?.plan == 'basic' ? (
-              <div
-                className={classes.menu_dop_info_info_link_basic}
-                onClick={(e) => dispatch(setActivePopup({ name: 'payPro', type: 'user' }))}
-              >
-                {translation['PL_PLAN_BASIC_TEXT']}
-              </div>
-            ) : (
-              <div
-                className={classes.menu_dop_info_info_link_free}
-                onClick={(e) => dispatch(setActivePopup({ name: 'payPro', type: 'user' }))}
-              >
-                {translation['FR_TOURS_TRANS_108']}
-              </div>
-            )}
           </div>
           <div
             className={classes.menu_dop_info_link}

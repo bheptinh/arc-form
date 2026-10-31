@@ -9,7 +9,6 @@ import {
   controlPanelHistoryAdd,
   controlPanelUpdateBreadCrumbs,
 } from '../../../../../redux/features/control/controlPanelSlice';
-import Lock from '../../../../common/Lock';
 import HoverComponent from '../../controlPanel/components/HoverComponent';
 
 const editMatEditIcon = {
@@ -73,24 +72,6 @@ const useStyle = createUseStyles({
     },
   },
   editMatImg_no_image: {},
-  prod_item_zamok_btn: {
-    width: '18px',
-    height: '18px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: '#fff',
-    borderRadius: '50%',
-    position: 'absolute',
-    top: 5,
-    right: 5,
-    zIndex: 1,
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    '& svg': {
-      width: 18,
-      height: 'auto',
-    },
-  },
   editMatEditIcon: {
     extend: editMatEditIcon,
     cursor: 'pointer',
@@ -264,17 +245,6 @@ const LogoComponent = (props) => {
                 />
               )}
             </div>
-
-            {props.lockMaterialStatus && (
-              <Lock
-                additionalClass={classes.prod_item_zamok_btn}
-                dontShowText={props.lockMaterialStatus}
-                tipPositionY={'top'}
-                tipPositionX={'right'}
-                textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                parentClass={classes.editMatItem}
-              />
-            )}
 
             <div className={classes.editMat} ref={copyPasteDiv}>
               {showCopy ? (

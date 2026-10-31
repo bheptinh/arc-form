@@ -28,14 +28,9 @@ import {
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { hideQuickPanelVisible } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
-import {
-  selectIsLogged,
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
+import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import ChangeSize from '../../../../../common/ChangeSize';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
-import Lock from '../../../../../common/Lock';
 import LockSize from '../../../../../common/LockSize';
 import RemoteComponentMain from '../../../../../common/RemoteComponentMain';
 import BlueButton from '../../components/BlueButton';
@@ -493,29 +488,6 @@ const useStyle = createUseStyles({
       background: '#fcc749',
     },
   },
-  prod_item_img_wr_icons: {
-    position: 'absolute',
-    top: 5,
-    right: 5,
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  prod_item_zamok_btn: {
-    width: '18px',
-    height: '18px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: '#fff',
-    borderRadius: '50%',
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    marginBottom: 10,
-    cursor: 'default',
-    '& svg': {
-      width: 18,
-      height: 18,
-    },
-  },
   prod_item_promocode_btn: {
     position: 'absolute',
     bottom: 5,
@@ -621,9 +593,6 @@ const Main = (props) => {
   const lockState = useSelector(selectLockState);
 
   const isLogged = useSelector(selectIsLogged);
-
-  const userData = useSelector(selectUserProfileData);
-  const userProjectActive = useSelector(selectUserProjectActive);
 
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
@@ -1041,7 +1010,6 @@ const Main = (props) => {
               key={index}
               mouseLeaveMaterial={mouseLeaveLogoMaterial}
               mouseEnterMaterial={(e) => mouseEnterLogoMesh(i.mesh)}
-              lockMaterialStatus={false}
               previewSrc={i.src}
               onCopyPaste={{ paste: onPasteLogoMesh, index, statusCopy: true }}
             />
@@ -1050,25 +1018,12 @@ const Main = (props) => {
       }
 
       previewMaterialsId.forEach((i, index) => {
-        const pollMaterials = Object.entries(R2D.Pool._products_data);
-        let needToLock = false;
-        const id = i.addMaterial || i.matId;
-        const currentMaterial = pollMaterials.find((y) => y[0] == id);
-        const plan = currentMaterial?.[1]?.plan;
-
-        if (user.data.plan == 'free') {
-          if (Array.isArray(plan) || (plan !== 'free' && plan)) {
-            needToLock = true;
-          }
-        }
-
         if (i.source && i.source != 'none')
           prevMatArray.push(
             <MaterialComponent
               key={prevMatArray.length + index}
               mouseLeaveMaterial={mouseLeaveMaterial}
               mouseEnterMaterial={(e) => mouseEnterMaterial(index)}
-              lockMaterialStatus={needToLock}
               materialsSource={{
                 type: previewMaterialsId[index].source,
                 data: previewMaterialsId[index].setId,
@@ -1079,7 +1034,7 @@ const Main = (props) => {
                 copy: onCopyMaterial,
                 paste: onPasteMaterial,
                 index,
-                statusCopy: needToLock ? false : true,
+                statusCopy: true,
               }}
               onClick={(e) => props.onClickPreview(index)}
               mesh={!i.addMaterial && (!i.matId || i.matId === '0') ? index + '' : ''}
@@ -1181,33 +1136,6 @@ const Main = (props) => {
                 onClick={updateFavorites}
               >
                 <FavoriteStarIcon />
-              </div>
-              <div className={classes.prod_item_img_wr_icons}>
-                {currSceneObj?.plan == 'free' ||
-                (currSceneObj?.plan?.find &&
-                  (currSceneObj?.plan.find((i) => i == userData.plan) ||
-                    currSceneObj?.plan.find(
-                      (i) => i == userProjectActive.plan
-                    ))) ? null : currSceneObj?.objectData?.plan?.includes('basic') ? (
-                  <Lock
-                    additionalClass={classes.prod_item_zamok_btn}
-                    tipPositionY={'top'}
-                    tipPositionX={'right'}
-                    upgradePro={true}
-                    upgradeBasic={true}
-                    textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                    parentClass={classes.prod_item_img_wr}
-                  />
-                ) : currSceneObj?.objectData?.plan?.includes('pro') ? (
-                  <Lock
-                    additionalClass={classes.prod_item_zamok_btn}
-                    tipPositionY={'top'}
-                    tipPositionX={'right'}
-                    upgradePro={true}
-                    textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                    parentClass={classes.prod_item_img_wr}
-                  />
-                ) : null}
               </div>
               {matchedLinkObject?.discount ? (
                 <div className={classes.prod_item_promocode_btn}>

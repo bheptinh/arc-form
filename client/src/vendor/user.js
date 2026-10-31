@@ -17,7 +17,6 @@ R2D.UserCore = function () {
     render: false,
     tips: true,
     token: null,
-    plan: 'free',
     favorites: null,
     autoSave: false,
   };
@@ -34,21 +33,11 @@ R2D.UserCore = function () {
     me.data.key = data['key'];
     me.data.render = data['render'] === '1' || data['render'] === true;
     me.data.tips = data['tips'] === '1' || data['tips'] === true;
-    me.data.plan = data['plan'];
     me.data.favorites = data['favorites'];
-    me.data.maxProjects = data['maxProjects'];
-    me.data.projectCount = data['projectCount'];
     me.data.autoSave = data['autoSave'];
 
     if (data['token']) me.saveToken(data['token']);
 
-    let features = null;
-    if ('userPlanFeatures' in data) features = data['userPlanFeatures'];
-    if (features) {
-      me.data.walls = features.includes('wall_editor');
-      me.data.plinth = features.includes('plintus');
-      me.data.add_mat = features.includes('private_material');
-    }
 
     if (me.data.name == null || me.data.name == '') {
       me.data.name = me.data.email;
@@ -65,10 +54,6 @@ R2D.UserCore = function () {
     me.data.key = null;
     me.data.render = false;
     me.data.tips = true;
-    me.data.walls = false;
-    me.data.plinth = false;
-    me.data.add_mat = false;
-    me.data.plan = 'free';
     me.data.favorites = null;
 
     clearToken();
@@ -173,8 +158,6 @@ R2D.UserCore = function () {
   me.deleteProject = async (id) => await uProjects.deleteProject(id);
   me.projectHashLoad = async (projectId) => await uProjects.projectHashLoad(projectId);
 
-  let uSubscription = new R2D.UserCore.UserSubscription(me);
-  me.cancelSubscription = async () => await uSubscription.cancelSubscription();
 
   let uDimension = new R2D.UserCore.UserDimensions(me);
   me.changeDimension = (dimension) => uDimension.changeDimension(dimension);
@@ -193,8 +176,6 @@ R2D.UserCore = function () {
   let uSearch = new R2D.UserCore.UserSearch(me);
   me.uGetSearchResult = (searchQuery) => uSearch.getSearchResult(searchQuery);
 
-  let uPromo = new R2D.UserCore.UserPromo(me);
-  me.promoLoad = async (value) => await uPromo.load(value);
 
   let uExport = new R2D.UserCore.UserExport(me);
   me.makeExport = async (renderObj) => await uExport.makeExport(renderObj);
@@ -362,118 +343,6 @@ R2D.UserCore.UserExport = function (user) {
   };
 };
 
-R2D.UserCore.UserPromo = function (user) {
-  let me = this;
-  let loader = null;
-
-  me.close = () => {
-    if (!loader) return;
-
-    loader.close();
-    loader = null;
-  };
-
-  me.load = (value) => {
-    return new Promise((resolve, reject) => {
-      if (loader) return;
-      let urlFull = R2D.makeURL(R2D.URL.DOMAIN, `/api/user/promo?name=${value}`);
-      loader = R2D.XHRLoader.getPostLoader(urlFull, null, null, null, true);
-
-      loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-      loader.addEventListener(Event.ERROR, loaderEventHandler);
-
-      function loaderEventHandler(event) {
-        if (event.type == Event.COMPLETE) {
-          checkData(event.data.data);
-        } else {
-          resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
-        }
-
-        close();
-      }
-      function checkData(data) {
-        let object = null;
-
-        try {
-          object = JSON.parse(data);
-        } catch (error) {
-          resolve({ type: 'error', data: object['error'] || 'TEXT_ERROR_LOAD_DATA' });
-          return false;
-        }
-
-        if (!object.hasOwnProperty('status')) {
-          resolve({ type: 'error', data: object['error'] || 'TEXT_ERROR_LOAD_DATA' });
-          return;
-        }
-        if (object['status'] == 'error') {
-          resolve({ type: 'error', data: object['error'] || 'TEXT_ERROR_LOAD_DATA' });
-          return;
-        }
-        resolve(object);
-      }
-      function close() {
-        if (!loader) return;
-
-        loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-        loader.removeEventListener(Event.ERROR, loaderEventHandler);
-        loader.close();
-        loader = null;
-      }
-    });
-  };
-};
-
-R2D.UserCore.UserSubscription = function (user) {
-  let me = this;
-  let loader = null;
-
-  me.cancelSubscription = () => {
-    return new Promise(async (resolve, reject) => {
-      if (loader) return;
-      var url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_CANCEL_SUBSCRIPTION);
-      loader = new R2D.XHRLoader();
-      loader.addEventListener(Event.COMPLETE, loaderEventHandler);
-      loader.addEventListener(Event.ERROR, loaderEventHandler);
-      loader.load(url, null, 'get', null, null, true);
-
-      function loaderEventHandler(event) {
-        if (event.type == Event.COMPLETE) {
-          checkData(event.data.data);
-        } else {
-          resolve({ type: 'error', message: 'error_load', data: 'TEXT_ACTION_ERROR' });
-        }
-
-        close();
-      }
-      function checkData(data) {
-        let object = null;
-
-        try {
-          object = JSON.parse(data);
-        } catch (error) {
-          console.error('Error parse JSON string!');
-          resolve({ type: 'error', message: 'error_load', data: 'TEXT_ACTION_ERROR' });
-          return false;
-        }
-
-        if (!object.hasOwnProperty('status') || object['status'] != 'success') {
-          console.error('Status is not success!');
-          resolve({ type: 'error', message: 'error_load', data: 'TEXT_ACTION_ERROR' });
-          return;
-        }
-        resolve(object);
-      }
-      function close() {
-        if (!loader) return;
-
-        loader.removeEventListener(Event.COMPLETE, loaderEventHandler);
-        loader.removeEventListener(Event.ERROR, loaderEventHandler);
-        loader.close();
-        loader = null;
-      }
-    });
-  };
-};
 R2D.UserCore.UserSearch = function (user) {
   let me = this;
   let loader = null;

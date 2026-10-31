@@ -311,17 +311,12 @@ const Main = (props) => {
       ? true
       : false
   );
-  const isProEnabled = R2D.config.data.enable_pro;
   const [checkboxMolding, setCheckboxMolding] = useState(topPlinth?.exists);
   const [checkboxPlinth, setCheckboxPlinth] = useState(bottomPlinth?.exists);
   const [preloaderStatus, setPreloaderStatus] = useState(true);
   const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
-  const [lockWallMaterialStatus, setLockWallMaterialStatus] = useState(false);
-  const [lockWallMaterialPlan, setLockWallMaterialPlan] = useState('');
-  const [lockPlintusMaterialStatus, setLockPlintusMaterialStatus] = useState(false);
-  const [lockMoldingMaterialStatus, setLockMoldingMaterialStatus] = useState(false);
 
   const imgSrcTopPlinth = WC.plinthCreator?.getImgSrc(topPlinth?.shapeNum, topPlinth?.type);
   const imgSrcBottomPlinth = WC.plinthCreator?.getImgSrc(
@@ -480,51 +475,6 @@ const Main = (props) => {
     setWallLength(planner.units.valueToString(TR.euclDistP(currObj.point1, currObj.point2)));
   }, [metrics]);
 
-  useEffect(() => {
-    const pollMaterials = Object.entries(R2D.Pool._products_data);
-    const currentMaterial = pollMaterials.find((y) => y[0] == materialIdWall);
-    const plan = currentMaterial?.[1]?.plan;
-    console.log(currentMaterial, ' currentMaterial');
-    if (user.data.plan == 'free') {
-      if (Array.isArray(plan) || (plan !== 'free' && plan)) {
-        if (plan.includes('basic')) {
-          setLockWallMaterialPlan('basic');
-        } else {
-          setLockWallMaterialPlan('pro');
-        }
-        setLockWallMaterialStatus(true);
-      } else {
-        setLockWallMaterialStatus(false);
-      }
-    }
-  }, [lockWallMaterialStatus, isLogged, materialIdWall]);
-
-  useEffect(() => {
-    const pollMaterials = Object.entries(R2D.Pool._products_data);
-    const currentMaterial = pollMaterials.find((y) => y[0] == materialIdBottom);
-    const plan = currentMaterial?.[1]?.plan;
-    if (user.data.plan == 'free') {
-      if (Array.isArray(plan) || (plan !== 'free' && plan)) {
-        setLockPlintusMaterialStatus(true);
-      } else {
-        setLockPlintusMaterialStatus(false);
-      }
-    }
-  }, [lockPlintusMaterialStatus, isLogged, materialIdBottom]);
-
-  useEffect(() => {
-    const pollMaterials = Object.entries(R2D.Pool._products_data);
-    const currentMaterial = pollMaterials.find((y) => y[0] == materialIdTop);
-    const plan = currentMaterial?.[1]?.plan;
-    if (user.data.plan == 'free') {
-      if (Array.isArray(plan) || (plan !== 'free' && plan)) {
-        setLockMoldingMaterialStatus(true);
-      } else {
-        setLockMoldingMaterialStatus(false);
-      }
-    }
-  }, [lockMoldingMaterialStatus, isLogged, materialIdTop]);
-
   return (
     <div className={classes.planner_catalog_cont} style={styleAnimation}>
       <div className={classes.catalog_top_wr}>
@@ -554,7 +504,6 @@ const Main = (props) => {
                 <div className={classes.planerWallsWrap_material}>
                   <MaterialComponent
                     customStyles={{ border: 'none' }}
-                    lockMaterialStatus={lockWallMaterialPlan}
                     addMaterial={addMaterialIdWall}
                     matId={materialIdWall}
                     materialsSource={{ type: 'bank', data: null }}
@@ -562,7 +511,7 @@ const Main = (props) => {
                       copy: onCopyMaterial,
                       paste: onPasteMaterial,
                       index: 'wall',
-                      statusCopy: lockWallMaterialStatus ? false : true,
+                      statusCopy: true,
                     }}
                     onClick={(e) => onClickPreview('wall')}
                     lock={false}
@@ -585,42 +534,31 @@ const Main = (props) => {
                 <div>{wallLength + ' ' + metrics.active}</div>
               </div>
 
-              {isProEnabled ? (
-                <div className={classes.divideWallWr}>
-                  <div onClick={onClickWallSlice} className={classes.divideWall}>
-                    <img
-                      className={classes.divideWallImg}
-                      src={'/src_designer/images/icon_divide.svg'}
-                    />
-                    <div className={classes.divideWallText}>
-                      {currObj?.configData
-                        ? translation['TILE_CONFIG_EDIT']
-                        : translation['TILE_CONFIG_INIT']}
-                    </div>
+              <div className={classes.divideWallWr}>
+                <div onClick={onClickWallSlice} className={classes.divideWall}>
+                  <img
+                    className={classes.divideWallImg}
+                    src={'/src_designer/images/icon_divide.svg'}
+                  />
+                  <div className={classes.divideWallText}>
+                    {currObj?.configData
+                      ? translation['TILE_CONFIG_EDIT']
+                      : translation['TILE_CONFIG_INIT']}
                   </div>
                 </div>
-              ) : null}
+              </div>
 
               <div className={classes.divide_wall_items}>
                 <div className={classes.divide_wall_item}>
-                  <div
-                    className={
-                      classes.divideWallGrid +
-                      ' ' +
-                      (isProEnabled ? classes.divideWallGridMany : null)
-                    }
-                  >
-                    {isProEnabled ? (
-                      <PlinthComponent
-                        customStyles={{ border: 'none' }}
-                        onClick={(e) => onClickPlinthChange('molding')}
-                        src={imgSrcTopPlinth}
-                      />
-                    ) : null}
+                  <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
+                    <PlinthComponent
+                      customStyles={{ border: 'none' }}
+                      onClick={(e) => onClickPlinthChange('molding')}
+                      src={imgSrcTopPlinth}
+                    />
 
                     <MaterialComponent
                       customStyles={{ border: 'none' }}
-                      lockMaterialStatus={lockMoldingMaterialStatus}
                       addMaterial={addMaterialIdTop}
                       materialsSource={{ type: 'bank', data: null }}
                       matId={materialIdTop}
@@ -628,7 +566,7 @@ const Main = (props) => {
                         copy: onCopyMaterial,
                         paste: onPasteMaterial,
                         index: 'top',
-                        statusCopy: lockMoldingMaterialStatus ? false : true,
+                        statusCopy: true,
                       }}
                       onClick={(e) => onClickPreview('top')}
                     />
@@ -645,24 +583,15 @@ const Main = (props) => {
                 </div>
 
                 <div className={classes.divide_wall_item}>
-                  <div
-                    className={
-                      classes.divideWallGrid +
-                      ' ' +
-                      (isProEnabled ? classes.divideWallGridMany : null)
-                    }
-                  >
-                    {isProEnabled ? (
-                      <PlinthComponent
-                        customStyles={{ border: 'none' }}
-                        onClick={(e) => onClickPlinthChange('plinth')}
-                        src={imgSrcBottomPlinth}
-                      />
-                    ) : null}
+                  <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
+                    <PlinthComponent
+                      customStyles={{ border: 'none' }}
+                      onClick={(e) => onClickPlinthChange('plinth')}
+                      src={imgSrcBottomPlinth}
+                    />
 
                     <MaterialComponent
                       customStyles={{ border: 'none' }}
-                      lockMaterialStatus={lockPlintusMaterialStatus}
                       addMaterial={addMaterialIdBottom}
                       materialsSource={{ type: 'bank', data: null }}
                       matId={materialIdBottom}
@@ -670,7 +599,7 @@ const Main = (props) => {
                         copy: onCopyMaterial,
                         paste: onPasteMaterial,
                         index: 'bottom',
-                        statusCopy: lockPlintusMaterialStatus ? false : true,
+                        statusCopy: true,
                       }}
                       onClick={(e) => onClickPreview('bottom')}
                     />

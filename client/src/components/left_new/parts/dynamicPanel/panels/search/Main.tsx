@@ -20,14 +20,9 @@ import {
   updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import {
-  selectIsLogged,
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
+import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
-import Lock from '../../../../../common/Lock';
 import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
@@ -698,8 +693,6 @@ const Main = (props) => {
   const translation = useTranslation();
 
   const isLogged = useSelector(selectIsLogged);
-  const userProjectActive = useSelector(selectUserProjectActive);
-  const userData = useSelector(selectUserProfileData);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
@@ -748,7 +741,6 @@ const Main = (props) => {
   let borderTimeoutKey;
   let currentDraggedElem;
   let plannerCatalogElem;
-  let currentProductAccessibilityStatus;
   let currentOverlayCoords;
   const panelRef = useRef(null);
 
@@ -782,10 +774,9 @@ const Main = (props) => {
 
   // Material
 
-  const onMouseDownMaterial = (e, elem, isObjectAccessible) => {
+  const onMouseDownMaterial = (e, elem) => {
     document.addEventListener('mouseup', onMouseUpMaterial);
     plannerCatalogElem = e.currentTarget.closest(`.${classes.prod_item}`);
-    currentProductAccessibilityStatus = isObjectAccessible;
     document.addEventListener('mousemove', onMoveMaterial);
     timer = Date.now();
     currentDraggedElem = elem;
@@ -796,11 +787,6 @@ const Main = (props) => {
           ? planner.scene.dragProductFromCatalog(elem.addData, elem.id)
           : planner.scene.dragProductFromCatalog(elem.id)
         : null;
-      if (
-        (elem.isOwner && userData.plan == 'free' && userProjectActive.plan == 'free') ||
-        !currentProductAccessibilityStatus
-      )
-        R2D.mouseInteractionHelper.stateDraggingMaterial.isPlaceMaterialAllowed = false;
     }, 100);
   };
 
@@ -818,17 +804,12 @@ const Main = (props) => {
     if (Date.now() - timer > 100) {
       if (e.clientX < R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels())
         planner.mih().state && planner.mih().state.mouseUp(e);
-      else {
-        !currentProductAccessibilityStatus &&
-          dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-      }
     }
     currentDraggedElem = null;
   };
 
-  const mouseEnterMaterial = (event, data, isObjectAccessible) => {
+  const mouseEnterMaterial = (event, data) => {
     if (dynamicPanelPreviewViewType == 'small') {
-      if (!isObjectAccessible) return;
       document.querySelector('.product_hover') && document.querySelector('.product_hover').remove();
       const product = event.target;
       const hoverWindow = document.createElement('div');
@@ -853,7 +834,7 @@ const Main = (props) => {
     document.querySelector('.product_hover') && document.querySelector('.product_hover').remove();
 
   // Model
-  const onMouseDownModel = (e, elem, isObjectAccessible) => {
+  const onMouseDownModel = (e, elem) => {
     if (document.querySelector('.' + classes.prod_elem_wrap))
       document.querySelector('.' + classes.prod_elem_wrap).style.touchAction = 'auto';
     if (document.querySelector('.' + classes.catalog_wr))
@@ -863,7 +844,6 @@ const Main = (props) => {
     const previewUrl = elem.source.images.preview;
     if (mouseDownOnObj) return;
     currentOverlayCoords = e.target.getBoundingClientRect();
-    currentProductAccessibilityStatus = isObjectAccessible;
     plannerCatalogElem = e.currentTarget.closest(`.${classes.prod_item}`);
     document.querySelector('.' + classes.product_hover) &&
       document.querySelector('.' + classes.product_hover).remove();
@@ -943,14 +923,6 @@ const Main = (props) => {
           R2D.scene.remove(sceneObjectToDelete);
           R2D.scene.history.removeUndoState();
         }
-      } else {
-        if (!currentProductAccessibilityStatus) {
-          dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
-          if (sceneObjectToDelete) {
-            R2D.scene.remove(sceneObjectToDelete);
-            R2D.scene.history.removeUndoState();
-          }
-        }
       }
       R2D.mouseInteractionHelper.stateDraggingProdFromCatalog.view3DObject = null;
     }
@@ -981,9 +953,9 @@ const Main = (props) => {
     });
   };
 
-  const mouseEnterModel = async (event, data, isObjectAccessible) => {
+  const mouseEnterModel = async (event, data) => {
     if (dynamicPanelPreviewViewType == 'small') {
-      if (mouseDownOnObj || !isObjectAccessible) return;
+      if (mouseDownOnObj) return;
       document.querySelector('.' + classes.product_hover) &&
         document.querySelector('.' + classes.product_hover).remove();
       const product = event.currentTarget || event.target.closest('.' + classes.prod_item);
@@ -1156,18 +1128,6 @@ const Main = (props) => {
       elemDepth = elem.property?.sizes?.depth;
       elemHeight = elem.property?.sizes?.height;
 
-      const isObjectAccessible = elem.isOwner
-        ? elem.type == R2D.ProductType.MATERIAL
-          ? userData.plan != 'free' || userProjectActive.plan != 'free'
-          : userData.plan == 'pro' ||
-            userProjectActive.plan == 'pro' ||
-            ((userData.plan == 'basic' || userProjectActive.plan == 'basic') &&
-              (elem.type == R2D.ProductType.POSTER || elem.type == R2D.ProductType.CARPET))
-        : elem?.plan == 'free' ||
-          (elem?.plan?.find &&
-            (elem?.plan.find((i) => i == userData.plan) ||
-              elem?.plan.find((i) => i == userProjectActive.plan)));
-
       if (elem.source.body?.colors) elemColors = elem.source.body?.colors;
 
       if (elem?.isColorPicker) {
@@ -1198,7 +1158,7 @@ const Main = (props) => {
               <div className={classes.prod_item_img_wr}>
                 <img src={matPrev.toDataURL()} />
 
-                {elemType == R2D.ProductType.MATERIAL && isObjectAccessible ? (
+                {elemType == R2D.ProductType.MATERIAL ? (
                   <div className={classes.prod_item_dop_btns_wr}>
                     <div
                       className={classes.prod_item_btn_copy}
@@ -1217,26 +1177,6 @@ const Main = (props) => {
 
                 <div className="preloader-cube" style={{ display: 'none' }}></div>
 
-                {isObjectAccessible ? null : elem.plan.includes('basic') ? (
-                  <Lock
-                    additionalClass={classes.prod_item_zamok_btn}
-                    tipPositionY={'top'}
-                    tipPositionX={'right'}
-                    upgradePro={true}
-                    upgradeBasic={true}
-                    textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                    parentClass={classes.prod_item}
-                  />
-                ) : elem.plan.includes('pro') ? (
-                  <Lock
-                    additionalClass={classes.prod_item_zamok_btn}
-                    tipPositionY={'top'}
-                    tipPositionX={'right'}
-                    upgradePro={true}
-                    textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                    parentClass={classes.prod_item}
-                  />
-                ) : null}
                 {dynamicPanelPreviewViewType != 'big' ? (
                   <div
                     className={classes.prod_item_more_info}
@@ -1257,16 +1197,16 @@ const Main = (props) => {
                 className={classes.prod_item_overlay}
                 onMouseDown={(e) =>
                   elemType == R2D.ProductType.MATERIAL
-                    ? onMouseDownMaterial(e, elem, isObjectAccessible)
-                    : onMouseDownModel(e, elem, isObjectAccessible)
+                    ? onMouseDownMaterial(e, elem)
+                    : onMouseDownModel(e, elem)
                 }
                 onMouseLeave={(e) =>
                   elemType == R2D.ProductType.MATERIAL ? mouseLeaveMaterial(e) : mouseLeaveModel(e)
                 }
                 onMouseEnter={(e) =>
                   elemType == R2D.ProductType.MATERIAL
-                    ? mouseEnterMaterial(e, elem, isObjectAccessible)
-                    : mouseEnterModel(e, elem, isObjectAccessible)
+                    ? mouseEnterMaterial(e, elem)
+                    : mouseEnterModel(e, elem)
                 }
                 id={elem.id + '_' + '#aaaaaa'.replace('#', '')}
               ></div>
@@ -1297,7 +1237,7 @@ const Main = (props) => {
               <div className={classes.prod_item_img_wr}>
                 <img src={undefined} />
 
-                {elemType == R2D.ProductType.MATERIAL && isObjectAccessible ? (
+                {elemType == R2D.ProductType.MATERIAL ? (
                   <div className={classes.prod_item_dop_btns_wr}>
                     <div
                       className={classes.prod_item_btn_copy}
@@ -1315,26 +1255,6 @@ const Main = (props) => {
                 ) : null}
 
                 <div className="preloader-cube"></div>
-                {isObjectAccessible ? null : elem.plan.includes('basic') ? (
-                  <Lock
-                    additionalClass={classes.prod_item_zamok_btn}
-                    tipPositionY={'top'}
-                    tipPositionX={'right'}
-                    upgradePro={true}
-                    upgradeBasic={true}
-                    textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                    parentClass={classes.prod_item}
-                  />
-                ) : elem.plan.includes('pro') ? (
-                  <Lock
-                    additionalClass={classes.prod_item_zamok_btn}
-                    tipPositionY={'top'}
-                    tipPositionX={'right'}
-                    upgradePro={true}
-                    textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                    parentClass={classes.prod_item}
-                  />
-                ) : null}
                 {dynamicPanelPreviewViewType != 'big' ? (
                   <div
                     className={classes.prod_item_more_info}
@@ -1354,16 +1274,16 @@ const Main = (props) => {
                 className={classes.prod_item_overlay}
                 onMouseDown={(e) =>
                   elemType == R2D.ProductType.MATERIAL
-                    ? onMouseDownMaterial(e, elem, isObjectAccessible)
-                    : onMouseDownModel(e, elem, isObjectAccessible)
+                    ? onMouseDownMaterial(e, elem)
+                    : onMouseDownModel(e, elem)
                 }
                 onMouseLeave={(e) =>
                   elemType == R2D.ProductType.MATERIAL ? mouseLeaveMaterial(e) : mouseLeaveModel(e)
                 }
                 onMouseEnter={(e) =>
                   elemType == R2D.ProductType.MATERIAL
-                    ? mouseEnterMaterial(e, elem, isObjectAccessible)
-                    : mouseEnterModel(e, elem, isObjectAccessible)
+                    ? mouseEnterMaterial(e, elem)
+                    : mouseEnterModel(e, elem)
                 }
                 id={elem.id + '_' + '#aaaaaa'.replace('#', '')}
               ></div>
@@ -1408,7 +1328,7 @@ const Main = (props) => {
                 className={'lazyload'}
               />
 
-              {elemType == R2D.ProductType.MATERIAL && isObjectAccessible ? (
+              {elemType == R2D.ProductType.MATERIAL ? (
                 <div className={classes.prod_item_dop_btns_wr}>
                   <div
                     className={classes.prod_item_btn_copy}
@@ -1425,7 +1345,7 @@ const Main = (props) => {
                 </div>
               ) : null}
 
-              {elem.isOwner && isObjectAccessible ? (
+              {elem.isOwner ? (
                 <div
                   className={classes.prod_item_custom_delete_btn}
                   onClick={() =>
@@ -1585,40 +1505,20 @@ const Main = (props) => {
                   : null}
               </div>
             ) : null}
-            {isObjectAccessible ? null : elem.plan.includes('basic') ? (
-              <Lock
-                additionalClass={classes.prod_item_zamok_btn}
-                tipPositionY={'top'}
-                tipPositionX={'right'}
-                upgradePro={true}
-                upgradeBasic={true}
-                textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                parentClass={classes.prod_item}
-              />
-            ) : elem.plan.includes('pro') ? (
-              <Lock
-                additionalClass={classes.prod_item_zamok_btn}
-                tipPositionY={'top'}
-                tipPositionX={'right'}
-                upgradePro={true}
-                textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                parentClass={classes.prod_item}
-              />
-            ) : null}
             <div
               className={classes.prod_item_overlay}
               onMouseDown={(e) =>
                 elemType == R2D.ProductType.MATERIAL
-                  ? onMouseDownMaterial(e, elem, isObjectAccessible)
-                  : onMouseDownModel(e, elem, isObjectAccessible)
+                  ? onMouseDownMaterial(e, elem)
+                  : onMouseDownModel(e, elem)
               }
               onMouseLeave={(e) =>
                 elemType == R2D.ProductType.MATERIAL ? mouseLeaveMaterial(e) : mouseLeaveModel(e)
               }
               onMouseEnter={(e) =>
                 elemType == R2D.ProductType.MATERIAL
-                  ? mouseEnterMaterial(e, elem, isObjectAccessible)
-                  : mouseEnterModel(e, elem, isObjectAccessible)
+                  ? mouseEnterMaterial(e, elem)
+                  : mouseEnterModel(e, elem)
               }
             ></div>
           </div>

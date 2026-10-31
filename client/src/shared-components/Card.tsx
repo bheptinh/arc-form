@@ -13,7 +13,6 @@ type Props = {
   preview?: string;
   modified?: string;
   created?: string;
-  userPlan?: string;
   actions: Action[];
   onClick?: () => void;
   nameContent?: ReactNode;
@@ -127,18 +126,6 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     marginBottom: 6,
   },
-  planBadge: {
-    position: 'absolute',
-    bottom: 4,
-    right: 4,
-    textTransform: 'uppercase',
-    border: '1px solid #9AA3A4',
-    color: '#9AA3A4',
-    borderRadius: 3,
-    padding: '1px 4px',
-    fontSize: 14,
-    '@media screen and (max-width: 950px)': { fontSize: 9 },
-  },
 });
 
 export function Card({
@@ -146,7 +133,6 @@ export function Card({
   preview,
   modified,
   created,
-  userPlan,
   actions,
   onClick,
   nameContent,
@@ -199,7 +185,6 @@ export function Card({
           )}
         </div>
       </div>
-      {userPlan && userPlan !== 'free' && <div className={classes.planBadge}>{userPlan}</div>}
     </div>
   );
 }

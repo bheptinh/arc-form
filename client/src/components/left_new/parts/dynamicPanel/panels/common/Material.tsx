@@ -6,12 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { planner, user } from '../../../../../../initR2D';
 import { selectActiveControlPanelModeData } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import {
-  selectIsLogged,
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
-import Lock from '../../components/Lock';
+import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import Navigation from '../../navigation/Navigation';
 
 const plannerChangeRotation_axis = {
@@ -329,22 +324,6 @@ const useStyle = createUseStyles({
       background: '#fcc749',
     },
   },
-  planner_catalog_prem_zamok: {
-    width: 15,
-    height: 15,
-    position: 'absolute',
-    top: 5,
-    right: 5,
-    zIndex: 9,
-    cursor: 'default',
-  },
-  wr_top_lock: {
-    width: 19,
-    height: 19,
-    position: 'absolute',
-    top: 0,
-    right: 0,
-  },
   product_hover: {
     maxHeight: 150,
     padding: '6px 20px',
@@ -416,9 +395,6 @@ const Material = () => {
 
   const isLogged = useSelector(selectIsLogged);
 
-  const userData = useSelector(selectUserProfileData);
-  const userProjectActive = useSelector(selectUserProjectActive);
-
   const [isInFavorites, setIsInFavorites] = useState(null);
   const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
 
@@ -455,12 +431,6 @@ const Material = () => {
     timer = Date.now();
     dragTimeout = setTimeout(() => {
       e.nativeEvent.button == 0 ? planner.scene.dragProductFromCatalog(id) : null;
-      if (
-        lastHistoryElemData.isOwner &&
-        userData.plan == 'free' &&
-        userProjectActive.plan == 'free'
-      )
-        R2D.mouseInteractionHelper.stateDraggingMaterial.isPlaceMaterialAllowed = false;
     }, 100);
   };
 
@@ -476,11 +446,6 @@ const Material = () => {
     if (Date.now() - timer > 100) {
       if (e.clientX < R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels())
         planner.mih().state && planner.mih().state.mouseUp(e);
-      else
-        lastHistoryElemData.isOwner &&
-          userData.plan == 'free' &&
-          userProjectActive.plan == 'free' &&
-          dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
     }
   };
 
@@ -524,20 +489,6 @@ const Material = () => {
                 onTouchStart={onMouseDownProduct}
               ></div>
             </div>
-            {(lastHistoryElemData.materialOwner &&
-              (userData.plan != 'free' || userProjectActive.plan != 'free')) ||
-            (!lastHistoryElemData.materialOwner && lastHistoryElemData?.plan == 'free') ||
-            (lastHistoryElemData?.plan?.find &&
-              (lastHistoryElemData?.plan.find((i) => i == userData.plan) ||
-                lastHistoryElemData?.plan.find((i) => i == userProjectActive.plan))) ? null : (
-              <Lock
-                additionalClass={classes.planner_catalog_prem_zamok}
-                tipPositionY={'top'}
-                tipPositionX={'left'}
-                textHover={'UPGRADE_YOUR_PLAN_TEXT'}
-                parentClass={classes.wr_top_lock}
-              />
-            )}
           </div>
         </div>
       </div>

@@ -56,7 +56,6 @@ import { createProjectUrl } from '../../../utils/UrlHelper';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
 import Tip from '../../tips/Tip';
 import { useMerchantLogin } from '../../../utils/useMerchantLogin';
-import { getScenePlanRequirements } from '../../../utils/getScenePlanRequirements';
 
 const useStyles = createUseStyles({
   bar_btn_close: {
@@ -169,9 +168,6 @@ const useStyles = createUseStyles({
       fontSize: 11,
       height: 25,
     },
-  },
-  bar_dropdown_option_upgrade: {
-    background: '#BAE51F',
   },
   bar_dropdown_option_image: {
     marginRight: 5,
@@ -294,27 +290,6 @@ const useStyles = createUseStyles({
     color: '#fff',
     fontSize: 12,
     padding: '0 5px',
-  },
-  userPlan_not_pro: {
-    background: '#9DD902',
-    color: '#000000',
-    cursor: 'default',
-    '&:hover': {
-      background: '#9DD902',
-      color: '#000000',
-    },
-  },
-  userPlan_pro: {
-    background: '#FFFFFF',
-    color: '#6D6D6D',
-    cursor: 'default',
-    borderBottom: '1px solid #6D6D6D',
-    borderLeft: '1px solid #6D6D6D',
-    borderRight: '1px solid #6D6D6D',
-    '&:hover': {
-      background: '#FFFFFF',
-      color: '#6D6D6D',
-    },
   },
   bar_dropdown_option_disabled: {
     cursor: 'default',
@@ -523,9 +498,7 @@ const Projects = (props) => {
 
   const onClickRename = async (e) => {
     if (!planner.scene.wasSaved() || R2D.controller.getProjectUserKey() != user.getKey()) {
-      if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-        dispatch(setActivePopup({ name: 'upgradePlan' }));
-      else dispatch(setActivePopup({ name: 'confirm', type: 'project_save_before_rename' }));
+      dispatch(setActivePopup({ name: 'confirm', type: 'project_save_before_rename' }));
     } else {
       dispatch(setActivePopup({ name: 'setProjectName', type: 'rename' }));
     }
@@ -581,33 +554,7 @@ const Projects = (props) => {
       dispatch(setActivePopup({ name: 'alert', data: 'ERROR_TEXT_TRYING_TO_SAVE_PROJECT' }));
       return;
     } else {
-      const {
-        isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
-        isTherePremiumObjectThatDontMatchUserPremiumPlan,
-        neededPlan,
-      } = getScenePlanRequirements();
-      if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-        dispatch(
-          setActivePopup({
-            name: 'upgradePlan',
-            type: 'upgradeOverLimit',
-            addData: { plan: neededPlan },
-          })
-        );
-      else {
-        if (
-          isTherePremiumObjectThatDontMatchUserPremiumPlan ||
-          isThereObjectsWithOwnerThatDontMatchUserPremiumPlan
-        )
-          dispatch(
-            setActivePopup({
-              name: 'upgradePlan',
-              type: 'createNewPremiumProject',
-              addData: { plan: neededPlan },
-            })
-          );
-        else dispatch(setActivePopup({ name: 'setProjectName', type: 'saveAs' }));
-      }
+      dispatch(setActivePopup({ name: 'setProjectName', type: 'saveAs' }));
     }
   };
 
@@ -824,41 +771,11 @@ const SaveButton = (props) => {
     ) {
       dispatch(setActivePopup({ name: 'alert', data: 'ERROR_TEXT_TRYING_TO_SAVE_PROJECT' }));
       return;
-    } else if (!planner.scene.wasSaved()) {
-      if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-        dispatch(setActivePopup({ name: 'upgradePlan', type: 'upgradeOverLimit' }));
-      else dispatch(setActivePopup({ name: 'setProjectName', type: 'create' }));
     } else if (
-      R2D.controller.getProjectUserKey() &&
-      R2D.controller.getProjectUserKey() != user.getKey()
+      !planner.scene.wasSaved() ||
+      (R2D.controller.getProjectUserKey() && R2D.controller.getProjectUserKey() != user.getKey())
     ) {
-      const {
-        isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
-        isTherePremiumObjectThatDontMatchUserPremiumPlan,
-        neededPlan,
-      } = getScenePlanRequirements();
-      if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-        dispatch(
-          setActivePopup({
-            name: 'upgradePlan',
-            type: 'upgradeOverLimit',
-            addData: { plan: neededPlan },
-          })
-        );
-      else {
-        if (
-          isTherePremiumObjectThatDontMatchUserPremiumPlan ||
-          isThereObjectsWithOwnerThatDontMatchUserPremiumPlan
-        )
-          dispatch(
-            setActivePopup({
-              name: 'upgradePlan',
-              type: 'createNewPremiumProject',
-              addData: { plan: neededPlan },
-            })
-          );
-        else dispatch(setActivePopup({ name: 'setProjectName', type: 'create' }));
-      }
+      dispatch(setActivePopup({ name: 'setProjectName', type: 'create' }));
     } else {
       dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
       const result = await planner.scene.saveProject();

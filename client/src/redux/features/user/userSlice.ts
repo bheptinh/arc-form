@@ -8,7 +8,7 @@ export const userLogout = createAsyncThunk('user/logout', async (data, thunkAPI)
 
 const userSlice = createSlice({
   name: 'user',
-  initialState: { logged: false, profile: {}, projectActive: { name: null, plan: 'free' } },
+  initialState: { logged: false, profile: {}, projectActive: { name: null } },
   reducers: {
     saveLoggedStatus: (state, action) => {
       state.logged = action.payload.logged;
@@ -18,9 +18,6 @@ const userSlice = createSlice({
     },
     setProfileData: (state, action) => {
       state.profile = action.payload;
-    },
-    setProjectPlan: (state, action) => {
-      state.projectActive.plan = action.payload;
     },
   },
   extraReducers: (builder) => {
@@ -34,7 +31,6 @@ export const selectIsLogged = (state) => state.user.logged;
 export const selectUserProfileData = (state) => state.user.profile;
 export const selectUserProjectActive = (state) => state.user.projectActive;
 
-export const { setActiveProjectName, saveLoggedStatus, setProfileData, setProjectPlan } =
-  userSlice.actions;
+export const { setActiveProjectName, saveLoggedStatus, setProfileData } = userSlice.actions;
 
 export default userSlice.reducer;

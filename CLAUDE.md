@@ -36,7 +36,7 @@ client/             frontend — Vite + React source, index.html, tsconfig.json
     catalog-search-fallback/  intercepts /api/catalog/search, serves mocks + caches
     vite-mock-plugin/         handles remaining /api/ and /api2/ endpoints
 shared/             TypeScript types + Zod schemas shared between server and client
-  types/            Plain interfaces (User, Language, TranslationMap, PlanFeature)
+  types/            Plain interfaces (User, Language, TranslationMap)
   schemas/          Zod schemas (UserPatchSchema) — server validates, FE uses z.infer<>
 server/             Express backend (TypeScript, compiled to dist-server/server/)
   fixtures/         Static data files served by i18n routes (committed to source control)
@@ -122,7 +122,7 @@ A plain `<div id="planner">` where R2D mounts its WebGL canvas. Mouse/touch even
 Pure presentational components with no domain imports. Naming follows MUI conventions: describe the shape, not the caller. **Never** prefix with an entity name (`Card` not `ProjectCard`, `SortBar` not `ProjectSortBar`) and never group into domain subdirectories (`shared-components/Card.tsx` not `shared-components/projects/Card.tsx`). The folder itself provides the namespace.
 
 Current components:
-- `Card.tsx` — image area + hover action overlay + meta rows + plan badge. Props: `name`, `preview?`, `modified?`, `created?`, `userPlan?`, `actions[]`, `onClick?`, `nameContent?` (rename input slot), `className?`.
+- `Card.tsx` — image area + hover action overlay + meta rows. Props: `name`, `preview?`, `modified?`, `created?`, `actions[]`, `onClick?`, `nameContent?` (rename input slot), `className?`.
 - `SortBar.tsx` — dropdown + direction toggle. Props: `options[]`, `activeLabel`, `direction`, `onOptionSelect`, `onDirectionToggle`.
 - `inputs/` — form controls: `text-input.tsx` (`inset` adds the auth-form side padding, `inputClassName` styles the field), `text-area.tsx`, `radio.tsx`, `checkbox.tsx`, `button.tsx` (`variant`: `primary` or `secondary`, defaults to `type="button"`).
 - `modals/default.tsx` — modal frame for all popups. `DefaultModal.Actions` is the bottom button row, placed where the row sits so submit buttons stay inside their `<form>`. It has no top margin by default; `spaced` adds 17px and `align="between"` spreads the buttons. With `title` it renders the blue header band and fixed width; without it, the popup supplies its own title and sizing through `className` and `contentClassName`. Pass `visible` when the popup animates its own programmatic close (the modal then calls `onClose` immediately); otherwise the modal handles the 500ms close animation.
@@ -258,7 +258,6 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 - `id` — UUID string (NOT the integer external_id — changed to enable UUID-based favorites)
 - `externalId` — integer (legacy; used for R2D pool dual-indexing; see note below)
 - `source.body.materials[]` — material slots: `{ id, default, name, source, hash }`
-- `plan` — `'free'` string or comma-separated string split to array
 
 #### R2D pool dual-indexing (plannercore.js patch)
 
@@ -313,7 +312,6 @@ Tour creation opens an iframe to `R2D.URL.DOMAIN + /tours/add` (roomtodo.com's t
 - **`GET /server-api/catalog/set-tree?set_id=<id>`** — material sets (curated per-slot material collections). See `docs/set-tree.md` for full spec. Trigger requires `product_material_slots.set_id` column (not in schema yet) and set data which must be sourced externally or hand-curated.
 - **`/api/planner/connect`** — mocked with TODO: DELETE (no purpose).
 - **`URL_DELETE_PRIVATE`** (`/api/planner/delete_private_entity`) — `user.deleteMaterial()` is never called from React UI yet; route exists at `DELETE /server-api/catalog/private/materials/:id` but URL in `index.html` not updated. See TODO comment in `index.html:70`.
-- **`POST /api/user/promo?name=<code>`** — generic promo/voucher code redemption. Called by `user.promoLoad()` in `vendor/user.js`. Mocked in `vite-mock-plugin` (always returns `ok`). Response: `{ status: 'ok', message: '<translation_key>' }` on success, `{ status: 'error', error: '<translation_key>' }` on failure. Server should validate the code, apply the benefit (plan upgrade, etc.), and return a message describing what was applied. Replaces the removed `GET /api2/user/basic_to_pro_upgrade` — the `/api/user/promo` endpoint now handles all promo code types.
 - **Render image generation** — `POST /server-api/render` stores the job immediately as `stored` with no image. The full pipeline (Puppeteer + R2D engine headless, 2K/4K WebGL screenshot, 360° cubemap stitch) is described in a TODO comment in `server/routes/renders.ts`. `image_url` and `preview` remain null until implemented.
 - **Tour creation** — the tour builder iframe targets `R2D.URL.DOMAIN + /tours/add`, which doesn't exist locally. A local tour editor page at `/tours/add` is needed, plus a `POST /server-api/tours` endpoint to persist the tour and its linked 360° render IDs. See TODO in `server/services/tours.ts`.
 - **`POST /server-api/tours`** — create tour. Needed when the local tour builder is implemented.

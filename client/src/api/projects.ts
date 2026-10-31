@@ -6,7 +6,6 @@ export type Project = {
   name: string;
   modified: string;
   opened: string;
-  userPlan: string;
   preview?: string;
 };
 

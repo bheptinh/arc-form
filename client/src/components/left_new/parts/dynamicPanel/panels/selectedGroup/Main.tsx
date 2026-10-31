@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
-import { planner, user } from '../../../../../../initR2D';
+import { planner } from '../../../../../../initR2D';
 import {
   changeActiveControlPanelMode,
   selectActiveControlPanelModeData,
@@ -436,22 +436,9 @@ const Main = (props) => {
 
       const matArray = [];
       currentObjectsMatIdsRepeat.forEach((i) => {
-        const pollMaterials = Object.entries(R2D.Pool._products_data);
-        let needToLock = false;
-        const id = i.addMaterial || i.id;
-        const currentMaterial = pollMaterials.find((y) => y[0] == id);
-        const plan = currentMaterial?.[1]?.plan;
-
-        if (user.data.plan == 'free') {
-          if (Array.isArray(plan) || (plan !== 'free' && plan)) {
-            needToLock = true;
-          }
-        }
-
         matArray.push(
           <MaterialComponent
             type={'group'}
-            lockMaterialStatus={needToLock}
             previewMaterialsId={currentObjectsMatIdsRepeat}
             addMaterial={i.addMaterial}
             materialsSource={{ type: i.source, data: i.setId }}
@@ -460,7 +447,7 @@ const Main = (props) => {
             onCopyPaste={{
               copy: onCopyMaterial,
               paste: onPasteMaterial,
-              statusCopy: needToLock ? false : true,
+              statusCopy: true,
             }}
             onClick={() => onClickPreview(i.id, i.addMaterial)}
           />

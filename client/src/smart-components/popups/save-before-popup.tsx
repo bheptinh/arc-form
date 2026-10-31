@@ -11,7 +11,6 @@ import {
 } from '../../redux/features/popups/popupsSlice';
 import Button from '../../shared-components/inputs/button';
 import DefaultModal from '../../shared-components/modals/default';
-import { getScenePlanRequirements } from '../../utils/getScenePlanRequirements';
 import { createProjectUrl } from '../../utils/UrlHelper';
 import { useMerchantLogin } from '../../utils/useMerchantLogin';
 
@@ -56,87 +55,25 @@ const SaveBeforePopup = (props) => {
   if (popupType == 'open') {
     onClickOk = async (e) => {
       dispatch(closeActivePopup({ name: 'saveBefore' }));
-      const {
-        isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
-        isTherePremiumObjectThatDontMatchUserPremiumPlan,
-        neededPlan,
-      } = getScenePlanRequirements();
       if (!planner.scene.wasSaved()) {
-        if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-          dispatch(
-            setActivePopup({
-              name: 'upgradePlan',
-              type: 'upgradeOverLimit',
-              addData: {
-                plan: neededPlan,
-                action: { name: 'loadProject', data: projectToSave.hash },
-              },
-            })
-          );
-        else {
-          if (
-            isTherePremiumObjectThatDontMatchUserPremiumPlan ||
-            isThereObjectsWithOwnerThatDontMatchUserPremiumPlan
-          )
-            dispatch(
-              setActivePopup({
-                name: 'upgradePlan',
-                type: 'createNewPremiumProject',
-                addData: {
-                  plan: neededPlan,
-                  action: { name: 'loadProject', data: projectToSave.hash },
-                },
-              })
-            );
-          else
-            dispatch(
-              setActivePopup({
-                name: 'setProjectName',
-                type: 'createBeforeOpen',
-                data: projectToSave,
-              })
-            );
-        }
+        dispatch(
+          setActivePopup({
+            name: 'setProjectName',
+            type: 'createBeforeOpen',
+            data: projectToSave,
+          })
+        );
       } else {
         const project = { createNew: false };
         if (R2D.controller.getProjectUserKey() != user.getKey()) {
-          if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-            dispatch(
-              setActivePopup({
-                name: 'upgradePlan',
-                type: 'upgradeOverLimit',
-                addData: {
-                  plan: neededPlan,
-                  action: { name: 'loadProject', data: projectToSave.hash },
-                },
-              })
+          project.createNew = true;
+          const result = await planner.scene.saveProject(project);
+          if (result?.type == 'error')
+            return dispatch(
+              setActivePopup({ name: 'alert', data: result?.data || 'TEXT_ERROR_LOAD_DATA' })
             );
-          else {
-            if (
-              isTherePremiumObjectThatDontMatchUserPremiumPlan ||
-              isThereObjectsWithOwnerThatDontMatchUserPremiumPlan
-            )
-              dispatch(
-                setActivePopup({
-                  name: 'upgradePlan',
-                  type: 'createNewPremiumProject',
-                  addData: {
-                    plan: neededPlan,
-                    action: { name: 'loadProject', data: projectToSave.hash },
-                  },
-                })
-              );
-            else {
-              project.createNew = true;
-              const result = await planner.scene.saveProject(project);
-              if (result?.type == 'error')
-                return dispatch(
-                  setActivePopup({ name: 'alert', data: result?.data || 'TEXT_ERROR_LOAD_DATA' })
-                );
-              window.history.replaceState(null, null, createProjectUrl(projectToSave.hash));
-              window.location.reload();
-            }
-          }
+          window.history.replaceState(null, null, createProjectUrl(projectToSave.hash));
+          window.location.reload();
         } else {
           const result = await planner.scene.saveProject(project);
           if (result?.type == 'error')
@@ -160,9 +97,7 @@ const SaveBeforePopup = (props) => {
   if (popupType == 'createNew') {
     onClickOk = async (e) => {
       if (user.isLogged()) {
-        if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
-          dispatch(setActivePopup({ name: 'upgradePlan' }));
-        else dispatch(setActivePopup({ name: 'setProjectName', type: 'saveBeforeCreate' }));
+        dispatch(setActivePopup({ name: 'setProjectName', type: 'saveBeforeCreate' }));
       } else {
         verifyEnabledMerchantLogin();
       }

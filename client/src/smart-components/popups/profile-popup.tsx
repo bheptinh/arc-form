@@ -106,65 +106,6 @@ const useStyle = createUseStyles({
       },
     },
   },
-  input_text_plan: {
-    fontFamily: 'RobotoCondensed-Regular',
-    fontSize: 13,
-    lineHeight: '14px',
-    letterSpacing: '0.05em',
-    textTransform: 'uppercase',
-    padding: '6px 0',
-    marginRight: 9,
-    borderRadius: 3,
-    '@media screen and (max-width: 950px)': {
-      padding: 3,
-      fontSize: 10,
-      lineHeight: '11px',
-    },
-  },
-  input_text_basic: {
-    fontFamily: 'RobotoCondensed-Regular',
-    color: '#000',
-    fontSize: '13px',
-    marginLeft: '6px',
-    borderRadius: '3px',
-    padding: '5px 6px',
-    position: 'relative',
-    background: '#BADCFF',
-    textTransform: 'uppercase',
-    zIndex: 1,
-    marginRight: 9,
-  },
-  input_text_pro: {
-    color: '#000',
-    fontSize: '13px',
-    marginLeft: '6px',
-    borderRadius: '3px',
-    padding: '5px 6px',
-    position: 'relative',
-    background: '#FFB400',
-    textTransform: 'uppercase',
-    zIndex: 1,
-    marginRight: 9,
-  },
-  fieldset_right_userPlanPeriod: {
-    '& p': {
-      marginRight: 5,
-    },
-  },
-  planner_popup_profile_button_unsubscribe: {
-    color: '#AF3131',
-    marginLeft: 5,
-  },
-  planner_popup_profile_button_upgrate: {
-    color: '#66ACF4',
-    textDecoration: 'underline',
-    fontSize: 13,
-    cursor: 'pointer',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:hover': {
-      textDecoration: 'none',
-    },
-  },
   planner_popup_profile_delete_acc_button: {
     color: '#AF3131',
     background: 'transparent',
@@ -179,7 +120,6 @@ export default function ProfilePopup() {
   const translation = useTranslation();
   const userProfileData = useSelector(selectUserProfileData);
 
-  const userData = useSelector(selectUserProfileData);
   const isLogged = useSelector(selectIsLogged);
 
   const [checkboxNews, setCheckboxNews] = useState(userProfileData?.subscriptionNews);
@@ -236,7 +176,6 @@ export default function ProfilePopup() {
     return null;
   }
 
-  const isProEnabled = Boolean(R2D.config.data.enable_pro);
   const isProfileNewsShow = Boolean(R2D.config.data.ui.profile_news);
 
   return (
@@ -294,83 +233,6 @@ export default function ProfilePopup() {
             </button>
           </div>
         </fieldset>
-        <div className={classes.planner_popup_line}></div>
-
-        {isProEnabled ? (
-          <fieldset>
-            <div className={classes.fieldset_left}>
-              <p className={classes.input_text}>{translation['TEXT_R2D_VERSION']}:</p>
-            </div>
-            <div className={classes.fieldset_right}>
-              {userData?.plan == 'pro' ? (
-                <p className={classes.input_text_pro}>{userProfileData?.plan}</p>
-              ) : userData?.plan == 'basic' ? (
-                <p className={classes.input_text_basic}>{userProfileData?.plan}</p>
-              ) : (
-                <p className={classes.input_text_plan}>{userProfileData?.plan}</p>
-              )}
-              {userData?.plan == 'pro' ? null : (
-                <div
-                  className={classes.planner_popup_profile_button_upgrate}
-                  onClick={() => dispatch(setActivePopup({ name: 'payPro', type: 'user' }))}
-                >
-                  {translation['TEXT_UPDATE']}
-                </div>
-              )}
-            </div>
-          </fieldset>
-        ) : null}
-        {userProfileData?.userPlanExpire && userProfileData.plan != 'free' ? (
-          <fieldset>
-            <div className={classes.fieldset_left}>
-              <p className={classes.input_text}>{translation['TEXT_VALID_UNTIL']}: </p>
-            </div>
-            <div className={classes.fieldset_right + ' ' + classes.fieldset_right_userPlanPeriod}>
-              <p className={classes.input_text}>{userProfileData?.userPlanExpire?.split(' ')[0]}</p>
-            </div>
-          </fieldset>
-        ) : null}
-
-        {userProfileData.plan == 'free' ? null : (
-          <fieldset>
-            <div className={classes.fieldset_left}>
-              <p className={classes.input_text}>{translation['PROFILE_BILLED']}: </p>
-            </div>
-            <div className={classes.fieldset_right + ' ' + classes.fieldset_right_userPlanPeriod}>
-              {userProfileData.userPlanRecurringId ? (
-                <div className={classes.fieldset_right}>
-                  <p className={classes.input_text}>
-                    {'$' +
-                      userProfileData.price +
-                      '/' +
-                      (userProfileData?.userPlanPeriod == 1
-                        ? translation['PROFILE_MONTHLY']
-                        : userProfileData?.userPlanPeriod == 6
-                          ? translation['PROFILE_HALF_YEARLY']
-                          : userProfileData.userPlanPeriod == 12
-                            ? translation['PROFILE_YEARLY']
-                            : '')}
-                  </p>
-                  <div
-                    className={
-                      classes.planner_popup_profile_button +
-                      ' ' +
-                      classes.planner_popup_profile_button_unsubscribe
-                    }
-                    onClick={() =>
-                      dispatch(setActivePopup({ name: 'confirm', type: 'cancelSubscription' }))
-                    }
-                  >
-                    {translation['PROFILE_UNSUBSCRIBE']}
-                  </div>
-                </div>
-              ) : (
-                <p className={classes.input_text}>{translation['PROFILE_NO_PROLONG']}</p>
-              )}
-            </div>
-          </fieldset>
-        )}
-
         <div className={classes.planner_popup_line}></div>
 
         <fieldset>

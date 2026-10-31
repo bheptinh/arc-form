@@ -73,12 +73,12 @@ console.log(`products found: ${allProducts.size}`);
 
 const insertProduct = db.prepare(`
   INSERT OR IGNORE INTO products
-    (id, external_id, type, name, description, plan, appointment,
+    (id, external_id, type, name, description, appointment,
      width, height, depth, position_x, position_y, position_z,
      contour_top, contour_cut,
      fixed_size, is_original_model, original_entity_id, user_key, lang_id)
   VALUES
-    (@id, @external_id, @type, @name, @description, @plan, @appointment,
+    (@id, @external_id, @type, @name, @description, @appointment,
      @width, @height, @depth, @position_x, @position_y, @position_z,
      @contour_top, @contour_cut,
      @fixed_size, @is_original_model, @original_entity_id, @user_key, @lang_id)
@@ -112,7 +112,6 @@ const seedProducts = db.transaction(() => {
       type: item.type != null ? String(item.type) : null,
       name: item.name,
       description: item.description ?? null,
-      plan: Array.isArray(item.plan) ? item.plan.join(',') : (item.plan ?? null),
       appointment: item.property?.appointment ?? null,
       width: sizes.width ?? null,
       height: sizes.height ?? null,
@@ -218,7 +217,7 @@ console.log('materials-tree.json written.');
 // --- phase 7: seed dev project ---
 
 const DEV_USER_ID = '57022071-c204-6e51-1e36-78691b317b3f';
-db.prepare(`INSERT OR IGNORE INTO users (id, email, name, plan) VALUES (?, 'varjatua@gmail.com', 'Bohdan Heptinh', 'pro')`).run(DEV_USER_ID);
+db.prepare(`INSERT OR IGNORE INTO users (id, email, name) VALUES (?, 'varjatua@gmail.com', 'Bohdan Heptinh')`).run(DEV_USER_ID);
 
 const DEV_PROJECT_ID = 'dev00000-0000-0000-0000-000000000001';
 const mockProjectSrc = path.join(root, 'client/vite-plugins/vite-mock-plugin/mock/planner/bi0t3wvqnek.json');

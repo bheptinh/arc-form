@@ -221,7 +221,6 @@ export default function ProjectsPage() {
               name={item.name}
               modified={item.modified}
               created={item.opened}
-              userPlan={item.userPlan}
               onClick={() => handleOpen(item.id)}
               nameContent={
                 renamingId === item.id ? (

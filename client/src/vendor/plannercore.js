@@ -862,7 +862,7 @@ R2D.createPlannerAPI = function(planner)
     planner.scene.UPDATE_PROJECT_ONLY_VIEW_STATUS = "updateProjectOnlyViewStatus";
     planner.scene.UPDATE_PROJECT_NAME = "updateProjectName";
     planner.scene.UPDATE_LOAD_STATUS = "updateLoadStatus";
-    planner.scene.PASTE_PREMIUM_PRODUCT_ERROR = "pastePremiumProductError";
+    planner.scene.PASTE_PRODUCT_ERROR = "pasteProductError";
     planner.scene.PROJECTS_UPDATE = "projectsUpdate";
     planner.scene.CLEAR_WALL_EVENT = "clearWallEvent";
     planner.scene.PRODUCTS_UPDATED = "productsUpdated";
@@ -13132,7 +13132,6 @@ R2D.Scene = function (api, user) {
     scope.startMaterialsIds = [];
     scope.startModelsIds = [];
 
-    scope.projectPlan = 'free';
 
     let isProjectBelongToLoggedUser = false;
 
@@ -13867,10 +13866,6 @@ R2D.Scene = function (api, user) {
         scope.viewOnly = newStatus;
     }
 
-    scope.updateProjectUserPlan = newPlan => {
-        scope.projectPlan = newPlan;
-    }
-
     scope.updateSceneUniqueMaterialsIds = matIds => scope.startMaterialsIds = matIds;
 
     scope.updateSceneUniqueProductsIds = modelsIds => scope.startModelsIds = modelsIds;
@@ -14336,13 +14331,7 @@ R2D.Scene = function (api, user) {
 
                 let pasteObjValue = pasteObj.value;
 
-                if(pasteObjValue.isOwner || pasteObjValue.plan != 'free') {
-                    if(pasteObjValue.isOwner) {
-                        if(pasteObjValue.userKey != user.data.key) return api.dispatchEvent(new Event(api.PASTE_PREMIUM_PRODUCT_ERROR, {text: 'PASTE_OTHER_USER_PRODUCT_ERROR_TEXT'}));
-                        if(user.data.plan == 'free' && scope.projectPlan == 'free') return api.dispatchEvent(new Event(api.PASTE_PREMIUM_PRODUCT_ERROR, {text: 'PASTE_PREMIUM_PRODUCT_ERROR_TEXT'}));
-                    }
-                    if(pasteObjValue.plan && pasteObjValue.plan.find && !pasteObjValue.plan.find(i => i == user.data.plan) && (!isProjectBelongToLoggedUser || !pasteObjValue.plan.find(i => i == scope.projectPlan))) return api.dispatchEvent(new Event(api.PASTE_PREMIUM_PRODUCT_ERROR, {text: 'PASTE_PREMIUM_PRODUCT_ERROR_TEXT'}));
-                }
+                if(pasteObjValue.isOwner && pasteObjValue.userKey != user.data.key) return api.dispatchEvent(new Event(api.PASTE_PRODUCT_ERROR, {text: 'PASTE_OTHER_USER_PRODUCT_ERROR_TEXT'}));
 
                 let model = await R2D.CopyPaste.pasteModel();
                 if (model) {
@@ -15479,7 +15468,6 @@ R2D.Controller = function(scene, apiDispatcher, user) {
             scene.updateProjectUserKey(data['user_key']);
             scene.updateSceneUniqueMaterialsIds(data['uniqueMaterialsIds'] || []);
             scene.updateSceneUniqueProductsIds(data['uniqueProductsIds'] || []);
-            scene.updateProjectUserPlan(data['projectPlan'] || 'free');
 
             const plinthsIdsUnique = [
                 ...new Set(
@@ -15503,8 +15491,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
                 rotation: 0,
                 viewState: "",
                 hash: data.hash,
-                name: data['name'],
-                plan: data['projectPlan'] || 'free'
+                name: data['name']
             };
 
             if (data['scene']['skybox']) {
@@ -17373,7 +17360,6 @@ R2D.Config = function()
  
     me.data = {
         location: '',
-        enable_pro: true,
         enable_estimation: false,
         enable_set_project: false,
         enable_merchant_login: false,
@@ -17414,7 +17400,6 @@ R2D.Config = function()
             config_export_project: true,
             save_as: true,
             facebook_sharing: true,
-            upgrade_project_button: true,
             my_renders_button: true,
             my_tours_button: true
         },
@@ -23270,8 +23255,6 @@ R2D.SceneLoader = function (apiDispatcher, sceneToOpen = true) {
             if (scope.sceneData) {
                 sceneToOpen && apiDispatcher.dispatchEvent(new Event(apiDispatcher.UPDATE_PROJECT_ONLY_VIEW_STATUS, {viewOnly: jsonObject["viewOnly"] != undefined && jsonObject["viewOnly"] != null ? jsonObject["viewOnly"] : false, userKey: scope.sceneData.user_key}));
                 sceneToOpen && apiDispatcher.dispatchEvent(new Event(apiDispatcher.UPDATE_PROJECT_NAME, {name: scope.sceneData.name}));
-
-                scope.sceneData.projectPlan = jsonObject["userPlan"];
 
                 makeUniqueProductsIds();
                 makeUniqueMaterialsIds();

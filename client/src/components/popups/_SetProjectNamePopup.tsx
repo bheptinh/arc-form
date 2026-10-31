@@ -21,7 +21,6 @@ import {
   selectUserProjectActive,
   setActiveProjectName,
   setProfileData,
-  setProjectPlan,
 } from '../../redux/features/user/userSlice';
 import { createProjectUrl } from '../../utils/UrlHelper';
 
@@ -252,8 +251,6 @@ const SetProjectNamePopup = (props) => {
       dispatch(
         setActivePopup({ name: 'completeMessage', positionX: 'left', data: 'NOTIFY_SAVE_COMPLETE' })
       );
-      R2D.scene.updateProjectUserPlan('free');
-      dispatch(setProjectPlan('free'));
       planner.scene.setIsProjectBelongToLoggedUserStatus(
         R2D.scene.getProjectUserKey() == user.getKey()
       );
