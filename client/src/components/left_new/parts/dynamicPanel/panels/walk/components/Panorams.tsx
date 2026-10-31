@@ -20,7 +20,6 @@ import {
   selectActiveControlPanelMode,
   selectActiveControlPanelModeData,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
-import { selectUserProfileData } from '../../../../../../../redux/features/user/userSlice';
 import Navigation from '../../../navigation/Navigation';
 
 const useStyle = createUseStyles({
@@ -208,7 +207,6 @@ const Panorams = (props) => {
   const isAdded = lastHistoryElem?.isAdded;
   const lastHistoryElemScroll = lastHistoryElem.lastSavedScroll;
   const activePano = useSelector(selectActivePano);
-  const userData = useSelector(selectUserProfileData);
   const languages = useLanguages();
 
   const [activePanoId, setActivePanoId] = useState(R2D.scene.skyboxId);
@@ -394,7 +392,7 @@ const Panorams = (props) => {
       );
     });
     setPanoArray(panorams);
-  }, [activePanoId, rotation, userData.plan, languages]);
+  }, [activePanoId, rotation, languages]);
 
   useEffect(() => {
     setRotaion(activePano.rotation || 0);

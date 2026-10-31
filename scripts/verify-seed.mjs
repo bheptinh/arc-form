@@ -74,7 +74,6 @@ for (const item of allJsonProducts.values()) {
 
   const sizes = item.property?.sizes ?? {};
   const pos   = item.property?.position ?? {};
-  const planVal = Array.isArray(item.plan) ? item.plan.join(',') : (item.plan ?? null);
 
   // Normalize values to match what the seed stores and SQLite returns:
   //   type   → TEXT in DB (seed casts via String()); compare as strings
@@ -91,7 +90,6 @@ for (const item of allJsonProducts.values()) {
     ['type',               row.type,               item.type != null ? String(item.type) : null],
     ['name',               row.name,               item.name],
     ['description',        row.description,        item.description ?? null],
-    ['plan',               row.plan,               planVal],
     ['appointment',        row.appointment,        item.property?.appointment ?? null],
     ['width',              row.width,              sizes.width != null ? Number(Number(sizes.width).toFixed(6)) : null],
     ['height',             row.height,             sizes.height != null ? Number(Number(sizes.height).toFixed(6)) : null],

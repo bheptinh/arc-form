@@ -1360,24 +1360,6 @@ b {
     }
 }
 
-.modal_pro_top_bg {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    pointer-events: none;
-    left: 0;
-    width: 100%;
-    height: calc(100% + 152px);
-    background: url(../images/pro/pro_bg_top.png) no-repeat;
-}
-
-@media screen and (max-height: 500px) {
-    .modal_pro_top_bg {
-        height: calc(100% + 100px);
-        background-size: 100% 100%;
-    }
-}
-
 .modal_pro_title {
     font-weight: 500;
     color: #fff;

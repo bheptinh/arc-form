@@ -11274,7 +11274,6 @@ R2D.SceneObject = function(data = {}) {
     scope.visible = true;
     scope.partialVisible = false;
 
-    scope.plan = data.plan;
     scope.externalData = {};
 
     scope.hasLogo = false;
@@ -14868,7 +14867,6 @@ R2D.Scene.makeSceneObjectData = function (sceneObject, forRender = false) {
         isLockedOnScene: sceneObject.isLockedOnScene || false,
         visible: sceneObject.visible,
         partialVisible: sceneObject.partialVisible || false,
-        plan: sceneObject.plan,
         userKey: sceneObject.userKey,
         isOwner: sceneObject.isOwner,
         externalData: sceneObject.externalData,
@@ -17986,7 +17984,6 @@ function loaderDataEventHandler(e, dataProductObject, defaultProductData, fromSt
             sceneObject.flipY = dataProductObject.fy;
             sceneObject.flipZ = dataProductObject.fz;
             sceneObject.fromStart = fromStart || false;
-            sceneObject.plan = dataProductObject.plan;
             sceneObject.userKey = dataProductObject.userKey;
 
             sceneObject.isLockedOnScene = dataProductObject.isLockedOnScene || false;
@@ -31990,7 +31987,6 @@ R2D.ObjectViewer3DMaterial = function (productId, color, materialType) {
     let productData = null;
     let isMaterialLoaded = false;
 
-    scope.plan;
 
     scope.productId = productId;
     scope.color = color || '';
@@ -32186,7 +32182,6 @@ R2D.ObjectViewer3DMaterial = function (productId, color, materialType) {
                 scope.error = true;
                 needsUpdate();
             }
-            scope.plan = response.data.items[0].plan;
         } catch (err) {}
 
         checkGLTF();

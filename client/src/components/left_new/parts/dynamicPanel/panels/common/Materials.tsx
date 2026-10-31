@@ -16,11 +16,7 @@ import {
   updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import {
-  selectIsLogged,
-  selectUserProfileData,
-  selectUserProjectActive,
-} from '../../../../../../redux/features/user/userSlice';
+import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
 import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
@@ -632,11 +628,8 @@ const Materials = (props) => {
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const isAdded = lastHistoryElem?.isAdded;
 
-  const userData = useSelector(selectUserProfileData);
   const translation = useTranslation();
   const isLogged = useSelector(selectIsLogged);
-
-  const userProjectActive = useSelector(selectUserProjectActive);
 
   const [materialsListState, setMaterialsListState] = useState(null);
   const [customMaterialsListState, setCustomMaterialsListState] = useState(null);
@@ -882,14 +875,7 @@ const Materials = (props) => {
       setMaterialsListState(arrayList);
       setCustomMaterialsListState(customMaterials);
     }
-  }, [
-    lastHistoryElemData,
-    activeMaterial,
-    userData?.plan,
-    dynamicPanelPreviewViewType,
-    userFavorites,
-    userProjectActive,
-  ]);
+  }, [lastHistoryElemData, activeMaterial, dynamicPanelPreviewViewType, userFavorites]);
 
   return (
     <div className={classes.planner_catalog_cont} style={styleAnimation} ref={panelRef}>
