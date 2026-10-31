@@ -5222,10 +5222,6 @@
             "code": "TEXT_SETTINGS_CONSTR"
         },
         {
-            "value": "Share by",
-            "code": "TEXT_SHARE_BY"
-        },
-        {
             "value": "Embed",
             "code": "TEXT_SHARE_EMBED"
         },

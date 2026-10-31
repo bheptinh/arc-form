@@ -64,6 +64,7 @@ import {
 import { selectActiveViewMode, setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
 import PortraitBlocker from './shared-components/app-guards/portrait-blocker';
 import GlobalPreload from './shared-components/loaders/global-preload';
+import ViewerControls from './smart-components/common/viewer-controls';
 import PopupActions from './smart-components/popups';
 import Tips from './smart-components/tips';
 import { createProjectUrl } from './utils/UrlHelper';
@@ -198,7 +199,9 @@ const App = () => {
             : e.data.viewState.state == 'walk'
               ? 'viewWalk'
               : e.data.viewState.state == 'constructor'
-                ? 'constr'
+                ? R2D.isViewer
+                  ? 'view3d'
+                  : 'constr'
                 : null;
       dispatch(setActiveViewMode(newState));
 
@@ -1392,6 +1395,21 @@ const App = () => {
 
   if (isOrientationPortrait) {
     return <PortraitBlocker translation={translation} />;
+  }
+
+  if (R2D.isViewer) {
+    return (
+      <div className={classes.main}>
+        <GlobalPreload loading={preloaderStatus} />
+
+        <div className={classes.content}>
+          <div className={classes.plannerMain} id={'plannerMain'}>
+            <ViewerControls />
+            <CenterPanel />
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (

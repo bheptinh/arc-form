@@ -1,19 +1,36 @@
-import { IconForms, IconLogin2, IconPlus, IconTrash } from '@tabler/icons-react';
+import {
+  IconCopy,
+  IconForms,
+  IconLogin2,
+  IconPlus,
+  IconShare,
+  IconTrash,
+} from '@tabler/icons-react';
 import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
-import { deleteProject, projectsInfiniteQueryOptions, renameProject } from '../api/projects';
+import {
+  deleteProject,
+  type Project,
+  projectsInfiniteQueryOptions,
+  renameProject,
+} from '../api/projects';
+import { selectPopups, setActivePopup } from '../redux/features/popups/popupsSlice';
 import { Card } from '../shared-components/Card';
 import { confirm } from '../shared-components/ConfirmDialog';
 import { SortBar } from '../shared-components/SortBar';
+import AlertPopup from '../smart-components/popups/alert-popup';
+import ProjectSetNamePopup from '../smart-components/popups/project-set-name-popup';
+import SharePopup from '../smart-components/popups/share-popup';
 
 const useStyles = createUseStyles({
   page: {
     width: '100%',
-    height: '100vh',
+    height: '100%',
     backgroundColor: '#EBEBEB',
     display: 'grid',
     gridTemplateRows: 'auto 1fr',
@@ -108,6 +125,8 @@ const useStyles = createUseStyles({
 export default function ProjectsPage() {
   const classes = useStyles();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const popups = useSelector(selectPopups);
   const queryClient = useQueryClient();
 
   const { data, fetchNextPage, hasNextPage, isLoading } = useInfiniteQuery(
@@ -174,6 +193,16 @@ export default function ProjectsPage() {
     const name = renameValue.trim();
     if (name) renameMutation.mutate({ id, name });
     setRenamingId(null);
+  };
+
+  const handleCopy = (e: React.MouseEvent, item: Project) => {
+    e.stopPropagation();
+    dispatch(setActivePopup({ name: 'setProjectName', data: item, type: 'copy' }));
+  };
+
+  const handleShare = (e: React.MouseEvent, item: Project) => {
+    e.stopPropagation();
+    dispatch(setActivePopup({ name: 'share', type: 'listProject', data: item.hash }));
   };
 
   // Full page load: the planner singleton keeps the last opened scene across client-side routes.
@@ -250,6 +279,16 @@ export default function ProjectsPage() {
                   onClick: (e) => startRename(e, item),
                 },
                 {
+                  icon: <IconCopy size={26} color="#fff" />,
+                  label: 'Copy',
+                  onClick: (e) => handleCopy(e, item),
+                },
+                {
+                  icon: <IconShare size={26} color="#fff" />,
+                  label: 'Share',
+                  onClick: (e) => handleShare(e, item),
+                },
+                {
                   icon: <IconTrash size={26} color="#fff" />,
                   label: 'Delete',
                   onClick: (e) => handleDelete(e, item.id),
@@ -265,6 +304,10 @@ export default function ProjectsPage() {
           )}
         </div>
       </div>
+
+      {popups.share.status && <SharePopup />}
+      {popups.setProjectName.status && <ProjectSetNamePopup />}
+      {popups.alert.status && <AlertPopup />}
     </div>
   );
 }

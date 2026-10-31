@@ -43,12 +43,12 @@ export async function renameProject(id: string, name: string): Promise<void> {
   if (!res.ok) throw new Error(`renameProject ${res.status}`);
 }
 
-export async function copyProject(id: string, name: string): Promise<Project> {
+export async function copyProject(id: string, name: string): Promise<{ hash: string }> {
   const res = await fetch(`/server-api/projects/${id}/copy`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ name }),
   });
   if (!res.ok) throw new Error(`copyProject ${res.status}`);
-  return ((await res.json()) as { data: Project }).data;
+  return res.json();
 }

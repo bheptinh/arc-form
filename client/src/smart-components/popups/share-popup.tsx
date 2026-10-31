@@ -12,33 +12,11 @@ import Checkbox from '../../shared-components/inputs/checkbox';
 import TextArea from '../../shared-components/inputs/text-area';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
+import { createViewerUrl } from '../../utils/UrlHelper';
 import { useEffectAsync } from '../../utils/useEffectAsync';
 // import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
 
 const useStyle = createUseStyles({
-  planner_popup_facebook: {
-    display: 'flex',
-    alignItems: 'center',
-    marginBottom: 15,
-  },
-  planner_popup_facebook_icon: {
-    width: 29,
-    marginLeft: 13,
-    '& img': {
-      display: 'block',
-    },
-    '@media screen and (max-width: 950px)': {
-      width: 22,
-      marginLeft: 9,
-      transform: 'translateY(-5px)',
-    },
-  },
-  planner_popup_facebook_line: {
-    background: '#D9D9D9',
-    height: 1,
-    marginBottom: 15,
-  },
-  planner_popup_login_wr: {},
   input_wrap: {
     display: 'grid',
     gridGap: '10px',
@@ -156,9 +134,8 @@ export default function SharePopup() {
         ? popups.share.data
         : R2D.scene.getProjectHash();
 
-  const createdLink = popupType == 'tour' ? popupData : R2D.URL.DOMAIN + popupData;
-
-  const [configFacebookSharing, setFacebookSharing] = useState(R2D.config.data.ui.facebook_sharing);
+  const createdLink =
+    popupType == 'tour' ? popupData : window.location.origin + createViewerUrl(popupData);
 
   const classes = useStyle();
 
@@ -211,29 +188,7 @@ export default function SharePopup() {
       }
       onClose={() => dispatch(closeActivePopup({ name: 'share' }))}
     >
-      {popupType != 'tour' && configFacebookSharing ? (
-        <div>
-          <div className={classes.planner_popup_facebook}>
-            <div className={classes.planner_popup_text}>{translation['TEXT_SHARE_BY']}</div>
-            {/* FIXME: fix share button */}
-            [debug:FACEBOOK BUTTON HERE]
-            {/* 
-              <FacebookShareButton
-                url={createdLink}
-                children={<img src={`${R2D.URL.DOMAIN}/files/render/69682/105640/013048a81eb659fe3f17fafaba8c8c70.png`}/>}
-                hashtag={'#myProjectInRoomtodo'}
-              >
-                <div className={classes.planner_popup_facebook_icon}>
-                  <img src="/src_designer/images/icon_facebook.svg" />
-                </div>
-              </FacebookShareButton> 
-            */}
-          </div>
-          <div className={classes.planner_popup_facebook_line}></div>
-        </div>
-      ) : null}
-
-      <div className={classes.planner_popup_login_wr}>
+      <div>
         <form>
           <fieldset className={classes.input_wrap}>
             <div className={classes.input_wr}>

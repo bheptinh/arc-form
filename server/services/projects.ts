@@ -97,6 +97,15 @@ export function renameProject(id: string, newName: string) {
   return { status: 'success' };
 }
 
+export function getProjectViewOnly(id: string) {
+  const row = db.prepare('SELECT view_only FROM projects WHERE id = ?').get(id) as Pick<ProjectRow, 'view_only'> | undefined;
+  return row ? row.view_only === 1 : null;
+}
+
+export function setProjectViewOnly(id: string, viewOnly: boolean) {
+  return db.prepare('UPDATE projects SET view_only = ? WHERE id = ?').run(viewOnly ? 1 : 0, id).changes > 0;
+}
+
 export function copyProject(id: string, newName: string) {
   const row = db.prepare('SELECT * FROM projects WHERE id = ?').get(id) as ProjectRow | undefined;
   if (!row) return null;

@@ -2,6 +2,8 @@ import { queryClient } from '../api/queryClient.js';
 
 window.R2D = window.R2D || {};
 var R2D = window.R2D;
+// /view/:uuid — read-only viewer. Set once per page load; entering or leaving it needs a full page load.
+R2D.isViewer = window.location.pathname.startsWith(`${R2D.URL.REACT_BASEPATH}/view/`);
 var i, j, k, p, count, index, sIndex, sx, sy;
 var Bp, Bpc, Cp, Cpc, Dp, a, b, bufferAttribute, c, clip, cropBottom, cropLeft, cropRight, d, f, g, h, iosPlatforms, isLookUp, jMin, l, m, macosPlatforms, n, onmessage, platform, r, t, tr, v, w, windowsPlatforms, x, y, z;
 var F, H, anyToken, anyway, asFunction, as_seg, cameraCube, centerY, centerZ, checkDblclickTime, controls, correctLineDistance, currentValue, distanceH, dyn, easing, elementWidth, elevation, fBoundContours, fInnerContours, fSubtrContours, findInner, gl_FragColor, htmlElement, iy, lineRed, logoHeight, logoWidth, logoY, maxAngle, moveFrom, moveTo, nearEdge, nearPower, newData, normalData, normalFile, nwx, nwy, onlyFixedEdges, rendererCube, sB, sG, scaleRoundY, scaleRoundZ, scaleSquareY, scaleSquareZ, secondChar, selectedAligner, selectedInputRuler, separateContacting, shY, showAll, snapDist, specularData, specularFile, tIndex, tY, time, tmpImg, tmpRuler, trs, tz, unit, wx, wy, yIndex;
@@ -13124,7 +13126,7 @@ R2D.Scene = function (api, user) {
 
     scope.showPartialVisibleElements = false;
 
-    scope.viewOnly = false;
+    scope.viewOnly = R2D.isViewer;
 
     scope.startMaterialsIds = [];
     scope.startModelsIds = [];
@@ -13860,7 +13862,7 @@ R2D.Scene = function (api, user) {
         projectUserKey = userKey;
     };
     scope.updateProjectOnlyViewState = newStatus => {
-        scope.viewOnly = newStatus;
+        scope.viewOnly = R2D.isViewer || newStatus;
     }
 
     scope.updateSceneUniqueMaterialsIds = matIds => scope.startMaterialsIds = matIds;
@@ -15461,7 +15463,8 @@ R2D.Controller = function(scene, apiDispatcher, user) {
             scene.updateProjectHash(data['hash']);
             scene.updateProjectName(data['name']);
             scene.updateProjectDimension(data['dimension']);
-            scene.updateProjectUserKey(data['user_key']);
+            // Viewer: no user key, so everyone is a non-owner, which also turns off server autosave
+            scene.updateProjectUserKey(R2D.isViewer ? '' : data['user_key']);
             scene.updateSceneUniqueMaterialsIds(data['uniqueMaterialsIds'] || []);
             scene.updateSceneUniqueProductsIds(data['uniqueProductsIds'] || []);
 
@@ -15782,12 +15785,13 @@ R2D.Controller = function(scene, apiDispatcher, user) {
 
     // '/project/new' is a route for a blank project, not a hash
     scope.getUrlProjectHash = function() {
-        const hash = window.location.pathname.split("/project/")[1]?.split('/')[0] || '';
+        const hash = window.location.pathname.split(R2D.isViewer ? "/view/" : "/project/")[1]?.split('/')[0] || '';
         return hash == 'new' ? '' : hash;
     }
 
     scope.tryLoadProjectFromStorage = function() {
         return new Promise(async (resolve, reject) => {
+            if (R2D.isViewer) return resolve(null);
             let projectHash = scope.getUrlProjectHash();
             let str = R2D.Storage.load(projectHash ? `r2d_project_${projectHash}` : 'r2d_project');
             if (! str) resolve(null);
@@ -16145,7 +16149,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
         return new Promise(async (resolve, reject) => {
             let loader;
 
-            let putOnlyViewParamUrl = R2D.URL.URL_PLAN_SHARING.split('?')[0] + '?' + 'id=' + hash + '&' + R2D.URL.URL_PLAN_SHARING.split('?')[1];
+            let putOnlyViewParamUrl = R2D.URL.URL_PLAN_SHARING.replace('{id}', hash);
             
             let params = JSON.stringify({
                 "view_only": status
@@ -16154,7 +16158,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
             let url = R2D.makeURL(R2D.URL.DOMAIN, putOnlyViewParamUrl);
             
             loader = new R2D.XHRLoader();
-            loader.load(url, params, 'PUT', null, null, true);
+            loader.load(url, params, 'PUT', [{ header: 'Content-Type', value: 'application/json' }], null, true);
 
             loader.addEventListener(Event.COMPLETE, loaderEventHandler);
             loader.addEventListener(Event.ERROR, loaderEventHandler);
@@ -16201,7 +16205,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
         return new Promise(async (resolve, reject) => {
             let loader;
 
-            let shareDataLoadUrl = R2D.URL.URL_PLAN_SHARING.split('?')[0] + '?' + 'id=' + hash + '&' + R2D.URL.URL_PLAN_SHARING.split('?')[1];
+            let shareDataLoadUrl = R2D.URL.URL_PLAN_SHARING.replace('{id}', hash);
 
             let url = R2D.makeURL(R2D.URL.DOMAIN, shareDataLoadUrl);
             
@@ -16265,6 +16269,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
     };
 
     scope.sceneAutoSaveStorage = hash => {
+        if (R2D.isViewer) return;
         let projectHash = scope.getUrlProjectHash() || hash || '';
         R2D.Storage.save(projectHash ? `r2d_project_${projectHash}` : 'r2d_project',  JSON.stringify({...scope.getObjDataForStorage(), hash: projectHash}));
 
@@ -16278,6 +16283,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
     };
 
     scope.clearSceneAutoSaveStorage = () => {
+        if (R2D.isViewer) return;
         R2D.Storage.clear('r2d_project');
         let projectHash = scope.getUrlProjectHash() || scene.getProjectHash();
         projectHash && R2D.Storage.clear(`r2d_project_${projectHash}`);
@@ -16342,7 +16348,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
         return new Promise(async (resolve, reject) => {
             let projectHash = scope.getUrlProjectHash();
             if(projectHash) {
-                if(R2D.Storage.load(`r2d_project_${projectHash}`)) return resolve(null);
+                if(!R2D.isViewer && R2D.Storage.load(`r2d_project_${projectHash}`)) return resolve(null);
                 let result = await scope.loadScene(projectHash, true);
                 resolve(result);
             } else {
@@ -17395,7 +17401,6 @@ R2D.Config = function()
             send_a_request: false,
             config_export_project: true,
             save_as: true,
-            facebook_sharing: true,
             my_renders_button: true,
             my_tours_button: true
         },

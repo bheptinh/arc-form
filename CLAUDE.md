@@ -26,7 +26,7 @@ client/             frontend — Vite + React source, index.html, tsconfig.json
     api/            React Query fetch helpers + hooks (queryClient, i18n, user, favorites, projects)
       bridges/      query-cache → side-effect subscribers (languageBridge.ts, projectsBridge.ts)
       hooks/        useLanguages, useTranslation, useLanguageChange, …
-    pages/          standalone React pages (MarkdownPage, ProjectsPage)
+    pages/          standalone React pages (MarkdownPage, ProjectsPage); /projects, /renders and /tours render inside smart-components/common/page-layout.tsx (header + nav), the constructor doesn't
     shared-components/  generic UI components — no domain imports, no entity-prefixed names (Card, SortBar, …)
     smart-components/   domain-aware components (Redux, R2D); popups/ renders on shared-components/modals, input-forms/ holds extracted forms
     vendor/         R2D engine as ES modules (plannercore.js, user.js, r2d.ts)
@@ -83,6 +83,8 @@ export const planner = new R2D.PlannerCore(user);
 
 ### Project URLs
 `/project/:uuid` opens a project; `/project/new` opens a blank one; bare `/project` redirects to `/projects`. The engine reads the hash from the URL through `getUrlProjectHash()` in `plannercore.js`. Enter `/project/new` with a full page load, because the planner singleton keeps the last scene across client-side routes.
+
+`/view/:uuid` is the read-only viewer used by the Share popup's link and iframe embed. It renders `App` with only the canvas and `ViewerControls` (2D, 3D, walk). `R2D.isViewer` (set once at the top of `plannercore.js`, so it needs a full page load) forces `viewOnly`, blanks the project's user key so everyone is a non-owner, and skips localStorage project copies and autosave.
 
 ### View Modes
 Active mode is stored in the `viewMode_new` Redux slice. Switching calls `planner[mode].activate()`. Modes:
@@ -209,6 +211,12 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 
 **Auth:** No auth implemented. All requests use `DEV_USER_ID` hardcoded in `server/schema.ts`.
 
+> **Project sharing and auth — must be covered when auth is implemented.** Today there is no access control: anyone who can reach the server can list, open, save, rename, copy or delete any project, so don't deploy publicly with real user projects. The `/view/:uuid` viewer and the `view_only` flag ("forbid to copy/edit") only limit the UI, and neither is enforced by the API. Auth work must:
+> - Make projects private by default, with ownership checks on every project route, including `/sharing`, `/copy`, render and camera-view routes.
+> - Enforce `view_only` on the server.
+> - Replace the project UUID in share links with a separate revocable token (for example `/view/<token>`), plus a read-only endpoint that resolves it, so `/view` no longer needs an owner-only project route.
+> - Drop the `user_key` comparison in the client as the only ownership check.
+
 #### Route map
 
 | Method | Path | Handler | Notes |
@@ -234,6 +242,8 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | PUT | `/server-api/projects/:id` | projects.ts | save project (full scene payload) |
 | PATCH | `/server-api/projects/:id` | projects.ts | rename project (`{ name }`) |
 | POST | `/server-api/projects/:id/copy` | projects.ts | copy project (`{ name }`) |
+| GET | `/server-api/projects/:id/sharing` | projects.ts | read view-only flag → `{ viewOnly }` |
+| PUT | `/server-api/projects/:id/sharing` | projects.ts | set view-only flag (`{ view_only }`) |
 | DELETE | `/server-api/projects/:id` | projects.ts | delete project |
 | GET | `/server-api/user` | user.ts | get user profile |
 | PATCH | `/server-api/user` | user.ts | update user profile (name, email, language_code, show_tips, subscription_news, auto_save) — validated via Zod UserPatchSchema, returns updated User |
@@ -317,5 +327,6 @@ Tour creation opens an iframe to `R2D.URL.DOMAIN + /tours/add` (roomtodo.com's t
 - **`/api/planner/connect`** — mocked with TODO: DELETE (no purpose).
 - **`URL_DELETE_PRIVATE`** (`/api/planner/delete_private_entity`) — `user.deleteMaterial()` is never called from React UI yet; route exists at `DELETE /server-api/catalog/private/materials/:id` but URL in `index.html` not updated. See TODO comment in `index.html:70`.
 - **Render image generation (Puppeteer worker)** — currently a temporary viewport-screenshot stand-in; see the TEMPORARY note under Render item shape. The full pipeline (Puppeteer + R2D engine headless, true 2K/4K WebGL screenshot, 360° cubemap stitch) is described in a TODO comment in `server/routes/renders.ts`.
+- **Project sharing access control** — needs auth; see the "Project sharing and auth" note under Backend.
 - **Tour creation** — the tour builder iframe targets `R2D.URL.DOMAIN + /tours/add`, which doesn't exist locally. A local tour editor page at `/tours/add` is needed, plus a `POST /server-api/tours` endpoint to persist the tour and its linked 360° render IDs. See TODO in `server/services/tours.ts`.
 - **`POST /server-api/tours`** — create tour. Needed when the local tour builder is implemented.

@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { z } from 'zod';
-import { getConfig, listProjects, loadProject, saveProject, renameProject, copyProject, deleteProject } from '../services/projects.js';
+import { getConfig, listProjects, loadProject, saveProject, renameProject, copyProject, deleteProject, getProjectViewOnly, setProjectViewOnly } from '../services/projects.js';
 import { DEV_USER_ID } from '../schema.js';
 
 const router = Router();
@@ -77,6 +77,30 @@ router.post('/:id/copy', (req, res) => {
   const result = copyProject(req.params.id, parsed.data.name);
   if (!result) { res.status(404).json({ status: 'error', message: 'Project not found' }); return; }
   res.json(result);
+});
+
+// TODO(auth): sharing has no access control yet. When auth lands, projects must be private by
+// default: owner-only on every project route, with /view/:uuid replaced by revocable share
+// tokens. See "Project sharing and auth" in CLAUDE.md.
+
+// GET /:id/sharing
+// R2D expects: { status: 'ok', data: { viewOnly } }
+router.get('/:id/sharing', (req, res) => {
+  const viewOnly = getProjectViewOnly(req.params.id);
+  if (viewOnly === null) { res.status(404).json({ status: 'error', message: 'Project not found' }); return; }
+  res.json({ status: 'ok', data: { viewOnly } });
+});
+
+// PUT /:id/sharing — body: { view_only }
+// R2D expects: { status: 'ok' }
+const SharingSchema = z.object({ view_only: z.boolean() });
+
+router.put('/:id/sharing', (req, res) => {
+  const parsed = SharingSchema.safeParse(req.body);
+  if (!parsed.success) { badRequest(res, parsed.error.message); return; }
+
+  if (!setProjectViewOnly(req.params.id, parsed.data.view_only)) { res.status(404).json({ status: 'error', message: 'Project not found' }); return; }
+  res.json({ status: 'ok' });
 });
 
 // DELETE /:id

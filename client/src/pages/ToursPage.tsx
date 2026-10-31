@@ -8,7 +8,7 @@ import { ToursGrid } from '../components/tours/ToursGrid';
 const useStyles = createUseStyles({
   page: {
     width: '100%',
-    height: '100vh',
+    height: '100%',
     backgroundColor: '#EBEBEB',
     display: 'grid',
     gridTemplateRows: 'auto 1fr',

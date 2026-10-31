@@ -36,6 +36,7 @@ import { setActiveViewMode } from './redux/features/viewMode/viewModeSlice';
 import { store } from './redux/store';
 import { ConfirmDialogProvider } from './shared-components/ConfirmDialog';
 import ErrorBoundary from './smart-components/common/error-boundary';
+import PageLayout from './smart-components/common/page-layout';
 
 window.sunEditor = sunEditor;
 window.sunEditorPlugins = plugins;
@@ -110,13 +111,16 @@ async function init() {
               <Toaster position="bottom-right" richColors />
               <Routes>
                 <Route path="/" element={<Navigate to="/projects" replace />} />
-                <Route path="/projects" element={<ProjectsPage />} />
-                <Route path="/renders" element={<RendersPage />} />
-                <Route path="/tours" element={<ToursPage />} />
+                <Route element={<PageLayout />}>
+                  <Route path="/projects" element={<ProjectsPage />} />
+                  <Route path="/renders" element={<RendersPage />} />
+                  <Route path="/tours" element={<ToursPage />} />
+                </Route>
                 <Route path="/toc" element={<MarkdownPage slug="toc" />} />
                 <Route path="/auth/reset-password" element={<PasswordRecoveryPage />} />
                 <Route path="/project" element={<Navigate to="/projects" replace />} />
                 <Route path="/project/*" element={<App />} />
+                <Route path="/view/:uuid" element={<App />} />
               </Routes>
             </Router>
           </ErrorBoundary>
