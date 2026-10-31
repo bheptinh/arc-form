@@ -61048,18 +61048,39 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
         return {minX: minX, minY: minY, maxX:maxX, maxY:maxY};
     };
 
+    let pinchAccum = 0;
+
     function onCanvasWheel(e)
     {
         if (me.wheelEnabled)
         {
-            let x = e.offsetX == undefined ? e.layerX : e.offsetX;
-            let y = e.offsetY == undefined ? e.layerY : e.offsetY;
+            if (e.ctrlKey || e.metaKey)
+            {
+                pinchAccum += e.deltaY;
+                if (Math.abs(pinchAccum) < 1.5) return;
+                const delta = -pinchAccum;
+                pinchAccum = 0;
+                let x = e.offsetX == undefined ? e.layerX : e.offsetX;
+                let y = e.offsetY == undefined ? e.layerY : e.offsetY;
 
-            apiDispatcher.dispatchEvent(new Event(apiDispatcher.WHEEL_ZOOM, {x, y, delta: -e.deltaY || -e.detail || e.wheelDelta}));
+                apiDispatcher.dispatchEvent(new Event(apiDispatcher.WHEEL_ZOOM, {x, y, delta}));
+            }
+            else
+            {
+                apiDispatcher.dispatchEvent(new Event(apiDispatcher.CAMERA_MOVE, {x: -e.deltaX, y: -e.deltaY}));
+                R2D.ViewerScene2D._instance.rendererCameraPositionUpdateEventHandler();
+                me.shiftX += e.deltaX;
+                me.shiftY += e.deltaY;
+                me.drawObjLayer();
+                me.state.draw();
+                WC.SFK.state.updateInputsAfterDraggingCanvasOrZoom();
+                me.titlesTool.viewUpdate();
+            }
         }
 
         me.state.mouseWheel();
     }
+    me.onCanvasWheel = onCanvasWheel;
 
     me.cameraZoom = function(delta)
     {
@@ -69399,34 +69420,7 @@ class ArrowAnimation {
             e.preventDefault();
         });
 
-        let _pinchAccum = 0;
-        this.canvas.addEventListener("wheel", (e) => {
-            if (WC.wallsEditor.wheelEnabled) {
-                if (e.ctrlKey || e.metaKey) {
-                    _pinchAccum += e.deltaY;
-                    if (Math.abs(_pinchAccum) < 1.5) return;
-                    const accumulatedDelta = -_pinchAccum;
-                    _pinchAccum = 0;
-                    let x = e.offsetX == undefined ? e.layerX : e.offsetX;
-                    let y = e.offsetY == undefined ? e.layerY : e.offsetY;
-
-                    WC.wallsEditor.api.dispatchEvent(
-                        new Event(WC.wallsEditor.api.WHEEL_ZOOM, {
-                            x, y, delta: accumulatedDelta,
-                        })
-                    );
-                } else {
-                    WC.wallsEditor.shiftX += e.deltaX;
-                    WC.wallsEditor.shiftY += e.deltaY;
-                    WC.wallsEditor.drawObjLayer();
-                    WC.wallsEditor.state.draw();
-                    WC.SFK.state.updateInputsAfterDraggingCanvasOrZoom();
-                    WC.wallsEditor.titlesTool.viewUpdate();
-                }
-            }
-
-            WC.wallsEditor.state.mouseWheel();
-        });
+        this.canvas.addEventListener("wheel", (e) => WC.wallsEditor.onCanvasWheel(e));
     }
 
     start() {
