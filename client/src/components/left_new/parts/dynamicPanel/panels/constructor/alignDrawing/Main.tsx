@@ -108,6 +108,35 @@ const Main = (props) => {
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
 
+  const leaveAlignDrawing = (modeToChangeAfter) => {
+    if (modeToChangeAfter) dispatch(setActiveViewMode(modeToChangeAfter));
+
+    if (modeToChangeAfter == 'view3d' || modeToChangeAfter == 'view2d') {
+      prevControlPanelMode
+        ? dispatch(changeActiveControlPanelMode({ mode: prevControlPanelMode }))
+        : dispatch(
+            changeActiveControlPanelMode({
+              mode: 'furniture',
+              data:
+                controlPanelData['furniture'].history.length < 1
+                  ? {
+                      type: 'catalog',
+                      addType: 'main',
+                      id: null,
+                      lastSavedScroll: 0,
+                      data: furnitureData,
+                    }
+                  : null,
+            })
+          );
+    } else {
+      dispatch(changeActiveControlPanelMode({ mode: 'constructor' }));
+    }
+
+    dispatch(updateControlPanelStatus(true));
+    dispatch(showTip({ name: 'constructorButtons' }));
+  };
+
   const onSave = (e) => {
     const modeToChangeAfter =
       WC.wallsEditor.state.getModeToChangeAfter && WC.wallsEditor.state.getModeToChangeAfter();
@@ -115,34 +144,17 @@ const Main = (props) => {
     if (!result || result.state == 'error') {
       dispatch(setActivePopup({ name: 'alert', type: result?.type, data: result?.data }));
     } else {
-      if (modeToChangeAfter) {
-        dispatch(setActiveViewMode(modeToChangeAfter));
-        if (modeToChangeAfter == 'view3d' || modeToChangeAfter == 'view2d') {
-          prevControlPanelMode
-            ? dispatch(changeActiveControlPanelMode({ mode: prevControlPanelMode }))
-            : dispatch(
-                changeActiveControlPanelMode({
-                  mode: 'furniture',
-                  data:
-                    controlPanelData['furniture'].history.length < 1
-                      ? {
-                          type: 'catalog',
-                          addType: 'main',
-                          id: null,
-                          lastSavedScroll: 0,
-                          data: furnitureData,
-                        }
-                      : null,
-                })
-              );
-        }
-      } else {
-        dispatch(changeActiveControlPanelMode({ mode: 'constructor' }));
-      }
-
-      dispatch(updateControlPanelStatus(true));
-      dispatch(showTip({ name: 'constructorButtons' }));
+      leaveAlignDrawing(modeToChangeAfter);
     }
+  };
+
+  const onDrawingRemoved = useRef(null);
+  onDrawingRemoved.current = () => {
+    const modeToChangeAfter = WC.wallsEditor.state.getModeToChangeAfter();
+    WC.wallsEditor.changeState(WC.wallsEditor.stateEditing);
+    R2D.commonSceneHelper.drawingHelper.state = null;
+    dispatch(changeImagePlanUploadType(null));
+    leaveAlignDrawing(modeToChangeAfter);
   };
 
   const onDelete = (e) => dispatch(setActivePopup({ name: 'confirm', type: 'image_plan_delete' }));
@@ -170,11 +182,15 @@ const Main = (props) => {
           : null
       )
     );
-    return () =>
+    const drawingRemovedListener = () => onDrawingRemoved.current();
+    WC.wallsEditor.addEventListener(WC.DRAWING_REMOVED, drawingRemovedListener);
+    return () => {
       planner.apiConstr.removeEventListener(
         planner.apiConstr.SET_AREA_IMAG_PLAN_POPUP,
         onSetImagePlanAreaPopup
       );
+      WC.wallsEditor.removeEventListener(WC.DRAWING_REMOVED, drawingRemovedListener);
+    };
   }, []);
 
   return (

@@ -62071,6 +62071,8 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
     me.delImageDrawing = function()
     {
         me.imgDrawing = null;
+        me.drawingScale = 1;
+        me.drawingRotation = 0;
         
         me.stateAlignDrawing.initValues();
 

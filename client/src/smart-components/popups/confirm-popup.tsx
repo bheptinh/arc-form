@@ -3,6 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
+import { planner } from '../../initR2D';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
 import Button from '../../shared-components/inputs/button';
 import DefaultModal from '../../shared-components/modals/default';
@@ -49,6 +50,11 @@ const ConfirmPopup = () => {
     setTimeout(() => dispatch(closeActivePopup({ name: 'confirm' })), 500);
   };
 
+  const onConfirm = () => {
+    if (type === 'image_plan_delete') planner.constr.deletePlan();
+    close();
+  };
+
   return (
     <DefaultModal
       visible={animPopupClass}
@@ -61,7 +67,7 @@ const ConfirmPopup = () => {
         <Button variant="secondary" onClick={close}>
           {translation['BUTTON_CANCEL'] || 'Cancel'}
         </Button>
-        <Button onClick={close}>{translation['BUTTON_OK'] || 'OK'}</Button>
+        <Button onClick={onConfirm}>{translation['BUTTON_OK'] || 'OK'}</Button>
       </DefaultModal.Actions>
     </DefaultModal>
   );
