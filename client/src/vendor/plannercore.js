@@ -18,8 +18,6 @@ R2D.PlannerCore = function(user) {
 
     R2D.config = new R2D.Config();
 
-    var width = 800;
-    var height = 600;
     var viewersContainer = document.createElement('div');
     viewersContainer.style.display = 'inline-block';
     viewersContainer.style.position = 'absolute';
@@ -16931,8 +16929,8 @@ R2D.Viewers = function (viewersContainer, enableRuler, panelsWidth) {
                 width = ratioWidth;
                 height = currHeight;
             }
-            document.querySelector("#app")?.classList.add("renderMake")
-        } else document.querySelector("#app")?.classList.remove("renderMake");
+            document.querySelector("#root")?.classList.add("renderMake")
+        } else document.querySelector("#root")?.classList.remove("renderMake");
 
 
         currentViewer.setSize(width, height, isRenderMakeActive);

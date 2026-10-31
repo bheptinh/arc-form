@@ -69,7 +69,6 @@ const useStyle = createUseStyles({
     },
   },
   prevBtnArrow: {
-    transform: 'scale(-1)',
     transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
   },
   nextBtn: {

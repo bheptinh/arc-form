@@ -1,7 +1,7 @@
 import { IconVideo, IconX } from '@tabler/icons-react';
 import cls from 'classnames';
 import { motion } from 'framer-motion';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -112,14 +112,11 @@ const useStyle = createUseStyles({
     top: 8,
     right: 8,
     cursor: 'pointer',
-    zIndex: '2',
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
+    zIndex: 2,
+    color: '#fff',
+
     '&:hover': {
-      '& path': {
-        fill: '#BAE51F',
-      },
+      color: '#BAE51F',
     },
   },
   planner_popup_close_icon: {
@@ -474,7 +471,7 @@ const RenderMake = () => {
       {controPanelActiveMode == 'renderMake' && (
         <div>
           <div className={classes.planner_popup_close} onClick={onRenderClose}>
-            <IconX size={24} color="#2F2F2F" className={classes.planner_popup_close_icon} />
+            <IconX size={24} className={classes.planner_popup_close_icon} />
           </div>
           <motion.div
             initial={{ transform: 'translateY(-102%)' }}
