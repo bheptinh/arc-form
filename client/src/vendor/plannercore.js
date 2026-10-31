@@ -63470,6 +63470,29 @@ WC.BaseState = function()
         WC.context.setLineDash([]);
     };
 
+    me.drawDots = function()
+    {
+        if (!R2D.view2d || R2D.Viewers.getCurrentViewerType() !== "constructor") return;
+
+        const scale = WC.wallsEditor.scale;
+        let step = 25;
+        while (step * scale < 20) step *= 2;
+
+        const LT = WC.wallsEditor.viewToReal(new TR.Point(0, 0));
+        const RB = WC.wallsEditor.viewToReal(new TR.Point(WC.canvasWidth, WC.canvasHeight));
+
+        WC.context.fillStyle = "#c0c0c0";
+        WC.context.beginPath();
+        for (let x = Math.floor(LT.x / step) * step; x <= RB.x; x += step)
+        {
+            for (let y = Math.floor(LT.y / step) * step; y <= RB.y; y += step)
+            {
+                WC.context.rect(Math.round(x * scale - WC.wallsEditor.shiftX), Math.round(y * scale - WC.wallsEditor.shiftY), 2, 2);
+            }
+        }
+        WC.context.fill();
+    };
+
     me.drawBG = function(opacity)
     {
         if (!WC.wallsEditor.imgDrawing) return;
@@ -63765,6 +63788,8 @@ WC.BaseState = function()
 
         WC.context.clearRect(0, 0, WC.canvasWidth, WC.canvasHeight);
 
+        me.drawDots();
+
         if (WC.wallsEditor.drawingPosition == WC.DRAWING_BELOW) me.drawBG(0.3);
 
         me.drawModels();
@@ -63956,6 +63981,8 @@ WC.StateDraggingCoverPoint = function()
     {
         WC.context.clearRect(0, 0, WC.canvasWidth, WC.canvasHeight);
 
+        me.drawDots();
+
         if (WC.wallsEditor.drawingPosition == WC.DRAWING_BELOW) me.drawBG(0.3);
         
         for (i = 0; i < WC.core.arrCovers.length; i++) me.drawCover(WC.core.arrCovers[i]);
@@ -64058,6 +64085,8 @@ WC.StateDraggingPoint = function()
         //me.drawAligner();
 
         WC.context.clearRect(0, 0, WC.canvasWidth, WC.canvasHeight);
+
+        me.drawDots();
 
         if (WC.wallsEditor.drawingPosition == WC.DRAWING_BELOW) me.drawBG(0.3);
 
@@ -64473,6 +64502,8 @@ WC.StateDraggingCoverSide = function () {
 
     me.draw = function () {
         WC.context.clearRect(0, 0, WC.canvasWidth, WC.canvasHeight);
+
+        me.drawDots();
 
         if (WC.wallsEditor.drawingPosition == WC.DRAWING_BELOW) me.drawBG(1.0);
 
@@ -67224,6 +67255,8 @@ WC.StateSelectedCover = function()
 
         WC.context.clearRect(0, 0, WC.canvasWidth, WC.canvasHeight);
 
+        me.drawDots();
+
         if (WC.wallsEditor.drawingPosition == WC.DRAWING_BELOW) me.drawBG(0.3);
 
         me.drawModels();
@@ -67547,6 +67580,9 @@ WC.StateSelectedPoint = function()
         let B = null;
 
         WC.context.clearRect(0, 0, WC.canvasWidth, WC.canvasHeight);
+
+        me.drawDots();
+
         if (WC.wallsEditor.drawingPosition == WC.DRAWING_BELOW) me.drawBG(0.3);
 
         me.drawModels();
