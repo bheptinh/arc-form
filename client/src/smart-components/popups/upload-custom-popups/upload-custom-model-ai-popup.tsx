@@ -810,7 +810,7 @@ const UploadCustomModelAiPopup = (props) => {
             >
               <div className={classes.upload_popup_bottom}>
                 <h2> {translation['NEED_CREDITS_TEXT']}: 1</h2>
-                <div className={classes.planner_popup_bottom_info}>
+                <div>
                   {translation['RENDER_MY_CREDITS']}:
                   <b>{(+userProfileData.credits || 0).toFixed(0)}</b>
                   <div
@@ -862,9 +862,7 @@ const UploadCustomModelAiPopup = (props) => {
             >
               <div className={classes.upload_popup_bottom}>
                 <div className={classes.upload_popup_bottom_items}>
-                  <p className={classes.upload_popup_bottom_info_left}>
-                    {translation['UPLOAD_FILE_FORMAT']}:
-                  </p>
+                  <p>{translation['UPLOAD_FILE_FORMAT']}:</p>
                   <p
                     className={
                       statusErrorFormat
@@ -876,9 +874,7 @@ const UploadCustomModelAiPopup = (props) => {
                   >
                     JPEG, PNG
                   </p>
-                  <p className={classes.upload_popup_bottom_info_left}>
-                    {translation['FILE_SIZE_TEXT']}:
-                  </p>
+                  <p>{translation['FILE_SIZE_TEXT']}:</p>
                   <p
                     className={
                       statusErrorWeight
@@ -893,9 +889,7 @@ const UploadCustomModelAiPopup = (props) => {
                 </div>
 
                 <div>
-                  <p className={classes.upload_popup_bottom_info_left}>
-                    {translation['CREATE_MODEL_AI_REQUIREMENTS']}
-                  </p>
+                  <p>{translation['CREATE_MODEL_AI_REQUIREMENTS']}</p>
 
                   <div className={classes.upload_model_img_correct_wr}>
                     <div>

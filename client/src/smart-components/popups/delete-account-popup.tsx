@@ -169,7 +169,7 @@ const DeleteAccountPopup = (props) => {
       onClose={onClickClosePopUp}
     >
       <div className={classes.delete_account_login_wrap}>
-        <div className={classes.delete_account_login_wr}>
+        <div>
           <div className={classes.delete_account_bot}>
             {popupState == 'confirm' ? (
               <>

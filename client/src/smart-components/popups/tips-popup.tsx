@@ -169,7 +169,7 @@ const TipsPopup = (props) => {
               <h2 className={classes.planner_popup_tips_wr_title}>
                 {translation['TIPS_TEXT_SHORT_TITLE']}
               </h2>
-              <div className={classes.planner_popup_tips_wr_block_main}>
+              <div>
                 <div className={classes.planner_popup_tips_wr_block_main_child}>
                   <div className={classes.planner_popup_tips_wr_block_main_child_images}>
                     {currentOS == 'Mac OS' ? buttons.cmd : buttons.ctrl}
@@ -276,7 +276,7 @@ const TipsPopup = (props) => {
               <h2 className={classes.planner_popup_tips_wr_title}>
                 {translation['TIPS_TEXT_CONTROLS_TITLE']}
               </h2>
-              <div className={classes.planner_popup_tips_wr_block_main}>
+              <div>
                 <div className={classes.planner_popup_tips_wr_block_main_child}>
                   <div className={classes.planner_popup_tips_wr_block_main_child_images}>
                     {buttons.leftMouseMove}

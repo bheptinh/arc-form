@@ -680,11 +680,7 @@ const UploadCustomMaterialPopup = (props) => {
                     key={'error'}
                     className={classes.upload_popup_bottom_items}
                   >
-                    {!isCurrDeviceAPhone ? (
-                      <p className={classes.upload_popup_bottom_info_left}>
-                        {translation['UPLOAD_FILE_FORMAT']}:
-                      </p>
-                    ) : null}
+                    {!isCurrDeviceAPhone ? <p>{translation['UPLOAD_FILE_FORMAT']}:</p> : null}
                     <p
                       className={
                         statusErrorFormat
@@ -696,11 +692,7 @@ const UploadCustomMaterialPopup = (props) => {
                     >
                       JPG, JPEG, PNG, WEBP, GIF, SVG
                     </p>
-                    {!isCurrDeviceAPhone ? (
-                      <p className={classes.upload_popup_bottom_info_left}>
-                        {translation['FILE_SIZE_TEXT']}:
-                      </p>
-                    ) : null}
+                    {!isCurrDeviceAPhone ? <p>{translation['FILE_SIZE_TEXT']}:</p> : null}
 
                     <p
                       className={
@@ -738,9 +730,7 @@ const UploadCustomMaterialPopup = (props) => {
         >
           <div className={classes.upload_popup_bottom}>
             <div className={classes.upload_popup_bottom_items}>
-              <p className={classes.upload_popup_bottom_info_left}>
-                {translation['UPLOAD_FILE_FORMAT']}:
-              </p>
+              <p>{translation['UPLOAD_FILE_FORMAT']}:</p>
               <p
                 className={
                   statusErrorFormat
@@ -752,9 +742,7 @@ const UploadCustomMaterialPopup = (props) => {
               >
                 JPG, JPEG, PNG, WEBP, GIF, SVG
               </p>
-              <p className={classes.upload_popup_bottom_info_left}>
-                {translation['FILE_SIZE_TEXT']}:
-              </p>
+              <p>{translation['FILE_SIZE_TEXT']}:</p>
               <p
                 className={
                   statusErrorWeight

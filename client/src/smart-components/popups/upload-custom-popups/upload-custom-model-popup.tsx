@@ -416,9 +416,7 @@ const UploadCustomModelPopup = () => {
       <div className={classes.planner_popup_bottom}>
         <h2>{translation['UPLOAD_MODEL_REQ_TITLE']}</h2>
         <div className={classes.upload_popup_bottom_items}>
-          <p className={classes.planner_popup_bottom_info_left}>
-            {translation['UPLOAD_FILE_FORMAT']}:
-          </p>
+          <p>{translation['UPLOAD_FILE_FORMAT']}:</p>
           <p
             className={
               statusErrorFormat
@@ -430,9 +428,7 @@ const UploadCustomModelPopup = () => {
           >
             GLB
           </p>
-          <p className={classes.planner_popup_bottom_info_left}>
-            {translation['UPLOAD_MAX_NUMBER_OF_POLYG']}:
-          </p>
+          <p>{translation['UPLOAD_MAX_NUMBER_OF_POLYG']}:</p>
           <p
             className={
               statusErrorPolygons
@@ -444,9 +440,7 @@ const UploadCustomModelPopup = () => {
           >
             60000
           </p>
-          <p className={classes.planner_popup_bottom_info_left}>
-            {translation['UPLOAD_MAX_NUMBER_OF_MESHES']}:
-          </p>
+          <p>{translation['UPLOAD_MAX_NUMBER_OF_MESHES']}:</p>
           <p
             className={
               statusErrorMeshes
@@ -458,7 +452,7 @@ const UploadCustomModelPopup = () => {
           >
             50
           </p>
-          <p className={classes.upload_popup_bottom_info_left}>{translation['FILE_SIZE_TEXT']}:</p>
+          <p>{translation['FILE_SIZE_TEXT']}:</p>
           <p
             className={
               statusErrorWeight

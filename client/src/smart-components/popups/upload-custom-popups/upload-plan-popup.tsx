@@ -391,9 +391,7 @@ const UploadPlanPopup = (props) => {
 
       <div className={classes.upload_popup_bottom}>
         <div className={classes.upload_popup_bottom_items}>
-          <p className={classes.upload_popup_bottom_info_left}>
-            {translation['UPLOAD_FILE_FORMAT']}:
-          </p>
+          <p>{translation['UPLOAD_FILE_FORMAT']}:</p>
           <p
             className={
               statusErrorFormat

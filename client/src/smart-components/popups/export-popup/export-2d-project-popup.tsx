@@ -521,7 +521,7 @@ const Export2DProjectPopup = (props) => {
           <div className={classes.planner_popup_cont_left_main}>
             <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
               <div className={classes.planner_popup_cont_left_main_top}>
-                <div className={classes.planner_popup_orientation}>
+                <div>
                   <div className={classes.planner_popup_acc_title}>
                     {translation['EXPORT_PROJECT_ORIENTATION']}
                   </div>
@@ -553,7 +553,7 @@ const Export2DProjectPopup = (props) => {
                   </div>
                 </div>
 
-                <div className={classes.planner_popup_orientation}>
+                <div>
                   <div className={classes.planner_popup_acc_title}>Відображення</div>
                   <div className={classes.planner_popup_orientation_buttons}>
                     <div
@@ -655,7 +655,7 @@ const Export2DProjectPopup = (props) => {
                   <div className={classes.planner_popup_acc_title}>
                     {translation['EXPORT_PROJECT_SETTINGS']}
                   </div>
-                  <div className={classes.planner_popup_checkboxes_main}>
+                  <div>
                     <div className={classes.planner_popup_checkbox}>
                       <Checkbox
                         onChange={(status) => setShowScaleStatus(status)}
