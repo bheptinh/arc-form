@@ -9,7 +9,6 @@ import {
 import { selectUserProfileData } from '../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../redux/features/viewMode/viewModeSlice';
 import {
-  LangButton,
   Projects,
   RealisticImageButton,
   SaveButton,
@@ -50,7 +49,6 @@ const TopPanel = (props) => {
   const activeViewMode = useSelector(selectActiveViewMode);
   const userData = useSelector(selectUserProfileData);
 
-  const configTopLanguage = R2D.config.data.ui.top_language;
   const configTopProject = R2D.config.data.ui.top_project;
   const configTopSave = R2D.config.data.ui.top_save;
   const configTopRender = R2D.config.data.ui.top_render;
@@ -67,7 +65,6 @@ const TopPanel = (props) => {
       {!isProjectBelongToLoggedUser && isProjectOnlyView ? (
         <div className={classes.bar_btns_wr}>
           <div className={classes.bar_btns_flex + ' ' + classes.menuTop}>
-            {configTopLanguage ? <LangButton /> : null}
             {configTopProject ? <Projects /> : null}
           </div>
         </div>
@@ -78,7 +75,6 @@ const TopPanel = (props) => {
       ) : (
         <div className={classes.bar_btns_wr}>
           <div className={classes.bar_btns_flex + ' ' + classes.menuTop}>
-            {configTopLanguage ? <LangButton /> : null}
             {configTopProject ? <Projects /> : null}
             {configTopRender && !isCurrDeviceAPhone ? <RealisticImageButton /> : null}
             {configTopSave &&

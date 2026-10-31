@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { useLanguageChange } from '../../api/hooks/useLanguageChange';
+import { useLanguages } from '../../api/hooks/useLanguages';
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
 import { closeActivePopup, setActivePopup } from '../../redux/features/popups/popupsSlice';
@@ -10,6 +12,7 @@ import {
   selectUserProfileData,
   setProfileData,
 } from '../../redux/features/user/userSlice';
+import { selectActiveViewMode } from '../../redux/features/viewMode/viewModeSlice';
 import Button from '../../shared-components/inputs/button';
 import Checkbox from '../../shared-components/inputs/checkbox';
 import TextInput from '../../shared-components/inputs/text-input';
@@ -121,10 +124,16 @@ export default function ProfilePopup() {
   const userProfileData = useSelector(selectUserProfileData);
 
   const isLogged = useSelector(selectIsLogged);
+  const activeViewMode = useSelector(selectActiveViewMode);
+
+  const languages = useLanguages();
+  const currentLanguageCode = languages.find((i) => i.current == 1)?.code;
+  const { mutateAsync: changeLanguage } = useLanguageChange();
 
   const [checkboxNews, setCheckboxNews] = useState(userProfileData?.subscriptionNews);
   const [checkboxTips, setCheckboxTips] = useState(userProfileData?.tips);
   const [checkboxAutoSave, setCheckboxAutoSave] = useState(userProfileData?.autoSave);
+  const [languageCode, setLanguageCode] = useState(currentLanguageCode);
 
   const classes = useStyle();
 
@@ -138,7 +147,8 @@ export default function ProfilePopup() {
       checkboxNews == userProfileData.subscriptionNews &&
       checkboxTips == userProfileData.tips &&
       userProfileData.name == user_name_new &&
-      checkboxAutoSave == userProfileData.autoSave
+      checkboxAutoSave == userProfileData.autoSave &&
+      languageCode == currentLanguageCode
     )
       return dispatch(closeActivePopup({ name: 'profile' }));
     else if (!user_name_new)
@@ -157,6 +167,14 @@ export default function ProfilePopup() {
     };
 
     await user.setProfileData(dataObj);
+
+    if (languageCode != currentLanguageCode) {
+      dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
+      await changeLanguage(languageCode);
+      dispatch(closeActivePopup({ name: 'loadingMessage' }));
+      if (activeViewMode == 'view2d') R2D.scene3D?.titlesTool.onLanguagesUpdate();
+      else if (activeViewMode == 'constr') WC.wallsEditor?.titlesTool.onLanguagesUpdate();
+    }
 
     const response = await user.loadProfileData();
     if (response.type == 'error') dispatch(setActivePopup({ name: 'alert', data: response.data }));
@@ -177,6 +195,7 @@ export default function ProfilePopup() {
   }
 
   const isProfileNewsShow = Boolean(R2D.config.data.ui.profile_news);
+  const isLanguageShow = Boolean(R2D.config.data.ui.top_language);
 
   return (
     <DefaultModal
@@ -207,6 +226,31 @@ export default function ProfilePopup() {
             </div>
           </div>
         </fieldset>
+        {isLanguageShow ? (
+          <fieldset>
+            <div className={classes.fieldset_left}>
+              <div className={classes.input_text}>
+                {translation['ADMIN_COMMON_LANG'] || 'Language'}
+              </div>
+            </div>
+            <div className={classes.fieldset_right}>
+              <div className={classes.input_wr}>
+                <select
+                  className={classes.formInput}
+                  name="language"
+                  value={languageCode}
+                  onChange={(e) => setLanguageCode(e.target.value)}
+                >
+                  {languages.map((item) => (
+                    <option key={item.id} value={item.code}>
+                      {item.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        ) : null}
         <fieldset>
           <div className={classes.fieldset_left}>
             <div className={classes.input_text}>{translation['TEXT_NEW_PASSWORD']}</div>

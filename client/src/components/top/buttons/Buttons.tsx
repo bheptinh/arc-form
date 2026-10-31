@@ -13,8 +13,6 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { useLanguageChange } from '../../../api/hooks/useLanguageChange';
-import { useLanguages } from '../../../api/hooks/useLanguages';
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner, user } from '../../../initR2D';
 import {
@@ -91,8 +89,6 @@ const useStyles = createUseStyles({
     },
   },
   bar_dropdown_wrap_svg_hover_circle: {},
-  bar_dropdown_wrap_lang: {},
-  bar_dropdown_option_wr_lang: {},
   bar_dropdown_active: {
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
     background: '#fff',
@@ -122,9 +118,6 @@ const useStyles = createUseStyles({
     },
   },
   bar_btnScreenshotBtn: {},
-  bar_dropdown_active_lang: {
-    justifyContent: 'center',
-  },
   bar_dropdown_option_wrap: {
     position: 'absolute',
     left: '50%',
@@ -176,7 +169,6 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  bar_dropdown_option_lang: {},
   bar_login_btn: {
     background: 'rgba(47, 47, 47, 0.7)',
     cursor: 'pointer',
@@ -330,102 +322,10 @@ const useStyles = createUseStyles({
     },
   },
   bar_dropdown_option_plan_update: {},
-  lang_code: {
-    textTransform: 'uppercase',
-  },
-  lang_globus_icon: {
-    marginRight: 5,
-  },
   undoRedoButtons: {
     display: 'flex',
   },
 });
-
-const LangButton = (props) => {
-  const classes = useStyles();
-
-  const languages = useLanguages();
-  const dispatch = useDispatch();
-
-  const activeViewMode = useSelector(selectActiveViewMode);
-
-  const { mutateAsync: changeLanguage } = useLanguageChange();
-
-  const onLangChange = async (code) => {
-    dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
-    await changeLanguage(code);
-    dispatch(closeActivePopup({ name: 'loadingMessage' }));
-    if (activeViewMode == 'view2d') R2D.scene3D?.titlesTool.onLanguagesUpdate();
-    else if (activeViewMode == 'constr') WC.wallsEditor?.titlesTool.onLanguagesUpdate();
-  };
-
-  const [activeLanguage, setActiveLanguage] = useState(null);
-
-  const onChangeLang = (e, item) => onLangChange(item['code']);
-
-  const elseElems = languages.map((item, index) => {
-    if (item['current'] != 1) {
-      return (
-        <div
-          className={classes.bar_dropdown_option + ' ' + classes.bar_dropdown_option_lang}
-          key={index}
-          onClick={(e) => onChangeLang(e, item)}
-        >
-          <div className={classes.lang_code}>{item['code']}</div>
-          <p>{item['name']}</p>
-        </div>
-      );
-    }
-  });
-
-  const onEnterDropdown = (e) => e.currentTarget.classList.add(classes.bar_dropdown_wrap_hover);
-
-  const onLeaveDropdown = (e) => e.currentTarget.classList.remove(classes.bar_dropdown_wrap_hover);
-
-  const onTouchStartDropdown = (e) => {
-    document.removeEventListener('touchstart', onTouchStartHideDropdown);
-    setTimeout(() => document.addEventListener('touchstart', onTouchStartHideDropdown), 0);
-    if (!e.target.closest('.' + classes.bar_dropdown_option_wr))
-      e.currentTarget.classList.toggle(classes.bar_dropdown_wrap_hover);
-  };
-
-  const onTouchStartHideDropdown = (e) => {
-    document
-      .querySelector('.' + classes.bar_dropdown_wrap_hover)
-      ?.classList.remove(classes.bar_dropdown_wrap_hover);
-    document.removeEventListener('touchstart', onTouchStartHideDropdown);
-  };
-
-  useEffect(() => {
-    const active = languages.find((i) => i['current'] == 1);
-    setActiveLanguage(active);
-  }, [languages]);
-
-  return activeLanguage ? (
-    <div
-      className={classes.bar_dropdown_wrap + ' ' + classes.bar_dropdown_wrap_lang}
-      onMouseEnter={onEnterDropdown}
-      onMouseLeave={onLeaveDropdown}
-      onTouchStart={onTouchStartDropdown}
-    >
-      <div
-        className={classes.bar_dropdown_active + ' ' + classes.bar_dropdown_active_lang}
-        key={activeLanguage['id']}
-      >
-        <img className={classes.lang_globus_icon} src="/src_designer/images/icon_globus.svg" />
-        <div className={classes.lang_code}>{activeLanguage['code']}</div>
-      </div>
-      <div className={classes.bar_dropdown_option_wrap}>
-        <div
-          className={classes.bar_dropdown_option_wr + ' ' + classes.bar_dropdown_option_wr_lang}
-          id="bar_lang_option_wr"
-        >
-          {elseElems}
-        </div>
-      </div>
-    </div>
-  ) : null;
-};
 
 const LoginButton = (props) => {
   const classes = useStyles();
@@ -1125,7 +1025,6 @@ const SendARequestButton = () => {
 };
 
 export {
-  LangButton,
   Projects,
   RealisticImageButton,
   SaveButton,
