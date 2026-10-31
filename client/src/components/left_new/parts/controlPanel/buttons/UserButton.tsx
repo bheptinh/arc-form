@@ -17,6 +17,7 @@ import {
   userLogout,
 } from '../../../../../redux/features/user/userSlice';
 import HoverComponent from '../components/HoverComponent';
+import { useMerchantLogin } from '../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   menu_dop_btn_wrap: {
@@ -183,6 +184,7 @@ const useStyle = createUseStyles({
 
 const UserButton = (props) => {
   const dispatch = useDispatch();
+  const verifyEnabledMerchantLogin = useMerchantLogin();
   const navigate = useNavigate();
   const classes = useStyle();
   const userData = useSelector(selectUserProfileData);
@@ -218,9 +220,7 @@ const UserButton = (props) => {
 
   const projectsShow = async (e) => {
     if (!isLogged) {
-      !R2D.config.data.enable_merchant_login
-        ? dispatch(setActivePopup({ name: 'login' }))
-        : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+      verifyEnabledMerchantLogin();
       return;
     }
     R2D.config.data.my_projects_merchant_logic
@@ -368,9 +368,7 @@ const UserButton = (props) => {
           <div
             className={classes.menu_dop_btn}
             onClick={() =>
-              !R2D.config.data.enable_merchant_login
-                ? dispatch(setActivePopup({ name: 'login' }))
-                : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }))
+              verifyEnabledMerchantLogin()
             }
           >
             <IconUser size={16} className={classes.menu_dop_btn_icon} />

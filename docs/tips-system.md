@@ -67,6 +67,6 @@ Driven by: `selectActiveViewMode`, `selectActiveControlPanelMode`, and events `K
 
 A modal popup listing all keyboard shortcuts. Accessible via the help button in the left panel (`ControlPanel.tsx` dispatches `setActivePopup({name: 'tipsPopup'})`).
 
-**File:** `client/src/components/popups/TipsPopup.tsx`
+**File:** `client/src/smart-components/popups/tips-popup.tsx`
 
 Contains inline SVG icons for: Ctrl, Z, Shift, C, V, Delete, Backspace, arrow keys, WASD, Space. The popup content is static (not translation-driven for the key icons, but labels use `translation[]`).

@@ -24,6 +24,7 @@ import {
 } from '../../../../../../redux/features/user/userSlice';
 import Lock from '../../../../../common/Lock';
 import CloseModeBtn from '../common/CloseModeBtn';
+import { useMerchantLogin } from '../../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   plannerWallsCont: {
@@ -181,6 +182,7 @@ const useStyle = createUseStyles({
 
 const Main = (props) => {
   const dispatch = useDispatch();
+  const verifyEnabledMerchantLogin = useMerchantLogin();
 
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
   const userProjectActive = useSelector(selectUserProjectActive);
@@ -256,9 +258,7 @@ const Main = (props) => {
       dispatch(changeActiveControlPanelMode({ mode: 'selectedWall', data: { type: 'main' } }));
     } else {
       R2D.OPTIONS.PRO_PLAN
-        ? !R2D.config.data.enable_merchant_login
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }))
+        ? verifyEnabledMerchantLogin()
         : dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
       return;
     }

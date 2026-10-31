@@ -27,6 +27,7 @@ import ChangeSize from '../../../../../common/ChangeSize';
 import Lock from '../../components/Lock';
 import Navigation from '../../navigation/Navigation';
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import { useMerchantLogin } from '../../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -548,6 +549,7 @@ const ChangePlinth = (props) => {
   const classes = useStyle();
   const translation = useTranslation();
   const dispatch = useDispatch();
+  const verifyEnabledMerchantLogin = useMerchantLogin();
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
   const userProjectActive = useSelector(selectUserProjectActive);
@@ -638,9 +640,7 @@ const ChangePlinth = (props) => {
       });
     } else {
       R2D.OPTIONS.PRO_PLAN
-        ? !R2D.config.data.enable_merchant_login
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }))
+        ? verifyEnabledMerchantLogin()
         : dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
       return;
     }

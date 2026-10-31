@@ -1,6 +1,14 @@
 import { IconArrowLeft, IconX } from '@tabler/icons-react';
 import clsx from 'classnames';
-import { PropsWithChildren, useEffect, useState } from 'react';
+import {
+  CSSProperties,
+  MouseEvent,
+  MouseEventHandler,
+  PropsWithChildren,
+  ReactNode,
+  useEffect,
+  useState,
+} from 'react';
 import { createUseStyles } from 'react-jss';
 
 const useStyle = createUseStyles({
@@ -31,12 +39,14 @@ const useStyle = createUseStyles({
   },
   defaultModalLayout_wr: {
     color: '#000',
-    maxWidth: 645,
-    width: '100%',
     maxHeight: '90%',
     transform: 'scale(0)',
     boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
     transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
+  },
+  defaultModalLayout_wr_titled: {
+    maxWidth: 645,
+    width: '100%',
   },
   defaultModalLayout_cont: {
     color: '#000',
@@ -44,6 +54,8 @@ const useStyle = createUseStyles({
     borderRadius: 6,
     position: 'relative',
     height: '100%',
+  },
+  defaultModalLayout_cont_titled: {
     overflow: 'hidden',
   },
   defaultModalLayout_profile_wrap: {},
@@ -124,10 +136,17 @@ const useStyle = createUseStyles({
 });
 
 type DefaultModalProps = PropsWithChildren<{
-  title: string;
+  title?: string;
   loading?: boolean;
-  onClose?: VoidFunction;
-  onBack?: VoidFunction;
+  onClose?: MouseEventHandler<HTMLDivElement>;
+  onBack?: MouseEventHandler<HTMLDivElement>;
+  visible?: boolean;
+  zIndex?: number | string;
+  overlay?: ReactNode;
+  style?: CSSProperties;
+  wrapClassName?: string;
+  className?: string;
+  contentClassName?: string;
 }>;
 
 export default function DefaultModal(props: DefaultModalProps) {
@@ -135,9 +154,17 @@ export default function DefaultModal(props: DefaultModalProps) {
 
   const classes = useStyle();
 
-  const onClickClosePopUp = () => {
+  const isControlled = props.visible !== undefined;
+  const isVisible = isControlled ? props.visible : animPopupClass;
+
+  const onClickClosePopUp = (e: MouseEvent<HTMLDivElement>) => {
+    if (isControlled) {
+      props.onClose?.(e);
+      return;
+    }
+
     setAnimPopupClass(false);
-    setTimeout(() => props?.onClose?.(), 500);
+    setTimeout(() => props?.onClose?.(e), 500);
   };
 
   useEffect(() => {
@@ -155,40 +182,63 @@ export default function DefaultModal(props: DefaultModalProps) {
     props.children
   );
 
+  const backButton = props.onBack && (
+    <div className={classes.defaultModalLayout_back} onClick={props.onBack}>
+      <IconArrowLeft className={classes.defaultModalLayout_back_icon} size={24} color="#2F2F2F" />
+    </div>
+  );
+
+  const closeButton = props.onClose && (
+    <div className={classes.defaultModalLayout_close} onClick={onClickClosePopUp}>
+      <IconX size={24} color="#2F2F2F" className={classes.defaultModalLayout_close_icon} />
+    </div>
+  );
+
   return (
     <div
-      className={clsx({
-        [classes.defaultModalLayout_wrap]: true,
-        [classes.defaultModalLayout_wrap_show]: animPopupClass,
-      })}
+      className={clsx(
+        classes.defaultModalLayout_wrap,
+        { [classes.defaultModalLayout_wrap_show]: isVisible },
+        props.wrapClassName
+      )}
+      style={props.zIndex === undefined ? undefined : { zIndex: props.zIndex }}
     >
-      <div className={classes.defaultModalLayout_wr}>
-        <div className={classes.defaultModalLayout_cont}>
-          <div className={classes.defaultModalLayout_profile_wrap}>
-            <div className={classes.defaultModalLayout_profile_top}>
-              {props.onBack && (
-                <div className={classes.defaultModalLayout_back} onClick={props.onBack}>
-                  <IconArrowLeft
-                    className={classes.defaultModalLayout_back_icon}
-                    size={24}
-                    color="#2F2F2F"
-                  />
-                </div>
-              )}
+      {props.overlay}
 
-              <h2 className={classes.defaultModalLayout_title}>{props.title}</h2>
+      <div
+        className={clsx(
+          classes.defaultModalLayout_wr,
+          { [classes.defaultModalLayout_wr_titled]: props.title !== undefined },
+          props.className
+        )}
+        style={props.style}
+      >
+        <div
+          className={clsx(
+            classes.defaultModalLayout_cont,
+            { [classes.defaultModalLayout_cont_titled]: props.title !== undefined },
+            props.contentClassName
+          )}
+        >
+          {props.title === undefined ? (
+            <>
+              {backButton}
+              {closeButton}
+              {child}
+            </>
+          ) : (
+            <div className={classes.defaultModalLayout_profile_wrap}>
+              <div className={classes.defaultModalLayout_profile_top}>
+                {backButton}
 
-              <div className={classes.defaultModalLayout_close} onClick={onClickClosePopUp}>
-                <IconX
-                  size={24}
-                  color="#2F2F2F"
-                  className={classes.defaultModalLayout_close_icon}
-                />
+                <h2 className={classes.defaultModalLayout_title}>{props.title}</h2>
+
+                {closeButton}
               </div>
-            </div>
 
-            <div className={classes.defaultModalLayout_profile_bottom}>{child}</div>
-          </div>
+              <div className={classes.defaultModalLayout_profile_bottom}>{child}</div>
+            </div>
+          )}
         </div>
       </div>
     </div>

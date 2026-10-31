@@ -32,6 +32,7 @@ import {
 import HoverComponent from '../../../controlPanel/components/HoverComponent';
 import Lock from '../../components/Lock';
 import MaterialComponent from '../../components/MaterialComponent';
+import { useMerchantLogin } from '../../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   planner_upload_catalog_cont: {
@@ -446,6 +447,7 @@ const useStyle = createUseStyles({
 
 const Main = (props) => {
   const dispatch = useDispatch();
+  const verifyEnabledMerchantLogin = useMerchantLogin();
   const translation = useTranslation();
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
@@ -579,9 +581,7 @@ const Main = (props) => {
       );
     } else {
       R2D.OPTIONS.PRO_PLAN
-        ? !R2D.config.data.enable_merchant_login
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }))
+        ? verifyEnabledMerchantLogin()
         : dispatch(setActivePopup({ name: 'payPro', type: 'user' }));
     }
   };

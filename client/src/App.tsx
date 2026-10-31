@@ -10,7 +10,6 @@ import { useTranslation } from './api/hooks/useTranslation';
 import BottomPanel from './components/bottom/BottomPanel';
 import CenterPanel from './components/center/CenterPanel';
 import LeftMain from './components/left_new/LeftMain';
-import Popups from './components/popups/Popups';
 import QuickPanels from './components/quick/QuickPanels';
 import RightPanel from './components/right_new/RightPanel';
 import TopPanel from './components/top/TopPanel';
@@ -71,6 +70,8 @@ import PopupActions from './smart-components/popups';
 import Tips from './smart-components/tips';
 import { createProjectUrl } from './utils/UrlHelper';
 import { useAlertToast } from './utils/useAlertToast';
+import { useMerchantLogin } from './utils/useMerchantLogin';
+import { getScenePlanRequirements } from './utils/getScenePlanRequirements';
 
 const useStyle = createUseStyles({
   main: {
@@ -121,6 +122,7 @@ const App = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const showErrorToast = useAlertToast();
+  const verifyEnabledMerchantLogin = useMerchantLogin();
 
   const controlPanelStatus = useSelector(selectControlPanelStatus);
   const userProfileData = useSelector(selectUserProfileData);
@@ -157,14 +159,6 @@ const App = () => {
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
 
   const popups = useSelector(selectPopups);
-
-  const verifyEnabledMerchantLogin = () => {
-    if (!R2D.config.data.enable_merchant_login) {
-      dispatch(setActivePopup({ name: 'login' }));
-    } else {
-      R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
-    }
-  };
 
   const onRendersUpdate = (data) => {
     dispatch(
@@ -532,30 +526,11 @@ const App = () => {
         R2D.controller.getProjectUserKey() &&
         R2D.controller.getProjectUserKey() != user.getKey()
       ) {
-        let allPremiumPlanOfSceneObjects = new Set();
-        let allElemsWithOwner = new Set();
-        Object.values(R2D.Pool._products_data).forEach((i) => {
-          Array.isArray(i.plan) && allPremiumPlanOfSceneObjects.add(i.plan[0]);
-          i.isOwner && allElemsWithOwner.add(i.type);
-        });
-        allPremiumPlanOfSceneObjects = Array.from(allPremiumPlanOfSceneObjects);
-        allElemsWithOwner = Array.from(allElemsWithOwner);
-        const isThereObjectsWithOwnerThatDontMatchUserPremiumPlan =
-          allElemsWithOwner.length > 0 &&
-          (user.data.plan == 'free' ||
-            (user.data.plan == 'basic' &&
-              allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)));
-        const isTherePremiumObjectThatDontMatchUserPremiumPlan =
-          allPremiumPlanOfSceneObjects.length > 0 &&
-          (user.data.plan == 'free' ||
-            (user.data.plan == 'basic' && allPremiumPlanOfSceneObjects.find((i) => i == 'pro')));
-        const neededPlan =
-          allPremiumPlanOfSceneObjects.find((i) => i == 'pro') ||
-          allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)
-            ? 'pro'
-            : allPremiumPlanOfSceneObjects.find((i) => i == 'basic') || allElemsWithOwner.length > 0
-              ? 'basic'
-              : 'free';
+        const {
+          isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
+          isTherePremiumObjectThatDontMatchUserPremiumPlan,
+          neededPlan,
+        } = getScenePlanRequirements();
         if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
           dispatch(
             setActivePopup({
@@ -665,37 +640,11 @@ const App = () => {
       if (!user.isLogged()) {
         verifyEnabledMerchantLogin();
       } else {
-        let allPremiumPlanOfSceneObjects = new Set();
-        let allElemsWithOwner = new Set();
-
-        Object.values(R2D.Pool._products_data).forEach((i) => {
-          if (Array.isArray(i.plan)) {
-            allPremiumPlanOfSceneObjects.add(i.plan[0]);
-          }
-          if (i.isOwner) {
-            allElemsWithOwner.add(i.type);
-          }
-        });
-
-        allPremiumPlanOfSceneObjects = Array.from(allPremiumPlanOfSceneObjects);
-        allElemsWithOwner = Array.from(allElemsWithOwner);
-
-        const isThereObjectsWithOwnerThatDontMatchUserPremiumPlan =
-          allElemsWithOwner.length > 0 &&
-          (user.data.plan == 'free' ||
-            (user.data.plan == 'basic' &&
-              allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)));
-        const isTherePremiumObjectThatDontMatchUserPremiumPlan =
-          allPremiumPlanOfSceneObjects.length > 0 &&
-          (user.data.plan == 'free' ||
-            (user.data.plan == 'basic' && allPremiumPlanOfSceneObjects.find((i) => i == 'pro')));
-        const neededPlan =
-          allPremiumPlanOfSceneObjects.find((i) => i == 'pro') ||
-          allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)
-            ? 'pro'
-            : allPremiumPlanOfSceneObjects.find((i) => i == 'basic') || allElemsWithOwner.length > 0
-              ? 'basic'
-              : 'free';
+        const {
+          isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
+          isTherePremiumObjectThatDontMatchUserPremiumPlan,
+          neededPlan,
+        } = getScenePlanRequirements();
         if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
           dispatch(
             setActivePopup({
@@ -1383,9 +1332,7 @@ const App = () => {
           .split('=')[1];
 
         if (!user.isLogged()) {
-          // FIXME: regression, must pass type: 'buy_credits' and data: creditsNum to the login popup.
-          // login.tsx still handles that type, so the purchase is lost after logging in.
-          verifyEnabledMerchantLogin();
+          verifyEnabledMerchantLogin({ type: 'buy_credits', data: creditsNum });
           return;
         } else {
           showStartPopup = false;
@@ -1701,10 +1648,8 @@ const App = () => {
           <CenterPanel />
         </div>
 
-        <Popups />
-        <QuickPanels />
-
         <PopupActions />
+        <QuickPanels />
 
         <Tips showTipUseTab={showTipUseTab} showTipUseEnter={showTipUseEnter} />
       </div>

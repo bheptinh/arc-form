@@ -55,6 +55,8 @@ import { selectActiveViewMode } from '../../../redux/features/viewMode/viewModeS
 import { createProjectUrl } from '../../../utils/UrlHelper';
 import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
 import Tip from '../../tips/Tip';
+import { useMerchantLogin } from '../../../utils/useMerchantLogin';
+import { getScenePlanRequirements } from '../../../utils/getScenePlanRequirements';
 
 const useStyles = createUseStyles({
   bar_btn_close: {
@@ -453,23 +455,14 @@ const LangButton = (props) => {
 const LoginButton = (props) => {
   const classes = useStyles();
   const translation = useTranslation();
-  const dispatch = useDispatch();
-  const [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(
-    R2D.config.data.enable_merchant_login
-  );
-
-  useEffect(() => {
-    setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login);
-  }, [R2D.config.data.enable_merchant_login]);
+  const verifyEnabledMerchantLogin = useMerchantLogin();
 
   return (
     <div
       className={classes.bar_login_btn}
       id="customLogin"
       onClick={() =>
-        !configEnableMerchantLogin
-          ? dispatch(setActivePopup({ name: 'login' }))
-          : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }))
+        verifyEnabledMerchantLogin()
       }
     >
       {translation['TEXT_BUTTON_SIGN_IN']}
@@ -481,10 +474,8 @@ const Projects = (props) => {
   const translation = useTranslation();
   const classes = useStyles();
   const dispatch = useDispatch();
+  const verifyEnabledMerchantLogin = useMerchantLogin();
   const projectActive = useSelector(selectUserProjectActive);
-  const [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(
-    R2D.config.data.enable_merchant_login
-  );
 
   const [configProjectClear, setConfigProjectClear] = useState(
     R2D.config.data.ui.top_project_clear
@@ -520,9 +511,7 @@ const Projects = (props) => {
 
   const onClickShare = (e) => {
     if (user.getId() == 0) {
-      !configEnableMerchantLogin
-        ? dispatch(setActivePopup({ name: 'login' }))
-        : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+      verifyEnabledMerchantLogin();
       return;
     }
     if (R2D.controller.getProjectUserKey() && R2D.controller.getProjectUserKey() != user.getKey())
@@ -544,9 +533,7 @@ const Projects = (props) => {
 
   const onClickExport = () => {
     if (!user.isLogged()) {
-      !configEnableMerchantLogin
-        ? dispatch(setActivePopup({ name: 'login' }))
-        : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+      verifyEnabledMerchantLogin();
       return;
     } else if (
       R2D.controller.getProjectId() == 0 ||
@@ -586,9 +573,7 @@ const Projects = (props) => {
 
   const onSaveAs = async (e) => {
     if (!user.isLogged())
-      !configEnableMerchantLogin
-        ? dispatch(setActivePopup({ name: 'login' }))
-        : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+      verifyEnabledMerchantLogin();
     else if (
       R2D.controller.projectOpeningStatus &&
       R2D.controller.projectOpeningStatus == 'opening'
@@ -596,29 +581,11 @@ const Projects = (props) => {
       dispatch(setActivePopup({ name: 'alert', data: 'ERROR_TEXT_TRYING_TO_SAVE_PROJECT' }));
       return;
     } else {
-      let allPremiumPlanOfSceneObjects = new Set();
-      let allElemsWithOwner = new Set();
-      Object.values(R2D.Pool._products_data).forEach((i) => {
-        Array.isArray(i.plan) && allPremiumPlanOfSceneObjects.add(i.plan[0]);
-        i.isOwner && allElemsWithOwner.add(i.type);
-      });
-      allPremiumPlanOfSceneObjects = Array.from(allPremiumPlanOfSceneObjects);
-      allElemsWithOwner = Array.from(allElemsWithOwner);
-      const isThereObjectsWithOwnerThatDontMatchUserPremiumPlan =
-        allElemsWithOwner.length > 0 &&
-        (user.data.plan == 'free' ||
-          (user.data.plan == 'basic' && allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)));
-      const isTherePremiumObjectThatDontMatchUserPremiumPlan =
-        allPremiumPlanOfSceneObjects.length > 0 &&
-        (user.data.plan == 'free' ||
-          (user.data.plan == 'basic' && allPremiumPlanOfSceneObjects.find((i) => i == 'pro')));
-      const neededPlan =
-        allPremiumPlanOfSceneObjects.find((i) => i == 'pro') ||
-        allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)
-          ? 'pro'
-          : allPremiumPlanOfSceneObjects.find((i) => i == 'basic') || allElemsWithOwner.length > 0
-            ? 'basic'
-            : 'free';
+      const {
+        isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
+        isTherePremiumObjectThatDontMatchUserPremiumPlan,
+        neededPlan,
+      } = getScenePlanRequirements();
       if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
         dispatch(
           setActivePopup({
@@ -720,9 +687,6 @@ const Projects = (props) => {
         : projectActive?.name
     );
   }, [projectActive]);
-  useEffect(() => {
-    setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login);
-  }, [R2D.config.data.enable_merchant_login]);
   useEffect(() => {
     setConfigProjectClear(R2D.config.data.ui.top_project_clear);
   }, [R2D.config.data.ui.top_project_clear]);
@@ -835,13 +799,11 @@ let saveTipKey = null;
 const SaveButton = (props) => {
   const classes = useStyles();
   const dispatch = useDispatch();
+  const verifyEnabledMerchantLogin = useMerchantLogin();
 
   const userProfileData = useSelector(selectUserProfileData);
 
   const [showTipSaveProject, setTipSaveProject] = useState(false);
-  const [configEnableMerchantLogin, setConfigEnableMerchantLogin] = useState(
-    R2D.config.data.enable_merchant_login
-  );
 
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
@@ -854,9 +816,7 @@ const SaveButton = (props) => {
 
   const onClickSave = async () => {
     if (!user.isLogged()) {
-      !configEnableMerchantLogin
-        ? dispatch(setActivePopup({ name: 'login' }))
-        : R2D.postMessageToParent(JSON.stringify({ action: 'merchant_login' }));
+      verifyEnabledMerchantLogin();
       return;
     } else if (
       R2D.controller.projectOpeningStatus &&
@@ -872,29 +832,11 @@ const SaveButton = (props) => {
       R2D.controller.getProjectUserKey() &&
       R2D.controller.getProjectUserKey() != user.getKey()
     ) {
-      let allPremiumPlanOfSceneObjects = new Set();
-      let allElemsWithOwner = new Set();
-      Object.values(R2D.Pool._products_data).forEach((i) => {
-        Array.isArray(i.plan) && allPremiumPlanOfSceneObjects.add(i.plan[0]);
-        i.isOwner && allElemsWithOwner.add(i.type);
-      });
-      allPremiumPlanOfSceneObjects = Array.from(allPremiumPlanOfSceneObjects);
-      allElemsWithOwner = Array.from(allElemsWithOwner);
-      const isThereObjectsWithOwnerThatDontMatchUserPremiumPlan =
-        allElemsWithOwner.length > 0 &&
-        (user.data.plan == 'free' ||
-          (user.data.plan == 'basic' && allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)));
-      const isTherePremiumObjectThatDontMatchUserPremiumPlan =
-        allPremiumPlanOfSceneObjects.length > 0 &&
-        (user.data.plan == 'free' ||
-          (user.data.plan == 'basic' && allPremiumPlanOfSceneObjects.find((i) => i == 'pro')));
-      const neededPlan =
-        allPremiumPlanOfSceneObjects.find((i) => i == 'pro') ||
-        allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)
-          ? 'pro'
-          : allPremiumPlanOfSceneObjects.find((i) => i == 'basic') || allElemsWithOwner.length > 0
-            ? 'basic'
-            : 'free';
+      const {
+        isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
+        isTherePremiumObjectThatDontMatchUserPremiumPlan,
+        neededPlan,
+      } = getScenePlanRequirements();
       if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
         dispatch(
           setActivePopup({
@@ -950,9 +892,6 @@ const SaveButton = (props) => {
     }, 200);
   }
 
-  useEffect(() => {
-    setConfigEnableMerchantLogin(R2D.config.data.enable_merchant_login);
-  }, [R2D.config.data.enable_merchant_login]);
 
   useEffect(() => {
     planner.scene.addEventListener(planner.scene.TIPS_SAVE_PROJECT, onSaveProjectTipShow);

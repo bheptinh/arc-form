@@ -1,5 +1,4 @@
-// FIXME: remove unused imports (tabler icons, React, useEffect, useState, useSelector).
-import { IconArrowLeft, IconX } from '@tabler/icons-react';
+// FIXME: remove unused imports (React, useEffect, useState, useSelector).
 import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';

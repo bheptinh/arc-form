@@ -1,5 +1,5 @@
 // import { FacebookShareButton } from 'next-share';
-import { IconCopy, IconHelpHexagon, IconX } from '@tabler/icons-react';
+import { IconCopy, IconHelpHexagon } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -25,84 +25,6 @@ import { useEffectAsync } from '../../utils/useEffectAsync';
 // import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
 
 const useStyle = createUseStyles({
-  planner_popup_wrap: {
-    height: '100%',
-    width: '100%',
-    position: 'absolute',
-    top: '0%',
-    transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
-    opacity: '0',
-    pointerEvents: 'none',
-    zIndex: '101',
-    WebkitPerspective: '800px',
-    perspective: '800px',
-    overflow: 'auto',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    background: 'rgba(0, 0, 0, 0.2)',
-  },
-  planner_popup_wrap_show: {
-    opacity: '1',
-    pointerEvents: 'auto',
-    transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
-    '& $planner_popup_wr': {
-      transform: 'scale(1)',
-    },
-  },
-  planner_popup_wr: {
-    color: '#000',
-    maxWidth: 542,
-    width: '100%',
-    maxHeight: '90%',
-    transform: 'scale(0)',
-    boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
-    transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
-  },
-  planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
-    borderRadius: 6,
-    height: '100%',
-    padding: '29px 60px 67px',
-    position: 'relative',
-    '@media screen and (max-width: 950px)': {
-      padding: '14px 20px 14px',
-    },
-  },
-  planner_popup_login_wrap: {
-    position: 'relative',
-  },
-  planner_popup_close: {
-    width: 20,
-    height: 20,
-    position: 'absolute',
-    top: 8,
-    right: 8,
-    cursor: 'pointer',
-    zIndex: '2',
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
-    '&:hover': {
-      '& path': {
-        fill: '#a0a0a0',
-      },
-    },
-  },
-  planner_popup_close_icon: {
-    width: '100%',
-  },
-  planner_popup_title: {
-    fontSize: 25,
-    fontWeight: 300,
-    marginBottom: 25,
-    color: '#373737',
-    textAlign: 'center',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 20,
-    },
-  },
   planner_popup_facebook: {
     display: 'flex',
     alignItems: 'center',
@@ -199,41 +121,6 @@ const useStyle = createUseStyles({
     },
   },
 
-  important_input: {
-    '& $formInput': {
-      border: '1px solid #e84343 !important',
-    },
-  },
-  planner_popup_report: {
-    color: 'red',
-    fontSize: '12px',
-    marginBottom: '10px',
-  },
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-  },
   planner_popup_bottom: {
     display: 'grid',
     gridTemplateColumns: 'auto auto auto auto',
@@ -273,28 +160,8 @@ const useStyle = createUseStyles({
     display: 'flex',
     alignItems: 'start',
   },
-  preloaderDiv: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    height: '100%',
-    width: '100%',
-    zIndex: 5,
-    background: 'rgba(0, 0, 0, .5)',
-  },
   additional_info: {
     marginLeft: 5,
-  },
-  additional_info_hover: {
-    position: 'absolute',
-    background: '#81e7ff',
-    display: 'none',
-    fontSize: 12,
-    width: 'max-content',
-    zIndex: 999,
-    padding: '2px 7px',
-    transition: 'all .1s ease',
-    userSelect: 'none',
   },
   planner_popup_checkbox_error: {
     paddingLeft: 22,

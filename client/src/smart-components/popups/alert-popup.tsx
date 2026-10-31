@@ -8,6 +8,7 @@ import {
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
 import ActionModal from '../../shared-components/modals/action';
+import { getScenePlanRequirements } from '../../utils/getScenePlanRequirements';
 
 export default function AlertPopup() {
   const dispatch = useDispatch();
@@ -25,38 +26,11 @@ export default function AlertPopup() {
     }
 
     if (alertType == 'saveAndUpgradeProjectToUsePro') {
-      const allPremiumPlanOfSceneObjectsSet = new Set();
-      const allElemsWithOwnerSet = new Set();
-
-      Object.values(R2D.Pool._products_data).forEach((i) => {
-        if (Array.isArray(i.plan)) {
-          allPremiumPlanOfSceneObjectsSet.add(i.plan[0]);
-        }
-        if (i.isOwner) {
-          allElemsWithOwnerSet.add(i.type);
-        }
-      });
-
-      const allPremiumPlanOfSceneObjects = Array.from(allPremiumPlanOfSceneObjectsSet);
-      const allElemsWithOwner = Array.from(allElemsWithOwnerSet);
-
-      const isThereObjectsWithOwnerThatDontMatchUserPremiumPlan =
-        allElemsWithOwner.length > 0 &&
-        (user.data.plan == 'free' ||
-          (user.data.plan == 'basic' && allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)));
-
-      const isTherePremiumObjectThatDontMatchUserPremiumPlan =
-        allPremiumPlanOfSceneObjects.length > 0 &&
-        (user.data.plan == 'free' ||
-          (user.data.plan == 'basic' && allPremiumPlanOfSceneObjects.find((i) => i == 'pro')));
-
-      const neededPlan =
-        allPremiumPlanOfSceneObjects.find((i) => i == 'pro') ||
-        allElemsWithOwner.find((i) => i == R2D.ProductType.MODEL)
-          ? 'pro'
-          : allPremiumPlanOfSceneObjects.find((i) => i == 'basic') || allElemsWithOwner.length > 0
-            ? 'basic'
-            : 'free';
+      const {
+        isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,
+        isTherePremiumObjectThatDontMatchUserPremiumPlan,
+        neededPlan,
+      } = getScenePlanRequirements();
 
       if (user.data.maxProjects > 0 && user.data.projectCount >= user.data.maxProjects)
         dispatch(
