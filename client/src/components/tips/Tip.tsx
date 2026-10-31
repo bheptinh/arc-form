@@ -164,7 +164,7 @@ const TipBody = (props) => {
 
   const changeTipsStatus = async (tipsCheckboxStatus) => {
     const dataObj = {
-      username: userProfileData?.name,
+      name: userProfileData?.name,
       subscription_news: userProfileData?.subscriptionNews,
       show_tips: tipsCheckboxStatus,
     };

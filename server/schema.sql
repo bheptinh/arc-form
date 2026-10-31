@@ -2,7 +2,9 @@ CREATE TABLE IF NOT EXISTS users (
   id              TEXT    PRIMARY KEY,
   email           TEXT    NOT NULL,
   name            TEXT    NOT NULL DEFAULT '',
-  tips            TEXT    NOT NULL DEFAULT '{}',
+  show_tips       INTEGER NOT NULL DEFAULT 1,
+  subscription_news INTEGER NOT NULL DEFAULT 0,
+  auto_save       INTEGER NOT NULL DEFAULT 1,
   language_code   TEXT    NOT NULL DEFAULT 'en',
   created_at      TEXT    NOT NULL DEFAULT (datetime('now'))
 );

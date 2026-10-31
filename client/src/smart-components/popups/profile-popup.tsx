@@ -150,7 +150,7 @@ export default function ProfilePopup() {
     }
 
     const dataObj = {
-      username: user_name_new,
+      name: user_name_new,
       subscription_news: checkboxNews,
       show_tips: checkboxTips,
       auto_save: checkboxAutoSave,

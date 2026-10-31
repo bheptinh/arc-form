@@ -4,7 +4,7 @@ export interface User {
   email: string;
   name: string;
   language_code: string;
-  tips: Record<string, unknown>;
+  tips: boolean;
   autoSave: boolean;
   render: boolean;
   subscriptionNews: boolean;

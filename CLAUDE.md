@@ -236,8 +236,7 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | POST | `/server-api/projects/:id/copy` | projects.ts | copy project (`{ name }`) |
 | DELETE | `/server-api/projects/:id` | projects.ts | delete project |
 | GET | `/server-api/user` | user.ts | get user profile |
-| PATCH | `/server-api/user` | user.ts | update user profile (name, email, language_code) — validated via Zod UserPatchSchema, returns updated User |
-| GET/PUT | `/server-api/user/tips` | user.ts | tips state |
+| PATCH | `/server-api/user` | user.ts | update user profile (name, email, language_code, show_tips, subscription_news, auto_save) — validated via Zod UserPatchSchema, returns updated User |
 | GET | `/server-api/i18n/languages` | i18n.ts | language list with `current` flag from user's saved preference |
 | GET | `/server-api/i18n/translation` | i18n.ts | flat `Record<string,string>` for user's current language, falls back to `en` |
 | GET | `/server-api/i18n/pages/:slug` | i18n.ts | markdown page content from `server/fixtures/pages/{slug}/{lang}.md`, fallback `en.md` → `index.md` |
