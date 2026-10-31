@@ -16,12 +16,12 @@ router.get('/', (req, res) => {
 // projectData is a base64 data-URL of a JSZip blob containing content.json.
 // content.json shape: { scene: { products[], viewState }, construction, preview (base64 JPEG), ... }
 //
+// TEMPORARY, not the final solution: createRender saves content.json.preview (the viewport
+// screenshot) to uploads/renders/<id>/preview.jpg and uses it as both preview and full image,
+// so 2K/4K are only viewport resolution. 360° renders end as 'error'.
+//
 // TODO: Implement actual image generation:
-//   1. Decode projectData: Buffer.from(projectData.split(',')[1], 'base64')
-//   2. Unzip using 'unzipper' or similar and parse content.json
-//   3. Extract content.json.preview (base64 JPEG) → save as renders/<id>/preview.jpg
-//      (this is the current viewport screenshot; adequate for a fast preview)
-//   4. For high-quality 2K/4K/360° output, launch a Puppeteer worker:
+//   For high-quality 2K/4K/360° output, launch a Puppeteer worker:
 //        a. Load the R2D engine in a headless Chromium page
 //        b. Call planner.init(), setCatalogProducts(), planner.setSize(w, h)
 //        c. Feed content.json into the engine via the /server-api/projects/<id> endpoint
@@ -31,19 +31,17 @@ router.get('/', (req, res) => {
 //        f. For renderType 5 (360°): render 6 cube faces via CubeCamera, stitch to
 //           equirectangular panorama (4096×2048), save as renders/<id>/output.jpg
 //        g. Otherwise: call page.screenshot({ path: 'renders/<id>/output.jpg' })
-//   5. UPDATE renders SET status='stored', image_url='/renders/<id>/output.jpg',
+//   Then: UPDATE renders SET status='stored', image_url='/renders/<id>/output.jpg',
 //         preview='/renders/<id>/preview.jpg' WHERE id = ?
-//
-// Until the worker is implemented, renders are stored immediately with no image.
-router.post('/', (req, res) => {
-  const { renderType, renderView = '', renderOrientation = 'landscape' } = req.body ?? {};
+router.post('/', async (req, res) => {
+  const { renderType, renderView = '', renderOrientation = 'landscape', projectData } = req.body ?? {};
 
   if (typeof renderType !== 'number') {
     res.status(400).json({ status: 'error', error: 'renderType required' });
     return;
   }
 
-  const renderId = createRender(renderType, renderView, renderOrientation);
+  const renderId = await createRender(renderType, renderView, renderOrientation, projectData);
   res.json({ status: 'ok', data: { renderId } });
 });
 

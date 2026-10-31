@@ -1,5 +1,6 @@
 import db from '../db.js';
 import { appConfig } from '../config/app.js';
+import { deleteCameraViewPreviews } from './camera-views.js';
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'fs';
 import { randomUUID } from 'crypto';
 import path from 'path';
@@ -121,6 +122,7 @@ export function deleteProject(id: string) {
   db.prepare('DELETE FROM projects WHERE id = ?').run(id);
   const filePath = projectFile(id);
   if (existsSync(filePath)) rmSync(filePath);
+  deleteCameraViewPreviews(id);
 
   return { status: 'success' };
 }

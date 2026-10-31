@@ -1,8 +1,14 @@
 import { randomUUID } from 'node:crypto';
+import { mkdirSync, rmSync, writeFileSync } from 'fs';
+import path from 'path';
+import JSZip from 'jszip';
 import db from '../db.js';
 import { DEV_USER_ID } from '../schema.js';
+import { uploadsRoot } from './catalog-private.js';
 
 const TYPE_LABEL: Record<number, string> = { 3: '2K', 4: '4K', 5: '360' };
+const RENDER_TYPE_360 = 5;
+const rendersRoot = path.join(uploadsRoot, 'renders');
 
 interface RenderRow {
   id: string;
@@ -13,12 +19,38 @@ interface RenderRow {
   created_at: number;
 }
 
-export function createRender(renderType: number, renderView: string, renderOrientation: string): string {
+// TEMPORARY, not the final solution: saves the viewport screenshot the client sends in
+// content.json, so a "2K"/"4K" render is only viewport resolution. Replace with the
+// Puppeteer worker described in routes/renders.ts.
+async function saveViewportImage(id: string, projectData: string): Promise<string | null> {
+  try {
+    const zip = await JSZip.loadAsync(projectData.split(',')[1], { base64: true });
+    const { preview } = JSON.parse(await zip.file('content.json')!.async('string'));
+    if (!preview) return null;
+
+    const dir = path.join(rendersRoot, id);
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(path.join(dir, 'preview.jpg'), Buffer.from(preview, 'base64'));
+    return `/uploads/renders/${id}/preview.jpg`;
+  } catch (err) {
+    console.error('Render image extraction failed:', err);
+    return null;
+  }
+}
+
+export async function createRender(
+  renderType: number,
+  renderView: string,
+  renderOrientation: string,
+  projectData: string,
+): Promise<string> {
   const id = randomUUID();
+  // TEMPORARY: a 360° panorama can't come from a screenshot, so those end as 'error' until the Puppeteer worker exists.
+  const imageUrl = renderType === RENDER_TYPE_360 ? null : await saveViewportImage(id, projectData);
   db.prepare(`
-    INSERT INTO renders (id, user_id, render_type, render_view, render_orientation)
-    VALUES (?, ?, ?, ?, ?)
-  `).run(id, DEV_USER_ID, renderType, renderView, renderOrientation);
+    INSERT INTO renders (id, user_id, render_type, render_view, render_orientation, status, preview, image_url)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+  `).run(id, DEV_USER_ID, renderType, renderView, renderOrientation, imageUrl ? 'stored' : 'error', imageUrl, imageUrl);
   return id;
 }
 
@@ -63,17 +95,17 @@ export function deleteRender(id: string): void {
   db.prepare(`
     UPDATE renders SET status = 'deleted' WHERE id = ? AND user_id = ?
   `).run(id, DEV_USER_ID);
+  rmSync(path.join(rendersRoot, id), { recursive: true, force: true });
 }
 
 export function restartRender(id: string): { renderId: string } | { error: string } | null {
   const row = db.prepare(`
-    SELECT id, status FROM renders WHERE id = ? AND user_id = ?
-  `).get(id, DEV_USER_ID) as { id: string; status: string } | undefined;
+    SELECT id FROM renders WHERE id = ? AND user_id = ?
+  `).get(id, DEV_USER_ID) as { id: string } | undefined;
 
   if (!row) return null;
-  if (row.status !== 'error') return { error: "render can't be restarted" };
 
-  // TODO: re-enqueue the render job (retrieve saved projectData from disk, submit to worker)
-  db.prepare(`UPDATE renders SET status = 'stored' WHERE id = ?`).run(id);
-  return { renderId: id };
+  // TODO: re-enqueue the render job (retrieve saved projectData from disk, submit to the Puppeteer worker).
+  // TEMPORARY: projectData isn't kept, so there is nothing to re-run yet.
+  return { error: "render can't be restarted" };
 }

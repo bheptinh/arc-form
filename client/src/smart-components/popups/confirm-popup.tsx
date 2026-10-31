@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
-import { planner } from '../../initR2D';
+import { planner, user } from '../../initR2D';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
 import Button from '../../shared-components/inputs/button';
 import DefaultModal from '../../shared-components/modals/default';
@@ -37,7 +37,7 @@ const ConfirmPopup = () => {
   const dispatch = useDispatch();
   const translation = useTranslation();
   const popups = useSelector(selectPopups);
-  const { type } = popups.confirm;
+  const { type, data } = popups.confirm;
   const [animPopupClass, setAnimPopupClass] = useState(false);
 
   useEffect(() => {
@@ -50,8 +50,12 @@ const ConfirmPopup = () => {
     setTimeout(() => dispatch(closeActivePopup({ name: 'confirm' })), 500);
   };
 
-  const onConfirm = () => {
+  const onConfirm = async () => {
     if (type === 'image_plan_delete') planner.constr.deletePlan();
+    if (type === 'cameraView_delete') {
+      await user.cameraViews_delete(data);
+      planner.scene.dispatchEvent(new Event(planner.scene.UPDATE_CAMERA_VIEWS, {}));
+    }
     close();
   };
 

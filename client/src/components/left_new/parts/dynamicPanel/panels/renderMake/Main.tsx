@@ -491,7 +491,7 @@ const Main = (props) => {
         planner.renders.activeIntId = null;
         return;
       }
-      const result = await queryClient.fetchQuery(rendersInfiniteQueryOptions);
+      const result = await queryClient.fetchInfiniteQuery(rendersInfiniteQueryOptions);
       const items = result.pages[0]?.items ?? [];
       items.forEach((item) => {
         inProgressIds.forEach((renderId) => {

@@ -248,6 +248,9 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | DELETE | `/server-api/render/:id` | renders.ts | soft-delete render |
 | GET | `/server-api/tours` | tours.ts | list 360° tours |
 | DELETE | `/server-api/tours/:id` | tours.ts | delete tour |
+| GET | `/server-api/camera-views` | camera-views.ts | list a project's saved render cameras (`?plan_id=`) |
+| POST | `/server-api/camera-views` | camera-views.ts | save camera view (`{ preview, config, plan_entity_id }`) |
+| DELETE | `/server-api/camera-views/:id` | camera-views.ts | delete camera view + preview file |
 | GET | `/uploads/*` | static | user-uploaded files from `data/uploads/` |
 
 #### Catalog item shape
@@ -290,7 +293,9 @@ This allows legacy saved projects (which stored integer productIds) to still res
 
 `content.json` inside the ZIP: full scene state from `getSceneState(true)` — `scene.products[]`, `construction`, `preview` (base64 JPEG screenshot), `modelsZipSrc`, light info, etc.
 
-Render status lifecycle: `waiting → rendering → stored` (done) or `error`. Currently all renders go straight to `stored` — a Puppeteer worker for actual 2K/4K/360° image generation is TODO (see comment in `POST /server-api/render` handler). `image_url` and `preview` are null until the worker is implemented.
+Render status lifecycle: `waiting → rendering → stored` (done) or `error`.
+
+> **TEMPORARY — needs the Puppeteer worker.** Rendering is not real yet. `POST /server-api/render` finishes inside the request: 2K/4K save the viewport screenshot from `content.json` to `uploads/renders/<id>/preview.jpg` and use it as both `preview` and `image_url`, so the image is only viewport resolution. 360° renders go straight to `error`, and `PUT /server-api/render/restart/:id` always refuses because `projectData` isn't kept. Renders created before this change stay `stored` with null images. Search for `TEMPORARY` in `server/services/renders.ts` when replacing this; the worker plan is the TODO in `server/routes/renders.ts`.
 
 List response item shape: `{ id, renderId, type ("2K"|"4K"|"360"), status, preview, actions: { open: { link } } | undefined, created (Unix timestamp) }`. Both `id` and `renderId` are the same UUID (client uses `renderId` for API calls, `id` as React key and display).
 
@@ -311,6 +316,6 @@ Tour creation opens an iframe to `R2D.URL.DOMAIN + /tours/add` (roomtodo.com's t
 - **`GET /server-api/catalog/set-tree?set_id=<id>`** — material sets (curated per-slot material collections). See `docs/set-tree.md` for full spec. Trigger requires `product_material_slots.set_id` column (not in schema yet) and set data which must be sourced externally or hand-curated.
 - **`/api/planner/connect`** — mocked with TODO: DELETE (no purpose).
 - **`URL_DELETE_PRIVATE`** (`/api/planner/delete_private_entity`) — `user.deleteMaterial()` is never called from React UI yet; route exists at `DELETE /server-api/catalog/private/materials/:id` but URL in `index.html` not updated. See TODO comment in `index.html:70`.
-- **Render image generation** — `POST /server-api/render` stores the job immediately as `stored` with no image. The full pipeline (Puppeteer + R2D engine headless, 2K/4K WebGL screenshot, 360° cubemap stitch) is described in a TODO comment in `server/routes/renders.ts`. `image_url` and `preview` remain null until implemented.
+- **Render image generation (Puppeteer worker)** — currently a temporary viewport-screenshot stand-in; see the TEMPORARY note under Render item shape. The full pipeline (Puppeteer + R2D engine headless, true 2K/4K WebGL screenshot, 360° cubemap stitch) is described in a TODO comment in `server/routes/renders.ts`.
 - **Tour creation** — the tour builder iframe targets `R2D.URL.DOMAIN + /tours/add`, which doesn't exist locally. A local tour editor page at `/tours/add` is needed, plus a `POST /server-api/tours` endpoint to persist the tour and its linked 360° render IDs. See TODO in `server/services/tours.ts`.
 - **`POST /server-api/tours`** — create tour. Needed when the local tour builder is implemented.

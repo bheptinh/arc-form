@@ -159,3 +159,10 @@ CREATE TABLE IF NOT EXISTS renders (
   image_url          TEXT,
   created_at         INTEGER NOT NULL DEFAULT (unixepoch())
 );
+
+-- Saved render cameras. Preview image lives at uploads/camera-views/{project_id}/{id}.jpg.
+CREATE TABLE IF NOT EXISTS camera_views (
+  id         TEXT PRIMARY KEY,
+  project_id TEXT NOT NULL REFERENCES projects(id) ON DELETE CASCADE,
+  config     TEXT NOT NULL
+);
