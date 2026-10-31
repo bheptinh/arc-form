@@ -674,7 +674,7 @@ const BuyCredits = (props) => {
           <div className={classes.done_popup_close} onClick={onClickClosePopUp}>
             <IconX size={24} color="#2F2F2F" className={classes.done_popup_close_icon} />
           </div>
-          <div className={classes.done_popup_login_wr}>
+          <div>
             <div className={classes.done_popup_top}>
               <img
                 className={classes.done_popup_top_icon}
