@@ -81,6 +81,9 @@ export const planner = new R2D.PlannerCore(user);
 
 `planner` has sub-controllers for each view mode: `planner.scene`, `planner.constr`, `planner.view2d`, `planner.view3d`, `planner.walk`. Mouse events are forwarded to these controllers by `CenterPanel`.
 
+### Project URLs
+`/project/:uuid` opens a project; `/project/new` opens a blank one; bare `/project` redirects to `/projects`. The engine reads the hash from the URL through `getUrlProjectHash()` in `plannercore.js`. Enter `/project/new` with a full page load, because the planner singleton keeps the last scene across client-side routes.
+
 ### View Modes
 Active mode is stored in the `viewMode_new` Redux slice. Switching calls `planner[mode].activate()`. Modes:
 - `constr` — 2D floor plan constructor (walls, rooms)

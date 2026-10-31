@@ -117,6 +117,7 @@ async function init() {
                 <Route path="/toc" element={<MarkdownPage slug="toc" />} />
                 <Route path="/auth/reset-password" element={<PasswordRecoveryPage />} />
                 <Route path="/redeem" element={<RedeemPage />} />
+                <Route path="/project" element={<Navigate to="/projects" replace />} />
                 <Route path="/project/*" element={<App />} />
               </Routes>
             </Router>

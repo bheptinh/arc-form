@@ -15797,10 +15797,15 @@ R2D.Controller = function(scene, apiDispatcher, user) {
         return `${R2D.URL.REACT_BASEPATH}${hash ? '/project/' + hash : ''}${siteKey}`;
     }
 
+    // '/project/new' is a route for a blank project, not a hash
+    scope.getUrlProjectHash = function() {
+        const hash = window.location.pathname.split("/project/")[1]?.split('/')[0] || '';
+        return hash == 'new' ? '' : hash;
+    }
+
     scope.tryLoadProjectFromStorage = function() {
         return new Promise(async (resolve, reject) => {
-            let projectHash = '';
-            if(window.location.pathname?.split("/project/") && window.location.pathname.split("/project/")[1]) projectHash = window.location.pathname.split("/project/")[1];
+            let projectHash = scope.getUrlProjectHash();
             let str = R2D.Storage.load(projectHash ? `r2d_project_${projectHash}` : 'r2d_project');
             if (! str) resolve(null);
             else {
@@ -16277,9 +16282,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
     };
 
     scope.sceneAutoSaveStorage = hash => {
-        let projectHash = '';
-        if(window.location.pathname?.split("/project/") && window.location.pathname.split("/project/")[1]) projectHash = window.location.pathname.split("/project/")[1];
-        else if(hash) projectHash = hash;
+        let projectHash = scope.getUrlProjectHash() || hash || '';
         R2D.Storage.save(projectHash ? `r2d_project_${projectHash}` : 'r2d_project',  JSON.stringify({...scope.getObjDataForStorage(), hash: projectHash}));
 
         setTimeout(() => {
@@ -16293,7 +16296,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
 
     scope.clearSceneAutoSaveStorage = () => {
         R2D.Storage.clear('r2d_project');
-        let projectHash = (window.location.pathname?.split("/project/") && window.location.pathname.split("/project/")[1]) || scene.getProjectHash();
+        let projectHash = scope.getUrlProjectHash() || scene.getProjectHash();
         projectHash && R2D.Storage.clear(`r2d_project_${projectHash}`);
         clearInterval(autoSaveStorageKey);
     };
@@ -16354,17 +16357,10 @@ R2D.Controller = function(scene, apiDispatcher, user) {
     };
     scope.checkProjectForLoad = function() {
         return new Promise(async (resolve, reject) => {
-            if(window.location.pathname.match("/project/")) {
-                let projectHash = window.location.pathname.split("/project/")[1].split('/')[0];
-                if(projectHash && R2D.Storage.load(`r2d_project_${projectHash}`)) return resolve(null);
+            let projectHash = scope.getUrlProjectHash();
+            if(projectHash) {
+                if(R2D.Storage.load(`r2d_project_${projectHash}`)) return resolve(null);
                 let result = await scope.loadScene(projectHash, true);
-                resolve(result);
-            }
-            else if ( R2D.OPTIONS.PLAN_ID && R2D.OPTIONS.PLAN_ID != '' ) {
-                let result = await scope.loadScene(R2D.OPTIONS.PLAN_ID, false);
-                resolve(result);
-            } else if ( R2D.OPTIONS.PLAN_HASH && R2D.OPTIONS.PLAN_HASH != '' ) {
-                let result = await scope.loadScene(R2D.OPTIONS.PLAN_HASH, true);
                 resolve(result);
             } else {
                 resolve(null);

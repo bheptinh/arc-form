@@ -176,7 +176,11 @@ export default function ProjectsPage() {
     setRenamingId(null);
   };
 
-  const handleCreateNew = () => navigate('/');
+  // Full page load: the planner singleton keeps the last opened scene across client-side routes.
+  const handleCreateNew = () => {
+    R2D.Storage.clear('r2d_project');
+    window.location.assign(`${R2D.URL.REACT_BASEPATH}/project/new`);
+  };
 
   return (
     <div className={classes.page}>
