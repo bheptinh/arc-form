@@ -280,9 +280,6 @@ const useStyle = createUseStyles({
     },
   },
   fieldset_sm_mb: {},
-  planner_popup_profile_credits: {
-    marginRight: 10,
-  },
   planner_popup_profile_checkboxes: {
     flexDirection: 'column',
   },
@@ -604,23 +601,6 @@ const ProfilePopup = (props) => {
                 )}
 
                 <div className={classes.planner_popup_line}></div>
-
-                <fieldset>
-                  <div className={classes.fieldset_left}>
-                    <p className={classes.input_text}>{translation['RENDER_MY_CREDITS']} </p>
-                  </div>
-                  <div className={classes.fieldset_right}>
-                    <div className={classes.planner_popup_profile_credits}>
-                      <p className={classes.input_text}>{(+userProfileData.credits).toFixed(0)}</p>
-                    </div>
-                    <div
-                      className={classes.planner_popup_profile_button}
-                      onClick={(e) => dispatch(setActivePopup({ name: 'buyCredits' }))}
-                    >
-                      {translation['RENDER_GET_MORE']}
-                    </div>
-                  </div>
-                </fieldset>
 
                 <fieldset>
                   <div className={classes.fieldset_left}></div>

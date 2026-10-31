@@ -36,7 +36,6 @@ export function getUser(): User {
     maxProjects: 10,
 
     // TODO: stub until billing is implemented
-    credits: 9999,
     render: false,
     price: 0,
     userPlanExpire: '',

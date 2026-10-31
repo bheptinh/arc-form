@@ -14,7 +14,6 @@ import {
   selectPopups,
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
-import { selectUserProfileData } from '../../../redux/features/user/userSlice';
 import Checkbox from '../../../shared-components/inputs/checkbox';
 import DefaultModal from '../../../shared-components/modals/default';
 
@@ -278,19 +277,6 @@ const useStyle = createUseStyles({
     left: 0,
     width: '100%',
     bottom: 0,
-    '& h2': {
-      fontSize: 32,
-      lineHeight: '27px',
-      color: '#373737',
-      marginBottom: 20,
-      fontFamily: 'RobotoCondensed-Light',
-      fontWeight: 400,
-      '@media screen and (max-width: 950px)': {
-        fontSize: 20,
-        lineHeight: 1,
-        marginBottom: 10,
-      },
-    },
     '@media screen and (max-width: 950px)': {
       padding: '14px 20px',
       fontSize: 11,
@@ -329,21 +315,6 @@ const useStyle = createUseStyles({
     },
     '@media screen and (max-width: 950px)': {
       '& img': {},
-    },
-  },
-  upload_popup_get_credits_btn: {
-    color: '#66ACF4',
-    fontSize: 14,
-    textDecoration: 'underline',
-    cursor: 'pointer',
-    fontWeight: 400,
-    display: 'inline-block',
-    marginLeft: 10,
-    '&:hover': {
-      textDecoration: 'none',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
     },
   },
   upload_popup_checkbox_wr: {
@@ -501,7 +472,6 @@ const UploadCustomModelAiPopup = (props) => {
   const classes = useStyle();
   const dispatch = useDispatch();
   const translation = useTranslation();
-  const userProfileData = useSelector(selectUserProfileData);
   const popups = useSelector(selectPopups);
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
@@ -623,10 +593,6 @@ const UploadCustomModelAiPopup = (props) => {
             .classList.remove(classes.upload_popup_checkbox_wr_important),
         300
       );
-    }
-
-    if (!userProfileData.credits || +userProfileData.credits < 1) {
-      return dispatch(setActivePopup({ name: 'buyCredits' }));
     }
 
     R2D.modelAIUploader = new R2D.ModelAIUploader();
@@ -809,18 +775,6 @@ const UploadCustomModelAiPopup = (props) => {
               }
             >
               <div className={classes.upload_popup_bottom}>
-                <h2> {translation['NEED_CREDITS_TEXT']}: 1</h2>
-                <div>
-                  {translation['RENDER_MY_CREDITS']}:
-                  <b>{(+userProfileData.credits || 0).toFixed(0)}</b>
-                  <div
-                    className={classes.upload_popup_get_credits_btn}
-                    onClick={(e) => dispatch(setActivePopup({ name: 'buyCredits' }))}
-                  >
-                    {translation['RENDER_GET_MORE']}
-                  </div>
-                </div>
-
                 <div className={classes.upload_popup_ai_warning_wr}>
                   <div className={classes.upload_popup_ai_warning}>
                     {translation['CREATE_MODEL_AI_WARNING_TEXT_1']}

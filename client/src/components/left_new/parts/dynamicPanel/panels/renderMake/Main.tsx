@@ -31,11 +31,7 @@ import {
   updateControlPanelStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import {
-  saveLoggedStatus,
-  selectUserProfileData,
-  setProfileData,
-} from '../../../../../../redux/features/user/userSlice';
+import { saveLoggedStatus, setProfileData } from '../../../../../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../../../../../redux/features/viewMode/viewModeSlice';
 import ChangeSize from '../../../../../common/ChangeSize';
 
@@ -128,14 +124,6 @@ const useStyle = createUseStyles({
     flexDirection: 'column',
     paddingTop: 10,
     width: '66%',
-  },
-  text: {
-    fontSize: 13,
-    color: '#828282',
-    '& span': {
-      color: '#373737',
-      fontWeight: 700,
-    },
   },
   arrowDown: {
     transform: 'rotate(-90deg)',
@@ -250,17 +238,6 @@ const useStyle = createUseStyles({
       cursor: 'pointer',
     },
   },
-  choiseRenderPriceWr: {
-    fontSize: 13,
-    textAlign: 'right',
-  },
-  choiseRenderPrice: {
-    '& span': {
-      fontWeight: 700,
-      display: 'inline-block',
-      marginRight: 4,
-    },
-  },
   choiseRenderExempleBtn: {
     color: '#66ACF4',
     textDecoration: 'underline',
@@ -268,12 +245,6 @@ const useStyle = createUseStyles({
     '&:hover': {
       textDecoration: 'none',
     },
-  },
-  textWrap: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    flexDirection: 'column',
-    marginTop: 5,
   },
   startRenderIcon: {
     width: 36,
@@ -377,15 +348,6 @@ const useStyle = createUseStyles({
       background: '#cccccc',
     },
   },
-  getMoreCredits: {
-    color: '#66ACF4',
-    fontSize: 13,
-    textDecoration: 'underline',
-    cursor: 'pointer',
-    '&:hover': {
-      textDecoration: 'none',
-    },
-  },
   planner_popup_close: {
     width: 20,
     height: 20,
@@ -428,7 +390,6 @@ const Main = (props) => {
   const isAdded = lastHistoryElem?.isAdded;
   const controlPanelData = useSelector(selectControlPanelData);
   const activePano = useSelector(selectActivePano);
-  const userProfileData = useSelector(selectUserProfileData);
   const activeViewMode = useSelector(selectActiveViewMode);
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
   const renderMakeState = useSelector(selectRenderMakeState);
@@ -456,15 +417,7 @@ const Main = (props) => {
   const mainWrap = useRef(null);
   const mainDiv = useRef(null);
 
-  const rendersPrices = {
-    '2k': 1,
-    '4k': 2,
-    '360': 4,
-  };
-
   const activeIntId = planner.renders.activeIntId;
-
-  const credits = userProfileData.credits ? (+userProfileData.credits)?.toFixed(0) : 0;
 
   const minFOV = 20;
   const maxFOV = 120;
@@ -498,18 +451,6 @@ const Main = (props) => {
       onScreenshotMake();
       return;
     }
-
-    if (!credits) {
-      dispatch(setActivePopup({ name: 'buyCredits' }));
-      return;
-    }
-
-    if (
-      (activeFormat == 3 && credits < rendersPrices['2k']) ||
-      (activeFormat == 4 && credits < rendersPrices['4k']) ||
-      (activeFormat == 5 && credits < rendersPrices['360'])
-    )
-      return dispatch(setActivePopup({ name: 'buyCredits' }));
 
     setPreloadActive(true);
 
@@ -1200,9 +1141,6 @@ const Main = (props) => {
                   <div className={classes.choiseRenderRadio}>
                     {translation['RENDER_SCREENSHOT']}
                   </div>
-                  <div className={classes.choiseRenderPriceWr}>
-                    <div className={classes.choiseRenderPrice}>{translation['RENDER_FREE']}</div>
-                  </div>
                 </div>
                 <div
                   className={
@@ -1232,12 +1170,6 @@ const Main = (props) => {
                       }
                     />
                   </div>
-                  <div className={classes.choiseRenderPriceWr}>
-                    <div className={classes.choiseRenderPrice}>
-                      <span>{rendersPrices['2k']}</span>
-                      {translation['RENDER_CREDIT_2K']}
-                    </div>
-                  </div>
                 </div>
                 <div
                   className={
@@ -1266,12 +1198,6 @@ const Main = (props) => {
                         dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }))
                       }
                     />
-                  </div>
-                  <div className={classes.choiseRenderPriceWr}>
-                    <div className={classes.choiseRenderPrice}>
-                      <span>{rendersPrices['4k']}</span>
-                      {translation['RENDER_CREDIT_4K']}
-                    </div>
                   </div>
                 </div>
                 {renderMakeState.type != 'topView' ? (
@@ -1309,27 +1235,9 @@ const Main = (props) => {
                         }}
                       />
                     </div>
-                    <div className={classes.choiseRenderPriceWr}>
-                      <div className={classes.choiseRenderPrice}>
-                        <span>{rendersPrices['360']}</span>
-                        {translation['RENDER_CREDIT_360']}
-                      </div>
-                    </div>
                   </div>
                 ) : null}
               </fieldset>
-
-              <div className={classes.textWrap}>
-                <div className={classes.text}>
-                  {translation['RENDER_CREDITS_AMOUNT']} <span>{credits}</span>
-                </div>
-                <div
-                  className={classes.getMoreCredits}
-                  onClick={() => dispatch(setActivePopup({ name: 'buyCredits' }))}
-                >
-                  {translation['RENDER_GET_MORE']}
-                </div>
-              </div>
             </div>
           </div>
         </SimpleBar>

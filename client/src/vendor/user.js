@@ -18,7 +18,6 @@ R2D.UserCore = function () {
     tips: true,
     token: null,
     plan: 'free',
-    credits: 0,
     favorites: null,
     autoSave: false,
   };
@@ -27,7 +26,6 @@ R2D.UserCore = function () {
   me.getId = () => me.data.id;
   me.isTipsOn = () => me.data.tips;
   me.isLogged = () => me.data.id != 0;
-  me.credits = () => me.data.credits;
 
   me.setUserData = (data) => {
     me.data.id = data['id'];
@@ -37,7 +35,6 @@ R2D.UserCore = function () {
     me.data.render = data['render'] === '1' || data['render'] === true;
     me.data.tips = data['tips'] === '1' || data['tips'] === true;
     me.data.plan = data['plan'];
-    me.data.credits = data['credits'];
     me.data.favorites = data['favorites'];
     me.data.maxProjects = data['maxProjects'];
     me.data.projectCount = data['projectCount'];
@@ -235,16 +232,6 @@ R2D.UserCore.UserExport = function (user) {
 
   me.makeExport = (renderObj) => {
     return new Promise((resolve, reject) => {
-      function handleRenderError(data) {
-        if (!data || !data.status || data.status !== 'error') {
-          return resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
-        }
-        if (data?.error === 'not_enough_credits' || data?.error === 'not enough credits') {
-          return resolve({ type: 'error', data: 'TEXT_RENDERS_NOT_CREDITS' });
-        }
-
-        handleRenderError(null);
-      }
       function uploadActionHandler(event) {
         if (event.type === Event.ERROR) {
           resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
@@ -256,7 +243,7 @@ R2D.UserCore.UserExport = function (user) {
           return resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
         }
         if (event.currentTarget.data.status !== 'ok') {
-          return handleRenderError(event.currentTarget.data);
+          return resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
         }
         resolve(event.currentTarget.data.data.exportId);
       }
@@ -1262,16 +1249,6 @@ R2D.UserCore.UserRenders = function (user) {
 
   me.makeRender = (renderObj) => {
     return new Promise((resolve, reject) => {
-      function handleRenderError(data) {
-        if (!data || !data.status || data.status !== 'error') {
-          return resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
-        }
-        if (data?.error === 'not_enough_credits' || data?.error === 'not enough credits') {
-          return resolve({ type: 'error', data: 'TEXT_RENDERS_NOT_CREDITS' });
-        }
-
-        handleRenderError(null);
-      }
       function uploadActionHandler(event) {
         if (event.type === Event.ERROR) {
           return resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
@@ -1283,7 +1260,7 @@ R2D.UserCore.UserRenders = function (user) {
           return resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
         }
         if (event.currentTarget.data.status !== 'ok') {
-          return handleRenderError(event.currentTarget.data);
+          return resolve({ type: 'error', data: 'TEXT_ERROR_LOAD_DATA' });
         }
         resolve(event.currentTarget.data.data.renderId);
       }

@@ -135,10 +135,6 @@ export default function LoginForm() {
         setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
       }
 
-      if (popupType == 'buy_credits') {
-        dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
-      }
-
       if (popupType == 'startPopup') {
         navigate('/projects');
       }
@@ -202,10 +198,6 @@ export default function LoginForm() {
         dispatch(setActivePopup({ name: 'upgradePlan' }));
       }
 
-      if (popupType == 'buy_credits') {
-        dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
-      }
-
       if (popupType == 'startPopup') {
         navigate('/projects');
       }
@@ -232,10 +224,6 @@ export default function LoginForm() {
 
       if (popupType == 'upgrade_plan' && user.data.plan != 'pro') {
         dispatch(setActivePopup({ name: 'upgradePlan' }));
-      }
-
-      if (popupType == 'buy_credits') {
-        dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
       }
 
       if (popupType == 'startPopup') {

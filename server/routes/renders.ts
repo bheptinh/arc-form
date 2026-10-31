@@ -33,7 +33,6 @@ router.get('/', (req, res) => {
 //        g. Otherwise: call page.screenshot({ path: 'renders/<id>/output.jpg' })
 //   5. UPDATE renders SET status='stored', image_url='/renders/<id>/output.jpg',
 //         preview='/renders/<id>/preview.jpg' WHERE id = ?
-//   6. Deduct credits from user (renderType 3 = 1 credit, 4 = 2, 5 = 4)
 //
 // Until the worker is implemented, renders are stored immediately with no image.
 router.post('/', (req, res) => {

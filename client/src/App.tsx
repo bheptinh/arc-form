@@ -1324,36 +1324,6 @@ const App = () => {
         window.history.replaceState(null, null, createProjectUrl(''));
       }
 
-      if (window.location.search.match('action=buyCredits')) {
-        const creditsNum = (window?.location?.search || '')
-          .replace('?', '')
-          .split('&')
-          .find((i) => ~i.indexOf('count'))
-          .split('=')[1];
-
-        if (!user.isLogged()) {
-          verifyEnabledMerchantLogin({ type: 'buy_credits', data: creditsNum });
-          return;
-        } else {
-          showStartPopup = false;
-          if (!R2D.token) {
-            showErrorToast('TEXT_ERROR_LOAD_DATA');
-          } else {
-            dispatch(
-              setActivePopup({
-                name: 'buyCredits',
-                type: 'fromUrl',
-                data: {
-                  // FIXME: iframe to check and change it
-                  iframe: `${R2D.URL.DOMAIN}/api/credits/get_form?credits=${creditsNum}&lang=${currLanguage?.code || ''}&token=${R2D.token}`,
-                },
-              })
-            );
-          }
-        }
-        window.history.replaceState(null, null, createProjectUrl(''));
-      }
-
       if (window.location.search.match('open_tours=1')) {
         if (!user.isLogged()) {
           verifyEnabledMerchantLogin();

@@ -296,8 +296,6 @@ Render status lifecycle: `waiting → rendering → stored` (done) or `error`. C
 
 List response item shape: `{ id, renderId, type ("2K"|"4K"|"360"), status, preview, actions: { open: { link } } | undefined, created (Unix timestamp) }`. Both `id` and `renderId` are the same UUID (client uses `renderId` for API calls, `id` as React key and display).
 
-Credit costs (enforced client-side only for now): 2K = 1, 4K = 2, 360° = 4.
-
 The client polls `GET /server-api/render?limit=20&offset=0` every 15 seconds after submitting a job. When a render transitions to `stored` or `error`, R2D fires `RENDERS_UPDATE` → shows a toast, and `RENDERS_DATA_UPDATED` → refreshes the popup list.
 
 #### Tour item shape
@@ -315,7 +313,7 @@ Tour creation opens an iframe to `R2D.URL.DOMAIN + /tours/add` (roomtodo.com's t
 - **`GET /server-api/catalog/set-tree?set_id=<id>`** — material sets (curated per-slot material collections). See `docs/set-tree.md` for full spec. Trigger requires `product_material_slots.set_id` column (not in schema yet) and set data which must be sourced externally or hand-curated.
 - **`/api/planner/connect`** — mocked with TODO: DELETE (no purpose).
 - **`URL_DELETE_PRIVATE`** (`/api/planner/delete_private_entity`) — `user.deleteMaterial()` is never called from React UI yet; route exists at `DELETE /server-api/catalog/private/materials/:id` but URL in `index.html` not updated. See TODO comment in `index.html:70`.
-- **`POST /api/user/promo?name=<code>`** — generic promo/voucher code redemption. Called by `user.promoLoad()` in `vendor/user.js`. Mocked in `vite-mock-plugin` (always returns `ok`). Response: `{ status: 'ok', message: '<translation_key>' }` on success, `{ status: 'error', error: '<translation_key>' }` on failure. Server should validate the code, apply the benefit (plan upgrade, credits, etc.), and return a message describing what was applied. Replaces the removed `GET /api2/user/basic_to_pro_upgrade` — the `/api/user/promo` endpoint now handles all promo code types.
+- **`POST /api/user/promo?name=<code>`** — generic promo/voucher code redemption. Called by `user.promoLoad()` in `vendor/user.js`. Mocked in `vite-mock-plugin` (always returns `ok`). Response: `{ status: 'ok', message: '<translation_key>' }` on success, `{ status: 'error', error: '<translation_key>' }` on failure. Server should validate the code, apply the benefit (plan upgrade, etc.), and return a message describing what was applied. Replaces the removed `GET /api2/user/basic_to_pro_upgrade` — the `/api/user/promo` endpoint now handles all promo code types.
 - **Render image generation** — `POST /server-api/render` stores the job immediately as `stored` with no image. The full pipeline (Puppeteer + R2D engine headless, 2K/4K WebGL screenshot, 360° cubemap stitch) is described in a TODO comment in `server/routes/renders.ts`. `image_url` and `preview` remain null until implemented.
 - **Tour creation** — the tour builder iframe targets `R2D.URL.DOMAIN + /tours/add`, which doesn't exist locally. A local tour editor page at `/tours/add` is needed, plus a `POST /server-api/tours` endpoint to persist the tour and its linked 360° render IDs. See TODO in `server/services/tours.ts`.
 - **`POST /server-api/tours`** — create tour. Needed when the local tour builder is implemented.

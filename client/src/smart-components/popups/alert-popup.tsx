@@ -21,10 +21,6 @@ export default function AlertPopup() {
   const onClickOK = () => {
     dispatch(closeActivePopup({ name: 'alert' }));
 
-    if (alertType == 'not_enough_credits') {
-      dispatch(setActivePopup({ name: 'buyCredits' }));
-    }
-
     if (alertType == 'saveAndUpgradeProjectToUsePro') {
       const {
         isThereObjectsWithOwnerThatDontMatchUserPremiumPlan,

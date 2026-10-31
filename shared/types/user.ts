@@ -11,7 +11,6 @@ export interface User {
   projectCount: number;
   autoSave: boolean;
   maxProjects: number;
-  credits: number;
   render: boolean;
   price: number;
   userPlanExpire: string;

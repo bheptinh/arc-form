@@ -9,7 +9,6 @@ import AuthForgotPasswordPopup from './auth-forgot-password-popup';
 import AuthLoginPopup from './auth-login-popup';
 import AuthRegistrationPopup from './auth-registration-popup';
 import AutoSaveEnable from './auto-save-enable-popup';
-import BuyCredits from './buy-credits';
 import ChangeProjectName from './change-project-name';
 import CompleteMessage from './complete-message';
 import ConfirmPopup from './confirm-popup';
@@ -80,7 +79,6 @@ export default function PopupActions() {
       {activePopup.imageUpload.status === true ? <ImageUploadPopup /> : null}
       {activePopup.alignerWidthSet.status === true ? <AlignerWidthSetPopup /> : null}
       {activePopup.alignerWidthSetMetrics.status === true ? <AlignerWidthSetMetricsPopup /> : null}
-      {activePopup.buyCredits.status === true ? <BuyCredits /> : null}
       {activePopup.renderExample_360.status === true ? (
         <RenderExample name="renderExample_360" analyticsEvent="click_gallery_360">
           <RendersSlider360 />

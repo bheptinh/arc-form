@@ -106,9 +106,6 @@ const useStyle = createUseStyles({
       },
     },
   },
-  planner_popup_profile_credits: {
-    marginRight: 10,
-  },
   input_text_plan: {
     fontFamily: 'RobotoCondensed-Regular',
     fontSize: 13,
@@ -375,23 +372,6 @@ export default function ProfilePopup() {
         )}
 
         <div className={classes.planner_popup_line}></div>
-
-        <fieldset>
-          <div className={classes.fieldset_left}>
-            <p className={classes.input_text}>{translation['RENDER_MY_CREDITS']} </p>
-          </div>
-          <div className={classes.fieldset_right}>
-            <div className={classes.planner_popup_profile_credits}>
-              <p className={classes.input_text}>{(+userProfileData.credits).toFixed(0)}</p>
-            </div>
-            <div
-              className={classes.planner_popup_profile_button}
-              onClick={() => dispatch(setActivePopup({ name: 'buyCredits' }))}
-            >
-              {translation['RENDER_GET_MORE']}
-            </div>
-          </div>
-        </fieldset>
 
         <fieldset>
           <div className={classes.fieldset_left}></div>

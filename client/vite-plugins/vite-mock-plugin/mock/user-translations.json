@@ -222,18 +222,6 @@
             "code": "ADMIN_COMMON_CREATED"
         },
         {
-            "value": "Credit",
-            "code": "ADMIN_COMMON_CREDIT"
-        },
-        {
-            "value": "Credits",
-            "code": "ADMIN_COMMON_CREDITS"
-        },
-        {
-            "value": "pay | history",
-            "code": "ADMIN_COMMON_CREDITS_PAY_AND_HISTORY"
-        },
-        {
             "value": "Dashboard",
             "code": "ADMIN_COMMON_DASHBOARD"
         },
@@ -316,14 +304,6 @@
         {
             "value": "Save",
             "code": "ADMIN_COMMON_SAVE_BUTTON"
-        },
-        {
-            "value": "SELECT AMOUNT OF CREDITS TO BUY",
-            "code": "ADMIN_COMMON_SELECT_AMOUNT_OF_CREDITS_TO_BUY"
-        },
-        {
-            "value": "Credits",
-            "code": "ADMIN_COMMON_SOME_CREDIT"
         },
         {
             "value": "ADMIN_COMMON_START_BUTTON",
@@ -2370,10 +2350,6 @@
             "code": "FR_EMAILS_SUBSCRIPTION_RECURRING_YOU_CAN"
         },
         {
-            "value": "Roomtodo - credits purchase",
-            "code": "FR_EMAILS_USER_CREDITS_TOPUP_SUBJECT"
-        },
-        {
             "value": "Follow this link to activate your account:",
             "code": "FR_EMAILS_USER_REGISTER_GOTO_LINK_ACTIVATION"
         },
@@ -2786,14 +2762,6 @@
             "code": "FR_PROJECT_SENT_TO_CALCULATION"
         },
         {
-            "value": "You've already received credit for rendering",
-            "code": "fr_promo_already_used"
-        },
-        {
-            "value": "You got 1 credit for rendering",
-            "code": "fr_promo_free_credits_for_old_users_success"
-        },
-        {
             "value": "Roomtodo will create interactive 3D-floorplan out of it and send you a link within 24 hours",
             "code": "FR_R2D_WILL_CREATE"
         },
@@ -2824,10 +2792,6 @@
         {
             "value": "We are working on the issue and will try to fix it.",
             "code": "FR_REALISTIC_RENDER_FAIL_TEXT_1"
-        },
-        {
-            "value": "Credits used for this render have been returned to your account.",
-            "code": "FR_REALISTIC_RENDER_FAIL_TEXT_2"
         },
         {
             "value": "Your Realistic image is ready, click on the link below to see it",
@@ -3518,10 +3482,6 @@
             "code": "FR_TOURS_TRANS_54"
         },
         {
-            "value": "+5 Credits<br> for renders monthly",
-            "code": "FR_TOURS_TRANS_55"
-        },
-        {
             "value": "Renders examples",
             "code": "FR_TOURS_TRANS_56"
         },
@@ -3688,10 +3648,6 @@
         {
             "value": "Any questions left?",
             "code": "FR_TOURS_TRANS_94"
-        },
-        {
-            "value": "credits",
-            "code": "FR_TOURS_TRANS_95"
         },
         {
             "value": "Screenshot",
@@ -4122,10 +4078,6 @@
             "code": "MY_UPLOUDS_TITLE"
         },
         {
-            "value": "Need credits",
-            "code": "NEED_CREDITS_TEXT"
-        },
-        {
             "value": "Loading furniture and decor",
             "code": "NOTIFY_BUBBLE_LOADING_PRODUCTS_DATA"
         },
@@ -4360,10 +4312,6 @@
         {
             "value": "Combining materials <br> on the walls",
             "code": "PAY_PRO_COMB_ON_WALLS"
-        },
-        {
-            "value": "Credits for renders monthly",
-            "code": "PAY_PRO_CRED_MONTH"
         },
         {
             "value": "Examples of renders",
@@ -4722,40 +4670,12 @@
             "code": "RENDER_ADVANCED_SETTINGS"
         },
         {
-            "value": "buy",
-            "code": "RENDER_BUY_BUY"
-        },
-        {
-            "value": "Contact sales",
-            "code": "RENDER_BUY_CONTACT"
-        },
-        {
-            "value": "credits",
-            "code": "RENDER_BUY_CREDITS"
-        },
-        {
-            "value": "Need more?",
-            "code": "RENDER_BUY_MORE"
-        },
-        {
-            "value": "Select the number of credits to top up",
-            "code": "RENDER_BUY_SELECT"
-        },
-        {
-            "value": "Terms and conditions for refunding",
-            "code": "RENDER_BUY_TERMS"
-        },
-        {
             "value": "I agree with",
             "code": "RENDER_BUY_TERMS_AGREE"
         },
         {
             "value": "terms of use",
             "code": "RENDER_BUY_TERMS_OF_USE"
-        },
-        {
-            "value": "Your variant",
-            "code": "RENDER_BUY_VARIANT"
         },
         {
             "value": "Camera angle",
@@ -4780,26 +4700,6 @@
         {
             "value": "continue",
             "code": "RENDER_CONTINUE"
-        },
-        {
-            "value": "credit",
-            "code": "RENDER_CREDIT"
-        },
-        {
-            "value": "credit",
-            "code": "RENDER_CREDIT_2K"
-        },
-        {
-            "value": "credits",
-            "code": "RENDER_CREDIT_360"
-        },
-        {
-            "value": "credits",
-            "code": "RENDER_CREDIT_4K"
-        },
-        {
-            "value": "Credits available:",
-            "code": "RENDER_CREDITS_AMOUNT"
         },
         {
             "value": "Render can't be restarted",
@@ -4830,28 +4730,12 @@
             "code": "RENDER_FLOOR"
         },
         {
-            "value": "Free",
-            "code": "RENDER_FREE"
-        },
-        {
             "value": "2K",
             "code": "RENDER_FULL_HD"
         },
         {
-            "value": "Get more",
-            "code": "RENDER_GET_MORE"
-        },
-        {
             "value": "Rendering is in progress.<br\/> We'll let you know as soon as it is ready.",
             "code": "RENDER_IN_PROGRESS"
-        },
-        {
-            "value": "My credits",
-            "code": "RENDER_MY_CREDITS"
-        },
-        {
-            "value": "Not enough credits for render.",
-            "code": "RENDER_NOT_ENOUGH"
         },
         {
             "value": "Environment",
@@ -5696,10 +5580,6 @@
         {
             "value": "Empty",
             "code": "TEXT_RENDERS_EMPTY"
-        },
-        {
-            "value": "You have not enough credits.",
-            "code": "TEXT_RENDERS_NOT_CREDITS"
         },
         {
             "value": "Rotate panorama",

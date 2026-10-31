@@ -272,9 +272,6 @@ const LoginPopup = (props) => {
         setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
       }
 
-      popupType == 'buy_credits' &&
-        dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
-
       popupType == 'startPopup' && navigate('/projects');
 
       const isCurrentProjectBelongToUser = R2D.scene.getProjectUserKey() == user.getKey();
@@ -336,9 +333,6 @@ const LoginPopup = (props) => {
           : setAnimPopupClass(false);
         setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
       }
-      popupType == 'buy_credits' &&
-        dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
-
       popupType == 'startPopup' && navigate('/projects');
 
       popupType == 'upgrade_plan' &&
@@ -361,9 +355,6 @@ const LoginPopup = (props) => {
           : setAnimPopupClass(false);
         setTimeout(() => dispatch(closeActivePopup({ name: 'payPro' })), 500);
       }
-      popupType == 'buy_credits' &&
-        dispatch(setPopupData({ name: 'buyCredits', data: { creditsNum: popupData } }));
-
       popupType == 'startPopup' && navigate('/projects');
 
       popupType == 'upgrade_plan' &&

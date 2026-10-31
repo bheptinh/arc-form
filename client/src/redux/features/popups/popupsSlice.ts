@@ -23,7 +23,6 @@ const popupsSlice = createSlice({
     alignerWidthSet: { status: false, zIndex: 5 },
     alignerWidthSetMetrics: { status: false, zIndex: 5, data: null },
     uploadCustomMaterialPopup: { status: false, zIndex: 5, data: null, backBtn: false },
-    buyCredits: { status: false, zIndex: 5, data: null, type: null },
     renderExample_360: { status: false, zIndex: 5, data: null },
     renderExample_big: { status: false, zIndex: 5, data: null },
     renderExample_small: { status: false, zIndex: 5, data: null, wasShowed: false },

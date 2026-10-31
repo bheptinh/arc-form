@@ -108,7 +108,6 @@ const AlertPopup = (props) => {
   const onClickOK = (e) => {
     setAnimPopupClass(false);
     setTimeout(() => dispatch(closeActivePopup({ name: 'alert' })), 500);
-    if (alertType == 'not_enough_credits') dispatch(setActivePopup({ name: 'buyCredits' }));
     if (alertType == 'saveAndUpgradeProjectToUsePro') {
       let allPremiumPlanOfSceneObjects = new Set();
       let allElemsWithOwner = new Set();
