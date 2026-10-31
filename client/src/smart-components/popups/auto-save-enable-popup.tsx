@@ -58,12 +58,6 @@ const useStyle = createUseStyles({
       fontSize: 14,
     },
   },
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 17,
-  },
 });
 
 const AutoSaveEnable = (props) => {
@@ -137,14 +131,14 @@ const AutoSaveEnable = (props) => {
           className={classes.planner_popup_text}
           dangerouslySetInnerHTML={{ __html: translation['TEXT_CONFIRM_PROJECT_SAVED'] }}
         ></div>
-        <div className={classes.planner_btn_done_wrap}>
+        <DefaultModal.Actions spaced>
           <Button variant="secondary" onClick={onClickCancel} id="login_sent">
             {translation['BUTTON_NO']}
           </Button>
           <Button id="login_sent" onClick={onClickOk}>
             {translation['BUTTON_YES']}
           </Button>
-        </div>
+        </DefaultModal.Actions>
       </div>
     </DefaultModal>
   );

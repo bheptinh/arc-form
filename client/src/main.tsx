@@ -83,7 +83,7 @@ async function init() {
     store.dispatch(setActiveViewMode('view3d'));
   }
 
-  // FIXME: debug timer, opens the share popup 2s after every load. Comment out before release.
+  // FIXME: debug timer, opens a popup 2s after every load. Comment out before release.
   setTimeout(() => {
     // store.dispatch(setActivePopup({ name: 'export2DProjectPopup' }));
     store.dispatch(
@@ -97,7 +97,7 @@ async function init() {
       //   type: R2D.Storage.load('r2d_exportDownloadDetails') ? 'download' : 'predownload',
       //   data: {},
       // })
-      setActivePopup({ name: 'share' })
+      setActivePopup({ name: 'imageUpload' })
     );
   }, 2000);
 

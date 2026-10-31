@@ -31,10 +31,6 @@ const useStyle = createUseStyles({
     textAlign: 'center',
     marginBottom: 30,
   },
-  planner_popup_bottom: {
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
 });
 
 const SaveBeforePopup = (props) => {
@@ -198,7 +194,7 @@ const SaveBeforePopup = (props) => {
         <div className={classes.planner_popup_text}>
           <p dangerouslySetInnerHTML={{ __html: translation['TEXT_SAVE_BEFORE_LOAD_PLAN'] }}></p>
         </div>
-        <div className={classes.planner_popup_bottom}>
+        <DefaultModal.Actions align="between">
           <Button variant="secondary" onClick={onClickDoNotSave}>
             {translation['BUTTON_DO_NOT_SAVE']}
           </Button>
@@ -206,7 +202,7 @@ const SaveBeforePopup = (props) => {
             {translation['BUTTON_CANCEL']}
           </Button>
           <Button onClick={onClickOk}>{translation['BUTTON_OK']}</Button>
-        </div>
+        </DefaultModal.Actions>
       </div>
     </DefaultModal>
   );

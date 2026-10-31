@@ -32,11 +32,6 @@ const useStyle = createUseStyles({
     marginRight: 70,
     textAlign: 'center',
   },
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   bar_dropdown_wrap: {
     position: 'relative',
     height: '100%',
@@ -172,9 +167,9 @@ const AlignerWidthSetMetricsPopup = (props) => {
           </div>
         </div>
 
-        <div className={classes.planner_btn_done_wrap}>
+        <DefaultModal.Actions>
           <Button onClick={onClickOk}>{translation['RENDER_CONTINUE']}</Button>
-        </div>
+        </DefaultModal.Actions>
       </div>
     </DefaultModal>
   );

@@ -133,6 +133,17 @@ const useStyle = createUseStyles({
     height: '200px',
     width: '100%',
   },
+  defaultModalLayout_actions: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  defaultModalLayout_actions_between: {
+    justifyContent: 'space-between',
+  },
+  defaultModalLayout_actions_spaced: {
+    marginTop: 17,
+  },
 });
 
 type DefaultModalProps = PropsWithChildren<{
@@ -148,6 +159,26 @@ type DefaultModalProps = PropsWithChildren<{
   className?: string;
   contentClassName?: string;
 }>;
+
+type DefaultModalActionsProps = PropsWithChildren<{
+  align?: 'center' | 'between';
+  spaced?: boolean;
+}>;
+
+function DefaultModalActions(props: DefaultModalActionsProps) {
+  const classes = useStyle();
+
+  return (
+    <div
+      className={clsx(classes.defaultModalLayout_actions, {
+        [classes.defaultModalLayout_actions_between]: props.align === 'between',
+        [classes.defaultModalLayout_actions_spaced]: props.spaced,
+      })}
+    >
+      {props.children}
+    </div>
+  );
+}
 
 export default function DefaultModal(props: DefaultModalProps) {
   const [animPopupClass, setAnimPopupClass] = useState(false);
@@ -244,3 +275,5 @@ export default function DefaultModal(props: DefaultModalProps) {
     </div>
   );
 }
+
+DefaultModal.Actions = DefaultModalActions;

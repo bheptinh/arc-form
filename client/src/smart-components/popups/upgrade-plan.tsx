@@ -39,10 +39,6 @@ const useStyle = createUseStyles({
     textAlign: 'center',
     marginBottom: 30,
   },
-  planner_popup_bottom: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
 });
 
 const UpgradePlan = (props) => {
@@ -142,12 +138,12 @@ const UpgradePlan = (props) => {
     >
       <h2 className={classes.planner_popup_title}>{titleText}</h2>
       <div className={classes.planner_popup_text}>{subTitleText}</div>
-      <div className={classes.planner_popup_bottom}>
+      <DefaultModal.Actions>
         <Button variant="secondary" onClick={onClickClosePopUp} id="login_sent">
           {translation['BUTTON_CANCEL']}
         </Button>
         {buttonsArray}
-      </div>
+      </DefaultModal.Actions>
     </DefaultModal>
   );
 };

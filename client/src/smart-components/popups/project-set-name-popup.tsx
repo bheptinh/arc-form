@@ -37,12 +37,6 @@ const useStyle = createUseStyles({
     maxWidth: 400,
     margin: '0 auto',
   },
-
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
 });
 
 export default function ProjectSetNamePopup() {
@@ -244,12 +238,12 @@ export default function ProjectSetNamePopup() {
           placeholder={translation['DEFAULT_SCENE_NAME']}
         />
 
-        <fieldset className={classes.planner_btn_done_wrap}>
+        <DefaultModal.Actions>
           <Button variant="secondary" onClick={onClickClosePopUp} type="button">
             {translation['BUTTON_CANCEL']}
           </Button>
           <Button type="submit">{translation['BUTTON_OK']}</Button>
-        </fieldset>
+        </DefaultModal.Actions>
       </form>
     </DefaultModal>
   );

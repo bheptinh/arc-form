@@ -25,11 +25,6 @@ const useStyle = createUseStyles({
     marginBottom: 30,
     lineHeight: 1.5,
   },
-  buttons: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: 8,
-  },
 });
 
 function getMessage(type: string | null, translation: Record<string, string>): string {
@@ -62,12 +57,12 @@ const ConfirmPopup = () => {
       contentClassName={classes.cont}
     >
       <div className={classes.text}>{getMessage(type, translation)}</div>
-      <div className={classes.buttons}>
+      <DefaultModal.Actions>
         <Button variant="secondary" onClick={close}>
           {translation['BUTTON_CANCEL'] || 'Cancel'}
         </Button>
         <Button onClick={close}>{translation['BUTTON_OK'] || 'OK'}</Button>
-      </div>
+      </DefaultModal.Actions>
     </DefaultModal>
   );
 };

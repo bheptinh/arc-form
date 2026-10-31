@@ -78,12 +78,6 @@ const useStyle = createUseStyles({
     display: 'flex',
     alignItems: 'center',
   },
-  planner_btn_done_wr: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 25,
-  },
   planner_popup_profile_button: {
     color: '#66ACF4',
     fontSize: 13,
@@ -434,9 +428,9 @@ export default function ProfilePopup() {
             />
           </div>
         </fieldset>
-        <div className={classes.planner_btn_done_wr}>
+        <DefaultModal.Actions spaced>
           <Button type="submit">Ok</Button>
-        </div>
+        </DefaultModal.Actions>
       </form>
     </DefaultModal>
   );

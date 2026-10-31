@@ -38,12 +38,6 @@ const useStyle = createUseStyles({
       fontSize: 20,
     },
   },
-  planner_btn_done_wr: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 25,
-  },
   planner_btn_done_disabled: {
     border: '1px solid #999999',
     backgroundColor: '#cccccc',
@@ -215,7 +209,7 @@ const UpdatePassword = (props) => {
               required
             />
 
-            <div className={classes.planner_btn_done_wr}>
+            <DefaultModal.Actions spaced>
               <Button
                 ref={inputSubmit}
                 className={classes.planner_btn_done_disabled}
@@ -224,7 +218,7 @@ const UpdatePassword = (props) => {
               >
                 Ok
               </Button>
-            </div>
+            </DefaultModal.Actions>
           </form>
         </div>
       </div>

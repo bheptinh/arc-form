@@ -21,6 +21,7 @@ import { removeQuickPanelAll } from '../../redux/features/quickPanels/quickPanel
 import { saveLoggedStatus } from '../../redux/features/user/userSlice';
 import TextInput from '../../shared-components/inputs/text-input';
 import Button from '../../shared-components/inputs/button';
+import DefaultModal from '../../shared-components/modals/default';
 
 const useStyle = createUseStyles({
   planner_popup_facebook: {},
@@ -73,11 +74,6 @@ const useStyle = createUseStyles({
     },
   },
 
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   planner_popup_bottom: {
     padding: '0 40px',
     display: 'flex',
@@ -293,11 +289,11 @@ export default function LoginForm() {
             className={classes.input_wrap}
           />
 
-          <fieldset className={classes.planner_btn_done_wrap}>
+          <DefaultModal.Actions>
             <Button type="submit" id="login_sent">
               Ok
             </Button>
-          </fieldset>
+          </DefaultModal.Actions>
         </form>
       </div>
       <div className={classes.planner_popup_bottom}>

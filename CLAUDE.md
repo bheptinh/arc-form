@@ -122,7 +122,7 @@ Current components:
 - `Card.tsx` — image area + hover action overlay + meta rows + plan badge. Props: `name`, `preview?`, `modified?`, `created?`, `userPlan?`, `actions[]`, `onClick?`, `nameContent?` (rename input slot), `className?`.
 - `SortBar.tsx` — dropdown + direction toggle. Props: `options[]`, `activeLabel`, `direction`, `onOptionSelect`, `onDirectionToggle`.
 - `inputs/` — form controls: `text-input.tsx` (`inset` adds the auth-form side padding, `inputClassName` styles the field), `text-area.tsx`, `radio.tsx`, `checkbox.tsx`, `button.tsx` (`variant`: `primary` or `secondary`, defaults to `type="button"`).
-- `modals/default.tsx` — modal frame for all popups. With `title` it renders the blue header band and fixed width; without it, the popup supplies its own title and sizing through `className` and `contentClassName`. Pass `visible` when the popup animates its own programmatic close (the modal then calls `onClose` immediately); otherwise the modal handles the 500ms close animation.
+- `modals/default.tsx` — modal frame for all popups. `DefaultModal.Actions` is the bottom button row, placed where the row sits so submit buttons stay inside their `<form>`. It has no top margin by default; `spaced` adds 17px and `align="between"` spreads the buttons. With `title` it renders the blue header band and fixed width; without it, the popup supplies its own title and sizing through `className` and `contentClassName`. Pass `visible` when the popup animates its own programmatic close (the modal then calls `onClose` immediately); otherwise the modal handles the 500ms close animation.
 
 ### Styling
 **react-jss** (`createUseStyles`) throughout. Not CSS Modules. Class names are generated at runtime.

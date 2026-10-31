@@ -23,12 +23,6 @@ const useStyle = createUseStyles({
     fontSize: 16,
     textAlign: 'center',
   },
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 17,
-  },
   planner_popup_video: {
     marginTop: 20,
     marginBottom: 20,
@@ -91,9 +85,9 @@ const ImageUploadPopup = (props) => {
           </video>
         </div>
 
-        <div className={classes.planner_btn_done_wrap}>
+        <DefaultModal.Actions spaced>
           <Button onClick={onClickOk}>{translation['BUTTON_OK']}</Button>
-        </div>
+        </DefaultModal.Actions>
 
         <div className={classes.compare_checkbox_wr}>
           <Checkbox

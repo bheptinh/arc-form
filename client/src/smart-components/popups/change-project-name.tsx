@@ -36,12 +36,6 @@ const useStyle = createUseStyles({
       fontSize: 14,
     },
   },
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 17,
-  },
 });
 
 const ChangeProjectNamePopup = (props) => {
@@ -102,7 +96,7 @@ const ChangeProjectNamePopup = (props) => {
       <form ref={changeProjectForm} onSubmit={onSubmit}>
         <div className={classes.text}> {translation['TEXT_ENTER_NAME_SCENE']} </div>
         <TextInput name="name" defaultValue={projectActiveName} />
-        <fieldset className={classes.planner_btn_done_wrap}>
+        <DefaultModal.Actions spaced>
           <Button variant="secondary" onClick={onClickClosePopUp}>
             {' '}
             {translation['BUTTON_CANCEL']}{' '}
@@ -110,7 +104,7 @@ const ChangeProjectNamePopup = (props) => {
           <Button type="submit" disabled={renameMutation.isPending}>
             {renameMutation.isPending ? '...' : translation['BUTTON_OK']}
           </Button>
-        </fieldset>
+        </DefaultModal.Actions>
       </form>
     </DefaultModal>
   );

@@ -37,11 +37,6 @@ const useStyle = createUseStyles({
     padding: '0 95px',
     marginBottom: 0,
   },
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   checkbox_wrap: {
     marginBottom: 15,
   },
@@ -147,11 +142,11 @@ export default function AuthRegistrationPopup() {
             </div>
           ) : null}
         </fieldset>
-        <fieldset className={classes.planner_btn_done_wrap}>
+        <DefaultModal.Actions>
           <Button type="submit" id="login_sent">
             {translation['BUTTON_OK']}
           </Button>
-        </fieldset>
+        </DefaultModal.Actions>
       </form>
     </DefaultModal>
   );

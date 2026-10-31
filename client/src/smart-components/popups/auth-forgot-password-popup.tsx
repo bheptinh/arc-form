@@ -19,11 +19,6 @@ const useStyle = createUseStyles({
     maxWidth: 400,
     margin: '0 auto',
   },
-  planner_btn_done_wrap: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
 });
 
 export default function AuthForgotPasswordPopup() {
@@ -79,11 +74,11 @@ export default function AuthForgotPasswordPopup() {
           required
         />
 
-        <fieldset className={classes.planner_btn_done_wrap}>
+        <DefaultModal.Actions>
           <Button type="submit" id="login_sent">
             {translation['BUTTON_OK']}
           </Button>
-        </fieldset>
+        </DefaultModal.Actions>
       </form>
     </DefaultModal>
   );

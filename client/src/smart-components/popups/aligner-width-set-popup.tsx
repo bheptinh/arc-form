@@ -32,11 +32,6 @@ const useStyle = createUseStyles({
       fontSize: 14,
     },
   },
-  planner_popup_bottom: {
-    display: 'grid',
-    gridTemplateColumns: 'auto auto',
-    justifyContent: 'center',
-  },
   planner_btn_ok: {},
   popup_input: {
     padding: '0 10px',
@@ -158,14 +153,14 @@ const AlignerWidthSetPopup = (props) => {
             name="alignerWidth"
           />
         </div>
-        <div className={classes.planner_popup_bottom}>
+        <DefaultModal.Actions>
           <Button variant="secondary" onClick={onClose}>
             {translation['BUTTON_CANCEL']}
           </Button>
           <Button className={classes.planner_btn_ok} onClick={onClickOk}>
             {translation['BUTTON_OK']}
           </Button>
-        </div>
+        </DefaultModal.Actions>
       </div>
     </DefaultModal>
   );

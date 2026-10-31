@@ -24,11 +24,6 @@ const useStyle = createUseStyles({
     color: '#2F2F2F',
     marginBottom: 30,
   },
-  planner_popup_bottom: {
-    display: 'grid',
-    gridTemplateColumns: 'auto auto',
-    justifyContent: 'center',
-  },
   compare_checkbox_wr: {
     marginTop: 15,
   },
@@ -81,12 +76,12 @@ const Revert3DRotation = (props) => {
       <div className={classes.planner_popup_text}>
         <p dangerouslySetInnerHTML={{ __html: translation['REVERT_3D_ROTATION_POPUP_TEXT'] }}></p>
       </div>
-      <div className={classes.planner_popup_bottom}>
+      <DefaultModal.Actions>
         <Button onClick={onClickOk}>{translation['BUTTON_YES']}</Button>
         <Button variant="secondary" onClick={onClickClosePopUp}>
           {translation['BUTTON_NO']}
         </Button>
-      </div>
+      </DefaultModal.Actions>
       <div className={classes.compare_checkbox_wr} ref={checkBoxRef}>
         <Checkbox
           label={translation['TEXT_DONT_SHOW_AGAIN']}

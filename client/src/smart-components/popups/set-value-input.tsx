@@ -29,11 +29,6 @@ const useStyle = createUseStyles({
       fontSize: 10,
     },
   },
-  planner_popup_bottom: {
-    display: 'grid',
-    gridTemplateColumns: 'auto auto',
-    justifyContent: 'center',
-  },
   formInputWr: {
     padding: '0 10px',
     marginBottom: '20px',
@@ -137,12 +132,12 @@ const SetValueInput = (props) => {
           onChange={handleInputChange}
         />
       </div>
-      <div className={classes.planner_popup_bottom}>
+      <DefaultModal.Actions>
         <Button variant="secondary" onClick={onClose}>
           {translation['BUTTON_CANCEL']}
         </Button>
         <Button onClick={onClickOk}>{translation['BUTTON_OK']}</Button>
-      </div>
+      </DefaultModal.Actions>
     </DefaultModal>
   );
 };
