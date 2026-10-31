@@ -160,6 +160,7 @@ export default function Tips(props: TipsProps) {
   ) {
     tipsToShow.push(
       <Tip
+        key="TUT_FROM_SCRATCH"
         name="constructorButtons"
         showTime={500}
         arrow={{ position: 'top', direction: 'left' }}
@@ -169,6 +170,7 @@ export default function Tips(props: TipsProps) {
     );
     tipsToShow.push(
       <Tip
+        key="TUT_UPLOAD_FLOORPLAN"
         name="constructorButtons"
         showTime={1000}
         arrow={{ position: 'bottom', direction: 'left' }}
@@ -181,6 +183,7 @@ export default function Tips(props: TipsProps) {
   if (showTipSelectGroup && !tips.selectGroup.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_CREATE_GROUP"
         name={'selectGroup'}
         showTime={1000}
         arrow={{}}
@@ -193,6 +196,7 @@ export default function Tips(props: TipsProps) {
   if (showTipChangeWallHeight && !tips.changeWallHeight.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_CHANGE_WALLS_HEIGHT"
         name={'changeWallHeight'}
         showTime={1000}
         arrow={{ position: 'top', direction: 'left' }}
@@ -205,6 +209,7 @@ export default function Tips(props: TipsProps) {
   if (showTipUploadCustomMat && !tips.uploadCustomMat.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_UPLOAD_MATERIAL"
         name={'uploadCustomMat'}
         showTime={1000}
         arrow={{ position: 'top', direction: 'left' }}
@@ -217,6 +222,7 @@ export default function Tips(props: TipsProps) {
   if (props.showTipUseTab?.status && !tips.tipUseTab.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_USE_TAB"
         name={'tipUseTab'}
         showTime={100}
         arrow={
@@ -238,6 +244,7 @@ export default function Tips(props: TipsProps) {
   if (props.showTipUseEnter?.status && !tips.tipUseEnter.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_USE_ENTER"
         name={'tipUseEnter'}
         showTime={100}
         arrow={{ position: 'left', direction: 'bottom', size: 'small' }}
@@ -254,6 +261,7 @@ export default function Tips(props: TipsProps) {
   if (showTipMergeGroupButton && !tips.mergeGroupButton.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_MERGE_GROUP"
         name={'mergeGroupButton'}
         showTime={1000}
         arrow={{ position: 'top', direction: 'left' }}
@@ -266,6 +274,7 @@ export default function Tips(props: TipsProps) {
   if (showTipPanorams && !tips.panorams.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_CHANGE_PANORAMA"
         name={'panorams'}
         showTime={1000}
         arrow={{ position: 'top', direction: 'left' }}
@@ -278,6 +287,7 @@ export default function Tips(props: TipsProps) {
   if (showTipRenderMake && !tips.tipRenderMake.showed && !isCurrDeviceAPhone) {
     tipsToShow.push(
       <Tip
+        key="TUT_RENDER_MAKE"
         name={'tipRenderMake'}
         showTime={1000}
         arrow={{ position: 'top', direction: 'left' }}
