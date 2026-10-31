@@ -9,6 +9,7 @@ import { updatePreloaderStatus } from '../../redux/features/common/commonSlice';
 import { closeActivePopup, setActivePopup } from '../../redux/features/popups/popupsSlice';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   formContent: {
@@ -22,31 +23,6 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
   },
 });
 
@@ -95,15 +71,18 @@ export default function AuthForgotPasswordPopup() {
       onBack={onClickBack}
     >
       <form onSubmit={onSubmit} className={classes.formContent}>
-        <TextInput name="email" type="email" label={translation['INPUT_TEXT_LOGIN']} required />
+        <TextInput
+          inset
+          name="email"
+          type="email"
+          label={translation['INPUT_TEXT_LOGIN']}
+          required
+        />
 
         <fieldset className={classes.planner_btn_done_wrap}>
-          <input
-            type="submit"
-            className={classes.planner_btn_done}
-            id="login_sent"
-            value={translation['BUTTON_OK']}
-          />
+          <Button type="submit" id="login_sent">
+            {translation['BUTTON_OK']}
+          </Button>
         </fieldset>
       </form>
     </DefaultModal>

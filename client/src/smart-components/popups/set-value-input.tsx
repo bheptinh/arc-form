@@ -7,6 +7,8 @@ import { planner } from '../../initR2D';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
 import { useTranslation } from '../../api/hooks/useTranslation';
 import DefaultModal from '../../shared-components/modals/default';
+import TextInput from '../../shared-components/inputs/text-input';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {},
@@ -32,69 +34,9 @@ const useStyle = createUseStyles({
     gridTemplateColumns: 'auto auto',
     justifyContent: 'center',
   },
-  planner_btn: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    border: '1px solid #000',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#E9E9E9',
-    },
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
   formInputWr: {
     padding: '0 10px',
     marginBottom: '20px',
-  },
-  formInput: {
-    borderRadius: 3,
-    paddingLeft: 10,
-    fontSize: 14,
-    color: '#000',
-    width: '100%',
-    border: '1px solid #e8dede',
-    height: 30,
-    background: '#ffffff',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
   },
 });
 
@@ -188,9 +130,7 @@ const SetValueInput = (props) => {
         <p dangerouslySetInnerHTML={{ __html: confirmText }}></p>
       </div>
       <div className={classes.formInputWr}>
-        <input
-          className={classes.formInput}
-          type="text"
+        <TextInput
           defaultValue={100}
           ref={inputHeight}
           name="wallHeight"
@@ -198,12 +138,10 @@ const SetValueInput = (props) => {
         />
       </div>
       <div className={classes.planner_popup_bottom}>
-        <span className={classes.planner_btn} onClick={onClose}>
+        <Button variant="secondary" onClick={onClose}>
           {translation['BUTTON_CANCEL']}
-        </span>
-        <span className={classes.planner_btn_done} onClick={onClickOk}>
-          {translation['BUTTON_OK']}
-        </span>
+        </Button>
+        <Button onClick={onClickOk}>{translation['BUTTON_OK']}</Button>
       </div>
     </DefaultModal>
   );

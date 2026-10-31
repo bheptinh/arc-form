@@ -10,6 +10,7 @@ import {
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
@@ -41,59 +42,6 @@ const useStyle = createUseStyles({
   planner_popup_bottom: {
     display: 'flex',
     justifyContent: 'center',
-  },
-
-  planner_btn: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    border: '1px solid #000',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#E9E9E9',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
   },
 });
 
@@ -128,8 +76,7 @@ const UpgradePlan = (props) => {
       setTitleText(translation['UPGRADE_OVER_LIMIT_TITLE']);
       setSubTitleText(translation['UPGRADE_OVER_LIMIT_SUBTITLE']);
       setButtonsArray([
-        <button
-          className={classes.planner_btn_done}
+        <Button
           key={Math.random()}
           onClick={(e) => {
             let url;
@@ -149,14 +96,13 @@ const UpgradePlan = (props) => {
           }}
         >
           {translation['UPGRADE_OVER_LIMIT_BUTTON_UPGRADE_PLAN']}
-        </button>,
+        </Button>,
       ]);
     } else if (popupType == 'createNewPremiumProject') {
       setTitleText(translation['COPY_NEW_PREMIUM_PROJECT_TITLE']);
       setSubTitleText(translation['COPY_NEW_PREMIUM_PROJECT_SUBTITLE']);
       setButtonsArray([
-        <button
-          className={classes.planner_btn_done}
+        <Button
           key={Math.random()}
           onClick={(e) => {
             let url;
@@ -176,7 +122,7 @@ const UpgradePlan = (props) => {
           }}
         >
           {translation['UPGRADE_OVER_LIMIT_BUTTON_UPGRADE_PLAN']}
-        </button>,
+        </Button>,
       ]);
     }
   }, [popupType]);
@@ -197,9 +143,9 @@ const UpgradePlan = (props) => {
       <h2 className={classes.planner_popup_title}>{titleText}</h2>
       <div className={classes.planner_popup_text}>{subTitleText}</div>
       <div className={classes.planner_popup_bottom}>
-        <button className={classes.planner_btn} onClick={onClickClosePopUp} id="login_sent">
+        <Button variant="secondary" onClick={onClickClosePopUp} id="login_sent">
           {translation['BUTTON_CANCEL']}
-        </button>
+        </Button>
         {buttonsArray}
       </div>
     </DefaultModal>

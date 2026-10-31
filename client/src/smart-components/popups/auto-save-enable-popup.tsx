@@ -11,6 +11,7 @@ import {
 } from '../../redux/features/popups/popupsSlice';
 import { setProfileData } from '../../redux/features/user/userSlice';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
@@ -62,58 +63,6 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 17,
-  },
-  planner_btn: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    border: '1px solid #000',
-    '&:hover': {
-      background: '#E9E9E9',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
   },
 });
 
@@ -189,12 +138,12 @@ const AutoSaveEnable = (props) => {
           dangerouslySetInnerHTML={{ __html: translation['TEXT_CONFIRM_PROJECT_SAVED'] }}
         ></div>
         <div className={classes.planner_btn_done_wrap}>
-          <button className={classes.planner_btn} onClick={onClickCancel} id="login_sent">
+          <Button variant="secondary" onClick={onClickCancel} id="login_sent">
             {translation['BUTTON_NO']}
-          </button>
-          <button className={classes.planner_btn_done} id="login_sent" onClick={onClickOk}>
+          </Button>
+          <Button id="login_sent" onClick={onClickOk}>
             {translation['BUTTON_YES']}
-          </button>
+          </Button>
         </div>
       </div>
     </DefaultModal>

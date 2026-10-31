@@ -13,6 +13,7 @@ import { useTranslation } from '../../api/hooks/useTranslation';
 import { useMerchantLogin } from '../../utils/useMerchantLogin';
 import { getScenePlanRequirements } from '../../utils/getScenePlanRequirements';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {},
@@ -34,58 +35,6 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'space-between',
   },
-  planner_btn: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    border: '1px solid #000',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#E9E9E9',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
 });
 
 const SaveBeforePopup = (props) => {
@@ -98,8 +47,8 @@ const SaveBeforePopup = (props) => {
 
   const popupType = popups.saveBefore.type;
 
-  let onClickOk = null;
-  let onClickDoNotSave = null;
+  let onClickOk: any = null;
+  let onClickDoNotSave: any = null;
 
   const [animPopupClass, setAnimPopupClass] = useState(false);
 
@@ -250,15 +199,13 @@ const SaveBeforePopup = (props) => {
           <p dangerouslySetInnerHTML={{ __html: translation['TEXT_SAVE_BEFORE_LOAD_PLAN'] }}></p>
         </div>
         <div className={classes.planner_popup_bottom}>
-          <span className={classes.planner_btn} onClick={onClickDoNotSave}>
+          <Button variant="secondary" onClick={onClickDoNotSave}>
             {translation['BUTTON_DO_NOT_SAVE']}
-          </span>
-          <span className={classes.planner_btn} onClick={onClickClosePopUp}>
+          </Button>
+          <Button variant="secondary" onClick={onClickClosePopUp}>
             {translation['BUTTON_CANCEL']}
-          </span>
-          <span className={classes.planner_btn_done} onClick={onClickOk}>
-            {translation['BUTTON_OK']}
-          </span>
+          </Button>
+          <Button onClick={onClickOk}>{translation['BUTTON_OK']}</Button>
         </div>
       </div>
     </DefaultModal>

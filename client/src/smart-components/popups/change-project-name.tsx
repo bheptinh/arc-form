@@ -12,6 +12,8 @@ import {
   setActivePopup,
 } from '../../redux/features/popups/popupsSlice';
 import DefaultModal from '../../shared-components/modals/default';
+import TextInput from '../../shared-components/inputs/text-input';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
@@ -39,77 +41,6 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 17,
-  },
-  planner_btn: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    border: '1px solid #000',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#E9E9E9',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
-  input_wr: {
-    color: '#fff',
-    width: '100%',
-    margin: 'auto',
-    marginTop: 15,
-  },
-  formInput: {
-    paddingLeft: '5px',
-    fontSize: '14px',
-    color: '#000',
-    width: '100%',
-    border: '1px solid #e8dede',
-    height: '30px',
-    background: '#ffffff',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
-    borderRadius: '3px',
   },
 });
 
@@ -170,28 +101,15 @@ const ChangeProjectNamePopup = (props) => {
     >
       <form ref={changeProjectForm} onSubmit={onSubmit}>
         <div className={classes.text}> {translation['TEXT_ENTER_NAME_SCENE']} </div>
-        <fieldset>
-          <div className={classes.input_wr}>
-            <input
-              className={classes.formInput}
-              type="text"
-              name="name"
-              defaultValue={projectActiveName}
-            />
-          </div>
-        </fieldset>
+        <TextInput name="name" defaultValue={projectActiveName} />
         <fieldset className={classes.planner_btn_done_wrap}>
-          <button className={classes.planner_btn} onClick={onClickClosePopUp}>
+          <Button variant="secondary" onClick={onClickClosePopUp}>
             {' '}
             {translation['BUTTON_CANCEL']}{' '}
-          </button>
-          <button
-            className={classes.planner_btn_done}
-            type="submit"
-            disabled={renameMutation.isPending}
-          >
+          </Button>
+          <Button type="submit" disabled={renameMutation.isPending}>
             {renameMutation.isPending ? '...' : translation['BUTTON_OK']}
-          </button>
+          </Button>
         </fieldset>
       </form>
     </DefaultModal>

@@ -6,6 +6,7 @@ import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
 import Checkbox from '../../shared-components/inputs/checkbox';
 import { useTranslation } from '../../api/hooks/useTranslation';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {},
@@ -27,26 +28,6 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 17,
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    '&:hover': {
-      background: '#8fc32d',
-    },
   },
   planner_popup_video: {
     marginTop: 20,
@@ -111,9 +92,7 @@ const ImageUploadPopup = (props) => {
         </div>
 
         <div className={classes.planner_btn_done_wrap}>
-          <div className={classes.planner_btn_done} onClick={onClickOk}>
-            {translation['BUTTON_OK']}
-          </div>
+          <Button onClick={onClickOk}>{translation['BUTTON_OK']}</Button>
         </div>
 
         <div className={classes.compare_checkbox_wr}>

@@ -12,6 +12,7 @@ import {
 import TextInput from '../../shared-components/inputs/text-input';
 import { createProjectUrl } from '../../utils/UrlHelper';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
@@ -42,31 +43,6 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 25,
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
   },
   planner_btn_done_disabled: {
     border: '1px solid #999999',
@@ -211,6 +187,7 @@ const UpdatePassword = (props) => {
             {type == 'update' ? (
               <>
                 <TextInput
+                  inset
                   name="old_password"
                   type="password"
                   label={translation['OLD_PASSWORD']}
@@ -221,6 +198,7 @@ const UpdatePassword = (props) => {
             ) : null}
 
             <TextInput
+              inset
               name="new_password"
               type="password"
               label={translation['TEXT_NEW_PASSWORD']}
@@ -229,6 +207,7 @@ const UpdatePassword = (props) => {
             />
 
             <TextInput
+              inset
               name="verify_password"
               type="password"
               label={translation['TEXT_VERIFY_PASSWORD']}
@@ -237,13 +216,14 @@ const UpdatePassword = (props) => {
             />
 
             <div className={classes.planner_btn_done_wr}>
-              <input
+              <Button
                 ref={inputSubmit}
-                className={classes.planner_btn_done + ' ' + classes.planner_btn_done_disabled}
+                className={classes.planner_btn_done_disabled}
                 disabled
                 type="submit"
-                value="Ok"
-              />
+              >
+                Ok
+              </Button>
             </div>
           </form>
         </div>

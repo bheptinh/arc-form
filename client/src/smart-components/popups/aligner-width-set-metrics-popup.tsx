@@ -7,6 +7,7 @@ import { user } from '../../initR2D';
 import { changeMetricsActive, selectMetrics } from '../../redux/features/metrics/metricsSLice';
 import { closeActivePopup, setActivePopup } from '../../redux/features/popups/popupsSlice';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
@@ -35,31 +36,6 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
   },
   bar_dropdown_wrap: {
     position: 'relative',
@@ -197,9 +173,7 @@ const AlignerWidthSetMetricsPopup = (props) => {
         </div>
 
         <div className={classes.planner_btn_done_wrap}>
-          <div className={classes.planner_btn_done} onClick={onClickOk}>
-            {translation['RENDER_CONTINUE']}
-          </div>
+          <Button onClick={onClickOk}>{translation['RENDER_CONTINUE']}</Button>
         </div>
       </div>
     </DefaultModal>

@@ -17,6 +17,7 @@ import {
 } from '../../../redux/features/user/userSlice';
 import { setActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
 import DefaultModal from '../../../shared-components/modals/default';
+import Radio from '../../../shared-components/inputs/radio';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
@@ -32,64 +33,6 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
   },
   planner_popup_export: {},
-  export_button: {
-    marginTop: 10,
-    cursor: 'pointer',
-    '& input': {
-      marginRight: 5,
-      position: 'absolute',
-      zIndex: '-1',
-      opacity: 0,
-      '&:checked': {
-        '&+label:after': {
-          opacity: 1,
-        },
-      },
-    },
-    '& label': {
-      fontSize: 14,
-      color: '#2F2F2F',
-      position: 'relative',
-      cursor: 'pointer',
-      '& span': {
-        color: '#73909F',
-      },
-      '&:before': {
-        content: '" "',
-        transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-        width: 16,
-        height: 16,
-        borderRadius: '50%',
-        background: '#E7E7E7',
-        position: 'absolute',
-        boxShadow:
-          '0px 1px 0px 0px rgb(255 255 255 / 0%), inset 0px 1px 0px 0px rgb(191 191 191 / 85%)',
-        left: -20,
-        top: 0,
-        bottom: 0,
-      },
-      '&:after': {
-        content: '" "',
-        transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-        width: 7,
-        height: 7,
-        borderRadius: '50%',
-        background: '#9DD900',
-        border: '1px solid #9DD112',
-        position: 'absolute',
-        left: -16,
-        top: 4,
-        bottom: 0,
-        opacity: 0,
-      },
-      '@media screen and (max-width: 950px)': {
-        fontSize: 11,
-      },
-    },
-    '@media screen and (max-width: 950px)': {
-      marginTop: 6,
-    },
-  },
   export_button_recomm: {},
   formatColumns: {
     display: 'flex',
@@ -417,18 +360,16 @@ const ExportPopup = (props) => {
               <div className={classes.formatColumn_bottom_title}></div>
               <div className={classes.formatColumn_bottom_formats}>
                 {formats2D.map((item, index) => (
-                  <div key={index} className={classes.export_button}>
-                    <input
-                      type="radio"
-                      name="react-tips"
-                      id={'format2d_' + index}
-                      value={item.format}
-                      checked={formats2D[currentFormat2D]?.format === item.format}
-                      onChange={(e) => handleOptionChange2D(index)}
-                      className="form-check-input"
-                    />
-                    <label htmlFor={'format2d_' + index}>{item.format.toUpperCase()}</label>
-                  </div>
+                  <Radio
+                    key={index}
+                    name="react-tips"
+                    id={'format2d_' + index}
+                    value={item.format}
+                    checked={formats2D[currentFormat2D]?.format === item.format}
+                    onChange={() => handleOptionChange2D(index)}
+                  >
+                    {item.format.toUpperCase()}
+                  </Radio>
                 ))}
               </div>
             </div>
@@ -445,34 +386,30 @@ const ExportPopup = (props) => {
               </div>
               <div className={classes.formatColumn_bottom_formats}>
                 {formats.map((item, index) => (
-                  <div key={index} className={classes.export_button}>
-                    <input
-                      type="radio"
-                      name="react-tips"
-                      id={'format_' + index}
-                      value={item.format}
-                      checked={formats[currentFormat]?.format === item.format}
-                      onChange={(e) => handleOptionChange(index)}
-                      className="form-check-input"
-                    />
-                    <label htmlFor={'format_' + index}>
-                      {item.format.toUpperCase()}
-                      {item.recommended.length > 0 ? (
-                        <span>
-                          <span> - </span>
-                          <span className={classes.export_button_recomm}>
-                            {item.recommended.map(
-                              (recommended) =>
-                                recommended +
-                                (recommended == item.recommended[item.recommended.length - 1]
-                                  ? ''
-                                  : ', ')
-                            )}
-                          </span>
+                  <Radio
+                    key={index}
+                    name="react-tips"
+                    id={'format_' + index}
+                    value={item.format}
+                    checked={formats[currentFormat]?.format === item.format}
+                    onChange={() => handleOptionChange(index)}
+                  >
+                    {item.format.toUpperCase()}
+                    {item.recommended.length > 0 ? (
+                      <span>
+                        <span> - </span>
+                        <span className={classes.export_button_recomm}>
+                          {item.recommended.map(
+                            (recommended) =>
+                              recommended +
+                              (recommended == item.recommended[item.recommended.length - 1]
+                                ? ''
+                                : ', ')
+                          )}
                         </span>
-                      ) : null}
-                    </label>
-                  </div>
+                      </span>
+                    ) : null}
+                  </Radio>
                 ))}
               </div>
             </div>

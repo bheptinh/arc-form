@@ -27,6 +27,7 @@ import { confirm } from '../../shared-components/ConfirmDialog';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
 import { createProjectUrl } from '../../utils/UrlHelper';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   formContent: {
@@ -41,58 +42,6 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  planner_btn: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    border: '1px solid #000',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#E9E9E9',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
   },
 });
 
@@ -286,6 +235,7 @@ export default function ProjectSetNamePopup() {
     >
       <form ref={changeProjectForm} onSubmit={onSubmit} className={classes.formContent}>
         <TextInput
+          inset
           name="name"
           type="text"
           defaultValue={projectActiveName.name}
@@ -295,12 +245,10 @@ export default function ProjectSetNamePopup() {
         />
 
         <fieldset className={classes.planner_btn_done_wrap}>
-          <button className={classes.planner_btn} onClick={onClickClosePopUp} type="button">
+          <Button variant="secondary" onClick={onClickClosePopUp} type="button">
             {translation['BUTTON_CANCEL']}
-          </button>
-          <button className={classes.planner_btn_done} type="submit">
-            {translation['BUTTON_OK']}
-          </button>
+          </Button>
+          <Button type="submit">{translation['BUTTON_OK']}</Button>
         </fieldset>
       </form>
     </DefaultModal>

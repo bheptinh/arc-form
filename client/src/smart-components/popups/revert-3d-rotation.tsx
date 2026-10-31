@@ -7,6 +7,7 @@ import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
 import Checkbox from '../../shared-components/inputs/checkbox';
 import { useTranslation } from '../../api/hooks/useTranslation';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {},
@@ -27,53 +28,6 @@ const useStyle = createUseStyles({
     display: 'grid',
     gridTemplateColumns: 'auto auto',
     justifyContent: 'center',
-  },
-  planner_btn: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    border: '1px solid #000',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-  },
-  planner_btn_done: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
   },
   compare_checkbox_wr: {
     marginTop: 15,
@@ -128,12 +82,10 @@ const Revert3DRotation = (props) => {
         <p dangerouslySetInnerHTML={{ __html: translation['REVERT_3D_ROTATION_POPUP_TEXT'] }}></p>
       </div>
       <div className={classes.planner_popup_bottom}>
-        <span className={classes.planner_btn_done} onClick={onClickOk}>
-          {translation['BUTTON_YES']}
-        </span>
-        <span className={classes.planner_btn} onClick={onClickClosePopUp}>
+        <Button onClick={onClickOk}>{translation['BUTTON_YES']}</Button>
+        <Button variant="secondary" onClick={onClickClosePopUp}>
           {translation['BUTTON_NO']}
-        </span>
+        </Button>
       </div>
       <div className={classes.compare_checkbox_wr} ref={checkBoxRef}>
         <Checkbox

@@ -22,6 +22,8 @@ import {
 import Checkbox from '../../shared-components/inputs/checkbox';
 import DefaultModal from '../../shared-components/modals/default';
 import { useEffectAsync } from '../../utils/useEffectAsync';
+import TextArea from '../../shared-components/inputs/text-area';
+import TextInput from '../../shared-components/inputs/text-input';
 // import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
 
 const useStyle = createUseStyles({
@@ -101,23 +103,6 @@ const useStyle = createUseStyles({
     '@media screen and (max-width: 950px)': {
       height: 26,
       fontSize: 11,
-    },
-  },
-  formTextarea: {
-    padding: 5,
-    fontSize: 14,
-    borderRadius: 3,
-    color: '#000',
-    width: '100%',
-    border: '1px solid #e8dede',
-    height: 100,
-    background: '#ffffff',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-      height: 55,
     },
   },
 
@@ -326,10 +311,9 @@ export default function SharePopup() {
                   : translation['TEXT_SHARE_LINK_TO_PROJECT']}
               </div>
               <div className={classes.formInputWr}>
-                <input
+                <TextInput
                   ref={inputRef}
-                  className={classes.formInput}
-                  type="text"
+                  inputClassName={classes.formInput}
                   name="link"
                   readOnly
                   value={createdLink}
@@ -391,9 +375,7 @@ export default function SharePopup() {
             {popupType != 'tour' ? (
               <div className={classes.input_wr}>
                 <div className={classes.planner_popup_text}>{translation['TEXT_SHARE_EMBED']}</div>
-                <textarea
-                  className={classes.formTextarea}
-                  type="text"
+                <TextArea
                   name="embed"
                   readOnly
                   value={
@@ -414,9 +396,8 @@ export default function SharePopup() {
           {popupType != 'tour' ? (
             <fieldset className={classes.planner_popup_bottom}>
               <div>{translation['TEXT_SHARE_EMBED_SIZE']}</div>
-              <input
-                type="text"
-                className={classes.formInputSize}
+              <TextInput
+                inputClassName={classes.formInputSize}
                 onChange={(e) =>
                   isNaN(e.target.value) ? setWidth(800) : setWidth(+e.target.value)
                 }
@@ -424,9 +405,8 @@ export default function SharePopup() {
                 value={width}
               />
               x
-              <input
-                type="text"
-                className={classes.formInputSize}
+              <TextInput
+                inputClassName={classes.formInputSize}
                 onChange={(e) =>
                   isNaN(e.target.value) ? setHeight(600) : setHeight(e.target.value)
                 }

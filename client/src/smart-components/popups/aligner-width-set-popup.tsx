@@ -8,6 +8,8 @@ import { selectMetrics } from '../../redux/features/metrics/metricsSLice';
 import { closeActivePopup } from '../../redux/features/popups/popupsSlice';
 import { useTranslation } from '../../api/hooks/useTranslation';
 import DefaultModal from '../../shared-components/modals/default';
+import Button from '../../shared-components/inputs/button';
+import TextInput from '../../shared-components/inputs/text-input';
 
 const useStyle = createUseStyles({
   planner_popup_wr: {
@@ -35,79 +37,15 @@ const useStyle = createUseStyles({
     gridTemplateColumns: 'auto auto',
     justifyContent: 'center',
   },
-  planner_btn_ok: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: '#BBE521',
-    textTransform: 'uppercase',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#8fc32d',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
-  planner_btn_close: {
-    cursor: 'pointer',
-    height: '35px',
-    display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    color: '#2B2B2B',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    minWidth: 120,
-    outline: 'none',
-    background: '#fff',
-    textTransform: 'uppercase',
-    border: '1px solid #000',
-    margin: '0 3px',
-    '&:hover': {
-      background: '#E9E9E9',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: 12,
-      height: '26px',
-      minWidth: 88,
-    },
-  },
+  planner_btn_ok: {},
   popup_input: {
     padding: '0 10px',
     marginBottom: '20px',
   },
   popup_input_error: {
-    '& > input': {
+    '& input': {
       border: '1px solid red',
     },
-  },
-  formInput: {
-    borderRadius: 3,
-    paddingLeft: 10,
-    fontSize: 14,
-    color: '#000',
-    width: '100%',
-    border: '1px solid #e8dede',
-    height: 30,
-    background: '#ffffff',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
   },
   planner_btn_disabled: {
     opacity: '.5',
@@ -124,7 +62,7 @@ const AlignerWidthSetPopup = (props) => {
   const metrics = useSelector(selectMetrics);
   const [textErrorStatus, setTextErrorStatus] = useState(false);
   const [animPopupClass, setAnimPopupClass] = useState(false);
-  const [inputType, setInputType] = useState('number');
+  const [inputType, setInputType] = useState<'number' | 'text'>('number');
   const [inputDefaultValue, setInputDefaultValue] = useState(
     planner.units.valueToString(WC.WallsEditor._instance.state.getAlignerValue())
   );
@@ -165,7 +103,7 @@ const AlignerWidthSetPopup = (props) => {
 
   const classes = useStyle();
 
-  const alignerWidth = useRef();
+  const alignerWidth = useRef<any>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => setAnimPopupClass(true), 0);
@@ -212,8 +150,7 @@ const AlignerWidthSetPopup = (props) => {
           <p>{`${translation['TEXT_RULER_TYPE_SIZE']} ${metrics.active}`}</p>
         </div>
         <div className={classes.popup_input}>
-          <input
-            className={classes.formInput}
+          <TextInput
             type={inputType}
             value={inputDefaultValue}
             onChange={onBlurInput}
@@ -222,12 +159,12 @@ const AlignerWidthSetPopup = (props) => {
           />
         </div>
         <div className={classes.planner_popup_bottom}>
-          <button className={classes.planner_btn_close} onClick={onClose}>
+          <Button variant="secondary" onClick={onClose}>
             {translation['BUTTON_CANCEL']}
-          </button>
-          <button className={classes.planner_btn_ok} onClick={onClickOk}>
+          </Button>
+          <Button className={classes.planner_btn_ok} onClick={onClickOk}>
             {translation['BUTTON_OK']}
-          </button>
+          </Button>
         </div>
       </div>
     </DefaultModal>

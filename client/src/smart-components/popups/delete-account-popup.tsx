@@ -21,6 +21,7 @@ import {
 import { removeQuickPanelAll } from '../../redux/features/quickPanels/quickPanelsSlice';
 import { userLogout } from '../../redux/features/user/userSlice';
 import DefaultModal from '../../shared-components/modals/default';
+import TextInput from '../../shared-components/inputs/text-input';
 
 const delete_account_text = {
   color: '#2F2F2F',
@@ -79,6 +80,7 @@ const useStyle = createUseStyles({
     marginRight: 4,
     '& input': {
       borderRadius: 2.5,
+      height: 'auto',
       padding: '8px 10px',
       border: '1px solid #E6E6E6',
       transition: 'all .5s ease',
@@ -177,7 +179,7 @@ const DeleteAccountPopup = (props) => {
                 <form onSubmit={onSubmitForm}>
                   <fieldset className={classes.delete_account_fieldset}>
                     <div className={classes.delete_account_input}>
-                      <input type="text" name="deleteAccountText" onChange={onChangeInput} />
+                      <TextInput name="deleteAccountText" onChange={onChangeInput} />
                     </div>
                     <div className={classes.delete_account_btn}>
                       <input type="submit" name="deleteAccountSubmit" value="Confirm deletion" />
