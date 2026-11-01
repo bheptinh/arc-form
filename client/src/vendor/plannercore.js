@@ -64800,8 +64800,8 @@ WC.StateEditing = function()
                 if (A.children[i].contour != B.children[j].contour) continue;
 
                 let cover = A.children[i].contour;
-                indA = cover.points.indexOf(A.children[i]);
-                indB = cover.points.indexOf(B.children[j]);
+                let indA = cover.points.indexOf(A.children[i]);
+                let indB = cover.points.indexOf(B.children[j]);
 
                 if (Math.abs(indA - indB) > 1)
                 {
@@ -64809,7 +64809,7 @@ WC.StateEditing = function()
                          ((indA == cover.points.length - 1 && indB == 0))) continue;
                 }
 
-                insTo = Math.max(indA, indB);
+                let insTo = Math.max(indA, indB);
                 if (Math.abs(indA - indB) > 1) insTo = 0;
 
                 let cp = new WC.CPoint(WC.realPos.x, WC.realPos.y, WC.COVER_POINT);
