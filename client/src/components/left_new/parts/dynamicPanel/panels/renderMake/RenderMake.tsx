@@ -67,8 +67,8 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
   },
   plannerRenderViewTypes_type_active: {
-    border: '1px solid #9DD900',
-    color: '#ffffff',
+    border: '1px solid var(--color-accent-strong)',
+    color: 'var(--color-white)',
     cursor: 'default',
   },
   plannerRenderViewTypes_screens: {
@@ -99,10 +99,10 @@ const useStyle = createUseStyles({
     },
   },
   plannerRenderViewTypes_screen_active: {
-    border: '1px solid #9DD900',
+    border: '1px solid var(--color-accent-strong)',
     cursor: 'default',
     '& span': {
-      background: '#ffffff',
+      background: 'var(--color-white)',
     },
   },
   planner_popup_close: {
@@ -113,10 +113,10 @@ const useStyle = createUseStyles({
     right: 8,
     cursor: 'pointer',
     zIndex: 2,
-    color: '#fff',
+    color: 'var(--color-white)',
 
     '&:hover': {
-      color: '#BAE51F',
+      color: 'var(--color-accent)',
     },
   },
   planner_popup_close_icon: {
@@ -128,8 +128,8 @@ const useStyle = createUseStyles({
     bottom: 0,
     width: 30,
     height: 30,
-    background: '#fff',
-    border: '1px solid #fff',
+    background: 'var(--color-white)',
+    border: '1px solid var(--color-white)',
     borderRadius: 3,
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
     display: 'flex',
@@ -142,7 +142,7 @@ const useStyle = createUseStyles({
       width: '64.3%',
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
 });

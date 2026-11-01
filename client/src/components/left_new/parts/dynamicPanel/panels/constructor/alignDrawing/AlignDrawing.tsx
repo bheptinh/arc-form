@@ -14,7 +14,7 @@ const useStyle = createUseStyles({
     height: '100%',
     overflow: 'hidden',
     zIndex: 1,
-    borderLeft: '1px solid #E0E0E0',
+    borderLeft: '1px solid var(--color-border-faint)',
   },
 });
 

@@ -29,19 +29,19 @@ const useStyle = createUseStyles({
     height: '100%',
     display: 'grid',
     position: 'absolute',
-    background: '#fff',
+    background: 'var(--color-white)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    borderRight: '1px solid #cdcdcd',
+    borderRight: '1px solid var(--color-border-light)',
   },
   planerWallsWrap: {
     height: '100%',
-    background: '#fff',
+    background: 'var(--color-white)',
   },
   planerConstItemWrap: {
     width: '100%',
   },
   planerConstItemText: {
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     fontSize: 14,
   },
   planerConstItem: {
@@ -53,10 +53,10 @@ const useStyle = createUseStyles({
     zIndex: 1,
     gridGap: '11px',
     position: 'relative',
-    background: '#FFFFFF',
+    background: 'var(--color-white)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     alignItems: 'center',
-    borderBottom: '1px solid #E9E9E9',
+    borderBottom: '1px solid var(--color-surface-muted)',
     '&:after': {
       top: '0',
       left: '0',
@@ -65,11 +65,11 @@ const useStyle = createUseStyles({
       content: '""',
       zIndex: -1,
       position: 'absolute',
-      background: 'linear-gradient(to bottom, #F5F3F3, transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {
-      background: '#B8E11F',
+      background: 'var(--color-accent-soft)',
       '&:after': {
         opacity: 0,
       },

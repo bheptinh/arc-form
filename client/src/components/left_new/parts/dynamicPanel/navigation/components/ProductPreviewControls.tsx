@@ -39,7 +39,7 @@ const useStyle = createUseStyles({
     },
   },
   fil_wr: {
-    background: '#fff',
+    background: 'var(--color-white)',
     display: 'inline-block',
     minWidth: 'calc(262px + 6px)',
     borderRadius: '3px',
@@ -58,7 +58,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'auto',
     },
     '&:hover $fil_item': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   fil_item: {
@@ -70,14 +70,14 @@ const useStyle = createUseStyles({
     gridGap: '17px',
     cursor: 'pointer',
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    background: '#fff',
+    background: 'var(--color-white)',
     position: 'relative',
     zIndex: 1,
   },
   fil_item_elem: {
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     '&:hover:not($fil_item_elem_active)': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   fil_item_icon_wr: {
@@ -107,7 +107,7 @@ const useStyle = createUseStyles({
     whiteSpace: 'nowrap',
   },
   fil_second_wr: {
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: '3px',
     padding: '7px 0',
     boxShadow: '0 0 6px 0 rgba(0, 0, 0, 0.15)',
@@ -126,7 +126,7 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
   },
   fil_item_elem_active: {
-    background: '#B8E11F',
+    background: 'var(--color-accent-soft)',
   },
   switch_wr: {
     position: 'relative',
@@ -141,7 +141,7 @@ const useStyle = createUseStyles({
     left: '0',
     right: '0',
     bottom: '0',
-    backgroundColor: '#D9D9D9',
+    backgroundColor: 'var(--color-surface-grey)',
     WebkitTransition: '.4s',
     transition: '.4s',
     borderRadius: '8px',
@@ -153,7 +153,7 @@ const useStyle = createUseStyles({
       width: '13px',
       left: '0px',
       bottom: '-1px',
-      backgroundColor: '#2A3435',
+      backgroundColor: 'var(--color-text-slate)',
       transition: '.4s',
       borderRadius: '50%',
     },

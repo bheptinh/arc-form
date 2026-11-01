@@ -20,8 +20,8 @@ import MaterialComponent from '../../components/MaterialComponent';
 
 const useStyle = createUseStyles({
   planerWallsCont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -37,12 +37,12 @@ const useStyle = createUseStyles({
   },
   planerWallsWrap: {
     height: '100%',
-    background: '#fff',
+    background: 'var(--color-white)',
     overflow: 'hidden',
   },
   title: {
     fontSize: 17,
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     marginBottom: 17,
     fontFamily: 'RobotoCondensed-Regular',
     '@media screen and (max-width: 950px)': {
@@ -72,7 +72,7 @@ const useStyle = createUseStyles({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    border: '1px solid #cdcdcd',
+    border: '1px solid var(--color-border-light)',
     borderRadius: 6,
     overflow: 'hidden',
     cursor: 'pointer',
@@ -80,7 +80,7 @@ const useStyle = createUseStyles({
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     marginBottom: 20,
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
     '& svg': {
       flex: 1,
@@ -100,7 +100,7 @@ const useStyle = createUseStyles({
   },
   groupText: {
     fontSize: 13,
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     flex: 1,
     '@media screen and (max-width: 950px)': {
       fontSize: 11,
@@ -116,20 +116,20 @@ const useStyle = createUseStyles({
   changeSizesLockLine1: {
     width: '100%',
     height: 11,
-    borderTop: '1px solid #A1A1A1',
-    borderRight: '1px solid #A1A1A1',
+    borderTop: '1px solid var(--color-border-grey)',
+    borderRight: '1px solid var(--color-border-grey)',
     opacity: '0.5',
   },
   changeSizesLockLine2: {
-    borderTop: '1px solid #A1A1A1',
+    borderTop: '1px solid var(--color-border-grey)',
     opacity: '0.5',
     width: 13,
   },
   changeSizesLockLine3: {
     width: '100%',
     height: 11,
-    borderBottom: '1px solid #A1A1A1',
-    borderRight: '1px solid #A1A1A1',
+    borderBottom: '1px solid var(--color-border-grey)',
+    borderRight: '1px solid var(--color-border-grey)',
     opacity: '0.5',
   },
   zamokLock: {

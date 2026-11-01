@@ -11,9 +11,9 @@ const useStyle = createUseStyles({
   planerEditFloorWr: {
     padding: 20,
     transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    borderRight: '1px solid #cdcdcd',
+    borderRight: '1px solid var(--color-border-light)',
     height: '100%',
-    background: '#ffffff',
+    background: 'var(--color-white)',
     display: 'flex',
     flexDirection: 'column',
     gap: '12px',

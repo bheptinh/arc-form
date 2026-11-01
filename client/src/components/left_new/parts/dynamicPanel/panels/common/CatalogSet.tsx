@@ -13,8 +13,8 @@ import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
   planer_catalog_cont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -32,8 +32,8 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    background: '#fff',
-    borderTop: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderTop: '1px solid var(--color-border)',
   },
   planer_catalog_items: {
     height: '100%',
@@ -45,7 +45,7 @@ const useStyle = createUseStyles({
     position: 'relative',
     height: 160,
     cursor: 'pointer',
-    borderBottom: '1px solid #E9E9E9',
+    borderBottom: '1px solid var(--color-surface-muted)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '""',
@@ -54,7 +54,7 @@ const useStyle = createUseStyles({
       left: 0,
       width: 'calc(100%)',
       height: 29,
-      background: 'linear-gradient(to bottom, #F5F3F3, transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
       pointerEvents: 'none',
       zIndex: 1,
       opacity: '0.7',
@@ -89,7 +89,7 @@ const useStyle = createUseStyles({
     left: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -98,7 +98,7 @@ const useStyle = createUseStyles({
       top: 2,
       height: 'calc(100% - 4px)',
       width: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   planner_cat_item_hover_top: {
@@ -109,7 +109,7 @@ const useStyle = createUseStyles({
     left: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -118,7 +118,7 @@ const useStyle = createUseStyles({
       left: 2,
       width: 'calc(100% - 4px)',
       height: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   planner_cat_item_hover_right: {
@@ -129,7 +129,7 @@ const useStyle = createUseStyles({
     right: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -138,7 +138,7 @@ const useStyle = createUseStyles({
       top: 2,
       height: 'calc(100% - 4px)',
       width: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   planner_cat_item_hover_bottom: {
@@ -149,7 +149,7 @@ const useStyle = createUseStyles({
     right: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -158,7 +158,7 @@ const useStyle = createUseStyles({
       left: 2,
       width: 'calc(100% - 4px)',
       height: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   planner_cat_item_small: {
@@ -169,10 +169,10 @@ const useStyle = createUseStyles({
     zIndex: 1,
     gridGap: '11px',
     position: 'relative',
-    background: '#FFFFFF',
+    background: 'var(--color-white)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     alignItems: 'center',
-    borderBottom: '1px solid #E9E9E9',
+    borderBottom: '1px solid var(--color-surface-muted)',
     gridTemplateColumns: '103px auto',
     '&:before': {
       display: 'none',
@@ -183,7 +183,7 @@ const useStyle = createUseStyles({
       justifyContent: 'center',
     },
     '& $planner_cat_item_title': {
-      color: '#2F2F2F',
+      color: 'var(--color-text)',
       position: 'relative',
       padding: 0,
     },

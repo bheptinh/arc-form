@@ -12,9 +12,9 @@ import HoverComponent from '../../left_new/parts/controlPanel/components/HoverCo
 const useStyles = createUseStyles({
   btn_ruler: {
     cursor: 'pointer',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     display: 'flex',
     justifyContent: 'center',
     height: '100%',
@@ -24,11 +24,11 @@ const useStyles = createUseStyles({
     marginRight: '1px',
     transition: 'background 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   btn_ruler_active: {
-    background: '#B8E11F',
+    background: 'var(--color-accent-soft)',
   },
 });
 

@@ -25,9 +25,9 @@ const useStyles = createUseStyles({
   },
   info: {
     fontSize: 13,
-    color: '#373737',
+    color: 'var(--color-text-muted)',
     '& a': {
-      color: '#66ACF4',
+      color: 'var(--color-info)',
       marginTop: 4,
       textDecoration: 'underline',
       display: 'block',
@@ -37,9 +37,9 @@ const useStyles = createUseStyles({
   createBtn: {
     flexShrink: 0,
     fontSize: 14,
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     textTransform: 'uppercase',
-    background: '#BAE51F',
+    background: 'var(--color-accent)',
     borderRadius: 3,
     display: 'flex',
     alignItems: 'center',
@@ -48,7 +48,7 @@ const useStyles = createUseStyles({
     padding: '0 14px',
     cursor: 'pointer',
     transition: 'all 0.9s cubic-bezier(0.19,1,0.22,1)',
-    '&:hover': { background: '#8fc32d' },
+    '&:hover': { background: 'var(--color-accent-hover)' },
     '@media screen and (max-width: 950px)': { fontSize: 10, height: 28, padding: '0 7px' },
   },
   grid: {

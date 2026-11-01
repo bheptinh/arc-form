@@ -25,7 +25,7 @@ const useStyle = createUseStyles({
     transform: 'translateX(-50%)',
   },
   info_logoMesh_bottom: {
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
     display: 'flex',
@@ -35,9 +35,9 @@ const useStyle = createUseStyles({
     display: 'none',
     position: 'absolute',
     top: 0,
-    background: '#ffffff',
+    background: 'var(--color-white)',
     fontSize: 17,
-    border: '1px solid #000',
+    border: '1px solid var(--color-black)',
     padding: 5,
     width: 'max-content',
     borderRadius: 6,
@@ -53,7 +53,7 @@ const useStyle = createUseStyles({
     transition: 'background 0.9s cubic-bezier(.19,1,.22,1)',
     cursor: 'pointer',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   info_logoMesh_bottom_buttons: {

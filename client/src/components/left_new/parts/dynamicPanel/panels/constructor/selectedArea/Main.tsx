@@ -20,14 +20,14 @@ const useStyle = createUseStyles({
     height: '100%',
     display: 'grid',
     position: 'absolute',
-    background: '#F1F1F1',
+    background: 'var(--color-surface-subtle)',
     transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    borderRight: '1px solid #cdcdcd',
+    borderRight: '1px solid var(--color-border-light)',
   },
   planerWallsWrap: {
     height: '100%',
     overflow: 'auto',
-    background: '#fff',
+    background: 'var(--color-white)',
     padding: 20,
   },
   planerWallsTitle: {
@@ -47,7 +47,7 @@ const useStyle = createUseStyles({
   },
   planerDelete: {
     height: 120,
-    border: '1px solid #d9d9d9',
+    border: '1px solid var(--color-surface-grey)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     cursor: 'pointer',
     display: 'flex',

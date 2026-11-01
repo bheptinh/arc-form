@@ -5,7 +5,7 @@ const useStyles = createUseStyles({
   '@global': {
     '.hover_elem': {
       position: 'fixed',
-      background: '#81E7FF',
+      background: 'var(--color-info-bright)',
       fontSize: 12,
       width: 'max-content',
       padding: '6px 10px',

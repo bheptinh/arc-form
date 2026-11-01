@@ -18,14 +18,14 @@ const useStyle = createUseStyles({
   info_model_btn: {
     width: 32,
     height: 32,
-    background: '#fff',
+    background: 'var(--color-white)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     cursor: 'pointer',
     userSelect: 'none',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     position: 'relative',
     transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
     '& img': {
@@ -33,7 +33,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   info_model_btn_overlay: {

@@ -21,8 +21,8 @@ import CloseModeBtn from '../common/CloseModeBtn';
 
 const useStyle = createUseStyles({
   plannerWallsCont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
     width: '100%',
@@ -36,9 +36,9 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    background: '#fff',
-    borderTop: '1px solid #C6C4C4',
-    borderBottom: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderTop: '1px solid var(--color-border)',
+    borderBottom: '1px solid var(--color-border)',
   },
   divideWallGrid: {
     marginBottom: 20,
@@ -51,11 +51,11 @@ const useStyle = createUseStyles({
     zIndex: 1,
     gridGap: '11px',
     position: 'relative',
-    background: '#FFFFFF',
+    background: 'var(--color-white)',
     textAlign: 'center',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     alignItems: 'center',
-    borderBottom: '1px solid #E9E9E9',
+    borderBottom: '1px solid var(--color-surface-muted)',
     '&:after': {
       top: '0',
       left: '0',
@@ -64,11 +64,11 @@ const useStyle = createUseStyles({
       content: '""',
       zIndex: -1,
       position: 'absolute',
-      background: 'linear-gradient(to bottom, #F5F3F3, transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {
-      background: '#B8E11F',
+      background: 'var(--color-accent-soft)',
     },
   },
   item_img_wr: {
@@ -83,7 +83,7 @@ const useStyle = createUseStyles({
     },
   },
   plannerConstItemText: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontSize: 14,
   },
   lockImg: {},
@@ -107,26 +107,26 @@ const useStyle = createUseStyles({
     border: 'none',
     outline: 'none',
     textTransform: 'uppercase',
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
   },
   plannerWallsWrap_button_cancel: {
     justifyContent: 'flex-start',
-    border: '1px solid #000000',
+    border: '1px solid var(--color-black)',
     '& svg': {
       marginRight: 10,
     },
     '& p': {
       flex: 2,
       textAlign: 'center',
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
     },
     '&:hover': {
-      background: '#E9E9E9',
-      color: '#ffffff',
+      background: 'var(--color-surface-muted)',
+      color: 'var(--color-white)',
     },
   },
   plannerWallsWrap_button_save: {
-    background: '#fff',
+    background: 'var(--color-white)',
     color: '#A7A7A7',
     border: '1px solid #A7A7A7',
     '& svg': {
@@ -144,12 +144,12 @@ const useStyle = createUseStyles({
       display: 'block',
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   plannerWallsWrap_button_save_ready: {
     justifyContent: 'flex-start',
-    background: '#BBE521',
+    background: 'var(--color-accent-bright)',
     '& svg': {
       marginRight: 10,
       '& path, & rect': {
@@ -160,10 +160,10 @@ const useStyle = createUseStyles({
       flex: 2,
       textAlign: 'center',
       marginRight: 0,
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
     },
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
   },
 });

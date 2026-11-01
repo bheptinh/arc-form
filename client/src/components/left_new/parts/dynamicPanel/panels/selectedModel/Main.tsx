@@ -50,7 +50,7 @@ const plannerChangeRotation = {
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
-    background: '#fff',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -60,7 +60,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     left: 0,
     top: 0,
-    borderRight: '1px solid #cdcdcd',
+    borderRight: '1px solid var(--color-border-light)',
     '@media screen and (max-width: 950px)': {
       width: 189,
     },
@@ -68,21 +68,21 @@ const useStyle = createUseStyles({
   catalog_wr: {
     overflow: 'hidden',
     height: '100%',
-    background: '#fff',
+    background: 'var(--color-white)',
   },
 
   item_info_content: {
     padding: '0 6px 8px 6px',
-    color: '#7B7B7B',
+    color: 'var(--color-text-subtle)',
     fontSize: '13px',
     lineHeight: 1.4,
     marginTop: 8,
     '& span': {
-      color: '#000',
+      color: 'var(--color-black)',
     },
     '&>div>div': {
       fontSize: '17px',
-      color: '#000000',
+      color: 'var(--color-black)',
       display: 'inline-block',
       fontFamily: 'RobotoCondensed-Regular',
     },
@@ -96,7 +96,7 @@ const useStyle = createUseStyles({
     fontSize: '17px',
     fontFamily: 'RobotoCondensed-Regular',
     lineHeight: 0.8,
-    color: ' #000',
+    color: ' var(--color-black)',
     marginBottom: 8,
     '@media screen and (max-width: 950px)': {
       fontSize: 11,
@@ -104,7 +104,7 @@ const useStyle = createUseStyles({
     },
   },
   prod_item_url: {
-    color: '#66ACF4!important',
+    color: 'var(--color-info)!important',
     textTransform: 'lowercase',
     fontSize: '13px !important',
     marginLeft: '9px !important',
@@ -141,7 +141,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: '50%',
-    background: '#fff',
+    background: 'var(--color-white)',
     position: 'absolute',
     top: 5,
     left: 5,
@@ -160,10 +160,10 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        stroke: '#64BCF0',
+        stroke: 'var(--color-icon-info)',
         fillOpacity: 0,
         '@media screen and (max-width: 950px)': {
-          stroke: '#464646',
+          stroke: 'var(--color-icon-dark)',
           fillOpacity: 1,
         },
       },
@@ -171,8 +171,8 @@ const useStyle = createUseStyles({
   },
   prod_item_fav_btn_active: {
     '& path': {
-      fill: '#64BCF0',
-      stroke: '#64BCF0',
+      fill: 'var(--color-icon-info)',
+      stroke: 'var(--color-icon-info)',
       fillOpacity: 1,
     },
   },
@@ -181,7 +181,7 @@ const useStyle = createUseStyles({
     minHeight: '29px',
     backgroundColor: 'rgba(129, 129, 129, 0.9)',
     fontSize: '13px',
-    color: '#fff',
+    color: 'var(--color-white)',
     display: 'flex',
     alignItems: 'center',
     padding: '0 5px',
@@ -228,7 +228,7 @@ const useStyle = createUseStyles({
   },
   plannerChangeRotation_axis_z: {
     extend: plannerChangeRotation_axis,
-    background: '#66ACF4',
+    background: 'var(--color-info)',
   },
   changeSizesLockWr: {
     position: 'relative',
@@ -239,20 +239,20 @@ const useStyle = createUseStyles({
   changeSizesLockLine1: {
     width: '100%',
     height: 11,
-    borderTop: '1px solid #A1A1A1',
-    borderRight: '1px solid #A1A1A1',
+    borderTop: '1px solid var(--color-border-grey)',
+    borderRight: '1px solid var(--color-border-grey)',
     opacity: '0.5',
   },
   changeSizesLockLine2: {
-    borderTop: '1px solid #A1A1A1',
+    borderTop: '1px solid var(--color-border-grey)',
     opacity: '0.5',
     width: 13,
   },
   changeSizesLockLine3: {
     width: '100%',
     height: 11,
-    borderBottom: '1px solid #A1A1A1',
-    borderRight: '1px solid #A1A1A1',
+    borderBottom: '1px solid var(--color-border-grey)',
+    borderRight: '1px solid var(--color-border-grey)',
     opacity: '0.5',
   },
   materialsGrid: {
@@ -269,7 +269,7 @@ const useStyle = createUseStyles({
     borderTop: 0,
     '&>div': {
       height: 151,
-      border: '1px solid #E9E9E9',
+      border: '1px solid var(--color-surface-muted)',
     },
   },
   materialsGrid_3: {
@@ -301,7 +301,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#a0a0a0',
+        fill: 'var(--color-icon)',
       },
     },
   },
@@ -337,7 +337,7 @@ const useStyle = createUseStyles({
   prod_item_color_wr: {
     width: 20,
     height: 20,
-    border: '2px solid #000000',
+    border: '2px solid var(--color-black)',
     cursor: 'pointer',
   },
   prod_item_setting_layer: {
@@ -365,7 +365,7 @@ const useStyle = createUseStyles({
     left: '0',
     right: '0',
     bottom: '0',
-    backgroundColor: '#D9D9D9',
+    backgroundColor: 'var(--color-surface-grey)',
     WebkitTransition: '.4s',
     transition: '.4s',
     borderRadius: '8px',
@@ -377,7 +377,7 @@ const useStyle = createUseStyles({
       width: '13px',
       left: '0px',
       bottom: '-1px',
-      backgroundColor: '#2A3435',
+      backgroundColor: 'var(--color-text-slate)',
       transition: '.4s',
       borderRadius: '50%',
     },
@@ -397,14 +397,14 @@ const useStyle = createUseStyles({
       width: '100%',
       background: '#828282',
       padding: '7px 0',
-      color: '#ffffff',
+      color: 'var(--color-white)',
       fontSize: 13,
       fontWeight: 400,
       border: 'none',
       cursor: 'pointer',
       transition: 'all .3s ease',
       '&:hover': {
-        background: '#ffd119',
+        background: 'var(--color-highlight)',
       },
     },
     '@media screen and (max-width: 950px)': {
@@ -426,7 +426,7 @@ const useStyle = createUseStyles({
   plannerLight_settings: {
     fontSize: 13,
     fontWeight: 400,
-    color: '#66ACF4',
+    color: 'var(--color-info)',
     textDecoration: 'underline',
     cursor: 'pointer',
     transition: 'all .2s ease',
@@ -441,7 +441,7 @@ const useStyle = createUseStyles({
     marginRight: 5,
   },
   plannerLight_button: {
-    background: '#D9D9D9',
+    background: 'var(--color-surface-grey)',
     borderRadius: 8,
     width: 21,
     height: 10,
@@ -470,7 +470,7 @@ const useStyle = createUseStyles({
   },
   wr_top_productURL: {
     width: '100%',
-    background: '#66ACF4',
+    background: 'var(--color-info)',
     padding: '10px 0',
     display: 'flex',
     alignItems: 'center',
@@ -478,7 +478,7 @@ const useStyle = createUseStyles({
     margin: '10px 0 10px',
     textTransform: 'uppercase',
     fontSize: 13,
-    color: '#ffffff',
+    color: 'var(--color-white)',
     cursor: 'pointer',
     transition: 'all .5s ease',
     '& svg': {
@@ -497,7 +497,7 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: '50%',
     transition: 'all .9s cubic-bezier(.19, 1, .22, 1)',
     '& svg': {
@@ -512,25 +512,25 @@ const useStyle = createUseStyles({
   },
   item_info_attributes_brand: {
     '& > span:first-child': {
-      color: '#7B7B7B',
+      color: 'var(--color-text-subtle)',
       fontSize: 13,
       fontWeight: 400,
     },
     '& > span:last-child': {
-      color: '#000000',
+      color: 'var(--color-black)',
       fontSize: 13,
       fontWeight: 400,
     },
   },
   item_info_attributes_price: {
     '& > span:first-child': {
-      color: '#7B7B7B',
+      color: 'var(--color-text-subtle)',
       fontSize: 13,
       fontWeight: 400,
       margin: 0,
     },
     '& > span:last-child': {
-      color: '#000000',
+      color: 'var(--color-black)',
       fontSize: 17,
       fontWeight: 400,
     },
@@ -540,12 +540,12 @@ const useStyle = createUseStyles({
     maxHeight: 200,
     padding: '10px 20px',
     textAlign: 'center',
-    border: '1px solid #BEBCBC',
+    border: '1px solid var(--color-border-strong)',
     position: 'absolute',
     borderRadius: 3,
     display: 'inline',
     zIndex: 105,
-    background: '#fff',
+    background: 'var(--color-white)',
     pointerEvents: 'none',
     '& > div': {
       display: 'flex',
@@ -558,9 +558,9 @@ const useStyle = createUseStyles({
       transform: 'translate(45%, -50%) rotate(135deg)',
       width: 10,
       height: 10,
-      background: '#fff',
-      borderRight: '1px solid #BEBCBC',
-      borderBottom: '1px solid #BEBCBC',
+      background: 'var(--color-white)',
+      borderRight: '1px solid var(--color-border-strong)',
+      borderBottom: '1px solid var(--color-border-strong)',
     },
     '& p': {
       fontSize: 12,

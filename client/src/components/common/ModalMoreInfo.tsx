@@ -22,7 +22,7 @@ const useStyle = createUseStyles({
   },
   item_more_info_content: {
     boxShadow: '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
-    background: '#fff',
+    background: 'var(--color-white)',
     overflow: 'hidden',
     borderRadius: '3px',
     transition: 'all .5s cubic-bezier(.19,1,.22,1)',
@@ -59,7 +59,7 @@ const useStyle = createUseStyles({
     },
   },
   prod_item_title: {
-    color: '#000',
+    color: 'var(--color-black)',
     fontSize: 16,
     padding: '0 13px 0px',
     fontFamily: 'RobotoCondensed-Regular',
@@ -90,7 +90,7 @@ const useStyle = createUseStyles({
     height: '18px',
     borderRadius: '50%',
     margin: '0 1px',
-    border: '1px solid #E9E9E9',
+    border: '1px solid var(--color-surface-muted)',
   },
   item_info_color_more: {
     width: '18px',
@@ -101,7 +101,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
   },
   item_info_content: {
-    color: '#7B7B7B',
+    color: 'var(--color-text-subtle)',
     fontSize: '13px',
     padding: '0 13px 0',
     lineHeight: 1.4,
@@ -117,7 +117,7 @@ const useStyle = createUseStyles({
     },
     '&>div>div': {
       fontSize: '17px',
-      color: '#000000',
+      color: 'var(--color-black)',
       display: 'inline-block',
       marginLeft: 4,
       '@media screen and (max-width: 950px)': {
@@ -131,7 +131,7 @@ const useStyle = createUseStyles({
   },
   item_info_not_essential_attribute: {},
   item_info_content_span: {
-    color: '#000',
+    color: 'var(--color-black)',
   },
 });
 

@@ -11,7 +11,7 @@ import HoverComponent from '../../left_new/parts/controlPanel/components/HoverCo
 
 const useStyles = createUseStyles({
   right_bar_btn: {
-    background: '#fff',
+    background: 'var(--color-white)',
     cursor: 'pointer',
     height: 36,
     display: 'flex',
@@ -22,7 +22,7 @@ const useStyles = createUseStyles({
     borderRadius: 3,
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
     '@media screen and (max-width: 950px)': {
       height: 30,
@@ -30,7 +30,7 @@ const useStyles = createUseStyles({
     },
   },
   right_bar_btn_active: {
-    background: '#BAE51F',
+    background: 'var(--color-accent)',
     position: 'relative',
     '& path, & circle, & rect': {
       fill: '#424242',
@@ -49,7 +49,7 @@ const useStyles = createUseStyles({
   },
   right_bar_btn_hover: {
     position: 'fixed',
-    background: '#81e7ff',
+    background: 'var(--color-info-bright)',
     display: 'none',
     transform: 'translateX(-100%)',
     fontSize: 12,

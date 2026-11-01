@@ -16,7 +16,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#BAE51F',
+        fill: 'var(--color-accent)',
       },
     },
   },

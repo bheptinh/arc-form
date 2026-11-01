@@ -11,7 +11,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     width: 310,
     height: '100%',
-    borderLeft: '1px solid #E0E0E0',
+    borderLeft: '1px solid var(--color-border-faint)',
     left: 0,
     top: 0,
     zIndex: 1,

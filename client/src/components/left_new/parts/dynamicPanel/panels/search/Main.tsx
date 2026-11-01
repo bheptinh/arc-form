@@ -30,8 +30,8 @@ import AdditionalSettings from '../../navigation/components/AdditionalSettings';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -54,7 +54,7 @@ const useStyle = createUseStyles({
     justifyContent: 'space-between',
   },
   searchInput: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     outline: 'none',
     padding: '3px 6px',
     fontSize: '13px',
@@ -81,9 +81,9 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: '#2E3839',
+      background: 'var(--color-surface-slate)',
       '& svg': {
-        stroke: '#fff',
+        stroke: 'var(--color-white)',
       },
     },
   },
@@ -100,7 +100,7 @@ const useStyle = createUseStyles({
   },
   seach_title: {
     fontSize: 13,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontFamily: 'RobotoCondensed-Regular',
     '& span': {
       color: '#939393',
@@ -113,8 +113,8 @@ const useStyle = createUseStyles({
   catalog_wr: {
     overflow: 'hidden',
     height: '100%',
-    background: '#fff',
-    borderTop: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderTop: '1px solid var(--color-border)',
   },
   prod_elem_wrap: {
     display: 'flex',
@@ -129,8 +129,8 @@ const useStyle = createUseStyles({
     gridTemplateRows: 'auto 1fr',
     height: 'auto',
     width: '50%',
-    borderBottom: '1px solid #E9E9E9',
-    borderRight: '1px solid #E9E9E9',
+    borderBottom: '1px solid var(--color-surface-muted)',
+    borderRight: '1px solid var(--color-surface-muted)',
     paddingBottom: '7px',
     '&:hover': {
       '& $prod_item_img_wr img': {
@@ -175,7 +175,7 @@ const useStyle = createUseStyles({
     left: 0,
     pointerEvents: 'none',
     zIndex: 4,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -184,7 +184,7 @@ const useStyle = createUseStyles({
       top: 2,
       height: 'calc(100% - 4px)',
       width: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   prod_item_hover_top: {
@@ -195,7 +195,7 @@ const useStyle = createUseStyles({
     left: 0,
     pointerEvents: 'none',
     zIndex: 4,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -204,7 +204,7 @@ const useStyle = createUseStyles({
       left: 2,
       width: 'calc(100% - 4px)',
       height: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   prod_item_hover_right: {
@@ -215,7 +215,7 @@ const useStyle = createUseStyles({
     right: 0,
     pointerEvents: 'none',
     zIndex: 4,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -224,7 +224,7 @@ const useStyle = createUseStyles({
       top: 2,
       height: 'calc(100% - 4px)',
       width: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   prod_item_hover_bottom: {
@@ -235,7 +235,7 @@ const useStyle = createUseStyles({
     right: 0,
     pointerEvents: 'none',
     zIndex: 4,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -244,7 +244,7 @@ const useStyle = createUseStyles({
       left: 2,
       width: 'calc(100% - 4px)',
       height: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   prod_item_big: {
@@ -389,7 +389,7 @@ const useStyle = createUseStyles({
     pointerEvents: 'auto',
     '&:hover': {
       '& svg': {
-        stroke: '#B8E11F',
+        stroke: 'var(--color-accent-soft)',
       },
     },
   },
@@ -403,7 +403,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: '50%',
-    background: '#fff',
+    background: 'var(--color-white)',
     position: 'absolute',
     top: 5,
     left: 5,
@@ -423,10 +423,10 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        stroke: '#64BCF0',
+        stroke: 'var(--color-icon-info)',
         fillOpacity: 0,
         '@media screen and (max-width: 950px)': {
-          stroke: '#464646',
+          stroke: 'var(--color-icon-dark)',
           fillOpacity: 1,
         },
       },
@@ -435,8 +435,8 @@ const useStyle = createUseStyles({
   prod_item_fav_btn_active: {
     marginBottom: 1,
     '& path': {
-      fill: '#64BCF0',
-      stroke: '#64BCF0',
+      fill: 'var(--color-icon-info)',
+      stroke: 'var(--color-icon-info)',
       fillOpacity: 1,
     },
   },
@@ -446,7 +446,7 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: '50%',
     position: 'absolute',
     top: 5,
@@ -467,14 +467,14 @@ const useStyle = createUseStyles({
     opacity: 0,
     zIndex: 3,
     position: 'absolute',
-    background: '#fff',
+    background: 'var(--color-white)',
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     alignItems: 'center',
     borderRadius: '50%',
     justifyContent: 'center',
     cursor: 'pointer',
     '&:hover svg': {
-      stroke: '#AF3131',
+      stroke: 'var(--color-danger)',
     },
   },
   prod_item_custom_delete: {
@@ -503,7 +503,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: '50%',
-    background: '#fff',
+    background: 'var(--color-white)',
     opacity: 0,
     zIndex: -1,
     transition: 'all .3s cubic-bezier(.19,1,.22,1)',
@@ -526,7 +526,7 @@ const useStyle = createUseStyles({
     height: '18px',
     borderRadius: '50%',
     margin: '0 1px',
-    border: '1px solid #E9E9E9',
+    border: '1px solid var(--color-surface-muted)',
   },
   item_info_color_more: {
     width: '18px',
@@ -537,7 +537,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
   },
   prod_item_title: {
-    color: '#000',
+    color: 'var(--color-black)',
     fontSize: 16,
     padding: '0 13px 0px',
     fontFamily: 'RobotoCondensed-Regular',
@@ -555,7 +555,7 @@ const useStyle = createUseStyles({
     },
   },
   item_info_content: {
-    color: '#7B7B7B',
+    color: 'var(--color-text-subtle)',
     fontSize: '13px',
     padding: '0 13px 0',
     lineHeight: 1.4,
@@ -572,7 +572,7 @@ const useStyle = createUseStyles({
     },
     '& > div > div': {
       fontSize: '17px',
-      color: '#000000',
+      color: 'var(--color-black)',
       display: 'inline-block',
       marginLeft: 4,
     },
@@ -583,7 +583,7 @@ const useStyle = createUseStyles({
   },
   item_info_not_essential_attribute: {},
   item_info_content_span: {
-    color: '#000',
+    color: 'var(--color-black)',
   },
   prod_item_overlay: {
     position: 'absolute',
@@ -601,7 +601,7 @@ const useStyle = createUseStyles({
     zIndex: 9,
   },
   selectedTouched: {
-    border: '1px solid #000',
+    border: '1px solid var(--color-black)',
     transition: 'all .5s ease',
   },
   hidden: {
@@ -612,12 +612,12 @@ const useStyle = createUseStyles({
     maxHeight: 150,
     padding: '6px 20px',
     textAlign: 'center',
-    border: '1px solid #BEBCBC',
+    border: '1px solid var(--color-border-strong)',
     position: 'absolute',
     borderRadius: 3,
     display: 'inline',
     zIndex: 105,
-    background: '#fff',
+    background: 'var(--color-white)',
     pointerEvents: 'none',
     fontSize: 12,
     '&:after': {
@@ -628,9 +628,9 @@ const useStyle = createUseStyles({
       transform: 'translate(45%, -50%) rotate(135deg)',
       width: 10,
       height: 10,
-      background: '#fff',
-      borderRight: '1px solid #BEBCBC',
-      borderBottom: '1px solid #BEBCBC',
+      background: 'var(--color-white)',
+      borderRight: '1px solid var(--color-border-strong)',
+      borderBottom: '1px solid var(--color-border-strong)',
     },
     '& p': {
       fontSize: 12,
@@ -646,11 +646,11 @@ const useStyle = createUseStyles({
     maxHeight: 200,
     padding: '10px 20px',
     textAlign: 'center',
-    border: '1px solid #000',
+    border: '1px solid var(--color-black)',
     position: 'absolute',
     display: 'inline',
     zIndex: 105,
-    background: '#fff',
+    background: 'var(--color-white)',
     pointerEvents: 'none',
     '& > div': {
       display: 'flex',
@@ -663,9 +663,9 @@ const useStyle = createUseStyles({
       transform: 'translate(45%, -50%) rotate(135deg)',
       width: 10,
       height: 10,
-      background: '#fff',
-      borderRight: '1px solid #000',
-      borderBottom: '1px solid #000',
+      background: 'var(--color-white)',
+      borderRight: '1px solid var(--color-black)',
+      borderBottom: '1px solid var(--color-black)',
     },
     '& p': {
       //marginBottom: 10,

@@ -50,7 +50,7 @@ const useStyle = createUseStyles({
     position: 'relative',
     height: '100%',
     '&:before': {
-      background: '#2E3839',
+      background: 'var(--color-surface-slate)',
       content: "''",
       position: 'absolute',
       top: '0',
@@ -80,7 +80,7 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     position: 'relative',
     zIndex: 3,
     height: '100%',
@@ -88,7 +88,7 @@ const useStyle = createUseStyles({
     '&:hover': {
       background: '#4E5455',
       '& path': {
-        fill: '#B8E11F',
+        fill: 'var(--color-accent-soft)',
       },
     },
   },
@@ -111,11 +111,11 @@ const useStyle = createUseStyles({
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
   },
   menu_dop_info_link: {
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     height: '34px',
     display: 'flex',
     alignItems: 'center',
-    color: '#fff',
+    color: 'var(--color-white)',
     whiteSpace: 'nowrap',
     paddingRight: '13px',
     paddingLeft: '12px',
@@ -137,7 +137,7 @@ const useStyle = createUseStyles({
     alignItems: 'center',
   },
   menu_dop_info_info_link_pro: {
-    color: '#fff',
+    color: 'var(--color-white)',
     fontSize: '12px',
     marginLeft: '6px',
     border: '1px solid #9AA3A4',
@@ -201,7 +201,7 @@ const useStyle = createUseStyles({
     borderRadius: '0',
     zIndex: 3,
     '& $menu_rozdil_btn_img_wr': {
-      background: '#bae51f',
+      background: 'var(--color-accent)',
       transition: 'background 0s cubic-bezier(.19,1,.22,1)',
       '&:before': {
         background: '#B9E31F',
@@ -209,12 +209,12 @@ const useStyle = createUseStyles({
       },
     },
     '& $svg_hover_path': {
-      stroke: '#2E3839',
+      stroke: 'var(--color-surface-slate)',
     },
     '& $menu_rozdil_btn_text': {
-      color: '#2E3839',
+      color: 'var(--color-surface-slate)',
       '&:before': {
-        background: '#bae51f',
+        background: 'var(--color-accent)',
         transition: 'all 0s cubic-bezier(.19,1,.22,1)',
       },
     },
@@ -224,7 +224,7 @@ const useStyle = createUseStyles({
     padding: '5px 0',
     pointerEvents: 'all',
     width: '40px',
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
@@ -260,7 +260,7 @@ const useStyle = createUseStyles({
   },
   menu_rozdil_btn_text: {
     fontSize: '13px',
-    color: '#fff',
+    color: 'var(--color-white)',
     display: 'flex',
     alignItems: 'center',
     position: 'relative',
@@ -276,12 +276,12 @@ const useStyle = createUseStyles({
       width: '101%',
       height: '100%',
       zIndex: -1,
-      background: '#2E3839',
+      background: 'var(--color-surface-slate)',
       transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     },
   },
   menu_btns: {
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     width: '40px',
     position: 'relative',
     zIndex: 3,
@@ -304,13 +304,13 @@ const useStyle = createUseStyles({
       background: '#4E5455',
     },
     '& $menu_btn_path': {
-      fill: '#fff',
+      fill: 'var(--color-white)',
     },
     '& $menu_btn_rect': {
-      fill: '#fff',
+      fill: 'var(--color-white)',
     },
     '& $menu_btn_stroke': {
-      stroke: '#fff',
+      stroke: 'var(--color-white)',
     },
     '& $menu_btn_info_wrap': {
       transform: 'translate(0, -50%)',
@@ -322,7 +322,7 @@ const useStyle = createUseStyles({
   menu_btn_img_wr: {
     height: '100%',
     width: '100%',
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -378,28 +378,28 @@ const useStyle = createUseStyles({
     borderRadius: '0',
     zIndex: 3,
     '&:hover $menu_btn_img_wr': {
-      background: '#bae51f',
+      background: 'var(--color-accent)',
     },
     '&:hover $menu_btn_path': {
-      fill: '#2E3839',
+      fill: 'var(--color-surface-slate)',
     },
     '&:hover $menu_btn_rect': {
-      stroke: '#2E3839',
+      stroke: 'var(--color-surface-slate)',
     },
     '&:hover $menu_btn_stroke': {
-      stroke: '#2E3839',
+      stroke: 'var(--color-surface-slate)',
     },
     '& $menu_btn_path': {
-      fill: '#2E3839',
+      fill: 'var(--color-surface-slate)',
     },
     '& $menu_btn_stroke': {
-      stroke: '#2E3839',
+      stroke: 'var(--color-surface-slate)',
     },
     '& $menu_btn_rect': {
-      stroke: '#2E3839',
+      stroke: 'var(--color-surface-slate)',
     },
     '& $menu_btn_img_wr': {
-      background: '#bae51f',
+      background: 'var(--color-accent)',
       transition: 'background 0s cubic-bezier(.19,1,.22,1)',
       '&:before': {
         background: '#B9E31F',

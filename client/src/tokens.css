@@ -10,16 +10,31 @@
 
   --color-surface-muted: #e9e9e9;
   --color-surface-subtle: #f1f1f1;
+  --color-surface-warm: #f5f3f3;
+  --color-surface-slate: #2e3839;
+  --color-surface-grey: #d9d9d9;
   --color-border: #c6c4c4;
+  --color-border-strong: #bebcbc;
+  --color-border-light: #cdcdcd;
+  --color-border-faint: #e0e0e0;
+  --color-border-warm: #e8dede;
+  --color-border-grey: #a1a1a1;
+
+  --color-icon: #a0a0a0;
+  --color-icon-dark: #464646;
+  --color-icon-info: #64bcf0;
 
   --color-accent: #bae51f;
   --color-accent-bright: #bbe521;
+  --color-accent-soft: #b8e11f;
   --color-accent-strong: #9dd900;
   --color-accent-hover: #8fc32d;
 
   --color-info: #66acf4;
   --color-info-light: #72c4ff;
+  --color-info-bright: #81e7ff;
 
+  --color-highlight: #ffd119;
   --color-warning: #ffb400;
   --color-danger: #af3131;
   --color-danger-bright: #dd352e;

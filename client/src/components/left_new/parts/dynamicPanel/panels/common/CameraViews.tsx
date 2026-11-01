@@ -23,13 +23,13 @@ const useStyle = createUseStyles({
     width: 300,
     height: '100%',
     position: 'absolute',
-    background: '#fff',
+    background: 'var(--color-white)',
     transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    borderRight: '1px solid #cdcdcd',
+    borderRight: '1px solid var(--color-border-light)',
   },
   plannerRenderWrap: {
     height: '100%',
-    background: '#fff',
+    background: 'var(--color-white)',
     padding: '20px 14px',
     display: 'grid',
     gridGap: 30,
@@ -53,12 +53,12 @@ const useStyle = createUseStyles({
     '& h1': {
       fontSize: 16,
       fontWeight: 400,
-      color: '#373737',
+      color: 'var(--color-text-muted)',
       marginBottom: 15,
     },
   },
   plannerRender_button: {
-    color: '#fff',
+    color: 'var(--color-white)',
     cursor: 'pointer',
     height: '35px',
     display: 'flex',
@@ -90,12 +90,12 @@ const useStyle = createUseStyles({
       top: '0%',
       left: '0%',
       width: 'calc(100% - 3px)',
-      border: '1px solid #fff',
+      border: '1px solid var(--color-white)',
       height: 'calc(100% - 2px)',
       position: 'absolute',
       pointerEvents: 'none',
       transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-      boxShadow: 'inset 0px 0px 0px 3px #9dd900',
+      boxShadow: 'inset 0px 0px 0px 3px var(--color-accent-strong)',
       opacity: 0,
     },
     '& $plannerRenderWrap_views_buttons': {
@@ -137,13 +137,13 @@ const useStyle = createUseStyles({
     position: 'relative',
     cursor: 'pointer',
     '&:hover line': {
-      fill: '#ffd119',
+      fill: 'var(--color-highlight)',
     },
     '&:hover rect': {
-      fill: '#ffd119',
+      fill: 'var(--color-highlight)',
     },
     '&:hover path:not(.path_not_anim)': {
-      fill: '#ffd119',
+      fill: 'var(--color-highlight)',
     },
     '&:hover': {
       '& $plannerRenderWrap_views_btn_text': {
@@ -164,7 +164,7 @@ const useStyle = createUseStyles({
     left: '50%',
     transform: 'translateX(-50%)',
     fontSize: 14,
-    color: '#ffd119',
+    color: 'var(--color-highlight)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     opacity: 0,
   },

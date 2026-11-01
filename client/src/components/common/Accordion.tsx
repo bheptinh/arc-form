@@ -26,7 +26,7 @@ const useStyle = createUseStyles({
     transition: 'max-height 0.5s ease-out',
     '& .tree_dropdown_title': {
       fontSize: '13px',
-      color: '#000',
+      color: 'var(--color-black)',
       marginBottom: '0px',
       whiteSpace: 'nowrap',
       padding: '4.5px 0',
@@ -46,7 +46,7 @@ const useStyle = createUseStyles({
     gap: '8px',
 
     '&:hover': {
-      background: '#D9D9D9',
+      background: 'var(--color-surface-grey)',
     },
   },
   accordionHeaderTitle: {

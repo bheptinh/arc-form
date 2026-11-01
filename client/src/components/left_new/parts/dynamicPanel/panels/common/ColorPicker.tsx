@@ -24,8 +24,8 @@ import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -43,14 +43,14 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    background: '#fff',
-    borderTop: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderTop: '1px solid var(--color-border)',
   },
   previewPreloader: {
     width: 120,
     height: 120,
     position: 'relative',
-    border: '1px solid #e9e9e9',
+    border: '1px solid var(--color-surface-muted)',
   },
 
   content: {
@@ -61,11 +61,11 @@ const useStyle = createUseStyles({
   },
   title: {
     fontSize: '13px',
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     padding: '10px 8px 10px',
   },
   grey_line: {
-    borderBottom: '1px solid #cdcdcd',
+    borderBottom: '1px solid var(--color-border-light)',
   },
   color_picker_palette: {
     display: 'block',
@@ -93,7 +93,7 @@ const useStyle = createUseStyles({
     display: 'block',
     margin: 0,
     padding: 0,
-    outline: '2px solid #000000',
+    outline: '2px solid var(--color-black)',
     outlineOffset: '-1px',
     position: 'absolute',
     '& color_picker_pointer': {
@@ -110,7 +110,7 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     borderRadius: 6,
     '& canvas': {
-      border: '1px solid #BEBCBC',
+      border: '1px solid var(--color-border-strong)',
       borderRadius: 6,
     },
     '&:hover': {
@@ -144,7 +144,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& svg': {
-        stroke: '#B8E11F',
+        stroke: 'var(--color-accent-soft)',
       },
     },
   },
@@ -156,7 +156,7 @@ const useStyle = createUseStyles({
   },
   materials: {
     paddingBottom: 25,
-    borderBottom: '1px solid #BEBCBC',
+    borderBottom: '1px solid var(--color-border-strong)',
     marginBottom: 20,
     '& fieldset': {
       marginBottom: 15,
@@ -187,7 +187,7 @@ const useStyle = createUseStyles({
       position: 'relative',
       paddingLeft: 30,
       display: 'block',
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
       fontSize: 13,
       cursor: 'pointer',
 
@@ -216,7 +216,7 @@ const useStyle = createUseStyles({
         height: 9,
         borderRadius: '50%',
         border: '1px solid #9DD112',
-        background: '#9DD900',
+        background: 'var(--color-accent-strong)',
         position: 'absolute',
         left: 4,
         top: 0,
@@ -247,7 +247,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: '50%',
-    background: '#fff',
+    background: 'var(--color-white)',
     position: 'absolute',
     top: 5,
     left: 5,
@@ -265,23 +265,23 @@ const useStyle = createUseStyles({
       },
       '&:hover': {
         '& path': {
-          fill: '#64BCF0',
-          stroke: '#64BCF0',
+          fill: 'var(--color-icon-info)',
+          stroke: 'var(--color-icon-info)',
         },
       },
     },
   },
 
   prod_item_fav_btn_active: {
-    fill: '#64BCF0',
-    stroke: '#64BCF0',
+    fill: 'var(--color-icon-info)',
+    stroke: 'var(--color-icon-info)',
     '& path': {
-      fill: '#64BCF0',
-      stroke: '#64BCF0',
+      fill: 'var(--color-icon-info)',
+      stroke: 'var(--color-icon-info)',
     },
   },
   lightObjectPower: {
-    background: '#464646',
+    background: 'var(--color-icon-dark)',
     padding: '15px 20px 20px',
     height: 220,
     width: 'calc(100% + 28px)',
@@ -302,7 +302,7 @@ const useStyle = createUseStyles({
   lightObjectPower_top_text: {
     fontSize: 13,
     fontWeight: 400,
-    color: '#ffffff',
+    color: 'var(--color-white)',
     '@media screen and (max-width: 950px)': {
       fontSize: 11,
     },
@@ -311,7 +311,7 @@ const useStyle = createUseStyles({
     width: 18,
     height: 18,
     borderRadius: 10,
-    background: '#ffffff',
+    background: 'var(--color-white)',
     fontSize: '11.14px',
     fontWeight: 600,
     display: 'flex',
@@ -347,7 +347,7 @@ const useStyle = createUseStyles({
   },
   hoverDivIcon: {
     position: 'absolute',
-    background: '#81e7ff',
+    background: 'var(--color-info-bright)',
     transition: 'all 0s ease-in-out 1s',
     display: 'none',
     fontSize: 12,
@@ -359,14 +359,14 @@ const useStyle = createUseStyles({
   },
   navigation: {
     display: 'flex',
-    borderBottom: '1px solid #cdcdcd',
+    borderBottom: '1px solid var(--color-border-light)',
     alignItems: 'center',
   },
   color_picker_input_wr: {
     '& input': {
       width: '100%',
       height: '35px',
-      border: '1px solid #BEBCBC',
+      border: '1px solid var(--color-border-strong)',
       borderRadius: '3px',
       padding: '0 10px',
       outline: 'none',

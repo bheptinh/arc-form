@@ -27,8 +27,8 @@ const useStyle = createUseStyles({
   editMatItemWr: {
     aspectRatio: '1 / 1',
     position: 'relative',
-    borderRight: '1px solid #E9E9E9',
-    borderBottom: '1px solid #E9E9E9',
+    borderRight: '1px solid var(--color-surface-muted)',
+    borderBottom: '1px solid var(--color-surface-muted)',
   },
   editMatItem: {
     width: '100%',
@@ -70,7 +70,7 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      stroke: '#B8E11F',
+      stroke: 'var(--color-accent-soft)',
     },
   },
   editMatEditIcon_disabled: {
@@ -83,7 +83,7 @@ const useStyle = createUseStyles({
   },
   btn_hover: {
     position: 'absolute',
-    background: '#81e7ff',
+    background: 'var(--color-info-bright)',
     display: 'none',
     fontSize: 12,
     width: 'max-content',

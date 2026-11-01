@@ -15,7 +15,7 @@ const useStyle = createUseStyles({
     fontSize: 17,
     textAlign: 'left',
     border: '1px solid #469bf2',
-    background: '#fff',
+    background: 'var(--color-white)',
     padding: 20,
     borderRadius: 6,
     position: 'absolute',
@@ -27,7 +27,7 @@ const useStyle = createUseStyles({
   },
   tip_text: {
     minWidth: 200,
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
   },
   arrow: {
     position: 'absolute',

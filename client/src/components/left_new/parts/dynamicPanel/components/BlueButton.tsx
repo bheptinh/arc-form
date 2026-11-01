@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 
 const useStyle = createUseStyles({
   blueButton: {
-    color: '#fff',
+    color: 'var(--color-white)',
     cursor: 'pointer',
     display: 'flex',
     padding: '5px 9px',
@@ -13,7 +13,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     height: '35px',
     borderRadius: '3px',
-    background: '#66ACF4',
+    background: 'var(--color-info)',
     '&:hover': {
       background: '#5795d5',
     },

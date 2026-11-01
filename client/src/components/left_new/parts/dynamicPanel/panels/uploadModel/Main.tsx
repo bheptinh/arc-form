@@ -29,8 +29,8 @@ import MaterialComponent from '../../components/MaterialComponent';
 
 const useStyle = createUseStyles({
   planner_upload_catalog_cont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -55,7 +55,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#BAE51F',
+        fill: 'var(--color-accent)',
       },
     },
   },
@@ -66,8 +66,8 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    borderTop: '1px solid #C6C4C4',
-    borderBottom: '1px solid #C6C4C4',
+    borderTop: '1px solid var(--color-border)',
+    borderBottom: '1px solid var(--color-border)',
   },
   planner_popup_cont_right_adv: {
     paddingTop: 8,
@@ -97,7 +97,7 @@ const useStyle = createUseStyles({
   },
   planner_popup_cont_right_adv_info_hover: {
     position: 'absolute',
-    background: '#81e7ff',
+    background: 'var(--color-info-bright)',
     display: 'none',
     fontSize: 12,
     width: 'max-content',
@@ -122,7 +122,7 @@ const useStyle = createUseStyles({
       },
     },
     '& label': {
-      color: '#373737',
+      color: 'var(--color-text-muted)',
       fontSize: 13,
       fontWeight: 400,
       paddingLeft: 22,
@@ -158,7 +158,7 @@ const useStyle = createUseStyles({
         width: 6,
         height: 6,
         borderRadius: '50%',
-        background: '#9DD900',
+        background: 'var(--color-accent-strong)',
         border: '1px solid #9DD112',
         position: 'absolute',
         left: 5,
@@ -217,7 +217,7 @@ const useStyle = createUseStyles({
     marginLeft: 15,
   },
   planner_popup_cont_right_material_change: {
-    border: '1px solid #BEBCBC',
+    border: '1px solid var(--color-border-strong)',
     height: '100px',
     display: 'grid',
     borderRadius: '6px',
@@ -247,7 +247,7 @@ const useStyle = createUseStyles({
       },
     },
     '& label': {
-      color: '#2f2f2f',
+      color: 'var(--color-text)',
       fontWeight: '400',
       fontSize: 13,
       paddingLeft: 23,
@@ -281,7 +281,7 @@ const useStyle = createUseStyles({
         width: 6,
         height: 6,
         borderRadius: '50%',
-        background: '#9DD900',
+        background: 'var(--color-accent-strong)',
         border: '1px solid #9DD112',
         position: 'absolute',
         left: 5,
@@ -325,14 +325,14 @@ const useStyle = createUseStyles({
   planner_upload_model_title: {
     width: '100%',
     '& > input': {
-      color: '#000',
+      color: 'var(--color-black)',
       width: '100%',
-      border: '1px solid #e8dede',
+      border: '1px solid var(--color-border-warm)',
       height: '30px',
       resize: 'none',
       outline: 'none',
       fontSize: '14px',
-      background: '#ffffff',
+      background: 'var(--color-white)',
       transition: 'all 0.4s ease-out',
       paddingLeft: '5px',
       borderRadius: '3px',
@@ -354,7 +354,7 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_cont_right_button: {
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     border: 'none',
     cursor: 'pointer',
     height: '35px',
@@ -376,7 +376,7 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_cont_right_button_cancel: {
-    border: '1px solid #000000',
+    border: '1px solid var(--color-black)',
     justifyContent: 'flex-start',
     '& svg': {
       marginRight: 10,
@@ -388,15 +388,15 @@ const useStyle = createUseStyles({
     },
     '& p': {
       flex: 2,
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
       textAlign: 'center',
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   planner_popup_cont_right_button_save: {
-    background: '#fff',
+    background: 'var(--color-white)',
     border: '1px solid #C8C8C8',
     color: '#A7A7A7',
     '& svg': {
@@ -408,7 +408,7 @@ const useStyle = createUseStyles({
       },
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
     '& $planner_lock_img': {
       marginRight: 0,
@@ -422,12 +422,12 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_cont_right_button_save_ready: {
-    background: '#BBE521',
+    background: 'var(--color-accent-bright)',
     '& svg': {
       marginRight: 10,
     },
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
   },
   planner_lock_img: {

@@ -67,9 +67,9 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     marginRight: '1px',
     '&:hover': {
-      background: '#2f2f2f',
+      background: 'var(--color-text)',
       '& path, & circle, & rect': {
-        fill: '#ffd119',
+        fill: 'var(--color-highlight)',
       },
     },
   },
@@ -82,7 +82,7 @@ const useStyles = createUseStyles({
   },
   bar_dropdown_wrap_hover: {
     '& $bar_dropdown_active': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
     '& $bar_dropdown_option_wr': {
       transform: 'translateY(0%)',
@@ -91,15 +91,15 @@ const useStyles = createUseStyles({
   bar_dropdown_wrap_svg_hover_circle: {},
   bar_dropdown_active: {
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
-    background: '#fff',
+    background: 'var(--color-white)',
     cursor: 'pointer',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     fontSize: '12px',
     padding: '0 5px',
 
@@ -107,10 +107,10 @@ const useStyles = createUseStyles({
     '&:hover': {
       '& svg:not($bar_dropdown_wrap_svg_hover_circle) path, & svg:not($bar_dropdown_wrap_svg_hover_circle) circle, & svg:not($bar_dropdown_wrap_svg_hover_circle) rect':
         {
-          fill: '#ffd119',
+          fill: 'var(--color-highlight)',
         },
       '& $bar_dropdown_wrap_svg_hover_circle circle': {
-        fill: '#ffd119',
+        fill: 'var(--color-highlight)',
       },
     },
     '& p': {
@@ -141,18 +141,18 @@ const useStyles = createUseStyles({
   },
 
   bar_dropdown_option: {
-    background: '#fff',
+    background: 'var(--color-white)',
     cursor: 'pointer',
     height: 30,
     display: 'flex',
     alignItems: 'center',
     fontSize: 12,
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     padding: '0 10px',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     position: 'relative',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
     '& p': {
       marginLeft: 12,
@@ -177,13 +177,13 @@ const useStyles = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: '#fff',
+    color: 'var(--color-white)',
     fontSize: '12px',
     marginRight: '1px',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: '#2f2f2f',
-      color: '#ffd119',
+      background: 'var(--color-text)',
+      color: 'var(--color-highlight)',
     },
   },
   bar_pro_btn: {
@@ -193,10 +193,10 @@ const useStyles = createUseStyles({
   },
   bar_btn: {
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
-    background: '#fff',
+    background: 'var(--color-white)',
     cursor: 'pointer',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -205,14 +205,14 @@ const useStyles = createUseStyles({
     marginRight: '1px',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   bar_btn_not_active: {
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -230,10 +230,10 @@ const useStyles = createUseStyles({
   },
   hd_render_btn: {
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
-    background: '#fff',
+    background: 'var(--color-white)',
     cursor: 'pointer',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -242,7 +242,7 @@ const useStyles = createUseStyles({
     marginRight: '1px',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   icon_hd_render: {},
@@ -257,11 +257,11 @@ const useStyles = createUseStyles({
   barMetricsActive: {},
   bar_dropdown_option_active: {
     display: 'none',
-    background: '#2f2f2f',
+    background: 'var(--color-text)',
   },
   hover_elem: {
     position: 'absolute',
-    background: '#81e7ff',
+    background: 'var(--color-info-bright)',
     display: 'none',
     fontSize: 12,
     width: 'max-content',
@@ -270,7 +270,7 @@ const useStyles = createUseStyles({
     userSelect: 'none',
     zIndex: 12,
     visibility: 'hidden',
-    color: '#000',
+    color: 'var(--color-black)',
   },
   imagePlanImg: {
     marginRight: 6,
@@ -279,7 +279,7 @@ const useStyles = createUseStyles({
     background: '#fcc749',
   },
   bar_btn_text: {
-    color: '#fff',
+    color: 'var(--color-white)',
     fontSize: 12,
     padding: '0 5px',
   },
@@ -287,7 +287,7 @@ const useStyles = createUseStyles({
     cursor: 'default',
     padding: '0 5px 0 35px',
     '&:hover': {
-      color: '#ffffff',
+      color: 'var(--color-white)',
       background: 'rgba(47, 47, 47, 0.7)',
     },
   },
@@ -316,7 +316,7 @@ const useStyles = createUseStyles({
     '& $bar_dropdown_option_plan_update': {
       background: '#A0CA35',
       padding: '3px 5px',
-      color: '#000000',
+      color: 'var(--color-black)',
       fontSize: 12,
       marginLeft: 5,
     },

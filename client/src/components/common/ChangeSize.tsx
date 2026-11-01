@@ -31,10 +31,10 @@ const useStyle = createUseStyles({
       background: 'rgb(244, 244, 244)',
     },
     '&:focus': {
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
       cursor: 'auto',
       backgroundColor: 'rgb(244, 244, 244)',
-      border: '1px solid #BEBCBC',
+      border: '1px solid var(--color-border-strong)',
       outline: 'none',
       borderRadius: '3px',
     },
@@ -54,7 +54,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#a0a0a0',
+        fill: 'var(--color-icon)',
       },
     },
   },
@@ -66,7 +66,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#a0a0a0',
+        fill: 'var(--color-icon)',
       },
     },
   },
@@ -109,7 +109,7 @@ const useStyle = createUseStyles({
   },
   changerMain_info_hover: {
     position: 'absolute',
-    background: '#81e7ff',
+    background: 'var(--color-info-bright)',
     display: 'none',
     fontSize: 12,
     width: 'max-content',
@@ -189,29 +189,29 @@ const useStyle = createUseStyles({
   },
   addStyles_style_3_main: {
     '& $labelAfter': {
-      color: '#ffffff',
+      color: 'var(--color-white)',
     },
     '& $changerMain_bottom': {
       marginLeft: 15,
     },
   },
   addStyles_style_3_input: {
-    color: '#ffffff',
+    color: 'var(--color-white)',
     margin: '0 0 0 4px',
     background: 'transparent',
     '&:hover': {
       background: 'rgb(244, 244, 244)',
-      color: '#464646',
+      color: 'var(--color-icon-dark)',
     },
   },
   addStyles_style_3_arrowUp: {
     '& path': {
-      fill: '#ffffff',
+      fill: 'var(--color-white)',
     },
   },
   addStyles_style_3_arrowDown: {
     '& path': {
-      fill: '#ffffff',
+      fill: 'var(--color-white)',
     },
   },
 });

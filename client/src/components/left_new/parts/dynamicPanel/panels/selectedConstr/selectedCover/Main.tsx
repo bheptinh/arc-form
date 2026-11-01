@@ -20,8 +20,8 @@ import MaterialComponent from '../../../components/MaterialComponent';
 
 const useStyle = createUseStyles({
   planerWallsCont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -39,7 +39,7 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    borderTop: '1px solid #C6C4C4',
+    borderTop: '1px solid var(--color-border)',
   },
   catalog_top_wr: {
     padding: '10px 10px 10px 10px',
@@ -53,7 +53,7 @@ const useStyle = createUseStyles({
   },
   planerWallsTitle: {
     fontSize: 17,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontFamily: 'RobotoCondensed-Regular',
     marginLeft: 10,
     '@media screen and (max-width: 950px)': {
@@ -83,7 +83,7 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    background: '#fff',
+    background: 'var(--color-white)',
   },
   prod_item_fav_btn: {
     width: '18px',
@@ -92,7 +92,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: '50%',
-    background: '#fff',
+    background: 'var(--color-white)',
     position: 'absolute',
     top: 5,
     left: 5,
@@ -111,10 +111,10 @@ const useStyle = createUseStyles({
       },
       '&:hover': {
         '& path': {
-          stroke: '#64BCF0',
+          stroke: 'var(--color-icon-info)',
           fillOpacity: 0,
           '@media screen and (max-width: 950px)': {
-            stroke: '#464646',
+            stroke: 'var(--color-icon-dark)',
             fillOpacity: 1,
           },
         },
@@ -126,13 +126,13 @@ const useStyle = createUseStyles({
   },
   prod_item_fav_btn_active: {
     '& path': {
-      fill: '#64BCF0',
-      stroke: '#64BCF0',
+      fill: 'var(--color-icon-info)',
+      stroke: 'var(--color-icon-info)',
       fillOpacity: 1,
     },
   },
   planerWallsCurentMatWr: {
-    borderBottom: '1px solid #BEBCBC',
+    borderBottom: '1px solid var(--color-border-strong)',
     display: 'grid',
     marginBottom: 10,
     position: 'relative',
@@ -163,7 +163,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#a0a0a0',
+        fill: 'var(--color-icon)',
       },
     },
     '@media screen and (max-width: 950px)': {
@@ -171,7 +171,7 @@ const useStyle = createUseStyles({
     },
   },
   showItemInput: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     border: 'none',
     margin: '0 8px 0 4px',
     outline: 'none',
@@ -184,7 +184,7 @@ const useStyle = createUseStyles({
     },
   },
   showItemText: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     border: 'none',
     margin: '0 8px 0 4px',
     outline: 'none',

@@ -29,7 +29,7 @@ const useStyles = createUseStyles({
   },
   panel_bottom_right: {
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
     display: 'flex',
     justifyContent: 'center',

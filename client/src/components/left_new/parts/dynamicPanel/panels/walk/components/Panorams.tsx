@@ -24,8 +24,8 @@ import Navigation from '../../../navigation/Navigation';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -43,8 +43,8 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    background: '#fff',
-    borderTop: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderTop: '1px solid var(--color-border)',
   },
   roll_out_left: {
     transform: 'translateX(-100%)',
@@ -59,7 +59,7 @@ const useStyle = createUseStyles({
     height: '29px',
     backgroundColor: 'rgba(129, 129, 129, 0.9)',
     fontSize: '13px',
-    color: '#fff',
+    color: 'var(--color-white)',
     display: 'flex',
     alignItems: 'center',
     padding: '0 5px',
@@ -76,7 +76,7 @@ const useStyle = createUseStyles({
       content: '""',
       zIndex: 1,
       position: 'absolute',
-      boxShadow: 'inset 0 0 0 0px #BAE51F',
+      boxShadow: 'inset 0 0 0 0px var(--color-accent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
       pointerEvents: 'none',
     },
@@ -85,7 +85,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '&:after': {
-        boxShadow: 'inset 0 0 0 4px #BAE51F',
+        boxShadow: 'inset 0 0 0 4px var(--color-accent)',
       },
     },
     '@media screen and (max-width: 950px)': {
@@ -94,7 +94,7 @@ const useStyle = createUseStyles({
   },
   viewItemStandart_active: {
     '&:after': {
-      boxShadow: 'inset 0 0 0 4px #BAE51F',
+      boxShadow: 'inset 0 0 0 4px var(--color-accent)',
     },
   },
   viewItemIcon: {
@@ -115,7 +115,7 @@ const useStyle = createUseStyles({
     alignItems: 'center',
     marginTop: 10,
     fontSize: 13,
-    color: '#fff',
+    color: 'var(--color-white)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '& svg': {
       marginLeft: 10,
@@ -137,7 +137,7 @@ const useStyle = createUseStyles({
     position: 'relative',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      border: '1px solid #ffd119',
+      border: '1px solid var(--color-highlight)',
     },
   },
   viewItemImg: {
@@ -164,16 +164,16 @@ const useStyle = createUseStyles({
     width: '100%',
     height: '100%',
     backgroundColor: 'rgba(47, 47, 47, 0.7)',
-    boxShadow: 'inset 0 0 0 4px #BAE51F',
+    boxShadow: 'inset 0 0 0 4px var(--color-accent)',
     '&:hover': {
       '& path:not($leftMouse)': {
-        fill: '#BAE51F',
+        fill: 'var(--color-accent)',
       },
       '& $help_bot_item': {
-        color: '#BAE51F',
+        color: 'var(--color-accent)',
       },
       '& p': {
-        color: '#BAE51F',
+        color: 'var(--color-accent)',
       },
     },
   },
@@ -192,7 +192,7 @@ const useStyle = createUseStyles({
   rotateText: {
     position: 'absolute',
     top: 20,
-    color: '#fff',
+    color: 'var(--color-white)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
 });

@@ -23,8 +23,8 @@ import { Accordion } from '../../common/Accordion';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -49,7 +49,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#a0a0a0',
+        fill: 'var(--color-icon)',
       },
     },
   },
@@ -60,8 +60,8 @@ const useStyle = createUseStyles({
   catalog_wr: {
     overflow: 'hidden',
     height: '100%',
-    background: '#fff',
-    borderTop: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderTop: '1px solid var(--color-border)',
     paddingTop: 7,
   },
   tree_wr: {
@@ -78,7 +78,7 @@ const useStyle = createUseStyles({
     background: 'red',
   },
   tree_dropdown_title: {
-    color: '#000',
+    color: 'var(--color-black)',
     marginBottom: '5px',
     whiteSpace: 'nowrap',
     fontSize: '17px',
@@ -97,7 +97,7 @@ const useStyle = createUseStyles({
       width: '500%',
       height: 'calc(100% + 4px)',
       transform: 'translate(-50%, -50%)',
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
       opacity: 0,
       transition: 'all .9s cubic-bezier(.19, 1, .22, 1)',
     },
@@ -137,7 +137,7 @@ const useStyle = createUseStyles({
       width: '500%',
       height: 'calc(100%)',
       transform: 'translate(-50%, -50%)',
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
       opacity: 0,
       transition: 'all .9s cubic-bezier(.19, 1, .22, 1)',
     },
@@ -147,11 +147,11 @@ const useStyle = createUseStyles({
   },
   tree_dropdown_title_active: {
     '&:before': {
-      background: '#B8E11F',
+      background: 'var(--color-accent-soft)',
       opacity: 1,
     },
     '&>$tree_dropdown_name': {
-      color: '#000',
+      color: 'var(--color-black)',
     },
   },
   tree_dropdown_overlay: {

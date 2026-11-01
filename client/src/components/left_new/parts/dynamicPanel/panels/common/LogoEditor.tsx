@@ -30,7 +30,7 @@ import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
   planner_logoMesh_cont: {
-    background: '#fff',
+    background: 'var(--color-white)',
     height: '100%',
     alignContent: 'baseline',
     transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
@@ -38,7 +38,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     left: 0,
     top: 0,
-    borderRight: '1px solid #cdcdcd',
+    borderRight: '1px solid var(--color-border-light)',
     '@media screen and (max-width: 950px)': {
       width: 189,
     },
@@ -46,20 +46,20 @@ const useStyle = createUseStyles({
   catalog_wr: {
     overflow: 'hidden',
     height: '100%',
-    background: '#fff',
+    background: 'var(--color-white)',
   },
   item_info_content: {
     padding: '0 6px 8px 6px',
-    color: '#7B7B7B',
+    color: 'var(--color-text-subtle)',
     fontSize: '13px',
     lineHeight: 1.4,
     marginTop: 8,
     '& span': {
-      color: '#000',
+      color: 'var(--color-black)',
     },
     '&>div>div': {
       fontSize: '17px',
-      color: '#000000',
+      color: 'var(--color-black)',
       display: 'inline-block',
       fontFamily: 'RobotoCondensed-Regular',
     },
@@ -73,7 +73,7 @@ const useStyle = createUseStyles({
     fontSize: '17px',
     fontFamily: 'RobotoCondensed-Regular',
     lineHeight: 0.8,
-    color: ' #000',
+    color: ' var(--color-black)',
     marginBottom: 8,
     '@media screen and (max-width: 950px)': {
       fontSize: 11,
@@ -119,15 +119,15 @@ const useStyle = createUseStyles({
   changeSizesLockLine1: {
     width: '100%',
     height: 11,
-    borderTop: '1px solid #A1A1A1',
-    borderRight: '1px solid #A1A1A1',
+    borderTop: '1px solid var(--color-border-grey)',
+    borderRight: '1px solid var(--color-border-grey)',
     opacity: '0.5',
   },
   changeSizesLockLine3: {
     width: '100%',
     height: 11,
-    borderBottom: '1px solid #A1A1A1',
-    borderRight: '1px solid #A1A1A1',
+    borderBottom: '1px solid var(--color-border-grey)',
+    borderRight: '1px solid var(--color-border-grey)',
     opacity: '0.5',
   },
   planner_logoMesh_buttons: {
@@ -141,8 +141,8 @@ const useStyle = createUseStyles({
     },
   },
   planner_logoMesh_button_delete: {
-    border: '1px solid #AF3131',
-    color: '#AF3131',
+    border: '1px solid var(--color-danger)',
+    color: 'var(--color-danger)',
     width: '100%',
     padding: '7px 15px',
     textAlign: 'center',
@@ -159,10 +159,10 @@ const useStyle = createUseStyles({
       transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     },
     '&:hover': {
-      background: '#AF3131',
-      color: '#ffffff',
+      background: 'var(--color-danger)',
+      color: 'var(--color-white)',
       '& path, & rect': {
-        fill: '#fff',
+        fill: 'var(--color-white)',
       },
     },
     '@media screen and (max-width: 950px)': {

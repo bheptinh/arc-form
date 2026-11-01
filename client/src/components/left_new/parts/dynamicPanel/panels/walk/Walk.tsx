@@ -14,7 +14,7 @@ const useStyle = createUseStyles({
     width: 310,
     top: 0,
     overflow: 'hidden',
-    borderLeft: '1px solid #E0E0E0',
+    borderLeft: '1px solid var(--color-border-faint)',
     zIndex: 1,
     '@media screen and (max-width: 950px)': {
       width: 190,

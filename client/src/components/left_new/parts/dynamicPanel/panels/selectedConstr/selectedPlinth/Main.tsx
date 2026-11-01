@@ -20,8 +20,8 @@ import MaterialComponent from '../../../components/MaterialComponent';
 
 const useStyle = createUseStyles({
   planerWallsCont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     display: 'grid',
     alignContent: 'baseline',
@@ -39,8 +39,8 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    background: '#fff',
-    borderTop: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderTop: '1px solid var(--color-border)',
   },
   planerWallsWrap: {},
   catalog_top_wr: {
@@ -55,7 +55,7 @@ const useStyle = createUseStyles({
   },
   planerPlintusTitle: {
     fontSize: 17,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontFamily: 'RobotoCondensed-Regular',
     marginLeft: 10,
     '@media screen and (max-width: 950px)': {
@@ -111,8 +111,8 @@ const useStyle = createUseStyles({
       },
       '&:hover': {
         '& path': {
-          fill: '#64BCF0',
-          stroke: '#64BCF0',
+          fill: 'var(--color-icon-info)',
+          stroke: 'var(--color-icon-info)',
           fillOpacity: '0.5',
         },
       },
@@ -121,14 +121,14 @@ const useStyle = createUseStyles({
   planerWallsWrap_top_favorites: {},
   planerWallsWrap_top_favorites_active: {
     '& path': {
-      fill: '#64BCF0',
-      stroke: '#64BCF0',
+      fill: 'var(--color-icon-info)',
+      stroke: 'var(--color-icon-info)',
       fillOpacity: 1,
     },
   },
   divideWall: {
     height: 100,
-    border: '1px solid #d9d9d9',
+    border: '1px solid var(--color-surface-grey)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     cursor: 'pointer',
     display: 'grid',
@@ -140,7 +140,7 @@ const useStyle = createUseStyles({
     position: 'relative',
     marginBottom: 20,
     '&:hover': {
-      border: '1px solid #9DD900',
+      border: '1px solid var(--color-accent-strong)',
     },
     '@media screen and (max-width: 950px)': {
       padding: '10px',
@@ -162,7 +162,7 @@ const useStyle = createUseStyles({
     display: 'grid',
     gridTemplateColumns: '50% 50%',
     marginBottom: 14,
-    borderBottom: '1px solid #BEBCBC',
+    borderBottom: '1px solid var(--color-border-strong)',
     overflow: 'hidden',
     position: 'relative',
     '@media screen and (max-width: 950px)': {
@@ -177,7 +177,7 @@ const useStyle = createUseStyles({
       left: '50%',
       height: '100%',
       width: 1,
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
       zIndex: 1,
     },
   },
@@ -199,7 +199,7 @@ const useStyle = createUseStyles({
     left: -6,
   },
   planerPlintusAreaTitle: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontSize: 14,
     margin: '0 14px 8px',
     '@media screen and (max-width: 950px)': {

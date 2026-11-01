@@ -5,8 +5,8 @@ const useStyle = createUseStyles({
   editMatItemWr: {
     aspectRatio: '1 / 1',
     position: 'relative',
-    borderRight: '1px solid #E9E9E9',
-    borderBottom: '1px solid #E9E9E9',
+    borderRight: '1px solid var(--color-surface-muted)',
+    borderBottom: '1px solid var(--color-surface-muted)',
   },
   editMatItem: {
     width: '100%',
@@ -40,7 +40,7 @@ const useStyle = createUseStyles({
     left: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -49,7 +49,7 @@ const useStyle = createUseStyles({
       top: 2,
       height: 'calc(100% - 4px)',
       width: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   editMatItem_hover_top: {
@@ -60,7 +60,7 @@ const useStyle = createUseStyles({
     left: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -69,7 +69,7 @@ const useStyle = createUseStyles({
       left: 2,
       width: 'calc(100% - 4px)',
       height: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   editMatItem_hover_right: {
@@ -80,7 +80,7 @@ const useStyle = createUseStyles({
     right: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -89,7 +89,7 @@ const useStyle = createUseStyles({
       top: 2,
       height: 'calc(100% - 4px)',
       width: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   editMatItem_hover_bottom: {
@@ -100,7 +100,7 @@ const useStyle = createUseStyles({
     right: 0,
     pointerEvents: 'none',
     zIndex: 1,
-    background: '#C6C4C4',
+    background: 'var(--color-border)',
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:before': {
       content: '" "',
@@ -109,7 +109,7 @@ const useStyle = createUseStyles({
       left: 2,
       width: 'calc(100% - 4px)',
       height: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
     },
   },
   editMat: {
@@ -140,7 +140,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& rect': {
-        fill: '#ffd119',
+        fill: 'var(--color-highlight)',
       },
     },
   },

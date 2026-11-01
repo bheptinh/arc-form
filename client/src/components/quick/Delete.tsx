@@ -24,7 +24,7 @@ const useStyle = createUseStyles({
   },
   info_model_pop_item_cont: {
     display: 'flex',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
   },
@@ -49,13 +49,13 @@ const useStyle = createUseStyles({
     height: '100%',
     borderRadius: 3,
     transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     '& img': {
       maxWidth: '70%',
       maxHeight: '70%',
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   info_model_btn_overlay: {

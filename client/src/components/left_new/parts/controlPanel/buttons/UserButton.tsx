@@ -32,7 +32,7 @@ const useStyle = createUseStyles({
     cursor: 'pointer',
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     '&:hover $menu_dop_btn_icon path': {
-      fill: '#ffffff',
+      fill: 'var(--color-white)',
     },
   },
   menu_dop_btn_wr_login: {
@@ -44,7 +44,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     position: 'relative',
     zIndex: 3,
     height: '100%',
@@ -52,7 +52,7 @@ const useStyle = createUseStyles({
     '&:hover': {
       background: '#4E5455',
       '& path': {
-        fill: '#B8E11F',
+        fill: 'var(--color-accent-soft)',
       },
     },
   },
@@ -75,11 +75,11 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
   },
   menu_dop_info_link: {
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     height: '34px',
     display: 'flex',
     alignItems: 'center',
-    color: '#fff',
+    color: 'var(--color-white)',
     whiteSpace: 'nowrap',
     paddingRight: '13px',
     paddingLeft: '12px',
@@ -122,11 +122,11 @@ const useStyle = createUseStyles({
     },
   },
   menu_dop_info_user_name: {
-    background: '#2E3839',
+    background: 'var(--color-surface-slate)',
     height: '37px',
     display: 'flex',
     alignItems: 'center',
-    color: '#fff',
+    color: 'var(--color-white)',
     whiteSpace: 'nowrap',
     paddingRight: '13px',
     fontSize: '12px',

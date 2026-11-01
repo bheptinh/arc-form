@@ -35,9 +35,9 @@ const useStyles = createUseStyles({
   },
   viewModes: {
     position: 'relative',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
-    border: '2px solid #fff',
+    border: '2px solid var(--color-white)',
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
   },
   otherButtons: {

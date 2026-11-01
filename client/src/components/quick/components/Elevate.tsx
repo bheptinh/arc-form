@@ -15,13 +15,13 @@ const useStyle = createUseStyles({
     borderRadius: '50%',
     width: 32,
     height: 32,
-    background: '#fff',
+    background: 'var(--color-white)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     cursor: 'pointer',
     userSelect: 'none',
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
     transition: 'background 0.9s cubic-bezier(.19,1,.22,1)',
     '& img': {
@@ -29,7 +29,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   grabbing: {

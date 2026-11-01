@@ -37,9 +37,9 @@ const useStyles = createUseStyles({
   barUndoRedoBtns: {
     display: 'flex',
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
   },
 });
 

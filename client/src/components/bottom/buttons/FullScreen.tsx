@@ -9,9 +9,9 @@ import HoverComponent from '../../left_new/parts/controlPanel/components/HoverCo
 const useStyle = createUseStyles({
   fullScreen_main: {
     cursor: 'pointer',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 3,
-    border: '1px solid #fff',
+    border: '1px solid var(--color-white)',
     display: 'flex',
     justifyContent: 'center',
     height: '100%',
@@ -21,7 +21,7 @@ const useStyle = createUseStyles({
     marginRight: '1px',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
 });

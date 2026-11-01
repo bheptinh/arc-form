@@ -17,7 +17,7 @@ const useStyle = createUseStyles({
     width: '100%',
     backgroundColor: 'rgba(129, 129, 129, 0.9)',
     fontSize: '13px',
-    color: '#fff',
+    color: 'var(--color-white)',
     padding: 5,
     display: 'flex',
     flexWrap: 'wrap',
@@ -36,7 +36,7 @@ const useStyle = createUseStyles({
     '& p:first-child': {
       cursor: 'pointer',
       '&:hover': {
-        color: '#ffffff',
+        color: 'var(--color-white)',
       },
     },
     '@media screen and (max-width: 950px)': {
@@ -62,15 +62,15 @@ const useStyle = createUseStyles({
       pointerEvents: 'all',
     },
     '&:hover path': {
-      fill: '#B8E11F',
+      fill: 'var(--color-accent-soft)',
     },
   },
   breadcrumbs_wrap: {
     display: 'flex',
     alignItems: 'center',
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: '3px',
-    border: '1px solid #BEBCBC',
+    border: '1px solid var(--color-border-strong)',
     left: '-7px',
     position: 'absolute',
     top: '-6px',
@@ -101,7 +101,7 @@ const useStyle = createUseStyles({
     position: 'relative',
     fontFamily: 'RobotoCondensed-Regular',
     '&:hover': {
-      color: '#000',
+      color: 'var(--color-black)',
     },
     '@media screen and (max-width: 950px)': {
       fontSize: '9px',
@@ -121,7 +121,7 @@ const useStyle = createUseStyles({
       opacity: '0.5',
     },
     '&:hover': {
-      color: '#000',
+      color: 'var(--color-black)',
       '& $breadcrumbs_selected_model_preview': {
         opacity: 1,
       },
@@ -132,7 +132,7 @@ const useStyle = createUseStyles({
   },
   breadcrumbs_link_active: {
     pointerEvents: 'none',
-    color: '#000',
+    color: 'var(--color-black)',
   },
   breadcrumbs_static_wr: {
     width: '100%',
@@ -172,7 +172,7 @@ const useStyle = createUseStyles({
     zIndex: 0,
     opacity: 0,
     position: 'absolute',
-    background: '#fff',
+    background: 'var(--color-white)',
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     alignItems: 'center',
     paddingLeft: '7px',
@@ -187,14 +187,14 @@ const useStyle = createUseStyles({
   breadcrumbs_static_hover_created: {
     top: '2px',
     left: '4px',
-    border: '1px solid #BEBCBC',
+    border: '1px solid var(--color-border-strong)',
     borderLeft: 0,
     height: '30px',
     display: 'flex',
     zIndex: 0,
     opacity: 0,
     position: 'absolute',
-    background: '#fff',
+    background: 'var(--color-white)',
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     alignItems: 'center',
     paddingLeft: '7px',
@@ -236,7 +236,7 @@ const useStyle = createUseStyles({
     lineHeight: 0.8,
     fontSize: 17,
     fontFamily: 'RobotoCondensed-Regular',
-    color: '#000',
+    color: 'var(--color-black)',
     '& span': {
       color: '#939393',
       fontSize: '12px',

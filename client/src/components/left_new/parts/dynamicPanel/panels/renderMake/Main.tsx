@@ -37,8 +37,8 @@ import ChangeSize from '../../../../../common/ChangeSize';
 
 const useStyle = createUseStyles({
   renderMakeCont: {
-    borderRight: '1px solid #cdcdcd',
-    background: '#fff',
+    borderRight: '1px solid var(--color-border-light)',
+    background: 'var(--color-white)',
     height: '100%',
     width: '100%',
     position: 'absolute',
@@ -52,13 +52,13 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     height: '100%',
     position: 'relative',
-    background: '#fff',
-    borderBottom: '1px solid #C6C4C4',
+    background: 'var(--color-white)',
+    borderBottom: '1px solid var(--color-border)',
     transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   plannerRenderWrap: {
     height: '100%',
-    background: '#fff',
+    background: 'var(--color-white)',
     padding: '14px',
     overflow: 'hidden',
     display: 'grid',
@@ -81,7 +81,7 @@ const useStyle = createUseStyles({
   },
   title: {
     fontSize: '18px',
-    color: '#373737',
+    color: 'var(--color-text-muted)',
     marginBottom: 13,
     fontWeight: 300,
     letterSpacing: '-1px',
@@ -91,7 +91,7 @@ const useStyle = createUseStyles({
     width: '100%',
     height: 100,
     borderRadius: 6,
-    border: '1px solid #cdcdcd',
+    border: '1px solid var(--color-border-light)',
     position: 'relative',
     zIndex: 1,
     display: 'grid',
@@ -107,9 +107,9 @@ const useStyle = createUseStyles({
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {
-      border: '1px solid #9DD900',
+      border: '1px solid var(--color-accent-strong)',
       '& path': {
-        fill: '#ffd119',
+        fill: 'var(--color-highlight)',
       },
     },
   },
@@ -133,7 +133,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#a0a0a0',
+        fill: 'var(--color-icon)',
       },
     },
   },
@@ -143,7 +143,7 @@ const useStyle = createUseStyles({
   },
   changeHeightLine: {
     width: 1,
-    background: '#cdcdcd',
+    background: 'var(--color-border-light)',
     height: '100%',
     position: 'absolute',
     left: '50%',
@@ -151,7 +151,7 @@ const useStyle = createUseStyles({
   },
   changeHeightLineActive: {
     width: 1,
-    background: '#9DD900',
+    background: 'var(--color-accent-strong)',
     height: 85,
     position: 'absolute',
     left: 0,
@@ -188,7 +188,7 @@ const useStyle = createUseStyles({
   choiseRenderBtn: {
     display: 'flex',
     justifyContent: 'space-between',
-    border: '1px solid #cdcdcd',
+    border: '1px solid var(--color-border-light)',
     padding: 10,
     marginBottom: 10,
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
@@ -204,25 +204,25 @@ const useStyle = createUseStyles({
       content: '""',
       zIndex: 1,
       position: 'absolute',
-      boxShadow: 'inset 0 0 0 0px #BAE51F',
+      boxShadow: 'inset 0 0 0 0px var(--color-accent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
   choiseRenderBtn_active: {
-    background: '#fff',
+    background: 'var(--color-white)',
     pointerEvents: 'none',
-    border: '1px solid #BAE51F',
+    border: '1px solid var(--color-accent)',
     '&:after': {
-      boxShadow: 'inset 0 0 0 2px #BAE51F',
+      boxShadow: 'inset 0 0 0 2px var(--color-accent)',
     },
   },
   choiseRenderRadio: {
     position: 'relative',
-    color: '#373737',
+    color: 'var(--color-text-muted)',
     fontWeight: '700',
     fontSize: 16,
     alignItems: 'center',
@@ -239,7 +239,7 @@ const useStyle = createUseStyles({
     },
   },
   choiseRenderExempleBtn: {
-    color: '#66ACF4',
+    color: 'var(--color-info)',
     textDecoration: 'underline',
     cursor: 'pointer',
     '&:hover': {
@@ -252,7 +252,7 @@ const useStyle = createUseStyles({
   },
   plannerRender_button: {
     background: '#66ABF3',
-    color: '#fff',
+    color: 'var(--color-white)',
     cursor: 'pointer',
     height: '35px',
     display: 'flex',
@@ -267,7 +267,7 @@ const useStyle = createUseStyles({
     },
   },
   renderMake_button: {
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     border: 'none',
     cursor: 'pointer',
     height: '35px',
@@ -289,35 +289,35 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   renderMake_button_cancel: {
-    border: '1px solid #000000',
+    border: '1px solid var(--color-black)',
     justifyContent: 'flex-start',
     '& svg': {
       marginRight: 10,
     },
     '& p': {
       flex: 2,
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
       textAlign: 'center',
     },
     '&:hover': {
-      background: '#E9E9E9',
-      color: '#ffffff',
+      background: 'var(--color-surface-muted)',
+      color: 'var(--color-white)',
     },
   },
   renderMake_button_cancel_disable: {
     '&:hover': {
       cursor: 'default',
-      border: '1px solid #000000',
+      border: '1px solid var(--color-black)',
       background: 'transparent',
-      color: '#000000',
+      color: 'var(--color-black)',
       '& svg path': {
-        fill: '#000000',
+        fill: 'var(--color-black)',
       },
     },
   },
   renderMake_button_save: {
     justifyContent: 'flex-start',
-    background: '#BBE521',
+    background: 'var(--color-accent-bright)',
     '& svg': {
       marginRight: 10,
     },
@@ -325,10 +325,10 @@ const useStyle = createUseStyles({
       flex: 2,
       textAlign: 'center',
       marginRight: 0,
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
     },
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
   },
   renderMake_buttons: {
@@ -361,7 +361,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#BAE51F',
+        fill: 'var(--color-accent)',
       },
     },
   },

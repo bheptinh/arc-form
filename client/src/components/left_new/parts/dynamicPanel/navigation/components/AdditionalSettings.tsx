@@ -22,17 +22,17 @@ const useStyle = createUseStyles({
     alignItems: 'center',
     justifyContent: 'center',
     '&:hover line': {
-      fill: '#a0a0a0',
-      stroke: '#a0a0a0',
+      fill: 'var(--color-icon)',
+      stroke: 'var(--color-icon)',
     },
     '&:hover circle': {
-      fill: '#a0a0a0',
-      stroke: '#a0a0a0',
+      fill: 'var(--color-icon)',
+      stroke: 'var(--color-icon)',
     },
   },
   catalog_top_btn_filter_hover: {
     '& svg': {
-      stroke: '#a0a0a0',
+      stroke: 'var(--color-icon)',
     },
   },
   icon_filter: {
