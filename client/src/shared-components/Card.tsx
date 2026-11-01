@@ -21,7 +21,7 @@ type Props = {
 
 const useStyles = createUseStyles({
   card: {
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 6,
     position: 'relative',
     cursor: 'pointer',
@@ -30,12 +30,12 @@ const useStyles = createUseStyles({
       position: 'absolute',
       inset: 0,
       borderRadius: 6,
-      boxShadow: 'inset 0 0 0 0px #BAE51F',
+      boxShadow: 'inset 0 0 0 0px var(--color-accent)',
       transition: 'all 0.9s cubic-bezier(0.19,1,0.22,1)',
       pointerEvents: 'none',
       zIndex: 1,
     },
-    '&:hover::after': { boxShadow: 'inset 0 0 0 4px #BAE51F' },
+    '&:hover::after': { boxShadow: 'inset 0 0 0 4px var(--color-accent)' },
     '&:hover $actions': { opacity: 1, pointerEvents: 'auto' },
     '@media screen and (max-width: 950px)': {
       '& $actions': { opacity: 1, pointerEvents: 'all' },
@@ -108,7 +108,7 @@ const useStyles = createUseStyles({
     '@media screen and (max-width: 950px)': { padding: 10 },
   },
   name: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontSize: 18,
     marginBottom: 10,
     '@media screen and (max-width: 950px)': { fontSize: 12, marginBottom: 5 },
@@ -117,7 +117,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     flexDirection: 'column',
     fontSize: 13,
-    color: '#7B7B7B',
+    color: 'var(--color-text-subtle)',
     '& span': { margin: '0 5px 0 8px' },
     '@media screen and (max-width: 950px)': { fontSize: 11 },
   },

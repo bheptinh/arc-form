@@ -18,8 +18,8 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     position: 'relative',
     height: '100%',
@@ -68,7 +68,7 @@ const useStyle = createUseStyles({
     '& h2': {
       fontSize: 25,
       fontFamily: 'Roboto-Light, sans-serif',
-      color: '#2F2F2F',
+      color: 'var(--color-text)',
       fontWeight: 400,
     },
     '& img': {
@@ -84,12 +84,12 @@ const useStyle = createUseStyles({
     display: 'grid',
     alignItems: 'center',
     justifyContent: 'center',
-    background: '#72C4FF',
+    background: 'var(--color-info-light)',
     position: 'relative',
     alignContent: 'center',
     textAlign: 'center',
     '& h2': {
-      color: '#ffffff',
+      color: 'var(--color-white)',
       fontSize: 32,
       fontFamily: 'Roboto-Light, sans-serif',
       fontWeight: 300,
@@ -100,7 +100,7 @@ const useStyle = createUseStyles({
       },
     },
     '& h3': {
-      color: '#ffffff',
+      color: 'var(--color-white)',
       fontSize: 14,
       fontWeight: 400,
       '@media screen and (max-width: 950px)': {
@@ -121,7 +121,7 @@ const useStyle = createUseStyles({
     minHeight: 14,
     '& h3': {
       fontSize: 12,
-      color: '#2F2F2F',
+      color: 'var(--color-text)',
       textTransform: 'uppercase',
       '@media screen and (max-width: 950px)': {
         fontSize: 11,
@@ -155,15 +155,15 @@ const useStyle = createUseStyles({
     display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     fontSize: 14,
     borderRadius: 3,
     padding: '0 20px',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     minWidth: 96,
     outline: 'none',
-    background: '#BBE521',
-    border: '1px solid #BBE521',
+    background: 'var(--color-accent-bright)',
+    border: '1px solid var(--color-accent-bright)',
     textTransform: 'uppercase',
     '& svg': {
       width: 11,
@@ -171,7 +171,7 @@ const useStyle = createUseStyles({
       marginLeft: 7,
     },
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
     '@media screen and (max-width: 950px)': {
       marginTop: 0,

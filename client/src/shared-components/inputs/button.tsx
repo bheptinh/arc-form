@@ -9,7 +9,7 @@ const useStyle = createUseStyles({
     display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     fontSize: 14,
     borderRadius: 3,
     padding: '0 20px',
@@ -30,16 +30,16 @@ const useStyle = createUseStyles({
   },
   primary: {
     border: 'none',
-    background: '#BBE521',
+    background: 'var(--color-accent-bright)',
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
   },
   secondary: {
-    border: '1px solid #000',
-    background: '#fff',
+    border: '1px solid var(--color-black)',
+    background: 'var(--color-white)',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
 });

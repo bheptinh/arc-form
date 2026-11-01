@@ -36,13 +36,13 @@ const useStyle = createUseStyles({
       width: 20,
       height: 20,
       opacity: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
       display: 'block',
       borderRadius: 10,
       margin: '0 4px',
       cursor: 'pointer',
       '&.swiper-pagination-bullet-active': {
-        background: '#9DD900',
+        background: 'var(--color-accent-strong)',
       },
     },
   },
@@ -65,7 +65,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#BAE51F',
+      background: 'var(--color-accent)',
     },
   },
   prevBtnArrow: {
@@ -90,7 +90,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#BAE51F',
+      background: 'var(--color-accent)',
     },
   },
   nextBtnArrow: {
@@ -104,16 +104,18 @@ const useStyle = createUseStyles({
     pointerEvents: 'none',
   },
   renderTypeText: {
-    color: '#fff',
+    color: 'var(--color-white)',
     fontSize: 38,
-    textShadow: '1px 1px 1px #000, 0 0 1em #000, 0 0 .1em #000',
+    textShadow:
+      '1px 1px 1px var(--color-black), 0 0 1em var(--color-black), 0 0 .1em var(--color-black)',
   },
   renderTypeSize: {
-    color: '#fff',
+    color: 'var(--color-white)',
     fontSize: 16,
     textAlign: 'right',
     letterSpacing: '-1px',
-    textShadow: '1px 1px 1px #000, 0 0 1em #000, 0 0 .1em #000',
+    textShadow:
+      '1px 1px 1px var(--color-black), 0 0 1em var(--color-black), 0 0 .1em var(--color-black)',
   },
   slider_img_text_1: {
     position: 'absolute',
@@ -155,9 +157,9 @@ const useStyle = createUseStyles({
     position: 'absolute',
     top: 0,
     left: '50%',
-    background: '#9DD900',
-    borderLeft: '1px solid #fff',
-    borderRight: '1px solid #fff',
+    background: 'var(--color-accent-strong)',
+    borderLeft: '1px solid var(--color-white)',
+    borderRight: '1px solid var(--color-white)',
     transform: 'translateX(-50%)',
     height: '100%',
   },

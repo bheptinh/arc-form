@@ -20,8 +20,8 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   done_popup_cont: {
-    color: '#000',
-    backgroundColor: '#f1f1f1',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-surface-subtle)',
     borderRadius: 6,
     position: 'relative',
     height: '100%',
@@ -29,7 +29,7 @@ const useStyle = createUseStyles({
   },
   done_popup_login_wrap: {},
   done_popup_top: {
-    background: '#72C4FF',
+    background: 'var(--color-info-light)',
     height: 210,
     display: 'flex',
     alignItems: 'center',
@@ -40,7 +40,7 @@ const useStyle = createUseStyles({
     textAlign: 'center',
   },
   done_popup_title: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontSize: 32,
     fontWeight: 300,
     textAlign: 'center',
@@ -54,10 +54,10 @@ const useStyle = createUseStyles({
     marginBottom: 30,
   },
   done_popup_btn: {
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     fontSize: 17,
     padding: '10px 55px',
-    background: '#9DD900',
+    background: 'var(--color-accent-strong)',
     textTransform: 'uppercase',
     cursor: 'pointer',
     display: 'inline-block',
@@ -65,7 +65,7 @@ const useStyle = createUseStyles({
     lineHeight: '15px',
     fontWeight: 400,
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
     '@media screen and (max-width: 950px)': {
       fontSize: 12,

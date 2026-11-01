@@ -16,8 +16,8 @@ const useStyle = createUseStyles({
     maxWidth: 542,
   },
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     height: '100%',
     padding: '30px 60px',

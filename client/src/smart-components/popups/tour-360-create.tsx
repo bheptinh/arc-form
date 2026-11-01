@@ -15,8 +15,8 @@ const useStyle = createUseStyles({
     boxShadow: 'none',
   },
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#f1f1f1',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-surface-subtle)',
     overflow: 'hidden',
     position: 'relative',
     width: '100%',

@@ -21,7 +21,7 @@ const useStyles = createUseStyles({
     '@media screen and (max-width: 950px)': { padding: 0 },
   },
   title: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontSize: 32,
     fontWeight: 300,
     marginBottom: 16,

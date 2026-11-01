@@ -22,7 +22,7 @@ const useStyle = createUseStyles({
     background: 'rgba(30, 28, 28, 0.9)',
   },
   compare_popup_wr: {
-    color: '#000',
+    color: 'var(--color-black)',
     width: '100%',
     height: '100%',
   },
@@ -47,7 +47,7 @@ const useStyle = createUseStyles({
     alignItems: 'center',
     '&:hover': {
       '& svg': {
-        stroke: '#BBE521',
+        stroke: 'var(--color-accent-bright)',
       },
     },
   },

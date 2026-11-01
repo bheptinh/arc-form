@@ -19,7 +19,7 @@ const useStyle = createUseStyles({
     },
     '& label': {
       fontSize: 14,
-      color: '#2F2F2F',
+      color: 'var(--color-text)',
       position: 'relative',
       cursor: 'pointer',
       '& span': {
@@ -45,7 +45,7 @@ const useStyle = createUseStyles({
         width: 7,
         height: 7,
         borderRadius: '50%',
-        background: '#9DD900',
+        background: 'var(--color-accent-strong)',
         border: '1px solid #9DD112',
         position: 'absolute',
         left: -16,

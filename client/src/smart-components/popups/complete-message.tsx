@@ -12,7 +12,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     top: 34,
     fontSize: 12,
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     right: 0,
     padding: '7px 11px',
     display: 'flex',
@@ -23,10 +23,10 @@ const useStyle = createUseStyles({
     pointerEvents: 'none',
   },
   alert_status_done: {
-    background: '#BAE51F',
+    background: 'var(--color-accent)',
   },
   alert_status_error: {
-    background: '#AF3131',
+    background: 'var(--color-danger)',
   },
   alert_status_icon: {
     width: 13,

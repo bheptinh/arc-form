@@ -25,7 +25,7 @@ import DefaultModal from '../../shared-components/modals/default';
 const useStyle = createUseStyles({
   planner_popup_facebook: {},
   planner_popup_facebook_text: {
-    color: '#373737',
+    color: 'var(--color-text-muted)',
     fontSize: 16,
     textAlign: 'center',
     margin: '15px 10px',
@@ -80,7 +80,7 @@ const useStyle = createUseStyles({
   },
   planner_popup_bottom_link: {
     fontSize: 14,
-    color: '#66ACF4',
+    color: 'var(--color-info)',
     textDecoration: 'underline',
     cursor: 'pointer',
     '&:hover': {

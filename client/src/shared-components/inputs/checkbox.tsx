@@ -17,7 +17,7 @@ const useStyle = createUseStyles({
       alignItems: 'center',
       userSelect: 'none',
       fontSize: '13px',
-      color: '#373737',
+      color: 'var(--color-text-muted)',
       cursor: 'pointer',
       position: 'relative',
       gap: '8px',

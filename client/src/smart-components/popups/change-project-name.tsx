@@ -21,15 +21,15 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     position: 'relative',
     height: '100%',
     padding: '64px 73px 71px',
   },
   text: {
-    color: '#373737',
+    color: 'var(--color-text-muted)',
     fontSize: 16,
     textAlign: 'center',
     '@media screen and (max-width: 950px)': {

@@ -132,6 +132,8 @@ Current components:
 ### Styling
 **react-jss** (`createUseStyles`) throughout. Not CSS Modules. Class names are generated at runtime.
 
+Colours are CSS variables in `client/src/tokens.css`, loaded first in `main.tsx`. Use `var(--color-…)` in style objects, but not in canvas `fillStyle`, `THREE.Color` or `url()` data URIs, where `var()` doesn't work.
+
 ### UI Layout — `client/src/App.tsx`
 ```
 TopPanel      — project name, undo/redo, save, share

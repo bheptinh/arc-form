@@ -50,13 +50,13 @@ const useStyle = createUseStyles({
       width: 16,
       height: 16,
       opacity: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
       display: 'block',
       borderRadius: 10,
       margin: '0 3px',
       cursor: 'pointer',
       '&.swiper-pagination-bullet-active': {
-        background: '#9DD900',
+        background: 'var(--color-accent-strong)',
       },
       '@media screen and (max-width: 950px)': {
         width: 10,
@@ -84,7 +84,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#BAE51F',
+      background: 'var(--color-accent)',
     },
     '@media screen and (max-width: 950px)': {
       width: 30,
@@ -119,7 +119,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#BAE51F',
+      background: 'var(--color-accent)',
     },
     '@media screen and (max-width: 950px)': {
       width: 30,

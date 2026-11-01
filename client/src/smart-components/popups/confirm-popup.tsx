@@ -11,7 +11,7 @@ import DefaultModal from '../../shared-components/modals/default';
 const useStyle = createUseStyles({
   inner: {},
   cont: {
-    backgroundColor: '#fff',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     padding: '40px 60px',
     position: 'relative',
@@ -21,7 +21,7 @@ const useStyle = createUseStyles({
   },
   text: {
     fontSize: 14,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     textAlign: 'center',
     marginBottom: 30,
     lineHeight: 1.5,

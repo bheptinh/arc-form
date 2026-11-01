@@ -31,7 +31,7 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_wr: {
-    color: '#000',
+    color: 'var(--color-black)',
     maxWidth: 624,
     width: '100%',
     maxHeight: '90%',
@@ -40,15 +40,15 @@ const useStyle = createUseStyles({
     transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     position: 'relative',
     height: '100%',
     padding: '64px 73px 71px',
   },
   text: {
-    color: '#373737',
+    color: 'var(--color-text-muted)',
     fontSize: 16,
     textAlign: 'center',
     '@media screen and (max-width: 950px)': {
@@ -67,7 +67,7 @@ const useStyle = createUseStyles({
     display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     fontSize: 14,
     borderRadius: 3,
     padding: '0 20px',
@@ -75,11 +75,11 @@ const useStyle = createUseStyles({
     minWidth: 120,
     border: 'none',
     outline: 'none',
-    background: '#BBE521',
+    background: 'var(--color-accent-bright)',
     textTransform: 'uppercase',
     margin: '0 3px',
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
     '@media screen and (max-width: 950px)': {
       fontSize: 12,

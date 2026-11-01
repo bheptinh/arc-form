@@ -35,7 +35,7 @@ const useStyle = createUseStyles({
     boxShadow: 'none',
   },
   planner_popup_cont: {
-    color: '#000',
+    color: 'var(--color-black)',
     position: 'relative',
     height: '100%',
     transition: 'all 1.9s cubic-bezier(0.19, 1, 0.22, 1)',
@@ -54,7 +54,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#BAE51F',
+        fill: 'var(--color-accent)',
       },
     },
   },
@@ -65,7 +65,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     textAlign: 'center',
     alignItems: 'center',
-    background: '#72C4FF',
+    background: 'var(--color-info-light)',
     padding: 30,
     borderRadius: '6px 6px 0 0',
     boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
@@ -74,7 +74,7 @@ const useStyle = createUseStyles({
     },
   },
   upload_popup_top_main: {
-    border: '2px dashed #ffffff',
+    border: '2px dashed var(--color-white)',
     height: 294,
     width: '100%',
     padding: 13,
@@ -101,7 +101,7 @@ const useStyle = createUseStyles({
     },
   },
   green_outline: {
-    outline: 'solid 2px #bae51f',
+    outline: 'solid 2px var(--color-accent)',
     background: 'rgb(89 141 179)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '& $upload_popup_top_icon': {
@@ -130,7 +130,7 @@ const useStyle = createUseStyles({
   },
   upload_popup_top_text: {
     fontSize: '18px',
-    color: '#ffffff',
+    color: 'var(--color-white)',
     whiteSpace: 'nowrap',
     display: 'flex',
     margin: '15px 0',
@@ -145,7 +145,7 @@ const useStyle = createUseStyles({
     },
   },
   upload_popup_set_file_btn: {
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     border: 'none',
     cursor: 'pointer',
     height: 36,
@@ -154,12 +154,12 @@ const useStyle = createUseStyles({
     padding: 15,
     fontSize: 14,
     textTransform: 'uppercase',
-    background: '#9DD900',
+    background: 'var(--color-accent-strong)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     alignItems: 'center',
     justifyContent: 'center',
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
     '& svg': {
       marginRight: 5,
@@ -176,7 +176,7 @@ const useStyle = createUseStyles({
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   upload_popup_bottom_wr: {
-    background: '#fff',
+    background: 'var(--color-white)',
     overflow: 'hidden',
     borderRadius: '0 0 6px 6px',
     position: 'absolute',
@@ -196,8 +196,8 @@ const useStyle = createUseStyles({
     alignItems: 'center',
     padding: 20,
     fontSize: 14,
-    color: '#2F2F2F',
-    background: '#fff',
+    color: 'var(--color-text)',
+    background: 'var(--color-white)',
     borderRadius: '0 0 6px 6px',
     position: 'absolute',
     left: 0,
@@ -206,7 +206,7 @@ const useStyle = createUseStyles({
     '& h2': {
       fontSize: 32,
       lineHeight: '27px',
-      color: '#373737',
+      color: 'var(--color-text-muted)',
       marginBottom: 20,
       fontFamily: 'RobotoCondensed-Light',
       fontWeight: 400,
@@ -233,8 +233,8 @@ const useStyle = createUseStyles({
     alignItems: 'flex-start',
     padding: 20,
     fontSize: 14,
-    color: '#2F2F2F',
-    background: '#fff',
+    color: 'var(--color-text)',
+    background: 'var(--color-white)',
     borderRadius: '0 0 6px 6px',
     position: 'absolute',
     left: 0,
@@ -243,7 +243,7 @@ const useStyle = createUseStyles({
     '& h2': {
       fontSize: 32,
       lineHeight: '27px',
-      color: '#373737',
+      color: 'var(--color-text-muted)',
       marginBottom: 20,
       fontFamily: 'RobotoCondensed-Light',
       fontWeight: 400,
@@ -270,11 +270,11 @@ const useStyle = createUseStyles({
   },
   upload_popup_bottom_item_right: {
     fontWeight: 700,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     transition: 'color 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   upload_popup_bottom_item_error: {
-    color: '#DD352E',
+    color: 'var(--color-danger-bright)',
     animation: '$shake 0.4s ease',
   },
   upload_popup_bottom_size: {
@@ -298,18 +298,18 @@ const useStyle = createUseStyles({
     display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     fontSize: 14,
     borderRadius: 3,
     padding: '0 20px',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     minWidth: 120,
     outline: 'none',
-    background: '#fff',
+    background: 'var(--color-white)',
     textTransform: 'uppercase',
-    border: '1px solid #000',
+    border: '1px solid var(--color-black)',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
     '@media screen and (max-width: 950px)': {
       padding: '0 8px',
@@ -325,7 +325,7 @@ const useStyle = createUseStyles({
     overflow: 'hidden',
     borderRadius: '6px 6px 0 0 ',
     zIndex: 1,
-    borderBottom: '1px solid #C6C4C4',
+    borderBottom: '1px solid var(--color-border)',
     '& canvas': {
       position: 'absolute',
       left: 0,

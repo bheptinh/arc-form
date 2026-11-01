@@ -36,8 +36,8 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   delete_account_cont: {
-    color: '#000',
-    backgroundColor: '#f1f1f1',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-surface-subtle)',
     borderRadius: 6,
     position: 'relative',
     height: '100%',
@@ -69,9 +69,9 @@ const useStyle = createUseStyles({
   },
   delete_account_input_ready: {
     '& input': {
-      border: '1px solid #AF3131',
-      background: '#AF3131',
-      color: '#ffffff',
+      border: '1px solid var(--color-danger)',
+      background: 'var(--color-danger)',
+      color: 'var(--color-white)',
       transition: 'all .5s ease',
       cursor: 'pointer',
     },

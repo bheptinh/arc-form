@@ -62,7 +62,7 @@ const useStyle = createUseStyles({
     boxShadow: 'none',
   },
   planner_popup_cont: {
-    color: '#000',
+    color: 'var(--color-black)',
     position: 'relative',
     height: '100%',
     transition: 'all 1.9s cubic-bezier(0.19, 1, 0.22, 1)',
@@ -82,7 +82,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#BAE51F',
+        fill: 'var(--color-accent)',
       },
     },
   },
@@ -99,7 +99,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& path': {
-        fill: '#BAE51F',
+        fill: 'var(--color-accent)',
       },
     },
   },
@@ -115,7 +115,7 @@ const useStyle = createUseStyles({
     textAlign: 'center',
     alignItems: 'center',
     padding: 30,
-    background: '#72C4FF',
+    background: 'var(--color-info-light)',
     borderRadius: '6px 6px 0 0',
     boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
     '@media screen and (max-width: 950px)': {
@@ -123,7 +123,7 @@ const useStyle = createUseStyles({
     },
   },
   upload_popup_top_main: {
-    border: '2px dashed #ffffff',
+    border: '2px dashed var(--color-white)',
     height: 294,
     width: '100%',
     padding: 13,
@@ -161,7 +161,7 @@ const useStyle = createUseStyles({
     },
   },
   green_outline: {
-    outline: 'solid 2px #bae51f',
+    outline: 'solid 2px var(--color-accent)',
     background: 'rgb(89 141 179)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '& $upload_popup_top_icon': {
@@ -190,7 +190,7 @@ const useStyle = createUseStyles({
   },
   upload_popup_top_text: {
     fontSize: '18px',
-    color: '#ffffff',
+    color: 'var(--color-white)',
     whiteSpace: 'nowrap',
     display: 'flex',
     margin: '15px 0',
@@ -205,7 +205,7 @@ const useStyle = createUseStyles({
     },
   },
   upload_popup_set_file_btn: {
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     border: 'none',
     cursor: 'pointer',
     height: 36,
@@ -214,12 +214,12 @@ const useStyle = createUseStyles({
     padding: 15,
     fontSize: 14,
     textTransform: 'uppercase',
-    background: '#9DD900',
+    background: 'var(--color-accent-strong)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     alignItems: 'center',
     justifyContent: 'center',
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
     '& svg': {
       marginRight: 5,
@@ -231,7 +231,7 @@ const useStyle = createUseStyles({
     },
   },
   upload_popup_change_img_btn: {
-    color: '#fff',
+    color: 'var(--color-white)',
     fontSize: 13,
     textDecoration: 'underline',
     position: 'absolute',
@@ -253,7 +253,7 @@ const useStyle = createUseStyles({
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   upload_popup_bottom_wr: {
-    background: '#fff',
+    background: 'var(--color-white)',
     overflow: 'hidden',
     borderRadius: '0 0 6px 6px',
     position: 'absolute',
@@ -270,8 +270,8 @@ const useStyle = createUseStyles({
   upload_popup_bottom: {
     padding: '37px 63px',
     fontSize: 14,
-    color: '#2F2F2F',
-    background: '#fff',
+    color: 'var(--color-text)',
+    background: 'var(--color-white)',
     borderRadius: '0 0 6px 6px',
     position: 'absolute',
     left: 0,
@@ -297,11 +297,11 @@ const useStyle = createUseStyles({
   },
   upload_popup_bottom_item_right: {
     fontWeight: 700,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     transition: 'color 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   upload_popup_bottom_item_error: {
-    color: '#DD352E',
+    color: 'var(--color-danger-bright)',
     animation: '$shake 0.4s ease',
   },
   upload_model_img_correct_wr: {
@@ -322,7 +322,7 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     marginTop: 14,
     '& a': {
-      color: '#66ACF4',
+      color: 'var(--color-info)',
       fontSize: 14,
       textDecoration: 'underline',
       cursor: 'pointer',
@@ -353,12 +353,12 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
   },
   upload_popup_ai_warning: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     fontSize: 14,
     lineHeight: '1.5',
     padding: '8px 35px',
     borderRadius: 6,
-    background: '#FFB400',
+    background: 'var(--color-warning)',
     textAlign: 'center',
     '@media screen and (max-width: 950px)': {
       fontSize: 11,
@@ -371,21 +371,21 @@ const useStyle = createUseStyles({
     alignSelf: 'center',
   },
   planner_popup_generate_btn: {
-    color: '#2B2B2B',
+    color: 'var(--color-text-strong)',
     border: 'none',
     cursor: 'pointer',
     height: '36px',
     display: 'flex',
     padding: '15px',
     fontSize: '14px',
-    background: '#9DD900',
+    background: 'var(--color-accent-strong)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     alignItems: 'center',
     borderRadius: '3px',
     textTransform: 'uppercase',
     justifyContent: 'center',
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
     '@media screen and (max-width: 950px)': {
       fontSize: 12,
@@ -394,7 +394,7 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_export_progressBar_wr: {
-    background: '#fff',
+    background: 'var(--color-white)',
     borderRadius: 6,
     overflow: 'hidden',
   },
@@ -406,7 +406,7 @@ const useStyle = createUseStyles({
     padding: '80px 10px 140px',
     '& p': {
       fontSize: 14,
-      color: '#2f2f2f',
+      color: 'var(--color-text)',
       textAlign: 'center',
     },
     '& progress': {},
@@ -436,7 +436,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     left: 4,
     top: 2,
-    background: '#9DD900',
+    background: 'var(--color-accent-strong)',
     borderRadius: 7,
   },
   planner_popup_export_top: {
@@ -444,10 +444,10 @@ const useStyle = createUseStyles({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    background: '#72C4FF',
+    background: 'var(--color-info-light)',
     padding: '30px 10px',
     '& h2': {
-      color: '#ffffff',
+      color: 'var(--color-white)',
       fontSize: 32,
       fontFamily: 'Roboto-Light, sans-serif',
       fontWeight: 300,
@@ -458,7 +458,7 @@ const useStyle = createUseStyles({
       },
     },
     '& h3': {
-      color: '#ffffff',
+      color: 'var(--color-white)',
       fontSize: 14,
       fontWeight: 400,
     },

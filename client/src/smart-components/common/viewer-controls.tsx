@@ -20,7 +20,7 @@ const useStyles = createUseStyles({
     gap: 2,
     padding: 2,
     borderRadius: 3,
-    backgroundColor: '#fff',
+    backgroundColor: 'var(--color-white)',
     boxShadow: '0 1px 4px rgba(0, 0, 0, 0.2)',
   },
   walk: {
@@ -33,9 +33,9 @@ const useStyles = createUseStyles({
     borderRadius: 3,
     background: 'none',
     cursor: 'pointer',
-    '&:focus-visible': { outline: '2px solid #2F2F2F', outlineOffset: -2 },
+    '&:focus-visible': { outline: '2px solid var(--color-text)', outlineOffset: -2 },
   },
-  walkActive: { backgroundColor: '#BAE51F' },
+  walkActive: { backgroundColor: 'var(--color-accent)' },
 });
 
 export default function ViewerControls() {

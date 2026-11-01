@@ -25,8 +25,8 @@ const useStyle = createUseStyles({
     boxShadow: 'none',
   },
   planner_popup_cont: {
-    color: '#2A3435',
-    backgroundColor: '#f1f1f1',
+    color: 'var(--color-text-slate)',
+    backgroundColor: 'var(--color-surface-subtle)',
     overflow: 'hidden',
     position: 'relative',
     height: '100%',
@@ -38,7 +38,7 @@ const useStyle = createUseStyles({
   planner_popup_cont_left: {
     position: 'relative',
     borderRight: '1px solid #cdcdcd',
-    background: '#ffffff',
+    background: 'var(--color-white)',
     width: 300,
     overflow: 'hidden',
     display: 'grid',
@@ -51,7 +51,7 @@ const useStyle = createUseStyles({
   },
   planner_popup_cont_left_scroll: {
     position: 'relative',
-    borderBottom: '1px solid #C6C4C4',
+    borderBottom: '1px solid var(--color-border)',
   },
   planner_popup_cont_center: {
     width: 'calc(100% - 300px)',
@@ -94,7 +94,7 @@ const useStyle = createUseStyles({
     border: 'none',
     outline: 'none',
     textTransform: 'uppercase',
-    color: '#2A3435',
+    color: 'var(--color-text-slate)',
     '@media screen and (max-width: 950px)': {
       height: 26,
       padding: '0 5px',
@@ -104,7 +104,7 @@ const useStyle = createUseStyles({
   },
   planner_popup_cont_left_button_cancel: {
     justifyContent: 'flex-start',
-    border: '1px solid #000000',
+    border: '1px solid var(--color-black)',
     '& svg': {
       marginRight: 10,
       '@media screen and (max-width: 950px)': {
@@ -116,15 +116,15 @@ const useStyle = createUseStyles({
     '& p': {
       flex: 2,
       textAlign: 'center',
-      color: '#2A3435',
+      color: 'var(--color-text-slate)',
     },
     '&:hover': {
-      background: '#E9E9E9',
-      color: '#ffffff',
+      background: 'var(--color-surface-muted)',
+      color: 'var(--color-white)',
     },
   },
   planner_popup_cont_left_button_save: {
-    background: '#BBE521',
+    background: 'var(--color-accent-bright)',
     '& svg': {
       marginRight: 10,
       '@media screen and (max-width: 950px)': {
@@ -134,15 +134,15 @@ const useStyle = createUseStyles({
       },
     },
     '&:hover': {
-      background: '#8fc32d',
+      background: 'var(--color-accent-hover)',
     },
   },
   planner_popup_orientation_buttons: {
-    border: '2px solid #fff',
+    border: '2px solid var(--color-white)',
     height: '40px',
     display: 'inline-grid',
     gridGap: '2px',
-    background: '#fff',
+    background: 'var(--color-white)',
     boxShadow: '0px 0px 3px 0px rgba(0, 0, 0, 0.12)',
     borderRadius: '6px',
     gridTemplateColumns: 'auto auto',
@@ -152,7 +152,7 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_orientation_button: {
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     cursor: 'pointer',
     display: 'flex',
     padding: '0 20px',
@@ -162,7 +162,7 @@ const useStyle = createUseStyles({
     borderRadius: '3px',
     minWidth: 60,
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
     '@media screen and (max-width: 950px)': {
       '& svg': {
@@ -178,7 +178,7 @@ const useStyle = createUseStyles({
     marginBottom: 10,
   },
   planner_popup_orientation_button_active: {
-    background: '#BAE51F',
+    background: 'var(--color-accent)',
     cursor: 'default',
     pointerEvents: 'none',
   },
@@ -211,7 +211,7 @@ const useStyle = createUseStyles({
     transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
     padding: '5px 14px',
     '&:hover': {
-      background: '#E9E9E9',
+      background: 'var(--color-surface-muted)',
     },
   },
 
@@ -228,7 +228,7 @@ const useStyle = createUseStyles({
   planner_popup_acc_types_toggle_item_left: {
     fontSize: 13,
     fontWeight: 400,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     '@media screen and (max-width: 950px)': {
       fontSize: 11,
     },

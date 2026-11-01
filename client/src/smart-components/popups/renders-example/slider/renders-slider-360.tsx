@@ -34,13 +34,13 @@ const useStyle = createUseStyles({
       width: 20,
       height: 20,
       opacity: 1,
-      background: '#fff',
+      background: 'var(--color-white)',
       display: 'block',
       borderRadius: 10,
       margin: '0 4px',
       cursor: 'pointer',
       '&.swiper-pagination-bullet-active': {
-        background: '#9DD900',
+        background: 'var(--color-accent-strong)',
       },
     },
   },
@@ -63,7 +63,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#BAE51F',
+      background: 'var(--color-accent)',
     },
   },
   prevBtnArrow: {
@@ -88,7 +88,7 @@ const useStyle = createUseStyles({
       pointerEvents: 'none',
     },
     '&:hover': {
-      background: '#BAE51F',
+      background: 'var(--color-accent)',
     },
   },
   nextBtnArrow: {

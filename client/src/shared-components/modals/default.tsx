@@ -38,7 +38,7 @@ const useStyle = createUseStyles({
     },
   },
   defaultModalLayout_wr: {
-    color: '#000',
+    color: 'var(--color-black)',
     maxHeight: '90%',
     transform: 'scale(0)',
     boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
@@ -49,8 +49,8 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   defaultModalLayout_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     position: 'relative',
     height: '100%',
@@ -73,7 +73,7 @@ const useStyle = createUseStyles({
     },
     '&:hover': {
       '& $defaultModalLayout_back_icon': {
-        stroke: '#BAE51F',
+        stroke: 'var(--color-accent)',
       },
     },
   },
@@ -91,7 +91,7 @@ const useStyle = createUseStyles({
     zIndex: '2',
     '&:hover': {
       '& $defaultModalLayout_close_icon': {
-        stroke: '#BAE51F',
+        stroke: 'var(--color-accent)',
       },
     },
     '@media screen and (max-width: 950px)': {
@@ -104,7 +104,7 @@ const useStyle = createUseStyles({
   defaultModalLayout_title: {
     fontSize: 32,
     fontWeight: '300',
-    color: '#ffffff',
+    color: 'var(--color-white)',
     whiteSpace: 'nowrap',
     textAlign: 'center',
     fontFamily: 'Roboto-Light, sans-serif',
@@ -113,7 +113,7 @@ const useStyle = createUseStyles({
     },
   },
   defaultModalLayout_profile_top: {
-    background: '#72C4FF',
+    background: 'var(--color-info-light)',
     position: 'relative',
     padding: '41px 0',
     '@media screen and (max-width: 950px)': {
@@ -123,7 +123,7 @@ const useStyle = createUseStyles({
   defaultModalLayout_profile_bottom: {
     position: 'relative',
     padding: '14px 32px 52px',
-    background: '#fff',
+    background: 'var(--color-white)',
 
     '@media screen and (max-width: 950px)': {
       padding: '14px 16px 30px',

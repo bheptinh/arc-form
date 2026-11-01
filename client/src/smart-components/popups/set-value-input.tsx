@@ -13,8 +13,8 @@ import DefaultModal from '../../shared-components/modals/default';
 const useStyle = createUseStyles({
   planner_popup_wr: {},
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     height: '100%',
     padding: '30px 60px',
@@ -22,7 +22,7 @@ const useStyle = createUseStyles({
   },
   planner_popup_text: {
     fontSize: 14,
-    color: '#2F2F2F',
+    color: 'var(--color-text)',
     textAlign: 'center',
     marginBottom: 30,
     '& sup': {

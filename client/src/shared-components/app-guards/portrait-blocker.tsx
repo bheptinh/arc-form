@@ -2,7 +2,7 @@ import { createUseStyles } from 'react-jss';
 
 const useStyle = createUseStyles({
   content_portret: {
-    background: '#66ACF4',
+    background: 'var(--color-info)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -20,7 +20,7 @@ const useStyle = createUseStyles({
       fontWeight: 400,
       lineHeight: '42.19px',
       textAlign: 'center',
-      color: '#ffffff',
+      color: 'var(--color-white)',
       marginBottom: 10,
     },
     '& p': {
@@ -28,7 +28,7 @@ const useStyle = createUseStyles({
       fontWeight: 400,
       lineHeight: '21.09px',
       textAlign: 'center',
-      color: '#ffffff',
+      color: 'var(--color-white)',
     },
   },
 

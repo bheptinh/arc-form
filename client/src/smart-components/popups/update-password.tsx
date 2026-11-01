@@ -20,8 +20,8 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#f1f1f1',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-surface-subtle)',
     borderRadius: 6,
     position: 'relative',
     height: '100%',
@@ -30,7 +30,7 @@ const useStyle = createUseStyles({
   planner_popup_title: {
     fontSize: 32,
     fontWeight: '300',
-    color: '#ffffff',
+    color: 'var(--color-white)',
     whiteSpace: 'nowrap',
     textAlign: 'center',
     fontFamily: 'Roboto-Light, sans-serif',
@@ -48,7 +48,7 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_profile_top: {
-    background: '#72C4FF',
+    background: 'var(--color-info-light)',
     position: 'relative',
     padding: '41px 0',
     '@media screen and (max-width: 950px)': {
@@ -58,7 +58,7 @@ const useStyle = createUseStyles({
   planner_popup_profile_bottom: {
     position: 'relative',
     padding: '20px 0 30px',
-    background: '#fff',
+    background: 'var(--color-white)',
     '& form': {
       padding: '0 100px',
     },

@@ -32,15 +32,15 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_wr: {
-    color: '#000',
+    color: 'var(--color-black)',
     maxHeight: '90%',
     transform: 'translateY(-110%)',
     boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
     transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   planner_popup_cont: {
-    color: '#000',
-    backgroundColor: '#fff',
+    color: 'var(--color-black)',
+    backgroundColor: 'var(--color-white)',
     borderRadius: 6,
     height: '100%',
     padding: '20px 30px',
