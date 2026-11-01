@@ -20,7 +20,6 @@ import Export3DProjectPopup from './export-popup/export-3d-project-popup';
 import ExportPopup from './export-popup/export-popup';
 import ImageUploadPopup from './image-upload-popup';
 import LoadingMessagePopup from './loading-message';
-import ProfilePopup from './profile-popup';
 import ProjectDataLoadPopup from './project-data-load-popup';
 import ProjectSetNamePopup from './project-set-name-popup';
 import RegistrationDonePopup from './registration-done-popup';
@@ -64,7 +63,6 @@ export default function PopupActions() {
       {activePopup.login.status === true ? <AuthLoginPopup /> : null}
       {activePopup.registration.status === true ? <AuthRegistrationPopup /> : null}
       {activePopup.forgotPassword.status === true ? <AuthForgotPasswordPopup /> : null}
-      {activePopup.profile.status === true ? <ProfilePopup /> : null}
       {activePopup.setProjectName.status === true ? <ProjectSetNamePopup /> : null}
       {activePopup.confirm.status === true ? <ConfirmPopup /> : null}
       {activePopup.alert.status === true ? <AlertPopup /> : null}

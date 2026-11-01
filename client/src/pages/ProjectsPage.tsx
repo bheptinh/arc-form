@@ -3,6 +3,7 @@ import {
   IconForms,
   IconLogin2,
   IconPlus,
+  IconRestore,
   IconShare,
   IconTrash,
 } from '@tabler/icons-react';
@@ -10,20 +11,21 @@ import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-q
 import React, { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
 import {
+  archivedProjectsInfiniteQueryOptions,
   deleteProject,
   type Project,
   projectsInfiniteQueryOptions,
   renameProject,
+  setProjectArchived,
 } from '../api/projects';
 import { selectPopups, setActivePopup } from '../redux/features/popups/popupsSlice';
 import { Card } from '../shared-components/Card';
 import { confirm } from '../shared-components/ConfirmDialog';
 import { SortBar } from '../shared-components/SortBar';
-import AlertPopup from '../smart-components/popups/alert-popup';
 import ProjectSetNamePopup from '../smart-components/popups/project-set-name-popup';
 import SharePopup from '../smart-components/popups/share-popup';
 
@@ -52,6 +54,11 @@ const useStyles = createUseStyles({
     fontSize: 32,
     fontWeight: 300,
     '@media screen and (max-width: 950px)': { fontSize: 20 },
+  },
+  titleLink: {
+    color: '#2A3435',
+    fontSize: 14,
+    '&:hover': { textDecoration: 'underline' },
   },
   scroll: {
     overflowY: 'auto',
@@ -120,9 +127,14 @@ const useStyles = createUseStyles({
     fontSize: 14,
     '&:hover': { textDecoration: 'underline' },
   },
+  empty: {
+    gridColumn: '1 / -1',
+    color: '#5F6566',
+    fontSize: 15,
+  },
 });
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ archived = false }: { archived?: boolean }) {
   const classes = useStyles();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -130,7 +142,7 @@ export default function ProjectsPage() {
   const queryClient = useQueryClient();
 
   const { data, fetchNextPage, hasNextPage, isLoading } = useInfiniteQuery(
-    projectsInfiniteQueryOptions
+    archived ? archivedProjectsInfiniteQueryOptions : projectsInfiniteQueryOptions
   );
   const projects = data?.pages.flatMap((p) => p.items) ?? [];
 
@@ -152,6 +164,10 @@ export default function ProjectsPage() {
 
   const deleteMutation = useMutation({ mutationFn: deleteProject });
 
+  const archiveMutation = useMutation({
+    mutationFn: ({ id, value }: { id: string; value: boolean }) => setProjectArchived(id, value),
+  });
+
   const renameMutation = useMutation({
     mutationFn: ({ id, name }: { id: string; name: string }) => renameProject(id, name),
   });
@@ -162,6 +178,14 @@ export default function ProjectsPage() {
       toast.success('Project deleted');
     }
   }, [deleteMutation.status]);
+
+  useEffect(() => {
+    if (archiveMutation.isSuccess) {
+      queryClient.invalidateQueries({ queryKey: projectsInfiniteQueryOptions.queryKey });
+      toast.success(archiveMutation.variables.value ? 'Project deleted' : 'Project restored');
+    }
+    if (archiveMutation.isError) toast.error('Could not update the project');
+  }, [archiveMutation.status]);
 
   useEffect(() => {
     if (renameMutation.isSuccess) {
@@ -179,7 +203,13 @@ export default function ProjectsPage() {
 
   const handleDelete = async (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
-    const ok = await confirm('Delete this project? This cannot be undone.');
+    const ok = await confirm('Delete this project? You can restore it from the archive.');
+    if (ok) archiveMutation.mutate({ id, value: true });
+  };
+
+  const handleDeletePermanently = async (e: React.MouseEvent, id: string) => {
+    e.stopPropagation();
+    const ok = await confirm('Permanently delete this project? This cannot be undone.');
     if (ok) deleteMutation.mutate(id);
   };
 
@@ -215,7 +245,10 @@ export default function ProjectsPage() {
     <div className={classes.page}>
       <div className={classes.top}>
         <div className={classes.titleRow}>
-          <div className={classes.title}>My projects</div>
+          <div className={classes.title}>{archived ? 'Archive' : 'My projects'}</div>
+          <Link to={archived ? '/projects' : '/projects/archive'} className={classes.titleLink}>
+            {archived ? 'My projects' : 'Archive'}
+          </Link>
         </div>
         <SortBar
           options={[
@@ -239,10 +272,15 @@ export default function ProjectsPage() {
           </div>
         )}
         <div className={classes.grid}>
-          <div className={classes.addCard} onClick={handleCreateNew}>
-            <IconPlus size={26} color="#2E3839" />
-            New project
-          </div>
+          {!archived && (
+            <div className={classes.addCard} onClick={handleCreateNew}>
+              <IconPlus size={26} color="#2E3839" />
+              New project
+            </div>
+          )}
+          {archived && !isLoading && projects.length === 0 && (
+            <div className={classes.empty}>Projects you delete will appear here.</div>
+          )}
 
           {sorted.map((item) => (
             <Card
@@ -250,7 +288,7 @@ export default function ProjectsPage() {
               name={item.name}
               modified={item.modified}
               created={item.opened}
-              onClick={() => handleOpen(item.id)}
+              onClick={archived ? undefined : () => handleOpen(item.id)}
               nameContent={
                 renamingId === item.id ? (
                   <input
@@ -267,33 +305,48 @@ export default function ProjectsPage() {
                   />
                 ) : undefined
               }
-              actions={[
-                {
-                  icon: <IconLogin2 size={26} color="#ffffff" />,
-                  label: 'Open',
-                  onClick: () => handleOpen(item.id),
-                },
-                {
-                  icon: <IconForms size={26} color="#fff" />,
-                  label: 'Rename',
-                  onClick: (e) => startRename(e, item),
-                },
-                {
-                  icon: <IconCopy size={26} color="#fff" />,
-                  label: 'Copy',
-                  onClick: (e) => handleCopy(e, item),
-                },
-                {
-                  icon: <IconShare size={26} color="#fff" />,
-                  label: 'Share',
-                  onClick: (e) => handleShare(e, item),
-                },
-                {
-                  icon: <IconTrash size={26} color="#fff" />,
-                  label: 'Delete',
-                  onClick: (e) => handleDelete(e, item.id),
-                },
-              ]}
+              actions={
+                archived
+                  ? [
+                      {
+                        icon: <IconRestore size={26} color="#fff" />,
+                        label: 'Restore',
+                        onClick: () => archiveMutation.mutate({ id: item.id, value: false }),
+                      },
+                      {
+                        icon: <IconTrash size={26} color="#fff" />,
+                        label: 'Delete',
+                        onClick: (e) => handleDeletePermanently(e, item.id),
+                      },
+                    ]
+                  : [
+                      {
+                        icon: <IconLogin2 size={26} color="#ffffff" />,
+                        label: 'Open',
+                        onClick: () => handleOpen(item.id),
+                      },
+                      {
+                        icon: <IconForms size={26} color="#fff" />,
+                        label: 'Rename',
+                        onClick: (e) => startRename(e, item),
+                      },
+                      {
+                        icon: <IconCopy size={26} color="#fff" />,
+                        label: 'Copy',
+                        onClick: (e) => handleCopy(e, item),
+                      },
+                      {
+                        icon: <IconShare size={26} color="#fff" />,
+                        label: 'Share',
+                        onClick: (e) => handleShare(e, item),
+                      },
+                      {
+                        icon: <IconTrash size={26} color="#fff" />,
+                        label: 'Delete',
+                        onClick: (e) => handleDelete(e, item.id),
+                      },
+                    ]
+              }
             />
           ))}
 
@@ -307,7 +360,6 @@ export default function ProjectsPage() {
 
       {popups.share.status && <SharePopup />}
       {popups.setProjectName.status && <ProjectSetNamePopup />}
-      {popups.alert.status && <AlertPopup />}
     </div>
   );
 }

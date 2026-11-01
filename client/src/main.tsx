@@ -27,6 +27,7 @@ import App from './App';
 import { planner, user } from './initR2D';
 import { MarkdownPage } from './pages/MarkdownPage';
 import PasswordRecoveryPage from './pages/PasswordRecoveryPage';
+import ProfilePage from './pages/ProfilePage';
 import ProjectsPage from './pages/ProjectsPage';
 import RendersPage from './pages/RendersPage';
 import ToursPage from './pages/ToursPage';
@@ -112,9 +113,14 @@ async function init() {
               <Routes>
                 <Route path="/" element={<Navigate to="/projects" replace />} />
                 <Route element={<PageLayout />}>
-                  <Route path="/projects" element={<ProjectsPage />} />
+                  <Route path="/projects" element={<ProjectsPage key="projects" />} />
+                  <Route
+                    path="/projects/archive"
+                    element={<ProjectsPage key="archive" archived />}
+                  />
                   <Route path="/renders" element={<RendersPage />} />
                   <Route path="/tours" element={<ToursPage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
                 </Route>
                 <Route path="/toc" element={<MarkdownPage slug="toc" />} />
                 <Route path="/auth/reset-password" element={<PasswordRecoveryPage />} />

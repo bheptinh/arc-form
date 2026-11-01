@@ -373,21 +373,6 @@ const useStyle = createUseStyles({
       bottom: 0,
     },
   },
-  menu_logo: {
-    background: '#2E3839',
-    position: 'relative',
-    zIndex: 3,
-    '& img': {
-      width: '30px',
-      display: 'block',
-      margin: 'auto',
-      filter: 'grayscale(100%)',
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-    '&:hover img': {
-      filter: 'grayscale(0%)',
-    },
-  },
   menu_btn_active: {
     cursor: 'default',
     borderRadius: '0',
@@ -640,8 +625,6 @@ const ControlPanel = (props) => {
   return (
     <div className={classes.controlPanel} ref={mainDiv} style={{ overflow: 'hidden' }}>
       <div className={classes.menu_top}>
-        <UserButton />
-
         <div className={classes.menu_rozdil_wr}>
           {!isCurrDeviceAPhone && (!isProjectOnlyView || isProjectBelongToLoggedUser) ? (
             <div
@@ -865,11 +848,7 @@ const ControlPanel = (props) => {
           </div>
         </div>
 
-        {!isCurrDeviceAPhone ? (
-          <a href={R2D.URL.DOMAIN} target="_blank" className={classes.menu_logo}>
-            <img src="/src_designer/images/logo_roomtodo_mini.svg" />
-          </a>
-        ) : null}
+        <UserButton />
       </div>
     </div>
   );

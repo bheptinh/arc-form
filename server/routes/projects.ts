@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import { z } from 'zod';
-import { getConfig, listProjects, loadProject, saveProject, renameProject, copyProject, deleteProject, getProjectViewOnly, setProjectViewOnly } from '../services/projects.js';
+import { getConfig, listProjects, loadProject, saveProject, renameProject, copyProject, deleteProject, getProjectViewOnly, setProjectViewOnly, setProjectArchived } from '../services/projects.js';
 import { DEV_USER_ID } from '../schema.js';
 
 const router = Router();
@@ -14,11 +14,11 @@ router.get('/config', (_req, res) => {
   res.json({ status: 'success', result: JSON.stringify(getConfig()), location: 'UA' });
 });
 
-// GET / — list projects
+// GET / — list projects (?archived=1 lists the archive)
 router.get('/', (req, res) => {
   const limit = parseInt(req.query.limit as string) || 20;
   const offset = parseInt(req.query.offset as string) || 0;
-  res.json(listProjects(DEV_USER_ID, limit, offset));
+  res.json(listProjects(DEV_USER_ID, limit, offset, req.query.archived === '1'));
 });
 
 // GET /:id
@@ -103,7 +103,18 @@ router.put('/:id/sharing', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-// DELETE /:id
+// PUT /:id/archive — body: { archived }
+const ArchiveSchema = z.object({ archived: z.boolean() });
+
+router.put('/:id/archive', (req, res) => {
+  const parsed = ArchiveSchema.safeParse(req.body);
+  if (!parsed.success) { badRequest(res, parsed.error.message); return; }
+
+  if (!setProjectArchived(req.params.id, parsed.data.archived)) { res.status(404).json({ status: 'error', message: 'Project not found' }); return; }
+  res.json({ status: 'success' });
+});
+
+// DELETE /:id — permanent; the UI only offers this from the archive
 router.delete('/:id', (req, res) => {
   const result = deleteProject(req.params.id);
   if (!result) { res.status(404).json({ status: 'error', message: 'Project not found' }); return; }

@@ -45,11 +45,12 @@ export function getConfig() {
   };
 }
 
-export function listProjects(userId: string, limit: number, offset: number) {
+export function listProjects(userId: string, limit: number, offset: number, archived = false) {
+  const archivedFilter = archived ? 'archived_at IS NOT NULL' : 'archived_at IS NULL';
   const rows = db.prepare(
-    'SELECT id, name, created_at, updated_at FROM projects WHERE user_id = ? ORDER BY updated_at DESC LIMIT ? OFFSET ?'
+    `SELECT id, name, created_at, updated_at FROM projects WHERE user_id = ? AND ${archivedFilter} ORDER BY updated_at DESC LIMIT ? OFFSET ?`
   ).all(userId, limit || 100, offset) as ProjectRow[];
-  const { count } = db.prepare('SELECT COUNT(*) as count FROM projects WHERE user_id = ?').get(userId) as { count: number };
+  const { count } = db.prepare(`SELECT COUNT(*) as count FROM projects WHERE user_id = ? AND ${archivedFilter}`).get(userId) as { count: number };
   return {
     status: 'ok',
     data: {
@@ -59,8 +60,9 @@ export function listProjects(userId: string, limit: number, offset: number) {
   };
 }
 
+// Archived projects can't be opened, so their share links stop working until they're restored.
 export function loadProject(id: string) {
-  const row = db.prepare('SELECT * FROM projects WHERE id = ?').get(id) as ProjectRow | undefined;
+  const row = db.prepare('SELECT * FROM projects WHERE id = ? AND archived_at IS NULL').get(id) as ProjectRow | undefined;
   return row ? buildResponse(row) : null;
 }
 
@@ -104,6 +106,11 @@ export function getProjectViewOnly(id: string) {
 
 export function setProjectViewOnly(id: string, viewOnly: boolean) {
   return db.prepare('UPDATE projects SET view_only = ? WHERE id = ?').run(viewOnly ? 1 : 0, id).changes > 0;
+}
+
+export function setProjectArchived(id: string, archived: boolean) {
+  const archivedAt = archived ? `datetime('now')` : 'NULL';
+  return db.prepare(`UPDATE projects SET archived_at = ${archivedAt} WHERE id = ?`).run(id).changes > 0;
 }
 
 export function copyProject(id: string, newName: string) {

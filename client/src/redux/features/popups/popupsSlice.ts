@@ -9,7 +9,6 @@ const popupsSlice = createSlice({
     login: { status: false, zIndex: 5, type: null, data: null },
     registration: { status: false, zIndex: 5 },
     forgotPassword: { status: false, zIndex: 5 },
-    profile: { status: false, zIndex: 5 },
     setProjectName: { status: false, type: null, data: null, addType: null, zIndex: 5 },
     confirm: { status: false, type: null, data: null, zIndex: 5 },
     alert: { status: false, type: null, data: null, zIndex: 5 },

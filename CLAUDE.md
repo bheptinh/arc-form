@@ -26,7 +26,7 @@ client/             frontend — Vite + React source, index.html, tsconfig.json
     api/            React Query fetch helpers + hooks (queryClient, i18n, user, favorites, projects)
       bridges/      query-cache → side-effect subscribers (languageBridge.ts, projectsBridge.ts)
       hooks/        useLanguages, useTranslation, useLanguageChange, …
-    pages/          standalone React pages (MarkdownPage, ProjectsPage); /projects, /renders and /tours render inside smart-components/common/page-layout.tsx (header + nav), the constructor doesn't
+    pages/          standalone React pages (MarkdownPage, ProjectsPage); /projects, /projects/archive, /renders, /tours and /profile render inside smart-components/common/page-layout.tsx (header + nav + account popups), the constructor doesn't
     shared-components/  generic UI components — no domain imports, no entity-prefixed names (Card, SortBar, …)
     smart-components/   domain-aware components (Redux, R2D); popups/ renders on shared-components/modals, input-forms/ holds extracted forms
     vendor/         R2D engine as ES modules (plannercore.js, user.js, r2d.ts)
@@ -236,7 +236,7 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | GET | `/server-api/catalog/private/products/:id` | catalog/private.ts | get single user model |
 | POST | `/server-api/catalog/private/materials/upload` | catalog/private.ts | upload custom material textures |
 | DELETE | `/server-api/catalog/private/materials/:id` | catalog/private.ts | delete custom material |
-| GET | `/server-api/projects` | projects.ts | list user projects (`?limit=&offset=`) |
+| GET | `/server-api/projects` | projects.ts | list user projects (`?limit=&offset=`, `?archived=1` lists the archive) |
 | POST | `/server-api/projects` | projects.ts | create project |
 | GET | `/server-api/projects/:id` | projects.ts | load project |
 | PUT | `/server-api/projects/:id` | projects.ts | save project (full scene payload) |
@@ -244,7 +244,8 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | POST | `/server-api/projects/:id/copy` | projects.ts | copy project (`{ name }`) |
 | GET | `/server-api/projects/:id/sharing` | projects.ts | read view-only flag → `{ viewOnly }` |
 | PUT | `/server-api/projects/:id/sharing` | projects.ts | set view-only flag (`{ view_only }`) |
-| DELETE | `/server-api/projects/:id` | projects.ts | delete project |
+| PUT | `/server-api/projects/:id/archive` | projects.ts | archive or restore (`{ archived }`); archived projects return 404 from `GET /:id` |
+| DELETE | `/server-api/projects/:id` | projects.ts | permanently delete project; the UI offers this only from the archive |
 | GET | `/server-api/user` | user.ts | get user profile |
 | PATCH | `/server-api/user` | user.ts | update user profile (name, email, language_code, show_tips, subscription_news, auto_save) — validated via Zod UserPatchSchema, returns updated User |
 | GET | `/server-api/i18n/languages` | i18n.ts | language list with `current` flag from user's saved preference |

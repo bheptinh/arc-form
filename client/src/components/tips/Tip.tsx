@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { user } from '../../initR2D';
-import { closeActivePopup, setActivePopup } from '../../redux/features/popups/popupsSlice';
+import { setActivePopup } from '../../redux/features/popups/popupsSlice';
 import { hideTip } from '../../redux/features/tips/tipsSlice';
 import { selectUserProfileData, setProfileData } from '../../redux/features/user/userSlice';
 import Checkbox from '../../shared-components/inputs/checkbox';
@@ -169,7 +169,6 @@ const TipBody = (props) => {
       show_tips: tipsCheckboxStatus,
     };
     await user.setProfileData(dataObj);
-    dispatch(closeActivePopup({ name: 'profile' }));
     const response = await user.loadProfileData();
     if (response.type == 'error') dispatch(setActivePopup({ name: 'alert', data: response.data }));
     else dispatch(setProfileData(response));

@@ -1,7 +1,17 @@
+import { IconLogout, IconUser } from '@tabler/icons-react';
 import { createUseStyles } from 'react-jss';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
+import { selectPopups } from '../../redux/features/popups/popupsSlice';
+import { userLogout } from '../../redux/features/user/userSlice';
+import { confirm } from '../../shared-components/ConfirmDialog';
+import AlertPopup from '../popups/alert-popup';
+import CompleteMessage from '../popups/complete-message';
+import DeleteAccountPopup from '../popups/delete-account-popup';
+import LoadingMessagePopup from '../popups/loading-message';
+import UpdatePassword from '../popups/update-password';
 
 const NAV_ITEMS = [
   { to: '/projects', labelKey: 'TEXT_MY_PLANS' },
@@ -38,6 +48,8 @@ const useStyles = createUseStyles({
   nav: {
     display: 'flex',
     gap: 32,
+    flex: 1,
+    minWidth: 0,
     overflowX: 'auto',
     '@media screen and (max-width: 950px)': { gap: 20 },
   },
@@ -55,11 +67,42 @@ const useStyles = createUseStyles({
     color: '#2F2F2F',
     boxShadow: 'inset 0 -4px 0 #BAE51F',
   },
+  account: {
+    display: 'flex',
+    gap: 20,
+  },
+  accountBtn: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 6,
+    border: 'none',
+    background: 'none',
+    color: '#5F6566',
+    fontSize: 15,
+    fontFamily: 'inherit',
+    textDecoration: 'none',
+    whiteSpace: 'nowrap',
+    cursor: 'pointer',
+    '&:hover': { color: '#2F2F2F' },
+    '&:focus-visible': { outline: '2px solid #2F2F2F', outlineOffset: -2 },
+  },
+  accountLabel: {
+    '@media screen and (max-width: 950px)': { display: 'none' },
+  },
 });
 
 export default function PageLayout() {
   const classes = useStyles();
+  const dispatch = useDispatch();
   const translation = useTranslation();
+  const popups = useSelector(selectPopups);
+
+  const handleLogout = async () => {
+    const ok = await confirm('Are you sure you want to log out?');
+    if (!ok) return;
+    await dispatch(userLogout());
+    window.location.assign(`${R2D.URL.REACT_BASEPATH}/projects`);
+  };
 
   return (
     <div className={classes.layout}>
@@ -80,8 +123,35 @@ export default function PageLayout() {
             </NavLink>
           ))}
         </nav>
+        <div className={classes.account}>
+          <NavLink
+            to="/profile"
+            aria-label={translation['FR_TOURS_TRANS_121']}
+            className={({ isActive }) =>
+              isActive ? `${classes.accountBtn} ${classes.linkActive}` : classes.accountBtn
+            }
+          >
+            <IconUser size={20} />
+            <span className={classes.accountLabel}>{translation['FR_TOURS_TRANS_121']}</span>
+          </NavLink>
+          <button
+            type="button"
+            className={classes.accountBtn}
+            aria-label={translation['FR_TOURS_TRANS_115']}
+            onClick={handleLogout}
+          >
+            <IconLogout size={20} />
+            <span className={classes.accountLabel}>{translation['FR_TOURS_TRANS_115']}</span>
+          </button>
+        </div>
       </header>
       <Outlet />
+
+      {popups.updatePassword.status && <UpdatePassword />}
+      {popups.deleteAccountPopup.status && <DeleteAccountPopup />}
+      {popups.loadingMessage.status && <LoadingMessagePopup />}
+      {popups.completeMessage.status && <CompleteMessage />}
+      {popups.alert.status && <AlertPopup />}
     </div>
   );
 }

@@ -14,6 +14,7 @@ CREATE TABLE IF NOT EXISTS projects (
   user_id    TEXT    NOT NULL REFERENCES users(id),
   name       TEXT    NOT NULL DEFAULT '',
   view_only  INTEGER NOT NULL DEFAULT 0,
+  archived_at TEXT,
   created_at TEXT    NOT NULL DEFAULT (datetime('now')),
   updated_at TEXT    NOT NULL DEFAULT (datetime('now'))
 );

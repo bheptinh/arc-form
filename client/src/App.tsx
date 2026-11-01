@@ -1141,14 +1141,7 @@ const App = () => {
             await changeLang(langCode);
           }
 
-          const response = await user.loadProfileData();
-
-          if (response.type == 'error') {
-            showErrorToast(response?.data);
-          } else {
-            dispatch(setProfileData(response));
-            dispatch(setActivePopup({ name: 'profile' }));
-          }
+          navigate('/profile');
         }
         window.history.replaceState(null, null, createProjectUrl(''));
       }

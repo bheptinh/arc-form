@@ -5,15 +5,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import { useTranslation } from '../../../../../api/hooks/useTranslation';
-import { planner, user } from '../../../../../initR2D';
+import { planner } from '../../../../../initR2D';
 import { updateIsProjectBelongToLoggedUser } from '../../../../../redux/features/common/commonSlice';
 import { confirm } from '../../../../../shared-components/ConfirmDialog';
-import { setActivePopup } from '../../../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../../../redux/features/quickPanels/quickPanelsSlice';
 import {
   selectIsLogged,
   selectUserProfileData,
-  setProfileData,
   userLogout,
 } from '../../../../../redux/features/user/userSlice';
 import HoverComponent from '../components/HoverComponent';
@@ -21,9 +19,8 @@ import { useMerchantLogin } from '../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
   menu_dop_btn_wrap: {
-    height: '28px',
+    height: '38px',
     width: '30px',
-    marginBottom: 10,
     pointerEvents: 'all',
     position: 'relative',
   },
@@ -42,7 +39,7 @@ const useStyle = createUseStyles({
     pointerEvents: 'auto',
   },
   menu_dop_btn: {
-    borderBottom: '1px solid #595959',
+    borderTop: '1px solid #595959',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -70,7 +67,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     left: '100%',
     paddingLeft: '1px',
-    top: 0,
+    bottom: 0,
     zIndex: 2,
     transform: 'translateX(-102%)',
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
@@ -200,15 +197,12 @@ const UserButton = (props) => {
     }
   };
 
-  const onProfileButtonClick = async (e) => {
+  const onProfileButtonClick = (e) => {
     if (e.target.closest('.' + classes.bar_dropdown_option_plan)) return;
-    const response = await user.loadProfileData();
-    if (response.type == 'error') dispatch(setActivePopup({ name: 'alert', data: response.data }));
-    else {
-      dispatch(setProfileData(response));
-      dispatch(setActivePopup({ name: 'profile' }));
-    }
+    dispatch(removeQuickPanelAll());
+    planner.mih().unsetActiveObject();
     onTouchStartHideDropdown(e);
+    navigate('/profile');
   };
 
   const onRendersButtonClick = (e) => {
