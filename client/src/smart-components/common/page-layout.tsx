@@ -1,5 +1,5 @@
 import { IconLogout, IconUser } from '@tabler/icons-react';
-import { createUseStyles } from 'react-jss';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 
@@ -12,6 +12,7 @@ import CompleteMessage from '../popups/complete-message';
 import DeleteAccountPopup from '../popups/delete-account-popup';
 import LoadingMessagePopup from '../popups/loading-message';
 import UpdatePassword from '../popups/update-password';
+import classes from './page-layout.module.css';
 
 const NAV_ITEMS = [
   { to: '/projects', labelKey: 'TEXT_MY_PLANS' },
@@ -19,83 +20,15 @@ const NAV_ITEMS = [
   { to: '/tours', labelKey: 'TEXT_MY_TOURS' },
 ];
 
-const useStyles = createUseStyles({
-  layout: {
-    height: '100vh',
-    display: 'grid',
-    gridTemplateRows: 'auto minmax(0, 1fr)',
-  },
-  header: {
-    display: 'flex',
-    alignItems: 'stretch',
-    gap: 48,
-    height: 56,
-    padding: '0 11%',
-    backgroundColor: 'var(--color-white)',
-    boxShadow: '0 1px 0 rgba(0, 0, 0, 0.08)',
-    position: 'relative',
-    zIndex: 1,
-    '@media screen and (max-width: 950px)': { gap: 20, padding: '0 12px' },
-  },
-  brand: {
-    alignSelf: 'center',
-    color: 'var(--color-text)',
-    fontSize: 20,
-    fontWeight: 500,
-    textDecoration: 'none',
-    '@media screen and (max-width: 950px)': { display: 'none' },
-  },
-  nav: {
-    display: 'flex',
-    gap: 32,
-    flex: 1,
-    minWidth: 0,
-    overflowX: 'auto',
-    '@media screen and (max-width: 950px)': { gap: 20 },
-  },
-  link: {
-    display: 'flex',
-    alignItems: 'center',
-    color: '#5F6566',
-    fontSize: 15,
-    textDecoration: 'none',
-    whiteSpace: 'nowrap',
-    '&:hover': { color: 'var(--color-text)' },
-    '&:focus-visible': { outline: '2px solid var(--color-text)', outlineOffset: -2 },
-  },
-  linkActive: {
-    color: 'var(--color-text)',
-    boxShadow: 'inset 0 -4px 0 var(--color-accent)',
-  },
-  account: {
-    display: 'flex',
-    gap: 20,
-  },
-  accountBtn: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: 6,
-    border: 'none',
-    background: 'none',
-    color: '#5F6566',
-    fontSize: 15,
-    fontFamily: 'inherit',
-    textDecoration: 'none',
-    whiteSpace: 'nowrap',
-    cursor: 'pointer',
-    '&:hover': { color: 'var(--color-text)' },
-    '&:focus-visible': { outline: '2px solid var(--color-text)', outlineOffset: -2 },
-  },
-  accountLabel: {
-    '@media screen and (max-width: 950px)': { display: 'none' },
-  },
-});
-
 export default function PageLayout() {
-  const classes = useStyles();
   const dispatch = useDispatch();
   const translation = useTranslation();
   const popups = useSelector(selectPopups);
+
+  useEffect(() => {
+    const el = document.querySelector('.preloader_main') as HTMLElement | null;
+    if (el) el.remove();
+  }, []);
 
   const handleLogout = async () => {
     const ok = await confirm('Are you sure you want to log out?');

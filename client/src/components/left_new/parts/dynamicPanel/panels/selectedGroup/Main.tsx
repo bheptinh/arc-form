@@ -42,7 +42,7 @@ const useStyle = createUseStyles({
   },
   title: {
     fontSize: 17,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     marginBottom: 17,
     fontFamily: 'RobotoCondensed-Regular',
     '@media screen and (max-width: 950px)': {
@@ -100,7 +100,7 @@ const useStyle = createUseStyles({
   },
   groupText: {
     fontSize: 13,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     flex: 1,
     '@media screen and (max-width: 950px)': {
       fontSize: 11,

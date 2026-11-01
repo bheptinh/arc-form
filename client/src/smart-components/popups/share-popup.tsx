@@ -1,7 +1,6 @@
 // import { FacebookShareButton } from 'next-share';
 import { IconCopy, IconHelpHexagon } from '@tabler/icons-react';
 import { useRef, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
@@ -14,108 +13,8 @@ import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
 import { createViewerUrl } from '../../utils/UrlHelper';
 import { useEffectAsync } from '../../utils/useEffectAsync';
+import classes from './share-popup.module.css';
 // import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
-
-const useStyle = createUseStyles({
-  input_wrap: {
-    display: 'grid',
-    gridGap: '10px',
-    marginBottom: 15,
-  },
-  input_wr: {
-    color: 'var(--color-white)',
-    '&:last-child': {
-      marginBottom: '0',
-    },
-  },
-  planner_popup_text: {
-    fontSize: 14,
-    color: 'var(--color-text)',
-    marginBottom: 10,
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-    },
-  },
-  formInputWr: {
-    display: 'grid',
-    gridTemplateColumns: 'auto 22px',
-    alignItems: 'center',
-    gridGap: 6,
-  },
-  formShareIcon: {
-    width: 22,
-    height: 22,
-    cursor: 'pointer',
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
-    '&:hover': {
-      '& path': {
-        fill: '#a0a0a0',
-      },
-    },
-  },
-  formInput: {
-    borderRadius: 3,
-    paddingLeft: 10,
-    fontSize: 14,
-    color: 'var(--color-black)',
-    width: '100%',
-    border: '1px solid #e8dede',
-    height: 30,
-    background: 'var(--color-white)',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
-    '@media screen and (max-width: 950px)': {
-      height: 26,
-      fontSize: 11,
-    },
-  },
-
-  planner_popup_bottom: {
-    display: 'grid',
-    gridTemplateColumns: 'auto auto auto auto',
-    justifyContent: 'left',
-    gridGap: 6,
-    alignItems: 'center',
-    fontSize: 14,
-    color: 'var(--color-text)',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-    },
-  },
-  formInputSize: {
-    fontSize: '13px',
-    borderRadius: 3,
-    color: 'var(--color-black)',
-    width: 45,
-    textAlign: 'center',
-    border: '1px solid #e8dede',
-    height: 32,
-    background: 'var(--color-white)',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
-    '@media screen and (max-width: 950px)': {
-      height: 26,
-      fontSize: 11,
-      width: 40,
-    },
-  },
-  planner_popup_checkbox: {
-    margin: '10px 0',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  planner_popup_checkbox_top: {
-    display: 'flex',
-    alignItems: 'start',
-  },
-  additional_info: {
-    marginLeft: 5,
-  },
-});
 
 export default function SharePopup() {
   const dispatch = useDispatch();
@@ -136,8 +35,6 @@ export default function SharePopup() {
 
   const createdLink =
     popupType == 'tour' ? popupData : window.location.origin + createViewerUrl(popupData);
-
-  const classes = useStyle();
 
   const [checkboxProjectOnlyView, setCheckboxProjectOnlyView] = useState(
     planner.scene.getProjectOnlyViewState()

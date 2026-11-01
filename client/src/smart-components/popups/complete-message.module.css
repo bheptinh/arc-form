@@ -1,0 +1,27 @@
+.alert_status_wr {
+  top: 34px;
+  color: var(--color-slate);
+  right: 0;
+  display: flex;
+  padding: 7px 11px;
+  z-index: 10000;
+  position: absolute;
+  font-size: 12px;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  align-items: center;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.alert_status_done {
+  background: var(--color-accent);
+}
+
+.alert_status_error {
+  background: var(--color-danger);
+}
+
+.alert_status_icon {
+  width: 13px;
+  margin-right: 6px;
+}

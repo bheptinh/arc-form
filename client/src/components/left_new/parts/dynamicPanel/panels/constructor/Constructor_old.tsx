@@ -79,7 +79,7 @@ const useStyle = createUseStyles({
       content: '""',
       height: 29,
       width: '100%',
-      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-subtle), transparent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
       position: 'absolute',
       top: 0,

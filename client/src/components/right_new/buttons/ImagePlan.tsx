@@ -93,7 +93,7 @@ const useStyles = createUseStyles({
     height: 30,
     alignItems: 'center',
     fontSize: 12,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     padding: '0 15px 0 30px',
     whiteSpace: 'nowrap',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',

@@ -124,13 +124,16 @@ A plain `<div id="planner">` where R2D mounts its WebGL canvas. Mouse/touch even
 Pure presentational components with no domain imports. Naming follows MUI conventions: describe the shape, not the caller. **Never** prefix with an entity name (`Card` not `ProjectCard`, `SortBar` not `ProjectSortBar`) and never group into domain subdirectories (`shared-components/Card.tsx` not `shared-components/projects/Card.tsx`). The folder itself provides the namespace.
 
 Current components:
-- `Card.tsx` — image area + hover action overlay + meta rows. Props: `name`, `preview?`, `modified?`, `created?`, `actions[]`, `onClick?`, `nameContent?` (rename input slot), `className?`.
+- `Card.tsx` — image area + hover action overlay + meta rows. Props: `name`, `preview?`, `modified?`, `created?`, `actions?`, `onClick?` (also sets the pointer cursor), `nameContent?` (replaces the name, e.g. a rename input), `metaContent?` (replaces the date rows), `overlay?` (covers the image, e.g. progress), `className?`.
+- `GridPage.tsx` — card-list page shell: title row, scroll area, preloader, responsive grid and "Load more". `PageLayout` owns the page width through `--page-gutter`; `GridPage` centres its content in that width, and the grid only arranges items. Props: `title`, `actions?` (beside the title), `intro?` (above the grid), `isLoading?`, `onLoadMore?`, `children` (grid items).
 - `SortBar.tsx` — dropdown + direction toggle. Props: `options[]`, `activeLabel`, `direction`, `onOptionSelect`, `onDirectionToggle`.
-- `inputs/` — form controls: `text-input.tsx` (`inset` adds the auth-form side padding, `inputClassName` styles the field), `text-area.tsx`, `radio.tsx`, `checkbox.tsx`, `button.tsx` (`variant`: `primary` or `secondary`, defaults to `type="button"`).
+- `inputs/` — form controls: `text-input.tsx` (`inset` adds the auth-form side padding, `inputClassName` styles the field), `text-area.tsx`, `radio.tsx`, `checkbox.tsx`, `button.tsx` (`variant`: `primary` or `secondary`, defaults to `type="button"`), `icon-button.tsx` (icon-only; `label` sets `aria-label` and the tooltip, `to` renders a router `Link`, otherwise a `<button>`).
 - `modals/default.tsx` — modal frame for all popups. `DefaultModal.Actions` is the bottom button row, placed where the row sits so submit buttons stay inside their `<form>`. It has no top margin by default; `spaced` adds 17px and `align="between"` spreads the buttons. With `title` it renders the blue header band and fixed width; without it, the popup supplies its own title and sizing through `className` and `contentClassName`. Pass `visible` when the popup animates its own programmatic close (the modal then calls `onClose` immediately); otherwise the modal handles the 500ms close animation.
 
 ### Styling
-**react-jss** (`createUseStyles`) throughout. Not CSS Modules. Class names are generated at runtime.
+Migrating from **react-jss** (`createUseStyles`) to **CSS Modules**. The routed pages (`client/src/pages/`), `page-layout.tsx` and the components they use are already on CSS Modules; the constructor UI is still on JSS. Write new components with a `<name>.module.css` beside the component and `import classes from './<name>.module.css'`.
+
+`classes.x` is `undefined` if `.x` has no rules, so don't keep empty classes. Wrap a class that isn't defined in the module in `:global(...)`, or it gets hashed.
 
 Colours are CSS variables in `client/src/tokens.css`, loaded first in `main.tsx`. Use `var(--color-…)` in style objects, but not in canvas `fillStyle`, `THREE.Color` or `url()` data URIs, where `var()` doesn't work.
 
@@ -238,7 +241,7 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | GET | `/server-api/catalog/private/products/:id` | catalog/private.ts | get single user model |
 | POST | `/server-api/catalog/private/materials/upload` | catalog/private.ts | upload custom material textures |
 | DELETE | `/server-api/catalog/private/materials/:id` | catalog/private.ts | delete custom material |
-| GET | `/server-api/projects` | projects.ts | list user projects (`?limit=&offset=`, `?archived=1` lists the archive) |
+| GET | `/server-api/projects` | projects.ts | list user projects (`?limit=&offset=`, `?archived=1` lists the archive, `?sort=modified\|opened&dir=asc\|desc`, default `modified desc`) |
 | POST | `/server-api/projects` | projects.ts | create project |
 | GET | `/server-api/projects/:id` | projects.ts | load project |
 | PUT | `/server-api/projects/:id` | projects.ts | save project (full scene payload) |

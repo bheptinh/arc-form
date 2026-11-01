@@ -251,7 +251,7 @@ const useStyle = createUseStyles({
     marginRight: 7,
   },
   plannerRender_button: {
-    background: '#66ABF3',
+    background: 'var(--color-info)',
     color: 'var(--color-white)',
     cursor: 'pointer',
     height: '35px',
@@ -267,7 +267,7 @@ const useStyle = createUseStyles({
     },
   },
   renderMake_button: {
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     border: 'none',
     cursor: 'pointer',
     height: '35px',
@@ -296,7 +296,7 @@ const useStyle = createUseStyles({
     },
     '& p': {
       flex: 2,
-      color: 'var(--color-text-slate)',
+      color: 'var(--color-slate)',
       textAlign: 'center',
     },
     '&:hover': {
@@ -325,7 +325,7 @@ const useStyle = createUseStyles({
       flex: 2,
       textAlign: 'center',
       marginRight: 0,
-      color: 'var(--color-text-slate)',
+      color: 'var(--color-slate)',
     },
     '&:hover': {
       background: 'var(--color-accent-hover)',
@@ -1105,12 +1105,12 @@ const Main = (props) => {
                         width="92"
                         height="91"
                       >
-                        <circle cx="45.7227" cy="45.5" r="45.5" fill="#F3F3F3" />
+                        <circle cx="45.7227" cy="45.5" r="45.5" fill="#f1f1f1" />
                       </mask>
                       <g mask="url(#mask0_2290_2247)">
                         <path
                           d="M48.541 45.5L-6.42138 77.2325L-6.42138 13.7674L48.541 45.5Z"
-                          fill="#F3F3F3"
+                          fill="#f1f1f1"
                         />
                       </g>
                     </svg>

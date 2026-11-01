@@ -1,57 +1,17 @@
 import { useInfiniteQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { useEffect } from 'react';
-import { createUseStyles } from 'react-jss';
 
 import { deleteRender, rendersInfiniteQueryOptions } from '../api/renders';
-import { RendersGrid } from '../components/renders/RendersGrid';
-
-const useStyles = createUseStyles({
-  page: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: '#EBEBEB',
-    display: 'grid',
-    gridTemplateRows: 'auto 1fr',
-    overflow: 'hidden',
-    padding: '38px 0 0',
-  },
-  top: {
-    padding: '0 11%',
-    paddingRight: 'calc(11% + 38px)',
-    '@media screen and (max-width: 950px)': { padding: 0 },
-  },
-  title: {
-    color: 'var(--color-text)',
-    fontSize: 32,
-    fontWeight: 300,
-    marginBottom: 16,
-    '@media screen and (max-width: 950px)': { fontSize: 20 },
-  },
-  scroll: { overflowY: 'auto', position: 'relative' },
-  preloader: {
-    position: 'absolute',
-    inset: 0,
-    background: 'rgba(255,255,255,0.6)',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 99,
-  },
-});
+import { RenderCards } from '../components/renders/RenderCards';
+import { GridPage } from '../shared-components/GridPage';
 
 export default function RendersPage() {
-  const classes = useStyles();
   const queryClient = useQueryClient();
 
   const { data, fetchNextPage, hasNextPage, isLoading } = useInfiniteQuery(
     rendersInfiniteQueryOptions
   );
   const renders = data?.pages.flatMap((p) => p.items) ?? [];
-
-  useEffect(() => {
-    const el = document.querySelector('.preloader_main') as HTMLElement | null;
-    if (el) el.remove();
-  }, []);
 
   const deleteMutation = useMutation({ mutationFn: deleteRender });
 
@@ -95,27 +55,18 @@ export default function RendersPage() {
   };
 
   return (
-    <div className={classes.page}>
-      <div className={classes.top}>
-        <div className={classes.title}>My Renders</div>
-      </div>
-
-      <div className={classes.scroll}>
-        {isLoading && (
-          <div className={classes.preloader}>
-            <div className="preloader-cube" />
-          </div>
-        )}
-        <RendersGrid
-          renders={renders}
-          onOpen={handleOpen}
-          onDownload={handleDownload}
-          onDelete={handleDelete}
-          onReload={handleReload}
-          hasMore={hasNextPage}
-          onLoadMore={() => fetchNextPage()}
-        />
-      </div>
-    </div>
+    <GridPage
+      title="My Renders"
+      isLoading={isLoading}
+      onLoadMore={hasNextPage ? () => fetchNextPage() : undefined}
+    >
+      <RenderCards
+        renders={renders}
+        onOpen={handleOpen}
+        onDownload={handleDownload}
+        onDelete={handleDelete}
+        onReload={handleReload}
+      />
+    </GridPage>
   );
 }

@@ -1,39 +1,8 @@
 import { IconCheckbox, IconEye, IconEyeClosed, IconSquare } from '@tabler/icons-react';
 import cls from 'classnames';
 import { useMemo } from 'react';
-import { createUseStyles } from 'react-jss';
 
-const useStyle = createUseStyles({
-  checkboxInputWr: {
-    display: 'flex',
-  },
-  checkboxInput: {
-    position: 'absolute',
-    zIndex: '-1',
-    opacity: 0,
-
-    '& + label ': {
-      display: 'inline-flex',
-      alignItems: 'center',
-      userSelect: 'none',
-      fontSize: '13px',
-      color: 'var(--color-text-muted)',
-      cursor: 'pointer',
-      position: 'relative',
-      gap: '8px',
-
-      '@media screen and (max-width: 950px)': {
-        fontSize: '11px',
-      },
-    },
-  },
-  checkboxInput_disabled: {
-    '& + label ': {
-      cursor: 'default',
-      opacity: 0.2,
-    },
-  },
-});
+import classes from './checkbox.module.css';
 
 type CheckboxProps = {
   label: string;
@@ -46,8 +15,6 @@ type CheckboxProps = {
 };
 
 const Checkbox = (props: CheckboxProps) => {
-  const classes = useStyle();
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     props.onChange?.(e.target.checked);
   };

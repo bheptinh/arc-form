@@ -64,7 +64,7 @@ const useStyle = createUseStyles({
       content: '""',
       zIndex: -1,
       position: 'absolute',
-      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-subtle), transparent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {
@@ -107,7 +107,7 @@ const useStyle = createUseStyles({
     border: 'none',
     outline: 'none',
     textTransform: 'uppercase',
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
   },
   plannerWallsWrap_button_cancel: {
     justifyContent: 'flex-start',
@@ -118,7 +118,7 @@ const useStyle = createUseStyles({
     '& p': {
       flex: 2,
       textAlign: 'center',
-      color: 'var(--color-text-slate)',
+      color: 'var(--color-slate)',
     },
     '&:hover': {
       background: 'var(--color-surface-muted)',
@@ -160,7 +160,7 @@ const useStyle = createUseStyles({
       flex: 2,
       textAlign: 'center',
       marginRight: 0,
-      color: 'var(--color-text-slate)',
+      color: 'var(--color-slate)',
     },
     '&:hover': {
       background: 'var(--color-accent-hover)',

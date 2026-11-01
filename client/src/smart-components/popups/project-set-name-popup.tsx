@@ -3,7 +3,6 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { useRef } from 'react';
-import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
@@ -27,16 +26,7 @@ import Button from '../../shared-components/inputs/button';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
 import { createProjectUrl } from '../../utils/UrlHelper';
-
-const useStyle = createUseStyles({
-  formContent: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: 20,
-    maxWidth: 400,
-    margin: '0 auto',
-  },
-});
+import classes from './project-set-name-popup.module.css';
 
 export default function ProjectSetNamePopup() {
   const popups = useSelector(selectPopups);
@@ -216,8 +206,6 @@ export default function ProjectSetNamePopup() {
       dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
     }
   }, [copyMutation.status]);
-
-  const classes = useStyle();
 
   return (
     <DefaultModal

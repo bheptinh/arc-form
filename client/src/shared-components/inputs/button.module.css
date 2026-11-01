@@ -1,0 +1,47 @@
+.button {
+  color: var(--color-text-strong);
+  cursor: pointer;
+  height: 35px;
+  margin: 0 3px;
+  display: inline-flex;
+  outline: none;
+  padding: 0 20px;
+  font-size: 14px;
+  min-width: 120px;
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  align-items: center;
+  border-radius: 3px;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 950px) {
+  .button {
+    height: 26px;
+    font-size: 12px;
+    min-width: 88px;
+  }
+}
+
+.primary {
+  border: none;
+  background: var(--color-accent-bright);
+}
+
+.primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.secondary {
+  border: 1px solid var(--color-black);
+  background: var(--color-white);
+}
+
+.secondary:hover {
+  background: var(--color-surface-muted);
+}

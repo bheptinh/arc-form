@@ -1,0 +1,106 @@
+.wrap {
+  width: fit-content;
+  height: 26px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+
+.dropdown {
+  height: 100%;
+  position: relative;
+  min-width: 30px;
+  border-right: 1px solid #C4C4C4;
+}
+
+.dropdown:hover .dropdownActive {
+  background: var(--color-surface-muted);
+}
+
+.dropdownOpenable:hover .dropdownOptions {
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.dropdownOpenable:hover .dropdownActive svg {
+  transform: rotateX(180deg);
+}
+
+.dropdownActive {
+  color: var(--color-slate);
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  height: 100%;
+  display: grid;
+  padding: 0 7px;
+  grid-gap: 20px;
+  font-size: 12px;
+  background: var(--color-white);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.12);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  align-items: center;
+  white-space: nowrap;
+  border-radius: 3px 0 0 3px;
+  justify-content: center;
+  grid-template-columns: auto auto;
+}
+
+.label {
+  display: grid;
+}
+
+/* Every label shares one cell, so the widest option sets the width. */
+.label > * {
+  grid-area: 1 / 1;
+}
+
+.labelSizer {
+  visibility: hidden;
+}
+
+.dropdownActive svg {
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+}
+
+.dropdownOptionWrap {
+  top: calc(100% - 4px);
+  right: -4px;
+  width: calc(100% + 8px);
+  padding: 4px;
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  min-width: fit-content;
+  pointer-events: none;
+}
+
+.dropdownOptions {
+  overflow: hidden;
+  transform: translateY(calc(-100% - 15px));
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.15);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  padding-top: 2px;
+  border-radius: 3px;
+  pointer-events: auto;
+}
+
+.option {
+  color: var(--color-slate);
+  cursor: pointer;
+  height: 30px;
+  display: flex;
+  padding: 0 10px;
+  font-size: 12px;
+  background: var(--color-white);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  align-items: center;
+  white-space: nowrap;
+}
+
+.option:hover {
+  background: var(--color-surface-muted);
+}
+
+.wrap .dirBtn {
+  border-radius: 0 3px 3px 0;
+}

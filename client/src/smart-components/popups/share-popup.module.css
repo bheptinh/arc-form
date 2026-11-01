@@ -1,0 +1,120 @@
+.input_wrap {
+  display: grid;
+  grid-gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input_wr {
+  color: var(--color-white);
+}
+
+.input_wr:last-child {
+  margin-bottom: 0;
+}
+
+.planner_popup_text {
+  color: var(--color-text);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .planner_popup_text {
+    font-size: 11px;
+  }
+}
+
+.formInputWr {
+  display: grid;
+  grid-gap: 6px;
+  align-items: center;
+  grid-template-columns: auto 22px;
+}
+
+.formShareIcon {
+  width: 22px;
+  cursor: pointer;
+  height: 22px;
+}
+
+.formShareIcon path {
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.formShareIcon:hover path {
+  fill: var(--color-icon);
+}
+
+.formInput {
+  color: var(--color-black);
+  width: 100%;
+  border: 1px solid var(--color-border-warm);
+  height: 30px;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  background: var(--color-white);
+  transition: all 0.4s ease-out;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 950px) {
+  .formInput {
+    height: 26px;
+    font-size: 11px;
+  }
+}
+
+.planner_popup_bottom {
+  color: var(--color-text);
+  display: grid;
+  grid-gap: 6px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: left;
+  grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width: 950px) {
+  .planner_popup_bottom {
+    font-size: 11px;
+  }
+}
+
+.formInputSize {
+  color: var(--color-black);
+  width: 45px;
+  border: 1px solid var(--color-border-warm);
+  height: 32px;
+  resize: none;
+  outline: none;
+  font-size: 13px;
+  background: var(--color-white);
+  text-align: center;
+  transition: all 0.4s ease-out;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 950px) {
+  .formInputSize {
+    width: 40px;
+    height: 26px;
+    font-size: 11px;
+  }
+}
+
+.planner_popup_checkbox {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.planner_popup_checkbox_top {
+  display: flex;
+  align-items: start;
+}
+
+.additional_info {
+  margin-left: 5px;
+}

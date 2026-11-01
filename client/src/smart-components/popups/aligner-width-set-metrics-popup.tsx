@@ -48,7 +48,7 @@ const useStyle = createUseStyles({
     },
   },
   bar_dropdown_active: {
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     border: '1px solid var(--color-white)',
     cursor: 'pointer',
     height: '100%',
@@ -82,7 +82,7 @@ const useStyle = createUseStyles({
     pointerEvents: 'auto',
   },
   bar_dropdown_option: {
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     cursor: 'pointer',
     height: '30px',
     display: 'flex',

@@ -78,7 +78,7 @@ const useStyle = createUseStyles({
   },
 
   editMatAddColor: {
-    color: '#65BCF1',
+    color: 'var(--color-icon-info)',
     letterSpacing: '.03em',
   },
   btn_hover: {

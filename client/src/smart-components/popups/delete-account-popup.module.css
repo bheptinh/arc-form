@@ -1,0 +1,66 @@
+.delete_account_wr {
+  width: 100%;
+  max-width: 700px;
+}
+
+.delete_account_cont {
+  color: var(--color-black);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  background-color: var(--color-surface-subtle);
+}
+
+.delete_account_bot {
+  padding: 80px 110px;
+  text-align: center;
+}
+
+.delete_account_text {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.delete_account_btn input {
+  color: #A7A7A7;
+  border: 1px solid #C8C8C8;
+  padding: 8px 10px;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.delete_account_fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+.delete_account_input_ready input {
+  color: var(--color-white);
+  border: 1px solid var(--color-danger);
+  cursor: pointer;
+  background: var(--color-danger);
+  transition: all .5s ease;
+}
+
+.delete_account_input {
+  margin-right: 4px;
+}
+
+.delete_account_input input {
+  border: 1px solid var(--color-surface-muted);
+  height: auto;
+  padding: 8px 10px;
+  transition: all .5s ease;
+  border-radius: 2.5px;
+}
+
+.delete_account_title {
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -3%;
+}

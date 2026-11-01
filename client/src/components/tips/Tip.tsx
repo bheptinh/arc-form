@@ -27,7 +27,7 @@ const useStyle = createUseStyles({
   },
   tip_text: {
     minWidth: 200,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
   },
   arrow: {
     position: 'absolute',

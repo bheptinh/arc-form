@@ -139,7 +139,7 @@ const useStyle = createUseStyles({
         width: 17,
         height: 17,
         borderRadius: '50%',
-        background: '#E7E7E7',
+        background: 'var(--color-surface-muted)',
         position: 'absolute',
         boxShadow:
           '0px 1px 0px 0px rgb(255 255 255 / 0%), inset 0px 1px 0px 0px rgb(191 191 191 / 85%)',
@@ -262,7 +262,7 @@ const useStyle = createUseStyles({
         width: 17,
         height: 17,
         borderRadius: '50%',
-        background: '#E7E7E7',
+        background: 'var(--color-surface-muted)',
         position: 'absolute',
         boxShadow:
           '0px 1px 0px 0px rgb(255 255 255 / 0%), inset 0px 1px 0px 0px rgb(191 191 191 / 85%)',
@@ -354,7 +354,7 @@ const useStyle = createUseStyles({
     },
   },
   planner_popup_cont_right_button: {
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     border: 'none',
     cursor: 'pointer',
     height: '35px',
@@ -388,7 +388,7 @@ const useStyle = createUseStyles({
     },
     '& p': {
       flex: 2,
-      color: 'var(--color-text-slate)',
+      color: 'var(--color-slate)',
       textAlign: 'center',
     },
     '&:hover': {

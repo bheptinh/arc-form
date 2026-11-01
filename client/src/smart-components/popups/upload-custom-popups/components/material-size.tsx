@@ -129,7 +129,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     top: 7,
     right: 7,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     textTransform: 'uppercase',
     fontSize: 29,
     background: 'var(--color-warning)',

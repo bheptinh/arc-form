@@ -64,7 +64,7 @@ const useStyle = createUseStyles({
     display: 'flex',
     padding: '5px 9px',
     fontSize: '14px',
-    background: '#66ABF3',
+    background: 'var(--color-info)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     alignItems: 'center',
     borderRadius: '3px',
@@ -79,7 +79,7 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     height: 118,
-    border: '1px solid #ebebeb',
+    border: '1px solid var(--color-surface-muted)',
     '& span': {
       width: '100%',
       display: 'flex!important',

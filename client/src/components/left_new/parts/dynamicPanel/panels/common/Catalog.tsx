@@ -59,7 +59,7 @@ const useStyle = createUseStyles({
       left: 0,
       width: '100%',
       height: 29,
-      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-subtle), transparent)',
       pointerEvents: 'none',
       zIndex: 1,
       opacity: '0.7',

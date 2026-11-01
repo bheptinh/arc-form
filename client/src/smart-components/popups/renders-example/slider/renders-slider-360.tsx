@@ -159,11 +159,11 @@ const RendersSlider360 = (props) => {
       {slider_items}
 
       <div className={classes.prevBtn} ref={navigationPrevRef}>
-        <IconArrowLeft className={classes.prevBtnArrow} size={22} color="#070707" />
+        <IconArrowLeft className={classes.prevBtnArrow} size={22} color="#000000" />
       </div>
 
       <div className={classes.nextBtn} ref={navigationNextRef}>
-        <IconArrowRight className={classes.nextBtnArrow} size={22} color="#070707" />
+        <IconArrowRight className={classes.nextBtnArrow} size={22} color="#000000" />
       </div>
 
       <div className={classes.paginationWrap}>

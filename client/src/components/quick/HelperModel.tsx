@@ -173,7 +173,7 @@ const useStyle = createUseStyles({
     display: 'flex',
     alignItems: 'center',
     padding: '0 10px',
-    background: '#f0f0f0',
+    background: 'var(--color-surface-subtle)',
     whiteSpace: 'nowrap',
     '@media screen and (max-width: 950px)': {
       fontSize: 11,

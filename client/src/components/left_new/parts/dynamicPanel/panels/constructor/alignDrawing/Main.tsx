@@ -41,7 +41,7 @@ const useStyle = createUseStyles({
     width: '100%',
   },
   planerConstItemText: {
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     fontSize: 14,
   },
   planerConstItem: {
@@ -65,7 +65,7 @@ const useStyle = createUseStyles({
       content: '""',
       zIndex: -1,
       position: 'absolute',
-      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-subtle), transparent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {

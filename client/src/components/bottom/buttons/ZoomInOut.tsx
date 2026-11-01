@@ -23,7 +23,7 @@ const useStyle = createUseStyles({
     width: 38,
     fontSize: 11,
     fontWeight: 400,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
   },
   zoomInOutBtn: {
     cursor: 'pointer',

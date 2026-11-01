@@ -31,7 +31,7 @@ const useStyle = createUseStyles({
         width: 16,
         height: 16,
         borderRadius: '50%',
-        background: '#E7E7E7',
+        background: 'var(--color-surface-muted)',
         position: 'absolute',
         boxShadow:
           '0px 1px 0px 0px rgb(255 255 255 / 0%), inset 0px 1px 0px 0px rgb(191 191 191 / 85%)',

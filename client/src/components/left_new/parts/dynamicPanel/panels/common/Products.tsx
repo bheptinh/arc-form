@@ -90,7 +90,7 @@ const useStyle = createUseStyles({
       content: '""',
       zIndex: -1,
       position: 'absolute',
-      background: 'linear-gradient(to bottom, var(--color-surface-warm), transparent)',
+      background: 'linear-gradient(to bottom, var(--color-surface-subtle), transparent)',
       transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     },
     '&:hover': {
@@ -108,7 +108,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     top: 7,
     right: 7,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     textTransform: 'uppercase',
     fontSize: 13,
     background: 'var(--color-warning)',
@@ -121,7 +121,7 @@ const useStyle = createUseStyles({
     },
   },
   prod_item_upload_btn_line: {
-    background: 'var(--color-surface-slate)',
+    background: 'var(--color-slate)',
     height: 1,
     width: '100%',
     position: 'relative',
@@ -1552,7 +1552,7 @@ const Products = (props) => {
                   <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
                     <IconPlus
                       size={25}
-                      color="#2E3839"
+                      color="#2a3435"
                       className={classes.prod_item_upload_btn_img}
                     />
 
@@ -1569,7 +1569,7 @@ const Products = (props) => {
               </div>
             ) : lastHistoryElem?.privateMaterialType ? (
               <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
-                <IconPlus size={25} color="#2E3839" className={classes.prod_item_upload_btn_img} />
+                <IconPlus size={25} color="#2a3435" className={classes.prod_item_upload_btn_img} />
                 {translation['TIPS_ADD_NEW_MODEL']}
               </div>
             ) : null}

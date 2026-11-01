@@ -31,7 +31,7 @@ const useStyle = createUseStyles({
       background: 'rgb(244, 244, 244)',
     },
     '&:focus': {
-      color: 'var(--color-text-slate)',
+      color: 'var(--color-slate)',
       cursor: 'auto',
       backgroundColor: 'rgb(244, 244, 244)',
       border: '1px solid var(--color-border-strong)',

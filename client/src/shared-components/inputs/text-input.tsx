@@ -1,52 +1,8 @@
 import { IconEye, IconPassword } from '@tabler/icons-react';
 import cls from 'classnames';
 import { Ref, useId, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 
-const useStyle = createUseStyles({
-  fieldset: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'start',
-  },
-  fieldsetInset: {
-    padding: '0 65px',
-
-    '@media screen and (max-width: 950px)': {
-      padding: '0 15px',
-      gridGap: 14,
-    },
-  },
-  label: {
-    fontSize: 14,
-    color: 'var(--color-text)',
-    whiteSpace: 'nowrap',
-    padding: '0 10px',
-  },
-  formInputWrapper: {
-    position: 'relative',
-    color: 'var(--color-white)',
-  },
-  formInput: {
-    borderRadius: 3,
-    paddingLeft: 10,
-    fontSize: 14,
-    color: 'var(--color-black)',
-    width: '100%',
-    border: '1px solid #e8dede',
-    height: 30,
-    background: 'var(--color-white)',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
-  },
-  formInputPasswordButton: {
-    position: 'absolute',
-    top: 6,
-    right: -20,
-    cursor: 'pointer',
-  },
-});
+import classes from './text-input.module.css';
 
 type TextInputProps = {
   type?: 'password' | 'text' | 'email' | 'number';
@@ -66,7 +22,6 @@ type TextInputProps = {
 };
 
 export default function TextInput(props: TextInputProps) {
-  const classes = useStyle();
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
   const type = props.type === 'password' && isPasswordVisible ? 'text' : (props.type ?? 'text');

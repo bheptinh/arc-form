@@ -1,40 +1,11 @@
 import cx from 'classnames';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { closeActivePopup, selectPopups } from '../../redux/features/popups/popupsSlice';
-
-const useStyle = createUseStyles({
-  alert_status_wr: {
-    position: 'absolute',
-    top: 34,
-    fontSize: 12,
-    color: 'var(--color-text-slate)',
-    right: 0,
-    padding: '7px 11px',
-    display: 'flex',
-    alignItems: 'center',
-    transition: 'all 0.3s cubic-bezier(0.19, 1, 0.22, 1)',
-    borderRadius: 3,
-    zIndex: 10000,
-    pointerEvents: 'none',
-  },
-  alert_status_done: {
-    background: 'var(--color-accent)',
-  },
-  alert_status_error: {
-    background: 'var(--color-danger)',
-  },
-  alert_status_icon: {
-    width: 13,
-    marginRight: 6,
-  },
-  alert_status_left: {},
-  alert_status_right: {},
-});
+import classes from './complete-message.module.css';
 
 const CompleteMessage = (props) => {
   const popups = useSelector(selectPopups);
@@ -69,8 +40,6 @@ const CompleteMessage = (props) => {
     };
   }, []);
 
-  const classes = useStyle();
-
   return (
     <AnimatePresence>
       {isShow && (
@@ -82,8 +51,6 @@ const CompleteMessage = (props) => {
           className={cx(classes.alert_status_wr, {
             [classes.alert_status_done]: !type || type == 'complete',
             [classes.alert_status_error]: type == 'error',
-            [classes.alert_status_left]: !isPositionRight,
-            [classes.alert_status_right]: isPositionRight,
           })}
           ref={doneDiv}
         >

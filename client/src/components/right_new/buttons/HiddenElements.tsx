@@ -86,7 +86,7 @@ const useStyles = createUseStyles({
   },
 
   bar_dropdown_option_setting: {
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     cursor: 'pointer',
     height: '30px',
     display: 'grid',
@@ -138,7 +138,7 @@ const useStyles = createUseStyles({
       width: '13px',
       left: '0px',
       bottom: '-1px',
-      backgroundColor: 'var(--color-text-slate)',
+      backgroundColor: 'var(--color-slate)',
       transition: '.4s',
       borderRadius: '50%',
     },

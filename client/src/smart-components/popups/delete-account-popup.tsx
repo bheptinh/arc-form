@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
@@ -22,79 +21,9 @@ import { removeQuickPanelAll } from '../../redux/features/quickPanels/quickPanel
 import { userLogout } from '../../redux/features/user/userSlice';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
-
-const delete_account_text = {
-  color: '#2F2F2F',
-  fontSize: 16,
-  textAlign: 'center',
-  color: '#373737',
-};
-
-const useStyle = createUseStyles({
-  delete_account_wr: {
-    maxWidth: 700,
-    width: '100%',
-  },
-  delete_account_cont: {
-    color: 'var(--color-black)',
-    backgroundColor: 'var(--color-surface-subtle)',
-    borderRadius: 6,
-    position: 'relative',
-    height: '100%',
-    overflow: 'hidden',
-  },
-  delete_account_login_wrap: {},
-  delete_account_bot: {
-    padding: '80px 110px',
-    textAlign: 'center',
-  },
-  delete_account_text: {
-    extend: delete_account_text,
-    marginBottom: 20,
-  },
-  delete_account_btn: {
-    '& input': {
-      padding: '8px 10px',
-      background: 'transparent',
-      border: '1px solid #C8C8C8',
-      color: '#A7A7A7',
-      textTransform: 'uppercase',
-      borderRadius: 3,
-      fontSize: 14,
-    },
-  },
-  delete_account_fieldset: {
-    display: 'flex',
-    justifyContent: 'center',
-  },
-  delete_account_input_ready: {
-    '& input': {
-      border: '1px solid var(--color-danger)',
-      background: 'var(--color-danger)',
-      color: 'var(--color-white)',
-      transition: 'all .5s ease',
-      cursor: 'pointer',
-    },
-  },
-  delete_account_input: {
-    marginRight: 4,
-    '& input': {
-      borderRadius: 2.5,
-      height: 'auto',
-      padding: '8px 10px',
-      border: '1px solid #E6E6E6',
-      transition: 'all .5s ease',
-    },
-  },
-  delete_account_title: {
-    fontSize: 32,
-    lineHeight: '100%',
-    letterSpacing: '-3%',
-  },
-});
+import classes from './delete-account-popup.module.css';
 
 const DeleteAccountPopup = (props) => {
-  const classes = useStyle();
   const dispatch = useDispatch();
   const translation = useTranslation();
   const popups = useSelector(selectPopups);
@@ -168,7 +97,7 @@ const DeleteAccountPopup = (props) => {
       contentClassName={classes.delete_account_cont}
       onClose={onClickClosePopUp}
     >
-      <div className={classes.delete_account_login_wrap}>
+      <div>
         <div>
           <div className={classes.delete_account_bot}>
             {popupState == 'confirm' ? (

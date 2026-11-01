@@ -618,7 +618,7 @@ const useStyle = createUseStyles({
     },
   },
   product_hover_color: {
-    color: '#65BCF1',
+    color: 'var(--color-icon-info)',
     fontSize: 15,
     letterSpacing: '.03em',
   },

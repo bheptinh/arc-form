@@ -15,7 +15,7 @@ const useStyle = createUseStyles({
     borderRadius: '3px',
     background: 'var(--color-info)',
     '&:hover': {
-      background: '#5795d5',
+      background: '#5592d3',
     },
     '@media screen and (max-width: 950px)': {
       height: 26,

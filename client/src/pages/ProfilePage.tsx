@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useLanguageChange } from '../api/hooks/useLanguageChange';
@@ -12,96 +11,9 @@ import { selectActiveViewMode } from '../redux/features/viewMode/viewModeSlice';
 import Button from '../shared-components/inputs/button';
 import Checkbox from '../shared-components/inputs/checkbox';
 import TextInput from '../shared-components/inputs/text-input';
-
-const useStyles = createUseStyles({
-  page: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: '#EBEBEB',
-    display: 'grid',
-    gridTemplateRows: 'auto minmax(0, 1fr)',
-    overflow: 'hidden',
-    padding: '38px 0 0',
-  },
-  top: {
-    padding: '0 11%',
-    '@media screen and (max-width: 950px)': { padding: '0 12px' },
-  },
-  title: {
-    color: 'var(--color-text)',
-    fontSize: 32,
-    fontWeight: 300,
-    marginBottom: 16,
-    '@media screen and (max-width: 950px)': { fontSize: 20 },
-  },
-  scroll: {
-    overflowY: 'auto',
-    padding: '0 11% 70px',
-    '@media screen and (max-width: 950px)': { padding: '0 12px 14px' },
-  },
-  form: {
-    maxWidth: 560,
-    padding: '30px 40px',
-    borderRadius: 6,
-    backgroundColor: 'var(--color-white)',
-    '& fieldset': {
-      display: 'grid',
-      gridTemplateColumns: '140px minmax(0, 1fr)',
-      alignItems: 'center',
-      gap: 20,
-      marginBottom: 20,
-      border: 'none',
-    },
-    '@media screen and (max-width: 950px)': {
-      padding: 16,
-      '& fieldset': { gridTemplateColumns: '90px minmax(0, 1fr)', gap: 10, marginBottom: 14 },
-    },
-  },
-  label: {
-    fontSize: 14,
-    color: 'var(--color-text)',
-    '@media screen and (max-width: 950px)': { fontSize: 11 },
-  },
-  input: {
-    color: 'var(--color-text)',
-    width: '100%',
-    border: '1px solid #E6E6E6',
-    height: 30,
-    outline: 'none',
-    fontSize: 14,
-    background: 'var(--color-white)',
-    paddingLeft: 8,
-    borderRadius: 3,
-    '@media screen and (max-width: 950px)': { height: 26, fontSize: 11 },
-  },
-  link: {
-    justifySelf: 'start',
-    padding: 0,
-    border: 'none',
-    background: 'none',
-    color: 'var(--color-info)',
-    fontSize: 13,
-    textDecoration: 'underline',
-    cursor: 'pointer',
-    '&:hover': { textDecoration: 'none' },
-    '@media screen and (max-width: 950px)': { fontSize: 11 },
-  },
-  deleteLink: { color: 'var(--color-danger)' },
-  line: {
-    background: '#D9D9D9',
-    height: 1,
-    marginBottom: 20,
-    '@media screen and (max-width: 950px)': { marginBottom: 14 },
-  },
-  options: {
-    display: 'grid',
-    gap: 14,
-    marginBottom: 24,
-  },
-});
+import classes from './ProfilePage.module.css';
 
 function ProfileForm() {
-  const classes = useStyles();
   const dispatch = useDispatch();
   const translation = useTranslation();
   const userProfileData = useSelector(selectUserProfileData);
@@ -255,15 +167,11 @@ function ProfileForm() {
 }
 
 export default function ProfilePage() {
-  const classes = useStyles();
   const dispatch = useDispatch();
   const translation = useTranslation();
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    const el = document.querySelector('.preloader_main') as HTMLElement | null;
-    if (el) el.remove();
-
     (async () => {
       const response = await user.loadProfileData();
       if (response.type == 'error') {

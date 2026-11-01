@@ -9,142 +9,8 @@ import {
   useEffect,
   useState,
 } from 'react';
-import { createUseStyles } from 'react-jss';
 
-const useStyle = createUseStyles({
-  defaultModalLayout_wrap: {
-    height: '100%',
-    width: '100%',
-    position: 'absolute',
-    top: '0%',
-    transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
-    opacity: '0',
-    pointerEvents: 'none',
-    zIndex: 10,
-    WebkitPerspective: '800px',
-    perspective: '800px',
-    overflow: 'auto',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    background: 'rgba(0, 0, 0, 0.2)',
-  },
-  defaultModalLayout_wrap_show: {
-    opacity: '1',
-    pointerEvents: 'auto',
-    transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
-    '& $defaultModalLayout_wr': {
-      transform: 'scale(1)',
-    },
-  },
-  defaultModalLayout_wr: {
-    color: 'var(--color-black)',
-    maxHeight: '90%',
-    transform: 'scale(0)',
-    boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
-    transition: 'all 0.5s cubic-bezier(0.19, 1, 0.22, 1)',
-  },
-  defaultModalLayout_wr_titled: {
-    maxWidth: 645,
-    width: '100%',
-  },
-  defaultModalLayout_cont: {
-    color: 'var(--color-black)',
-    backgroundColor: 'var(--color-white)',
-    borderRadius: 6,
-    position: 'relative',
-    height: '100%',
-  },
-  defaultModalLayout_cont_titled: {
-    overflow: 'hidden',
-  },
-  defaultModalLayout_profile_wrap: {},
-
-  defaultModalLayout_back: {
-    top: 8,
-    left: 8,
-    cursor: 'pointer',
-    height: 24,
-    zIndex: 2,
-    position: 'absolute',
-
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-    },
-    '&:hover': {
-      '& $defaultModalLayout_back_icon': {
-        stroke: 'var(--color-accent)',
-      },
-    },
-  },
-  defaultModalLayout_back_icon: {
-    transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-  },
-
-  defaultModalLayout_close: {
-    width: 20,
-    height: 20,
-    position: 'absolute',
-    top: 8,
-    right: 8,
-    cursor: 'pointer',
-    zIndex: '2',
-    '&:hover': {
-      '& $defaultModalLayout_close_icon': {
-        stroke: 'var(--color-accent)',
-      },
-    },
-    '@media screen and (max-width: 950px)': {
-      top: 12,
-    },
-  },
-  defaultModalLayout_close_icon: {
-    transition: 'all 0.9s cubic-bezier(.19,1,.22,1)',
-  },
-  defaultModalLayout_title: {
-    fontSize: 32,
-    fontWeight: '300',
-    color: 'var(--color-white)',
-    whiteSpace: 'nowrap',
-    textAlign: 'center',
-    fontFamily: 'Roboto-Light, sans-serif',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 20,
-    },
-  },
-  defaultModalLayout_profile_top: {
-    background: 'var(--color-info-light)',
-    position: 'relative',
-    padding: '41px 0',
-    '@media screen and (max-width: 950px)': {
-      padding: '15px 0',
-    },
-  },
-  defaultModalLayout_profile_bottom: {
-    position: 'relative',
-    padding: '14px 32px 52px',
-    background: 'var(--color-white)',
-
-    '@media screen and (max-width: 950px)': {
-      padding: '14px 16px 30px',
-    },
-  },
-  preloaderDiv: {
-    height: '200px',
-    width: '100%',
-  },
-  defaultModalLayout_actions: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  defaultModalLayout_actions_between: {
-    justifyContent: 'space-between',
-  },
-  defaultModalLayout_actions_spaced: {
-    marginTop: 17,
-  },
-});
+import classes from './default.module.css';
 
 type DefaultModalProps = PropsWithChildren<{
   title?: string;
@@ -166,8 +32,6 @@ type DefaultModalActionsProps = PropsWithChildren<{
 }>;
 
 function DefaultModalActions(props: DefaultModalActionsProps) {
-  const classes = useStyle();
-
   return (
     <div
       className={clsx(classes.defaultModalLayout_actions, {
@@ -182,8 +46,6 @@ function DefaultModalActions(props: DefaultModalActionsProps) {
 
 export default function DefaultModal(props: DefaultModalProps) {
   const [animPopupClass, setAnimPopupClass] = useState(false);
-
-  const classes = useStyle();
 
   const isControlled = props.visible !== undefined;
   const isVisible = isControlled ? props.visible : animPopupClass;
@@ -258,7 +120,7 @@ export default function DefaultModal(props: DefaultModalProps) {
               {child}
             </>
           ) : (
-            <div className={classes.defaultModalLayout_profile_wrap}>
+            <div>
               <div className={classes.defaultModalLayout_profile_top}>
                 {backButton}
 

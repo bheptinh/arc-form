@@ -11,7 +11,7 @@ const useStyle = createUseStyles({
     position: 'absolute',
     top: 34,
     fontSize: 12,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     right: 0,
     padding: '7px 11px',
     display: 'flex',

@@ -1,0 +1,23 @@
+.iconButton {
+  width: 26px;
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+  height: 26px;
+  display: inline-flex;
+  flex-shrink: 0;
+  background: var(--color-white);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.12);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  align-items: center;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.iconButton:hover {
+  background: var(--color-surface-muted);
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: -2px;
+}

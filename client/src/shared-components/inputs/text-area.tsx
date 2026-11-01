@@ -1,25 +1,6 @@
-import { createUseStyles } from 'react-jss';
 import cls from 'classnames';
 
-const useStyle = createUseStyles({
-  textArea: {
-    padding: 5,
-    fontSize: 14,
-    borderRadius: 3,
-    color: 'var(--color-black)',
-    width: '100%',
-    border: '1px solid #e8dede',
-    height: 100,
-    background: 'var(--color-white)',
-    outline: 'none',
-    resize: 'none',
-    transition: 'all 0.4s ease-out',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-      height: 55,
-    },
-  },
-});
+import classes from './text-area.module.css';
 
 type TextAreaProps = {
   name?: string;
@@ -29,8 +10,6 @@ type TextAreaProps = {
 };
 
 export default function TextArea(props: TextAreaProps) {
-  const classes = useStyle();
-
   return (
     <textarea
       className={cls(classes.textArea, props.className)}

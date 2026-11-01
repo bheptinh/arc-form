@@ -1,74 +1,12 @@
 import React, { useRef, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
 import { useTranslation } from '../api/hooks/useTranslation';
 import { user } from '../initR2D';
 import TextInput from '../shared-components/inputs/text-input';
-
-const useStyle = createUseStyles({
-  page: {
-    minHeight: '100vh',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    background: 'var(--color-surface-subtle)',
-    fontFamily: 'Roboto, sans-serif',
-  },
-  card: {
-    background: 'var(--color-white)',
-    borderRadius: 6,
-    boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.15)',
-    width: '100%',
-    maxWidth: 480,
-    overflow: 'hidden',
-  },
-  header: {
-    background: 'var(--color-info-light)',
-    padding: '41px 0',
-    textAlign: 'center',
-  },
-  title: {
-    fontSize: 32,
-    fontWeight: 300,
-    color: 'var(--color-white)',
-    margin: 0,
-  },
-  body: {
-    padding: '30px 60px 40px',
-  },
-  message: {
-    textAlign: 'center',
-    marginBottom: 16,
-    fontSize: 14,
-  },
-  error: { color: '#e53e3e' },
-  success: { color: '#38a169' },
-  actions: {
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: 24,
-  },
-  btn: {
-    cursor: 'pointer',
-    height: 35,
-    color: 'var(--color-text-strong)',
-    fontSize: 14,
-    borderRadius: 3,
-    padding: '0 20px',
-    minWidth: 120,
-    border: 'none',
-    outline: 'none',
-    background: 'var(--color-accent-bright)',
-    textTransform: 'uppercase',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:hover': { background: 'var(--color-accent-hover)' },
-    '&:disabled': { background: '#cccccc', color: '#666', cursor: 'default' },
-  },
-});
+import classes from './PasswordRecoveryPage.module.css';
 
 const PasswordRecoveryPage = () => {
-  const classes = useStyle();
   const translation = useTranslation();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();

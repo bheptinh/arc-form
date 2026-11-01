@@ -61,7 +61,7 @@ const useStyle = createUseStyles({
     background: 'transparent',
     fontWeight: 400,
     flexGrow: 1,
-    border: '1px solid #E6E6E6',
+    border: '1px solid var(--color-surface-muted)',
     marginRight: '5px',
     borderRadius: 3,
     '@media screen and (max-width: 950px)': {
@@ -75,13 +75,13 @@ const useStyle = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: '#EFEFEF',
-    border: '1px solid #E6E6E6',
+    background: 'var(--color-surface-subtle)',
+    border: '1px solid var(--color-surface-muted)',
     borderRadius: 3,
     cursor: 'pointer',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     '&:hover': {
-      background: 'var(--color-surface-slate)',
+      background: 'var(--color-slate)',
       '& svg': {
         stroke: 'var(--color-white)',
       },
@@ -637,7 +637,7 @@ const useStyle = createUseStyles({
     },
   },
   product_hover_color: {
-    color: '#65BCF1',
+    color: 'var(--color-icon-info)',
     fontSize: 15,
     letterSpacing: '.03em',
   },
@@ -1589,7 +1589,7 @@ const Main = (props) => {
           />
 
           <div className={classes.search_btn_wr} ref={searchBtn} onClick={onClickSearchBtn}>
-            <IconSearch size={14} color="#2E3839" className={classes.searchBtn} />
+            <IconSearch size={14} color="#2a3435" className={classes.searchBtn} />
           </div>
         </div>
         {searchedResultTotal ? (

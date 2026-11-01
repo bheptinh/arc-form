@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
@@ -13,67 +12,7 @@ import Button from '../../shared-components/inputs/button';
 import TextInput from '../../shared-components/inputs/text-input';
 import DefaultModal from '../../shared-components/modals/default';
 import { createProjectUrl } from '../../utils/UrlHelper';
-
-const useStyle = createUseStyles({
-  planner_popup_wr: {
-    maxWidth: 645,
-    width: '100%',
-  },
-  planner_popup_cont: {
-    color: 'var(--color-black)',
-    backgroundColor: 'var(--color-surface-subtle)',
-    borderRadius: 6,
-    position: 'relative',
-    height: '100%',
-  },
-  planner_popup_profile_wrap: {},
-  planner_popup_title: {
-    fontSize: 32,
-    fontWeight: '300',
-    color: 'var(--color-white)',
-    whiteSpace: 'nowrap',
-    textAlign: 'center',
-    fontFamily: 'Roboto-Light, sans-serif',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 20,
-    },
-  },
-  planner_btn_done_disabled: {
-    border: '1px solid #999999',
-    backgroundColor: '#cccccc',
-    color: '#666666',
-    cursor: 'default',
-    '&:hover': {
-      background: '#cccccc',
-    },
-  },
-  planner_popup_profile_top: {
-    background: 'var(--color-info-light)',
-    position: 'relative',
-    padding: '41px 0',
-    '@media screen and (max-width: 950px)': {
-      padding: '15px 0',
-    },
-  },
-  planner_popup_profile_bottom: {
-    position: 'relative',
-    padding: '20px 0 30px',
-    background: 'var(--color-white)',
-    '& form': {
-      padding: '0 100px',
-    },
-    '& fieldset': {
-      display: 'flex',
-      justifyContent: 'space-between',
-      padding: '0 10px',
-      marginBottom: 20,
-      alignItems: 'center',
-      '@media screen and (max-width: 950px)': {
-        marginBottom: 14,
-      },
-    },
-  },
-});
+import classes from './update-password.module.css';
 
 const UpdatePassword = (props) => {
   const dispatch = useDispatch();
@@ -83,7 +22,6 @@ const UpdatePassword = (props) => {
   const type = popups.updatePassword.type;
   const data = popups.updatePassword.data;
 
-  const classes = useStyle();
   const [animPopupClass, setAnimPopupClass] = useState(false);
 
   const inputSubmit = useRef(null);
@@ -172,7 +110,7 @@ const UpdatePassword = (props) => {
       contentClassName={classes.planner_popup_cont}
       onClose={onClickClosePopUp}
     >
-      <div className={classes.planner_popup_profile_wrap}>
+      <div>
         <div className={classes.planner_popup_profile_top}>
           <h2 className={classes.planner_popup_title}>{translation['UPDATE_PASSWORD']}</h2>
         </div>

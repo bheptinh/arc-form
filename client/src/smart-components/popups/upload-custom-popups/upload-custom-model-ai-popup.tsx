@@ -428,7 +428,7 @@ const useStyle = createUseStyles({
     boxShadow: 'inset rgba(0, 0, 0, 0.4) 0px 0.7px 2.81px 0px',
     position: 'relative',
     overflow: 'hidden',
-    background: '#F6F6F6',
+    background: 'var(--color-surface-subtle)',
   },
   planner_popup_export_progressBar_progress: {
     width: 0,

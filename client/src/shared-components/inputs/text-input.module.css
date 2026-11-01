@@ -1,0 +1,49 @@
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.fieldsetInset {
+  padding: 0 65px;
+}
+
+@media screen and (max-width: 950px) {
+  .fieldsetInset {
+    padding: 0 15px;
+    grid-gap: 14px;
+  }
+}
+
+.label {
+  color: var(--color-text);
+  padding: 0 10px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.formInputWrapper {
+  color: var(--color-white);
+  position: relative;
+}
+
+.formInput {
+  color: var(--color-black);
+  width: 100%;
+  border: 1px solid var(--color-border-warm);
+  height: 30px;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+  background: var(--color-white);
+  transition: all 0.4s ease-out;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.formInputPasswordButton {
+  top: 6px;
+  right: -20px;
+  cursor: pointer;
+  position: absolute;
+}

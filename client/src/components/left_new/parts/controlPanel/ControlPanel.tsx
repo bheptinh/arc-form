@@ -50,7 +50,7 @@ const useStyle = createUseStyles({
     position: 'relative',
     height: '100%',
     '&:before': {
-      background: 'var(--color-surface-slate)',
+      background: 'var(--color-slate)',
       content: "''",
       position: 'absolute',
       top: '0',
@@ -76,11 +76,11 @@ const useStyle = createUseStyles({
     },
   },
   menu_dop_btn: {
-    borderBottom: '1px solid #595959',
+    borderBottom: '1px solid #555555',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    background: 'var(--color-surface-slate)',
+    background: 'var(--color-slate)',
     position: 'relative',
     zIndex: 3,
     height: '100%',
@@ -111,7 +111,7 @@ const useStyle = createUseStyles({
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
   },
   menu_dop_info_link: {
-    background: 'var(--color-surface-slate)',
+    background: 'var(--color-slate)',
     height: '34px',
     display: 'flex',
     alignItems: 'center',
@@ -209,10 +209,10 @@ const useStyle = createUseStyles({
       },
     },
     '& $svg_hover_path': {
-      stroke: 'var(--color-surface-slate)',
+      stroke: 'var(--color-slate)',
     },
     '& $menu_rozdil_btn_text': {
-      color: 'var(--color-surface-slate)',
+      color: 'var(--color-slate)',
       '&:before': {
         background: 'var(--color-accent)',
         transition: 'all 0s cubic-bezier(.19,1,.22,1)',
@@ -224,7 +224,7 @@ const useStyle = createUseStyles({
     padding: '5px 0',
     pointerEvents: 'all',
     width: '40px',
-    background: 'var(--color-surface-slate)',
+    background: 'var(--color-slate)',
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
@@ -276,16 +276,16 @@ const useStyle = createUseStyles({
       width: '101%',
       height: '100%',
       zIndex: -1,
-      background: 'var(--color-surface-slate)',
+      background: 'var(--color-slate)',
       transition: 'all .9s cubic-bezier(.19,1,.22,1)',
     },
   },
   menu_btns: {
-    background: 'var(--color-surface-slate)',
+    background: 'var(--color-slate)',
     width: '40px',
     position: 'relative',
     zIndex: 3,
-    borderTop: '1px solid #595959',
+    borderTop: '1px solid #555555',
   },
   menu_btn: {
     height: '45px',
@@ -322,7 +322,7 @@ const useStyle = createUseStyles({
   menu_btn_img_wr: {
     height: '100%',
     width: '100%',
-    background: 'var(--color-surface-slate)',
+    background: 'var(--color-slate)',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -381,22 +381,22 @@ const useStyle = createUseStyles({
       background: 'var(--color-accent)',
     },
     '&:hover $menu_btn_path': {
-      fill: 'var(--color-surface-slate)',
+      fill: 'var(--color-slate)',
     },
     '&:hover $menu_btn_rect': {
-      stroke: 'var(--color-surface-slate)',
+      stroke: 'var(--color-slate)',
     },
     '&:hover $menu_btn_stroke': {
-      stroke: 'var(--color-surface-slate)',
+      stroke: 'var(--color-slate)',
     },
     '& $menu_btn_path': {
-      fill: 'var(--color-surface-slate)',
+      fill: 'var(--color-slate)',
     },
     '& $menu_btn_stroke': {
-      stroke: 'var(--color-surface-slate)',
+      stroke: 'var(--color-slate)',
     },
     '& $menu_btn_rect': {
-      stroke: 'var(--color-surface-slate)',
+      stroke: 'var(--color-slate)',
     },
     '& $menu_btn_img_wr': {
       background: 'var(--color-accent)',

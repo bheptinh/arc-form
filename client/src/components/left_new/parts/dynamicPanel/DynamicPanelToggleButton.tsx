@@ -90,8 +90,8 @@ const DynamicPanelToggleButton = (props) => {
         onClick={onToggleDynamicPanel}
       >
         <path
-          stroke="#E4E4E4"
-          fill="#E4E4E4"
+          stroke="#e9e9e9"
+          fill="#e9e9e9"
           d="M22.992 13.163c0-2.762-2.236-5-4.997-5H8.002c-.117 0-1.479.05-2.478-1.259-.999-1.31-1.532-3.662-1.532-3.662V52s.449-1.784 1.406-3.071c.957-1.287 2.663-1.214 2.663-1.214h9.931a5 5 0 0 0 5-5V13.163Z"
         />
       </svg>

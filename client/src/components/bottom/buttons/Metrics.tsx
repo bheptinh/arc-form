@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     fontSize: '12px',
 
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
@@ -69,7 +69,7 @@ const useStyles = createUseStyles({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 12,
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
     position: 'relative',
     '&:hover': {

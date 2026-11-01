@@ -377,7 +377,7 @@ const useStyle = createUseStyles({
       width: '13px',
       left: '0px',
       bottom: '-1px',
-      backgroundColor: 'var(--color-text-slate)',
+      backgroundColor: 'var(--color-slate)',
       transition: '.4s',
       borderRadius: '50%',
     },

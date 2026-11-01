@@ -14,11 +14,19 @@ router.get('/config', (_req, res) => {
   res.json({ status: 'success', result: JSON.stringify(getConfig()), location: 'UA' });
 });
 
-// GET / — list projects (?archived=1 lists the archive)
+// GET / — list projects (?archived=1 lists the archive, ?sort=modified|opened&dir=asc|desc sets the order)
+const ListSchema = z.object({
+  sort: z.enum(['modified', 'opened']).default('modified'),
+  dir: z.enum(['asc', 'desc']).default('desc'),
+});
+
 router.get('/', (req, res) => {
+  const parsed = ListSchema.safeParse(req.query);
+  if (!parsed.success) { badRequest(res, parsed.error.message); return; }
+
   const limit = parseInt(req.query.limit as string) || 20;
   const offset = parseInt(req.query.offset as string) || 0;
-  res.json(listProjects(DEV_USER_ID, limit, offset, req.query.archived === '1'));
+  res.json(listProjects(DEV_USER_ID, limit, offset, req.query.archived === '1', parsed.data.sort, parsed.data.dir));
 });
 
 // GET /:id

@@ -45,10 +45,24 @@ export function getConfig() {
   };
 }
 
-export function listProjects(userId: string, limit: number, offset: number, archived = false) {
+const SORT_COLUMNS = { modified: 'updated_at', opened: 'created_at' };
+
+export type ProjectSort = keyof typeof SORT_COLUMNS;
+export type SortDirection = 'asc' | 'desc';
+
+export function listProjects(
+  userId: string,
+  limit: number,
+  offset: number,
+  archived = false,
+  sort: ProjectSort = 'modified',
+  dir: SortDirection = 'desc'
+) {
   const archivedFilter = archived ? 'archived_at IS NOT NULL' : 'archived_at IS NULL';
+  // Timestamps only have one-second resolution, so id keeps the order stable across pages.
+  const orderBy = `${SORT_COLUMNS[sort]} ${dir.toUpperCase()}, id ${dir.toUpperCase()}`;
   const rows = db.prepare(
-    `SELECT id, name, created_at, updated_at FROM projects WHERE user_id = ? AND ${archivedFilter} ORDER BY updated_at DESC LIMIT ? OFFSET ?`
+    `SELECT id, name, created_at, updated_at FROM projects WHERE user_id = ? AND ${archivedFilter} ORDER BY ${orderBy} LIMIT ? OFFSET ?`
   ).all(userId, limit || 100, offset) as ProjectRow[];
   const { count } = db.prepare(`SELECT COUNT(*) as count FROM projects WHERE user_id = ? AND ${archivedFilter}`).get(userId) as { count: number };
   return {

@@ -1,0 +1,31 @@
+.checkboxInputWr {
+  display: flex;
+}
+
+.checkboxInput {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.checkboxInput + label  {
+  gap: 8px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  position: relative;
+  font-size: 13px;
+  align-items: center;
+  user-select: none;
+}
+
+@media screen and (max-width: 950px) {
+  .checkboxInput + label  {
+    font-size: 11px;
+  }
+}
+
+.checkboxInput_disabled + label  {
+  cursor: default;
+  opacity: 0.2;
+}

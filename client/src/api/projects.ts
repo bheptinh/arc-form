@@ -1,4 +1,4 @@
-import { infiniteQueryOptions } from '@tanstack/react-query';
+import { infiniteQueryOptions, keepPreviousData } from '@tanstack/react-query';
 
 export type Project = {
   id: string;
@@ -9,34 +9,64 @@ export type Project = {
   preview?: string;
 };
 
+export type ProjectSortField = 'modified' | 'opened';
+export type SortDirection = 'asc' | 'desc';
+
 type ProjectsPage = { items: Project[]; total: number };
 
 const PAGE_SIZE = 20;
 
-async function fetchProjectsPage(offset: number, archived: boolean): Promise<ProjectsPage> {
+async function fetchProjectsPage(
+  offset: number,
+  archived: boolean,
+  sort: ProjectSortField,
+  dir: SortDirection
+): Promise<ProjectsPage> {
   const filter = archived ? '&archived=1' : '';
-  const res = await fetch(`/server-api/projects?limit=${PAGE_SIZE}&offset=${offset}${filter}`);
+  const res = await fetch(
+    `/server-api/projects?limit=${PAGE_SIZE}&offset=${offset}&sort=${sort}&dir=${dir}${filter}`
+  );
   if (!res.ok) throw new Error(`fetchProjects ${res.status}`);
   return ((await res.json()) as { data: ProjectsPage }).data;
 }
 
-const getProjectsQueryOptions = (queryKey: string[], archived: boolean) =>
+const getProjectsQueryOptions = (
+  queryKey: string[],
+  archived: boolean,
+  sort: ProjectSortField,
+  dir: SortDirection
+) =>
   infiniteQueryOptions({
     queryKey,
-    queryFn: ({ pageParam }: { pageParam: number }) => fetchProjectsPage(pageParam, archived),
+    queryFn: ({ pageParam }: { pageParam: number }) =>
+      fetchProjectsPage(pageParam, archived, sort, dir),
     initialPageParam: 0,
     getNextPageParam: (lastPage, allPages) => {
       const loaded = allPages.flatMap((p) => p.items).length;
       return loaded < lastPage.total ? loaded : undefined;
     },
+    placeholderData: keepPreviousData,
   });
 
-// Invalidating ['projects'] also refreshes the archive, because its key starts with the same part.
-export const projectsInfiniteQueryOptions = getProjectsQueryOptions(['projects'], false);
-export const archivedProjectsInfiniteQueryOptions = getProjectsQueryOptions(
-  ['projects', 'archived'],
-  true
+// Invalidating ['projects'] also refreshes the archive and every sort order, because their keys start with it.
+export const projectsInfiniteQueryOptions = getProjectsQueryOptions(
+  ['projects'],
+  false,
+  'modified',
+  'desc'
 );
+
+export const sortedProjectsQueryOptions = (
+  archived: boolean,
+  sort: ProjectSortField,
+  dir: SortDirection
+) =>
+  getProjectsQueryOptions(
+    archived ? ['projects', 'archived', sort, dir] : ['projects', sort, dir],
+    archived,
+    sort,
+    dir
+  );
 
 export async function setProjectArchived(id: string, archived: boolean): Promise<void> {
   const res = await fetch(`/server-api/projects/${id}/archive`, {

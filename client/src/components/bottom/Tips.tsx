@@ -44,7 +44,7 @@ const useStyle = createUseStyles({
     extend: help_bot_item,
     alignItems: 'center',
     margin: '0 15px',
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
   },
   help_bot_item_left: {
     extend: help_bot_item,

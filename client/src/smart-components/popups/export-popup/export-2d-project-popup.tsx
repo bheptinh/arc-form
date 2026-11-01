@@ -25,7 +25,7 @@ const useStyle = createUseStyles({
     boxShadow: 'none',
   },
   planner_popup_cont: {
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     backgroundColor: 'var(--color-surface-subtle)',
     overflow: 'hidden',
     position: 'relative',
@@ -94,7 +94,7 @@ const useStyle = createUseStyles({
     border: 'none',
     outline: 'none',
     textTransform: 'uppercase',
-    color: 'var(--color-text-slate)',
+    color: 'var(--color-slate)',
     '@media screen and (max-width: 950px)': {
       height: 26,
       padding: '0 5px',
@@ -116,7 +116,7 @@ const useStyle = createUseStyles({
     '& p': {
       flex: 2,
       textAlign: 'center',
-      color: 'var(--color-text-slate)',
+      color: 'var(--color-slate)',
     },
     '&:hover': {
       background: 'var(--color-surface-muted)',
