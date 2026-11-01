@@ -135,7 +135,15 @@ Migrating from **react-jss** (`createUseStyles`) to **CSS Modules**. The routed 
 
 `classes.x` is `undefined` if `.x` has no rules, so don't keep empty classes. Wrap a class that isn't defined in the module in `:global(...)`, or it gets hashed.
 
-Colours are CSS variables in `client/src/tokens.css`, loaded first in `main.tsx`. Use `var(--color-…)` in style objects, but not in canvas `fillStyle`, `THREE.Color` or `url()` data URIs, where `var()` doesn't work.
+Colours are CSS variables in `client/src/tokens.css`, loaded first in `main.tsx`. Use `var(--color-…)` in CSS and style objects, but not in canvas `fillStyle`, `THREE.Color` or `url()` data URIs, where `var()` doesn't work.
+
+**Migration goal: CSS Modules is the only styling system.** We chose it over Tailwind, MUI and staying on JSS. All remaining JSS, `client/src/index.css` and `client/public/roomtodo/src_designer/css/style.css` move to CSS Modules, then `react-jss` is removed. Migrate incrementally.
+- **New code:** CSS Modules only. Don't add `createUseStyles`, and don't add Tailwind or MUI. If a component needs hard behaviour such as a combobox, use a headless library (Radix, Base UI) wrapped in `shared-components`.
+- **Converting JSS:** generate the CSS from the existing sheet with JSS rather than rewriting it by hand, so its property sorting and `px` units are preserved. Import the module after child components, and raise specificity for overrides of a child's styles (`.wrap .child`), because load order changes during hot reload.
+- **Global stylesheets:** the engine sets and queries literal class names, such as `viewer-canvas`, and hashing would break them. Rules for engine classes stay global in one small file; only rules used by React alone move into modules. Delete unused rules after checking each one, because some classes are applied dynamically.
+- **`plannercore.js`:** don't change its class names as part of this migration.
+- **Colours:** tokens hold exact existing values. Near-duplicates are merged in separate steps, using perceptual distance (CIEDE2000) and a check that no hover or border pair relies on the difference. Merged so far: ΔE ≤ 1.5.
+- **Still to do:** font size and spacing tokens.
 
 ### UI Layout — `client/src/App.tsx`
 ```
