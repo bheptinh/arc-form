@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -1000,6 +1000,8 @@ const App = () => {
 
   const onPreloaderToggle = () => dispatch(updatePreloaderStatus(!preloaderStatus));
 
+  const isInitStarted = useRef(false);
+
   useEffect(() => {
     async function init() {
       if (!R2D.Storage.load('r2d_is_error_occured')) {
@@ -1060,6 +1062,10 @@ const App = () => {
 
       const canvasWrapper = document.getElementById('planner');
       canvasWrapper.appendChild(planner.getDomElement());
+
+      // StrictMode runs this effect twice; the listeners above are re-added after cleanup, the load must run once
+      if (isInitStarted.current) return;
+      isInitStarted.current = true;
 
       let showStartPopup = true;
 

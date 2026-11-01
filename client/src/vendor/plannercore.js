@@ -15500,7 +15500,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
                 loadedProjectData.rotation = data['scene']['skybox']['r'];
             }
 
-            if ( floorplanData ) {
+            if ( floorplanData?.drawing?.source ) {
                 // floorplanData['drawing']['source'] = ~floorplanData['drawing']['source'].indexOf("base64") ? floorplanData['drawing']['source'] : R2D.makeURL(R2D.URL.DOMAIN, floorplanData['drawing']['source']);
                 let checkedSrc = floorplanData["drawing"]["source"];
                 if (~checkedSrc.indexOf("base64")) {
@@ -15657,7 +15657,7 @@ R2D.Controller = function(scene, apiDispatcher, user) {
                 if ( event.type == Event.COMPLETE ) {
                     R2D.scene.updateProjectId(data['plan_id']);
                     R2D.scene.updateProjectHash(data['hash']);
-                    WC.wallsEditor.imgSrc = data?.sources?.drawing[0];
+                    WC.wallsEditor.imgSrc = data?.sources?.drawing?.[0] ?? floorplanData?.drawing.source;
                     scope.dispatchEvent(new Event(R2D.Controller.SAVE_CURRENT_SCENE_COMPLETE, scope));
                     scope.savedLastChanges = true;
         
@@ -17987,7 +17987,6 @@ function loaderDataEventHandler(e, dataProductObject, defaultProductData, fromSt
             sceneObject.flipY = dataProductObject.fy;
             sceneObject.flipZ = dataProductObject.fz;
             sceneObject.fromStart = fromStart || false;
-            sceneObject.userKey = dataProductObject.userKey;
 
             sceneObject.isLockedOnScene = dataProductObject.isLockedOnScene || false;
 
