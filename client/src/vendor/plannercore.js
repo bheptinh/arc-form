@@ -17418,8 +17418,7 @@ R2D.Config = function()
                 text: '2023 © Roomtodo',
                 href: '/',
                 target: "_blank"
-            },
-            orderFloorPlanUrl: ""
+            }
         },
         start_popup: {
             show: true

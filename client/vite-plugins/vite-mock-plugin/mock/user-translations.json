@@ -3962,14 +3962,6 @@
             "code": "OLD_PASSWORD_NOT_MATCH"
         },
         {
-            "value": "we draw for you",
-            "code": "ORDER_FLOOR_PLAN_SUBTITLE"
-        },
-        {
-            "value": "Order Floor Plan",
-            "code": "ORDER_FLOOR_PLAN_TITLE"
-        },
-        {
             "value": "Some functions do not work in the mobile version, for a better experience use the desktop version.",
             "code": "ORIENTATION_PORTRAIT_TEXT_1"
         },

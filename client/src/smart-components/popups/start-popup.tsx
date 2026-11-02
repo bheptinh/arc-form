@@ -114,11 +114,6 @@ const useStyle = createUseStyles({
       fontSize: 13,
     },
   },
-  start_item_subtitle: {
-    textAlign: 'center',
-    fontSize: 15,
-    color: 'var(--color-text-muted)',
-  },
   compare_checkbox_wr: {
     position: 'absolute',
     bottom: 10,
@@ -151,13 +146,6 @@ const StartPopup = (props) => {
   const [buttonsArray, setButtonsArray] = useState([]);
 
   const checkBoxRef = useRef(null);
-
-  const onOrderFloorPlanClick = (e) => {
-    R2D.config.data.additional.orderFloorPlanUrl &&
-      window.open(R2D.config.data.additional.orderFloorPlanUrl, '_blank');
-    setAnimPopupClass(false);
-    setTimeout(() => dispatch(closeActivePopup({ name: 'startPopup' })), 500);
-  };
 
   const onStartBuildClick = (e) => {
     if (checkBoxRef.current.querySelector('input').checked)
@@ -254,12 +242,6 @@ const StartPopup = (props) => {
       preview: '/src_designer/images/myProjects.svg',
       buttonClick: onMyProjectsOpen,
     },
-    orderFloorPlan: {
-      name: translation['ORDER_FLOOR_PLAN_TITLE'],
-      addText: translation['ORDER_FLOOR_PLAN_SUBTITLE'],
-      preview: '/src_designer/images/orderFloorPlan.svg',
-      buttonClick: onOrderFloorPlanClick,
-    },
     demoProjects: {
       name: translation['PRECONF_PROJECTS_TITLE'],
       preview: '/src_designer/images/demoProjects.svg',
@@ -295,11 +277,6 @@ const StartPopup = (props) => {
           <div className={classes.start_item_title}>
             {data.name || defaultStartButtonsData[key]?.name}
           </div>
-          {data.addText || defaultStartButtonsData[key]?.addText ? (
-            <div className={classes.start_item_subtitle}>
-              {data.addText || defaultStartButtonsData[key]?.addText}
-            </div>
-          ) : null}
         </div>
       );
     }
