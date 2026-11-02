@@ -10,6 +10,7 @@ import privateCatalogRouter from './routes/catalog/private.js';
 import rendersRouter from './routes/renders.js';
 import toursRouter from './routes/tours.js';
 import cameraViewsRouter from './routes/camera-views.js';
+import filesRouter from './routes/files.js';
 
 const app = express();
 const PORT = process.env.PORT ?? 3001;
@@ -30,6 +31,7 @@ app.use('/server-api/render', rendersRouter);
 app.use('/server-api/tours', toursRouter);
 app.use('/server-api/camera-views', cameraViewsRouter);
 app.use('/uploads', express.static(path.resolve(process.env.DB_DIR!, 'uploads')));
+app.use('/files/products', filesRouter);
 
 // In production, serve the Vite build and handle SPA routing
 if (process.env.NODE_ENV === 'production') {

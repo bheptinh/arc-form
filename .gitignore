@@ -5,4 +5,4 @@ data/
 .env
 .DS_Store
 *.local
-client/public/roomtodo/files/products/
+/products.zip

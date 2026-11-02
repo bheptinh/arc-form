@@ -17,6 +17,11 @@ npm run seed       # seed SQLite DB from source data (reads DB_DIR from .env)
 ```
 PORT=3015
 DB_DIR=data    # path to SQLite DB dir, relative to project root
+S3_ENDPOINT=http://192.168.0.100:3900    # S3-compatible storage for product models (Garage on the home server)
+S3_REGION=garage
+S3_BUCKET=arc-form-models
+S3_ACCESS_KEY_ID=…
+S3_SECRET_ACCESS_KEY=…
 ```
 
 ## Repo Layout
@@ -60,6 +65,7 @@ server/             Express backend (TypeScript, compiled to dist-server/server/
 data/               SQLite DB + uploaded files (gitignored, path set by DB_DIR env)
   arcform.db        SQLite database
   uploads/          user-uploaded model/material files
+  files/products/   catalog product models (.glb, .mrtd, previews); dev-only copy, production reads them from S3
   nav-tree.json     product navigation tree (served by /server-api/catalog/products/nav)
   materials-tree.json  materials navigation tree
 docs/               feature documentation
@@ -203,7 +209,7 @@ Sequential async init before React renders:
 
 Three dev-server plugins intercept network requests so the app works offline/locally:
 
-**`client/vite-plugins/local-first-assets/`** — intercepts static asset URLs (`/src_designer/images/`, `/Assets/css/`, `/files/products/`, `/files/categories/`). Serves from `client/public/roomtodo/{url}` if the file exists; otherwise fetches from `https://roomtodo.com` and caches it. Known MIME types include `.mrtd` (R2D proprietary binary model format → `application/octet-stream`).
+**`client/vite-plugins/local-first-assets/`** — intercepts static asset URLs (`/src_designer/images/`, `/Assets/css/`, `/files/products/`, `/files/categories/`). Serves `/files/products/` from `$DB_DIR/files/products/` and everything else from `client/public/roomtodo/{url}` if the file exists; otherwise fetches from `https://roomtodo.com` and caches it. Known MIME types include `.mrtd` (R2D proprietary binary model format → `application/octet-stream`).
 
 **`client/vite-plugins/catalog-search-fallback/`** — intercepts `/api/catalog/search?...`. Derives a flat filename from query params and looks it up in `client/vite-plugins/catalog-search-fallback/mocks/`. Falls back to roomtodo.com and caches on miss.
 
@@ -218,7 +224,9 @@ Filename convention:
 
 ### Backend — `server/`
 
-Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api` prefix to avoid conflicts with Vite mock plugins that own `/api/` and `/api2/`. In production, also serves the Vite build from `dist/` and uploaded files from `data/uploads/`.
+Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api` prefix to avoid conflicts with Vite mock plugins that own `/api/` and `/api2/`. In production, also serves the Vite build from `dist/`, uploaded files from `data/uploads/`, and product models from S3.
+
+**Product models:** `product_files.file_path` keeps relative paths (`/files/products/…`), and only config says where they're stored. In dev the `local-first-assets` plugin serves them from `$DB_DIR/files/products/`; in production `GET /files/products/*` streams them from the S3 bucket under the same key. The bucket stays private. To add new models to S3, run `aws s3 sync data/files/products s3://$S3_BUCKET/files/products`.
 
 **Database:** better-sqlite3, WAL mode. UUID TEXT primary keys throughout. Schema is in `server/schema.sql` — all tables use `CREATE TABLE IF NOT EXISTS` so the file is re-run on every startup safely.
 
@@ -276,6 +284,7 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | POST | `/server-api/camera-views` | camera-views.ts | save camera view (`{ preview, config, plan_entity_id }`) |
 | DELETE | `/server-api/camera-views/:id` | camera-views.ts | delete camera view + preview file |
 | GET | `/uploads/*` | static | user-uploaded files from `data/uploads/` |
+| GET | `/files/products/*` | files.ts | product model files streamed from S3 (`services/storage.ts`), cached for a year |
 
 #### Catalog item shape
 

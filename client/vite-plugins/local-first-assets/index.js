@@ -26,7 +26,8 @@ const MIME = {
   '.mrtd': 'application/octet-stream',
 };
 
-export default {
+// Product models are catalog data, so they live in productsDir (outside public/) and stay out of the build
+export default (productsDir) => ({
   name: 'local-first-assets',
 
   configureServer(server) {
@@ -36,7 +37,9 @@ export default {
       const url = (req.url ?? '').split('?')[0];
       if (!PROXIED_PREFIXES.some(p => url.startsWith(p))) return next();
 
-      const localFile = path.join(root, 'public', 'roomtodo', url);
+      const localFile = url.startsWith('/files/products/')
+        ? path.join(productsDir, url.slice('/files/products/'.length))
+        : path.join(root, 'public', 'roomtodo', url);
 
       if (fs.existsSync(localFile) && fs.statSync(localFile).isFile()) {
         const ext = path.extname(localFile).toLowerCase();
@@ -68,4 +71,4 @@ export default {
       }
     });
   },
-};
+});
