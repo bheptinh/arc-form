@@ -1,0 +1,216 @@
+.grid {
+  width: calc(100% + 1px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Big (default): one tile per row. */
+.item {
+  width: 100%;
+  height: auto;
+  display: grid;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in, height 0.2s ease-in;
+  border-right: 1px solid var(--color-surface-muted);
+  align-content: baseline;
+  border-bottom: 1px solid var(--color-surface-muted);
+  padding-bottom: 7px;
+  grid-template-rows: auto 1fr;
+}
+/* Hover frame: four edges drawn as background layers. Each edge is a 2px
+   line with a 1px white line inside it. Left grows down, top grows right,
+   right grows up, bottom grows left. Active tiles show the full frame in accent. */
+.item:before {
+  --line: linear-gradient(var(--color-border), var(--color-border));
+  --inner: linear-gradient(var(--color-white), var(--color-white));
+  inset: 0;
+  content: "";
+  z-index: 4;
+  position: absolute;
+  transition: background-size .9s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+  background-image: var(--line), var(--line), var(--line), var(--line), var(--inner), var(--inner), var(--inner), var(--inner);
+  background-repeat: no-repeat;
+  background-position: left top, left top, right bottom, right bottom, left 2px top 2px, left 2px top 2px, right 2px bottom 2px, right 2px bottom 2px;
+  background-size: 2px 0, 0 2px, 2px 0, 0 2px, 1px 0, 0 1px, 1px 0, 0 1px;
+}
+.item:hover:before,
+.active:before {
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px, 1px calc(100% - 4px), calc(100% - 4px) 1px, 1px calc(100% - 4px), calc(100% - 4px) 1px;
+}
+.active:before {
+  --line: linear-gradient(var(--color-accent), var(--color-accent));
+}
+
+.media {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 7px;
+  justify-content: center;
+}
+.media > img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform .9s cubic-bezier(.19,1,.22,1);
+}
+.item:hover .media > img {
+  transform: scale(1.05);
+}
+
+.title {
+  color: var(--color-black);
+  padding: 0 13px 0px;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: RobotoCondensed-Regular;
+}
+.title > div {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Round icon button pinned to a corner of the media area. */
+.corner {
+  width: 24px;
+  cursor: pointer;
+  height: 24px;
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  background: var(--color-white);
+  transition: opacity .9s cubic-bezier(.19,1,.22,1);
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+}
+.topLeft {
+  top: 5px;
+  left: 5px;
+}
+.topRight {
+  top: 5px;
+  right: 5px;
+}
+.bottomRight {
+  right: 5px;
+  bottom: 5px;
+}
+/* reveal="hover": hidden until the tile is hovered. */
+.revealHover {
+  opacity: 0;
+}
+.item:hover .revealHover {
+  opacity: 1;
+}
+/* reveal="idle": shown until the tile is hovered. */
+.revealIdle {
+  z-index: 1;
+}
+.item:hover .revealIdle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Bar that slides up over the bottom of the media area on hover. */
+.bar {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 34px;
+  display: flex;
+  padding: 0 6px;
+  z-index: 3;
+  position: absolute;
+  transform: translateY(102%);
+  background: rgba(68, 68, 68, 0.7);
+  transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+  align-items: center;
+  pointer-events: none;
+}
+.item:hover .bar {
+  transform: translateY(0%);
+}
+
+/* Covers the whole tile, e.g. to start a drag. */
+.overlay {
+  inset: 0;
+  z-index: 2;
+  position: absolute;
+}
+
+/* Medium: two tiles per row. */
+.medium .item {
+  width: 50%;
+  padding-bottom: 0;
+}
+.medium .media {
+  margin: 0;
+}
+.medium .title {
+  display: flex;
+  padding: 4px 6px;
+  font-size: 13px;
+  align-items: center;
+}
+.medium .corner {
+  width: 18px;
+  height: 18px;
+}
+.medium .bar {
+  height: 27px;
+}
+
+/* Small: four tiles per row, no title. */
+.small .item {
+  width: 25%;
+  padding-bottom: 0;
+}
+.small .media {
+  margin: 0;
+}
+.small .title {
+  display: none;
+}
+.small .corner {
+  width: 15px;
+  height: 15px;
+}
+.small .bar {
+  height: 25px;
+}
+
+@media screen and (max-width: 950px) {
+  .title {
+    padding: 0 6px 0;
+    font-size: 10px;
+  }
+  .medium .title {
+    overflow: hidden;
+    font-size: 11px;
+  }
+  .small .corner {
+    width: 10px;
+    height: 10px;
+  }
+  .small .topLeft {
+    top: 2px;
+    left: 2px;
+  }
+  .small .topRight {
+    top: 2px;
+    right: 2px;
+  }
+  .small .bottomRight {
+    right: 2px;
+    bottom: 2px;
+  }
+}
