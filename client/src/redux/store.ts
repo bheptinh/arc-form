@@ -30,3 +30,5 @@ export const store = configureStore({
     controlPanel: controlReducer,
   }),
 });
+
+export type AppDispatch = typeof store.dispatch;

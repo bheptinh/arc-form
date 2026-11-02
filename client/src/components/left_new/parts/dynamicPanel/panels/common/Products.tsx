@@ -17,7 +17,6 @@ import {
   updateDynamicPanelPreviewViewType,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
 import {
   selectIsLogged,
   selectUserProfileData,
@@ -50,7 +49,6 @@ const useStyle = createUseStyles({
     position: 'relative',
     borderTop: '1px solid var(--color-border)',
   },
-  prod_elem_wrap: {},
   prod_item_upload_btn_wr: {
     height: '100%',
     width: '100%',
@@ -146,16 +144,6 @@ const useStyle = createUseStyles({
       height: 13,
     },
   },
-  prod_item: {},
-  previewSelectedObject: {
-    userSelect: 'none',
-    position: 'absolute',
-    pointerEvents: 'none',
-    zIndex: 9,
-  },
-  selectedTouched: {
-    transition: 'all .5s ease',
-  },
   preloaderBlock: {
     background: 'rgba(0, 0, 0, .2)',
     zIndex: 4,
@@ -220,18 +208,7 @@ const Products = (props) => {
   const userProjectActive = useSelector(selectUserProjectActive);
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
-  let borderTimeoutKey;
 
-  let isObjLoaded = false;
-  let selectedObjId = null;
-  let selectedObjPreviewUrl = null;
-  let startingPointX = 0;
-  let startingPointY = 0;
-  let selectedObjPreviewRatio = 0;
-  let previewObjOpacity = 1;
-  let mouseDownOnObj = false;
-  let selectedObjImgWidth = 0;
-  let selectedObjImgHeight = 0;
   let scrollTimer = -1;
   const panelRef = useRef(null);
 
@@ -239,163 +216,6 @@ const Products = (props) => {
   const catalogMain = useRef(null);
 
   const classes = useStyle();
-
-  let timer = null;
-  let previewObj = null;
-  let currentMouseDownElem = null;
-  let plannerCatalogElem, currentOverlayCoords, dragTimeout;
-
-  // Drag from catalog for models
-  const onMouseDownProduct = (e, elem) => {
-    currentMouseDownElem = elem;
-    document.addEventListener('mouseup', onObjectMouseUp);
-    document.addEventListener('touchend', onObjectMouseUp);
-    if (props.type == 'replace') return;
-    if (document.querySelector('.' + classes.prod_elem_wrap))
-      document.querySelector('.' + classes.prod_elem_wrap).style.touchAction = 'auto';
-    if (document.querySelector('.' + classes.catalog_wr))
-      document.querySelector('.' + classes.catalog_wr).style.touchAction = 'auto';
-    const id = elem.id;
-    const previewUrl = elem.source?.images.preview;
-    if (mouseDownOnObj) return;
-    currentOverlayCoords = e.target.getBoundingClientRect();
-    plannerCatalogElem = e.currentTarget.closest(`.${classes.prod_item}`);
-    mouseDownOnObj = true;
-    const selectedObjImg = plannerCatalogElem.querySelector('img');
-    selectedObjImgWidth = selectedObjImg?.offsetWidth;
-    selectedObjImgHeight = selectedObjImg?.offsetHeight;
-    selectedObjPreviewRatio =
-      1 /
-      (R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels() -
-        (currentOverlayCoords.x + currentOverlayCoords.width));
-    selectedObjId = id;
-    selectedObjPreviewUrl = previewUrl;
-    const newXPos = e.clientX || (e.touches && e.touches[0].clientX);
-    const newYPos = e.clientY || (e.touches && e.touches[0].clientY);
-    startingPointX = newXPos - selectedObjImg?.getBoundingClientRect().left;
-    startingPointY = newYPos - selectedObjImg?.getBoundingClientRect().top;
-    document.addEventListener('mousemove', onObjectMove);
-    document.addEventListener('touchmove', onObjectMove);
-    timer = Date.now();
-    borderTimeoutKey = setTimeout(
-      () => plannerCatalogElem.classList.add(classes.selectedTouched),
-      100
-    );
-  };
-
-  const onObjectMove = (e) => {
-    if (Date.now() - timer > 100) {
-      if (!isObjLoaded) {
-        const imgElem = document.createElement('img');
-        previewObj = document.createElement('div');
-        imgElem.src = R2D.URL.DOMAIN + selectedObjPreviewUrl;
-        previewObj.classList.add(classes.previewSelectedObject);
-        imgElem.style.width = selectedObjImgWidth + 'px';
-        imgElem.style.height = selectedObjImgHeight + 'px';
-        previewObj.append(imgElem);
-        document.querySelector('body').append(previewObj);
-        planner.scene.dragProductFromCatalog(selectedObjId);
-        isObjLoaded = true;
-      }
-
-      const newXPos = e.clientX || (e.touches && e.touches[0].clientX);
-      const newYPos = e.clientY || (e.touches && e.touches[0].clientY);
-      const outFromPanelVal = currentOverlayCoords.x + currentOverlayCoords.width - newXPos;
-      previewObjOpacity = outFromPanelVal > 0 ? 1 : 1 + outFromPanelVal * selectedObjPreviewRatio;
-      previewObj.style.opacity = previewObjOpacity;
-      previewObj.style.left = newXPos - startingPointX + 'px';
-      previewObj.style.top = newYPos - startingPointY + 'px';
-      isCurrDeviceAPhone && planner.mih().state.mouseMove(e);
-    }
-  };
-
-  const onObjectMouseUp = async (e) => {
-    document.removeEventListener('mouseup', onObjectMouseUp);
-    document.removeEventListener('touchend', onObjectMouseUp);
-    if (props.type == 'replace') {
-      if (
-        currentMouseDownElem.id == R2D.scene.currentView3DObject?.getProductId &&
-        R2D.scene.currentView3DObject.getProductId()
-      )
-        return;
-      const result = await R2D.scene.replaceCurrentObject(
-        currentMouseDownElem.id,
-        {},
-        false,
-        false
-      );
-      if (result?.type == 'error')
-        return dispatch(setActivePopup({ name: 'alert', data: 'TEXT_ERROR_LOAD_DATA' }));
-      planner
-        .mih()
-        .setActiveObjectProduct(planner.mih()._productHelper.findObjectView3dBySceneObject(result));
-      dispatch(changeUndoRedo());
-    } else {
-      clearTimeout(borderTimeoutKey);
-      document.removeEventListener('mousemove', onObjectMove);
-      document.removeEventListener('touchmove', onObjectMove);
-      previewObj && previewObj.remove();
-      isObjLoaded = false;
-      previewObjOpacity = 1;
-      mouseDownOnObj = false;
-      selectedObjId = null;
-      selectedObjImgWidth = 0;
-      selectedObjImgHeight = 0;
-      Array.from(document.querySelectorAll('.' + classes.prod_item)).forEach((i) =>
-        i.classList.remove(classes.selectedTouched)
-      );
-
-      const newXPos = e.clientX || (e?.changedTouches && e.changedTouches[0].clientX);
-
-      if (Date.now() - timer > 100) {
-        const sceneObjectToDelete =
-          R2D.mouseInteractionHelper.stateDraggingProdFromCatalog.view3DObject?.sceneObject;
-        if (newXPos < R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels()) {
-          planner.mih().state && planner.mih().state.mouseUp(e);
-          if (sceneObjectToDelete) {
-            R2D.scene.remove(sceneObjectToDelete);
-            R2D.scene.history.removeUndoState();
-          }
-        }
-        R2D.mouseInteractionHelper.stateDraggingProdFromCatalog.view3DObject = null;
-      }
-      if (document.querySelector('.' + classes.prod_elem_wrap))
-        document.querySelector('.' + classes.prod_elem_wrap).style.touchAction = 'auto';
-      if (document.querySelector('.' + classes.catalog_wr))
-        document.querySelector('.' + classes.catalog_wr).style.touchAction = 'auto';
-      currentMouseDownElem = null;
-      dispatch(changeUndoRedo());
-    }
-  };
-
-  // Drag from catalog for materials
-  const onMouseDownMaterial = (e, elem) => {
-    const id = elem.id;
-    document.addEventListener('mousemove', onMaterialMove);
-    document.addEventListener('mouseup', onMaterialMouseUp);
-    timer = Date.now();
-    plannerCatalogElem = e.currentTarget.closest(`.${classes.prod_item}`);
-    currentMouseDownElem = elem;
-    dragTimeout = setTimeout(() => {
-      e.nativeEvent.button == 0 ? planner.scene.dragProductFromCatalog(id) : null;
-    }, 100);
-  };
-
-  const onMaterialMove = (e) =>
-    Date.now() - timer > 100 && planner.mih().state && planner.mih().state.mouseMove(e);
-
-  const onMaterialMouseUp = (e) => {
-    clearTimeout(dragTimeout);
-    document.removeEventListener('mousemove', onMaterialMove);
-    document.removeEventListener('mouseup', onMaterialMouseUp);
-
-    if (Date.now() - timer > 100) {
-      if (e.clientX < R2D.Viewers._instance.getOffsetWidthDueToOpenedPanels()) {
-        R2D.mouseInteractionHelper.stateDraggingMaterial.isPlaceMaterialAllowed = false;
-        planner.mih().state && planner.mih().state.mouseUp(e);
-      }
-    }
-  };
 
   const onCustomModelAddMouseUp = (e) => {
     if (+lastHistoryElem.privateMaterialType == 2)
@@ -445,13 +265,6 @@ const Products = (props) => {
   }, []);
 
   useEffect(() => {
-    setTimeout(
-      () =>
-        Array.from(document.querySelectorAll('.' + classes.prod_item)).forEach((item) =>
-          item.removeAttribute('style')
-        ),
-      300
-    );
     let scrollElemMain;
     if (catalogMain.current && catalogMain.current.getScrollElement) {
       scrollElemMain = catalogMain.current.getScrollElement();
@@ -468,19 +281,7 @@ const Products = (props) => {
       const modelsList = [];
       const customModelsList = [];
       lastHistoryElemData.forEach((elem) => {
-        const tile = (
-          <ProductTile
-            key={elem.id}
-            product={elem}
-            className={classes.prod_item}
-            style={{ pointerEvents: 'none' }}
-            onDragStart={(e) =>
-              elem.type == R2D.ProductType.MATERIAL
-                ? onMouseDownMaterial(e, elem)
-                : onMouseDownProduct(e, elem)
-            }
-          />
-        );
+        const tile = <ProductTile key={elem.id} product={elem} replace={props.type == 'replace'} />;
         if (elem.isOwner || elem.material_owner) customModelsList.push(tile);
         else modelsList.push(tile);
       });
@@ -524,7 +325,7 @@ const Products = (props) => {
 
       <div className={classes.catalog_wr} ref={mainDiv}>
         <SimpleBar style={{ height: '100%' }} ref={catalogMain} autoHide={false} forceVisible="y">
-          <TileGrid size={dynamicPanelPreviewViewType} className={classes.prod_elem_wrap}>
+          <TileGrid size={dynamicPanelPreviewViewType}>
             {customModelsListState && customModelsListState.length > 0 ? (
               <div className={classes.prod_item_upload_btn_wr}>
                 {lastHistoryElem?.privateMaterialType ? (

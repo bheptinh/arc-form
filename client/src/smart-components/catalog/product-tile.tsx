@@ -1,8 +1,8 @@
 import { IconCopy, IconRosetteDiscountFilled, IconTrash } from '@tabler/icons-react';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { AnimatePresence } from 'framer-motion';
-import type { CSSProperties, MouseEvent, TouchEvent } from 'react';
-import { useEffect, useRef, useState } from 'react';
+import type { MouseEvent } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -22,6 +22,7 @@ import { setActivePopup } from '../../redux/features/popups/popupsSlice';
 import { selectIsLogged } from '../../redux/features/user/userSlice';
 import { TileGrid } from '../../shared-components/TileGrid';
 import classes from './product-tile.module.css';
+import { useCatalogDrag } from './use-catalog-drag';
 
 // Catalog products come untyped from the R2D engine.
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -29,11 +30,8 @@ type Product = any;
 
 type Props = {
   product: Product;
-  // TEMPORARY until the drag moves into a useCatalogDrag hook: the panel's drag code
-  // finds the tile through `className` and holds hover off with `style`.
-  onDragStart: (e: MouseEvent | TouchEvent) => void;
-  className?: string;
-  style?: CSSProperties;
+  // Click replaces the selected object instead of dragging a new one in.
+  replace?: boolean;
 };
 
 type Tip = { left: number; top: number; discount?: { value: number; promocode: string } };
@@ -156,13 +154,13 @@ function ProductColors({ colors }: { colors: Product[] }) {
   );
 }
 
-export default function ProductTile({ product, onDragStart, className, style }: Props) {
+export default function ProductTile({ product, replace }: Props) {
   const dispatch = useDispatch();
   const translation = useTranslation();
   const size = useSelector(selectDynamicPanelPreviewViewType);
   const isLogged = useSelector(selectIsLogged);
   const { data: favorites } = useQuery(favoritesQueryOptions);
-  const tileRef = useRef<HTMLDivElement>(null);
+  const drag = useCatalogDrag(product, { replace });
   const [tip, setTip] = useState<Tip | null>(null);
   const [moreInfoOpen, setMoreInfoOpen] = useState(false);
 
@@ -199,15 +197,15 @@ export default function ProductTile({ product, onDragStart, className, style }: 
   // Pins a tooltip to the tile's right edge, centred on `anchor`. Skipped on phones and
   // while a mouse button is held, i.e. while another product is being dragged.
   const showTip = (e: MouseEvent, anchor: Element, discount?: Tip['discount']) => {
-    if (e.buttons || isPhone() || !tileRef.current) return;
-    const tile = tileRef.current.getBoundingClientRect();
+    if (e.buttons || isPhone() || !drag.tileRef.current) return;
+    const tile = drag.tileRef.current.getBoundingClientRect();
     const target = anchor.getBoundingClientRect();
     setTip({ left: tile.right, top: target.top + target.height / 2, discount });
   };
   const hideTip = () => setTip(null);
 
   return (
-    <TileGrid.Item ref={tileRef} className={className} style={style}>
+    <TileGrid.Item ref={drag.tileRef}>
       <TileGrid.Media>
         <img data-src={preview} src={preview} className={'lazyload'} />
 
@@ -281,17 +279,17 @@ export default function ProductTile({ product, onDragStart, className, style }: 
       </TileGrid.Media>
 
       {colors && size == 'big' ? <ProductColors colors={colors} /> : null}
-      <TileGrid.Title>{product.name}</TileGrid.Title>
+      <TileGrid.Title>{product.name} 121212</TileGrid.Title>
       {!isOwned && size == 'big' ? <ProductInfo product={product} /> : null}
 
       <TileGrid.Overlay
         onMouseDown={(e) => {
           hideTip();
-          onDragStart(e);
+          drag.onMouseDown(e);
         }}
         onTouchStart={(e) => {
           hideTip();
-          onDragStart(e);
+          drag.onTouchStart(e);
         }}
         onMouseEnter={(e) => size == 'small' && showTip(e, e.currentTarget)}
         onMouseLeave={hideTip}
