@@ -138,6 +138,11 @@
   font-weight: 700;
   margin-left: 2px;
 }
+.tipColor {
+  color: var(--color-icon-info);
+  font-size: 15px;
+  letter-spacing: .03em;
+}
 
 @media screen and (max-width: 950px) {
   .favorite:hover path {

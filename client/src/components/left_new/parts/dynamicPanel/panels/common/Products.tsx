@@ -23,7 +23,7 @@ import {
   selectUserProjectActive,
 } from '../../../../../../redux/features/user/userSlice';
 import { TileGrid } from '../../../../../../shared-components/TileGrid';
-import ProductTile from '../../../../../../smart-components/catalog/product-tile';
+import CatalogTile from '../../../../../../smart-components/catalog/catalog-tile';
 import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
@@ -281,7 +281,7 @@ const Products = (props) => {
       const modelsList = [];
       const customModelsList = [];
       lastHistoryElemData.forEach((elem) => {
-        const tile = <ProductTile key={elem.id} product={elem} replace={props.type == 'replace'} />;
+        const tile = <CatalogTile key={elem.id} product={elem} replace={props.type == 'replace'} />;
         if (elem.isOwner || elem.material_owner) customModelsList.push(tile);
         else modelsList.push(tile);
       });
