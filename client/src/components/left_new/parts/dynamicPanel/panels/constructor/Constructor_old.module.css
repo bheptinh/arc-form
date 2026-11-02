@@ -1,0 +1,31 @@
+.planerConstructor {
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+  border-left: 1px solid var(--color-border-faint);
+}
+.planner_catalog_cont {
+  top: 0;
+  left: 0;
+  width: 309px;
+  height: 100%;
+  position: absolute;
+  background: var(--color-white);
+  transition: transform .5s cubic-bezier(0.19, 1, 0.22, 1);
+  border-right: 1px solid var(--color-border-light);
+}
+.catalog_wr {
+  height: 100%;
+  overflow: hidden;
+  border-top: 1px solid var(--color-border);
+}
+.planerWallsHeight {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+}
