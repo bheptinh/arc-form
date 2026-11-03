@@ -1,4 +1,4 @@
-import { Router } from 'express';
+import express, { Router } from 'express';
 import { randomUUID } from 'crypto';
 import { mkdirSync } from 'fs';
 import path from 'path';
@@ -33,7 +33,6 @@ function makeStorage() {
 }
 
 const modelUpload = multer({ storage: makeStorage(), limits: { fileSize: 100 * 1024 * 1024 } });
-const materialUpload = multer({ storage: makeStorage(), limits: { fileSize: 50 * 1024 * 1024 } });
 
 router.post(
   '/products/upload',
@@ -72,18 +71,13 @@ router.get('/products/:id', (req, res) => {
   res.json({ status: 'ok', data: item });
 });
 
+// The engine posts materials as URL-encoded form fields with base64 files, not multipart.
 router.post(
   '/materials/upload',
-  materialUpload.fields([
-    { name: 'source', maxCount: 1 },
-    { name: 'preview', maxCount: 1 },
-  ]),
+  express.urlencoded({ extended: false, limit: '60mb' }),
   (req, res) => {
-    const data = createUserMaterial(
-      DEV_USER_ID,
-      req.body,
-      req.files as Record<string, Express.Multer.File[]>,
-    );
+    const data = createUserMaterial(DEV_USER_ID, req.body ?? {});
+    if (!data) { res.status(400).json({ status: 'error', message: 'Missing material package' }); return; }
     res.json({ status: 'ok', data });
   },
 );

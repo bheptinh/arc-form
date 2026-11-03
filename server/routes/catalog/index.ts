@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { getNavTree, getMaterialsTree, getCollectionProducts, getProductsByExternalIds, getProductsByUuids, getProductsByTag, searchProducts, getFavorites, addFavorite, addFavoriteItem, removeFavorite } from '../../services/catalog.js';
-import { getUserModels, getUserModelById, getUserModelFavorites } from '../../services/catalog-private.js';
+import { getUserUploads, getUserUploadsByIds, getUserModelById, getUserModelFavorites } from '../../services/catalog-private.js';
 import { DEV_USER_ID } from '../../schema.js';
 
 const router = Router();
@@ -18,7 +18,7 @@ router.get('/materials/nav', (_req, res) => {
 // R2D expects { status: 'ok', data: { total, items, offset, limit } }
 router.get('/products', (req, res) => {
   if (req.query.my === '1') {
-    res.json({ status: 'ok', data: getUserModels(DEV_USER_ID) });
+    res.json({ status: 'ok', data: getUserUploads(DEV_USER_ID) });
     return;
   }
 
@@ -38,7 +38,10 @@ router.get('/products', (req, res) => {
   const parts = raw.split(',').map(s => s.trim()).filter(Boolean);
   const uuids = parts.filter(s => isNaN(Number(s)));
   if (uuids.length > 0) {
-    res.json({ status: 'ok', data: getProductsByUuids(uuids) });
+    // Catalog products plus the user's own uploads, which the engine also loads by id.
+    const catalog = getProductsByUuids(uuids);
+    const items = [...catalog.items, ...getUserUploadsByIds(DEV_USER_ID, uuids)];
+    res.json({ status: 'ok', data: { total: items.length, items, offset: 0, limit: items.length } });
     return;
   }
   // TODO: DEPRECATE — legacy integer external_id lookup, remove once all clients send UUIDs

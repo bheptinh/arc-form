@@ -3,7 +3,7 @@ import { DEV_USER_ID } from '../schema.js';
 import { getFavoriteItemIds } from './catalog.js';
 import { randomUUID } from 'crypto';
 import path from 'path';
-import { mkdirSync } from 'fs';
+import { mkdirSync, writeFileSync } from 'fs';
 
 const dbDir = process.env.DB_DIR;
 if (!dbDir) throw new Error('DB_DIR env variable is not set');
@@ -101,6 +101,71 @@ function buildUploadedItem(row: ModelRow, slots: SlotRow[]) {
 }
 
 // --- prepared statements ---
+
+type MaterialRow = {
+  id: string;
+  user_id: string;
+  type_id: number | null;
+  source_path: string | null;
+  preview_path: string | null;
+  width: number | null;
+  height: number | null;
+  depth: number | null;
+  created_at: string;
+};
+
+// Material, poster and carpet uploads all come from the engine's material creator. Posters (3)
+// and carpets (4) keep their own product type; every other upload type is a material (1).
+const POSTER = 3;
+const CARPET = 4;
+const MATERIAL = 1;
+
+function buildUploadedMaterialItem(row: MaterialRow) {
+  return {
+    id: row.id,
+    externalId: null,
+    type: row.type_id === POSTER || row.type_id === CARPET ? row.type_id : MATERIAL,
+    privateMaterialType: row.type_id,
+    name: '',
+    description: null,
+    isOwner: true,
+    source: {
+      images: { preview: row.preview_path ?? null },
+      body: {
+        // An engine package (.mrtd), not glTF, so the engine parses it with its own reader.
+        package: row.source_path ?? null,
+        metaZip: null,
+        svgFile: null,
+        svgOutline: null,
+        contourTop: null,
+        contourCut: null,
+        materials: [],
+      },
+    },
+    property: {
+      sizes: { width: row.width, height: row.height, depth: row.depth },
+      position: { x: null, y: 0, z: null },
+      appointment: null,
+    },
+    details: { description: null, availableForPurchase: false, productPage: { url: '', available: false } },
+    tags: [],
+    applications: [],
+    configurationAppId: 0,
+    configAppFile: '',
+    fixedSize: false,
+    isOriginalModel: false,
+    originalEntityId: null,
+    metadata: [],
+    attributes: [],
+    langId: null,
+    userKey: null,
+    materialOwner: false,
+    isFavorite: false,
+    addData: '',
+    categoryProduct: {},
+    categoryMaterial: [],
+  };
+}
 
 const stmtSelectModel = db.prepare<[string, string], ModelRow>(
   `SELECT * FROM user_models WHERE id = ? AND user_id = ?`
@@ -217,6 +282,33 @@ export function getUserModels(userId: string) {
   return { total: items.length, items, offset: 0, limit: items.length };
 }
 
+/** The user's uploaded models and materials, newest first. */
+export function getUserUploads(userId: string) {
+  const models = db.prepare<[string], ModelRow & { created_at: string }>(
+    `SELECT * FROM user_models WHERE user_id = ?`
+  ).all(userId).map(row => ({ createdAt: row.created_at, item: buildUploadedItem(row, stmtSelectSlots.all(row.id)) }));
+  const materials = db.prepare<[string], MaterialRow>(
+    `SELECT * FROM user_materials WHERE user_id = ?`
+  ).all(userId).map(row => ({ createdAt: row.created_at, item: buildUploadedMaterialItem(row) }));
+  const items = [...models, ...materials]
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+    .map(u => u.item);
+  return { total: items.length, items, offset: 0, limit: items.length };
+}
+
+/** The user's own uploads among `ids`, for the engine's product-by-id lookup. */
+export function getUserUploadsByIds(userId: string, ids: string[]) {
+  if (ids.length === 0) return [];
+  const ph = ids.map(() => '?').join(',');
+  const models = db.prepare<string[], ModelRow>(
+    `SELECT * FROM user_models WHERE user_id = ? AND id IN (${ph})`
+  ).all(userId, ...ids).map(row => buildUploadedItem(row, stmtSelectSlots.all(row.id)));
+  const materials = db.prepare<string[], MaterialRow>(
+    `SELECT * FROM user_materials WHERE user_id = ? AND id IN (${ph})`
+  ).all(userId, ...ids).map(buildUploadedMaterialItem);
+  return [...models, ...materials];
+}
+
 export function deleteUserModel(userId: string, modelId: string): boolean {
   const result = db.prepare('DELETE FROM user_models WHERE id = ? AND user_id = ?').run(modelId, userId);
   return result.changes > 0;
@@ -227,23 +319,30 @@ export function deleteUserMaterial(userId: string, materialId: string): boolean 
   return result.changes > 0;
 }
 
+/**
+ * Saves a material, poster or carpet made by the engine's material creator. The engine posts
+ * it as form fields: `source` (its package) and `preview` (PNG), both base64.
+ */
 export function createUserMaterial(
   userId: string,
   body: Record<string, unknown>,
-  files: Record<string, Express.Multer.File[]>,
-): { id: string; source: string | null; preview: string | null } {
+): { id: string; source: string; preview: string | null } | null {
+  if (typeof body.source !== 'string' || !body.source) return null;
   const id = randomUUID();
-  mkdirSync(path.join(uploadsRoot, id), { recursive: true });
-  const sourcePath = files['source']?.[0] ? `/uploads/${id}/${files['source'][0].filename}` : null;
-  const previewPath = files['preview']?.[0] ? `/uploads/${id}/${files['preview'][0].filename}` : null;
+  const dir = path.join(uploadsRoot, id);
+  mkdirSync(dir, { recursive: true });
+  const save = (data: unknown, filename: string) => {
+    if (typeof data !== 'string' || !data) return null;
+    // The engine doesn't URL-encode the values, so each base64 '+' arrives as a space.
+    writeFileSync(path.join(dir, filename), Buffer.from(data.replace(/ /g, '+'), 'base64'));
+    return `/uploads/${id}/${filename}`;
+  };
+  const sourcePath = save(body.source, 'source.mrtd')!;
+  const previewPath = save(body.preview, 'preview.png');
+  const num = (v: unknown) => (v == null || v === '' || isNaN(Number(v)) ? null : Number(v));
   db.prepare(`
     INSERT INTO user_materials (id, user_id, type_id, source_path, preview_path, width, height, depth)
     VALUES (?,?,?,?,?,?,?,?)
-  `).run(
-    id, userId,
-    body.type_id ?? null,
-    sourcePath, previewPath,
-    body.width ?? null, body.height ?? null, body.depth ?? null,
-  );
+  `).run(id, userId, num(body.type_id), sourcePath, previewPath, num(body.width), num(body.height), null);
   return { id, source: sourcePath, preview: previewPath };
 }
