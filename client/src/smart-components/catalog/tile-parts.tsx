@@ -126,7 +126,11 @@ export function DeleteCorner({ product }: { product: Product }) {
       className={classes.delete}
       onClick={() =>
         dispatch(
-          setActivePopup({ name: 'confirm', type: 'delete_custom_element', data: product.id })
+          setActivePopup({
+            name: 'confirm',
+            type: 'delete_custom_element',
+            data: { id: product.id, type: product.type },
+          })
         )
       }
     >

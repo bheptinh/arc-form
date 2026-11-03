@@ -103,7 +103,9 @@ export default function MaterialTile({ product }: { product: Product }) {
             e.currentTarget,
             <>
               <p>{product.name}</p>
-              {product.addData ? <p className={classes.tipColor}>{product.addData}</p> : null}
+              {materialColor(product) ? (
+                <p className={classes.tipColor}>{materialColor(product)}</p>
+              ) : null}
             </>
           )
         }
