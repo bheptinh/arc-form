@@ -28,6 +28,13 @@ export type Product = any;
 
 export const isOwned = (product: Product) => !!(product.isOwner || product.material_owner);
 
+/**
+ * The colour a colour-picker material is shown and favourited in: its variant colour
+ * (`addData`), or grey for a picker listed without one, as in search results.
+ */
+export const materialColor = (product: Product): string =>
+  product.addData || (product.isColorPicker ? '#aaaaaa' : '');
+
 const isPhone = () => ['iOS', 'Android'].includes(R2D.controller.getCurrentOS());
 
 /**
@@ -70,7 +77,7 @@ export function FavoriteCorner({ product }: { product: Product }) {
   const dispatch = useDispatch();
   const isLogged = useSelector(selectIsLogged);
   const { data: favorites } = useQuery(favoritesQueryOptions);
-  const color = product.addData || '';
+  const color = materialColor(product);
   const isFavorite = !!(favorites?.items as Product[] | undefined)?.some(
     (i) => i?.id == product.id && (i?.addData || '') == color
   );

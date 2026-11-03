@@ -11,6 +11,7 @@ import {
   DeleteCorner,
   FavoriteCorner,
   isOwned,
+  materialColor,
   MoreInfoCorner,
   type Product,
   ProductColors,
@@ -21,12 +22,12 @@ import {
 import { useMaterialDrag } from './use-catalog-drag';
 
 /**
- * The material's preview image. A colour variant (`isColorPicker` with the colour in
- * `addData`) is rendered by the engine once the base material has loaded, so it is null
- * until then.
+ * The material's preview image. A colour-picker material is rendered by the engine in its
+ * colour once the base material has loaded, so it is null until then.
  */
 function useMaterialPreview(product: Product) {
-  const isVariant = !!(product.isColorPicker && product.addData);
+  const color = materialColor(product);
+  const isVariant = !!(product.isColorPicker && color);
   const [variantPreview, setVariantPreview] = useState<string | null>(null);
 
   useEffect(() => {
@@ -35,11 +36,11 @@ function useMaterialPreview(product: Product) {
     const timer = setInterval(async () => {
       if (!R2D.PoolMaterials.isMaterial(product.id)?.getMaterialLoadState()) return;
       clearInterval(timer);
-      const canvas = await R2D.Tool.getMatPrevFromMatIdAndColor(product.id, product.addData);
+      const canvas = await R2D.Tool.getMatPrevFromMatIdAndColor(product.id, color);
       setVariantPreview(canvas.toDataURL());
     }, 100);
     return () => clearInterval(timer);
-  }, [isVariant, product.id, product.addData]);
+  }, [isVariant, product.id, color]);
 
   return isVariant ? variantPreview : R2D.URL.DOMAIN + product.source?.images.preview;
 }
