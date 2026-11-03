@@ -1,26 +1,20 @@
-import cx from 'classnames';
-import { AnimatePresence } from 'framer-motion';
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
-import { planner, user } from '../../../../../../initR2D';
+import { useTranslation } from '../../../../../../api/hooks/useTranslation';
+import { planner } from '../../../../../../initR2D';
 import {
   selectActiveControlPanelModeData,
   selectDynamicPanelPreviewViewType,
-  updateAnimateFavoritesHideStatus,
-  updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
-import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
-import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
-import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
-import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
+import { TileGrid } from '../../../../../../shared-components/TileGrid';
+import SelectTile from '../../../../../../smart-components/catalog/select-tile';
+import type { Product } from '../../../../../../smart-components/catalog/tile-parts';
 import ChangeSize from '../../../../../common/ChangeSize';
 import Navigation from '../../navigation/Navigation';
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -71,471 +65,6 @@ const useStyle = createUseStyles({
     justifyContent: 'center',
     marginBottom: 20,
   },
-  prod_elem_wrap: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    width: 'calc(100% + 1px)',
-  },
-  prod_item: {
-    position: 'relative',
-    display: 'grid',
-    transition: 'width 0.2s ease-in, height 0.2s ease-in',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    height: 'auto',
-    borderBottom: '1px solid var(--color-surface-muted)',
-    borderRight: '1px solid var(--color-surface-muted)',
-    paddingBottom: '7px',
-    outline: 'none',
-    '&:hover': {
-      '& $prod_item_img_wr img': {
-        transform: 'scale(1.05)',
-      },
-      '& $prod_item_fav_btn': {
-        opacity: 1,
-      },
-      '& $prod_item_zamok_btn': {
-        opacity: 0,
-        pointerEvents: 'none',
-      },
-      '& $prod_item_promocode_btn': {
-        opacity: 0,
-        pointerEvents: 'none',
-      },
-      '& $prod_item_more_info': {
-        zIndex: 9,
-        opacity: 1,
-      },
-      '& $prod_item_hover_left': {
-        height: '100%',
-      },
-      '& $prod_item_hover_top': {
-        width: '100%',
-      },
-      '& $prod_item_hover_right': {
-        height: '100%',
-      },
-      '& $prod_item_hover_bottom': {
-        width: '100%',
-      },
-    },
-  },
-  prod_item_hover_left: {
-    width: 2,
-    height: 0,
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      left: '100%',
-      top: 2,
-      height: 'calc(100% - 4px)',
-      width: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_hover_top: {
-    width: 0,
-    height: 2,
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      top: '100%',
-      left: 2,
-      width: 'calc(100% - 4px)',
-      height: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_hover_right: {
-    width: 2,
-    height: 0,
-    position: 'absolute',
-    bottom: 0,
-    right: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      right: '100%',
-      top: 2,
-      height: 'calc(100% - 4px)',
-      width: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_hover_bottom: {
-    width: 0,
-    height: 2,
-    position: 'absolute',
-    bottom: 0,
-    right: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      bottom: '100%',
-      left: 2,
-      width: 'calc(100% - 4px)',
-      height: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_big: {
-    width: '100%',
-  },
-  prod_item_medium: {
-    width: '50%',
-    paddingBottom: 0,
-    '& $prod_item_title': {
-      display: 'flex',
-      alignItems: 'center',
-      padding: '4px 6px',
-      fontSize: 13,
-    },
-    '& $prod_item_img_wr': {
-      margin: 0,
-    },
-    '& $prod_item_fav_btn': {
-      width: 18,
-      height: 18,
-    },
-    '& $prod_item_zamok_btn': {
-      width: 18,
-      height: 18,
-    },
-    '& $prod_item_custom_delete_btn': {
-      width: 18,
-      height: 18,
-    },
-    '& $prod_item_promocode_btn': {
-      width: 18,
-      height: 18,
-    },
-  },
-  prod_item_small: {
-    width: '25%',
-    paddingBottom: 0,
-    '& $prod_item_img_wr': {
-      margin: 0,
-    },
-    '& $prod_item_fav_btn': {
-      width: 15,
-      height: 15,
-    },
-    '& $prod_item_zamok_btn': {
-      width: 15,
-      height: 15,
-    },
-    '& $prod_item_custom_delete_btn': {
-      width: 15,
-      height: 15,
-    },
-    '& $prod_item_promocode_btn': {
-      width: 15,
-      height: 15,
-    },
-    '& $prod_item_more_info': {
-      width: 15,
-      height: 15,
-    },
-    '& $prod_item_title': {
-      fontSize: 12,
-    },
-  },
-  prod_item_active: {
-    '& $prod_item_hover_left': {
-      height: '100%',
-      background: 'var(--color-accent)',
-    },
-    '& $prod_item_hover_top': {
-      width: '100%',
-      background: 'var(--color-accent)',
-    },
-    '& $prod_item_hover_right': {
-      height: '100%',
-      background: 'var(--color-accent)',
-    },
-    '& $prod_item_hover_bottom': {
-      width: '100%',
-      background: 'var(--color-accent)',
-    },
-  },
-  prod_item_img_wr: {
-    overflow: 'hidden',
-    width: '100%',
-    display: 'flex',
-    position: 'relative',
-    justifyContent: 'center',
-    alignItems: 'center',
-    aspectRatio: '1 / 1',
-    marginBottom: 7,
-  },
-  prod_item_img: {
-    maxWidth: '100%',
-    maxHeight: '100%',
-    width: '100%',
-    height: 'auto',
-    aspectRatio: '1 / 1',
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-  },
-  prod_item_fav_btn: {
-    width: '24px',
-    height: '24px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%',
-    background: 'var(--color-white)',
-    position: 'absolute',
-    top: 5,
-    left: 5,
-    zIndex: 3,
-    opacity: 0,
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    cursor: 'pointer',
-    '& svg': {
-      cursor: 'pointer',
-      maxWidth: '100%',
-      maxHeight: '100%',
-      width: 'auto',
-      height: 'auto',
-    },
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
-    '&:hover': {
-      '& path': {
-        stroke: 'var(--color-icon-info)',
-        fillOpacity: 0,
-      },
-    },
-  },
-  prod_item_fav_btn_active: {
-    '& path': {
-      fill: 'var(--color-icon-info)',
-      stroke: 'var(--color-icon-info)',
-      fillOpacity: 1,
-    },
-  },
-  prod_item_zamok_btn: {
-    width: '24px',
-    height: '24px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: 'var(--color-white)',
-    borderRadius: '50%',
-    position: 'absolute',
-    top: 5,
-    right: 5,
-    zIndex: 1,
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    '& svg': {
-      width: 18,
-      height: 'auto',
-    },
-  },
-  prod_item_promocode_btn: {
-    width: '24px',
-    height: '24px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    background: 'var(--color-white)',
-    borderRadius: '50%',
-    position: 'absolute',
-    bottom: 5,
-    right: 5,
-    zIndex: 3,
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-  },
-  prod_item_more_info: {
-    position: 'absolute',
-    top: 5,
-    right: 5,
-    width: 18,
-    height: 18,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%',
-    background: 'var(--color-white)',
-    opacity: 0,
-    zIndex: -1,
-    transition: 'all .3s cubic-bezier(.19,1,.22,1)',
-    cursor: 'pointer',
-    '& path': {
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-  },
-  item_info_color_wr: {
-    display: 'flex',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    marginBottom: 15,
-    '&:empty': {
-      marginBottom: 0,
-    },
-  },
-  item_info_color: {
-    width: '18px',
-    height: '18px',
-    borderRadius: '50%',
-    margin: '0 1px',
-    border: '1px solid var(--color-surface-muted)',
-  },
-  item_info_color_more: {
-    width: '18px',
-    height: '18px',
-    margin: '0 1px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  prod_item_title: {
-    color: 'var(--color-black)',
-    fontSize: '16px',
-    padding: '0 13px 0px',
-    fontFamily: 'RobotoCondensed-Regular',
-    overflow: 'hidden',
-    '&>div': {
-      display: '-webkit-box',
-      WebkitLineClamp: '2',
-      WebkitBoxOrient: 'vertical',
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-    },
-  },
-  item_info_content: {
-    color: 'var(--color-text-subtle)',
-    fontSize: '13px',
-    padding: '0 13px 0',
-    lineHeight: 1.4,
-    '& span': {
-      marginRight: 3,
-    },
-    '& > div': {
-      display: 'flex',
-      alignItems: 'center',
-    },
-    '&>div>div:first-child': {
-      marginBottom: '3px',
-      fontFamily: 'RobotoCondensed-Regular',
-    },
-    '&>div>div': {
-      fontSize: '17px',
-      color: 'var(--color-black)',
-      display: 'inline-block',
-      marginLeft: 4,
-    },
-  },
-  item_info_content_span: {
-    color: 'var(--color-black)',
-  },
-  item_more_info_content_wrap: {
-    height: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    top: 0,
-    zIndex: 2,
-    position: 'absolute',
-    pointerEvents: 'none',
-    transform: 'translateX(0%)',
-    transition: 'all ease .3s',
-  },
-  item_more_info_content: {
-    boxShadow: '0 4px 4px 0 rgba(0, 0, 0, 0.25)',
-    background: 'var(--color-white)',
-    overflow: 'hidden',
-    borderRadius: '3px',
-    transition: 'all .5s cubic-bezier(.19,1,.22,1)',
-    zIndex: 2,
-    width: 300,
-    paddingBottom: 7,
-    '& $item_info_content': {
-      padding: '0 13px 0',
-    },
-  },
-  item_more_info_content_wrap_showed: {
-    height: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    top: 0,
-    zIndex: 0,
-    position: 'absolute',
-    pointerEvents: 'none',
-    transform: 'translateX(-110%)',
-    transition: 'all ease .3s',
-  },
-  item_more_info_img_wr: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: 300,
-    height: 300,
-    marginBottom: 7,
-    '& img': {
-      maxWidth: '100%',
-      maxHeight: '100%',
-      display: 'block',
-    },
-  },
-  product_hover: {
-    maxHeight: 150,
-    padding: '6px 20px',
-    textAlign: 'center',
-    border: '1px solid var(--color-border-strong)',
-    position: 'absolute',
-    borderRadius: 3,
-    display: 'inline',
-    zIndex: 105,
-    background: 'var(--color-white)',
-    pointerEvents: 'none',
-    fontSize: 12,
-    '&:after': {
-      content: "''",
-      position: 'absolute',
-      right: '100%',
-      top: '50%',
-      transform: 'translate(45%, -50%) rotate(135deg)',
-      width: 10,
-      height: 10,
-      background: 'var(--color-white)',
-      borderRight: '1px solid var(--color-border-strong)',
-      borderBottom: '1px solid var(--color-border-strong)',
-    },
-    '& p': {
-      fontSize: 12,
-    },
-  },
-  prod_item_overlay: {
-    position: 'absolute',
-    left: '0',
-    top: '0',
-    width: '100%',
-    height: '100%',
-    zIndex: 2,
-  },
 });
 
 const ChangePlinth = (props) => {
@@ -565,16 +94,7 @@ const ChangePlinth = (props) => {
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
 
-  const [plinthReactArray, setPlinthReactArray] = useState();
-
-  const currOS = R2D.controller.getCurrentOS();
-  const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
-
-  const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
-  const isLogged = useSelector(selectIsLogged);
-
-  const [modalMoreInfo, setModalMoreInfo] = useState(false);
-  const [productElemHover, setProductElemHover] = useState(null);
+  const [activeShape, setActiveShape] = useState(constructionData?.shapeNum);
 
   const onChangeSize = (mouseDown, value, type) => {
     setMouseDown({ ...mouseDown, type });
@@ -591,14 +111,9 @@ const ChangePlinth = (props) => {
       planner.apiScene.dispatchEvent(new Event(planner.apiScene.ESTIMATION_SEND, {}));
   };
 
-  const onChangePlinthType = (id, e) => {
+  const onChangePlinthType = (id: Product['id']) => {
     if (id == constructionData.shapeNum) return;
-    if (document.querySelector('.' + classes.prod_item)) {
-      Array.from(document.querySelectorAll('.' + classes.prod_item)).forEach((item) =>
-        item.classList.remove(classes.prod_item_active)
-      );
-    }
-    e.currentTarget.classList.add(classes.prod_item_active);
+    setActiveShape(id);
 
     WC.plinthCreator.loadSVG(id).then(() => {
       constructionData.shapeNum = id;
@@ -623,137 +138,17 @@ const ChangePlinth = (props) => {
     });
   };
 
-  const mouseDownOnObj = false;
-
-  const mouseEnter = (e, name) => {
-    if (dynamicPanelPreviewViewType == 'small') {
-      if (mouseDownOnObj) return;
-      document.querySelector('.' + classes.product_hover) &&
-        document.querySelector('.' + classes.product_hover).remove();
-
-      const product = e.target;
-      const hoverWindow = document.createElement('div');
-      hoverWindow.classList.add(classes.product_hover);
-      const textHover = document.createElement('p');
-      textHover.innerHTML = name;
-
-      hoverWindow.append(textHover);
-      document.querySelector('body').append(hoverWindow);
-      hoverWindow.style.left = product.getBoundingClientRect().left + product.offsetWidth + 'px';
-      hoverWindow.style.top =
-        product.getBoundingClientRect().top +
-        (product.offsetHeight - hoverWindow.offsetHeight) / 2 +
-        'px';
-    }
-  };
-
-  const mouseLeave = (e) =>
-    document.querySelector('.' + classes.product_hover) &&
-    document.querySelector('.' + classes.product_hover).remove();
-
-  const updateFavorites = async (id, isInFavorites) => {
-    if (!isLogged) return dispatch(setActivePopup({ name: 'login' }));
-    if (isInFavorites) {
-      await user.uRemoveFromFavorites(id);
-      setUserFavorites((prev) => prev.filter((i) => i.id != id));
-      dispatch(updateAnimateFavoritesHideStatus(true));
-      setTimeout(() => dispatch(updateAnimateFavoritesHideStatus(false)), 10);
-    } else {
-      const response = await user.uAddToFavorites(id);
-      setUserFavorites((prev) => {
-        const newArray = prev;
-        return [...newArray, response];
-      });
-
-      dispatch(updateAnimateFavoritesShowStatus(true));
-      setTimeout(() => dispatch(updateAnimateFavoritesShowStatus(false)), 10);
-    }
-    planner.apiScene.dispatchEvent(new Event(planner.apiScene.FAVORITES_BUTTON, {}));
-  };
-
-  const onMouseEnterProductMoreInfo = (e, elem) => {
-    setModalMoreInfo(true);
-    setProductElemHover(elem);
-  };
-
-  const onMouseLeaveProductMoreInfo = (e) => {
-    setModalMoreInfo(false);
-  };
-
-  useEffect(() => {
-    setStyleAnimation({ transform: 'translateX(0%)' });
+  // Plinth and molding profiles of the edited element's kind, built by the engine.
+  const plinthsList = useMemo(() => {
     let curType = '';
     if (currentPlinthType) curType = currentPlinthType === 'molding' ? 'moldings' : 'plinths';
     else curType = constructionData.type === 'topPlinth' ? 'moldings' : 'plinths';
+    return WC.plinthCreator.getPlinthsList(curType);
+  }, [currentPlinthType, constructionData?.type]);
 
-    const plinthsList = WC.plinthCreator.getPlinthsList(curType);
-    const plinths = [];
-    for (let i = 0; i < plinthsList.length; i++) {
-      const elem = plinthsList[i];
-      const isInFavorites = userFavorites?.find((i) => i?.id == elem.id);
-      const id = plinthsList[i].id;
-      const src = plinthsList[i].imgSrc;
-      const name = plinthsList[i].name;
-      plinths.push(
-        <div
-          key={i}
-          className={cx(
-            classes.prod_item + ' ' + classes[`prod_item_${dynamicPanelPreviewViewType}`],
-            {
-              [classes.prod_item_active]: id == constructionData.shapeNum,
-            }
-          )}
-          onClick={(e) => onChangePlinthType(id, e)}
-        >
-          <div className={classes.prod_item_hover_left}></div>
-          <div className={classes.prod_item_hover_top}></div>
-          <div className={classes.prod_item_hover_right}></div>
-          <div className={classes.prod_item_hover_bottom}></div>
-
-          <div className={classes.prod_item_img_wr}>
-            <div
-              className={classes.prod_item_img}
-              style={{ background: `url(${src}) 0% 0% / contain` }}
-            ></div>
-            {isCurrDeviceAPhone ? null : (
-              <div
-                className={
-                  isInFavorites
-                    ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
-                    : classes.prod_item_fav_btn
-                }
-                onClick={(e) => updateFavorites(elem.id, isInFavorites)}
-              >
-                <FavoriteStarIcon />
-              </div>
-            )}
-            {dynamicPanelPreviewViewType != 'big' ? (
-              <div
-                className={classes.prod_item_more_info}
-                onMouseEnter={(e) => onMouseEnterProductMoreInfo(e, elem)}
-                onMouseLeave={onMouseLeaveProductMoreInfo}
-              >
-                <MoreInfoIcon />
-              </div>
-            ) : null}
-          </div>
-
-          {dynamicPanelPreviewViewType != 'small' ? (
-            <div className={classes.prod_item_title}>
-              <div>{name}</div>
-            </div>
-          ) : null}
-
-          <div
-            className={classes.prod_item_overlay}
-            onMouseEnter={(e) => mouseEnter(e, name)}
-            onMouseLeave={mouseLeave}
-          ></div>
-        </div>
-      );
-    }
-    setPlinthReactArray(plinths);
-  }, [dynamicPanelPreviewViewType, userFavorites]);
+  useEffect(() => {
+    setStyleAnimation({ transform: 'translateX(0%)' });
+  }, []);
 
   return (
     <div style={styleAnimation} className={classes.planner_catalog_cont}>
@@ -791,15 +186,19 @@ const ChangePlinth = (props) => {
               </div>
             </div>
 
-            <div className={classes.prod_elem_wrap}>{plinthReactArray}</div>
+            <TileGrid size={dynamicPanelPreviewViewType}>
+              {plinthsList.map((elem: Product) => (
+                <SelectTile
+                  key={elem.id}
+                  product={elem}
+                  active={elem.id == activeShape}
+                  onSelect={() => onChangePlinthType(elem.id)}
+                />
+              ))}
+            </TileGrid>
           </div>
         </SimpleBar>
       </div>
-      <AnimatePresence>
-        {modalMoreInfo ? (
-          <ModalMoreInfo productElemHover={productElemHover} key="modalMoreInfo" />
-        ) : null}
-      </AnimatePresence>
     </div>
   );
 };
