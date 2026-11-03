@@ -1,22 +1,15 @@
-import cx from 'classnames';
-import { AnimatePresence } from 'framer-motion';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
-import { planner, user } from '../../../../../../initR2D';
 import {
   selectActiveControlPanelModeData,
   selectDynamicPanelPreviewViewType,
-  updateAnimateFavoritesHideStatus,
-  updateAnimateFavoritesShowStatus,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
-import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
-import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
-import ModalMoreInfo from '../../../../../common/ModalMoreInfo';
-import MoreInfoIcon from '../../../../../common/MoreInfoIcon';
+import { TileGrid } from '../../../../../../shared-components/TileGrid';
+import SelectTile from '../../../../../../smart-components/catalog/select-tile';
+import type { Product } from '../../../../../../smart-components/catalog/tile-parts';
 import Navigation from '../../navigation/Navigation';
 
 const planer_catalog_elem = {
@@ -84,340 +77,10 @@ const useStyle = createUseStyles({
     position: 'relative',
     borderTop: '1px solid var(--color-border)',
   },
-  prod_elem_wrap: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    width: 'calc(100% + 1px)',
-  },
   planer_add_elem_lock: {
     border: '1px solid #969696',
     '&:hover': {
       border: '1px solid var(--color-accent-strong)',
-    },
-  },
-  prod_item: {
-    position: 'relative',
-    display: 'grid',
-    transition: 'width 0.2s ease-in, height 0.2s ease-in',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    height: 'auto',
-    borderBottom: '1px solid var(--color-surface-muted)',
-    borderRight: '1px solid var(--color-surface-muted)',
-    paddingBottom: '7px',
-    outline: 'none',
-    '&:hover': {
-      '& $prod_item_img_wr img': {
-        transform: 'scale(1.05)',
-      },
-      '& $prod_item_fav_btn': {
-        opacity: 1,
-      },
-      '& $prod_item_more_info': {
-        zIndex: 9,
-        opacity: 1,
-      },
-      '& $prod_item_custom_delete_btn': {
-        opacity: 1,
-      },
-      '& $prod_item_hover_left': {
-        height: '100%',
-      },
-      '& $prod_item_hover_top': {
-        width: '100%',
-      },
-      '& $prod_item_hover_right': {
-        height: '100%',
-      },
-      '& $prod_item_hover_bottom': {
-        width: '100%',
-      },
-    },
-  },
-  prod_item_hover_left: {
-    width: 2,
-    height: 0,
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      left: '100%',
-      top: 2,
-      height: 'calc(100% - 4px)',
-      width: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_hover_top: {
-    width: 0,
-    height: 2,
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      top: '100%',
-      left: 2,
-      width: 'calc(100% - 4px)',
-      height: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_hover_right: {
-    width: 2,
-    height: 0,
-    position: 'absolute',
-    bottom: 0,
-    right: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      right: '100%',
-      top: 2,
-      height: 'calc(100% - 4px)',
-      width: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_hover_bottom: {
-    width: 0,
-    height: 2,
-    position: 'absolute',
-    bottom: 0,
-    right: 0,
-    pointerEvents: 'none',
-    zIndex: 4,
-    background: 'var(--color-border)',
-    transition: 'all .9s cubic-bezier(0.19, 1, 0.22, 1)',
-    '&:before': {
-      content: '" "',
-      position: 'absolute',
-      bottom: '100%',
-      left: 2,
-      width: 'calc(100% - 4px)',
-      height: 1,
-      background: 'var(--color-white)',
-    },
-  },
-  prod_item_active: {
-    '& $prod_item_hover_left': {
-      height: '100%',
-      background: 'var(--color-accent)',
-    },
-    '& $prod_item_hover_top': {
-      width: '100%',
-      background: 'var(--color-accent)',
-    },
-    '& $prod_item_hover_right': {
-      height: '100%',
-      background: 'var(--color-accent)',
-    },
-    '& $prod_item_hover_bottom': {
-      width: '100%',
-      background: 'var(--color-accent)',
-    },
-  },
-  prod_item_big: {
-    width: '100%',
-  },
-  prod_item_medium: {
-    width: '50%',
-    paddingBottom: 0,
-    '& $prod_item_title': {
-      display: 'flex',
-      alignItems: 'center',
-      padding: '4px 6px',
-      fontSize: 13,
-      '@media screen and (max-width: 950px)': {
-        fontSize: 11,
-      },
-    },
-    '& $prod_item_img_wr': {
-      margin: 0,
-    },
-    '& $prod_item_fav_btn': {
-      width: 18,
-      height: 18,
-    },
-    '& $prod_item_custom_delete_btn': {
-      width: 18,
-      height: 18,
-    },
-  },
-  prod_item_small: {
-    width: '25%',
-    paddingBottom: 0,
-    '& $prod_item_img_wr': {
-      margin: 0,
-    },
-    '& $prod_item_fav_btn': {
-      width: 15,
-      height: 15,
-      '@media screen and (max-width: 950px)': {
-        height: 10,
-        width: 10,
-        top: 2,
-        left: 2,
-      },
-    },
-    '& $prod_item_custom_delete_btn': {
-      width: 15,
-      height: 15,
-      '@media screen and (max-width: 950px)': {
-        height: 10,
-        width: 10,
-        bottom: 2,
-        right: 2,
-      },
-    },
-    '& $prod_item_more_info': {
-      width: 15,
-      height: 15,
-      '@media screen and (max-width: 950px)': {
-        height: 10,
-        width: 10,
-        top: 2,
-        right: 2,
-      },
-    },
-    '& $prod_item_title': {
-      fontSize: 12,
-    },
-  },
-  prod_item_img_wr: {
-    overflow: 'hidden',
-    width: '100%',
-    display: 'flex',
-    position: 'relative',
-    justifyContent: 'center',
-    alignItems: 'center',
-    aspectRatio: '1 / 1',
-    marginBottom: 7,
-    '& img': {
-      maxWidth: '100%',
-      maxHeight: '100%',
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-  },
-  prod_item_fav_btn: {
-    width: '24px',
-    height: '24px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%',
-    background: 'var(--color-white)',
-    position: 'absolute',
-    top: 5,
-    left: 5,
-    zIndex: 3,
-    opacity: 0,
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    cursor: 'pointer',
-    '& svg': {
-      cursor: 'pointer',
-      maxWidth: '100%',
-      maxHeight: '100%',
-      width: 'auto',
-      height: 'auto',
-    },
-    '& path': {
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
-    '&:hover': {
-      '& path': {
-        stroke: 'var(--color-icon-info)',
-        fillOpacity: 0,
-        '@media screen and (max-width: 950px)': {
-          stroke: 'var(--color-icon-dark)',
-          fillOpacity: 1,
-        },
-      },
-    },
-  },
-  prod_item_fav_btn_active: {
-    '& path': {
-      fill: 'var(--color-icon-info)',
-      stroke: 'var(--color-icon-info)',
-      fillOpacity: 1,
-    },
-  },
-  prod_item_custom_delete_btn: {
-    bottom: '5px',
-    right: '5px',
-    width: '24px',
-    height: '24px',
-    display: 'flex',
-    opacity: 0,
-    zIndex: 3,
-    position: 'absolute',
-    background: 'var(--color-white)',
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    alignItems: 'center',
-    borderRadius: '50%',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    '& path': {
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-    '&:hover path': {
-      fill: 'var(--color-danger)',
-    },
-  },
-  prod_item_custom_delete: {
-    maxWidth: '80%',
-    maxHeight: '80%',
-  },
-  prod_item_more_info: {
-    position: 'absolute',
-    top: 5,
-    right: 5,
-    width: 18,
-    height: 18,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: '50%',
-    background: 'var(--color-white)',
-    opacity: 0,
-    zIndex: -1,
-    transition: 'all .3s cubic-bezier(.19,1,.22,1)',
-    cursor: 'pointer',
-    '& path': {
-      transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    },
-  },
-  prod_item_title: {
-    color: 'var(--color-black)',
-    fontSize: '16px',
-    padding: '0 13px 0px',
-    fontFamily: 'RobotoCondensed-Regular',
-    overflow: 'hidden',
-    '&>div': {
-      display: '-webkit-box',
-      WebkitLineClamp: '2',
-      WebkitBoxOrient: 'vertical',
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
-    },
-    '@media screen and (max-width: 950px)': {
-      fontSize: '10px',
-      padding: '0 6px 0',
     },
   },
   planer_catalog_prem_zamok: {},
@@ -475,43 +138,6 @@ const useStyle = createUseStyles({
   planer_catalog_elem_wr_flex: {
     padding: 15,
   },
-  prod_item_overlay: {
-    position: 'absolute',
-    left: '0',
-    top: '0',
-    width: '100%',
-    height: '100%',
-    zIndex: 2,
-  },
-
-  product_hover: {
-    maxHeight: 150,
-    padding: '6px 20px',
-    textAlign: 'center',
-    border: '1px solid var(--color-border-strong)',
-    position: 'absolute',
-    borderRadius: 3,
-    display: 'inline',
-    zIndex: 105,
-    background: 'var(--color-white)',
-    pointerEvents: 'none',
-    fontSize: 12,
-    '&:after': {
-      content: "''",
-      position: 'absolute',
-      right: '100%',
-      top: '50%',
-      transform: 'translate(45%, -50%) rotate(135deg)',
-      width: 10,
-      height: 10,
-      background: 'var(--color-white)',
-      borderRight: '1px solid var(--color-border-strong)',
-      borderBottom: '1px solid var(--color-border-strong)',
-    },
-    '& p': {
-      fontSize: 12,
-    },
-  },
 });
 
 const CatalogMaterialsSets = (props) => {
@@ -520,164 +146,38 @@ const CatalogMaterialsSets = (props) => {
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const isAdded = lastHistoryElem?.isAdded;
-  const lastHistoryElemData = lastHistoryElem?.data;
-
-  const dispatch = useDispatch();
-  const isLogged = useSelector(selectIsLogged);
-
-  const [materialsListState, setMaterialsListState] = useState(null);
-  const [modalMoreInfo, setModalMoreInfo] = useState(false);
-  const [productElemHover, setProductElemHover] = useState(null);
-  const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
+  const lastHistoryElemData: Product[] | undefined = lastHistoryElem?.data;
 
   const [activeMaterial, setActiveMaterial] = useState(props.matId);
   const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
 
-  const arrayList = [];
-
   const classes = useStyle();
 
-  const mainDiv = useRef(null);
-  const catalogMain = useRef(null);
-
-  const loaderCompleteListener = (id) => {
-    props.materialSelect(id, null, activeMaterial, null);
-    setActiveMaterial(id);
-  };
-
-  const loaderErrorListener = (e) => console.log('Error loading material ', e);
-
-  const onMaterialSelect = (elem) => {
-    const id = elem.id;
+  // Applies the material to whatever opened this panel, loading its data first if needed.
+  const onMaterialSelect = (id: string) => {
     if (!R2D.Pool.getProductData(id)) {
       const loader = R2D.Pool.loadProductData(id);
-      loader.addEventListener(Event.COMPLETE, (e) => loaderCompleteListener(id));
-      loader.addEventListener(Event.ERROR, (e) => loaderErrorListener(id));
+      loader.addEventListener(Event.COMPLETE, () => {
+        props.materialSelect(id, null, activeMaterial, null);
+        setActiveMaterial(id);
+      });
+      loader.addEventListener(Event.ERROR, (e: unknown) =>
+        console.log('Error loading material ', e)
+      );
     } else {
       props.materialSelect(id, null, activeMaterial, null);
     }
     setActiveMaterial(id);
   };
 
-  const mouseEnter = (event, data) => {
-    if (dynamicPanelPreviewViewType == 'small') {
-      document.querySelector('.' + classes.product_hover)
-        ? document.querySelector('.' + classes.product_hover).remove()
-        : null;
-      const product = event.target;
-      const hoverWindow = document.createElement('div');
-      hoverWindow.classList.add(classes.product_hover);
-      hoverWindow.innerHTML = data.name;
-      document.querySelector('body').append(hoverWindow);
-      hoverWindow.style.left = product.getBoundingClientRect().left + product.offsetWidth + 'px';
-      hoverWindow.style.top =
-        product.getBoundingClientRect().top +
-        (product.offsetHeight - hoverWindow.offsetHeight) / 2 +
-        'px';
-    }
-  };
-
-  const mouseLeave = () =>
-    document.querySelector('.' + classes.product_hover)
-      ? document.querySelector('.' + classes.product_hover).remove()
-      : null;
-
-  const onMouseEnterProductMoreInfo = (e, elem) => {
-    setModalMoreInfo(true);
-    setProductElemHover(elem);
-  };
-  const onMouseLeaveProductMoreInfo = (e) => {
-    setModalMoreInfo(false);
-  };
-
-  const updateFavorites = async (id, isInFavorites) => {
-    if (!isLogged) return dispatch(setActivePopup({ name: 'login' }));
-    if (isInFavorites) {
-      await user.uRemoveFromFavorites(id);
-      setUserFavorites((prev) => prev.filter((i) => i.id != id));
-      dispatch(updateAnimateFavoritesHideStatus(true));
-      setTimeout(() => dispatch(updateAnimateFavoritesHideStatus(false)), 10);
-    } else {
-      const response = await user.uAddToFavorites(id);
-      setUserFavorites((prev) => {
-        const newArray = prev;
-        return [...newArray, response];
-      });
-
-      dispatch(updateAnimateFavoritesShowStatus(true));
-      setTimeout(() => dispatch(updateAnimateFavoritesShowStatus(false)), 10);
-    }
-    planner.apiScene.dispatchEvent(new Event(planner.apiScene.FAVORITES_BUTTON, {}));
-  };
-
   useEffect(() => {
     setStyleAnimation({ transform: 'translateX(0%)' });
   }, []);
 
-  useEffect(() => {
-    if (lastHistoryElemData) {
-      lastHistoryElemData.forEach((i) => {
-        const isInFavorites = userFavorites?.find((с) => с?.id == i.id);
-        arrayList.push(
-          <div
-            key={i.id}
-            className={cx(
-              classes.prod_item + ' ' + classes[`prod_item_${dynamicPanelPreviewViewType}`],
-              {
-                [classes.prod_item_active]: activeMaterial == i.id,
-              }
-            )}
-          >
-            <div className={classes.prod_item_hover_left}></div>
-            <div className={classes.prod_item_hover_top}></div>
-            <div className={classes.prod_item_hover_right}></div>
-            <div className={classes.prod_item_hover_bottom}></div>
-            <div className={classes.prod_item_img_wr}>
-              <img src={R2D.URL.DOMAIN + i.source.images.preview} className={'lazyload'} />
-
-              <div
-                className={
-                  isInFavorites
-                    ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
-                    : classes.prod_item_fav_btn
-                }
-                onClick={(e) => updateFavorites(i.id, isInFavorites)}
-              >
-                <FavoriteStarIcon />
-              </div>
-              {dynamicPanelPreviewViewType != 'big' ? (
-                <div
-                  className={classes.prod_item_more_info}
-                  onMouseEnter={(e) => onMouseEnterProductMoreInfo(e, i)}
-                  onMouseLeave={onMouseLeaveProductMoreInfo}
-                >
-                  <MoreInfoIcon />
-                </div>
-              ) : null}
-            </div>
-
-            {dynamicPanelPreviewViewType != 'small' ? (
-              <div className={classes.prod_item_title}>
-                <div>{i.name}</div>
-              </div>
-            ) : null}
-            <div
-              className={classes.prod_item_overlay}
-              onMouseLeave={mouseLeave}
-              onMouseEnter={(e) => mouseEnter(e, i)}
-              onClick={(e) => onMaterialSelect(i)}
-            ></div>
-          </div>
-        );
-      });
-      setMaterialsListState(arrayList);
-    }
-  }, [lastHistoryElemData, activeMaterial, dynamicPanelPreviewViewType, userFavorites]);
-
   return (
-    <div className={classes.planner_catalog_cont} style={styleAnimation} ref={mainDiv}>
+    <div className={classes.planner_catalog_cont} style={styleAnimation}>
       <Navigation
         hideBreadCrumbsHomePanel={props.hideBreadCrumbsHomePanel}
         disableBreadcrumbs={props.disableBreadcrumbs}
@@ -691,17 +191,20 @@ const CatalogMaterialsSets = (props) => {
       />
       <div className={classes.catalog_wr}>
         {lastHistoryElemData && (
-          <SimpleBar style={{ height: '100%' }} ref={catalogMain} autoHide={false} forceVisible="y">
-            <div className={classes.prod_elem_wrap}>{materialsListState}</div>
+          <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
+            <TileGrid size={dynamicPanelPreviewViewType}>
+              {lastHistoryElemData.map((i) => (
+                <SelectTile
+                  key={i.id}
+                  product={i}
+                  active={activeMaterial == i.id}
+                  onSelect={() => onMaterialSelect(i.id)}
+                />
+              ))}
+            </TileGrid>
           </SimpleBar>
         )}
       </div>
-
-      <AnimatePresence>
-        {modalMoreInfo ? (
-          <ModalMoreInfo productElemHover={productElemHover} key="modalMoreInfo" />
-        ) : null}
-      </AnimatePresence>
     </div>
   );
 };
