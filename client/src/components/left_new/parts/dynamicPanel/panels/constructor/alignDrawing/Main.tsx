@@ -20,6 +20,7 @@ import {
 } from '../../../../../../../redux/features/popups/popupsSlice';
 import { showTip } from '../../../../../../../redux/features/tips/tipsSlice';
 import { setActiveViewMode } from '../../../../../../../redux/features/viewMode/viewModeSlice';
+import { ActionList } from '../../../../../../../shared-components/ActionList';
 
 const useStyle = createUseStyles({
   planerWallsCont: {
@@ -36,55 +37,6 @@ const useStyle = createUseStyles({
   planerWallsWrap: {
     height: '100%',
     background: 'var(--color-white)',
-  },
-  planerConstItemWrap: {
-    width: '100%',
-  },
-  planerConstItemText: {
-    color: 'var(--color-slate)',
-    fontSize: 14,
-  },
-  planerConstItem: {
-    cursor: 'pointer',
-    height: '72px',
-    display: 'grid',
-    gridTemplateColumns: '55px auto',
-    padding: '0 28px',
-    zIndex: 1,
-    gridGap: '11px',
-    position: 'relative',
-    background: 'var(--color-white)',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    alignItems: 'center',
-    borderBottom: '1px solid var(--color-surface-muted)',
-    '&:after': {
-      top: '0',
-      left: '0',
-      width: '100%',
-      height: '29px',
-      content: '""',
-      zIndex: -1,
-      position: 'absolute',
-      background: 'linear-gradient(to bottom, var(--color-surface-subtle), transparent)',
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
-    '&:hover': {
-      background: 'var(--color-accent-soft)',
-      '&:after': {
-        opacity: 0,
-      },
-    },
-  },
-  planerConstItemImgWr: {
-    width: '55px',
-    height: '46px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  planerConstItemImg: {
-    maxWidth: '100%',
-    maxHeight: '100%',
   },
   roll_out_right: {
     transform: 'translateX(100%)',
@@ -137,7 +89,7 @@ const Main = (props) => {
     dispatch(showTip({ name: 'constructorButtons' }));
   };
 
-  const onSave = (e) => {
+  const onSave = () => {
     const modeToChangeAfter =
       WC.wallsEditor.state.getModeToChangeAfter && WC.wallsEditor.state.getModeToChangeAfter();
     const result = WC.wallsEditor.stopAlignDrawing(false);
@@ -157,7 +109,7 @@ const Main = (props) => {
     leaveAlignDrawing(modeToChangeAfter);
   };
 
-  const onDelete = (e) => dispatch(setActivePopup({ name: 'confirm', type: 'image_plan_delete' }));
+  const onDelete = () => dispatch(setActivePopup({ name: 'confirm', type: 'image_plan_delete' }));
 
   const rightPanelData = useRef(null);
 
@@ -201,24 +153,18 @@ const Main = (props) => {
     >
       <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
         <div className={classes.planerWallsWrap}>
-          <div className={classes.planerConstItemWrap}>
-            <div className={classes.planerConstItem} onClick={onSave}>
-              <div className={classes.planerConstItemImgWr}>
-                <IconDeviceFloppyFilled
-                  className={classes.planerConstItemImg}
-                  color="#626262"
-                  size={30}
-                />
-              </div>
-              <p className={classes.planerConstItemText}>{translation['BUTTON_OK']}</p>
-            </div>
-            <div className={classes.planerConstItem} onClick={onDelete}>
-              <div className={classes.planerConstItemImgWr}>
-                <IconTrash className={classes.planerConstItemImg} color="#626262" size={30} />
-              </div>
-              <p className={classes.planerConstItemText}>{translation['HINT_BUTTON_DELETE']}</p>
-            </div>
-          </div>
+          <ActionList size="small">
+            <ActionList.Item
+              icon={<IconDeviceFloppyFilled color="#626262" size={30} />}
+              label={translation['BUTTON_OK']}
+              onClick={onSave}
+            />
+            <ActionList.Item
+              icon={<IconTrash color="#626262" size={30} />}
+              label={translation['HINT_BUTTON_DELETE']}
+              onClick={onDelete}
+            />
+          </ActionList>
         </div>
       </SimpleBar>
     </div>
