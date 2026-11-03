@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
-import { planner, user } from '../../../../../../../initR2D';
+import { planner, TR, user } from '../../../../../../../initR2D';
 import {
   changeActiveControlPanelMode,
   controlPanelHistoryAdd,
