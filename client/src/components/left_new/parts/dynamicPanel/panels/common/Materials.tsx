@@ -14,6 +14,7 @@ import { setActivePopup } from '../../../../../../redux/features/popups/popupsSl
 import { TileGrid } from '../../../../../../shared-components/TileGrid';
 import SelectTile from '../../../../../../smart-components/catalog/select-tile';
 import type { Product } from '../../../../../../smart-components/catalog/tile-parts';
+import { useMaterialSelect } from '../../../../../../smart-components/catalog/use-material-select';
 import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
@@ -138,7 +139,10 @@ const Materials = (props) => {
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const isAdded = lastHistoryElem?.isAdded;
 
-  const [activeMaterial, setActiveMaterial] = useState(props.matId);
+  const { activeMaterial, setActiveMaterial, select } = useMaterialSelect(
+    props.materialSelect,
+    props.matId
+  );
   const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
@@ -153,21 +157,6 @@ const Materials = (props) => {
   const ownMaterials = materials?.filter((i) => i.isOwner) ?? [];
   const catalogMaterials = materials?.filter((i) => !i.isOwner) ?? [];
   const showUploadButton = lastHistoryElem.privateMaterialType && !isCurrDeviceAPhone;
-
-  // Applies the material to whatever opened this panel, loading its data first if needed.
-  const onMaterialSelect = (id: string) => {
-    if (!R2D.Pool.getProductData(id)) {
-      const loader = R2D.Pool.loadProductData(id);
-      loader.addEventListener(Event.COMPLETE, () => {
-        props.materialSelect(id, null, activeMaterial, null);
-        setActiveMaterial(id);
-      });
-      loader.addEventListener(Event.ERROR, (e: unknown) => console.log('Error loading material ', e));
-    } else {
-      props.materialSelect(id, null, activeMaterial, null);
-    }
-    setActiveMaterial(id);
-  };
 
   const onCustomMatAddMouseUp = () =>
     dispatch(setActivePopup({ name: 'uploadCustomMaterialPopup' }));
@@ -206,7 +195,7 @@ const Materials = (props) => {
       key={i.id}
       product={i}
       active={activeMaterial == i.id}
-      onSelect={() => onMaterialSelect(i.id)}
+      onSelect={() => select(i.id)}
     />
   );
 
