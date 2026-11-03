@@ -259,6 +259,7 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | GET | `/server-api/catalog/private/products/:id` | catalog/private.ts | get single user model |
 | POST | `/server-api/catalog/private/materials/upload` | catalog/private.ts | save a material, poster or carpet from the engine's material creator: URL-encoded form with base64 `source` (engine package, saved as `.mrtd`) and `preview` |
 | DELETE | `/server-api/catalog/private/materials/:id` | catalog/private.ts | delete custom material |
+| DELETE | `/server-api/catalog/private/uploads/:id` | catalog/private.ts | delete one of the user's uploads, model or material, with its files and favourite; used by the tiles' delete button |
 | GET | `/server-api/projects` | projects.ts | list user projects (`?limit=&offset=`, `?archived=1` lists the archive, `?sort=modified\|opened&dir=asc\|desc`, default `modified desc`) |
 | POST | `/server-api/projects` | projects.ts | create project |
 | GET | `/server-api/projects/:id` | projects.ts | load project |

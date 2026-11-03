@@ -1,9 +1,9 @@
 import db from '../db.js';
 import { DEV_USER_ID } from '../schema.js';
-import { getFavoriteItemIds } from './catalog.js';
+import { getFavoriteItemIds, removeFavorite } from './catalog.js';
 import { randomUUID } from 'crypto';
 import path from 'path';
-import { mkdirSync, writeFileSync } from 'fs';
+import { mkdirSync, rmSync, writeFileSync } from 'fs';
 
 const dbDir = process.env.DB_DIR;
 if (!dbDir) throw new Error('DB_DIR env variable is not set');
@@ -345,4 +345,37 @@ export function createUserMaterial(
     VALUES (?,?,?,?,?,?,?,?)
   `).run(id, userId, num(body.type_id), sourcePath, previewPath, num(body.width), num(body.height), null);
   return { id, source: sourcePath, preview: previewPath };
+}
+
+// Folders under uploads/ that hold an upload's files, from its stored `/uploads/<dir>/<file>` paths.
+function uploadDirs(paths: (string | null)[]): string[] {
+  const dirs = new Set<string>();
+  for (const p of paths) {
+    const dir = p?.match(/^\/uploads\/([^/]+)\//)?.[1];
+    if (dir && dir !== '..' && dir !== '.') dirs.add(path.join(uploadsRoot, dir));
+  }
+  return [...dirs];
+}
+
+/**
+ * Deletes one of the user's uploads, model or material, with its files and any favourite
+ * pointing at it. Returns false when the user has no upload with that id.
+ */
+export function deleteUserUpload(userId: string, id: string): boolean {
+  const model = stmtSelectModel.get(id, userId);
+  const material = model
+    ? undefined
+    : db.prepare<[string, string], MaterialRow>(
+        'SELECT * FROM user_materials WHERE id = ? AND user_id = ?'
+      ).get(id, userId);
+  if (!model && !material) return false;
+
+  const dirs = model
+    ? uploadDirs([model.source_path, model.preview_path, model.svg_path, model.svg_outline_path, model.meta_zip_path])
+    : uploadDirs([material!.source_path, material!.preview_path]);
+  if (model) deleteUserModel(userId, id);
+  else deleteUserMaterial(userId, id);
+  removeFavorite(userId, id);
+  for (const dir of dirs) rmSync(dir, { recursive: true, force: true });
+  return true;
 }

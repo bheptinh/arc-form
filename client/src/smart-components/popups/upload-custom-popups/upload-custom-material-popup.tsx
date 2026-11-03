@@ -6,7 +6,6 @@ import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import { planner } from '../../../initR2D';
 import { selectActiveControlPanelModeData } from '../../../redux/features/control/controlPanelSlice';
 import {
   closeActivePopup,
@@ -14,6 +13,7 @@ import {
   setActivePopup,
 } from '../../../redux/features/popups/popupsSlice';
 import DefaultModal from '../../../shared-components/modals/default';
+import { refreshUserUploads } from '../../catalog/refresh-user-uploads';
 import MaterialSize from './components/material-size';
 
 const useStyle = createUseStyles({
@@ -368,14 +368,7 @@ const UploadCustomMaterialPopup = (props) => {
     dispatch(
       setActivePopup({ name: 'completeMessage', data: 'NOTIFY_PRODUCT_ADDED', positionX: 'right' })
     );
-    const userUpload = await planner.scene.categoryDataLoad(
-      `${R2D.URL.DOMAIN + R2D.URL.URL_CATALOG_SEARCH}&category_tag&my=1`
-    );
-    planner.setUserUpload(userUpload);
-    planner.apiScene.dispatchEvent(
-      new Event(planner.apiScene.USER_UPLOAD_BUTTON, { status: userUpload?.length > 0 })
-    );
-    planner.scene.dispatchEvent(new Event(planner.scene.PRODUCTS_UPDATED, {}));
+    await refreshUserUploads();
   };
   let imageUploaded = false;
   var panelHeight = 80;

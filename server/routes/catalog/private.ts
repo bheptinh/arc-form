@@ -14,6 +14,7 @@ import {
   createUserMaterial,
   deleteUserMaterial,
   deleteUserModel,
+  deleteUserUpload,
 } from '../../services/catalog-private.js';
 
 const router = Router();
@@ -81,6 +82,13 @@ router.post(
     res.json({ status: 'ok', data });
   },
 );
+
+// Deletes an upload whichever kind it is, so the client doesn't need to know its table.
+router.delete('/uploads/:id', (req, res) => {
+  const deleted = deleteUserUpload(DEV_USER_ID, req.params.id);
+  if (!deleted) { res.status(404).json({ status: 'error', message: 'Not found' }); return; }
+  res.json({ status: 'ok', data: { success: true } });
+});
 
 router.delete('/products/:id', (req, res) => {
   const deleted = deleteUserModel(DEV_USER_ID, req.params.id);

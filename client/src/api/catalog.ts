@@ -16,3 +16,9 @@ export const materialsNavQueryOptions = queryOptions({
 export function useCatalogMaterials(): unknown[] {
   return useQuery(materialsNavQueryOptions).data ?? [];
 }
+
+/** Deletes one of the user's uploads, model or material. */
+export async function deleteUserUpload(id: string): Promise<void> {
+  const res = await fetch(`/server-api/catalog/private/uploads/${id}`, { method: 'DELETE' });
+  if (!res.ok) throw new Error(`deleteUserUpload ${res.status}`);
+}
