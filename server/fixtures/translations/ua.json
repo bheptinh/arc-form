@@ -949,6 +949,7 @@
   "LENGTH": "Довжина",
   "LIGHT_TIP_HOVER_TEXT": "Світло",
   "LIGHT_TIP_TEXT": "Яскравість",
+  "MATERIAL_NAME": "Назва",
   "MENU_BTN_TEXT_CONSTRUCTOR": "Малювати стіни",
   "MENU_BTN_TEXT_DECOR": "Каталог матеріалів",
   "MESS_MAIL_CHANGED_PROD_STATUS": "Змінено статус вашого товару на {NAME_STATUS}. {LINK}",

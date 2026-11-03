@@ -376,7 +376,9 @@ const UploadCustomMaterialPopup = (props) => {
   let imgSrc = null;
   var panelHeight = 80;
 
-  const [imageLoaded, setImageLoaded] = useState({});
+  const [imageLoaded, setImageLoaded] = useState<{ status?: boolean; file?: File; src?: string }>(
+    {}
+  );
   let [imageWidth, setImageWidth] = useState(defImageWidth);
   let [imageHeight, setImageHeight] = useState(defImageWidth * 2);
   const [ratioOfSizes, setRatioOfSizes] = useState(1);
@@ -530,11 +532,11 @@ const UploadCustomMaterialPopup = (props) => {
     prev3d.setImageSize(imageWidth, imageHeight);
   };
 
-  const onApplyImage = (e) => {
+  const onApplyImage = (name: string) => {
     prev3d.disposeRenderer();
     const uploader = new R2D.CustomUploader();
 
-    onClickClosePopUp(e);
+    onClickClosePopUp();
     dispatch(setActivePopup({ name: 'loadingMessage', data: 'TEXT_WAIT' }));
 
     if (uploadType == 3) {
@@ -544,7 +546,8 @@ const UploadCustomMaterialPopup = (props) => {
         imageWidth,
         imageHeight,
         uploadCategory,
-        callbackComplete
+        callbackComplete,
+        name
       );
     } else if (uploadType == 4) {
       uploader.uploadCarpet(
@@ -553,7 +556,8 @@ const UploadCustomMaterialPopup = (props) => {
         imageWidth,
         imageHeight,
         uploadCategory,
-        callbackComplete
+        callbackComplete,
+        name
       );
     } else if (uploadType == 1 || uploadType == 5 || uploadType == 7) {
       uploader.uploadMaterial(
@@ -564,12 +568,13 @@ const UploadCustomMaterialPopup = (props) => {
         uploadCategory,
         callbackComplete,
         uploadType,
-        uploadToBank
+        uploadToBank,
+        name
       );
     }
   };
 
-  const onClickClosePopUp = (e) => {
+  const onClickClosePopUp = () => {
     setAnimPopupClass(false);
     setTimeout(() => {
       dispatch(closeActivePopup({ name: 'uploadCustomMaterialPopup' }));
@@ -705,6 +710,8 @@ const UploadCustomMaterialPopup = (props) => {
 
             <div className={classes.upload_popup_bottom_size}>
               <MaterialSize
+                key={imageLoaded.src}
+                defaultName={imageLoaded.file?.name?.replace(/\.[^.]+$/, '') ?? ''}
                 onApply={onApplyImage}
                 ratio={ratioOfSizes}
                 changeSize={onImageSizeChage}

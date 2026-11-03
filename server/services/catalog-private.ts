@@ -106,6 +106,7 @@ type MaterialRow = {
   id: string;
   user_id: string;
   type_id: number | null;
+  name: string | null;
   source_path: string | null;
   preview_path: string | null;
   width: number | null;
@@ -126,7 +127,7 @@ function buildUploadedMaterialItem(row: MaterialRow) {
     externalId: null,
     type: row.type_id === POSTER || row.type_id === CARPET ? row.type_id : MATERIAL,
     privateMaterialType: row.type_id,
-    name: '',
+    name: row.name ?? '',
     description: null,
     isOwner: true,
     source: {
@@ -318,7 +319,7 @@ export function deleteUserMaterial(userId: string, materialId: string): boolean 
 
 /**
  * Saves a material, poster or carpet made by the engine's material creator. The engine posts
- * it as form fields: `source` (its package) and `preview` (PNG), both base64.
+ * it as form fields: `source` (its package) and `preview` (PNG), both base64, and `name`.
  */
 export function createUserMaterial(
   userId: string,
@@ -336,11 +337,12 @@ export function createUserMaterial(
   };
   const sourcePath = save(body.source, 'source.mrtd')!;
   const previewPath = save(body.preview, 'preview.png');
+  const name = typeof body.name === 'string' ? body.name.trim().slice(0, 200) || null : null;
   const num = (v: unknown) => (v == null || v === '' || isNaN(Number(v)) ? null : Number(v));
   db.prepare(`
-    INSERT INTO user_materials (id, user_id, type_id, source_path, preview_path, width, height, depth)
-    VALUES (?,?,?,?,?,?,?,?)
-  `).run(id, userId, num(body.type_id), sourcePath, previewPath, num(body.width), num(body.height), null);
+    INSERT INTO user_materials (id, user_id, type_id, name, source_path, preview_path, width, height, depth)
+    VALUES (?,?,?,?,?,?,?,?,?)
+  `).run(id, userId, num(body.type_id), name, sourcePath, previewPath, num(body.width), num(body.height), null);
   return { id, source: sourcePath, preview: previewPath };
 }
 

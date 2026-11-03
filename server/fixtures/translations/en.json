@@ -949,6 +949,7 @@
   "LENGTH": "Length",
   "LIGHT_TIP_HOVER_TEXT": "Light",
   "LIGHT_TIP_TEXT": "Brightness",
+  "MATERIAL_NAME": "Name",
   "MENU_BTN_TEXT_CONSTRUCTOR": "Draw walls",
   "MENU_BTN_TEXT_DECOR": "Materials catalog",
   "MESS_MAIL_CHANGED_PROD_STATUS": "Changed status to your product on {NAME_STATUS}. {LINK}",

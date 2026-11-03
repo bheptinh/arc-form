@@ -128,6 +128,7 @@ CREATE TABLE IF NOT EXISTS user_materials (
   id           TEXT    PRIMARY KEY,
   user_id      TEXT    NOT NULL REFERENCES users(id),
   type_id      INTEGER,
+  name         TEXT,
   source_path  TEXT,
   preview_path TEXT,
   width        REAL,

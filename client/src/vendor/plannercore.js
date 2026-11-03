@@ -257,7 +257,7 @@ R2D.CustomUploader = function()
     var me = this;
     EventDispatcher.call(me);
 
-    me.uploadPoster = function(srcFile, srcPrev, width, height, categoryId, callback)
+    me.uploadPoster = function(srcFile, srcPrev, width, height, categoryId, callback, name)
     {
         var posterCreator;
         var srcScaledPrev;
@@ -349,6 +349,9 @@ R2D.CustomUploader = function()
             };
 
             if(categoryId) params.category_id = categoryId;
+            // makeParamsString doesn't escape values, and a name can hold '&', '=' or non-Latin letters.
+            if (name) params['name'] = encodeURIComponent(name);
+
             params = R2D.XHRLoader.makeParamsString(params);
 
             var loader = R2D.XHRLoader.getPostLoader(R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_UPLOAD_PRIVATE), params, null, null, true);
@@ -366,7 +369,7 @@ R2D.CustomUploader = function()
         }
     };
 
-    me.uploadCarpet = function(srcFile, srcPrev, width, height, categoryId, callback)
+    me.uploadCarpet = function(srcFile, srcPrev, width, height, categoryId, callback, name)
     {
         var creator;
         var srcScaledPrev;
@@ -461,6 +464,9 @@ R2D.CustomUploader = function()
             };
 
             if(categoryId) params.category_id = categoryId;
+            // makeParamsString doesn't escape values, and a name can hold '&', '=' or non-Latin letters.
+            if (name) params['name'] = encodeURIComponent(name);
+
             params = R2D.XHRLoader.makeParamsString(params);
 
             var loader = R2D.XHRLoader.getPostLoader(R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_UPLOAD_PRIVATE), params, null, null, true);
@@ -479,7 +485,7 @@ R2D.CustomUploader = function()
         }
     };
 
-    me.uploadMaterial = function(srcFile, srcPrev, width, height, categoryId, callback, uploadType, toBank)
+    me.uploadMaterial = function(srcFile, srcPrev, width, height, categoryId, callback, uploadType, toBank, name)
     {
         var creator;
         var srcScaledPrev;
@@ -575,6 +581,9 @@ R2D.CustomUploader = function()
                     params['category_id'] = '' + categoryId;
                 }
             }
+
+            // makeParamsString doesn't escape values, and a name can hold '&', '=' or non-Latin letters.
+            if (name) params['name'] = encodeURIComponent(name);
 
             params = R2D.XHRLoader.makeParamsString(params);
 

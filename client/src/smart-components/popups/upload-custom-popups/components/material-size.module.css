@@ -1,0 +1,9 @@
+.wrap {
+  gap: 16px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.name {
+  width: 220px;
+}
