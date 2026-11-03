@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { getNavTree, getMaterialsTree, getCollectionProducts, getProductsByExternalIds, getProductsByUuids, getProductsByTag, searchProducts, getFavorites, addFavorite, addFavoriteItem, removeFavorite } from '../../services/catalog.js';
-import { getUserUploads, getUserUploadsByIds, getUserModelById, getUserModelFavorites } from '../../services/catalog-private.js';
+import { getUserUploads, getUserUploadsByIds, getUserUploadById, getUserUploadFavorites } from '../../services/catalog-private.js';
 import { DEV_USER_ID } from '../../schema.js';
 
 const router = Router();
@@ -56,7 +56,7 @@ router.get('/collections/:id', (req, res) => {
 
 router.get('/favorites', (_req, res) => {
   const catalog = getFavorites(DEV_USER_ID);
-  const privateItems = getUserModelFavorites(DEV_USER_ID);
+  const privateItems = getUserUploadFavorites(DEV_USER_ID);
   const items = [...catalog.items, ...privateItems];
   res.json({ status: 'ok', data: { total: String(items.length), items } });
 });
@@ -65,10 +65,10 @@ router.post('/favorites/:id', (req, res) => {
   const uuid = req.params.id;
   const product = addFavorite(DEV_USER_ID, uuid);
   if (product) { res.json({ status: 'ok', data: product }); return; }
-  const userModel = getUserModelById(uuid, DEV_USER_ID);
-  if (userModel) {
+  const upload = getUserUploadById(DEV_USER_ID, uuid);
+  if (upload) {
     addFavoriteItem(DEV_USER_ID, uuid);
-    res.json({ status: 'ok', data: { ...userModel, isFavorite: true } });
+    res.json({ status: 'ok', data: { ...upload, isFavorite: true } });
     return;
   }
   res.status(404).json({ status: 'error', message: 'Product not found' });

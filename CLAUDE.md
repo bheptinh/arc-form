@@ -248,8 +248,8 @@ Express 5 app on port 3015 (set via `PORT` env). All routes use the `/server-api
 | GET | `/server-api/catalog/materials/nav` | catalog/index.ts | materials nav tree from `materials-tree.json` |
 | GET | `/server-api/catalog/products` | catalog/index.ts | supports `?my=1` (the user's uploaded models and materials, newest first), `?query=`, `?category_tag=`, `?ids=` (catalog products plus the user's own uploads) |
 | GET | `/server-api/catalog/collections/:id` | catalog/index.ts | products in a category |
-| GET | `/server-api/catalog/favorites` | catalog/index.ts | merged catalog + user model favorites |
-| POST | `/server-api/catalog/favorites/:id` | catalog/index.ts | add favorite (UUID) |
+| GET | `/server-api/catalog/favorites` | catalog/index.ts | merged catalog + user upload (model and material) favorites |
+| POST | `/server-api/catalog/favorites/:id` | catalog/index.ts | add favorite (UUID of a catalog product or one of the user's uploads) |
 | DELETE | `/server-api/catalog/favorites/:id` | catalog/index.ts | remove favorite |
 | POST | `/server-api/catalog/private/products/upload` | catalog/private.ts | multer upload (preview, source, svg, metaZip) |
 | POST | `/server-api/catalog/private/products` | catalog/private.ts | create user model record |

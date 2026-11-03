@@ -258,17 +258,14 @@ export function getUserModelById(modelId: string, userId: string) {
   return buildUploadedItem(row, slots);
 }
 
-export function getUserModelFavorites(userId: string) {
-  const favIds = getFavoriteItemIds(userId);
-  if (favIds.length === 0) return [];
-  const ph = favIds.map(() => '?').join(',');
-  const rows = db.prepare<string[], ModelRow>(
-    `SELECT * FROM user_models WHERE user_id = ? AND id IN (${ph})`
-  ).all(userId, ...favIds) as ModelRow[];
-  return rows.map(row => {
-    const slots = stmtSelectSlots.all(row.id);
-    return { ...buildUploadedItem(row, slots), isFavorite: true };
-  });
+/** The user's favourited uploads, models and materials. */
+export function getUserUploadFavorites(userId: string) {
+  return getUserUploadsByIds(userId, getFavoriteItemIds(userId)).map(item => ({ ...item, isFavorite: true }));
+}
+
+/** One of the user's uploads by id, model or material. */
+export function getUserUploadById(userId: string, id: string) {
+  return getUserUploadsByIds(userId, [id])[0] ?? null;
 }
 
 export function getUserModels(userId: string) {
