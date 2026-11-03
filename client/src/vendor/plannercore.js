@@ -78457,7 +78457,7 @@ TConf.Field = function()
         {
             if (area.maxY - area.minY <= 5) return;
 
-            newDelim = new TConf.Delimiter(TConf.Delimiter.HOR, (area.minY + area.maxY) / 2);
+            let newDelim = new TConf.Delimiter(TConf.Delimiter.HOR, (area.minY + area.maxY) / 2);
 
             if (area.delimiters.left)
             {
@@ -78654,7 +78654,7 @@ TConf.Field = function()
 
         for (i = 0; i < me.delimiters.length; i++)
         {
-            delim = me.delimiters[i];
+            let delim = me.delimiters[i];
             let dd = struct.delimiters[i];
             if (dd.pr1 > 0) delim.parent1 = delimDict[dd.pr1];
             if (dd.pr2 > 0) delim.parent2 = delimDict[dd.pr2];
@@ -79890,9 +79890,9 @@ TConf.BaseState = function(editor)
             me.editor.context.closePath();
         }
 
-        area = me.editor.field.activeArea;
+        let area = me.editor.field.activeArea;
 
-        P = me.editor.realToView(area.contour[area.contour.length - 1]);
+        let P = me.editor.realToView(area.contour[area.contour.length - 1]);
         ctx.beginPath();
         ctx.strokeStyle = '#00cc00';
         ctx.lineWidth = 1;
@@ -80049,8 +80049,8 @@ TConf.BaseState = function(editor)
 
             if (! rightHidden && (me.editor.scale == me.editor.maxScale || (viewWidth > 20 && viewHeight > ctx.measureText(txtH).width + 20)))
             {
-                tx = viewRT.x - 10;
-                ty = (viewRT.y + viewRB.y) / 2;
+                let tx = viewRT.x - 10;
+                let ty = (viewRT.y + viewRB.y) / 2;
 
                 ctx.save();
                 ctx.translate(tx, ty);
