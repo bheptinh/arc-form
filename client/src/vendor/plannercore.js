@@ -117,7 +117,7 @@ R2D.PlannerCore = function(user) {
         return new Promise(resolve => {
             var url = R2D.makeURL(R2D.URL.DOMAIN, R2D.URL.URL_GET_CUSTOM_REGISTRATION);
 
-            loader = new R2D.XHRLoader();
+            var loader = new R2D.XHRLoader();
 
             loader.addEventListener(Event.COMPLETE, loaderGetListener);
             loader.addEventListener(Event.ERROR, loaderGetListener);
@@ -42271,6 +42271,7 @@ R2D.MouseInteractionHelper = function(commonSceneObject, commonSceneHelper, apiD
         }
         else
         {
+            let pointA;
             if (isNaN(scope._ruler3d.distances[1]) || scope._ruler3d.distances[1] >= sceneObject.getWidth())
             {
                 pointA = GEOM.Point.rotatePoint(new GEOM.Point( sceneObject.getWidth(), 0), -GEOM.toRad(sceneObject.rotationY));
@@ -42478,19 +42479,19 @@ R2D.MouseInteractionHelper = function(commonSceneObject, commonSceneHelper, apiD
             else if (scope._scene.currentView3DObject.type == 'cover' || scope._scene.currentView3DObject.type == 'ceiling' ||
                 scope._scene.currentView3DObject.type == 'area' || scope._scene.currentView3DObject.type == 'cap')
             {
-                x1 = vectors[1].x - vectors[0].x;
-                y1 = vectors[1].z - vectors[0].z;
-                x2 = vectors[2].x - vectors[0].x;
-                y2 = vectors[2].z - vectors[0].z;
+                let x1 = vectors[1].x - vectors[0].x;
+                let y1 = vectors[1].z - vectors[0].z;
+                let x2 = vectors[2].x - vectors[0].x;
+                let y2 = vectors[2].z - vectors[0].z;
                 shiftVectH = new TR.Point(x1, y1);
                 shiftVectV = new TR.Point(x2, y2);
             }
             else if (scope._scene.currentView3DObject.type == 'bottomFrame')
             {
-                x1 = vectors[1].x - vectors[0].x;
-                y1 = vectors[1].z - vectors[0].z;
-                x2 = vectors[2].x - vectors[0].x;
-                y2 = vectors[2].z - vectors[0].z;
+                let x1 = vectors[1].x - vectors[0].x;
+                let y1 = vectors[1].z - vectors[0].z;
+                let x2 = vectors[2].x - vectors[0].x;
+                let y2 = vectors[2].z - vectors[0].z;
                 let data = scope._scene.currentView3DObject.constructorElementData;
                 shiftVectH = new TR.Point(x1 * data.dirY.x + y1 * data.dirY.y, x1 * data.dirX.x + y1 * data.dirX.y);
                 shiftVectV = new TR.Point(x2 * data.dirY.x + y2 * data.dirY.y, x2 * data.dirX.x + y2 * data.dirX.y);
@@ -47346,7 +47347,7 @@ R2D.ViewerScene2D = function(sharedRenderer, commonSceneHelper, mouseInteraction
             let areaPart = constructor.areas[i].parts[0];
             let arGeom = R2D.Tool.makeBufferGeometry(areaPart.indices, areaPart.vertices, areaPart.uvs);
             let arMesh = new THREE.Mesh(arGeom, new THREE.MeshPhongMaterial({color: 0x666644, side: THREE.DoubleSide}));
-            bbox = new THREE.Box3().setFromObject(arMesh);
+            let bbox = new THREE.Box3().setFromObject(arMesh);
             arMesh.position.y = 690 - bbox.min.y;
             arMesh.scale.z = -1;
             topMeshes.push(arMesh);
@@ -52983,12 +52984,12 @@ WC.DataWall = function(pt1, pt2, id)
                 }
                 else
                 {
-                    proj = TR.projectionPointOnLine(axis.point2, me.point1, me.point2, false);
-                    axisShift = TR.euclDist(me.point1.x, me.point1.y, proj.x, proj.y);
+                    let proj = TR.projectionPointOnLine(axis.point2, me.point1, me.point2, false);
+                    let axisShift = TR.euclDist(me.point1.x, me.point1.y, proj.x, proj.y);
 
                     for (j = 0; j < modelContour.length; j++)
                     {
-                        P = new WC.DataPoint(modelContour[j].x, modelContour[j].y);
+                        let P = new WC.DataPoint(modelContour[j].x, modelContour[j].y);
                         P.x *= axis.models[i].scaleX * (-flipX);
                         P.x = P.x + (1 - axis.positions[i]) * axisLength + axisShift;
                         P.y *= axis.models[i].scaleY;
@@ -61790,7 +61791,7 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
             res.areas.push(DA);
             DA.height = cArea.height;
 
-            dataCeiling = new WC.DataCeiling();
+            let dataCeiling = new WC.DataCeiling();
             DA.ceiling = dataCeiling;
 
             let pairs = cArea.getCutWallPairs();
@@ -61798,15 +61799,15 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
             let wallPairs = pairs[1];
 
             let dataCuts = [];
-            dataWalls = [];
+            let dataWalls = [];
 
             for (let j = 0; j < wallPairs.length; j++)
             {
-                DP1 = wallPairs[j][0].link;
-                DP2 = wallPairs[j][1].link;
+                let DP1 = wallPairs[j][0].link;
+                let DP2 = wallPairs[j][1].link;
                 for (k = 0; k < res.walls.length; k++)
                 {
-                    DW = res.walls[k];
+                    let DW = res.walls[k];
                     if ((DW.point1 == DP1 && DW.point2 == DP2) ||
                         (DW.point1 == DP2 && DW.point2 == DP1))
                     {
@@ -61820,7 +61821,7 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
             for (let j = 0; j < res.walls.length; j++)
             {
-                DW = res.walls[j];
+                let DW = res.walls[j];
                 if (dataWalls.indexOf(DW) != -1) continue;
 
                 let p1in = TR.pointInContour(DW.point1, cArea.points);
@@ -61837,8 +61838,8 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
             for (let j = 0; j < cutPairs.length; j++)
             {
-                DP1 = cutPairs[j][0].link;
-                DP2 = cutPairs[j][1].link;
+                let DP1 = cutPairs[j][0].link;
+                let DP2 = cutPairs[j][1].link;
                 let exists = false;
                 for (k = 0; k < res.cuts.length; k++)
                 {
@@ -61855,15 +61856,15 @@ WC.WallsEditor = function(data, scene, apiDispatcher)
 
                 if (exists) continue;
 
-                dCut = new WC.DataCut(DP1, DP2);
+                let dCut = new WC.DataCut(DP1, DP2);
                 dCut.heights.push(DA.height);
                 res.cuts.push(dCut);
                 dataCuts.push(dCut);
 
                 for (k = 0; k < WC.core.cuts.length; k++)
                 {
-                    p1 = WC.core.cuts[k].point1;
-                    p2 = WC.core.cuts[k].point2;
+                    let p1 = WC.core.cuts[k].point1;
+                    let p2 = WC.core.cuts[k].point2;
 
                     if (!(p1.match(DP1) && p2.match(DP2)) && !(p2.match(DP1) && p1.match(DP2))) continue;
 
@@ -69340,7 +69341,7 @@ R2D.CopyPaste.pasteModel = async function()
     let raycaster = new THREE.Raycaster();
     let point = R2D.Renderer3D.getMousePointForPicker(R2D.mouseInteractionHelper._currentCanvas, R2D.mouseInteractionHelper.mouseX, R2D.mouseInteractionHelper.mouseY);
     raycaster.setFromCamera(new THREE.Vector2(point.x, point.y), R2D.mouseInteractionHelper._currentCamera);
-    data = raycaster.intersectObjects(R2D.mouseInteractionHelper._commonSceneObject.interactiveObjects.children, true);
+    let data = raycaster.intersectObjects(R2D.mouseInteractionHelper._commonSceneObject.interactiveObjects.children, true);
 
     if (pasteObj.type == 'model')
     {   
@@ -74748,7 +74749,7 @@ WCT.delSmallClusters = function(pixelData)
             }
         }
 
-        colors = {};
+        let colors = {};
         for (i = 0; i < values.length; i++)
         {
             colors[values[i]] = {r: Math.round(Math.random() * 255),
