@@ -14,7 +14,7 @@ import {
   selectUserProfileData,
   userLogout,
 } from '../../../../../redux/features/user/userSlice';
-import HoverComponent from '../components/HoverComponent';
+import Tooltip from '../../../../../shared-components/Tooltip';
 import { useMerchantLogin } from '../../../../../utils/useMerchantLogin';
 
 const useStyle = createUseStyles({
@@ -237,7 +237,9 @@ const UserButton = (props) => {
         </div>
         <div className={classes.menu_dop_info_wrap}>
           <div className={classes.menu_dop_info_user_name}>
-            <HoverComponent hoverText={userData.email}>{userData.name}</HoverComponent>
+            <Tooltip content={userData.email}>
+              <span>{userData.name}</span>
+            </Tooltip>
           </div>
 
           <div className={classes.menu_dop_info_link}>
@@ -297,7 +299,7 @@ const UserButton = (props) => {
   ) : R2D.config.data.ui.top_login ? (
     <div className={classes.menu_dop_btn_wrap}>
       <div className={classes.menu_dop_btn_wr + ' ' + classes.menu_dop_btn_wr_login}>
-        <HoverComponent hoverText={translation['FR_TOURS_TRANS_104']} parentRef={userButton}>
+        <Tooltip content={translation['FR_TOURS_TRANS_104']} side="right">
           <div
             className={classes.menu_dop_btn}
             onClick={() =>
@@ -306,7 +308,7 @@ const UserButton = (props) => {
           >
             <IconUser size={16} className={classes.menu_dop_btn_icon} />
           </div>
-        </HoverComponent>
+        </Tooltip>
       </div>
     </div>
   ) : null;

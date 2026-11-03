@@ -21,3 +21,23 @@
   outline: 2px solid var(--color-text);
   outline-offset: -2px;
 }
+
+.dark {
+  color: #999999;
+  background: var(--color-slate);
+  box-shadow: none;
+  border-color: var(--color-slate);
+}
+
+.dark:hover {
+  color: var(--color-white);
+  background: #4E5455;
+  border-color: #4E5455;
+}
+
+.dark[aria-pressed='true'] {
+  color: var(--color-slate);
+  cursor: default;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}

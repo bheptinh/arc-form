@@ -1,0 +1,149 @@
+.controlPanel {
+  width: 40px;
+  height: 100%;
+  display: grid;
+  z-index: 4;
+  position: relative;
+  align-content: space-between;
+}
+
+/* covers the help flyout while it is slid in behind the panel */
+.controlPanel:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: 3;
+  position: absolute;
+  background: var(--color-slate);
+  pointer-events: none;
+}
+
+.sections,
+.tools {
+  width: 40px;
+  display: flex;
+  z-index: 3;
+  position: relative;
+  flex-direction: column;
+}
+
+.tools {
+  background: var(--color-slate);
+  border-top: 1px solid #555555;
+}
+
+.controlPanel .section,
+.controlPanel .tool {
+  width: 40px;
+  height: 45px;
+  border: 0;
+  border-radius: 0;
+}
+
+.controlPanel .section:not(:first-child) {
+  border-radius: 0 3px 3px 0;
+}
+
+.controlPanel .section:not([aria-pressed='true']) {
+  color: var(--color-white);
+}
+
+.bottom {
+  width: 40px;
+  padding-bottom: 10px;
+}
+
+.help {
+  width: 100%;
+  cursor: pointer;
+  height: 45px;
+  position: relative;
+}
+
+.helpIcon {
+  color: #999999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 3;
+  position: relative;
+  background: var(--color-slate);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  align-items: center;
+  justify-content: center;
+}
+
+.helpOpen .helpIcon {
+  color: var(--color-white);
+  background: #4E5455;
+}
+
+.flyout {
+  top: 50%;
+  left: 100%;
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(-102%, -50%);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  padding-left: 1px;
+  border-radius: 3px;
+}
+
+.helpOpen .flyout {
+  transform: translate(0, -50%);
+}
+
+.link {
+  color: var(--color-white);
+  height: 34px;
+  display: flex;
+  font-size: 12px;
+  background: var(--color-slate);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 13px;
+}
+
+.link:hover {
+  background: #4E5455;
+}
+
+.linkIcon {
+  width: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+  .controlPanel .section,
+  .controlPanel .tool,
+  .help {
+    height: 30px;
+  }
+
+  .controlPanel .section svg {
+    max-height: 72%;
+  }
+
+  .flyout {
+    top: auto;
+    bottom: 0;
+    transform: translate(-102%, 0);
+  }
+
+  .helpOpen .flyout {
+    transform: translate(0, 0);
+  }
+
+  .link {
+    font-size: 11px;
+  }
+}

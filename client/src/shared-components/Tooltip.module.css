@@ -1,0 +1,15 @@
+.tooltip {
+  color: #262626;
+  padding: 6px 10px;
+  z-index: 999;
+  font-size: 12px;
+  background: var(--color-info-bright);
+  user-select: none;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 950px) {
+  .tooltip {
+    font-size: 10px;
+  }
+}
