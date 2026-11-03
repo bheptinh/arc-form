@@ -163,6 +163,7 @@ const SelectedGroup = () => {
           />
         ) : lastHistoryElemType == 'catalog' ? (
           <Catalog
+            leafType="materials"
             breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
             hideCategoryTree={true}
             closeButtonStatus={true}

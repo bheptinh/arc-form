@@ -169,6 +169,7 @@ const UploadModel = () => {
           />
         ) : lastHistoryElemType == 'catalog' ? (
           <Catalog
+            leafType="materials"
             isAddSettingsDisabled={true}
             closeButtonStatus={true}
             isHomeDisabled={true}

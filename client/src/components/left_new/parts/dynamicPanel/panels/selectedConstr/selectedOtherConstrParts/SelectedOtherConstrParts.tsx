@@ -77,6 +77,7 @@ const SelectedOtherConstrParts = () => {
           <Main panelTitle={panelTitle} key={Math.random()} panelPreviewIcon={panelPreviewIcon} />
         ) : lastHistoryElemType == 'catalog' ? (
           <Catalog
+            leafType="materials"
             breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
             panelPreviewIcon={panelPreviewIcon}
             isAddSettingsDisabled={true}

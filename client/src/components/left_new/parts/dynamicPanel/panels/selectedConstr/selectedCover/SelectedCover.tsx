@@ -65,6 +65,7 @@ const SelectedCover = () => {
           <Main panelPreviewIcon={panelPreviewIcon} key={Math.random()} />
         ) : lastHistoryElemType == 'catalog' ? (
           <Catalog
+            leafType="materials"
             breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
             panelPreviewIcon={panelPreviewIcon}
             hideCategoryTree={true}

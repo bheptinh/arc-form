@@ -98,7 +98,8 @@ const Catalog = (props) => {
     };
     if (data.type == 'product' && data.privateMaterialType != 6) {
       const urlList = data.urlList;
-      dataObj.type = 'products';
+      // Material pickers list a leaf category with their Materials grid; catalogs with Products.
+      dataObj.type = props.leafType ?? 'products';
       dataObj.urlList = ~urlList.search(/materialsByCategory/)
         ? urlList.replace(
             '/api/category/materialsByCategory',

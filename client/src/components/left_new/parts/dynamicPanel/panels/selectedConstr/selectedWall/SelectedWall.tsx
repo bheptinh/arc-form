@@ -138,6 +138,7 @@ const SelectedWall = () => {
           />
         ) : lastHistoryElemType == 'catalog' ? (
           <Catalog
+            leafType="materials"
             breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
             panelPreviewIcon={dynamicPanelPreviewIcon}
             hideCategoryTree={true}
