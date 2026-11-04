@@ -2,7 +2,6 @@ import { IconBulbFilled, IconCopy } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../initR2D';
@@ -21,31 +20,9 @@ import ChangeSize from '../../../../../common/ChangeSize';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import Tooltip from '../../../../../../shared-components/Tooltip';
 import Navigation from '../../navigation/Navigation';
+import CatalogScreen from './CatalogScreen';
 
 const useStyle = createUseStyles({
-  planner_catalog_cont: {
-    borderRight: '1px solid var(--color-border-light)',
-    background: 'var(--color-white)',
-    height: '100%',
-    display: 'grid',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    width: 309,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    '@media screen and (max-width: 950px)': {
-      width: 189,
-    },
-  },
-  catalog_wr: {
-    overflow: 'hidden',
-    height: '100%',
-    position: 'relative',
-    background: 'var(--color-white)',
-    borderTop: '1px solid var(--color-border)',
-  },
   previewPreloader: {
     width: 120,
     height: 120,
@@ -378,16 +355,6 @@ const useStyle = createUseStyles({
       },
     },
   },
-  preloaderBlock: {
-    background: 'rgba(0, 0, 0, .2)',
-    zIndex: 4,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    height: '100%',
-    width: '100%',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-  },
 });
 
 const ColorPicker = (props) => {
@@ -397,7 +364,6 @@ const ColorPicker = (props) => {
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = activeControlPanelData.history;
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const isAdded = lastHistoryElem?.isAdded;
   const lastHistoryElemData = lastHistoryElem?.data;
   const isLogged = useSelector(selectIsLogged);
   const translation = useTranslation();
@@ -414,9 +380,6 @@ const ColorPicker = (props) => {
   const [lightPower, setLightPower] = useState(props.lightPowerValue);
   const [materialsArrayData, setMaterialsArrayData] = useState([]);
   const [materialsArray, setMaterialsArray] = useState(null);
-  const [styleAnimation, setStyleAnimation] = useState(
-    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
-  );
   const [preloaderStatus, setPreloaderStatus] = useState(true);
 
   const [selectedMaterial, setSelecterdMaterial] = useState(props.matId);
@@ -822,7 +785,6 @@ const ColorPicker = (props) => {
 
   // TODO: optimize this, maybe move some code to onClickMaterial and onColorPickedMouseUp
   useEffectAsync(async () => {
-    setStyleAnimation({ transform: 'translateX(0%)' });
     if (props.onlyColor) {
       setPreloaderStatus(true);
       const currSelectedColor =
@@ -998,168 +960,159 @@ const ColorPicker = (props) => {
   }, [currMatMesh]);
 
   return (
-    <div className={classes.planner_catalog_cont} style={styleAnimation}>
-      <Navigation
-        panelPreviewIcon={props.panelPreviewIcon}
-        hideCategoryTree={props.hideCategoryTree}
-        breadcrumsTitle={props.breadcrumsTitle}
-        disableBreadcrumbs={props.onlyColor}
-        closeButtonStatus={true}
-        isAddSettingsDisabled={props.isAddSettingsDisabled}
-      />
-      <div className={classes.catalog_wr}>
-        <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
-          <div className={classes.content}>
-            {props.isForLightObjects ? (
-              <div className={classes.lightObjectPower}>
-                <div className={classes.lightObjectPower_top}>
-                  <div className={classes.lightObjectPower_top_left}>
-                    <p className={classes.lightObjectPower_top_text}>
-                      {translation['LIGHT_TIP_TEXT']}
-                    </p>
-                  </div>
-                  <div className={classes.lightObjectPower_top_right}>
-                    <ChangeSize
-                      mouseDown={mouseDown}
-                      changeValue={onColorPowerChange}
-                      type={'style_3'}
-                      value={lightPower}
-                      labelAfter={'%'}
-                    />
-                  </div>
-                </div>
-                <div className={classes.lightObjectPower_center}>
-                  <div className={classes.lightObjectPower_center_circle}>
-                    <div
-                      className={classes.lightObjectPower_center_circle_background}
-                      style={{
-                        background: currentColor,
-                        width: (150 / 100) * lightPower + 'px',
-                        height: (150 / 100) * lightPower + 'px',
-                      }}
-                    ></div>
-                    <IconBulbFilled size={32} color="#2F2F2F" />
-                  </div>
-                </div>
+    <CatalogScreen
+      header={
+        <Navigation
+          panelPreviewIcon={props.panelPreviewIcon}
+          hideCategoryTree={props.hideCategoryTree}
+          breadcrumsTitle={props.breadcrumsTitle}
+          disableBreadcrumbs={props.onlyColor}
+          closeButtonStatus={true}
+          isAddSettingsDisabled={props.isAddSettingsDisabled}
+        />
+      }
+      isLoading={preloaderStatus}
+    >
+      <div className={classes.content}>
+        {props.isForLightObjects ? (
+          <div className={classes.lightObjectPower}>
+            <div className={classes.lightObjectPower_top}>
+              <div className={classes.lightObjectPower_top_left}>
+                <p className={classes.lightObjectPower_top_text}>{translation['LIGHT_TIP_TEXT']}</p>
               </div>
-            ) : null}
-
-            <div>
-              <div></div>
-              {materialsArray ? <form className={classes.materials}>{materialsArray}</form> : null}
-              {props.isForLightObjects ? null : (
-                <div className={classes.top}>
-                  <div className={classes.prod_item_dop_btns_wr}>
-                    <Tooltip content={translation['BUTTON_COPY_MATERIAL']}>
-                      <div className={classes.prod_item_btn_copy} onClick={(e) => copyMaterial(e)}>
-                        <IconCopy size={18} color="#ffffff" />
-                      </div>
-                    </Tooltip>
-                  </div>
-
-                  {props.onlyColor ? null : (
-                    <div
-                      className={
-                        isInFavorites
-                          ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
-                          : classes.prod_item_fav_btn
-                      }
-                      onClick={updateFavorites}
-                    >
-                      <FavoriteStarIcon />
-                    </div>
-                  )}
-                  {isPreviewLoaded ? (
-                    <canvas
-                      ref={colorPrev}
-                      onMouseDown={props.onDragColor ? downOnPrevListener : null}
-                      width={!isCurrDeviceAPhone ? 271 : 168}
-                      height={!isCurrDeviceAPhone ? 120 : 80}
-                    ></canvas>
-                  ) : (
-                    <div className={classes.previewPreloader}>
-                      <div className={'preloader-cube'}></div>
-                    </div>
-                  )}
-                </div>
-              )}
-              <div className={classes.bottom}>
-                <div className={classes.color_picker_palette}>
-                  <canvas
-                    ref={palCanvas}
-                    onMouseLeave={palUpListener}
-                    onMouseUp={palUpListener}
-                    onMouseMove={palMoveListener}
-                    onMouseDown={palDownListener}
-                    className={classes.color_picker_canvas}
-                    width={!isCurrDeviceAPhone ? 200 : 140}
-                    height={!isCurrDeviceAPhone ? 150 : 80}
-                    style={{ borderRadius: 6 }}
-                  ></canvas>
-                  <div
-                    className={classes.color_picker_pointer}
-                    ref={palPointer}
-                    style={{ width: '12px', height: '12px' }}
-                  >
-                    <div
-                      className={classes.color_picker_pointer}
-                      style={{ width: '12px', height: '12px' }}
-                    ></div>
-                  </div>
-                </div>
-                <div className={classes.color_picker_slider}>
-                  <canvas
-                    ref={sliderCanvas}
-                    onMouseLeave={sliderUpListener}
-                    onMouseUp={sliderUpListener}
-                    onMouseMove={sliderMoveListener}
-                    onMouseDown={sliderDownListener}
-                    className={classes.color_picker_canvas}
-                    width={!isCurrDeviceAPhone ? 20 : 10}
-                    height={!isCurrDeviceAPhone ? 150 : 80}
-                  ></canvas>
-                  <div
-                    className={classes.color_picker_pointer}
-                    ref={sliderPointer}
-                    style={
-                      !isCurrDeviceAPhone
-                        ? { width: '28px', height: '8px', left: '-4px' }
-                        : { width: '18px', height: '8px', left: '-4px' }
-                    }
-                  >
-                    <div
-                      className={classes.color_picker_pointer}
-                      style={
-                        !isCurrDeviceAPhone
-                          ? { width: '28px', height: '8px' }
-                          : { width: '18px', height: '8px' }
-                      }
-                    ></div>
-                  </div>
-                </div>
+              <div className={classes.lightObjectPower_top_right}>
+                <ChangeSize
+                  mouseDown={mouseDown}
+                  changeValue={onColorPowerChange}
+                  type={'style_3'}
+                  value={lightPower}
+                  labelAfter={'%'}
+                />
               </div>
-              <div className={classes.color_picker_input_wr}>
-                <input
-                  type="text"
-                  name="color"
-                  onBlur={colorTextChangeListener}
-                  onFocus={colorTextFocusListener}
-                  className={classes.color_picker_input}
-                  ref={text}
-                ></input>
+            </div>
+            <div className={classes.lightObjectPower_center}>
+              <div className={classes.lightObjectPower_center_circle}>
+                <div
+                  className={classes.lightObjectPower_center_circle_background}
+                  style={{
+                    background: currentColor,
+                    width: (150 / 100) * lightPower + 'px',
+                    height: (150 / 100) * lightPower + 'px',
+                  }}
+                ></div>
+                <IconBulbFilled size={32} color="#2F2F2F" />
               </div>
             </div>
           </div>
-        </SimpleBar>
-      </div>
+        ) : null}
 
-      <div
-        className={classes.preloaderBlock}
-        style={preloaderStatus ? { opacity: 1 } : { opacity: 0, zIndex: -1 }}
-      >
-        <div className="preloader-cube"></div>
+        <div>
+          <div></div>
+          {materialsArray ? <form className={classes.materials}>{materialsArray}</form> : null}
+          {props.isForLightObjects ? null : (
+            <div className={classes.top}>
+              <div className={classes.prod_item_dop_btns_wr}>
+                <Tooltip content={translation['BUTTON_COPY_MATERIAL']}>
+                  <div className={classes.prod_item_btn_copy} onClick={(e) => copyMaterial(e)}>
+                    <IconCopy size={18} color="#ffffff" />
+                  </div>
+                </Tooltip>
+              </div>
+
+              {props.onlyColor ? null : (
+                <div
+                  className={
+                    isInFavorites
+                      ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
+                      : classes.prod_item_fav_btn
+                  }
+                  onClick={updateFavorites}
+                >
+                  <FavoriteStarIcon />
+                </div>
+              )}
+              {isPreviewLoaded ? (
+                <canvas
+                  ref={colorPrev}
+                  onMouseDown={props.onDragColor ? downOnPrevListener : null}
+                  width={!isCurrDeviceAPhone ? 271 : 168}
+                  height={!isCurrDeviceAPhone ? 120 : 80}
+                ></canvas>
+              ) : (
+                <div className={classes.previewPreloader}>
+                  <div className={'preloader-cube'}></div>
+                </div>
+              )}
+            </div>
+          )}
+          <div className={classes.bottom}>
+            <div className={classes.color_picker_palette}>
+              <canvas
+                ref={palCanvas}
+                onMouseLeave={palUpListener}
+                onMouseUp={palUpListener}
+                onMouseMove={palMoveListener}
+                onMouseDown={palDownListener}
+                className={classes.color_picker_canvas}
+                width={!isCurrDeviceAPhone ? 200 : 140}
+                height={!isCurrDeviceAPhone ? 150 : 80}
+                style={{ borderRadius: 6 }}
+              ></canvas>
+              <div
+                className={classes.color_picker_pointer}
+                ref={palPointer}
+                style={{ width: '12px', height: '12px' }}
+              >
+                <div
+                  className={classes.color_picker_pointer}
+                  style={{ width: '12px', height: '12px' }}
+                ></div>
+              </div>
+            </div>
+            <div className={classes.color_picker_slider}>
+              <canvas
+                ref={sliderCanvas}
+                onMouseLeave={sliderUpListener}
+                onMouseUp={sliderUpListener}
+                onMouseMove={sliderMoveListener}
+                onMouseDown={sliderDownListener}
+                className={classes.color_picker_canvas}
+                width={!isCurrDeviceAPhone ? 20 : 10}
+                height={!isCurrDeviceAPhone ? 150 : 80}
+              ></canvas>
+              <div
+                className={classes.color_picker_pointer}
+                ref={sliderPointer}
+                style={
+                  !isCurrDeviceAPhone
+                    ? { width: '28px', height: '8px', left: '-4px' }
+                    : { width: '18px', height: '8px', left: '-4px' }
+                }
+              >
+                <div
+                  className={classes.color_picker_pointer}
+                  style={
+                    !isCurrDeviceAPhone
+                      ? { width: '28px', height: '8px' }
+                      : { width: '18px', height: '8px' }
+                  }
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.color_picker_input_wr}>
+            <input
+              type="text"
+              name="color"
+              onBlur={colorTextChangeListener}
+              onFocus={colorTextFocusListener}
+              className={classes.color_picker_input}
+              ref={text}
+            ></input>
+          </div>
+        </div>
       </div>
-    </div>
+    </CatalogScreen>
   );
 };
 

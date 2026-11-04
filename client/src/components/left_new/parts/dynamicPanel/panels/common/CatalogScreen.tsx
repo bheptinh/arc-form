@@ -1,6 +1,6 @@
 import 'simplebar-react/dist/simplebar.min.css';
 
-import { ReactNode, useEffect, useState } from 'react';
+import { ComponentProps, ReactNode, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
@@ -11,13 +11,16 @@ import classes from './CatalogScreen.module.css';
 type Props = {
   // the top row, e.g. <CatalogScreen.Header />
   header: ReactNode;
+  // dims the content area, leaving the header usable
   isLoading?: boolean;
-  // the scrolled content, usually a TileGrid; without it the screen has no content area
+  // the scrolled content, usually a TileGrid; without it, and not loading, there is no content area
   children?: ReactNode;
+  // the SimpleBar, e.g. to save and restore the scroll position
+  scrollRef?: ComponentProps<typeof SimpleBar>['ref'];
 };
 
 /** A PanelStack screen with a header, a scrolled content area and a loading overlay. */
-export default function CatalogScreen({ header, isLoading, children }: Props) {
+export default function CatalogScreen({ header, isLoading, children, scrollRef }: Props) {
   const history = useSelector(selectActiveControlPanelModeData).history;
   // the history step's isAdded, read once, picks the side the screen slides in from
   const [isAdded] = useState<boolean>(() => history[history.length - 1]?.isAdded);
@@ -31,19 +34,19 @@ export default function CatalogScreen({ header, isLoading, children }: Props) {
       style={{ transform: `translateX(${slidIn ? '0%' : isAdded ? '100%' : '-100%'})` }}
     >
       {header}
-      {children != null && (
+      {(children != null || isLoading) && (
         <div className={classes.content}>
-          <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
+          <SimpleBar style={{ height: '100%' }} ref={scrollRef} autoHide={false} forceVisible="y">
             {children}
           </SimpleBar>
+          <div
+            className={classes.preloader}
+            style={isLoading ? { opacity: 1 } : { opacity: 0, zIndex: -1 }}
+          >
+            <div className="preloader-cube"></div>
+          </div>
         </div>
       )}
-      <div
-        className={classes.preloader}
-        style={isLoading ? { opacity: 1 } : { opacity: 0, zIndex: -1 }}
-      >
-        <div className="preloader-cube"></div>
-      </div>
     </div>
   );
 }

@@ -1,0 +1,35 @@
+.ownUploads {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.ownUploadsLine {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  background: var(--color-slate);
+}
+
+.ownUploadsLine:before {
+  left: 0;
+  width: 100%;
+  bottom: 100%;
+  height: 1px;
+  content: ' ';
+  position: absolute;
+  background: var(--color-white);
+}
+
+.ownUploadsLine:after {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: ' ';
+  position: absolute;
+  background: var(--color-white);
+}

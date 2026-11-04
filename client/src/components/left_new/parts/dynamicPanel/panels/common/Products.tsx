@@ -1,12 +1,6 @@
-import 'simplebar-react/dist/simplebar.min.css';
-
-import { IconPlus } from '@tabler/icons-react';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from 'simplebar-react';
 
-import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../initR2D';
 import { selectIsProjectBelongToLoggedUser } from '../../../../../../redux/features/common/commonSlice';
 import {
@@ -25,158 +19,9 @@ import {
 import { TileGrid } from '../../../../../../shared-components/TileGrid';
 import CatalogTile from '../../../../../../smart-components/catalog/catalog-tile';
 import Navigation from '../../navigation/Navigation';
-
-const useStyle = createUseStyles({
-  planner_catalog_cont: {
-    borderRight: '1px solid var(--color-border-light)',
-    background: 'var(--color-white)',
-    height: '100%',
-    display: 'grid',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    width: 309,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    '@media screen and (max-width: 950px)': {
-      width: 189,
-    },
-  },
-  catalog_wr: {
-    overflow: 'hidden',
-    height: '100%',
-    position: 'relative',
-    borderTop: '1px solid var(--color-border)',
-  },
-  prod_item_upload_btn_wr: {
-    height: '100%',
-    width: '100%',
-    position: 'relative',
-    zIndex: 1,
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  prod_item_upload_btn: {
-    width: '100%',
-    height: '56px',
-    display: 'flex',
-    alignItems: 'center',
-    padding: '0 15px',
-    fontSize: '16px',
-    cursor: 'pointer',
-    background: 'var(--color-white)',
-    position: 'relative',
-    borderBottom: '1px solid var(--color-border)',
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    fontFamily: 'RobotoCondensed-Regular',
-    zIndex: 1,
-    '&:after': {
-      top: '0',
-      left: '0',
-      width: '100%',
-      height: '29px',
-      content: '""',
-      zIndex: -1,
-      position: 'absolute',
-      background: 'linear-gradient(to bottom, var(--color-surface-subtle), transparent)',
-      transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    },
-    '&:hover': {
-      background: 'var(--color-accent-soft)',
-      '&:after': {
-        opacity: 0,
-      },
-    },
-    '@media screen and (max-width: 950px)': {
-      height: 25,
-      fontSize: '10px',
-    },
-  },
-  prod_item_upload_plashka: {
-    position: 'absolute',
-    top: 7,
-    right: 7,
-    color: 'var(--color-slate)',
-    textTransform: 'uppercase',
-    fontSize: 13,
-    background: 'var(--color-warning)',
-    padding: '3px 4px',
-    borderRadius: 3,
-    '@media screen and (max-width: 950px)': {
-      fontSize: 9,
-      top: 3,
-      right: 3,
-    },
-  },
-  prod_item_upload_btn_line: {
-    background: 'var(--color-slate)',
-    height: 1,
-    width: '100%',
-    position: 'relative',
-    '&:before': {
-      content: '" "',
-      bottom: '100%',
-      left: 0,
-      width: '100%',
-      height: 1,
-      background: 'var(--color-white)',
-      position: 'absolute',
-    },
-    '&:after': {
-      content: '" "',
-      top: '100%',
-      left: 0,
-      width: '100%',
-      height: 1,
-      background: 'var(--color-white)',
-      position: 'absolute',
-    },
-  },
-  prod_item_upload_btn_img: {
-    width: 25,
-    height: 25,
-    userSelect: 'none',
-    userDrag: 'none',
-    marginRight: 16,
-    '@media screen and (max-width: 950px)': {
-      width: 13,
-      height: 13,
-    },
-  },
-  preloaderBlock: {
-    background: 'rgba(0, 0, 0, .2)',
-    zIndex: 4,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    height: '100%',
-    width: '100%',
-    transition: 'all 1s cubic-bezier(0.19, 1, 0.22, 1)',
-  },
-  '@keyframes shake': {
-    '0%': { transform: 'rotate(0deg)' },
-    '25%': { transform: 'rotate(-5deg)' },
-    '50%': { transform: 'rotate(5deg)' },
-    '75%': { transform: 'rotate(-5deg)' },
-    '100%': { transform: 'rotate(0deg)' },
-  },
-
-  '@keyframes floatUp': {
-    '0%': {
-      transform: 'translateY(0) scale(0.8)',
-      opacity: 0.8,
-    },
-    '50%': {
-      transform: 'translateY(-100px) scale(1.2)',
-      opacity: 1,
-    },
-    '100%': {
-      transform: 'translateY(-250px) scale(0.5)',
-      opacity: 0,
-    },
-  },
-});
+import AddUploadButton from './AddUploadButton';
+import CatalogScreen from './CatalogScreen';
+import classes from './Products.module.css';
 
 const Products = (props) => {
   const dispatch = useDispatch();
@@ -186,14 +31,12 @@ const Products = (props) => {
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const isAdded = lastHistoryElem?.isAdded;
   const [savedScroll, setSavedScroll] = useState(lastHistoryElem?.lastSavedScroll);
 
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
 
   const isLogged = useSelector(selectIsLogged);
-  const translation = useTranslation();
 
   const [modelsListState, setModelsListState] = useState(null);
   const [customModelsListState, setCustomModelsListState] = useState(null);
@@ -201,21 +44,12 @@ const Products = (props) => {
   const [lastHistoryElemData, setLastHistoryElemData] = useState(null);
   const [preloaderStatus, setPreloaderStatus] = useState(true);
 
-  const [styleAnimation, setStyleAnimation] = useState(
-    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
-  );
-
   const userProjectActive = useSelector(selectUserProjectActive);
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
 
   let scrollTimer = -1;
-  const panelRef = useRef(null);
-
-  const mainDiv = useRef(null);
   const catalogMain = useRef(null);
-
-  const classes = useStyle();
 
   const onCustomModelAddMouseUp = (e) => {
     if (+lastHistoryElem.privateMaterialType == 2)
@@ -256,7 +90,6 @@ const Products = (props) => {
   };
 
   useEffect(() => {
-    setStyleAnimation({ transform: 'translateX(0%)' });
     activeControlPanel == 'decor' &&
       planner.apiScene.dispatchEvent(new Event(planner.apiScene.TIPS_UPLOAD_CUSTOM_MAT, {}));
     planner.scene.addEventListener(planner.scene.PRODUCTS_UPDATED, onProductsUpdated);
@@ -317,54 +150,32 @@ const Products = (props) => {
   }, []);
 
   return (
-    <div className={classes.planner_catalog_cont} style={styleAnimation} ref={panelRef}>
-      <Navigation
-        panelPreviewIcon={props.panelPreviewIcon}
-        breadcrumsTitle={props.breadcrumsTitle}
-      />
-
-      <div className={classes.catalog_wr} ref={mainDiv}>
-        <SimpleBar style={{ height: '100%' }} ref={catalogMain} autoHide={false} forceVisible="y">
-          <TileGrid size={dynamicPanelPreviewViewType}>
-            {customModelsListState && customModelsListState.length > 0 ? (
-              <div className={classes.prod_item_upload_btn_wr}>
-                {lastHistoryElem?.privateMaterialType ? (
-                  <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
-                    <IconPlus
-                      size={25}
-                      color="#2a3435"
-                      className={classes.prod_item_upload_btn_img}
-                    />
-
-                    {translation['TIPS_ADD_NEW_MODEL']}
-                  </div>
-                ) : null}
-
-                {customModelsListState}
-                {customModelsListState ? (
-                  <div className={classes.prod_item_upload_btn_line}></div>
-                ) : (
-                  ''
-                )}
-              </div>
-            ) : lastHistoryElem?.privateMaterialType ? (
-              <div className={classes.prod_item_upload_btn} onMouseUp={onCustomModelAddMouseUp}>
-                <IconPlus size={25} color="#2a3435" className={classes.prod_item_upload_btn_img} />
-                {translation['TIPS_ADD_NEW_MODEL']}
-              </div>
+    <CatalogScreen
+      header={
+        <Navigation
+          panelPreviewIcon={props.panelPreviewIcon}
+          breadcrumsTitle={props.breadcrumsTitle}
+        />
+      }
+      isLoading={preloaderStatus}
+      scrollRef={catalogMain}
+    >
+      <TileGrid size={dynamicPanelPreviewViewType}>
+        {customModelsListState && customModelsListState.length > 0 ? (
+          <div className={classes.ownUploads}>
+            {lastHistoryElem?.privateMaterialType ? (
+              <AddUploadButton onMouseUp={onCustomModelAddMouseUp} />
             ) : null}
-            {modelsListState}
-          </TileGrid>
-        </SimpleBar>
 
-        <div
-          className={classes.preloaderBlock}
-          style={preloaderStatus ? { opacity: 1 } : { opacity: 0, zIndex: -1 }}
-        >
-          <div className="preloader-cube"></div>
-        </div>
-      </div>
-    </div>
+            {customModelsListState}
+            {customModelsListState ? <div className={classes.ownUploadsLine}></div> : ''}
+          </div>
+        ) : lastHistoryElem?.privateMaterialType ? (
+          <AddUploadButton onMouseUp={onCustomModelAddMouseUp} />
+        ) : null}
+        {modelsListState}
+      </TileGrid>
+    </CatalogScreen>
   );
 };
 

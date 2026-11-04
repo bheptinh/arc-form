@@ -1,4 +1,3 @@
-import { IconPlus } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -9,8 +8,8 @@ import { setActivePopup } from '../../../../../../redux/features/popups/popupsSl
 import { TileGrid } from '../../../../../../shared-components/TileGrid';
 import CatalogTile from '../../../../../../smart-components/catalog/catalog-tile';
 import type { Product } from '../../../../../../smart-components/catalog/tile-parts';
+import AddUploadButton from '../common/AddUploadButton';
 import CatalogScreen from '../common/CatalogScreen';
-import classes from './UserUpload.module.css';
 
 const Main = () => {
   const dispatch = useDispatch();
@@ -58,14 +57,7 @@ const Main = () => {
     >
       {userUploadList ? (
         <TileGrid size={dynamicPanelPreviewViewType}>
-          <div
-            className={classes.addButton}
-            onMouseUp={onCustomModelAddMouseUp}
-            onClick={planner.toCenter}
-          >
-            <IconPlus size={25} color="#2a3435" className={classes.addIcon} />
-            {translation['TIPS_ADD_NEW_MODEL']}
-          </div>
+          <AddUploadButton onMouseUp={onCustomModelAddMouseUp} onClick={planner.toCenter} />
 
           {Array.isArray(userUploadList)
             ? userUploadList.map((elem) => <CatalogTile key={elem.id} product={elem} />)
