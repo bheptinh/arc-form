@@ -171,6 +171,8 @@ QuickPanels   — floating contextual action panels (positioned near selected ob
 ### Left Panel — `client/src/components/left_new/`
 `ControlPanel` holds named modes (furniture, decor, constructor, selectedModel, etc.). Each mode has a `history` array for back-navigation and `breadCrumbs` for display. `DynamicPanel` renders the active mode's content from `parts/dynamicPanel/panels/`.
 
+Each mode's panel is a stack of screens, one per history step, that slide over each other. `panels/common/PanelStack.tsx` owns that stack; a panel only passes `screens` (history type → component). `panels/common/CatalogScreen.tsx` is the screen shell: slide-in, `header` slot (`CatalogScreen.Header` for icon + title + view settings, `CatalogScreen.Settings` for the settings alone), scrolled content and the preloader. Favorites, search and uploads use both; the other panels still carry their own copy of the stack and shell and move over one by one.
+
 ### React Query — `client/src/api/`
 **@tanstack/react-query** manages all server state. Key files:
 - `queryClient.ts` — singleton `QueryClient`; imported directly by vendor JS and bridge modules
