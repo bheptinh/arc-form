@@ -4,17 +4,14 @@ import {
   IconHeart,
   IconLayoutCollage,
   IconPaint,
-  IconQuestionMark,
   IconSearch,
   IconUpload,
   IconWalk,
 } from '@tabler/icons-react';
-import cls from 'classnames';
-import { ReactNode, useEffect, useRef, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { useCatalogMaterials } from '../../../../api/catalog';
-import { useLanguages } from '../../../../api/hooks/useLanguages';
 import { useTranslation } from '../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../initR2D';
 import {
@@ -28,7 +25,6 @@ import {
   selectDynamicPanelStatus,
   updateDynamicPanelStatus,
 } from '../../../../redux/features/control/controlPanelSlice';
-import { setActivePopup } from '../../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../../redux/features/quickPanels/quickPanelsSlice';
 import { showTip } from '../../../../redux/features/tips/tipsSlice';
 import { selectIsLogged } from '../../../../redux/features/user/userSlice';
@@ -37,8 +33,9 @@ import {
   setActiveViewMode,
 } from '../../../../redux/features/viewMode/viewModeSlice';
 import IconButton from '../../../../shared-components/inputs/icon-button';
-import UserButton from './buttons/UserButton';
 import classes from './control-panel.module.css';
+import HelpMenu from './HelpMenu';
+import UserMenu from './UserMenu';
 
 type Mode =
   | 'furniture'
@@ -50,13 +47,7 @@ type Mode =
   | 'userUpload'
   | 'to2d3d';
 
-type MenuItem = { mode: Mode; label: string; icon: ReactNode; visible: boolean };
-
-const youTubeLinks: Record<string, string> = {
-  en: 'https://www.youtube.com/playlist?list=PLpksFTMOBAbtlpPja4fqttp-Qu2rE8hz9',
-  ru: 'https://www.youtube.com/playlist?list=PLpksFTMOBAbtlpPja4fqttp-Qu2rE8hz9',
-  ua: 'https://www.youtube.com/playlist?list=PLpksFTMOBAbsw6r7Jod8faobeiCj73tF4',
-};
+type RailItem = { mode: Mode; label: string; icon: ReactNode; visible: boolean };
 
 const ControlPanel = () => {
   const dispatch = useDispatch();
@@ -69,13 +60,9 @@ const ControlPanel = () => {
   const dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
   const isProjectOnlyView = useSelector(selectIsProjectOnlyView);
   const isProjectBelongToLoggedUser = useSelector(selectIsProjectBelongToLoggedUser);
-  const languages = useLanguages();
-  const currentLanguage = languages?.find((i) => i?.current == 1)?.code;
 
   const [favoritesList, setFavoritesList] = useState(user.data.favorites?.items || []);
   const [userUploadButtonStatus, setUserUploadButtonStatus] = useState(planner.getUserUpload());
-  const [helpOpen, setHelpOpen] = useState(false);
-  const helpTriggerRef = useRef<HTMLDivElement>(null);
 
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
@@ -139,23 +126,6 @@ const ControlPanel = () => {
       dispatch(updateDynamicPanelStatus(true));
   };
 
-  const onClickVideos = () => {
-    window.open(youTubeLinks[currentLanguage ?? 'en'] || youTubeLinks['en'], '_blank');
-  };
-
-  const onClickTips = () => {
-    dispatch(setActivePopup({ name: 'tipsPopup' }));
-  };
-
-  const onClickSupport = () => {
-    throw new Error('Support email is currently unavailable');
-    // window.location.href = 'mailto:support@roomtodo.com?subject=support:%20';
-  };
-
-  const onTouchStartHelp = (e: React.TouchEvent) => {
-    if (helpTriggerRef.current?.contains(e.target as Node)) setHelpOpen((open) => !open);
-  };
-
   useEffect(() => {
     const favoritesButtonEvent = () => setFavoritesList([...(user.data.favorites?.items || [])]);
     const userUploadButtonEvent = (e: { data: { status: boolean } }) =>
@@ -168,16 +138,7 @@ const ControlPanel = () => {
     };
   }, []);
 
-  // on touch screens any touch outside the trigger closes the help menu
-  useEffect(() => {
-    if (!helpOpen) return;
-    const close = (e: TouchEvent) =>
-      !helpTriggerRef.current?.contains(e.target as Node) && setHelpOpen(false);
-    document.addEventListener('touchstart', close);
-    return () => document.removeEventListener('touchstart', close);
-  }, [helpOpen]);
-
-  const sections: MenuItem[] = [
+  const sections: RailItem[] = [
     {
       mode: 'constructor',
       label: translation['MENU_BTN_TEXT_CONSTRUCTOR'],
@@ -210,7 +171,7 @@ const ControlPanel = () => {
     },
   ];
 
-  const tools: MenuItem[] = [
+  const tools: RailItem[] = [
     {
       mode: 'search',
       label: translation['SEARCH_PLACEHOLDER'],
@@ -231,7 +192,7 @@ const ControlPanel = () => {
     },
   ];
 
-  const renderButtons = (items: MenuItem[], className: string) =>
+  const renderButtons = (items: RailItem[], className: string) =>
     items
       .filter((item) => item.visible)
       .map(({ mode, label, icon }) => (
@@ -257,40 +218,8 @@ const ControlPanel = () => {
       </div>
 
       <div className={classes.bottom}>
-        <div
-          className={cls(classes.help, helpOpen && classes.helpOpen)}
-          onMouseEnter={() => setHelpOpen(true)}
-          onMouseLeave={() => setHelpOpen(false)}
-          onTouchStart={onTouchStartHelp}
-        >
-          <div className={classes.helpIcon} ref={helpTriggerRef}>
-            <IconQuestionMark size={20} />
-          </div>
-          <div className={classes.flyout}>
-            <div className={classes.link} onClick={onClickVideos}>
-              <div className={classes.linkIcon}>
-                <img src="/src_designer/images/menu_help_videos.svg" />
-              </div>
-              {translation['TEXT_HELP_VIDEOS']}
-            </div>
-            {!isCurrDeviceAPhone && (
-              <div className={classes.link} onClick={onClickTips}>
-                <div className={classes.linkIcon}>
-                  <img src="/src_designer/images/menu_help_hotkeys.svg" />
-                </div>
-                {translation['TEXT_HELP_HOT_KEYS']}
-              </div>
-            )}
-            <div className={classes.link} onClick={onClickSupport}>
-              <div className={classes.linkIcon}>
-                <img src="/src_designer/images/menu_help_contactsus.svg" />
-              </div>
-              {translation['TEXT_HELP_SUPPORT']}
-            </div>
-          </div>
-        </div>
-
-        <UserButton />
+        <HelpMenu />
+        <UserMenu />
       </div>
     </div>
   );

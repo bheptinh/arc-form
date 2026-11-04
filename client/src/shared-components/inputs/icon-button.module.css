@@ -29,7 +29,8 @@
   border-color: var(--color-slate);
 }
 
-.dark:hover {
+.dark:hover,
+.dark[data-state='open'] {
   color: var(--color-white);
   background: #4E5455;
   border-color: #4E5455;

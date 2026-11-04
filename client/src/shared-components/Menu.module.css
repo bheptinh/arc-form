@@ -1,0 +1,80 @@
+.menu {
+  outline: none;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+/* slides out from behind the trigger's edge */
+.menu[data-side='right'][data-state='open'] {
+  animation: slideIn 0.9s cubic-bezier(0.19,1,0.22,1);
+}
+
+.menu[data-side='right'][data-state='closed'] {
+  animation: slideOut 0.9s cubic-bezier(0.19,1,0.22,1);
+  pointer-events: none;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-102%);
+  }
+}
+
+@keyframes slideOut {
+  to {
+    transform: translateX(-102%);
+  }
+}
+
+.header {
+  color: var(--color-white);
+  cursor: default;
+  height: 37px;
+  display: flex;
+  font-size: 12px;
+  background: var(--color-slate);
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 15px;
+  padding-right: 13px;
+  border-bottom: 1px solid #555555;
+}
+
+.item {
+  color: var(--color-white);
+  cursor: pointer;
+  height: 34px;
+  display: flex;
+  outline: none;
+  font-size: 12px;
+  background: var(--color-slate);
+  transition: all 0.9s cubic-bezier(0.19,1,0.22,1);
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 12px;
+  padding-right: 13px;
+}
+
+.item[data-highlighted] {
+  background: #4E5455;
+}
+
+.icon {
+  width: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  .item {
+    font-size: 11px;
+  }
+}

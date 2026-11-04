@@ -22,6 +22,7 @@
   "type": "module",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1160.0",
+    "@radix-ui/react-dropdown-menu": "^2.2.1",
     "@radix-ui/react-tooltip": "^1.4.1",
     "@reduxjs/toolkit": "^2.12.0",
     "@tabler/icons-react": "^3.44.0",
