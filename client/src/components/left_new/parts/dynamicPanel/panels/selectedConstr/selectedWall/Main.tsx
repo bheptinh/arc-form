@@ -1,8 +1,7 @@
 import { IconHeart } from '@tabler/icons-react';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 import { planner, TR, user } from '../../../../../../../initR2D';
@@ -10,7 +9,6 @@ import {
   changeActiveControlPanelMode,
   controlPanelHistoryAdd,
   controlPanelUpdateBreadCrumbs,
-  selectActiveControlPanelModeData,
   updateAnimateFavoritesHideStatus,
   updateAnimateFavoritesShowStatus,
   updateControlPanelStatus,
@@ -24,71 +22,12 @@ import Checkbox from '../../../../../../../shared-components/inputs/checkbox';
 import BlueButton from '../../../components/BlueButton';
 import MaterialComponent from '../../../components/MaterialComponent';
 import PlinthComponent from '../../../components/PlinthComponent';
+import CatalogScreen from '../../common/CatalogScreen';
 
 const useStyle = createUseStyles({
-  planner_catalog_cont: {
-    borderRight: '1px solid var(--color-border-light)',
-    background: 'var(--color-white)',
-    height: '100%',
-    display: 'grid',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    width: 309,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    '@media screen and (max-width: 950px)': {
-      width: 189,
-    },
-  },
-  catalog_wr: {
-    overflow: 'hidden',
-    height: '100%',
-    position: 'relative',
-    borderTop: '1px solid var(--color-border)',
-  },
   planerWallsCont: {
     padding: '0 0 20px',
     width: 'calc(100% + 1px)',
-  },
-  catalog_top_wr: {
-    padding: '10px 10px 10px 10px',
-    '@media screen and (max-width: 950px)': {
-      padding: 5,
-    },
-  },
-  planerWallsTitleWr: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  planerWallsTitle: {
-    fontSize: 17,
-    color: 'var(--color-text)',
-    fontFamily: 'RobotoCondensed-Regular',
-    marginLeft: 10,
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-      marginLeft: 3,
-    },
-  },
-  catalog_top_selected_preview: {
-    width: '21px',
-    height: '16px',
-    position: 'relative',
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    flexShrink: 0,
-    '& img': {
-      top: '50%',
-      left: '0',
-      position: 'absolute',
-      maxWidth: '100%',
-      transform: 'translateY(-50%)',
-    },
-    '@media screen and (max-width: 950px)': {
-      height: 14,
-      width: 11,
-    },
   },
   planerWallsWrap: {},
   planerWallsCurentMatWr: {
@@ -258,16 +197,6 @@ const useStyle = createUseStyles({
       padding: '0 5px',
     },
   },
-  preloaderBlock: {
-    background: 'rgba(0, 0, 0, .2)',
-    zIndex: 9,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    height: '100%',
-    width: '100%',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-  },
 });
 
 const Main = (props) => {
@@ -277,10 +206,6 @@ const Main = (props) => {
 
   const translation = useTranslation();
   const metrics = useSelector(selectMetrics);
-  const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
-  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const isAdded = lastHistoryElem?.isAdded;
   const isLogged = useSelector(selectIsLogged);
   const currObj =
     planner.mih()._scene.currentView3DObject?.constructorElementData ||
@@ -314,9 +239,6 @@ const Main = (props) => {
   const [checkboxMolding, setCheckboxMolding] = useState(topPlinth?.exists);
   const [checkboxPlinth, setCheckboxPlinth] = useState(bottomPlinth?.exists);
   const [preloaderStatus, setPreloaderStatus] = useState(true);
-  const [styleAnimation, setStyleAnimation] = useState(
-    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
-  );
 
   const imgSrcTopPlinth = WC.plinthCreator?.getImgSrc(topPlinth?.shapeNum, topPlinth?.type);
   const imgSrcBottomPlinth = WC.plinthCreator?.getImgSrc(
@@ -461,7 +383,6 @@ const Main = (props) => {
   };
 
   useEffect(() => {
-    setStyleAnimation({ transform: 'translateX(0%)' });
     setPreloaderStatus(false);
     planner.scene.addEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
     return () =>
@@ -476,159 +397,147 @@ const Main = (props) => {
   }, [metrics]);
 
   return (
-    <div className={classes.planner_catalog_cont} style={styleAnimation}>
-      <div className={classes.catalog_top_wr}>
-        <div className={classes.planerWallsTitleWr}>
-          <div className={classes.catalog_top_selected_preview}>
-            <img src={props.panelPreviewIcon} />
+    <CatalogScreen
+      header={
+        <CatalogScreen.Header
+          icon={props.panelPreviewIcon}
+          title={translation['PANEL_TITLE_WALL']}
+          settings={false}
+        />
+      }
+      isLoading={preloaderStatus}
+    >
+      <div className={classes.planerWallsCont}>
+        <div className={classes.planerWallsWrap}>
+          <div className={classes.planerWallsCurentMatWr}>
+            <div
+              className={
+                isInFavorites
+                  ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
+                  : classes.prod_item_fav_btn
+              }
+              onClick={updateFavorites}
+            >
+              <IconHeart size={18} color="#464646" />
+            </div>
+
+            <div className={classes.planerWallsWrap_material}>
+              <MaterialComponent
+                customStyles={{ border: 'none' }}
+                addMaterial={addMaterialIdWall}
+                matId={materialIdWall}
+                materialsSource={{ type: 'bank', data: null }}
+                onCopyPaste={{
+                  copy: onCopyMaterial,
+                  paste: onPasteMaterial,
+                  index: 'wall',
+                  statusCopy: true,
+                }}
+                onClick={(e) => onClickPreview('wall')}
+                lock={false}
+              />
+            </div>
           </div>
-          <div className={classes.planerWallsTitle}>{translation['PANEL_TITLE_WALL']}</div>
-        </div>
-      </div>
-      <div className={classes.catalog_wr}>
-        <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
-          <div className={classes.planerWallsCont}>
-            <div className={classes.planerWallsWrap}>
-              <div className={classes.planerWallsCurentMatWr}>
-                <div
-                  className={
-                    isInFavorites
-                      ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
-                      : classes.prod_item_fav_btn
-                  }
-                  onClick={updateFavorites}
-                >
-                  <IconHeart size={18} color="#464646" />
-                </div>
 
-                <div className={classes.planerWallsWrap_material}>
-                  <MaterialComponent
-                    customStyles={{ border: 'none' }}
-                    addMaterial={addMaterialIdWall}
-                    matId={materialIdWall}
-                    materialsSource={{ type: 'bank', data: null }}
-                    onCopyPaste={{
-                      copy: onCopyMaterial,
-                      paste: onPasteMaterial,
-                      index: 'wall',
-                      statusCopy: true,
-                    }}
-                    onClick={(e) => onClickPreview('wall')}
-                    lock={false}
-                  />
-                </div>
-              </div>
+          <div className={classes.planer_walls_sizes_wr}>
+            <div className={classes.planerWallsAreaTitle}>
+              {translation['SELECTED_WALLS_AREA_TEXT']}
+            </div>
+            <div>{wallArea}</div>
+            <div className={classes.planerWallsAreaTitle}>
+              {translation['SELECTED_WALLS_HEIGHT_TEXT']}
+            </div>
+            <div>{wallHeight + ' ' + metrics.active}</div>
+            <div className={classes.planerWallsAreaTitle}>
+              {translation['SELECTED_WALLS_LENGTH_TEXT']}
+            </div>
+            <div>{wallLength + ' ' + metrics.active}</div>
+          </div>
 
-              <div className={classes.planer_walls_sizes_wr}>
-                <div className={classes.planerWallsAreaTitle}>
-                  {translation['SELECTED_WALLS_AREA_TEXT']}
-                </div>
-                <div>{wallArea}</div>
-                <div className={classes.planerWallsAreaTitle}>
-                  {translation['SELECTED_WALLS_HEIGHT_TEXT']}
-                </div>
-                <div>{wallHeight + ' ' + metrics.active}</div>
-                <div className={classes.planerWallsAreaTitle}>
-                  {translation['SELECTED_WALLS_LENGTH_TEXT']}
-                </div>
-                <div>{wallLength + ' ' + metrics.active}</div>
-              </div>
-
-              <div className={classes.divideWallWr}>
-                <div onClick={onClickWallSlice} className={classes.divideWall}>
-                  <img
-                    className={classes.divideWallImg}
-                    src={'/src_designer/images/icon_divide.svg'}
-                  />
-                  <div className={classes.divideWallText}>
-                    {currObj?.configData
-                      ? translation['TILE_CONFIG_EDIT']
-                      : translation['TILE_CONFIG_INIT']}
-                  </div>
-                </div>
-              </div>
-
-              <div className={classes.divide_wall_items}>
-                <div className={classes.divide_wall_item}>
-                  <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
-                    <PlinthComponent
-                      customStyles={{ border: 'none' }}
-                      onClick={(e) => onClickPlinthChange('molding')}
-                      src={imgSrcTopPlinth}
-                    />
-
-                    <MaterialComponent
-                      customStyles={{ border: 'none' }}
-                      addMaterial={addMaterialIdTop}
-                      materialsSource={{ type: 'bank', data: null }}
-                      matId={materialIdTop}
-                      onCopyPaste={{
-                        copy: onCopyMaterial,
-                        paste: onPasteMaterial,
-                        index: 'top',
-                        statusCopy: true,
-                      }}
-                      onClick={(e) => onClickPreview('top')}
-                    />
-                  </div>
-
-                  <div className={classes.divide_checkbox_wr}>
-                    <Checkbox
-                      name={'moldingVisible'}
-                      label={translation['TEXT_MOLDING']}
-                      onChange={changeMoldingVisible}
-                      checked={checkboxMolding}
-                    />
-                  </div>
-                </div>
-
-                <div className={classes.divide_wall_item}>
-                  <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
-                    <PlinthComponent
-                      customStyles={{ border: 'none' }}
-                      onClick={(e) => onClickPlinthChange('plinth')}
-                      src={imgSrcBottomPlinth}
-                    />
-
-                    <MaterialComponent
-                      customStyles={{ border: 'none' }}
-                      addMaterial={addMaterialIdBottom}
-                      materialsSource={{ type: 'bank', data: null }}
-                      matId={materialIdBottom}
-                      onCopyPaste={{
-                        copy: onCopyMaterial,
-                        paste: onPasteMaterial,
-                        index: 'bottom',
-                        statusCopy: true,
-                      }}
-                      onClick={(e) => onClickPreview('bottom')}
-                    />
-                  </div>
-                  <div className={classes.divide_checkbox_wr}>
-                    <Checkbox
-                      name={'plinthVisible'}
-                      label={translation['TEXT_PLINTH']}
-                      onChange={changePlinthVisible}
-                      checked={checkboxPlinth}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className={classes.divideWallBtnWrap}>
-                <BlueButton onClick={onApplyToAllRoom} label={translation['TEXT_APPLY_TO_ROOM']} />
+          <div className={classes.divideWallWr}>
+            <div onClick={onClickWallSlice} className={classes.divideWall}>
+              <img className={classes.divideWallImg} src={'/src_designer/images/icon_divide.svg'} />
+              <div className={classes.divideWallText}>
+                {currObj?.configData
+                  ? translation['TILE_CONFIG_EDIT']
+                  : translation['TILE_CONFIG_INIT']}
               </div>
             </div>
           </div>
-        </SimpleBar>
+
+          <div className={classes.divide_wall_items}>
+            <div className={classes.divide_wall_item}>
+              <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
+                <PlinthComponent
+                  customStyles={{ border: 'none' }}
+                  onClick={(e) => onClickPlinthChange('molding')}
+                  src={imgSrcTopPlinth}
+                />
+
+                <MaterialComponent
+                  customStyles={{ border: 'none' }}
+                  addMaterial={addMaterialIdTop}
+                  materialsSource={{ type: 'bank', data: null }}
+                  matId={materialIdTop}
+                  onCopyPaste={{
+                    copy: onCopyMaterial,
+                    paste: onPasteMaterial,
+                    index: 'top',
+                    statusCopy: true,
+                  }}
+                  onClick={(e) => onClickPreview('top')}
+                />
+              </div>
+
+              <div className={classes.divide_checkbox_wr}>
+                <Checkbox
+                  name={'moldingVisible'}
+                  label={translation['TEXT_MOLDING']}
+                  onChange={changeMoldingVisible}
+                  checked={checkboxMolding}
+                />
+              </div>
+            </div>
+
+            <div className={classes.divide_wall_item}>
+              <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
+                <PlinthComponent
+                  customStyles={{ border: 'none' }}
+                  onClick={(e) => onClickPlinthChange('plinth')}
+                  src={imgSrcBottomPlinth}
+                />
+
+                <MaterialComponent
+                  customStyles={{ border: 'none' }}
+                  addMaterial={addMaterialIdBottom}
+                  materialsSource={{ type: 'bank', data: null }}
+                  matId={materialIdBottom}
+                  onCopyPaste={{
+                    copy: onCopyMaterial,
+                    paste: onPasteMaterial,
+                    index: 'bottom',
+                    statusCopy: true,
+                  }}
+                  onClick={(e) => onClickPreview('bottom')}
+                />
+              </div>
+              <div className={classes.divide_checkbox_wr}>
+                <Checkbox
+                  name={'plinthVisible'}
+                  label={translation['TEXT_PLINTH']}
+                  onChange={changePlinthVisible}
+                  checked={checkboxPlinth}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className={classes.divideWallBtnWrap}>
+            <BlueButton onClick={onApplyToAllRoom} label={translation['TEXT_APPLY_TO_ROOM']} />
+          </div>
+        </div>
       </div>
-      <div
-        className={classes.preloaderBlock}
-        style={preloaderStatus ? { opacity: 1 } : { opacity: 0, zIndex: -1 }}
-      >
-        <div className={'preloader-cube'}></div>
-      </div>
-    </div>
+    </CatalogScreen>
   );
 };
 

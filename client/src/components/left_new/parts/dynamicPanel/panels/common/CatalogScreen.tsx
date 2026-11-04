@@ -51,8 +51,15 @@ export default function CatalogScreen({ header, isLoading, children, scrollRef }
   );
 }
 
+type HeaderProps = {
+  icon: string;
+  title: ReactNode;
+  // the view settings button; off for screens that aren't a catalog
+  settings?: boolean;
+};
+
 /** Icon, title and the view settings. */
-function CatalogScreenHeader({ icon, title }: { icon: string; title: string }) {
+function CatalogScreenHeader({ icon, title, settings = true }: HeaderProps) {
   return (
     <div className={classes.header}>
       <div className={classes.headerRow}>
@@ -62,7 +69,7 @@ function CatalogScreenHeader({ icon, title }: { icon: string; title: string }) {
           </div>
           <div className={classes.headerText}>{title}</div>
         </div>
-        <CatalogScreenSettings />
+        {settings && <CatalogScreenSettings />}
       </div>
     </div>
   );

@@ -1,14 +1,12 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from 'simplebar-react';
+import { useDispatch } from 'react-redux';
 
 import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../../initR2D';
 import {
   controlPanelHistoryAdd,
   controlPanelUpdateBreadCrumbs,
-  selectActiveControlPanelModeData,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
@@ -17,70 +15,10 @@ import ChangeSize from '../../../../../../common/ChangeSize';
 import BlueButton from '../../../components/BlueButton';
 import EditPlinthItem from '../../../components/EditPlinthItem';
 import MaterialComponent from '../../../components/MaterialComponent';
+import CatalogScreen from '../../common/CatalogScreen';
 
 const useStyle = createUseStyles({
-  planerWallsCont: {
-    borderRight: '1px solid var(--color-border-light)',
-    background: 'var(--color-white)',
-    height: '100%',
-    display: 'grid',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    width: 309,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    '@media screen and (max-width: 950px)': {
-      width: 189,
-    },
-  },
-  catalog_wr: {
-    overflow: 'hidden',
-    height: '100%',
-    position: 'relative',
-    background: 'var(--color-white)',
-    borderTop: '1px solid var(--color-border)',
-  },
   planerWallsWrap: {},
-  catalog_top_wr: {
-    padding: '10px 10px 10px 10px',
-    '@media screen and (max-width: 950px)': {
-      padding: 5,
-    },
-  },
-  planerPlintusTitleWr: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  planerPlintusTitle: {
-    fontSize: 17,
-    color: 'var(--color-text)',
-    fontFamily: 'RobotoCondensed-Regular',
-    marginLeft: 10,
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-      marginLeft: 5,
-    },
-  },
-  catalog_top_selected_preview: {
-    width: '21px',
-    height: '16px',
-    position: 'relative',
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    flexShrink: 0,
-    '& img': {
-      top: '50%',
-      left: '0',
-      position: 'absolute',
-      maxWidth: '100%',
-      transform: 'translateY(-50%)',
-    },
-    '@media screen and (max-width: 950px)': {
-      height: 14,
-      width: 11,
-    },
-  },
   planerWallsTitle: {
     fontSize: 13,
     textAlign: 'center',
@@ -219,11 +157,6 @@ const Main = (props) => {
   const classes = useStyle();
   const constructionData = props.constructionData;
 
-  const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
-  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const isAdded = lastHistoryElem?.isAdded;
-
   const translation = useTranslation();
 
   const dispatch = useDispatch();
@@ -234,9 +167,6 @@ const Main = (props) => {
   const [plinthDepth, setPlinthDepth] = useState(constructionData?.d);
 
   const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
-  const [styleAnimation, setStyleAnimation] = useState(
-    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
-  );
 
   const [previewMaterialId, setPreviewMaterialId] = useState(constructionData?.getMaterial());
   const [previewAddMaterialId, setPreviewAddMaterialId] = useState(
@@ -324,87 +254,80 @@ const Main = (props) => {
   };
 
   useEffect(() => {
-    const keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
     planner.scene.addEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
     return () => {
       planner.scene.removeEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
-      clearTimeout(keyTimeout);
     };
   }, []);
 
   return (
-    <div style={styleAnimation} className={classes.planerWallsCont}>
-      <div className={classes.catalog_top_wr}>
-        <div className={classes.planerPlintusTitleWr}>
-          <div className={classes.catalog_top_selected_preview}>
-            <img src={`${imgSrc}`} />
-          </div>
-          <div className={classes.planerPlintusTitle}>
-            {constructionData?.type == 'topPlinth'
+    <CatalogScreen
+      header={
+        <CatalogScreen.Header
+          icon={imgSrc}
+          title={
+            constructionData?.type == 'topPlinth'
               ? translation['TEXT_MOLDING']
-              : translation['PANEL_TITLE_PLINTUS']}
-          </div>
+              : translation['PANEL_TITLE_PLINTUS']
+          }
+          settings={false}
+        />
+      }
+    >
+      <div className={classes.planerWallsWrap}>
+        <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
+          <EditPlinthItem
+            customStyles={{ border: 'none' }}
+            onClick={onClickPlinthChange}
+            src={`${imgSrc}`}
+          />
+
+          <MaterialComponent
+            customStyles={{ border: 'none' }}
+            addMaterial={previewAddMaterialId}
+            materialsSource={{ type: 'bank', data: null }}
+            matId={previewMaterialId}
+            onCopyPaste={{ copy: onCopyMaterial, paste: onPasteMaterial }}
+          />
+        </div>
+
+        <div
+          className={classes.planerPlintusAreaTitle}
+        >{`${translation['LENGTH']} ${planner.units.valueToString(constructionData?.length)} ${R2D.DimensionSystem.getName()}`}</div>
+
+        <div className={classes.planerChangeSizes}>
+          <ChangeSize
+            mouseDown={mouseDown}
+            valueChangeType={'h'}
+            zeroNotAllowed={true}
+            changeValue={onChangeSize}
+            value={plinthHeight}
+            label={translation['HEIGHT']}
+          />
+          <ChangeSize
+            mouseDown={mouseDown}
+            valueChangeType={'d'}
+            zeroNotAllowed={true}
+            changeValue={onChangeSize}
+            value={plinthDepth}
+            label={translation['DEPTH']}
+          />
+        </div>
+
+        <div className={classes.divide_checkbox_wr}>
+          <Checkbox
+            name={'plinthVisible'}
+            onChange={changeMoldingVisible}
+            checked={checkBoxStatus}
+            label={translation['TEXT_SHOW']}
+          />
+        </div>
+
+        <div className={classes.divideWallBtnWrap}>
+          <BlueButton label={translation['TEXT_APPLY_TO_ROOM']} onClick={onApplyToAllRoom} />
         </div>
       </div>
-
-      <div style={styleAnimation} className={classes.catalog_wr}>
-        <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
-          <div className={classes.planerWallsWrap}>
-            <div className={classes.divideWallGrid + ' ' + classes.divideWallGridMany}>
-              <EditPlinthItem
-                customStyles={{ border: 'none' }}
-                onClick={onClickPlinthChange}
-                src={`${imgSrc}`}
-              />
-
-              <MaterialComponent
-                customStyles={{ border: 'none' }}
-                addMaterial={previewAddMaterialId}
-                materialsSource={{ type: 'bank', data: null }}
-                matId={previewMaterialId}
-                onCopyPaste={{ copy: onCopyMaterial, paste: onPasteMaterial }}
-              />
-            </div>
-
-            <div
-              className={classes.planerPlintusAreaTitle}
-            >{`${translation['LENGTH']} ${planner.units.valueToString(constructionData?.length)} ${R2D.DimensionSystem.getName()}`}</div>
-
-            <div className={classes.planerChangeSizes}>
-              <ChangeSize
-                mouseDown={mouseDown}
-                valueChangeType={'h'}
-                zeroNotAllowed={true}
-                changeValue={onChangeSize}
-                value={plinthHeight}
-                label={translation['HEIGHT']}
-              />
-              <ChangeSize
-                mouseDown={mouseDown}
-                valueChangeType={'d'}
-                zeroNotAllowed={true}
-                changeValue={onChangeSize}
-                value={plinthDepth}
-                label={translation['DEPTH']}
-              />
-            </div>
-
-            <div className={classes.divide_checkbox_wr}>
-              <Checkbox
-                name={'plinthVisible'}
-                onChange={changeMoldingVisible}
-                checked={checkBoxStatus}
-                label={translation['TEXT_SHOW']}
-              />
-            </div>
-
-            <div className={classes.divideWallBtnWrap}>
-              <BlueButton label={translation['TEXT_APPLY_TO_ROOM']} onClick={onApplyToAllRoom} />
-            </div>
-          </div>
-        </SimpleBar>
-      </div>
-    </div>
+    </CatalogScreen>
   );
 };
 

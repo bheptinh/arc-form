@@ -21,7 +21,7 @@ import CatalogTile from '../../../../../../smart-components/catalog/catalog-tile
 import Navigation from '../../navigation/Navigation';
 import AddUploadButton from './AddUploadButton';
 import CatalogScreen from './CatalogScreen';
-import classes from './Products.module.css';
+import OwnUploads from './OwnUploads';
 
 const Products = (props) => {
   const dispatch = useDispatch();
@@ -162,14 +162,11 @@ const Products = (props) => {
     >
       <TileGrid size={dynamicPanelPreviewViewType}>
         {customModelsListState && customModelsListState.length > 0 ? (
-          <div className={classes.ownUploads}>
-            {lastHistoryElem?.privateMaterialType ? (
-              <AddUploadButton onMouseUp={onCustomModelAddMouseUp} />
-            ) : null}
-
+          <OwnUploads
+            onAdd={lastHistoryElem?.privateMaterialType ? onCustomModelAddMouseUp : undefined}
+          >
             {customModelsListState}
-            {customModelsListState ? <div className={classes.ownUploadsLine}></div> : ''}
-          </div>
+          </OwnUploads>
         ) : lastHistoryElem?.privateMaterialType ? (
           <AddUploadButton onMouseUp={onCustomModelAddMouseUp} />
         ) : null}

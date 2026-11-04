@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
 import { planner, user } from '../../../../../../../initR2D';
@@ -15,71 +14,12 @@ import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/top
 import { selectIsLogged } from '../../../../../../../redux/features/user/userSlice';
 import FavoriteStarIcon from '../../../../../../common/FavoriteStarIcon';
 import MaterialComponent from '../../../components/MaterialComponent';
+import CatalogScreen from '../../common/CatalogScreen';
 
 const useStyle = createUseStyles({
-  planerWallsCont: {
-    borderRight: '1px solid var(--color-border-light)',
-    background: 'var(--color-white)',
-    height: '100%',
-    display: 'grid',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    width: 309,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    '@media screen and (max-width: 950px)': {
-      width: 189,
-    },
-  },
-  catalog_wr: {
-    overflow: 'hidden',
-    height: '100%',
-    position: 'relative',
-    borderTop: '1px solid var(--color-border)',
-  },
   planerWallsWrap: {
     height: '100%',
     background: 'var(--color-white)',
-  },
-  catalog_top_wr: {
-    padding: '10px 10px 10px 10px',
-    '@media screen and (max-width: 950px)': {
-      padding: 5,
-    },
-  },
-  planerCeilingTitleWr: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  planerCeilingTitle: {
-    fontSize: 17,
-    color: 'var(--color-text)',
-    fontFamily: 'RobotoCondensed-Regular',
-    marginLeft: 10,
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-      marginLeft: 3,
-    },
-  },
-  catalog_top_selected_preview: {
-    width: '21px',
-    height: '16px',
-    position: 'relative',
-    transition: 'all .9s cubic-bezier(.19,1,.22,1)',
-    flexShrink: 0,
-    '& img': {
-      top: '50%',
-      left: '0',
-      position: 'absolute',
-      maxWidth: '100%',
-      transform: 'translateY(-50%)',
-    },
-    '@media screen and (max-width: 950px)': {
-      height: 14,
-      width: 11,
-    },
   },
   planerCeilingAreaTitle: {
     color: 'var(--color-text)',
@@ -178,16 +118,6 @@ const useStyle = createUseStyles({
     fontWeight: 400,
     letterSpacing: '-0.39px',
   },
-  preloaderBlock: {
-    background: 'rgba(0, 0, 0, .2)',
-    zIndex: 9,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    height: '100%',
-    width: '100%',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-  },
 });
 
 const Main = (props) => {
@@ -197,8 +127,6 @@ const Main = (props) => {
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
-  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const isAdded = lastHistoryElem?.isAdded;
 
   const isLogged = useSelector(selectIsLogged);
 
@@ -216,10 +144,6 @@ const Main = (props) => {
   const [isInFavorites, setIsInFavorites] = useState(false);
 
   const [area, setArea] = useState('');
-
-  const [styleAnimation, setStyleAnimation] = useState(
-    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
-  );
 
   const onCopyMaterial = (id, addMaterial) =>
     R2D.CopyPaste.copyMaterial({
@@ -278,7 +202,6 @@ const Main = (props) => {
   };
 
   useEffect(() => {
-    const keyTimeout = setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 50);
     const id =
       R2D.scene.currentConstructorElementData?.addMaterialID ||
       R2D.scene.currentConstructorElementData?.materialID;
@@ -291,7 +214,6 @@ const Main = (props) => {
     planner.scene.addEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
     return () => {
       planner.scene.removeEventListener(planner.scene.CLEAR_MATERIALS, updateMaterialsEvent);
-      clearTimeout(keyTimeout);
     };
   }, []);
 
@@ -304,56 +226,46 @@ const Main = (props) => {
 
   return (
     previewMaterialId && (
-      <div className={classes.planerWallsCont} style={styleAnimation}>
-        <div className={classes.catalog_top_wr}>
-          <div className={classes.planerCeilingTitleWr}>
-            <div className={classes.catalog_top_selected_preview}>
-              <img src={props.panelPreviewIcon} />
+      <CatalogScreen
+        header={
+          <CatalogScreen.Header
+            icon={props.panelPreviewIcon}
+            title={translation[props.panelTitle]}
+            settings={false}
+          />
+        }
+        isLoading={preloaderStatus}
+      >
+        <div className={classes.planerWallsWrap}>
+          <div className={classes.planerWallsCurentMatWr}>
+            <div
+              className={
+                isInFavorites
+                  ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
+                  : classes.prod_item_fav_btn
+              }
+              onClick={updateFavorites}
+            >
+              <FavoriteStarIcon />
             </div>
-            <div className={classes.planerCeilingTitle}>{translation[props.panelTitle]}</div>
+            <MaterialComponent
+              customStyles={{ border: 0 }}
+              matId={previewMaterialId}
+              materialsSource={{ type: 'bank', data: null }}
+              addMaterial={previewAddMaterialId}
+              onCopyPaste={{
+                copy: onCopyMaterial,
+                paste: onPasteMaterial,
+                statusCopy: true,
+              }}
+              lock={false}
+            />
+          </div>
+          <div className={classes.planerCeilingAreaTitle}>
+            {translation['TEXT_CONSTRUCTION_ELEMENT_AREA'] + ' ' + area}
           </div>
         </div>
-
-        <div className={classes.catalog_wr}>
-          <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
-            <div className={classes.planerWallsWrap}>
-              <div className={classes.planerWallsCurentMatWr}>
-                <div
-                  className={
-                    isInFavorites
-                      ? classes.prod_item_fav_btn + ' ' + classes.prod_item_fav_btn_active
-                      : classes.prod_item_fav_btn
-                  }
-                  onClick={updateFavorites}
-                >
-                  <FavoriteStarIcon />
-                </div>
-                <MaterialComponent
-                  customStyles={{ border: 0 }}
-                  matId={previewMaterialId}
-                  materialsSource={{ type: 'bank', data: null }}
-                  addMaterial={previewAddMaterialId}
-                  onCopyPaste={{
-                    copy: onCopyMaterial,
-                    paste: onPasteMaterial,
-                    statusCopy: true,
-                  }}
-                  lock={false}
-                />
-              </div>
-              <div className={classes.planerCeilingAreaTitle}>
-                {translation['TEXT_CONSTRUCTION_ELEMENT_AREA'] + ' ' + area}
-              </div>
-            </div>
-          </SimpleBar>
-          <div
-            className={classes.preloaderBlock}
-            style={preloaderStatus ? { opacity: 1 } : { opacity: 0, zIndex: -1 }}
-          >
-            <div className={'preloader-cube'}></div>
-          </div>
-        </div>
-      </div>
+      </CatalogScreen>
     )
   );
 };

@@ -1,7 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+import { useMemo, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../../../../api/hooks/useTranslation';
 import { planner } from '../../../../../../initR2D';
@@ -15,67 +13,16 @@ import SelectTile from '../../../../../../smart-components/catalog/select-tile';
 import type { Product } from '../../../../../../smart-components/catalog/tile-parts';
 import ChangeSize from '../../../../../common/ChangeSize';
 import Navigation from '../../navigation/Navigation';
-
-const useStyle = createUseStyles({
-  planner_catalog_cont: {
-    borderRight: '1px solid var(--color-border-light)',
-    background: 'var(--color-white)',
-    height: '100%',
-    display: 'grid',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    width: 309,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    '@media screen and (max-width: 950px)': {
-      width: 189,
-    },
-  },
-  catalog_wr: {
-    height: '100%',
-    overflow: 'hidden',
-    position: 'relative',
-    borderTop: '1px solid var(--color-border)',
-  },
-  planerWallsInfo: {
-    padding: '20px 14px',
-    '@media screen and (max-width: 950px)': {
-      padding: 5,
-    },
-  },
-  planerWallsTitle: {
-    fontSize: 13,
-    textAlign: 'center',
-    marginBottom: 15,
-    color: '#505050',
-    '@media screen and (max-width: 950px)': {
-      fontSize: 11,
-      marginBottom: 5,
-    },
-  },
-  planerChangeSizes: {
-    display: 'grid',
-    justifyContent: 'flex-start',
-  },
-  planerWallsCurentMatWr: {
-    display: 'grid',
-    gridTemplateColumns: 100,
-    justifyContent: 'center',
-    marginBottom: 20,
-  },
-});
+import CatalogScreen from './CatalogScreen';
+import classes from './ChangePlinth.module.css';
 
 const ChangePlinth = (props) => {
-  const classes = useStyle();
   const translation = useTranslation();
   const dispatch = useDispatch();
   const dynamicPanelPreviewViewType = useSelector(selectDynamicPanelPreviewViewType);
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const isAdded = lastHistoryElem?.isAdded;
   const currentPlinthType = lastHistoryElem.data;
 
   let currObj = R2D.scene.currentView3DObject;
@@ -90,9 +37,6 @@ const ChangePlinth = (props) => {
   const [plinthDepth, setPlinthDepth] = useState(constructionData?.d);
 
   const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
-  const [styleAnimation, setStyleAnimation] = useState(
-    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
-  );
 
   const [activeShape, setActiveShape] = useState(constructionData?.shapeNum);
 
@@ -146,60 +90,53 @@ const ChangePlinth = (props) => {
     return WC.plinthCreator.getPlinthsList(curType);
   }, [currentPlinthType, constructionData?.type]);
 
-  useEffect(() => {
-    setStyleAnimation({ transform: 'translateX(0%)' });
-  }, []);
-
   return (
-    <div style={styleAnimation} className={classes.planner_catalog_cont}>
-      <Navigation
-        panelPreviewIcon={props.panelPreviewIcon}
-        breadcrumsTitle={props.breadcrumsTitle}
-        hideCategoryTree={props.hideCategoryTree}
-        closeButtonStatus={props.closeButtonStatus}
-      />
-      <div className={classes.catalog_wr}>
-        <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
-          <div className={classes.planerWallsWr}>
-            <div className={classes.planerWallsInfo}>
-              <div
-                className={classes.planerWallsTitle}
-              >{`${translation['LENGTH']} ${planner.units.valueToString(constructionData?.length)} ${R2D.DimensionSystem.getName()}`}</div>
+    <CatalogScreen
+      header={
+        <Navigation
+          panelPreviewIcon={props.panelPreviewIcon}
+          breadcrumsTitle={props.breadcrumsTitle}
+          hideCategoryTree={props.hideCategoryTree}
+          closeButtonStatus={props.closeButtonStatus}
+        />
+      }
+    >
+      <div className={classes.info}>
+        <div
+          className={classes.title}
+        >{`${translation['LENGTH']} ${planner.units.valueToString(constructionData?.length)} ${R2D.DimensionSystem.getName()}`}</div>
 
-              <div className={classes.planerChangeSizes}>
-                <ChangeSize
-                  mouseDown={mouseDown}
-                  valueChangeType={'h'}
-                  zeroNotAllowed={true}
-                  changeValue={onChangeSize}
-                  value={plinthHeight}
-                  label={translation['HEIGHT']}
-                />
-                <ChangeSize
-                  mouseDown={mouseDown}
-                  valueChangeType={'d'}
-                  zeroNotAllowed={true}
-                  changeValue={onChangeSize}
-                  value={plinthDepth}
-                  label={translation['DEPTH']}
-                />
-              </div>
-            </div>
-
-            <TileGrid size={dynamicPanelPreviewViewType}>
-              {plinthsList.map((elem: Product) => (
-                <SelectTile
-                  key={elem.id}
-                  product={elem}
-                  active={elem.id == activeShape}
-                  onSelect={() => onChangePlinthType(elem.id)}
-                />
-              ))}
-            </TileGrid>
-          </div>
-        </SimpleBar>
+        <div className={classes.sizes}>
+          <ChangeSize
+            mouseDown={mouseDown}
+            valueChangeType={'h'}
+            zeroNotAllowed={true}
+            changeValue={onChangeSize}
+            value={plinthHeight}
+            label={translation['HEIGHT']}
+          />
+          <ChangeSize
+            mouseDown={mouseDown}
+            valueChangeType={'d'}
+            zeroNotAllowed={true}
+            changeValue={onChangeSize}
+            value={plinthDepth}
+            label={translation['DEPTH']}
+          />
+        </div>
       </div>
-    </div>
+
+      <TileGrid size={dynamicPanelPreviewViewType}>
+        {plinthsList.map((elem: Product) => (
+          <SelectTile
+            key={elem.id}
+            product={elem}
+            active={elem.id == activeShape}
+            onSelect={() => onChangePlinthType(elem.id)}
+          />
+        ))}
+      </TileGrid>
+    </CatalogScreen>
   );
 };
 
