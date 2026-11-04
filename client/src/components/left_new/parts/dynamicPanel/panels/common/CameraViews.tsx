@@ -14,6 +14,7 @@ import {
 } from '../../../../../../redux/features/common/commonSlice';
 import { selectActiveControlPanelModeData } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
+import Button from '../../../../../../shared-components/inputs/button';
 import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
@@ -55,22 +56,6 @@ const useStyle = createUseStyles({
       fontWeight: 400,
       color: 'var(--color-text-muted)',
       marginBottom: 15,
-    },
-  },
-  plannerRender_button: {
-    color: 'var(--color-white)',
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    padding: '5px 9px',
-    fontSize: '14px',
-    background: 'var(--color-info)',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    alignItems: 'center',
-    borderRadius: '3px',
-    justifyContent: 'center',
-    '&:hover': {
-      background: '#5592d3',
     },
   },
   plannerRenderWrap_views_wr: {
@@ -357,9 +342,9 @@ const CameraViews = () => {
       <div className={classes.plannerRenderWrap} ref={mainWrap}>
         <div className={classes.plannerRenderWrap_top}>
           <h1>{translation['RENDER_CAMERA_VIEWS']}</h1>
-          <div className={classes.plannerRender_button} onClick={onSaveCameraView}>
+          <Button fullWidth onClick={onSaveCameraView}>
             {translation['RENDER_CAMERA_VIEWS_SAVE']}
-          </div>
+          </Button>
           <div className={classes.plannerRenderWrap_views}>{cameraViewsArray}</div>
         </div>
       </div>

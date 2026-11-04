@@ -34,6 +34,7 @@ import { setActivePopup } from '../../../../../../redux/features/popups/popupsSl
 import { saveLoggedStatus, setProfileData } from '../../../../../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../../../../../redux/features/viewMode/viewModeSlice';
 import ChangeSize from '../../../../../common/ChangeSize';
+import Button from '../../../../../../shared-components/inputs/button';
 
 const useStyle = createUseStyles({
   renderMakeCont: {
@@ -249,22 +250,6 @@ const useStyle = createUseStyles({
   startRenderIcon: {
     width: 36,
     marginRight: 7,
-  },
-  plannerRender_button: {
-    background: 'var(--color-info)',
-    color: 'var(--color-white)',
-    cursor: 'pointer',
-    height: '35px',
-    display: 'flex',
-    padding: '5px 9px',
-    fontSize: '14px',
-    transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
-    alignItems: 'center',
-    borderRadius: '3px',
-    justifyContent: 'center',
-    '&:hover': {
-      background: '#5592d3',
-    },
   },
   renderMake_button: {
     color: 'var(--color-slate)',
@@ -1115,9 +1100,9 @@ const Main = (props) => {
                   </div>
                 </div>
               </div>
-              <div className={classes.plannerRender_button} onClick={openCameraViews}>
+              <Button fullWidth onClick={openCameraViews}>
                 {translation['RENDER_CAMERA_VIEWS']}
-              </div>
+              </Button>
 
               <fieldset className={classes.choiseRenderWr}>
                 <div
