@@ -19,7 +19,7 @@ import {
   updateCategoryTreePanelStatus,
 } from '../../../redux/features/control/controlPanelSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
-import { Accordion } from '../../common/Accordion';
+import Accordion from '../../../shared-components/Accordion';
 
 const useStyle = createUseStyles({
   planner_catalog_cont: {
@@ -116,6 +116,19 @@ const useStyle = createUseStyles({
     pointerEvents: 'none',
     transform: 'rotate(-90deg)',
     transition: 'all .9s cubic-bezier(.19,1,.22,1)',
+  },
+  tree_dropdown_arrow_open: {
+    transform: 'rotate(0deg)',
+  },
+  // titles below the first level
+  tree_dropdown_nested: {
+    '& .tree_dropdown_title': {
+      fontSize: '13px',
+      color: 'var(--color-black)',
+      marginBottom: '0px',
+      whiteSpace: 'nowrap',
+      padding: '4.5px 0',
+    },
   },
   tree_dropdown_name: {
     paddingRight: '5px',
@@ -268,7 +281,7 @@ const CategoryTreePanel = (props) => {
       dataReactArray.push(
         <li key={Math.random}>
           <Accordion
-            customTitle={
+            header={({ open, setOpen }) => (
               <div
                 style={{ paddingLeft: `${dataHistory.length === 0 ? 0 : 11 * level}px` }}
                 className={
@@ -283,9 +296,14 @@ const CategoryTreePanel = (props) => {
                     : classes.tree_dropdown_title + ' ' + 'tree_dropdown_title ' + isOpened
                 }
               >
-                <div className={classes.tree_dropdown_arrow_wr} data-toggle="true">
+                <div className={classes.tree_dropdown_arrow_wr} onClick={() => setOpen(!open)}>
                   <img
-                    className={classes.tree_dropdown_arrow + ' ' + 'tree_dropdown_arrow'}
+                    className={
+                      classes.tree_dropdown_arrow +
+                      ' ' +
+                      'tree_dropdown_arrow' +
+                      (open ? ' ' + classes.tree_dropdown_arrow_open : '')
+                    }
                     src="/src_designer/images/arrow_down_tree.svg"
                   />
                 </div>
@@ -295,14 +313,16 @@ const CategoryTreePanel = (props) => {
                 ></div>
                 <div
                   className={classes.tree_dropdown_overlay}
-                  data-open="true"
-                  onClick={(e) => onUpdateCurrentDynamicPanelData(currentHistoryArray)}
+                  onClick={(e) => {
+                    onUpdateCurrentDynamicPanelData(currentHistoryArray);
+                    setOpen(true);
+                  }}
                 ></div>
               </div>
-            }
-            isOpened={isOpened}
+            )}
+            open={isOpened}
           >
-            <ul>
+            <ul className={classes.tree_dropdown_nested}>
               {data.nodes.map((i) =>
                 categoryDataProccessingFunction(
                   { ...i, parentId: data.id },

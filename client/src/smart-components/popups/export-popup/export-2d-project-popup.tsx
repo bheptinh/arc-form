@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import SimpleBar from 'simplebar-react';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import { Accordion } from '../../../components/common/Accordion';
+import Accordion from '../../../shared-components/Accordion';
 import { planner, user } from '../../../initR2D';
 import { closeActivePopup } from '../../../redux/features/popups/popupsSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';

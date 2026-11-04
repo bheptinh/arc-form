@@ -1,0 +1,36 @@
+.open .arrow {
+  transform: rotateX(180deg);
+}
+.open > .content {
+  transition: max-height 1.5s ease-out;
+}
+.arrow {
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.content {
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.header {
+  gap: 8px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: 4px 13px;
+  flex-wrap: nowrap;
+  font-size: 17px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+}
+.header:hover {
+  background: var(--color-surface-grey);
+}
+.title {
+  margin-right: auto;
+}
+.subTitle {
+  color: #73909f;
+  font-size: 12px;
+  font-weight: 400;
+}
