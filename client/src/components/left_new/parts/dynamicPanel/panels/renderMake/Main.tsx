@@ -407,7 +407,6 @@ const Main = (props) => {
   const [cameraIconMaxTopOffset, setCameraIconMaxTopOffset] = useState(null);
   const [activeFormat, setActiveFormat] = useState(3);
   const [preloadActive, setPreloadActive] = useState(false);
-  const [mouseDown, setMouseDown] = useState({ status: false, action: null });
   const [maxCameraHeight, setMaxCameraHeight] = useState(0);
 
   const renderBackground = useRef(null);
@@ -590,8 +589,7 @@ const Main = (props) => {
     document.addEventListener('mouseup', onStopMoveCameraIcon);
   };
 
-  const updateHeightValue = (mouseDown, value) => {
-    setMouseDown(mouseDown);
+  const updateHeightValue = (_, value) => {
     value = value < 1 ? 0 : value;
     const maxCameraHeightValue =
       maxCameraHeight < minCameraHeight ? minCameraHeight : maxCameraHeight;
@@ -603,8 +601,7 @@ const Main = (props) => {
     setCameraIconHeight(newCameraHeightValue);
   };
 
-  const updateCameraAngle = (mouseDown, value) => {
-    setMouseDown(mouseDown);
+  const updateCameraAngle = (_, value) => {
     value = value < minVerAngle ? minVerAngle : value;
     value = value > maxVerAngle ? maxVerAngle : value;
 
@@ -612,8 +609,7 @@ const Main = (props) => {
     setCameraVerAngle(+value);
   };
 
-  const updateFOVValue = (mouseDown, value) => {
-    setMouseDown(mouseDown);
+  const updateFOVValue = (_, value) => {
     value = value < minFOV ? minFOV : value;
     value = value > maxFOV ? maxFOV : value;
 
@@ -623,9 +619,7 @@ const Main = (props) => {
     }
   };
 
-  const updateClippingValue = (mouseDown, value) => {
-    setMouseDown(mouseDown);
-
+  const updateClippingValue = (_, value) => {
     value = value < minClipping ? minClipping : value;
     value = value > maxClipping ? maxClipping : value;
 
@@ -968,7 +962,6 @@ const Main = (props) => {
               <div className={classes.changeSizeWr}>
                 <div className={classes.changeSizeWrInputs}>
                   <ChangeSize
-                    mouseDown={mouseDown}
                     changeValue={updateHeightValue}
                     value={
                       cameraHeight && planner.units.getName() == 'cm'
@@ -981,7 +974,6 @@ const Main = (props) => {
                   />
                   {renderMakeState.type != 'topView' ? (
                     <ChangeSize
-                      mouseDown={mouseDown}
                       revertedSign={true}
                       changeValue={updateCameraAngle}
                       lessThenZero={true}
@@ -994,7 +986,6 @@ const Main = (props) => {
                   ) : null}
                   {
                     <ChangeSize
-                      mouseDown={mouseDown}
                       changeValue={updateFOVValue}
                       notConvertToCurrentMetric={true}
                       value={cameraFOV}
@@ -1006,7 +997,6 @@ const Main = (props) => {
                   }
                   {renderMakeState.type != 'topView' ? (
                     <ChangeSize
-                      mouseDown={mouseDown}
                       changeValue={updateClippingValue}
                       infoHover={translation['RENDER_ADVANCED_INFO_CLIPPING']}
                       value={clipping}

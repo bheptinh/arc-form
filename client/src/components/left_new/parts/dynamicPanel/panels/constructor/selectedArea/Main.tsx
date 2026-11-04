@@ -76,7 +76,6 @@ const Main = () => {
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
   const isAdded = lastHistoryElem?.isAdded;
 
-  const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
   const [checkboxStatus, setСheckboxStatus] = useState(
     !!planner.constr.stateSelectedArea()[0]?.getCeilingVisible()
   );
@@ -85,8 +84,7 @@ const Main = () => {
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
 
-  const onChangeHeight = (mouseDown, value, type) => {
-    setMouseDown({ ...mouseDown, type });
+  const onChangeHeight = (_, value, type) => {
     switch (type) {
       case 'segment':
         setWallSegmentHeight(planner.units.stringToValue(planner.units.valueToString(value)));
@@ -122,14 +120,12 @@ const Main = () => {
       <div className={classes.planerWallsWrap}>
         <div className={classes.planerChangeSizes}>
           <ChangeSize
-            mouseDown={mouseDown}
             valueChangeType={'segment'}
             changeValue={onChangeHeight}
             value={wallSegmentHeight}
             label={'Висота сегменту стіни'}
           />
           <ChangeSize
-            mouseDown={mouseDown}
             valueChangeType={'ceiling'}
             changeValue={onChangeHeight}
             value={ceilingHeight}

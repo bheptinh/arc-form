@@ -36,12 +36,9 @@ const ChangePlinth = (props) => {
   const [plinthHeight, setPlinthHeight] = useState(constructionData?.h);
   const [plinthDepth, setPlinthDepth] = useState(constructionData?.d);
 
-  const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
-
   const [activeShape, setActiveShape] = useState(constructionData?.shapeNum);
 
   const onChangeSize = (mouseDown, value, type) => {
-    setMouseDown({ ...mouseDown, type });
     constructionData[type] = value;
     constructionData.dispatchUpdate();
     planner.scene.rebuildAllPlinths();
@@ -108,7 +105,6 @@ const ChangePlinth = (props) => {
 
         <div className={classes.sizes}>
           <ChangeSize
-            mouseDown={mouseDown}
             valueChangeType={'h'}
             zeroNotAllowed={true}
             changeValue={onChangeSize}
@@ -116,7 +112,6 @@ const ChangePlinth = (props) => {
             label={translation['HEIGHT']}
           />
           <ChangeSize
-            mouseDown={mouseDown}
             valueChangeType={'d'}
             zeroNotAllowed={true}
             changeValue={onChangeSize}

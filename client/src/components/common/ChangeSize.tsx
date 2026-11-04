@@ -25,8 +25,6 @@ type Props = {
   zeroNotAllowed?: boolean;
   isFixedSize?: boolean;
   additionalStyles?: CSSProperties;
-  // no longer read: the arrows repeat on their own while held
-  mouseDown?: unknown;
 };
 
 /**

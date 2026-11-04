@@ -37,7 +37,6 @@ const Constructor_old = (props) => {
   const minWallsHeight = useSelector(selectMinWallsHeight);
   const maxWallsHeight = useSelector(selectMaxWallsHeight);
 
-  const [mouseDown, setMouseDown] = useState({ status: false, action: null });
   const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
@@ -74,7 +73,6 @@ const Constructor_old = (props) => {
   };
 
   const onChangeSize = (mouseDown, value) => {
-    setMouseDown({ ...mouseDown });
     if (!value || isNaN(value)) value = 0;
 
     if (value < minWallsHeight) {
@@ -129,7 +127,6 @@ const Constructor_old = (props) => {
           <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
             <div className={classes.planerWallsHeight} id="changerWallsHeight">
               <ChangeSize
-                mouseDown={mouseDown}
                 textAlign={'right'}
                 changeValue={onChangeSize}
                 value={wallsHeight}

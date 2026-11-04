@@ -206,8 +206,6 @@ const Main = (props) => {
 
   const [isMerged, setIsMerged] = useState(planner.scene.currentGroupIsMerged());
 
-  const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
-
   const ratioWvH = objectWidth / objectHeight;
   const ratioWvD = objectWidth / objectDepth;
 
@@ -263,7 +261,6 @@ const Main = (props) => {
   };
 
   const onChangeSize = (mouseDown, value, type) => {
-    setMouseDown({ ...mouseDown, type });
     switch (type) {
       case 'width':
         currentGroup.setWidth(value);
@@ -532,7 +529,6 @@ const Main = (props) => {
               <div className={classes.planerChangeSizes}>
                 <ChangeSize
                   isFixedSize={isFixedSize}
-                  mouseDown={mouseDown}
                   valueChangeType={'width'}
                   changeValue={onChangeSize}
                   value={objectWidth}
@@ -540,7 +536,6 @@ const Main = (props) => {
                 />
                 <ChangeSize
                   isFixedSize={isFixedSize}
-                  mouseDown={mouseDown}
                   valueChangeType={'height'}
                   changeValue={onChangeSize}
                   value={objectHeight}
@@ -548,14 +543,12 @@ const Main = (props) => {
                 />
                 <ChangeSize
                   isFixedSize={isFixedSize}
-                  mouseDown={mouseDown}
                   valueChangeType={'depth'}
                   changeValue={onChangeSize}
                   value={objectDepth}
                   label={translation['DEPTH']}
                 />
                 <ChangeSize
-                  mouseDown={mouseDown}
                   valueChangeType={'elevation'}
                   changeValue={onChangeSize}
                   value={objectElevation}

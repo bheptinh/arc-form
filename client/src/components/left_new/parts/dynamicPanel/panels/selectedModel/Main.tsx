@@ -632,8 +632,6 @@ const Main = (props) => {
     GEOM.toDeg(currObj?.object3d.rotation.z).toFixed(0)
   );
 
-  const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
-
   const [previewMaterials, setPreviewMaterials] = useState([]);
 
   const [previewMaterialsId, setPreviewMaterialsId] = useState(props.previewMaterialsId);
@@ -706,7 +704,6 @@ const Main = (props) => {
     if (!currObj) return;
     const isForWall = currObj.getForWall && currObj.getForWall();
 
-    setMouseDown({ ...mouseDown, type });
     switch (type) {
       case 'width':
         planner.scene.setCurrentModelWidth(value, lockState, mouseDown.status);
@@ -750,7 +747,6 @@ const Main = (props) => {
 
   const onChangeRotation = (mouseDown, value, type) => {
     if (!R2D.scene.currentView3DObject) return;
-    setMouseDown({ ...mouseDown, type });
     planner.scene.setCurrentObjectRotation(value, type, mouseDown.status);
 
     setObjectRotationX(GEOM.toDeg(R2D.scene.currentView3DObject?.object3d.rotation.x).toFixed(0));
@@ -1202,7 +1198,6 @@ const Main = (props) => {
             <div className={classes.plannerChangeSizesWrap}>
               <div className={classes.plannerChangeSizes}>
                 <ChangeSize
-                  mouseDown={mouseDown}
                   isFixedSize={isFixedSize}
                   valueChangeType={'width'}
                   changeValue={onChangeSize}
@@ -1210,7 +1205,6 @@ const Main = (props) => {
                   label={translation['WIDTH']}
                 />
                 <ChangeSize
-                  mouseDown={mouseDown}
                   isFixedSize={isFixedSize}
                   valueChangeType={'height'}
                   changeValue={onChangeSize}
@@ -1218,7 +1212,6 @@ const Main = (props) => {
                   label={translation['HEIGHT']}
                 />
                 <ChangeSize
-                  mouseDown={mouseDown}
                   isFixedSize={isFixedSize}
                   valueChangeType={'depth'}
                   changeValue={onChangeSize}
@@ -1226,7 +1219,6 @@ const Main = (props) => {
                   label={translation['DEPTH']}
                 />
                 <ChangeSize
-                  mouseDown={mouseDown}
                   valueChangeType={'elevation'}
                   changeValue={onChangeSize}
                   value={objectElevation}
@@ -1279,7 +1271,6 @@ const Main = (props) => {
                         <div className={classes.plannerChangeRotation_item}>
                           <div className={classes.plannerChangeRotation_axis_x}></div>
                           <ChangeSize
-                            mouseDown={mouseDown}
                             notConvertToCurrentMetric={true}
                             lessThenZero={true}
                             type={'style_2'}
@@ -1292,7 +1283,6 @@ const Main = (props) => {
                         <div className={classes.plannerChangeRotation_item}>
                           <div className={classes.plannerChangeRotation_axis_y}></div>
                           <ChangeSize
-                            mouseDown={mouseDown}
                             notConvertToCurrentMetric={true}
                             lessThenZero={true}
                             type={'style_2'}
@@ -1305,7 +1295,6 @@ const Main = (props) => {
                         <div className={classes.plannerChangeRotation_item}>
                           <div className={classes.plannerChangeRotation_axis_z}></div>
                           <ChangeSize
-                            mouseDown={mouseDown}
                             notConvertToCurrentMetric={true}
                             lessThenZero={true}
                             type={'style_2'}

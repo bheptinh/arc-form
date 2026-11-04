@@ -207,7 +207,6 @@ const LogoEditor = (props) => {
     ? R2D.URL.DOMAIN + currSceneObj.getObjectData().source.images.preview
     : '';
 
-  const [mouseDown, setMouseDown] = useState({ status: false, action: null, type: null });
   const [styleAnimation, setStyleAnimation] = useState(
     isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
   );
@@ -217,7 +216,6 @@ const LogoEditor = (props) => {
   const onChangeSize = (mouseDown, value, type) => {
     if (!currObj) return;
 
-    setMouseDown({ ...mouseDown, type });
     switch (type) {
       case 'width':
         currObj.logoEditor.setLogoWidth(activeMeshLogoHash, value, lockState);
@@ -347,14 +345,12 @@ const LogoEditor = (props) => {
               <div className={classes.plannerChangeSizes}>
                 <ChangeSize
                   additionalStyles={{ marginBottom: 10 }}
-                  mouseDown={mouseDown}
                   valueChangeType={'width'}
                   changeValue={onChangeSize}
                   value={objectWidth}
                   label={translation['WIDTH']}
                 />
                 <ChangeSize
-                  mouseDown={mouseDown}
                   valueChangeType={'height'}
                   changeValue={onChangeSize}
                   value={objectHeight}

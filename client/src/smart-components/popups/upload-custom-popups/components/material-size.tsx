@@ -27,14 +27,8 @@ export default function MaterialSize({
 }: Props) {
   const translation = useTranslation();
   const [name, setName] = useState(defaultName);
-  const [mouseDown, setMouseDown] = useState<{
-    status: boolean;
-    action: string | null;
-    type: 'w' | 'h' | null;
-  }>({ status: false, action: null, type: null });
 
-  const onSizeChange = (nextMouseDown: typeof mouseDown, value: number, side: 'w' | 'h') => {
-    setMouseDown({ ...nextMouseDown, type: side });
+  const onSizeChange = (_: unknown, value: number, side: 'w' | 'h') => {
     if (!value) return;
     if (side == 'w') changeSize(value, value / ratio);
     else changeSize(value * ratio, value);
@@ -49,7 +43,6 @@ export default function MaterialSize({
         onChange={(e) => setName(e.target.value)}
       />
       <ChangeSize
-        mouseDown={mouseDown}
         valueChangeType={'w'}
         zeroNotAllowed={true}
         changeValue={onSizeChange}
@@ -57,7 +50,6 @@ export default function MaterialSize({
         label={translation['WIDTH']}
       />
       <ChangeSize
-        mouseDown={mouseDown}
         valueChangeType={'h'}
         zeroNotAllowed={true}
         changeValue={onSizeChange}

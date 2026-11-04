@@ -321,7 +321,6 @@ const ColorPicker = (props) => {
   const [isPreviewLoaded, setIsPreviewLoaded] = useState(false);
   // the colour shown in the picker
   const [pickerColor, setPickerColor] = useState('#aaaaaa');
-  const [mouseDown, setMouseDown] = useState(false);
   const [prevContext, setPrevContext] = useState(null);
   const [lightPower, setLightPower] = useState(props.lightPowerValue);
   const [materialsArrayData, setMaterialsArrayData] = useState([]);
@@ -341,10 +340,9 @@ const ColorPicker = (props) => {
 
   const prevSize = 271;
 
-  const onColorPowerChange = (mouseDown, value, type) => {
+  const onColorPowerChange = (_, value) => {
     if (!R2D.scene.currentView3DObject) return;
     const newValue = R2D.scene.currentView3DObject.lightViewer.setLightPower(value);
-    setMouseDown({ ...mouseDown, type });
     setLightPower(newValue);
   };
 
@@ -419,8 +417,6 @@ const ColorPicker = (props) => {
       prevContext.fillRect(0, 0, prevSize, prevSize);
     }
   }
-
-  const mouseUpListener = () => setMouseDown(false);
 
   const onColorPicked = (hex) => {
     setPickerColor(hex);
@@ -620,13 +616,6 @@ const ColorPicker = (props) => {
   }, [selectedMaterialId, materialsArrayData]);
 
   useEffect(() => {
-    mouseDown
-      ? window.addEventListener('mouseup', mouseUpListener)
-      : window.removeEventListener('mouseup', mouseUpListener);
-    return () => window.removeEventListener('mouseup', mouseUpListener);
-  }, [mouseDown]);
-
-  useEffect(() => {
     setUserFavorites(user.data.favorites?.items || []);
   }, [isLogged]);
   useEffect(() => {
@@ -659,7 +648,6 @@ const ColorPicker = (props) => {
               </div>
               <div className={classes.lightObjectPower_top_right}>
                 <ChangeSize
-                  mouseDown={mouseDown}
                   changeValue={onColorPowerChange}
                   type={'style_3'}
                   value={lightPower}
