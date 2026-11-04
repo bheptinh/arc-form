@@ -1,4 +1,9 @@
-import { IconRosetteDiscountFilled, IconTrash } from '@tabler/icons-react';
+import {
+  IconHeart,
+  IconInfoHexagon,
+  IconRosetteDiscountFilled,
+  IconTrash,
+} from '@tabler/icons-react';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { AnimatePresence } from 'framer-motion';
 import type { MouseEvent, ReactNode, RefObject } from 'react';
@@ -8,9 +13,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { favoritesQueryOptions } from '../../api/favorites';
 import { useTranslation } from '../../api/hooks/useTranslation';
-import FavoriteStarIcon from '../../components/common/FavoriteStarIcon';
 import ModalMoreInfo from '../../components/common/ModalMoreInfo';
-import MoreInfoIcon from '../../components/common/MoreInfoIcon';
 import { planner, user } from '../../initR2D';
 import {
   selectDynamicPanelPreviewViewType,
@@ -111,7 +114,7 @@ export function FavoriteCorner({ product }: { product: Product }) {
           : dispatch(setActivePopup({ name: 'login' }))
       }
     >
-      <FavoriteStarIcon />
+      <IconHeart size={20} color="#464646" />
     </TileGrid.Corner>
   );
 }
@@ -202,7 +205,7 @@ export function MoreInfoCorner({ product }: { product: Product }) {
         onMouseEnter={() => setOpen(true)}
         onMouseLeave={() => setOpen(false)}
       >
-        <MoreInfoIcon />
+        <IconInfoHexagon size={24} color="#444" />
       </TileGrid.Corner>
       <AnimatePresence>
         {open ? <ModalMoreInfo productElemHover={product} key="moreInfo" /> : null}

@@ -45,6 +45,10 @@
   transition: all .9s cubic-bezier(.19,1,.22,1);
 }
 
+.moreInfo svg {
+  width: 100%;
+  height: 100%;
+}
 .moreInfo path {
   transition: all .9s cubic-bezier(.19,1,.22,1);
 }

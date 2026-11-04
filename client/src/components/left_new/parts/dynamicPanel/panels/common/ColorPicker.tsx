@@ -1,4 +1,4 @@
-import { IconBulbFilled, IconCopy } from '@tabler/icons-react';
+import { IconBulbFilled, IconCopy, IconHeart } from '@tabler/icons-react';
 import { useEffect, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -17,7 +17,6 @@ import { setActivePopup } from '../../../../../../redux/features/popups/popupsSl
 import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 import ChangeSize from '../../../../../common/ChangeSize';
-import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import SharedColorPicker from '../../../../../../shared-components/ColorPicker';
 import Tooltip from '../../../../../../shared-components/Tooltip';
 import Navigation from '../../navigation/Navigation';
@@ -693,7 +692,7 @@ const ColorPicker = (props) => {
                   }
                   onClick={updateFavorites}
                 >
-                  <FavoriteStarIcon />
+                  <IconHeart size={20} color="#464646" />
                 </div>
               )}
               {isPreviewLoaded ? (

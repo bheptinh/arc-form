@@ -1,3 +1,4 @@
+import { IconHeart } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,7 +13,6 @@ import {
 import { setActivePopup } from '../../../../../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import { selectIsLogged } from '../../../../../../../redux/features/user/userSlice';
-import FavoriteStarIcon from '../../../../../../common/FavoriteStarIcon';
 import MaterialComponent from '../../../components/MaterialComponent';
 import CatalogScreen from '../../common/CatalogScreen';
 
@@ -246,7 +246,7 @@ const Main = (props) => {
               }
               onClick={updateFavorites}
             >
-              <FavoriteStarIcon />
+              <IconHeart size={20} color="#464646" />
             </div>
             <MaterialComponent
               customStyles={{ border: 0 }}

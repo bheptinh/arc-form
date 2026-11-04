@@ -4,6 +4,7 @@ import {
   IconBulb,
   IconBulbFilled,
   IconExternalLink,
+  IconHeart,
   IconRosetteDiscountFilled,
 } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
@@ -30,7 +31,6 @@ import { hideQuickPanelVisible } from '../../../../../../redux/features/quickPan
 import { changeUndoRedo } from '../../../../../../redux/features/topPanel/topPanelSlice';
 import { selectIsLogged } from '../../../../../../redux/features/user/userSlice';
 import ChangeSize from '../../../../../common/ChangeSize';
-import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import LockSize from '../../../../../common/LockSize';
 import RemoteComponentMain from '../../../../../common/RemoteComponentMain';
 import Button from '../../../../../../shared-components/inputs/button';
@@ -1117,7 +1117,7 @@ const Main = (props) => {
                 }
                 onClick={updateFavorites}
               >
-                <FavoriteStarIcon />
+                <IconHeart size={20} color="#464646" />
               </div>
               {matchedLinkObject?.discount ? (
                 <div className={classes.prod_item_promocode_btn}>
