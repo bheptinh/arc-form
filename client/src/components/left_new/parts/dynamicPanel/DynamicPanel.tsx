@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+import cls from 'classnames';
+import { ReactNode } from 'react';
 import { useSelector } from 'react-redux';
 
 import { selectActiveControlPanelMode } from '../../../../redux/features/control/controlPanelSlice';
+import { useScreenStack } from './panels/common/PanelStack';
 import AlignDrawing from './panels/constructor/alignDrawing/AlignDrawing';
 import Constructor_old from './panels/constructor/Constructor_old';
 import SelectedArea from './panels/constructor/selectedArea/SelectedArea';
@@ -23,94 +24,40 @@ import UploadModel from './panels/uploadModel/UploadModel';
 import UserUpload from './panels/usersUploads/UserUpload';
 import Walk from './panels/walk/Walk';
 import WallSlice from './panels/wallSlice/WallSlice';
+import classes from './DynamicPanel.module.css';
 
-const useStyle = createUseStyles({
-  dynamicPanel: {
-    width: 310,
-    position: 'relative',
-    height: '100%',
-    '@media screen and (max-width: 950px)': {
-      width: 190,
-    },
-  },
-});
+const modes: Record<string, () => ReactNode> = {
+  furniture: () => <Furniture />,
+  decor: () => <Decor />,
+  constructor: () => <Constructor_old />,
+  walk: () => <Walk />,
+  selectedModel: () => <SelectedModel />,
+  selectedOtherConstrParts: () => <SelectedOtherConstrParts />,
+  selectedCover: () => <SelectedCover />,
+  selectedPlinth: () => <SelectedPlinth />,
+  selectedWall: () => <SelectedWall />,
+  favorites: () => <Favorites />,
+  search: () => <Search />,
+  selectedGroup: () => <SelectedGroup />,
+  replaceModel: () => <ReplaceModel />,
+  renderMake: () => <RenderMake />,
+  alignDrawing: () => <AlignDrawing />,
+  uploadModel: () => <UploadModel />,
+  wallSlice: () => <WallSlice />,
+  userUpload: () => <UserUpload />,
+  selectedCover_constr: () => <SelectedCover_constr />,
+  selectedArea: () => <SelectedArea />,
+};
 
-const DynamicPanel = (props) => {
+const DynamicPanel = () => {
   const controPanelActiveMode = useSelector(selectActiveControlPanelMode);
-  const [activeDynamicPanelComponents, setActiveDynamicPanelComponents] = useState([]);
 
-  let keyTimeoutClearActiveComponents;
-
-  const classes = useStyle();
-
-  useEffect(() => {
-    if (controPanelActiveMode) {
-      setActiveDynamicPanelComponents((prevState) => [
-        ...prevState,
-        controPanelActiveMode == 'furniture' ? (
-          <Furniture key={Math.random()} />
-        ) : controPanelActiveMode == 'decor' ? (
-          <Decor key={Math.random()} />
-        ) : controPanelActiveMode == 'constructor' ? (
-          <Constructor_old key={Math.random()} />
-        ) : controPanelActiveMode == 'walk' ? (
-          <Walk key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedModel' ? (
-          <SelectedModel key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedOtherConstrParts' ? (
-          <SelectedOtherConstrParts key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedCover' ? (
-          <SelectedCover key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedPlinth' ? (
-          <SelectedPlinth key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedWall' ? (
-          <SelectedWall key={Math.random()} />
-        ) : controPanelActiveMode == 'favorites' ? (
-          <Favorites key={Math.random()} />
-        ) : controPanelActiveMode == 'search' ? (
-          <Search key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedGroup' ? (
-          <SelectedGroup key={Math.random()} />
-        ) : controPanelActiveMode == 'replaceModel' ? (
-          <ReplaceModel key={Math.random()} />
-        ) : controPanelActiveMode == 'renderMake' ? (
-          <RenderMake key={Math.random()} />
-        ) : controPanelActiveMode == 'alignDrawing' ? (
-          <AlignDrawing key={Math.random()} />
-        ) : controPanelActiveMode == 'uploadModel' ? (
-          <UploadModel key={Math.random()} />
-        ) : controPanelActiveMode == 'wallSlice' ? (
-          <WallSlice key={Math.random()} />
-        ) : controPanelActiveMode == 'userUpload' ? (
-          <UserUpload key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedCover_constr' ? (
-          <SelectedCover_constr key={Math.random()} />
-        ) : controPanelActiveMode == 'selectedArea' ? (
-          <SelectedArea key={Math.random()} />
-        ) : null,
-      ]);
-    }
-  }, [controPanelActiveMode]);
-
-  useEffect(() => {
-    if (activeDynamicPanelComponents.length > 2)
-      setActiveDynamicPanelComponents((prevState) => [
-        prevState[prevState.length - 2],
-        prevState[prevState.length - 1],
-      ]);
-    else {
-      if (activeDynamicPanelComponents.length > 1)
-        setTimeout(
-          () => setActiveDynamicPanelComponents((prevState) => [prevState[prevState.length - 1]]),
-          600
-        );
-    }
-    return () => clearTimeout(keyTimeoutClearActiveComponents);
-  }, [activeDynamicPanelComponents]);
-
-  return (
-    <div className={classes.dynamicPanel + ' dynamicPanel'}>{activeDynamicPanelComponents}</div>
+  const { stack } = useScreenStack(
+    controPanelActiveMode,
+    controPanelActiveMode ? () => modes[controPanelActiveMode]?.() : undefined
   );
+
+  return <div className={cls(classes.dynamicPanel, 'dynamicPanel')}>{stack}</div>;
 };
 
 export default DynamicPanel;

@@ -1,32 +1,15 @@
-import React, { useEffect, useMemo, useState } from 'react';
-import { createUseStyles } from 'react-jss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useMemo } from 'react';
+import { useDispatch } from 'react-redux';
 
 import { planner } from '../../../../../../../initR2D';
-import { selectActiveControlPanelModeData } from '../../../../../../../redux/features/control/controlPanelSlice';
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import Catalog from '../../common/Catalog';
 import ColorPicker from '../../common/ColorPicker';
 import Materials from '../../common/Materials';
+import PanelStack from '../../common/PanelStack';
 import Main from './Main';
 
-const useStyle = createUseStyles({
-  selectedOtherConstrParts: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    width: 310,
-    height: '100%',
-    overflow: 'hidden',
-    zIndex: 1,
-    '@media screen and (max-width: 950px)': {
-      width: 190,
-    },
-  },
-});
-
 const SelectedOtherConstrParts = () => {
-  const classes = useStyle();
   const dispatch = useDispatch();
   const currObj = useMemo(
     () =>
@@ -34,14 +17,6 @@ const SelectedOtherConstrParts = () => {
       planner.mih()._scene.prevSelectedView3DObject?.constructorElementData,
     []
   );
-
-  const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  const controlPanelModeHistory = activeControlPanelData.history;
-  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const lastHistoryElemType = lastHistoryElem?.type;
-  let keyTimeoutClearActiveComponents;
-
-  const [activePanelComponents, setActivePanelComponents] = useState([]);
 
   const onMaterialSelect = (id, addMatId = '') => {
     if (!currObj) return;
@@ -69,70 +44,47 @@ const SelectedOtherConstrParts = () => {
   };
   const panelTitle = constrPartTitle[currObj.type];
 
-  useEffect(() => {
-    if (lastHistoryElemType) {
-      setActivePanelComponents((prevState) => [
-        ...prevState,
-        lastHistoryElemType == 'main' ? (
-          <Main panelTitle={panelTitle} key={Math.random()} panelPreviewIcon={panelPreviewIcon} />
-        ) : lastHistoryElemType == 'catalog' ? (
-          <Catalog
-            leafType="materials"
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            panelPreviewIcon={panelPreviewIcon}
-            isAddSettingsDisabled={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            breadCrumbsLongShow={true}
-          />
-        ) : lastHistoryElemType == 'materials' ? (
-          <Materials
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            panelPreviewIcon={panelPreviewIcon}
-            isAddSettingsDisabled={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            matId={currObj?.getMaterial()}
-            materialSelect={onMaterialSelect}
-            breadCrumbsLongShow={true}
-          />
-        ) : lastHistoryElemType == 'colorpicker' ? (
-          <ColorPicker
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            panelPreviewIcon={panelPreviewIcon}
-            key={Math.random()}
-            isAddSettingsDisabled={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            breadCrumbsLongShow={true}
-            addMaterial={currObj?.getAddMaterial()}
-            matId={currObj?.getMaterial()}
-            materialSelect={onMaterialSelect}
-          />
-        ) : null,
-      ]);
-    }
-  }, [controlPanelModeHistory.length]);
+  const screens = {
+    main: () => <Main panelTitle={panelTitle} panelPreviewIcon={panelPreviewIcon} />,
+    catalog: () => (
+      <Catalog
+        leafType="materials"
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        panelPreviewIcon={panelPreviewIcon}
+        isAddSettingsDisabled={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        breadCrumbsLongShow={true}
+      />
+    ),
+    materials: () => (
+      <Materials
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        panelPreviewIcon={panelPreviewIcon}
+        isAddSettingsDisabled={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        matId={currObj?.getMaterial()}
+        materialSelect={onMaterialSelect}
+        breadCrumbsLongShow={true}
+      />
+    ),
+    colorpicker: () => (
+      <ColorPicker
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        panelPreviewIcon={panelPreviewIcon}
+        isAddSettingsDisabled={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        breadCrumbsLongShow={true}
+        addMaterial={currObj?.getAddMaterial()}
+        matId={currObj?.getMaterial()}
+        materialSelect={onMaterialSelect}
+      />
+    ),
+  };
 
-  useEffect(() => {
-    if (activePanelComponents.length > 2)
-      setActivePanelComponents((prevState) => [
-        prevState[prevState.length - 2],
-        prevState[prevState.length - 1],
-      ]);
-    else {
-      if (activePanelComponents.length > 1)
-        keyTimeoutClearActiveComponents = setTimeout(
-          () => setActivePanelComponents((prevState) => [prevState[prevState.length - 1]]),
-          600
-        );
-    }
-    return () => clearTimeout(keyTimeoutClearActiveComponents);
-  }, [activePanelComponents]);
-
-  return <div className={classes.selectedOtherConstrParts}>{activePanelComponents}</div>;
+  return <PanelStack screens={screens} />;
 };
 
 export default SelectedOtherConstrParts;

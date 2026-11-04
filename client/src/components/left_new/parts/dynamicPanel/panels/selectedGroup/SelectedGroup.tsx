@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../../../../initR2D';
@@ -16,39 +15,20 @@ import CatalogMaterialsSets from '../common/CatalogMaterialsSets';
 import CatalogSet from '../common/CatalogSet';
 import ColorPicker from '../common/ColorPicker';
 import Materials from '../common/Materials';
+import PanelStack from '../common/PanelStack';
 import Main from './Main';
-
-const useStyle = createUseStyles({
-  selectedGroup: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    width: 311,
-    height: '100%',
-    overflow: 'hidden',
-    zIndex: 1,
-    borderLeft: '1px solid var(--color-border-faint)',
-    '@media screen and (max-width: 950px)': {
-      width: 190,
-    },
-  },
-});
 
 const SelectedGroup = () => {
   const dispatch = useDispatch();
-  const classes = useStyle();
 
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = activeControlPanelData.history;
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const lastHistoryElemType = lastHistoryElem?.type;
   const controlPanelData = useSelector(selectControlPanelData);
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
 
   const [activeMatId, setActiveMatId] = useState(null);
   const [activeAddMatId, setActiveAddMatId] = useState(null);
-  const [activePanelComponents, setActivePanelComponents] = useState([]);
-  let keyTimeoutClearActiveComponents;
 
   const onClickPreview = (matId, addMatId) => {
     setActiveMatId(matId);
@@ -126,119 +106,102 @@ const SelectedGroup = () => {
     return () => document.removeEventListener('keydown', onDelClick);
   }, []);
 
-  useEffect(() => {
-    if (lastHistoryElemType) {
-      const currentGroup =
-        planner.mih()._scene.currentGroup || planner.mih()._scene.prevSelectedView3DObject;
-      const currObjs = currentGroup
-        ?.getObjViews()
-        .map((i) => (i && typeof i.getSceneObject === 'function' ? i.getSceneObject() : null));
-      let newCurrentObjectsMaterialsIds, currObjectsMaterialsIds;
-      if (currObjs) {
-        newCurrentObjectsMaterialsIds = currObjs
-          .map((i) => i?.getMaterials && i.getMaterials())
-          .filter((i) => i)
-          .map((i) =>
-            i
-              .filter((z) => z.source == 'bank' || z.source == 'set')
-              .map((y) => {
-                return {
-                  id: y.current,
-                  addMaterial: y.addMaterial,
-                  hash: y.hash,
-                  source: y.source,
-                  setId: y.setId,
-                };
-              })
-          );
-        currObjectsMaterialsIds = newCurrentObjectsMaterialsIds.filter((i) => i.length > 0);
-      }
-      setActivePanelComponents((prevState) => [
-        ...prevState,
-        lastHistoryElemType == 'main' ? (
-          <Main
-            key={Math.random()}
-            onClickPreview={onClickPreview}
-            currentObjectsMaterialsIds={currObjectsMaterialsIds}
-          />
-        ) : lastHistoryElemType == 'catalog' ? (
-          <Catalog
-            leafType="materials"
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            hideCategoryTree={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            breadCrumbsLongShow={true}
-          />
-        ) : lastHistoryElemType == 'materials' ? (
-          <Materials
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            hideCategoryTree={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            materialSelect={onMaterialSelect}
-            matId={activeMatId}
-            breadCrumbsLongShow={true}
-          />
-        ) : lastHistoryElemType == 'colorpicker' ? (
-          <ColorPicker
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            isAddSettingsDisabled={true}
-            key={Math.random()}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            breadCrumbsLongShow={true}
-            addMaterial={activeAddMatId}
-            matId={activeMatId}
-            materialSelect={onMaterialSelect}
-          />
-        ) : lastHistoryElemType == 'catalogSets' ? (
-          <CatalogSet
-            breadCrumbsLongShow={true}
-            hideBreadCrumbsHomePanel={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            hideCategoryTree={true}
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            key={Math.random()}
-          />
-        ) : lastHistoryElemType == 'catalogMaterialsSets' ? (
-          <CatalogMaterialsSets
-            disableBreadcrumbs={!controlPanelModeHistory.find((i) => i.type == 'catalogSets')}
-            hideBreadCrumbsHomePanel={true}
-            breadCrumbsLongShow={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            hideCategoryTree={true}
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            materialSelect={onMaterialSelect}
-            matId={activeMatId}
-            key={Math.random()}
-          />
-        ) : null,
-      ]);
-    }
-  }, [controlPanelModeHistory.length]);
-
-  useEffect(() => {
-    if (activePanelComponents.length > 2)
-      setActivePanelComponents((prevState) => [
-        prevState[prevState.length - 2],
-        prevState[prevState.length - 1],
-      ]);
-    else {
-      if (activePanelComponents.length > 1)
-        keyTimeoutClearActiveComponents = setTimeout(
-          () => setActivePanelComponents((prevState) => [prevState[prevState.length - 1]]),
-          600
+  // the materials of the group's objects, read when the main screen opens
+  const getCurrentObjectsMaterialsIds = () => {
+    const currentGroup =
+      planner.mih()._scene.currentGroup || planner.mih()._scene.prevSelectedView3DObject;
+    const currObjs = currentGroup
+      ?.getObjViews()
+      .map((i) => (i && typeof i.getSceneObject === 'function' ? i.getSceneObject() : null));
+    let newCurrentObjectsMaterialsIds, currObjectsMaterialsIds;
+    if (currObjs) {
+      newCurrentObjectsMaterialsIds = currObjs
+        .map((i) => i?.getMaterials && i.getMaterials())
+        .filter((i) => i)
+        .map((i) =>
+          i
+            .filter((z) => z.source == 'bank' || z.source == 'set')
+            .map((y) => {
+              return {
+                id: y.current,
+                addMaterial: y.addMaterial,
+                hash: y.hash,
+                source: y.source,
+                setId: y.setId,
+              };
+            })
         );
+      currObjectsMaterialsIds = newCurrentObjectsMaterialsIds.filter((i) => i.length > 0);
     }
-    return () => clearTimeout(keyTimeoutClearActiveComponents);
-  }, [activePanelComponents]);
+    return currObjectsMaterialsIds;
+  };
 
-  return <div className={classes.selectedGroup}>{activePanelComponents}</div>;
+  const screens = {
+    main: () => (
+      <Main
+        onClickPreview={onClickPreview}
+        currentObjectsMaterialsIds={getCurrentObjectsMaterialsIds()}
+      />
+    ),
+    catalog: () => (
+      <Catalog
+        leafType="materials"
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        hideCategoryTree={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        breadCrumbsLongShow={true}
+      />
+    ),
+    materials: () => (
+      <Materials
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        hideCategoryTree={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        materialSelect={onMaterialSelect}
+        matId={activeMatId}
+        breadCrumbsLongShow={true}
+      />
+    ),
+    colorpicker: () => (
+      <ColorPicker
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        isAddSettingsDisabled={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        breadCrumbsLongShow={true}
+        addMaterial={activeAddMatId}
+        matId={activeMatId}
+        materialSelect={onMaterialSelect}
+      />
+    ),
+    catalogSets: () => (
+      <CatalogSet
+        breadCrumbsLongShow={true}
+        hideBreadCrumbsHomePanel={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        hideCategoryTree={true}
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+      />
+    ),
+    catalogMaterialsSets: () => (
+      <CatalogMaterialsSets
+        disableBreadcrumbs={!controlPanelModeHistory.find((i) => i.type == 'catalogSets')}
+        hideBreadCrumbsHomePanel={true}
+        breadCrumbsLongShow={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        hideCategoryTree={true}
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        materialSelect={onMaterialSelect}
+        matId={activeMatId}
+      />
+    ),
+  };
+
+  return <PanelStack screens={screens} />;
 };
 
 export default SelectedGroup;

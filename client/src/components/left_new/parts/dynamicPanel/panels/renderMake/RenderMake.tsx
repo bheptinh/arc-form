@@ -1,7 +1,6 @@
 import { IconVideo, IconX } from '@tabler/icons-react';
-import cls from 'classnames';
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -17,7 +16,6 @@ import {
 import {
   changeActiveControlPanelMode,
   selectActiveControlPanelMode,
-  selectActiveControlPanelModeData,
   selectControlPanelData,
   selectPrevControlPanelMode,
   updateControlPanelStatus,
@@ -27,21 +25,13 @@ import { selectActiveViewMode } from '../../../../../../redux/features/viewMode/
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 import CameraViews from '../common/CameraViews';
 import ColorPicker from '../common/ColorPicker';
+import PanelStack from '../common/PanelStack';
 import Panorams from '../walk/components/Panorams';
 import Main from './Main';
 
 const useStyle = createUseStyles({
   '@global .dynamicPanelHideBtn': {
     display: 'none',
-  },
-  renderMake: {
-    height: '100%',
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    width: 310,
-    overflow: 'hidden',
-    zIndex: 1,
   },
   plannerRenderViewTypes_types: {
     display: 'flex',
@@ -155,19 +145,12 @@ const RenderMake = () => {
   const activeViewMode = useSelector(selectActiveViewMode);
   const renderMakeState = useSelector(selectRenderMakeState);
   const activePano = useSelector(selectActivePano);
-  const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  const controlPanelModeHistory = activeControlPanelData.history;
-  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const lastHistoryElemType = lastHistoryElem?.type;
-  let keyTimeoutClearActiveComponents;
 
   const controlPanelData = useSelector(selectControlPanelData);
 
   const controPanelActiveMode = useSelector(selectActiveControlPanelMode);
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
   const renderViewTypes = useRef(null);
-
-  const [activePanelComponents, setActivePanelComponents] = useState([]);
 
   const onColorSelect = async (color) => {
     await R2D.scene.setSkyboxMat(color);
@@ -350,50 +333,26 @@ const RenderMake = () => {
     window.open(youTubeLinks[currentLanguage] || youTubeLinks['en'], '_blank');
   };
 
-  useEffect(() => {
-    if (lastHistoryElemType) {
-      setActivePanelComponents((prevState) => [
-        ...prevState,
-        lastHistoryElemType == 'main' ? (
-          <Main key={Math.random()} />
-        ) : lastHistoryElemType == 'changePano' ? (
-          <Panorams
-            disableBreadcrumbs={true}
-            key={Math.random()}
-            preloader={setPreloader}
-            renderType={renderMakeState.type}
-            isAddSettingsDisabled={true}
-          />
-        ) : lastHistoryElemType == 'colorpicker' ? (
-          <ColorPicker
-            key={Math.random()}
-            materialSelect={onColorSelect}
-            matId={R2D.scene.skyboxId}
-            onlyColor={true}
-            isAddSettingsDisabled={true}
-          />
-        ) : lastHistoryElemType == 'cameraViews' ? (
-          <CameraViews key={Math.random()} />
-        ) : null,
-      ]);
-    }
-  }, [controlPanelModeHistory.length]);
-
-  useEffect(() => {
-    if (activePanelComponents.length > 2)
-      setActivePanelComponents((prevState) => [
-        prevState[prevState.length - 2],
-        prevState[prevState.length - 1],
-      ]);
-    else {
-      if (activePanelComponents.length > 1)
-        keyTimeoutClearActiveComponents = setTimeout(
-          () => setActivePanelComponents((prevState) => [prevState[prevState.length - 1]]),
-          600
-        );
-    }
-    return () => clearTimeout(keyTimeoutClearActiveComponents);
-  }, [activePanelComponents]);
+  const screens = {
+    main: () => <Main />,
+    changePano: () => (
+      <Panorams
+        disableBreadcrumbs={true}
+        preloader={setPreloader}
+        renderType={renderMakeState.type}
+        isAddSettingsDisabled={true}
+      />
+    ),
+    colorpicker: () => (
+      <ColorPicker
+        materialSelect={onColorSelect}
+        matId={R2D.scene.skyboxId}
+        onlyColor={true}
+        isAddSettingsDisabled={true}
+      />
+    ),
+    cameraViews: () => <CameraViews />,
+  };
 
   useEffectAsync(async () => {
     if (renderMakeState.fromApply) return;
@@ -467,7 +426,7 @@ const RenderMake = () => {
 
   return (
     <div>
-      <div className={cls(classes.renderMake, 'renderMake')}>{activePanelComponents}</div>
+      <PanelStack screens={screens} className="renderMake" />
       {controPanelActiveMode == 'renderMake' && (
         <div>
           <div className={classes.planner_popup_close} onClick={onRenderClose}>

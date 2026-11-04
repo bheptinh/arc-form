@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../../../../../initR2D';
@@ -9,31 +8,14 @@ import Catalog from '../../common/Catalog';
 import ChangePlinth from '../../common/ChangePlinth';
 import ColorPicker from '../../common/ColorPicker';
 import Materials from '../../common/Materials';
+import PanelStack from '../../common/PanelStack';
 import Main from './Main';
-
-const useStyle = createUseStyles({
-  selectedWall: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    width: 310,
-    height: '100%',
-    zIndex: 1,
-    overflow: 'hidden',
-    '@media screen and (max-width: 950px)': {
-      width: 190,
-    },
-  },
-});
 
 const SelectedWall = () => {
   const dispatch = useDispatch();
-  const classes = useStyle();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = activeControlPanelData.history;
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const lastHistoryElemType = lastHistoryElem?.type;
-  let keyTimeoutClearActiveComponents, keyTimeoutOverflow;
   const currObj =
     planner.mih()._scene.currentView3DObject || planner.mih()._scene.prevSelectedView3DObject;
   const constructionData =
@@ -41,9 +23,6 @@ const SelectedWall = () => {
 
   const topPlinth = constructionData ? constructionData.topPlinth : null;
   const bottomPlinth = constructionData ? constructionData.bottomPlinth : null;
-
-  const [activePanelComponents, setActivePanelComponents] = useState([]);
-  const [needToOverflowHidden, setNeedToOverflowHidden] = useState(true);
 
   const [selectedType, setSelectedType] = useState(null);
 
@@ -119,93 +98,56 @@ const SelectedWall = () => {
         ? imgSrcBottomPlinth
         : panelPreviewIcon;
 
-  useEffect(() => {
-    if (lastHistoryElemType) {
-      setActivePanelComponents((prevState) => [
-        ...prevState,
-        lastHistoryElemType == 'main' ? (
-          <Main
-            panelPreviewIcon={panelPreviewIcon}
-            key={Math.random()}
-            onChangeSelectedType={onChangeSelectedType}
-          />
-        ) : lastHistoryElemType == 'changePlinth' ? (
-          <ChangePlinth
-            breadcrumsTitle={panelmoldingOrPlinthTitle}
-            panelPreviewIcon={panelMoldingOrPlinthPreviewIcon}
-            closeButtonStatus={true}
-            key={Math.random()}
-          />
-        ) : lastHistoryElemType == 'catalog' ? (
-          <Catalog
-            leafType="materials"
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            panelPreviewIcon={dynamicPanelPreviewIcon}
-            hideCategoryTree={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            breadCrumbsLongShow={true}
-          />
-        ) : lastHistoryElemType == 'materials' ? (
-          <Materials
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            panelPreviewIcon={dynamicPanelPreviewIcon}
-            hideCategoryTree={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            materialSelect={onSelectMaterial}
-            matId={getSelectedId()}
-            breadCrumbsLongShow={true}
-          />
-        ) : lastHistoryElemType == 'colorpicker' ? (
-          <ColorPicker
-            breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
-            panelPreviewIcon={dynamicPanelPreviewIcon}
-            key={Math.random()}
-            isAddSettingsDisabled={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            breadCrumbsLongShow={true}
-            addMaterial={getSelectedAddMatId()}
-            matId={getSelectedId()}
-            materialSelect={onSelectMaterial}
-          />
-        ) : null,
-      ]);
-    }
-  }, [controlPanelModeHistory.length]);
+  const screens = {
+    main: () => (
+      <Main panelPreviewIcon={panelPreviewIcon} onChangeSelectedType={onChangeSelectedType} />
+    ),
+    changePlinth: () => (
+      <ChangePlinth
+        breadcrumsTitle={panelmoldingOrPlinthTitle}
+        panelPreviewIcon={panelMoldingOrPlinthPreviewIcon}
+        closeButtonStatus={true}
+      />
+    ),
+    catalog: () => (
+      <Catalog
+        leafType="materials"
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        panelPreviewIcon={dynamicPanelPreviewIcon}
+        hideCategoryTree={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        breadCrumbsLongShow={true}
+      />
+    ),
+    materials: () => (
+      <Materials
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        panelPreviewIcon={dynamicPanelPreviewIcon}
+        hideCategoryTree={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        materialSelect={onSelectMaterial}
+        matId={getSelectedId()}
+        breadCrumbsLongShow={true}
+      />
+    ),
+    colorpicker: () => (
+      <ColorPicker
+        breadcrumsTitle={'MENU_BTN_TEXT_DECOR'}
+        panelPreviewIcon={dynamicPanelPreviewIcon}
+        isAddSettingsDisabled={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        breadCrumbsLongShow={true}
+        addMaterial={getSelectedAddMatId()}
+        matId={getSelectedId()}
+        materialSelect={onSelectMaterial}
+      />
+    ),
+  };
 
-  useEffect(() => {
-    setNeedToOverflowHidden(true);
-    if (activePanelComponents.length > 2)
-      setActivePanelComponents((prevState) => [
-        prevState[prevState.length - 2],
-        prevState[prevState.length - 1],
-      ]);
-    else {
-      if (activePanelComponents.length > 1)
-        keyTimeoutClearActiveComponents = setTimeout(
-          () => setActivePanelComponents((prevState) => [prevState[prevState.length - 1]]),
-          600
-        );
-      else keyTimeoutOverflow = setTimeout(() => setNeedToOverflowHidden(false), 600);
-    }
-    return () => {
-      clearTimeout(keyTimeoutClearActiveComponents);
-      clearTimeout(keyTimeoutOverflow);
-    };
-  }, [activePanelComponents]);
-
-  return (
-    <div
-      className={classes.selectedWall}
-      style={needToOverflowHidden ? { overflow: 'hidden' } : null}
-    >
-      {activePanelComponents}
-    </div>
-  );
+  return <PanelStack screens={screens} />;
 };
 
 export default SelectedWall;

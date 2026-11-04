@@ -1,0 +1,11 @@
+.dynamicPanel {
+  width: 310px;
+  height: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 950px) {
+  .dynamicPanel {
+    width: 190px;
+  }
+}

@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../../../../initR2D';
@@ -17,40 +16,19 @@ import { showQuickPanelVisible } from '../../../../../../redux/features/quickPan
 import Catalog from '../common/Catalog';
 import ColorPicker from '../common/ColorPicker';
 import Materials from '../common/Materials';
+import PanelStack from '../common/PanelStack';
 import Main from './Main';
-
-const useStyle = createUseStyles({
-  uploadMode: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    width: 311,
-    height: '100%',
-    borderLeft: '1px solid var(--color-border-faint)',
-    overflow: 'hidden',
-    zIndex: 1,
-    '@media screen and (max-width: 950px)': {
-      width: 190,
-    },
-  },
-});
 
 const UploadModel = () => {
   const dispatch = useDispatch();
   const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
   const controlPanelModeHistory = activeControlPanelData.history;
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const lastHistoryElemType = lastHistoryElem?.type;
   const lastHistoryElemData = lastHistoryElem?.data;
 
   const prevControlPanelMode = useSelector(selectPrevControlPanelMode);
 
   const [activeIndex, setActiveIndex] = useState(null);
-  const [activePanelComponents, setActivePanelComponents] = useState([]);
-
-  let keyTimeoutClearActiveComponents;
-
-  const classes = useStyle();
 
   const onClickPreview = (index) => {
     setActiveIndex(index);
@@ -156,73 +134,50 @@ const UploadModel = () => {
     dispatch(updateControlPanelStatus(false));
   }, []);
 
-  useEffect(() => {
-    if (lastHistoryElemType) {
-      const previewMaterialsId = R2D.modelUploader?.getPartsMaterials();
-      setActivePanelComponents((prevState) => [
-        ...prevState,
-        lastHistoryElemType == 'main' ? (
-          <Main
-            key={Math.random()}
-            onClickPreview={onClickPreview}
-            showType={lastHistoryElemData.type}
-          />
-        ) : lastHistoryElemType == 'catalog' ? (
-          <Catalog
-            leafType="materials"
-            isAddSettingsDisabled={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            breadCrumbsLongShow={true}
-          />
-        ) : previewMaterialsId &&
-          previewMaterialsId[activeIndex] &&
-          lastHistoryElemType == 'materials' ? (
-          <Materials
-            isAddSettingsDisabled={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            key={Math.random()}
-            materialSelect={onMaterialSelect}
-            matId={previewMaterialsId[activeIndex].matId}
-            breadCrumbsLongShow={true}
-          />
-        ) : previewMaterialsId &&
-          previewMaterialsId[activeIndex] &&
-          lastHistoryElemType == 'colorpicker' ? (
-          <ColorPicker
-            key={Math.random()}
-            isAddSettingsDisabled={true}
-            closeButtonStatus={true}
-            isHomeDisabled={true}
-            breadCrumbsLongShow={true}
-            addMaterial={previewMaterialsId[activeIndex].addMaterial}
-            matId={previewMaterialsId[activeIndex].matId}
-            materialSelect={onMaterialSelect}
-          />
-        ) : null,
-      ]);
-    }
-  }, [controlPanelModeHistory?.length]);
+  // the selected part's material, read when its screen opens
+  const getPreviewMaterial = () => R2D.modelUploader?.getPartsMaterials()?.[activeIndex];
 
-  useEffect(() => {
-    if (activePanelComponents.length > 2)
-      setActivePanelComponents((prevState) => [
-        prevState[prevState.length - 2],
-        prevState[prevState.length - 1],
-      ]);
-    else {
-      if (activePanelComponents.length > 1)
-        keyTimeoutClearActiveComponents = setTimeout(
-          () => setActivePanelComponents((prevState) => [prevState[prevState.length - 1]]),
-          600
-        );
-    }
-    return () => clearTimeout(keyTimeoutClearActiveComponents);
-  }, [activePanelComponents]);
+  const screens = {
+    main: () => <Main onClickPreview={onClickPreview} showType={lastHistoryElemData.type} />,
+    catalog: () => (
+      <Catalog
+        leafType="materials"
+        isAddSettingsDisabled={true}
+        closeButtonStatus={true}
+        isHomeDisabled={true}
+        breadCrumbsLongShow={true}
+      />
+    ),
+    materials: () => {
+      const material = getPreviewMaterial();
+      return material ? (
+        <Materials
+          isAddSettingsDisabled={true}
+          closeButtonStatus={true}
+          isHomeDisabled={true}
+          materialSelect={onMaterialSelect}
+          matId={material.matId}
+          breadCrumbsLongShow={true}
+        />
+      ) : null;
+    },
+    colorpicker: () => {
+      const material = getPreviewMaterial();
+      return material ? (
+        <ColorPicker
+          isAddSettingsDisabled={true}
+          closeButtonStatus={true}
+          isHomeDisabled={true}
+          breadCrumbsLongShow={true}
+          addMaterial={material.addMaterial}
+          matId={material.matId}
+          materialSelect={onMaterialSelect}
+        />
+      ) : null;
+    },
+  };
 
-  return <div className={classes.uploadMode}>{activePanelComponents}</div>;
+  return <PanelStack screens={screens} />;
 };
 
 export default UploadModel;

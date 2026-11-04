@@ -1,45 +1,22 @@
-import React, { useEffect, useState } from 'react';
-import { createUseStyles } from 'react-jss';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../../../../initR2D';
 import {
   controlPanelHistoryAddArray,
   controlPanelUpdateBreadCrumbs,
-  selectActiveControlPanelModeData,
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { selectTips } from '../../../../../../redux/features/tips/tipsSlice';
 import { selectUserProfileData } from '../../../../../../redux/features/user/userSlice';
 import Tip from '../../../../../tips/Tip';
 import Catalog from '../common/Catalog';
+import PanelStack from '../common/PanelStack';
 import Products from '../common/Products';
-
-const useStyle = createUseStyles({
-  replaceModel: {
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    height: '100%',
-    width: 311,
-    overflow: 'hidden',
-    zIndex: 1,
-  },
-});
 
 const ReplaceModel = (props) => {
   const dispatch = useDispatch();
 
-  const activeControlPanelData = useSelector(selectActiveControlPanelModeData);
-  const controlPanelModeHistory = activeControlPanelData.history;
-  const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const lastHistoryElemType = lastHistoryElem?.type;
-  let keyTimeoutClearActiveComponents;
-
-  const [activePanelComponents, setActivePanelComponents] = useState([]);
-
   const catalogProducts = planner.getCatalogProducts();
-
-  const classes = useStyle();
 
   const userProfileData = useSelector(selectUserProfileData);
   const tips = useSelector(selectTips);
@@ -154,47 +131,21 @@ const ReplaceModel = (props) => {
     }
   }, []);
 
-  useEffect(() => {
-    if (lastHistoryElemType) {
-      setActivePanelComponents((prevState) => [
-        ...prevState,
-        lastHistoryElemType == 'catalog' ? (
-          <Catalog
-            breadcrumsTitle={'HINT_PRODUCTS_CATALOG'}
-            panelPreviewIcon={panelPreviewIcon}
-            key={Math.random()}
-          />
-        ) : lastHistoryElemType == 'products' ? (
-          <Products
-            breadcrumsTitle={'HINT_PRODUCTS_CATALOG'}
-            panelPreviewIcon={panelPreviewIcon}
-            key={Math.random()}
-            type={'replace'}
-          />
-        ) : null,
-      ]);
-    }
-  }, [lastHistoryElem?.id]);
-
-  useEffect(() => {
-    if (activePanelComponents.length > 2)
-      setActivePanelComponents((prevState) => [
-        prevState[prevState.length - 2],
-        prevState[prevState.length - 1],
-      ]);
-    else {
-      if (activePanelComponents.length > 1)
-        keyTimeoutClearActiveComponents = setTimeout(
-          () => setActivePanelComponents((prevState) => [prevState[prevState.length - 1]]),
-          600
-        );
-    }
-    return () => clearTimeout(keyTimeoutClearActiveComponents);
-  }, [activePanelComponents]);
+  const screens = {
+    catalog: () => (
+      <Catalog breadcrumsTitle={'HINT_PRODUCTS_CATALOG'} panelPreviewIcon={panelPreviewIcon} />
+    ),
+    products: () => (
+      <Products
+        breadcrumsTitle={'HINT_PRODUCTS_CATALOG'}
+        panelPreviewIcon={panelPreviewIcon}
+        type={'replace'}
+      />
+    ),
+  };
 
   return (
-    <div className={classes.replaceModel}>
-      {activePanelComponents}
+    <PanelStack screens={screens} changesOn="id">
       {userProfileData.tips &&
       userProfileData.tips != 0 &&
       !tips.replaceModel.showed &&
@@ -207,7 +158,7 @@ const ReplaceModel = (props) => {
           position={{ x: 'calc(100%)', y: 185, from: 'left' }}
         />
       ) : null}
-    </div>
+    </PanelStack>
   );
 };
 
