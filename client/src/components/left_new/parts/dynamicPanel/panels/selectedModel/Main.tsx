@@ -33,7 +33,7 @@ import ChangeSize from '../../../../../common/ChangeSize';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
 import LockSize from '../../../../../common/LockSize';
 import RemoteComponentMain from '../../../../../common/RemoteComponentMain';
-import BlueButton from '../../components/BlueButton';
+import Button from '../../../../../../shared-components/inputs/button';
 import LogoComponent from '../../components/LogoComponent';
 import MaterialComponent from '../../components/MaterialComponent';
 
@@ -393,20 +393,6 @@ const useStyle = createUseStyles({
   planner_origModel_button: {
     width: 'calc(100% - 28px)',
     margin: '20px 14px',
-    '& button': {
-      width: '100%',
-      background: '#828282',
-      padding: '7px 0',
-      color: 'var(--color-white)',
-      fontSize: 13,
-      fontWeight: 400,
-      border: 'none',
-      cursor: 'pointer',
-      transition: 'all .3s ease',
-      '&:hover': {
-        background: 'var(--color-highlight)',
-      },
-    },
     '@media screen and (max-width: 950px)': {
       width: 'calc(100% - 10px)',
       margin: '10px 5px',
@@ -1186,10 +1172,9 @@ const Main = (props) => {
 
             {isOriginalModel ? (
               <div className={classes.planner_origModel_button}>
-                <BlueButton
-                  onClick={onClickChangeOrigModel}
-                  label={translation['PRODUCT_CUSTOM_MODEL_EDIT']}
-                />
+                <Button fullWidth onClick={onClickChangeOrigModel}>
+                  {translation['PRODUCT_CUSTOM_MODEL_EDIT']}
+                </Button>
               </div>
             ) : null}
 

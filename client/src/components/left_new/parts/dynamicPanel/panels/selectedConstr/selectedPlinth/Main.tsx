@@ -12,7 +12,7 @@ import { setActivePopup } from '../../../../../../../redux/features/popups/popup
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import Checkbox from '../../../../../../../shared-components/inputs/checkbox';
 import ChangeSize from '../../../../../../common/ChangeSize';
-import BlueButton from '../../../components/BlueButton';
+import Button from '../../../../../../../shared-components/inputs/button';
 import EditPlinthItem from '../../../components/EditPlinthItem';
 import MaterialComponent from '../../../components/MaterialComponent';
 import CatalogScreen from '../../common/CatalogScreen';
@@ -319,7 +319,9 @@ const Main = (props) => {
         </div>
 
         <div className={classes.divideWallBtnWrap}>
-          <BlueButton label={translation['TEXT_APPLY_TO_ROOM']} onClick={onApplyToAllRoom} />
+          <Button fullWidth onClick={onApplyToAllRoom}>
+            {translation['TEXT_APPLY_TO_ROOM']}
+          </Button>
         </div>
       </div>
     </CatalogScreen>

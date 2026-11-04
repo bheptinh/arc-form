@@ -28,6 +28,11 @@
   }
 }
 
+.fullWidth {
+  width: 100%;
+  margin: 0;
+}
+
 .primary {
   border: none;
   background: var(--color-accent-bright);

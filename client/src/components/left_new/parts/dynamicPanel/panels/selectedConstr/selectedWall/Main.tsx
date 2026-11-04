@@ -19,7 +19,7 @@ import { hideQuickPanelVisible } from '../../../../../../../redux/features/quick
 import { changeUndoRedo } from '../../../../../../../redux/features/topPanel/topPanelSlice';
 import { selectIsLogged } from '../../../../../../../redux/features/user/userSlice';
 import Checkbox from '../../../../../../../shared-components/inputs/checkbox';
-import BlueButton from '../../../components/BlueButton';
+import Button from '../../../../../../../shared-components/inputs/button';
 import MaterialComponent from '../../../components/MaterialComponent';
 import PlinthComponent from '../../../components/PlinthComponent';
 import CatalogScreen from '../../common/CatalogScreen';
@@ -533,7 +533,9 @@ const Main = (props) => {
           </div>
 
           <div className={classes.divideWallBtnWrap}>
-            <BlueButton onClick={onApplyToAllRoom} label={translation['TEXT_APPLY_TO_ROOM']} />
+            <Button fullWidth onClick={onApplyToAllRoom}>
+              {translation['TEXT_APPLY_TO_ROOM']}
+            </Button>
           </div>
         </div>
       </div>
