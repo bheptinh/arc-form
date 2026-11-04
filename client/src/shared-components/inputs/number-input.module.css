@@ -1,0 +1,213 @@
+.main {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  color: #828282;
+  display: flex;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 950px) {
+  .label {
+    font-size: 11px;
+  }
+}
+
+.info {
+  margin-left: 5px;
+}
+
+.controls {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  color: rgb(68, 68, 68);
+  border: none;
+  margin: 0 8px 0 4px;
+  outline: none;
+  padding: 3px 0;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.input:hover {
+  background: rgb(244, 244, 244);
+}
+
+.input:focus {
+  color: var(--color-slate);
+  border: 1px solid var(--color-border-strong);
+  cursor: auto;
+  outline: none;
+  border-radius: 3px;
+  background-color: rgb(244, 244, 244);
+}
+
+@media screen and (max-width: 950px) {
+  .input {
+    font-size: 11px;
+  }
+}
+
+.readOnly {
+  color: rgb(153 153 153);
+  border: none;
+  cursor: default;
+  margin: 0 8px 0 4px;
+  outline: none;
+  padding: 3px 5px;
+  font-size: 13px;
+  background: none;
+}
+
+.suffix {
+  font-size: 13px;
+}
+
+.stepper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.arrows {
+  display: grid;
+  grid-gap: 3px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.arrow path {
+  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.arrow:hover path {
+  fill: var(--color-icon);
+}
+
+.stacked {
+  align-items: flex-start;
+  margin-bottom: 15px;
+  flex-direction: column;
+}
+
+.stacked .label {
+  margin-bottom: 2px;
+}
+
+.stacked .field {
+  min-width: 49px;
+}
+
+.stacked .input {
+  margin: 0;
+  text-align: left;
+}
+
+.stacked .arrows {
+  width: 15px;
+  height: 25px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.stacked .arrowUp {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.stacked .arrowDown {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 950px) {
+  .stacked .arrows {
+    margin-left: 5px;
+  }
+}
+
+.compact {
+  align-items: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 950px) {
+  .compact {
+    margin: 0;
+  }
+}
+
+.compact .input {
+  margin: 0;
+}
+
+.compact .arrows {
+  width: 15px;
+  height: 25px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.compact .arrowUp {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.compact .arrowDown {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+@media screen and (max-width: 950px) {
+  .compact .arrows {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+}
+
+.dark .suffix {
+  color: var(--color-white);
+}
+
+.dark .stepper {
+  margin-left: 15px;
+}
+
+.dark .input {
+  color: var(--color-white);
+  margin: 0 0 0 4px;
+  background: transparent;
+}
+
+.dark .arrow path {
+  fill: var(--color-white);
+}
+
+.dark .input:hover {
+  color: var(--color-icon-dark);
+  background: rgb(244, 244, 244);
+}
