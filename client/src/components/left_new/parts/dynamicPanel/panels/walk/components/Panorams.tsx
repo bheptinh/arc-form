@@ -1,10 +1,7 @@
-import 'simplebar-react/dist/simplebar.min.css';
-
 import { IconView360Arrow } from '@tabler/icons-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
-import SimpleBar from 'simplebar-react';
 
 import { useLanguages } from '../../../../../../../api/hooks/useLanguages';
 import { useTranslation } from '../../../../../../../api/hooks/useTranslation';
@@ -21,31 +18,9 @@ import {
   selectActiveControlPanelModeData,
 } from '../../../../../../../redux/features/control/controlPanelSlice';
 import Navigation from '../../../navigation/Navigation';
+import CatalogScreen from '../../common/CatalogScreen';
 
 const useStyle = createUseStyles({
-  planner_catalog_cont: {
-    borderRight: '1px solid var(--color-border-light)',
-    background: 'var(--color-white)',
-    height: '100%',
-    display: 'grid',
-    alignContent: 'baseline',
-    gridTemplateRows: 'auto 1fr',
-    transition: 'all .5s cubic-bezier(0.19, 1, 0.22, 1)',
-    width: 309,
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    '@media screen and (max-width: 950px)': {
-      width: 189,
-    },
-  },
-  catalog_wr: {
-    overflow: 'hidden',
-    height: '100%',
-    position: 'relative',
-    background: 'var(--color-white)',
-    borderTop: '1px solid var(--color-border)',
-  },
   roll_out_left: {
     transform: 'translateX(-100%)',
   },
@@ -204,7 +179,6 @@ const Panorams = (props) => {
   const activeControlPanelMode = useSelector(selectActiveControlPanelMode);
   const controlPanelModeHistory = useMemo(() => activeControlPanelData.history, []);
   const lastHistoryElem = controlPanelModeHistory[controlPanelModeHistory.length - 1];
-  const isAdded = lastHistoryElem?.isAdded;
   const lastHistoryElemScroll = lastHistoryElem.lastSavedScroll;
   const activePano = useSelector(selectActivePano);
   const languages = useLanguages();
@@ -212,9 +186,6 @@ const Panorams = (props) => {
   const [activePanoId, setActivePanoId] = useState(R2D.scene.skyboxId);
   const [rotation, setRotaion] = useState(activePano.rotation);
   let [pannoArrayIter, setPannoArrayIter] = useState(0);
-  const [styleAnimation, setStyleAnimation] = useState(
-    isAdded ? { transform: 'translateX(100%)' } : { transform: 'translateX(-100%)' }
-  );
   const [panoArray, setPanoArray] = useState();
 
   let startRotation = 0;
@@ -281,8 +252,6 @@ const Panorams = (props) => {
   const mouseLeave = () =>
     document.querySelector('.product_hover') && document.querySelector('.product_hover').remove();
 
-  const rightPanelData = useRef(null);
-
   function startRotatePano(e) {
     startX = e.clientX;
     startRotation = rotation;
@@ -306,7 +275,7 @@ const Panorams = (props) => {
     R2D.scene.history.saveState();
   }
 
-  const mainDiv = useRef(null);
+  const scrollBar = useRef(null);
   const scrollDiv = useRef(null);
 
   const onOpenColorPicker = (e) => {
@@ -320,12 +289,9 @@ const Panorams = (props) => {
   };
 
   useEffect(() => {
-    setTimeout(() => setStyleAnimation({ transform: 'translateX(0%)' }), 0);
-  }, []);
-
-  useEffect(() => {
-    if (mainDiv.current) mainDiv.current.scrollTop = lastHistoryElemScroll;
-  }, [mainDiv.current, lastHistoryElemScroll]);
+    const scrollElem = scrollBar.current?.getScrollElement();
+    if (scrollElem) scrollElem.scrollTop = lastHistoryElemScroll;
+  }, [lastHistoryElemScroll]);
 
   useEffect(() => {
     panoData.forEach((elem) => {
@@ -402,19 +368,17 @@ const Panorams = (props) => {
   useEffect(() => {
     if (pannoArrayIter == 0 && panoArray && panoArray.length > 0) {
       const activeElem = document.querySelector('.' + classes.activePano);
-      if (!activeElem) return;
-      mainDiv.current.scrollTop =
+      const scrollElem = scrollBar.current?.getScrollElement();
+      if (!activeElem || !scrollElem) return;
+      // centres the active panorama in the list
+      const scrollTop =
         activeElem.getBoundingClientRect().top -
-        mainDiv.current.offsetHeight / 2 +
-        document.querySelector('.' + classes.activePano / 2);
+        scrollElem.getBoundingClientRect().top +
+        scrollElem.scrollTop -
+        (scrollElem.clientHeight - activeElem.getBoundingClientRect().height) / 2;
+      scrollElem.scrollTop = scrollTop;
       setPannoArrayIter(++pannoArrayIter);
-      dispatch(
-        controlPanelHistoryScrollSave(
-          activeElem.getBoundingClientRect().top -
-            mainDiv.current.offsetHeight / 2 +
-            document.querySelector('.' + classes.activePano / 2)
-        )
-      );
+      dispatch(controlPanelHistoryScrollSave(scrollTop));
     }
   }, [panoArray]);
 
@@ -423,73 +387,69 @@ const Panorams = (props) => {
   }, []);
 
   return (
-    <div className={classes.planner_catalog_cont} ref={rightPanelData} style={styleAnimation}>
-      {activeControlPanelMode == 'renderMake' ? (
-        <Navigation
-          disableBreadcrumbs={props.disableBreadcrumbs}
-          isAddSettingsDisabled={props.isAddSettingsDisabled}
-        />
-      ) : null}
-
-      <div className={classes.catalog_wr} ref={mainDiv}>
-        <SimpleBar style={{ height: '100%' }} autoHide={false} forceVisible="y">
-          <div className={classes.wr} ref={scrollDiv}>
-            {props.renderType == 'exterior' || props.renderType == 'topView' ? (
-              <div
-                className={
-                  classes.viewItemStandart +
-                  ' ' +
-                  (activePano.id?.indexOf && ~activePano.id.indexOf('#')
-                    ? classes.viewItemStandart_active
-                    : '')
-                }
-                onMouseLeave={mouseLeave}
-                onMouseEnter={(e) => mouseEnter(e, { name: translation['COLORED_BACKGROUND'] })}
-              >
-                <img
-                  data-src={'/src_designer/images/colorPickerBackground.png'}
-                  src={'/src_designer/images/colorPickerBackground.png'}
-                  className={classes.viewItemImg + ' lazyload'}
-                />
-                <div
-                  className={classes.planner_catalog_elem_overlay}
-                  onClick={onOpenColorPicker}
-                ></div>
-              </div>
-            ) : null}
-            {props.renderType == 'exterior' || props.renderType == 'topView' ? (
-              <div
-                className={
-                  classes.viewItemStandart +
-                  ' ' +
-                  (activePano.id == 'transparent' ? classes.viewItemStandart_active : '')
-                }
-                onMouseLeave={mouseLeave}
-                onMouseEnter={(e) => mouseEnter(e, { name: translation['TRANSPARENT_BACKGROUND'] })}
-              >
-                <img
-                  data-src={'/src_designer/images/transparent_background.png'}
-                  src={'/src_designer/images/transparent_background.png'}
-                  className={classes.viewItemImg + ' lazyload'}
-                />
-                <div
-                  className={classes.planner_catalog_elem_overlay}
-                  onClick={(e) =>
-                    onSelectPano({
-                      e,
-                      id: 'transparent',
-                      rotation: 0,
-                      previewImgSrc: '/src_designer/images/transparent_background.png',
-                    })
-                  }
-                ></div>
-              </div>
-            ) : null}
-            {props.renderType != 'topView' ? panoArray : null}
+    <CatalogScreen
+      header={
+        activeControlPanelMode == 'renderMake' ? (
+          <Navigation
+            disableBreadcrumbs={props.disableBreadcrumbs}
+            isAddSettingsDisabled={props.isAddSettingsDisabled}
+          />
+        ) : null
+      }
+      scrollRef={scrollBar}
+    >
+      <div className={classes.wr} ref={scrollDiv}>
+        {props.renderType == 'exterior' || props.renderType == 'topView' ? (
+          <div
+            className={
+              classes.viewItemStandart +
+              ' ' +
+              (activePano.id?.indexOf && ~activePano.id.indexOf('#')
+                ? classes.viewItemStandart_active
+                : '')
+            }
+            onMouseLeave={mouseLeave}
+            onMouseEnter={(e) => mouseEnter(e, { name: translation['COLORED_BACKGROUND'] })}
+          >
+            <img
+              data-src={'/src_designer/images/colorPickerBackground.png'}
+              src={'/src_designer/images/colorPickerBackground.png'}
+              className={classes.viewItemImg + ' lazyload'}
+            />
+            <div className={classes.planner_catalog_elem_overlay} onClick={onOpenColorPicker}></div>
           </div>
-        </SimpleBar>
+        ) : null}
+        {props.renderType == 'exterior' || props.renderType == 'topView' ? (
+          <div
+            className={
+              classes.viewItemStandart +
+              ' ' +
+              (activePano.id == 'transparent' ? classes.viewItemStandart_active : '')
+            }
+            onMouseLeave={mouseLeave}
+            onMouseEnter={(e) => mouseEnter(e, { name: translation['TRANSPARENT_BACKGROUND'] })}
+          >
+            <img
+              data-src={'/src_designer/images/transparent_background.png'}
+              src={'/src_designer/images/transparent_background.png'}
+              className={classes.viewItemImg + ' lazyload'}
+            />
+            <div
+              className={classes.planner_catalog_elem_overlay}
+              onClick={(e) =>
+                onSelectPano({
+                  e,
+                  id: 'transparent',
+                  rotation: 0,
+                  previewImgSrc: '/src_designer/images/transparent_background.png',
+                })
+              }
+            ></div>
+          </div>
+        ) : null}
+        {props.renderType != 'topView' ? panoArray : null}
       </div>
-    </div>
+    </CatalogScreen>
   );
 };
 
