@@ -11,7 +11,7 @@ import {
   selectPrevControlPanelMode,
 } from '../../../redux/features/control/controlPanelSlice';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -110,7 +110,7 @@ const Hide = (props) => {
   };
 
   return (
-    <HoverComponent hoverText={translation['HINT_BUTTON_HIDE_PANEL']}>
+    <Tooltip content={translation['HINT_BUTTON_HIDE_PANEL']} side="bottom">
       <div
         className={classes.info_model_btn}
         ref={props.reference}
@@ -123,6 +123,6 @@ const Hide = (props) => {
           onMouseUp={onHideSelectedElem}
         ></div>
       </div>
-    </HoverComponent>
+    </Tooltip>
   );
 };

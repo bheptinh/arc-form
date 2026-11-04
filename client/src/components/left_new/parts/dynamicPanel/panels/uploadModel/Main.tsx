@@ -24,7 +24,7 @@ import {
 } from '../../../../../../redux/features/control/controlPanelSlice';
 import { setActivePopup } from '../../../../../../redux/features/popups/popupsSlice';
 import { showQuickPanelVisible } from '../../../../../../redux/features/quickPanels/quickPanelsSlice';
-import HoverComponent from '../../../controlPanel/components/HoverComponent';
+import Tooltip from '../../../../../../shared-components/Tooltip';
 import MaterialComponent from '../../components/MaterialComponent';
 
 const useStyle = createUseStyles({
@@ -697,49 +697,41 @@ const Main = (props) => {
                   </div>
                 </div>
                 <div className={classes.planner_popup_cont_right_material_instruments_bottom}>
-                  <div>
-                    <HoverComponent hoverText={translation['UPLOAD_CW']}>
-                      <IconRotateClockwise
-                        size={18}
-                        color="#2B2B2B"
-                        onMouseDown={onMouseDown}
-                        onMouseUp={() => transformPartUVCW(index)}
-                      />
-                    </HoverComponent>
-                  </div>
+                  <Tooltip content={translation['UPLOAD_CW']} side="bottom">
+                    <IconRotateClockwise
+                      size={18}
+                      color="#2B2B2B"
+                      onMouseDown={onMouseDown}
+                      onMouseUp={() => transformPartUVCW(index)}
+                    />
+                  </Tooltip>
 
-                  <div>
-                    <HoverComponent hoverText={translation['UPLOAD_CCW']}>
-                      <IconRotate
-                        size={18}
-                        color="#2B2B2B"
-                        onMouseDown={onMouseDown}
-                        onMouseUp={() => transformPartUVCCW(index)}
-                      />
-                    </HoverComponent>
-                  </div>
+                  <Tooltip content={translation['UPLOAD_CCW']} side="bottom">
+                    <IconRotate
+                      size={18}
+                      color="#2B2B2B"
+                      onMouseDown={onMouseDown}
+                      onMouseUp={() => transformPartUVCCW(index)}
+                    />
+                  </Tooltip>
 
-                  <div>
-                    <HoverComponent hoverText={translation['UPLOAD_FLIP_X']}>
-                      <IconFlipVertical
-                        size={18}
-                        color="#2B2B2B"
-                        onMouseDown={onMouseDown}
-                        onMouseUp={() => transformPartUVFlipX(index)}
-                      />
-                    </HoverComponent>
-                  </div>
+                  <Tooltip content={translation['UPLOAD_FLIP_X']} side="bottom">
+                    <IconFlipVertical
+                      size={18}
+                      color="#2B2B2B"
+                      onMouseDown={onMouseDown}
+                      onMouseUp={() => transformPartUVFlipX(index)}
+                    />
+                  </Tooltip>
 
-                  <div>
-                    <HoverComponent hoverText={translation['UPLOAD_FLIP_Y']}>
-                      <IconFlipHorizontal
-                        size={18}
-                        color="#2B2B2B"
-                        onMouseDown={onMouseDown}
-                        onMouseUp={() => transformPartUVFlipY(index)}
-                      />
-                    </HoverComponent>
-                  </div>
+                  <Tooltip content={translation['UPLOAD_FLIP_Y']} side="bottom">
+                    <IconFlipHorizontal
+                      size={18}
+                      color="#2B2B2B"
+                      onMouseDown={onMouseDown}
+                      onMouseUp={() => transformPartUVFlipY(index)}
+                    />
+                  </Tooltip>
                 </div>
               </div>
             </div>
@@ -789,18 +781,17 @@ const Main = (props) => {
                       />
                       <label htmlFor="onScene">{translation['UPLOAD_TEXT_ON_SCENE']}</label>
                     </div>
-                    <div>
-                      <HoverComponent
-                        hoverText={translation['UPLOAD_TEXT_ON_SCENE_TIP']}
-                        showOnMobile={true}
-                      >
-                        <IconHelpHexagonFilled
-                          size={17}
-                          color="#2F2F2F"
-                          className={classes.planner_popup_cont_right_adv_info}
-                        />
-                      </HoverComponent>
-                    </div>
+                    <Tooltip
+                      content={translation['UPLOAD_TEXT_ON_SCENE_TIP']}
+                      side="bottom"
+                      openOnTap
+                    >
+                      <IconHelpHexagonFilled
+                        size={17}
+                        color="#2F2F2F"
+                        className={classes.planner_popup_cont_right_adv_info}
+                      />
+                    </Tooltip>
                   </div>
 
                   <div className={classes.planner_popup_cont_right_adv_input}>
@@ -819,18 +810,17 @@ const Main = (props) => {
                       <label htmlFor="inWall">{translation['UPLOAD_TEXT_BUILD_IN_WALL']}</label>
                     </div>
 
-                    <div>
-                      <HoverComponent
-                        hoverText={translation['UPLOAD_TEXT_BUILD_IN_WALL_TIP']}
-                        showOnMobile={true}
-                      >
-                        <IconHelpHexagonFilled
-                          size={17}
-                          color="#2F2F2F"
-                          className={classes.planner_popup_cont_right_adv_info}
-                        />
-                      </HoverComponent>
-                    </div>
+                    <Tooltip
+                      content={translation['UPLOAD_TEXT_BUILD_IN_WALL_TIP']}
+                      side="bottom"
+                      openOnTap
+                    >
+                      <IconHelpHexagonFilled
+                        size={17}
+                        color="#2F2F2F"
+                        className={classes.planner_popup_cont_right_adv_info}
+                      />
+                    </Tooltip>
                   </div>
                 </div>
               </div>

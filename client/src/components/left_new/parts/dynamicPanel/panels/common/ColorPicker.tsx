@@ -19,7 +19,7 @@ import { selectIsLogged } from '../../../../../../redux/features/user/userSlice'
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 import ChangeSize from '../../../../../common/ChangeSize';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
-import HoverComponent from '../../../controlPanel/components/HoverComponent';
+import Tooltip from '../../../../../../shared-components/Tooltip';
 import Navigation from '../../navigation/Navigation';
 
 const useStyle = createUseStyles({
@@ -135,6 +135,7 @@ const useStyle = createUseStyles({
     padding: '0 6px',
   },
   prod_item_btn_copy: {
+    display: 'flex',
     // width: 18,
     cursor: 'pointer',
     // height: 18,
@@ -1049,15 +1050,11 @@ const ColorPicker = (props) => {
               {props.isForLightObjects ? null : (
                 <div className={classes.top}>
                   <div className={classes.prod_item_dop_btns_wr}>
-                    <div className={classes.prod_item_btn_copy} onClick={(e) => copyMaterial(e)}>
-                      <HoverComponent
-                        hoverText={translation['BUTTON_COPY_MATERIAL']}
-                        hoverTextPositionX={'right'}
-                        hoverTextPositionY={'top'}
-                      >
+                    <Tooltip content={translation['BUTTON_COPY_MATERIAL']}>
+                      <div className={classes.prod_item_btn_copy} onClick={(e) => copyMaterial(e)}>
                         <IconCopy size={18} color="#ffffff" />
-                      </HoverComponent>
-                    </div>
+                      </div>
+                    </Tooltip>
                   </div>
 
                   {props.onlyColor ? null : (

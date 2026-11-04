@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -7,7 +7,7 @@ import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyles = createUseStyles({
   right_bar_btn: {
@@ -66,7 +66,9 @@ const useStyles = createUseStyles({
     top: 0,
   },
   viewModeButton: {
+    display: 'flex',
     position: 'relative',
+    justifyContent: 'center',
   },
 });
 
@@ -75,17 +77,12 @@ const View3D = (props) => {
   const activeViewMode = useSelector(selectActiveViewMode);
   const translation = useTranslation();
   const classes = useStyles();
-  const mainDiv = useRef(null);
 
   const changeViewMode = (e) => dispatch(setActiveViewMode('view3d'));
 
   return (
-    <div className={classes.viewModeButton} ref={mainDiv}>
-      <HoverComponent
-        hoverText={translation['HINT_BUTTON_3D']}
-        parentRef={mainDiv}
-        hoverTextPositionX={'left'}
-      >
+    <div className={classes.viewModeButton}>
+      <Tooltip content={translation['HINT_BUTTON_3D']} side="left">
         <div
           className={
             activeViewMode == 'view3d' ? classes.right_bar_btn_active : classes.right_bar_btn
@@ -102,7 +99,7 @@ const View3D = (props) => {
             />
           </svg>
         </div>
-      </HoverComponent>
+      </Tooltip>
     </div>
   );
 };

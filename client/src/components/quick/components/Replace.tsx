@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import { changeActiveControlPanelMode } from '../../../redux/features/control/controlPanelSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -75,7 +75,7 @@ const Replace = (props) => {
   const onMouseUp = () => document.removeEventListener('mouseup', onMouseUp);
 
   return (
-    <HoverComponent hoverText={translation['HINT_BUTTON_REPLACE']}>
+    <Tooltip content={translation['HINT_BUTTON_REPLACE']} side="bottom">
       <div
         className={classes.info_model_btn}
         style={props.addStyles ? { ...props.addStyles } : null}
@@ -89,7 +89,7 @@ const Replace = (props) => {
           onMouseDown={onReplaceDown}
         ></div>
       </div>
-    </HoverComponent>
+    </Tooltip>
   );
 };
 

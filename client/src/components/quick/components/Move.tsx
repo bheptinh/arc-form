@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { planner } from '../../../initR2D';
 import { changeUndoRedo } from '../../../redux/features/topPanel/topPanelSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
@@ -149,17 +149,16 @@ const Move = (props) => {
   const classes = useStyle();
 
   return (
-    <div
-      className={classes.info_model_btn}
-      ref={btnMove}
-      style={{ top: positionBtn.y + 'px', left: positionBtn.x + 'px' }}
-      onMouseDown={startMove}
-      onTouchStart={startMove}
-    >
-      <HoverComponent hoverText={translation['HINT_BUTTON_MOVE_TEXTURE']}>
+    <Tooltip content={translation['HINT_BUTTON_MOVE_TEXTURE']} side="bottom">
+      <div
+        className={classes.info_model_btn}
+        ref={btnMove}
+        style={{ top: positionBtn.y + 'px', left: positionBtn.x + 'px' }}
+        onMouseDown={startMove}
+        onTouchStart={startMove}
+      >
         <img src="/src_designer/images/icon_move_x_y.svg" />
-      </HoverComponent>
-    </div>
+      </div>
+    </Tooltip>
   );
 };
-

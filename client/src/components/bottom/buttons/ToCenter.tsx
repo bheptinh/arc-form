@@ -1,10 +1,10 @@
 import { IconFocusCentered } from '@tabler/icons-react';
-import React, { useRef } from 'react';
+import React from 'react';
 import { createUseStyles } from 'react-jss';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   toCenter_main: {
@@ -29,18 +29,12 @@ const useStyle = createUseStyles({
 const ToCenter = (props) => {
   const classes = useStyle();
   const translation = useTranslation();
-  const hoverButton = useRef(null);
   return (
-    <div className={classes.toCenter_main} ref={hoverButton} onClick={planner.toCenter}>
-      <HoverComponent
-        hoverText={translation['HINT_BUTTON_TO_CENTER']}
-        parentRef={hoverButton}
-        hoverTextPositionX={'left'}
-        hoverTextPositionY={'top'}
-      >
+    <Tooltip content={translation['HINT_BUTTON_TO_CENTER']}>
+      <div className={classes.toCenter_main} onClick={planner.toCenter}>
         <IconFocusCentered size={17} color="#2A3435" />
-      </HoverComponent>
-    </div>
+      </div>
+    </Tooltip>
   );
 };
 

@@ -12,7 +12,7 @@ import {
 } from '../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../redux/features/topPanel/topPanelSlice';
 import { selectActiveViewMode } from '../../redux/features/viewMode/viewModeSlice';
-import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../shared-components/Tooltip';
 import { useTranslation } from '../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
@@ -116,7 +116,7 @@ const Delete = (props) => {
     >
       <div className={classes.info_model_pop_item_cont}>
         <div className={classes.info_model_pop_item_wr} ref={mainDiv}>
-          <HoverComponent hoverText={translation['HINT_BUTTON_DELETE']}>
+          <Tooltip content={translation['HINT_BUTTON_DELETE']} side="bottom">
             <div className={classes.info_model_pop_item}>
               <img src="/src_designer/images/icon_trash.svg" />
               <div
@@ -125,7 +125,7 @@ const Delete = (props) => {
                 onMouseUp={onDelete}
               ></div>
             </div>
-          </HoverComponent>
+          </Tooltip>
         </div>
       </div>
     </motion.div>

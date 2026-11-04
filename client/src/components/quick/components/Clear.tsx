@@ -11,7 +11,7 @@ import {
   selectActiveViewModeState,
   updateMaterialId,
 } from '../../../redux/features/viewMode/viewModeSlice_legacy';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
@@ -67,7 +67,7 @@ const Clear = (props) => {
   return (
     <AnimatePresence>
       {currObj ? (
-        <HoverComponent hoverText={translation['HINT_BUTTON_CLEAR_MATERIAL']}>
+        <Tooltip content={translation['HINT_BUTTON_CLEAR_MATERIAL']} side="bottom">
           <motion.div
             initial={{ opacity: 1, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -80,7 +80,7 @@ const Clear = (props) => {
             <img src="/src_designer/images/icon_remove_pokrutya.svg" />
             <div className={classes.info_model_btn_overlay} onMouseUp={onClear}></div>
           </motion.div>
-        </HoverComponent>
+        </Tooltip>
       ) : null}
     </AnimatePresence>
   );

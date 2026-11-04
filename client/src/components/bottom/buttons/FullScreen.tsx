@@ -1,10 +1,10 @@
 import { IconArrowsMaximize, IconArrowsMinimize } from '@tabler/icons-react';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { createUseStyles } from 'react-jss';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   fullScreen_main: {
@@ -39,29 +39,16 @@ const FullScreen = (props) => {
     setIsFullScreen(!isFullScreen);
   };
   const translation = useTranslation();
-  const hoverButton = useRef(null);
   return (
-    <div className={classes.fullScreen_main} onClick={onClickFullScreen} ref={hoverButton}>
-      {isFullScreen ? (
-        <HoverComponent
-          hoverText={translation['HINT_FULLSCREEN']}
-          parentRef={hoverButton}
-          hoverTextPositionX={'left'}
-          hoverTextPositionY={'top'}
-        >
+    <Tooltip content={translation['HINT_FULLSCREEN']}>
+      <div className={classes.fullScreen_main} onClick={onClickFullScreen}>
+        {isFullScreen ? (
           <IconArrowsMinimize size={17} color="#2A3435" />
-        </HoverComponent>
-      ) : (
-        <HoverComponent
-          hoverText={translation['HINT_FULLSCREEN']}
-          parentRef={hoverButton}
-          hoverTextPositionX={'left'}
-          hoverTextPositionY={'top'}
-        >
+        ) : (
           <IconArrowsMaximize size={17} color="#2A3435" />
-        </HoverComponent>
-      )}
-    </div>
+        )}
+      </div>
+    </Tooltip>
   );
 };
 

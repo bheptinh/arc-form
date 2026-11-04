@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -67,7 +67,7 @@ const Hidden = (props) => {
   };
 
   return (
-    <HoverComponent hoverText={translation['HINT_BUTTON_PART_VISIBLE']}>
+    <Tooltip content={translation['HINT_BUTTON_PART_VISIBLE']} side="bottom">
       <div
         className={classes.info_model_btn}
         style={props.addStyles ? { ...props.addStyles } : null}
@@ -81,6 +81,6 @@ const Hidden = (props) => {
           onMouseDown={onMouseDown}
         ></div>
       </div>
-    </HoverComponent>
+    </Tooltip>
   );
 };

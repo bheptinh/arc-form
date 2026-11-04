@@ -6,11 +6,14 @@ import { useDispatch } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
 import { changeLockState } from '../../redux/features/common/commonSlice';
-import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   lock_main: {
+    display: 'flex',
     position: 'absolute',
+    alignItems: 'center',
+    justifyContent: 'center',
     '& svg': {
       width: 16,
     },
@@ -40,12 +43,16 @@ const LockSize = (props) => {
   };
 
   return (
-    <div
-      className={classes.lock_main}
-      ref={mainDiv}
-      style={{ right: props.right, top: props.top, cursor: props.isFixedSize ? 'auto' : 'pointer' }}
-    >
-      <HoverComponent hoverText={translation['HINT_LOCK_DIMENSIONS']}>
+    <Tooltip content={translation['HINT_LOCK_DIMENSIONS']} side="bottom">
+      <div
+        className={classes.lock_main}
+        ref={mainDiv}
+        style={{
+          right: props.right,
+          top: props.top,
+          cursor: props.isFixedSize ? 'auto' : 'pointer',
+        }}
+      >
         {props.isFixedSize ? (
           <IconLink className={classes.zamokLock} size={17} color="#444444" />
         ) : props.lockState ? (
@@ -54,8 +61,8 @@ const LockSize = (props) => {
           <IconUnlink size={17} color="#444444" />
         )}
         <div className={classes.lock_main_overlay} onMouseUp={mouseUpLock}></div>
-      </HoverComponent>
-    </div>
+      </div>
+    </Tooltip>
   );
 };
 

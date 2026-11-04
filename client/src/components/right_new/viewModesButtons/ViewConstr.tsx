@@ -1,5 +1,5 @@
 import { IconTopologyRing3 } from '@tabler/icons-react';
-import React, { useRef } from 'react';
+import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -9,7 +9,7 @@ import {
   selectActiveViewMode,
   setActiveViewMode,
 } from '../../../redux/features/viewMode/viewModeSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyles = createUseStyles({
   right_bar_btn: {
@@ -44,7 +44,9 @@ const useStyles = createUseStyles({
     transition: 'all 0.9s cubic-bezier(0.19, 1, 0.22, 1)',
   },
   viewModeButton: {
+    display: 'flex',
     position: 'relative',
+    justifyContent: 'center',
   },
 });
 
@@ -57,7 +59,6 @@ const ViewConstr = (props: ViewConstrProps) => {
   const activeViewMode = useSelector(selectActiveViewMode);
   const translation = useTranslation();
   const classes = useStyles();
-  const mainDiv = useRef(null);
 
   const changeViewMode = () => {
     dispatch(removeQuickPanelAll());
@@ -66,12 +67,8 @@ const ViewConstr = (props: ViewConstrProps) => {
   };
 
   return (
-    <div className={classes.viewModeButton} ref={mainDiv}>
-      <HoverComponent
-        hoverText={translation['HINT_BUTTON_CONSTRUCTOR']}
-        parentRef={mainDiv}
-        hoverTextPositionX={'left'}
-      >
+    <div className={classes.viewModeButton}>
+      <Tooltip content={translation['HINT_BUTTON_CONSTRUCTOR']} side="left">
         <div
           className={
             activeViewMode == 'constr' ? classes.right_bar_btn_active : classes.right_bar_btn
@@ -80,7 +77,7 @@ const ViewConstr = (props: ViewConstrProps) => {
         >
           <IconTopologyRing3 size={20} color="#ffffff" />
         </div>
-      </HoverComponent>
+      </Tooltip>
     </div>
   );
 };

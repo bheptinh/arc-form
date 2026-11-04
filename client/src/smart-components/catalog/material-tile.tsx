@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import { useTranslation } from '../../api/hooks/useTranslation';
-import HoverComponent from '../../components/left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../shared-components/Tooltip';
 import { selectDynamicPanelPreviewViewType } from '../../redux/features/control/controlPanelSlice';
 import { TileGrid } from '../../shared-components/TileGrid';
 import classes from './catalog-tile.module.css';
@@ -69,18 +69,14 @@ export default function MaterialTile({ product }: { product: Product }) {
           <div className="preloader-cube"></div>
         )}
         <TileGrid.Bar>
-          <div
-            className={size == 'small' ? `${classes.copy} ${classes.copySmall}` : classes.copy}
-            onClick={copy}
-          >
-            <HoverComponent
-              hoverText={translation['BUTTON_COPY_MATERIAL']}
-              hoverTextPositionX={'right'}
-              hoverTextPositionY={'top'}
+          <Tooltip content={translation['BUTTON_COPY_MATERIAL']}>
+            <div
+              className={size == 'small' ? `${classes.copy} ${classes.copySmall}` : classes.copy}
+              onClick={copy}
             >
               <IconCopy size={16} color="#fff" className={classes.copyIcon} />
-            </HoverComponent>
-          </div>
+            </div>
+          </Tooltip>
         </TileGrid.Bar>
         <FavoriteCorner product={product} />
         {owned ? <DeleteCorner product={product} /> : <PromoCorner product={product} tip={tip} />}

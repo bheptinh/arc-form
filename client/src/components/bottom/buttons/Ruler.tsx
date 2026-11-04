@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyles = createUseStyles({
   btn_ruler: {
@@ -60,24 +60,20 @@ const Ruler = (props) => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: 30 }}
-      exit={{ width: 0 }}
-      transition={{ duration: 0.3 }}
-      className={
-        activeRuller ? classes.btn_ruler + ' ' + classes.btn_ruler_active : classes.btn_ruler
-      }
-      onClick={onRulerClick}
-    >
-      <HoverComponent
-        hoverText={translation['HINT_BUTTON_ADD_RULER']}
-        hoverTextPositionX={'left'}
-        hoverTextPositionY={'top'}
+    <Tooltip content={translation['HINT_BUTTON_ADD_RULER']}>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: 30 }}
+        exit={{ width: 0 }}
+        transition={{ duration: 0.3 }}
+        className={
+          activeRuller ? classes.btn_ruler + ' ' + classes.btn_ruler_active : classes.btn_ruler
+        }
+        onClick={onRulerClick}
       >
         <IconRuler2 size={20} color="#2A3435" />
-      </HoverComponent>
-    </motion.div>
+      </motion.div>
+    </Tooltip>
   );
 };
 

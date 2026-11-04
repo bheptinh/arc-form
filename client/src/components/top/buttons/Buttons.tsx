@@ -51,7 +51,7 @@ import {
 } from '../../../redux/features/user/userSlice';
 import { selectActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
 import { createProjectUrl } from '../../../utils/UrlHelper';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 import Tip from '../../tips/Tip';
 import { useMerchantLogin } from '../../../utils/useMerchantLogin';
 
@@ -562,13 +562,9 @@ const Projects = (props) => {
       onTouchStart={onTouchStartDropdown}
     >
       {projectActiveName?.length > 15 ? (
-        <HoverComponent
-          hoverText={projectActive?.name}
-          hoverTextPositionY={'top'}
-          hoverTextPositionX={'left'}
-        >
+        <Tooltip content={projectActive?.name} side="bottom">
           <div className={classes.bar_dropdown_active}>{projectActiveName}</div>
-        </HoverComponent>
+        </Tooltip>
       ) : (
         <div className={classes.bar_dropdown_active}>{projectActiveName || defaultProjectName}</div>
       )}
@@ -659,7 +655,6 @@ const SaveButton = (props) => {
   const timeStart = useMemo(() => Date.now(), []);
 
   const translation = useTranslation();
-  const hoverButtonSave = useRef(null);
 
   const onClickSave = async () => {
     if (!user.isLogged()) {
@@ -720,34 +715,29 @@ const SaveButton = (props) => {
 
   return (
     <div style={{ position: 'relative', height: '100%' }}>
-      <div
-        className={classes.bar_btn + ' ' + classes.bar_btnSaveBtn}
-        id="customSaveBtnNotLogged"
-        onClick={onClickSave}
-        ref={hoverButtonSave}
-      >
-        <HoverComponent
-          hoverText={translation['HINT_BUTTON_SAVE']}
-          parentRef={hoverButtonSave}
-          hoverTextPositionX={'left'}
+      <Tooltip content={translation['HINT_BUTTON_SAVE']} side="bottom">
+        <div
+          className={classes.bar_btn + ' ' + classes.bar_btnSaveBtn}
+          id="customSaveBtnNotLogged"
+          onClick={onClickSave}
         >
           <IconDeviceFloppy size={14} color="#2A3435" />
-        </HoverComponent>
 
-        {showTipSaveProject &&
-        userProfileData?.tips &&
-        userProfileData.tips != 0 &&
-        !tips.saveProject.showed &&
-        !isCurrDeviceAPhone ? (
-          <Tip
-            name={'saveProject'}
-            showTime={1000}
-            arrow={{ position: 'right', direction: 'top', size: 'small' }}
-            text={'TUT_SAVE_PROJECT'}
-            position={{ x: 47, y: 40, from: 'right' }}
-          />
-        ) : null}
-      </div>
+          {showTipSaveProject &&
+          userProfileData?.tips &&
+          userProfileData.tips != 0 &&
+          !tips.saveProject.showed &&
+          !isCurrDeviceAPhone ? (
+            <Tip
+              name={'saveProject'}
+              showTime={1000}
+              arrow={{ position: 'right', direction: 'top', size: 'small' }}
+              text={'TUT_SAVE_PROJECT'}
+              position={{ x: 47, y: 40, from: 'right' }}
+            />
+          ) : null}
+        </div>
+      </Tooltip>
     </div>
   );
 };
@@ -789,8 +779,6 @@ const UndoRedoButtons = (props) => {
   );
 
   const translation = useTranslation();
-  const hoverButtonUndo = useRef(null);
-  const hoverButtonRedo = useRef(null);
 
   const onClickUndo = () => {
     if (!canUndo) return;
@@ -901,24 +889,16 @@ const UndoRedoButtons = (props) => {
 
   return (
     <div className={classes.undoRedoButtons}>
-      <div className={currentBtnClassUndo} ref={hoverButtonUndo} onClick={() => onClickUndo()}>
-        <HoverComponent
-          hoverText={translation['HINT_BUTTON_UNDO']}
-          parentRef={hoverButtonUndo}
-          hoverTextPositionX={'left'}
-        >
+      <Tooltip content={translation['HINT_BUTTON_UNDO']} side="bottom">
+        <div className={currentBtnClassUndo} onClick={() => onClickUndo()}>
           <IconArrowBackUp size={14} color="#2A3435" />
-        </HoverComponent>
-      </div>
-      <div className={currentBtnClassRedo} ref={hoverButtonRedo} onClick={() => onClickRedo()}>
-        <HoverComponent
-          hoverText={translation['HINT_BUTTON_REDO']}
-          parentRef={hoverButtonRedo}
-          hoverTextPositionX={'left'}
-        >
+        </div>
+      </Tooltip>
+      <Tooltip content={translation['HINT_BUTTON_REDO']} side="bottom">
+        <div className={currentBtnClassRedo} onClick={() => onClickRedo()}>
           <IconArrowForwardUp size={14} color="#2A3435" />
-        </HoverComponent>
-      </div>
+        </div>
+      </Tooltip>
     </div>
   );
 };
@@ -937,8 +917,6 @@ const RealisticImageButton = () => {
   const activePano = useSelector(selectActivePano);
   const translation = useTranslation();
   const dynamicPanelStatus = useSelector(selectDynamicPanelStatus);
-
-  const hoverButtonRender = useRef(null);
 
   const onClickRealImgBtn = () => {
     R2D.Viewers.saveCameraData();
@@ -990,15 +968,11 @@ const RealisticImageButton = () => {
   };
 
   return (
-    <div className={classes.hd_render_btn} ref={hoverButtonRender} onClick={onClickRealImgBtn}>
-      <HoverComponent
-        hoverText={translation['HINT_BUTTON_RENDER']}
-        parentRef={hoverButtonRender}
-        hoverTextPositionX={'left'}
-      >
+    <Tooltip content={translation['HINT_BUTTON_RENDER']} side="bottom">
+      <div className={classes.hd_render_btn} onClick={onClickRealImgBtn}>
         <IconCamera size={14} color="#2A3435" />
-      </HoverComponent>
-    </div>
+      </div>
+    </Tooltip>
   );
 };
 

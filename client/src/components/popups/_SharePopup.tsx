@@ -21,7 +21,7 @@ import {
 } from '../../redux/features/user/userSlice';
 import { useEffectAsync } from '../../utils/useEffectAsync';
 import Checkbox from '../../shared-components/inputs/checkbox';
-import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   planner_popup_wrap: {
@@ -513,19 +513,13 @@ const SharePopup = (props) => {
                         checked={checkboxProjectOnlyView}
                         onChange={onChangeOnlyView}
                       />
-                      <div>
-                        <HoverComponent
-                          hoverText={translation['TIPS_SHARE_ONLY_VIEW']}
-                          hoverTextPositionX={'left'}
-                          showOnMobile={true}
-                        >
-                          <IconHelpHexagon
-                            size={18}
-                            color="#2D8BDB"
-                            className={classes.additional_info}
-                          />
-                        </HoverComponent>
-                      </div>
+                      <Tooltip content={translation['TIPS_SHARE_ONLY_VIEW']} side="left" openOnTap>
+                        <IconHelpHexagon
+                          size={18}
+                          color="#2D8BDB"
+                          className={classes.additional_info}
+                        />
+                      </Tooltip>
                     </div>
                     {userData?.plan != 'pro' ? (
                       <div

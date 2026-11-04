@@ -1,5 +1,4 @@
 import { IconArrowLeft } from '@tabler/icons-react';
-import { useRef } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -9,12 +8,13 @@ import {
   controlPanelUpdateBreadCrumbs,
   selectActiveControlPanelModeData,
 } from '../../../../../../redux/features/control/controlPanelSlice';
-import HoverComponent from '../../../controlPanel/components/HoverComponent';
+import Tooltip from '../../../../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   planner_catalog_btn: {
     display: 'flex',
     alignItems: 'center',
+    justifyContent: 'center',
     cursor: 'pointer',
     position: 'relative',
     '& svg': {
@@ -59,14 +59,12 @@ const Prev = (props) => {
     }
   };
 
-  const hoverButton = useRef(null);
-
   return (
-    <div className={classes.planner_catalog_btn} ref={hoverButton} onMouseUp={onPrevClick}>
-      <HoverComponent hoverText={translation['HINT_BUTTON_BACK']} parentRef={hoverButton}>
+    <Tooltip content={translation['HINT_BUTTON_BACK']} side="bottom">
+      <div className={classes.planner_catalog_btn} onMouseUp={onPrevClick}>
         <IconArrowLeft size={16} color="#2f2f2f" />
-      </HoverComponent>
-    </div>
+      </div>
+    </Tooltip>
   );
 };
 

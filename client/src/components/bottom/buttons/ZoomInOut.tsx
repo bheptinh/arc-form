@@ -1,12 +1,12 @@
 import { IconZoomIn, IconZoomOut } from '@tabler/icons-react';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import { selectActiveViewMode } from '../../../redux/features/viewMode/viewModeSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   zoomInOut_main: {
@@ -49,8 +49,6 @@ const ZoomInOut = (props) => {
   let tileConfigurator = null;
   let tileEditor = null;
   const translation = useTranslation();
-  const hoverButton = useRef(null);
-  const hoverButton2 = useRef(null);
 
   const [persentOfZoomState, setPersentOfZoomState] = useState(100);
   const currOS = R2D.controller.getCurrentOS();
@@ -109,16 +107,11 @@ const ZoomInOut = (props) => {
 
   return (
     <div className={classes.zoomInOut_main}>
-      <div className={classes.zoomInOutBtn} ref={hoverButton} onClick={zoomOut}>
-        <HoverComponent
-          hoverText={translation['HINT_BUTTON_ZOOM_MINUS']}
-          parentRef={hoverButton}
-          hoverTextPositionX={'left'}
-          hoverTextPositionY={'top'}
-        >
+      <Tooltip content={translation['HINT_BUTTON_ZOOM_MINUS']}>
+        <div className={classes.zoomInOutBtn} onClick={zoomOut}>
           <IconZoomOut size={17} color="#2A3435" />
-        </HoverComponent>
-      </div>
+        </div>
+      </Tooltip>
 
       {!isCurrDeviceAPhone ? (
         <div className={classes.persentOfZoom} onClick={onClickPercentagesValue}>
@@ -126,16 +119,11 @@ const ZoomInOut = (props) => {
         </div>
       ) : null}
 
-      <div className={classes.zoomInOutBtn} ref={hoverButton2} onClick={zoomIn}>
-        <HoverComponent
-          hoverText={translation['HINT_BUTTON_ZOOM_PLUS']}
-          parentRef={hoverButton2}
-          hoverTextPositionX={'left'}
-          hoverTextPositionY={'top'}
-        >
+      <Tooltip content={translation['HINT_BUTTON_ZOOM_PLUS']}>
+        <div className={classes.zoomInOutBtn} onClick={zoomIn}>
           <IconZoomIn size={17} color="#2A3435" />
-        </HoverComponent>
-      </div>
+        </div>
+      </Tooltip>
     </div>
   );
 };

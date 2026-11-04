@@ -18,7 +18,7 @@ import {
   updateQuickPanelPosition,
 } from '../../redux/features/quickPanels/quickPanelsSlice';
 import { changeUndoRedo } from '../../redux/features/topPanel/topPanelSlice';
-import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../shared-components/Tooltip';
 import { DeleteRef } from './components/Delete';
 import { DragPanelButtonRef } from './components/DragPanelButton';
 import { ElevateRef } from './components/Elevate';
@@ -503,7 +503,7 @@ const HelperModel = () => {
                         <DragPanelButtonRef ref={refs} changePosition={setPanelPosition} />
                         <div className={classes.info_model_pop_item_cont}>
                           <div className={classes.info_model_pop_item_wr}>
-                            <HoverComponent hoverText={translation['HINT_BUTTON_FLIP']}>
+                            <Tooltip content={translation['HINT_BUTTON_FLIP']} side="bottom">
                               <div
                                 className={
                                   classes.info_model_pop_item + ' ' + classes.info_model_main
@@ -511,14 +511,14 @@ const HelperModel = () => {
                               >
                                 <img src="/src_designer/images/icon_flip_1.svg" />
                               </div>
-                            </HoverComponent>
+                            </Tooltip>
                             <img
                               src="/src_designer/images/icon_info_more.svg"
                               className={classes.icon_info_more}
                             />
                             <div className={classes.info_model_more_wrap}>
                               <div className={classes.info_model_more_wr}>
-                                <HoverComponent hoverText={translation['HINT_BUTTON_FLIP_X']}>
+                                <Tooltip content={translation['HINT_BUTTON_FLIP_X']} side="bottom">
                                   <div
                                     className={
                                       classes.info_model_more + ' ' + classes.info_model_main
@@ -534,8 +534,8 @@ const HelperModel = () => {
                                       }
                                     ></div>
                                   </div>
-                                </HoverComponent>
-                                <HoverComponent hoverText={translation['HINT_BUTTON_FLIP_Z']}>
+                                </Tooltip>
+                                <Tooltip content={translation['HINT_BUTTON_FLIP_Z']} side="bottom">
                                   <div
                                     className={
                                       classes.info_model_more + ' ' + classes.info_model_main
@@ -554,13 +554,13 @@ const HelperModel = () => {
                                       }
                                     ></div>
                                   </div>
-                                </HoverComponent>
+                                </Tooltip>
                               </div>
                             </div>
                           </div>
 
                           <div className={classes.info_model_pop_item_wr}>
-                            <HoverComponent hoverText={translation['HINT_BUTTON_DUPLICATE']}>
+                            <Tooltip content={translation['HINT_BUTTON_DUPLICATE']} side="bottom">
                               <div
                                 className={
                                   classes.info_model_pop_item + ' ' + classes.info_model_main
@@ -576,7 +576,7 @@ const HelperModel = () => {
                                   }
                                 ></div>
                               </div>
-                            </HoverComponent>
+                            </Tooltip>
                           </div>
 
                           <DeleteRef

@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { planner, GEOM } from '../../../initR2D';
 import { setActivePopup } from '../../../redux/features/popups/popupsSlice';
 import { changeUndoRedo } from '../../../redux/features/topPanel/topPanelSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 import { useTranslation } from '../../../api/hooks/useTranslation';
 
 const useStyle = createUseStyles({
@@ -248,29 +248,28 @@ const Rotate = (props) => {
 
   const classes = useStyle();
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0 }}
-      transition={{ duration: 0.3 }}
-      transformTemplate={({ scale }) => `translateX(-50%) scale(${scale})`}
-      className={classes.info_model_btn}
-      style={
-        addStyles
-          ? { ...addStyles, left: positionBtn.x, top: positionBtn.y }
-          : { left: positionBtn.x, top: positionBtn.y }
-      }
-      ref={btnRotate}
-    >
-      <HoverComponent hoverText={translation['HINT_BUTTON_ROTATION']}>
+    <Tooltip content={translation['HINT_BUTTON_ROTATION']} side="bottom">
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0 }}
+        transition={{ duration: 0.3 }}
+        transformTemplate={({ scale }) => `translateX(-50%) scale(${scale})`}
+        className={classes.info_model_btn}
+        style={
+          addStyles
+            ? { ...addStyles, left: positionBtn.x, top: positionBtn.y }
+            : { left: positionBtn.x, top: positionBtn.y }
+        }
+        ref={btnRotate}
+      >
         <img src="/src_designer/images/icon_rotate.svg" />
         <div
           className={classes.info_model_btn_overlay}
           onMouseDown={startRotate}
           onTouchStart={startRotate}
         ></div>
-      </HoverComponent>
-    </motion.div>
+      </motion.div>
+    </Tooltip>
   );
 };
-

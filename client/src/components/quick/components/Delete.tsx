@@ -4,7 +4,7 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -59,19 +59,19 @@ const Delete = (props) => {
   };
 
   return (
-    <div
-      className={classes.info_model_btn}
-      ref={props.reference}
-      style={addStyles ? { ...addStyles } : { left: positionBtn.x, top: positionBtn.y }}
-    >
-      <HoverComponent hoverText={translation['HINT_BUTTON_DELETE']}>
+    <Tooltip content={translation['HINT_BUTTON_DELETE']} side="bottom">
+      <div
+        className={classes.info_model_btn}
+        ref={props.reference}
+        style={addStyles ? { ...addStyles } : { left: positionBtn.x, top: positionBtn.y }}
+      >
         <IconTrash width={16} height={16} color="#AF3131" />
         <div
           className={classes.info_model_btn_overlay}
           onMouseDown={mouseDownDelete}
           onMouseUp={onDelete}
         ></div>
-      </HoverComponent>
-    </div>
+      </div>
+    </Tooltip>
   );
 };

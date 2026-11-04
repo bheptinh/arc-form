@@ -3,7 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { useSelector } from 'react-redux';
 
 import { useTranslation } from '../../../api/hooks/useTranslation';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   info_model_pop_item_wr: {
@@ -85,7 +85,7 @@ const More = (props) => {
 
   return (
     <div className={classes.info_model_pop_item_wr}>
-      <HoverComponent hoverText={translation['HINT_BUTTON_MORE']}>
+      <Tooltip content={translation['HINT_BUTTON_MORE']} side="bottom">
         <div
           className={classes.info_model_pop_item}
           ref={moreBtn}
@@ -99,7 +99,7 @@ const More = (props) => {
           </svg>
           <div className={classes.info_model_btn_overlay}></div>
         </div>
-      </HoverComponent>
+      </Tooltip>
       <div className={classes.info_model_more_wrap}>
         <div className={classes.info_model_more_wr}>{props.childrens}</div>
       </div>

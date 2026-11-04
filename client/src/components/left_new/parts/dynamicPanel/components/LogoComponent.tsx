@@ -9,7 +9,7 @@ import {
   controlPanelHistoryAdd,
   controlPanelUpdateBreadCrumbs,
 } from '../../../../../redux/features/control/controlPanelSlice';
-import HoverComponent from '../../controlPanel/components/HoverComponent';
+import Tooltip from '../../../../../shared-components/Tooltip';
 
 const editMatEditIcon = {
   width: 16,
@@ -131,8 +131,6 @@ const LogoComponent = (props) => {
   const mainDiv = useRef(null);
 
   const copyPasteDiv = useRef(null);
-  const copyDiv = useRef(null);
-  const pasteDiv = useRef(null);
 
   const timeoutId = undefined;
 
@@ -248,42 +246,28 @@ const LogoComponent = (props) => {
 
             <div className={classes.editMat} ref={copyPasteDiv}>
               {showCopy ? (
-                <div className={classes.editMat_copy} ref={copyDiv}>
-                  <HoverComponent
-                    hoverText={translation['BUTTON_COPY_MATERIAL']}
-                    parentRef={copyDiv}
-                    hoverTextPositionX={'right'}
-                    hoverTextPositionY={'top'}
-                  >
-                    <IconCopy
-                      className={classes.editMatEditIcon}
-                      size={16}
-                      onMouseDown={mouseDownBtnCopyPaste}
-                      onMouseUp={mouseUpBtnCopy}
-                      color="#ffffff"
-                    />
-                  </HoverComponent>
-                </div>
-              ) : (
-                <IconCopy className={classes.editMatEditIcon_disabled} size={16} color="#828282" />
-              )}
-
-              <div className={classes.editMat_paste} ref={pasteDiv}>
-                <HoverComponent
-                  hoverText={translation['BUTTON_PASTE_MATERIAL']}
-                  parentRef={pasteDiv}
-                  hoverTextPositionX={'right'}
-                  hoverTextPositionY={'top'}
-                >
+                <Tooltip content={translation['BUTTON_COPY_MATERIAL']}>
                   <IconCopy
                     className={classes.editMatEditIcon}
                     size={16}
                     onMouseDown={mouseDownBtnCopyPaste}
-                    onMouseUp={onPaste}
+                    onMouseUp={mouseUpBtnCopy}
                     color="#ffffff"
                   />
-                </HoverComponent>
-              </div>
+                </Tooltip>
+              ) : (
+                <IconCopy className={classes.editMatEditIcon_disabled} size={16} color="#828282" />
+              )}
+
+              <Tooltip content={translation['BUTTON_PASTE_MATERIAL']}>
+                <IconCopy
+                  className={classes.editMatEditIcon}
+                  size={16}
+                  onMouseDown={mouseDownBtnCopyPaste}
+                  onMouseUp={onPaste}
+                  color="#ffffff"
+                />
+              </Tooltip>
             </div>
           </div>
         ) : (

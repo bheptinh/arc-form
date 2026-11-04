@@ -14,7 +14,7 @@ import DefaultModal from '../../shared-components/modals/default';
 import { createViewerUrl } from '../../utils/UrlHelper';
 import { useEffectAsync } from '../../utils/useEffectAsync';
 import classes from './share-popup.module.css';
-// import HoverComponent from '../left_new/parts/controlPanel/components/HoverComponent';
+// import Tooltip from '../../shared-components/Tooltip';
 
 export default function SharePopup() {
   const dispatch = useDispatch();
@@ -120,17 +120,13 @@ export default function SharePopup() {
                   onChange={onChangeOnlyView}
                 />
                 <div>
-                  {/* <HoverComponent
-                    hoverText={translation['TIPS_SHARE_ONLY_VIEW']}
-                    hoverTextPositionX={'left'}
-                    showOnMobile={true}
-                  >
+                  {/* <Tooltip content={translation['TIPS_SHARE_ONLY_VIEW']} side="left" openOnTap>
                     <IconHelpHexagon
                       size={18}
                       color="#2D8BDB"
                       className={classes.additional_info}
                     />
-                  </HoverComponent> */}
+                  </Tooltip> */}
                   <IconHelpHexagon size={18} color="#2D8BDB" className={classes.additional_info} />
                 </div>
               </div>

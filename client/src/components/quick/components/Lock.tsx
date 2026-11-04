@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { useTranslation } from '../../../api/hooks/useTranslation';
 import { planner } from '../../../initR2D';
 import { removeQuickPanelAll } from '../../../redux/features/quickPanels/quickPanelsSlice';
-import HoverComponent from '../../left_new/parts/controlPanel/components/HoverComponent';
+import Tooltip from '../../../shared-components/Tooltip';
 
 const useStyle = createUseStyles({
   info_model_btn: {
@@ -92,10 +92,11 @@ const Lock = (props) => {
   }, [props.isLockedOnScene]);
 
   return (
-    <HoverComponent
-      hoverText={
+    <Tooltip
+      content={
         props.isLockedOnScene ? translation['HINT_BUTTON_LOCKED'] : translation['HINT_BUTTON_LOCK']
       }
+      side="bottom"
     >
       <div
         className={classes.info_model_btn}
@@ -113,6 +114,6 @@ const Lock = (props) => {
           onMouseDown={onLockDown}
         ></div>
       </div>
-    </HoverComponent>
+    </Tooltip>
   );
 };
