@@ -18,6 +18,7 @@ import { selectIsLogged } from '../../../../../../redux/features/user/userSlice'
 import { useEffectAsync } from '../../../../../../utils/useEffectAsync';
 import ChangeSize from '../../../../../common/ChangeSize';
 import FavoriteStarIcon from '../../../../../common/FavoriteStarIcon';
+import SharedColorPicker from '../../../../../../shared-components/ColorPicker';
 import Tooltip from '../../../../../../shared-components/Tooltip';
 import Navigation from '../../navigation/Navigation';
 import CatalogScreen from './CatalogScreen';
@@ -44,40 +45,7 @@ const useStyle = createUseStyles({
   grey_line: {
     borderBottom: '1px solid var(--color-border-light)',
   },
-  color_picker_palette: {
-    display: 'block',
-    margin: '0',
-    padding: '0',
-    outline: 'solid 1px #aaaaaa',
-    position: 'relative',
-    borderRadius: 6,
-  },
 
-  color_picker_slider: {
-    display: 'block',
-    margin: '0',
-    padding: '0',
-    position: 'relative',
-  },
-
-  color_picker_canvas: {
-    display: 'block',
-    margin: 0,
-    padding: 0,
-  },
-  color_picker_pointer: {
-    pointerEvents: 'none',
-    display: 'block',
-    margin: 0,
-    padding: 0,
-    outline: '2px solid var(--color-black)',
-    outlineOffset: '-1px',
-    position: 'absolute',
-    '& color_picker_pointer': {
-      outline: 'rgb(255, 255, 255) solid 2px',
-      outlineOffset: '-2px',
-    },
-  },
   top: {
     textAlign: 'center',
     marginBottom: 20,
@@ -125,12 +93,6 @@ const useStyle = createUseStyles({
         stroke: 'var(--color-accent-soft)',
       },
     },
-  },
-  bottom: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginBottom: 20,
-    paddingRight: 5,
   },
   materials: {
     paddingBottom: 25,
@@ -340,21 +302,6 @@ const useStyle = createUseStyles({
     borderBottom: '1px solid var(--color-border-light)',
     alignItems: 'center',
   },
-  color_picker_input_wr: {
-    '& input': {
-      width: '100%',
-      height: '35px',
-      border: '1px solid var(--color-border-strong)',
-      borderRadius: '3px',
-      padding: '0 10px',
-      outline: 'none',
-      '@media screen and (max-width: 950px)': {
-        height: 25,
-        padding: '0 5px',
-        fontSize: 9,
-      },
-    },
-  },
 });
 
 const ColorPicker = (props) => {
@@ -372,10 +319,9 @@ const ColorPicker = (props) => {
   const [userFavorites, setUserFavorites] = useState(user.data.favorites?.items);
   const [currMatMesh, setCurrMatMesh] = useState(null);
   const [isPreviewLoaded, setIsPreviewLoaded] = useState(false);
-  const [valAll, setValAll] = useState({ valH: 0, valS: 0, valB: 100, changedVal: '' });
+  // the colour shown in the picker
+  const [pickerColor, setPickerColor] = useState('#aaaaaa');
   const [mouseDown, setMouseDown] = useState(false);
-  const [sliderCtx, setSliderCtx] = useState(null);
-  const [palCtx, setPalCtx] = useState(null);
   const [prevContext, setPrevContext] = useState(null);
   const [lightPower, setLightPower] = useState(props.lightPowerValue);
   const [materialsArrayData, setMaterialsArrayData] = useState([]);
@@ -385,11 +331,6 @@ const ColorPicker = (props) => {
   const [selectedMaterial, setSelecterdMaterial] = useState(props.matId);
   const [selectedAddMaterial, setSelecterdAddMaterial] = useState(props.addMaterial);
 
-  const palPointer = useRef(null);
-  const sliderPointer = useRef(null);
-  const sliderCanvas = useRef(null);
-  const palCanvas = useRef(null);
-  const text = useRef(null);
   const colorPrev = useRef(null);
 
   const selectedMaterialId = lastHistoryElemData?.id;
@@ -398,11 +339,6 @@ const ColorPicker = (props) => {
   const currOS = R2D.controller.getCurrentOS();
   const isCurrDeviceAPhone = currOS == 'iOS' || currOS == 'Android';
 
-  const palWidth = !isCurrDeviceAPhone ? 200 : 140;
-  const palHeight = !isCurrDeviceAPhone ? 150 : 80;
-  const sliderWidth = 20;
-  const palPointerSize = 12;
-  const sliderPointerSize = 8;
   const prevSize = 271;
 
   const onColorPowerChange = (mouseDown, value, type) => {
@@ -427,19 +363,19 @@ const ColorPicker = (props) => {
     Array.from(document.querySelectorAll('.' + classes.matInput)).forEach((i) => {
       if (i.checked) selectedMaterial = i.id.replace('material_', '');
     });
-    planner.scene.dragProductFromCatalog(getHex(), selectedMaterial);
+    planner.scene.dragProductFromCatalog(pickerColor, selectedMaterial);
   };
 
   const updateSelectedObj = (color, addMatId) => {
     if (props.onDragColor) return;
     if (props.onlyColor) {
       props.materialSelect(
-        ~color.indexOf('#') ? color : getHex(),
+        ~color.indexOf('#') ? color : pickerColor,
         null,
         selectedMaterial,
         selectedAddMaterial
       );
-      setSelecterdMaterial(~color.indexOf('#') ? color : getHex());
+      setSelecterdMaterial(~color.indexOf('#') ? color : pickerColor);
       setSelecterdAddMaterial(null);
     } else {
       if (props.materialSelect) {
@@ -451,7 +387,7 @@ const ColorPicker = (props) => {
           match = true;
         else match = materialsArrayData && materialsArrayData.some((i) => addMatId == i.id);
         props.materialSelect(
-          ~color.indexOf('#') ? color : getHex(),
+          ~color.indexOf('#') ? color : pickerColor,
           addMatId && match
             ? addMatId
             : materialsArrayData.length > 0
@@ -460,7 +396,7 @@ const ColorPicker = (props) => {
           selectedMaterial,
           selectedAddMaterial
         );
-        setSelecterdMaterial(~color.indexOf('#') ? color : getHex());
+        setSelecterdMaterial(~color.indexOf('#') ? color : pickerColor);
         setSelecterdAddMaterial(
           addMatId && match
             ? addMatId
@@ -468,7 +404,7 @@ const ColorPicker = (props) => {
               ? materialsArrayData[0].id
               : ''
         );
-      } else drawColorPrev(text.current.value);
+      } else drawColorPrev(pickerColor);
     }
   };
 
@@ -484,248 +420,18 @@ const ColorPicker = (props) => {
     }
   }
 
-  const onEnterClickColor = (e) => {
-    if (e.code == 'Enter' && text.current) {
-      text.current.value = text.current.value.trim();
-      if (setHex(text.current.value)) {
-        drawColorPrev(text.current.value);
-        sliderCtx && drawSlider(sliderCtx, sliderWidth, palHeight);
-        const match = materialsArrayData.some((i) => selectedMaterialId == i.id);
-        dispatch(
-          controlPanelHistoryDataUpdate({
-            id: match ? selectedMaterialId : materialsArrayData[0] && materialsArrayData[0].id,
-            color: text.current.value,
-          })
-        );
-        updateSelectedObj(text.current.value, selectedMaterialId);
-      } else updateText();
-    }
-  };
+  const mouseUpListener = () => setMouseDown(false);
 
-  const colorTextFocusListener = (e) => document.addEventListener('keyup', onEnterClickColor);
-
-  const colorTextChangeListener = (e) => {
-    text.current.value = text.current.value.trim();
-    document.removeEventListener('keyup', onEnterClickColor);
-    if (text.current.value == getHex()) return;
-    if (setHex(text.current.value)) {
-      drawColorPrev(text.current.value);
-      sliderCtx && drawSlider(sliderCtx, sliderWidth, palHeight);
-      const match = materialsArrayData.some((i) => selectedMaterialId == i.id);
-      dispatch(
-        controlPanelHistoryDataUpdate({
-          id: match ? selectedMaterialId : materialsArrayData[0] && materialsArrayData[0].id,
-          color: text.current.value,
-        })
-      );
-      updateSelectedObj(text.current.value, selectedMaterialId);
-    } else updateText();
-  };
-
-  const sliderDownListener = (e) => {
-    e.preventDefault();
-    e = e.nativeEvent;
-    setMouseDown(true);
-    setValAll((prevVal) => {
-      return { ...prevVal, valB: (1 - e.offsetY / palHeight) * 100, changedVal: 'valB' };
-    });
-  };
-
-  const palDownListener = (e) => {
-    e = e.nativeEvent;
-    setMouseDown(true);
-    setValAll((prevVal) => {
-      return {
-        ...prevVal,
-        valH: (e.offsetX / palWidth) * 360,
-        valS: (1 - e.offsetY / palHeight) * 100,
-        changedVal: '',
-      };
-    });
-  };
-
-  const sliderMoveListener = (e) => {
-    e = e.nativeEvent;
-    if (mouseDown)
-      setValAll((prevVal) => {
-        return { ...prevVal, valB: (1 - e.offsetY / palHeight) * 100, changedVal: 'valB' };
-      });
-  };
-
-  const palMoveListener = (e) => {
-    e = e.nativeEvent;
-    if (mouseDown)
-      setValAll((prevVal) => {
-        return {
-          ...prevVal,
-          valH: (e.offsetX / palWidth) * 360,
-          valS: (1 - e.offsetY / palHeight) * 100,
-          changedVal: '',
-        };
-      });
-  };
-
-  const palUpListener = (e) => {
-    if (e.type == 'mouseleave' && !mouseDown) return;
-    updateText();
+  const onColorPicked = (hex) => {
+    setPickerColor(hex);
     const match = materialsArrayData.some((i) => selectedMaterialId == i.id);
     dispatch(
       controlPanelHistoryDataUpdate({
         id: match ? selectedMaterialId : materialsArrayData[0]?.id,
-        color: text.current.value,
+        color: hex,
       })
     );
-    updateSelectedObj(getHex(), selectedMaterialId);
-  };
-
-  const sliderUpListener = (e) => {
-    if (e.type == 'mouseleave' && !mouseDown) return;
-    updateText();
-    const match = materialsArrayData.some((i) => selectedMaterialId == i.id);
-    dispatch(
-      controlPanelHistoryDataUpdate({
-        id: match ? selectedMaterialId : materialsArrayData[0] && materialsArrayData[0].id,
-        color: text.current.value,
-      })
-    );
-    updateSelectedObj(getHex(), selectedMaterialId);
-  };
-
-  const mouseUpListener = () => setMouseDown(false);
-
-  const placePointers = () => {
-    palPointer.current.style.left =
-      Math.floor((valAll.valH / 360) * palWidth - Math.floor(palPointerSize / 2)) + 'px';
-    palPointer.current.style.top =
-      Math.floor((1 - valAll.valS / 100) * palHeight - Math.floor(palPointerSize / 2)) + 'px';
-    sliderPointer.current.style.top =
-      Math.floor((1 - valAll.valB / 100) * palHeight - Math.floor(sliderPointerSize / 2)) + 'px';
-  };
-
-  const drawSlider = (ctx, w, h) => {
-    const rgb = HSVtoRGB(valAll.valH, valAll.valS, 100);
-    if (!rgb) return;
-    const color1 =
-      'rgb(' + Math.round(rgb[0]) + ',' + Math.round(rgb[1]) + ',' + Math.round(rgb[2]) + ')';
-    const color2 = '#000';
-
-    const grad = ctx.createLinearGradient(0, 0, 0, h);
-    grad.addColorStop(0, color1);
-    grad.addColorStop(1, color2);
-
-    ctx.fillStyle = grad;
-    ctx.fillRect(0, 0, w, h);
-  };
-
-  const drawPalette = (ctx, w, h) => {
-    const hGrad = ctx.createLinearGradient(0, 0, palWidth, 0);
-    hGrad.addColorStop(0 / 6, '#F00');
-    hGrad.addColorStop(1 / 6, '#FF0');
-    hGrad.addColorStop(2 / 6, '#0F0');
-    hGrad.addColorStop(3 / 6, '#0FF');
-    hGrad.addColorStop(4 / 6, '#00F');
-    hGrad.addColorStop(5 / 6, '#F0F');
-    hGrad.addColorStop(6 / 6, '#F00');
-
-    ctx.fillStyle = hGrad;
-    ctx.fillRect(0, 0, w, h);
-
-    const type = 's';
-    const vGrad = ctx.createLinearGradient(0, 0, 0, h);
-    switch (type.toLowerCase()) {
-      case 's':
-        vGrad.addColorStop(0, 'rgba(255,255,255,0)');
-        vGrad.addColorStop(1, 'rgba(255,255,255,1)');
-        break;
-      case 'v':
-        vGrad.addColorStop(0, 'rgba(0,0,0,0)');
-        vGrad.addColorStop(1, 'rgba(0,0,0,1)');
-        break;
-    }
-    ctx.fillStyle = vGrad;
-    ctx.fillRect(0, 0, w, h);
-  };
-
-  const HSVtoRGB = (h, s, v) => {
-    const u = 255 * (v / 100);
-
-    if (h === null) return [u, u, u];
-
-    h /= 60;
-    s /= 100;
-
-    const i = Math.floor(h);
-    const f = i % 2 ? h - i : 1 - (h - i);
-    const m = u * (1 - s);
-    const n = u * (1 - s * f);
-    switch (i) {
-      case 6:
-      case 0:
-        return [Math.round(u), Math.round(n), Math.round(m)];
-      case 1:
-        return [Math.round(n), Math.round(u), Math.round(m)];
-      case 2:
-        return [Math.round(m), Math.round(u), Math.round(n)];
-      case 3:
-        return [Math.round(m), Math.round(n), Math.round(u)];
-      case 4:
-        return [Math.round(n), Math.round(m), Math.round(u)];
-      case 5:
-        return [Math.round(u), Math.round(m), Math.round(n)];
-    }
-  };
-
-  const RGBtoHSV = (r, g, b) => {
-    r /= 255;
-    g /= 255;
-    b /= 255;
-    const n = Math.min(Math.min(r, g), b);
-    const v = Math.max(Math.max(r, g), b);
-    const m = v - n;
-    if (m === 0) {
-      return [0, 0, 100 * v];
-    }
-    const h = r === n ? 3 + (b - g) / m : g === n ? 5 + (r - b) / m : 1 + (g - r) / m;
-    return [
-      Math.round((60 * (h === 6 ? 0 : h)).toFixed(2) * 10) / 10,
-      Math.round((100 * (m / v)).toFixed(2) * 10) / 10,
-      Math.round((100 * v).toFixed(2) * 10) / 10,
-    ];
-  };
-
-  const componentToHex = (c) => {
-    const hex = c.toString(16);
-    return hex.length == 1 ? '0' + hex : hex;
-  };
-
-  const RGBToHex = (r, g, b) => '#' + componentToHex(r) + componentToHex(g) + componentToHex(b);
-
-  const hexToRGB = (hex) => {
-    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result
-      ? [parseInt(result[1], 16), parseInt(result[2], 16), parseInt(result[3], 16)]
-      : null;
-  };
-
-  const getHex = () => {
-    const rgb = HSVtoRGB(valAll.valH, valAll.valS, valAll.valB);
-    return (rgb && rgb[0] && RGBToHex(rgb[0], rgb[1], rgb[2])) || text.current.value || '';
-  };
-
-  const setHex = (hex) => {
-    const rgb = hexToRGB(hex);
-    if (!rgb) return false;
-    setRGB(rgb[0], rgb[1], rgb[2]);
-    updateText(hex);
-    drawColorPrev(currentColor || hex);
-    return true;
-  };
-
-  const updateText = (hex) => (text.current.value = hex ? hex : getHex());
-
-  const setRGB = (r, g, b) => {
-    const hsb = RGBtoHSV(r, g, b);
-    setValAll({ valH: hsb[0], valS: hsb[1], valB: hsb[2] });
+    updateSelectedObj(hex, selectedMaterialId);
   };
 
   const onClickMaterial = async (mat) => {
@@ -781,7 +487,7 @@ const ColorPicker = (props) => {
     );
 
   const copyMaterial = (e) =>
-    R2D.CopyPaste.copyMaterial({ id: text.current.value, addMaterial: selectedMaterialId });
+    R2D.CopyPaste.copyMaterial({ id: pickerColor, addMaterial: selectedMaterialId });
 
   // TODO: optimize this, maybe move some code to onClickMaterial and onColorPickedMouseUp
   useEffectAsync(async () => {
@@ -791,8 +497,6 @@ const ColorPicker = (props) => {
         (props.matId && props.matId.indexOf && ~props.matId.indexOf('#') ? props.matId : null) ||
         currentColor ||
         '#aaaaaa';
-      sliderCanvas.current && setSliderCtx(sliderCanvas.current.getContext('2d'));
-      palCanvas.current && setPalCtx(palCanvas.current.getContext('2d'));
       colorPrev.current && setPrevContext(colorPrev.current.getContext('2d'));
       dispatch(controlPanelHistoryDataUpdate({ ...lastHistoryElemData, color: currSelectedColor }));
       setPreloaderStatus(false);
@@ -816,8 +520,6 @@ const ColorPicker = (props) => {
         (props.matId && props.matId.indexOf && ~props.matId.indexOf('#') ? props.matId : null) ||
         currentColor ||
         '#aaaaaa';
-      sliderCanvas.current && setSliderCtx(sliderCanvas.current.getContext('2d'));
-      palCanvas.current && setPalCtx(palCanvas.current.getContext('2d'));
       colorPrev.current && setPrevContext(colorPrev.current.getContext('2d'));
       if (!selectedMaterialId && !R2D.PoolMaterials.isMaterial(response[0].id))
         R2D.PoolMaterials.create('#aaaaaa', response[0].id);
@@ -851,14 +553,9 @@ const ColorPicker = (props) => {
 
   useEffect(() => {
     if (props.onlyColor) {
-      if (props.isForLightObjects) {
-        setHex(currentColor && ~currentColor.indexOf('#') ? currentColor : '#aaaaaa');
-        drawColorPrev(currentColor && ~currentColor.indexOf('#') ? currentColor : '#aaaaaa');
-      } else {
-        prevContext &&
-          setHex(currentColor && ~currentColor.indexOf('#') ? currentColor : '#aaaaaa');
-        drawColorPrev(currentColor && ~currentColor.indexOf('#') ? currentColor : '#aaaaaa');
-      }
+      const color = currentColor && ~currentColor.indexOf('#') ? currentColor : '#aaaaaa';
+      setPickerColor(color);
+      drawColorPrev(color);
     } else {
       if (!selectedMaterialId) return;
       const materials = [];
@@ -869,8 +566,12 @@ const ColorPicker = (props) => {
       )
         match = true;
       else match = materialsArrayData && materialsArrayData.some((i) => selectedMaterialId == i.id);
-      prevContext &&
-        setHex(currentColor && ~currentColor.indexOf('#') && match ? currentColor : '#aaaaaa');
+      if (prevContext) {
+        const color =
+          currentColor && ~currentColor.indexOf('#') && match ? currentColor : '#aaaaaa';
+        setPickerColor(color);
+        drawColorPrev(currentColor || color);
+      }
       if (materialsArrayData && materialsArrayData.length > 1) {
         materialsArrayData.forEach((i) => {
           materials.push(
@@ -917,30 +618,6 @@ const ColorPicker = (props) => {
     }
     setPreloaderStatus(false);
   }, [selectedMaterialId, materialsArrayData]);
-
-  useEffect(() => {
-    sliderCtx && drawSlider(sliderCtx, sliderWidth, palHeight);
-  }, [sliderCtx]);
-
-  useEffect(() => {
-    palCtx && drawPalette(palCtx, palWidth, palHeight);
-  }, [palCtx]);
-
-  useEffect(() => {
-    if (props.isForLightObjects) {
-      if (sliderCtx && palCtx) {
-        updateText();
-        if (valAll.changedVal != 'valB') drawSlider(sliderCtx, sliderWidth, palHeight);
-        placePointers();
-      }
-    } else {
-      if (sliderCtx && palCtx && prevContext) {
-        updateText();
-        if (valAll.changedVal != 'valB') drawSlider(sliderCtx, sliderWidth, palHeight);
-        placePointers();
-      }
-    }
-  }, [valAll]);
 
   useEffect(() => {
     mouseDown
@@ -1045,71 +722,11 @@ const ColorPicker = (props) => {
               )}
             </div>
           )}
-          <div className={classes.bottom}>
-            <div className={classes.color_picker_palette}>
-              <canvas
-                ref={palCanvas}
-                onMouseLeave={palUpListener}
-                onMouseUp={palUpListener}
-                onMouseMove={palMoveListener}
-                onMouseDown={palDownListener}
-                className={classes.color_picker_canvas}
-                width={!isCurrDeviceAPhone ? 200 : 140}
-                height={!isCurrDeviceAPhone ? 150 : 80}
-                style={{ borderRadius: 6 }}
-              ></canvas>
-              <div
-                className={classes.color_picker_pointer}
-                ref={palPointer}
-                style={{ width: '12px', height: '12px' }}
-              >
-                <div
-                  className={classes.color_picker_pointer}
-                  style={{ width: '12px', height: '12px' }}
-                ></div>
-              </div>
-            </div>
-            <div className={classes.color_picker_slider}>
-              <canvas
-                ref={sliderCanvas}
-                onMouseLeave={sliderUpListener}
-                onMouseUp={sliderUpListener}
-                onMouseMove={sliderMoveListener}
-                onMouseDown={sliderDownListener}
-                className={classes.color_picker_canvas}
-                width={!isCurrDeviceAPhone ? 20 : 10}
-                height={!isCurrDeviceAPhone ? 150 : 80}
-              ></canvas>
-              <div
-                className={classes.color_picker_pointer}
-                ref={sliderPointer}
-                style={
-                  !isCurrDeviceAPhone
-                    ? { width: '28px', height: '8px', left: '-4px' }
-                    : { width: '18px', height: '8px', left: '-4px' }
-                }
-              >
-                <div
-                  className={classes.color_picker_pointer}
-                  style={
-                    !isCurrDeviceAPhone
-                      ? { width: '28px', height: '8px' }
-                      : { width: '18px', height: '8px' }
-                  }
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div className={classes.color_picker_input_wr}>
-            <input
-              type="text"
-              name="color"
-              onBlur={colorTextChangeListener}
-              onFocus={colorTextFocusListener}
-              className={classes.color_picker_input}
-              ref={text}
-            ></input>
-          </div>
+          <SharedColorPicker
+            value={pickerColor}
+            onChangeEnd={onColorPicked}
+            size={isCurrDeviceAPhone ? 'small' : 'normal'}
+          />
         </div>
       </div>
     </CatalogScreen>

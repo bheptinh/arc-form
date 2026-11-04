@@ -1,0 +1,59 @@
+.pickers {
+  display: flex;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.palette {
+  margin: 0;
+  display: block;
+  outline: solid 1px #aaaaaa;
+  padding: 0;
+  position: relative;
+  border-radius: 6px;
+}
+
+.palette .canvas {
+  border-radius: 6px;
+}
+
+.slider {
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+}
+
+.canvas {
+  margin: 0;
+  display: block;
+  padding: 0;
+}
+
+.pointer {
+  margin: 0;
+  display: block;
+  outline: 2px solid var(--color-black);
+  padding: 0;
+  position: absolute;
+  outline-offset: -1px;
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--color-border-strong);
+  height: 35px;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 950px) {
+  .input {
+    height: 25px;
+    padding: 0 5px;
+    font-size: 9px;
+  }
+}
